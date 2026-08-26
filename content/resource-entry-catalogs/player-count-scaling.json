@@ -1,0 +1,380 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "player-count-scaling",
+    "title": "设计不同玩家人数与配置",
+    "question": "原型在一个人数下成立，但我不知道 2–5 人该改什么、低人数是否要 dummy，以及高人数怎样减少等待。",
+    "outcome": "先把人数、队伍、角色、模式和座位写成配置，再比较互动拓扑、总行动、市场/地图密度与角色劳动；每个修补只承担一个明确功能。",
+    "resourceIds": [
+      "goodman-multiplayer-game-spaces",
+      "daniel-player-count",
+      "amritsar-player-count-diary",
+      "root-hirelings-player-count-diary",
+      "popcorn-simultaneous-player-count-diary",
+      "dixit-three-player-rules",
+      "captain-sonar-rules",
+      "palm-of-your-hand-diary"
+    ],
+    "evidenceBoundary": "组合计算研究、设计师实践、商业产品一手日志和官方规则；它们支持识别配置、非线性总行动、功能性 dummy、角色合并与同步重构，不提供最佳人数、缩放公式、可接受等待秒数、社区偏好比例或跨人数体验等价。"
+  },
+  "resources": [
+    {
+      "id": "goodman-multiplayer-game-spaces",
+      "title": "Visualising Multiplayer Game Spaces",
+      "creator": "James Goodman / Diego Perez-Liebana / Simon Lucas",
+      "href": "https://arxiv.org/abs/2202.05773",
+      "type": "不同玩家人数的计算游戏空间研究",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "比较 8 款已实现桌游在 2、3、4 人和不同计算对手下的游戏树与搜索特征，说明人数变化没有跨游戏一致效应，并区分特征显著变化与相对稳定的游戏。",
+      "limitation": "研究对象是计算代理、MCTS 参数和 8 个 TAG 实现，不测人类乐趣、社交、教学或身体经验，也不提供最佳人数与缩放公式。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "daniel-player-count",
+      "title": "Player Count",
+      "creator": "Daniel Piechnick",
+      "href": "https://www.daniel.games/player-count/",
+      "type": "玩家人数范围设计师实践",
+      "evidenceType": "designer_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "最小原型",
+        "呈现与发布"
+      ],
+      "useful": "把人数范围与测试可达性、局长、互动、团队、同步行动、组件成本和出版吸引力放在一起，并用 Radlands 说明扩人数可能伤害原本的两人核心。",
+      "limitation": "具体人数建议、市场判断和先测两人的流程是作者个人专业启发式；单个成功产品轶事不能成为行业门槛。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "amritsar-player-count-diary",
+      "title": "Designer Diary: Amritsar: The Golden Temple",
+      "creator": "David Heras Pino / Ludonova",
+      "href": "https://svarogsden.com/designer-diary-amritsar-the-golden-temple/",
+      "type": "局外行动与两人缩放设计日志",
+      "evidenceType": "first_party_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "记录主要在三人局开发后，两人与四人暴露区域完成度和兴趣问题；按人数改变神庙空间，并以第三方工人恢复两人局缺失的局外跟随触发。",
+      "limitation": "单个已发行游戏的回顾日志；作者所说的近似指数变化是该局外行动结构的描述，不是数学模型或跨游戏规律。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "root-hirelings-player-count-diary",
+      "title": "Root: The Marauder Expansion Designer Diary 4 — Hirelings Galore",
+      "creator": "Cole Wehrle / Leder Games",
+      "href": "https://ledergames.com/blogs/news/root-the-marauder-expansion-designer-diary-4-hirelings-galore",
+      "type": "两人生态与跨人数失败设计日志",
+      "evidenceType": "first_party_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "说明同样规则下两人局因缺少第三方而更接近零和、地图生态过空和早期击倒；也记录两人可用的影响力竞价怎样在更高人数破坏数量与流程。",
+      "limitation": "高度非对称战争游戏与扩展开发语境；不能推出所有三人局会自平衡、所有两人局都需中立势力或具体骰子缩放。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "popcorn-simultaneous-player-count-diary",
+      "title": "Victor Saumont's Designer Diary for Popcorn",
+      "creator": "Victor Saumont / IELLO",
+      "href": "https://iellogames.com/victor-saumonts-designer-diary-for-popcorn/",
+      "type": "高人数等待与同步行动设计日志",
+      "evidenceType": "first_party_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "记录为降低四人等待改成同时行动后，建造被移到轮间、口碑动作增加广告板，并把时间改善与时机、组件和信息重构连在一起。",
+      "limitation": "单个商业开发日志，作者所述接近减半没有对照数据；不能证明同时行动普遍更短、更公平或更易学。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "dixit-three-player-rules",
+      "title": "Dixit Disney Rulebook — Playing with 3 Players",
+      "creator": "Jean-Louis Roubira / Libellud",
+      "href": "https://cdn.svc.asmodee.net/production-libellud/uploads/2023/07/DIXIT_DISNEY_RULES_EN_HD-1.pdf",
+      "type": "三人候选信息缩放官方规则",
+      "evidenceType": "official_documentation",
+      "format": "pdf",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "规则与信息"
+      ],
+      "useful": "三人局让每名非讲述者各出两张图，使谜题仍显示五张候选；清楚展示缩放可以保存候选与干扰信息量，而非模拟一个完整玩家。",
+      "limitation": "官方规则只能证明这一版本怎样运行，不能解释开发过程、玩家偏好或五张候选对其他推理游戏的效果。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "captain-sonar-rules",
+      "title": "Captain Sonar Rulebook",
+      "creator": "Matagot / Roberto Fraga & Yohan Lemonnier",
+      "href": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Captain%20Sonar.pdf",
+      "type": "实时与回合制官方规则",
+      "evidenceType": "first_party_practice",
+      "format": "book",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "同一核心系统明确提供实时与回合制，并把首局、噪声和少人数职责合并连接到不同节奏选择。",
+      "limitation": "规则书只证明版本结构和官方建议存在，不能证明两种模式体验等价、无障碍，或都适合具体玩家与场地。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "palm-of-your-hand-diary",
+      "title": "Designer Diary: In the Palm of Your Hand",
+      "creator": "Timothée Decroix / Hachette Boardgames",
+      "href": "https://www.hachetteboardgames.com/blogs/infos/designer-diary-in-the-palm-of-your-hand",
+      "type": "设计日志",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "从“机制能否直接承载情绪与记忆”这一媒介问题出发，而不只从题材或机制清单出发。",
+      "limitation": "单一创新型作品案例，方法的可复制性需要更多案例交叉验证。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-13"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "goodman-multiplayer-game-spaces",
+      "useModes": [
+        "learn",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "反驳跨游戏统一缩放假设，并理解两人零和理论不能直接覆盖三人以上的第三方与合作环境。",
+      "doNotUseFor": "不要从计算代理结果推导人类乐趣、最佳人数、体验等价或通用缩放公式。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "daniel-player-count",
+      "useModes": [
+        "learn",
+        "compare",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "把人数范围与测试、局长、互动、组件成本和产品承诺放在一起，并讨论何时不要扩人数。",
+      "doNotUseFor": "不要把 2–4、先测两人或更高人数处理方式当行业定律、出版保证或玩家比例。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "amritsar-player-count-diary",
+      "useModes": [
+        "case_study",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "检查局外行动怎样让总机会非线性增长，并把低人数第三方工人绑定到缺失的跟随触发。",
+      "doNotUseFor": "不要移植神庙空间数、第三方工人或把近似指数描述当数学规律。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "root-hirelings-player-count-diary",
+      "useModes": [
+        "case_study",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "观察同规则下互动拓扑、地图生态、落后恢复和竞价流程为何会在两人与多人间改变。",
+      "doNotUseFor": "不要假定第三方总会纠正领先、两人都需中立势力，或复制该扩展的骰子与能力缩放。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "popcorn-simultaneous-player-count-diary",
+      "useModes": [
+        "case_study",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "把同时行动视为时机、冲突、信息和组件的结构重构，而不是免费的高人数加速开关。",
+      "doNotUseFor": "不要引用该项目接近减半的局长作为其他游戏的预测或同步行动效果证明。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "dixit-three-player-rules",
+      "useModes": [
+        "case_study",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "理解低人数缩放可直接补候选与干扰信息量，而不必模拟完整玩家。",
+      "doNotUseFor": "不要把五张候选、每人两张或该计分结构直接迁移到其他推理与社交游戏。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "captain-sonar-rules",
+      "useModes": [
+        "learn",
+        "compare",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "restricted",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "比较同一角色系统在实时与回合制下怎样改变节奏、职责合并、噪声条件和首局学习。",
+      "doNotUseFor": "不要把官方建议写成两种模式体验等价或无障碍通过，也不要复制规则书文字与版式。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "palm-of-your-hand-diary",
+      "useModes": [
+        "case_study"
+      ],
+      "audienceLevels": [
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "观察触觉动作、叙事表达与玩家关系如何共同成为核心体验。",
+      "doNotUseFor": "不要把依赖触觉和表演的独特案例直接转成普遍机制准则。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    }
+  ]
+}

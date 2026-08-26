@@ -1,0 +1,143 @@
+{
+  "schemaVersion": 1,
+  "principle": "抽牌只负责改变观察角度。保留体验意图，一次改变一个系统关系，再用行为预测和测试问题决定这条路是否值得继续。",
+  "evidenceBoundary": "本站没有证据证明抽卡比自由构思产生更好的游戏。所有提示均为项目原创，只能生成待验证假设；随机组合、保存次数和完成表单都不是设计质量证据。",
+  "observations": [
+    {
+      "id": "observe-choice",
+      "label": "选择",
+      "prompt": "找出玩家反复面对的两个选项。它们现在是否真的因局面不同而改变价值？",
+      "conceptIds": ["meaningful-choice", "agency"]
+    },
+    {
+      "id": "observe-information",
+      "label": "信息",
+      "prompt": "找出一个决定依赖的信息。谁知道、何时知道，以及玩家能否读出它？",
+      "conceptIds": ["information-structure", "agency"]
+    },
+    {
+      "id": "observe-resource",
+      "label": "资源",
+      "prompt": "找出玩家会获得、保存或消耗的东西。它现在怎样迫使玩家放弃另一种可能？",
+      "conceptIds": ["resource", "constraint"]
+    },
+    {
+      "id": "observe-feedback",
+      "label": "反馈",
+      "prompt": "找出一次行动之后玩家实际看到、摸到或听到的变化。它是否足以解释后果？",
+      "conceptIds": ["dynamics", "observation"]
+    },
+    {
+      "id": "observe-interaction",
+      "label": "互动",
+      "prompt": "找出一名玩家的决定怎样改变另一名玩家的可选行动，而不只改变分数。",
+      "conceptIds": ["agency", "dynamics"]
+    },
+    {
+      "id": "observe-tempo",
+      "label": "节奏",
+      "prompt": "找出一次决定到看到结果之间的等待。延迟是在制造期待，还是只在消耗时间？",
+      "conceptIds": ["core-loop", "dynamics"]
+    },
+    {
+      "id": "observe-physical",
+      "label": "实体操作",
+      "prompt": "找出玩家必须拿取、排列、隐藏或跨桌查看的动作。它服务体验，还是制造无意障碍？",
+      "conceptIds": ["prototype-fidelity", "accessibility-task"]
+    },
+    {
+      "id": "observe-theme",
+      "label": "主题映射",
+      "prompt": "找出一条规则中的行动和后果。它让玩家理解主题关系，还是只有题材命名？",
+      "conceptIds": ["theme", "mechanic", "experience-intent"]
+    }
+  ],
+  "moves": [
+    {
+      "id": "move-remove",
+      "label": "删除",
+      "prompt": "暂时删掉一个步骤、选项或资源，观察原本被它遮住的决定是否更清楚。",
+      "conceptIds": ["mechanic", "prototype"]
+    },
+    {
+      "id": "move-delay",
+      "label": "延迟",
+      "prompt": "让一次收益、信息或代价晚一轮出现，并明确玩家现在能否预见它。",
+      "conceptIds": ["dynamics", "information-structure"]
+    },
+    {
+      "id": "move-reveal",
+      "label": "公开",
+      "prompt": "把一项原本隐藏的信息公开，观察决定是变得更有计划，还是失去必要的不确定性。",
+      "conceptIds": ["information-structure", "meaningful-choice"]
+    },
+    {
+      "id": "move-transfer",
+      "label": "交换控制",
+      "prompt": "把一项由系统或当前玩家控制的决定交给另一名玩家，并写清他们承担什么后果。",
+      "conceptIds": ["agency", "dynamics"]
+    },
+    {
+      "id": "move-cap",
+      "label": "设置上限",
+      "prompt": "为一个可以累积的资源、行动或优势设置低上限，迫使玩家更早使用或放弃。",
+      "conceptIds": ["resource", "constraint"]
+    },
+    {
+      "id": "move-invert",
+      "label": "反转目标",
+      "prompt": "选一个局部目标，让原本越多越好的东西在某个条件下变成负担。",
+      "conceptIds": ["goal", "meaningful-choice"]
+    },
+    {
+      "id": "move-share",
+      "label": "共享代价",
+      "prompt": "让一名玩家的收益同时创造别人必须处理的成本，观察互动是否因此变得可读。",
+      "conceptIds": ["resource", "agency", "dynamics"]
+    },
+    {
+      "id": "move-embody",
+      "label": "变成动作",
+      "prompt": "把一个数字或文字状态暂时改成摆放、翻转、堆叠或移动，检查实体动作是否真的传达关系。",
+      "conceptIds": ["mechanic", "prototype-fidelity", "accessibility-task"]
+    }
+  ],
+  "boundaries": [
+    {
+      "id": "boundary-three-decisions",
+      "label": "三个决定",
+      "prompt": "原型只运行到目标决定出现三次；之后立即停止记录。",
+      "conceptIds": ["prototype", "playtest-question"]
+    },
+    {
+      "id": "boundary-two-components",
+      "label": "两类组件",
+      "prompt": "除记录纸外只使用两类组件，逼迫自己先证明关系而不是扩充内容。",
+      "conceptIds": ["prototype", "constraint"]
+    },
+    {
+      "id": "boundary-other-player",
+      "label": "必须影响别人",
+      "prompt": "改动只有在另一名玩家的可选行动发生变化时才算触发。",
+      "conceptIds": ["agency", "dynamics"]
+    },
+    {
+      "id": "boundary-no-explanation",
+      "label": "不补口头规则",
+      "prompt": "测试片段中不临时解释新规则；只记录玩家第一次偏离和他们查看的位置。",
+      "conceptIds": ["rulebook", "observation"]
+    },
+    {
+      "id": "boundary-physical-check",
+      "label": "实体复核",
+      "prompt": "必须用真实桌面尺寸和目标组件动作跑一次，不能只在线上模拟。",
+      "conceptIds": ["prototype-fidelity", "accessibility-task"]
+    },
+    {
+      "id": "boundary-novice-language",
+      "label": "新手语言",
+      "prompt": "规则改动不能只用机制名称；要写成第一次接触项目的玩家可以执行的动作。",
+      "conceptIds": ["rulebook", "player-aid"]
+    }
+  ]
+}

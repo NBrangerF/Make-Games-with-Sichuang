@@ -1,0 +1,364 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "evidence-review-change-brief",
+    "title": "把一场测试变成有边界的发现与下一版简报",
+    "question": "现场测试已经结束，但笔记、玩家建议和我的解释混在一起；怎样既不丢证据，也不让出现次数自动替我决定改什么？",
+    "outcome": "显式承接一场已完成会话，选择原事件与局后回答，写发现的条件、反证和缺失，再比较候选方案，形成保持项、单一变化轴、回退信号与下一问题。",
+    "resourceIds": [
+      "games-user-research-analysis",
+      "games-user-research-debriefing",
+      "govuk-analyse-research-session",
+      "govuk-rainbow-spreadsheet",
+      "tricorn-playtesting-with-purpose",
+      "woodard-effective-playtest",
+      "boardssey-review-results",
+      "ixdf-affinity-diagram"
+    ],
+    "evidenceBoundary": "组合游戏用户研究、英国公共服务、桌游设计师、产品帮助中心与通用 UX 分组方法；它们支持观察—发现—行动分层、来源回查、候选方案比较和复测，不提供自动洞察、严重度、频次优先级、因果证明、唯一修法或静默项目写回。"
+  },
+  "resources": [
+    {
+      "id": "games-user-research-analysis",
+      "title": "Analysing a Games User Research Study",
+      "creator": "Games User Research",
+      "href": "https://gamesuserresearch.com/analysing-a-games-user-research-study/",
+      "type": "游戏用户研究的观察整理与发现形成指南",
+      "evidenceType": "professional_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "把会话笔记复核、问题描述与严重度讨论分开，并提醒小规模质性测试中的出现次数不是可靠优先级。",
+      "limitation": "数字游戏团队语境；严重度只适用于预先约定的可用性问题分类，不能自动评定乐趣、平衡、因果或桌游市场价值。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "games-user-research-debriefing",
+      "title": "Debriefing a Study",
+      "creator": "Games User Research",
+      "href": "https://gamesuserresearch.com/debriefing-a-study/",
+      "type": "游戏用户研究的证据汇报与设计决定实践",
+      "evidenceType": "professional_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "要求报告保留版本、任务与问题语境，先沟通学到什么，再发散/收敛解决方案并安排后续验证。",
+      "limitation": "数字游戏团队与跨职能会议语境；不提供桌游个人设计师的优先级公式，也不证明推荐方案正确。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "govuk-analyse-research-session",
+      "title": "Analyse a Research Session",
+      "creator": "UK Government Digital Service",
+      "href": "https://www.gov.uk/service-manual/user-research/analyse-a-research-session",
+      "type": "用户研究观察、发现与行动分层分析指南",
+      "evidenceType": "institutional_guidance",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "要求一条笔记只保留一个观察，再把相关观察分组；发现与后续行动另写，保持来源可回查。",
+      "limitation": "英国公共服务团队流程，不提供桌游版本决策公式，也不代替本地隐私、伦理或领域审查。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "govuk-rainbow-spreadsheet",
+      "title": "How a Spreadsheet Can Make Usability Analysis Faster and Easier",
+      "creator": "UK Government Digital Service",
+      "href": "https://userresearch.blog.gov.uk/2019/09/13/how-a-spreadsheet-can-make-usability-analysis-faster-and-easier/",
+      "type": "跨参与者证据矩阵与团队分析案例",
+      "evidenceType": "institutional_guidance",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "用参与者列与观察行维持证据来源，并警告大量相似笔记会让团队高估某问题的重要性。",
+      "limitation": "政府服务的可用性研究案例；矩阵颜色和出现人数只能帮助导航，不能证明桌游严重度、群体比例或唯一修法。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "tricorn-playtesting-with-purpose",
+      "title": "Playtesting with Purpose",
+      "creator": "Tricorn Games",
+      "href": "https://www.tricorngames.com/designer-blog/2017/8/26/playtesting-with-purpose",
+      "type": "桌游设计师的现场笔记与问题转译实践",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "示范记录游戏版本、日期、参与经验、座位、测试目的，并把问题、评论、想法和观察连接到具体玩家与重复事件。",
+      "limitation": "单一设计师流程和案例；重复提问次数可帮助定位可见性问题，但不能自动成为严重度或通用阈值。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "woodard-effective-playtest",
+      "title": "Running an Effective Play Test",
+      "creator": "Daniel Woodard",
+      "href": "https://woodar.dj/blog/running-an-effective-play-test/",
+      "type": "桌游设计师的跨会话笔记综合实践",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "建议沿整局与多场笔记寻找共同问题，保留测试者语境，避免只按相反口味在版本间来回摆动。",
+      "limitation": "个人设计实践，没有提供适用于所有类型、样本与阶段的聚类阈值、严重度量表或最优版本规则。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "boardssey-review-results",
+      "title": "Review Playtest Results",
+      "creator": "Boardssey",
+      "href": "https://learn.boardssey.com/en/articles/15044774-review-playtest-results",
+      "type": "桌游测试结果与项目任务连接指南",
+      "evidenceType": "professional_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "把有效、无效、想改变和仍不确定的内容分开，再显式决定是否把结果连接为项目任务。",
+      "limitation": "产品帮助中心流程且带商业工具语境；字段和任务连接不证明分析正确，也不能替代来源证据与反例。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "ixdf-affinity-diagram",
+      "title": "Affinity Diagrams",
+      "creator": "Interaction Design Foundation",
+      "href": "https://ixdf.org/literature/topics/affinity-diagrams",
+      "type": "亲和图证据分组方法概览",
+      "evidenceType": "teaching_curation",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "说明怎样把单一观察写成独立便签、从资料中形成分组并保留参与者语言，适合人工发现模式。",
+      "limitation": "通用 UX 教学概览；亲和分组依赖分析者判断，不产生统计显著性、严重度、因果证明或自动产品决定。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "games-user-research-analysis",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "从会话笔记形成有来源的可用性发现，并把次数、描述和严重度判断分开。",
+      "doNotUseFor": "小样本频次不能估计群体比例，数字游戏严重度也不能直接替代桌游设计判断。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "games-user-research-debriefing",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "先汇报版本化证据，再分开发散解决方案、收敛决定和下一轮验证。",
+      "doNotUseFor": "团队会议流程不能自动给个人桌游项目排优先级，也不能保证建议可行。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "govuk-analyse-research-session",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "broad",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "把单条观察、归组、发现与后续行动拆成可追踪的不同层。",
+      "doNotUseFor": "公共服务团队方法不能决定桌游严重度、版本优先级或隐私合规。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "govuk-rainbow-spreadsheet",
+      "useModes": [
+        "learn",
+        "case_study",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "用证据矩阵回查不同参与者，并提醒分析者不要把便签数量当重要性。",
+      "doNotUseFor": "颜色、行数和参与者人数不证明严重度、统计比例或改动有效。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "tricorn-playtesting-with-purpose",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "记录版本、目的、玩家经验、座位与重复问题，再把建议还原为可能的问题。",
+      "doNotUseFor": "不要把重复次数直接换成严重度或把作者案例外推为所有桌游可见性规则。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "woodard-effective-playtest",
+      "useModes": [
+        "learn",
+        "case_study",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "沿整局与多场资料寻找共同问题，同时保留不同测试者的口味与经验语境。",
+      "doNotUseFor": "个人实践不提供自动聚类、严重度量表或最佳版本选择公式。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "boardssey-review-results",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "把有效、无效、改变与未确定分开，并显式决定是否连接为项目下一步。",
+      "doNotUseFor": "商业工具字段和任务连接不证明分析正确，也不能自动生成待办。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "ixdf-affinity-diagram",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "broad",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "把一条观察写成一张便签，再人工归组并保留参与者原意。",
+      "doNotUseFor": "亲和分组依赖判断，不生成统计显著性、严重度、原因或产品决定。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    }
+  ]
+}

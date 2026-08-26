@@ -1,0 +1,17 @@
+{
+  "assetId": "luozhuo-home-banner-image2",
+  "title": "落桌首页功能横幅主视觉",
+  "generator": "OpenAI Image 2 via Codex imagegen",
+  "generatedAt": "2026-08-24",
+  "sourceFile": "design/assets/brand/luozhuo-home-banner-image2.png",
+  "sourceDimensions": "2048x768",
+  "sourceSha256": "a37af588471f748d583fb52929887c89f4411d29f07e8ec358b1d26d64bd07c1",
+  "runtimeFiles": [
+    "public/assets/brand/luozhuo-home-banner-image2-1600.webp",
+    "public/assets/brand/luozhuo-home-banner-image2-960.webp",
+    "public/assets/brand/luozhuo-home-banner-image2-640.webp"
+  ],
+  "rights": "AI-generated original asset for this project; contains no requested logos, trademarks or recognizable commercial game artwork.",
+  "alt": "桌面上排列着规则草图、木制棋子、卡牌和路径标记，呈现从问题到原型的设计过程",
+  "promptSummary": "Overhead premium editorial photograph of an original tabletop prototype progressing from cards and diagrams to a playable loop; cool white, silver-gray, ink navy and cobalt with restrained red and yellow; no people, logos, readable words or commercial game artwork."
+}

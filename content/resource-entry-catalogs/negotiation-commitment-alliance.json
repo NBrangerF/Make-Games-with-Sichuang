@@ -1,0 +1,382 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "negotiation-commitment-alliance",
+    "title": "诊断谈判、承诺、交易与联盟",
+    "question": "规则只写‘玩家可以自由交易和结盟’，结果没人谈、谈太久、承诺争议、强势玩家垄断报价，或联盟突然决定终局；我该强制守约、做承诺牌还是限制交流？",
+    "outcome": "先列筹码与外部选项，再画报价到违约的生命周期；拆约束条款、联盟第三方与退出，最后只改变一项结算、记录或渠道规则。",
+    "resourceIds": [
+      "wehrle-quid-for-quo",
+      "ti4-deals-rules",
+      "kings-struggle-deals-rules",
+      "crescent-moon-negotiation-diary",
+      "diplomacy-official-rules",
+      "chinatown-accessibility-teardown",
+      "crabb-heron-communication-challenges",
+      "smith-promises-punishment"
+    ],
+    "evidenceBoundary": "组合设计师实践、正式规则案例、承诺与联盟实验、在线谈判/关系研究、四场社交桌游沟通研究和无障碍长评；它们支持写筹码、交易生命周期、约束时机、违约成本、第三方、联盟退出与谈判渠道，不提供最佳谈判时长、对象数、约束比例、守约率、联盟规模、信誉惩罚、背叛频率或私聊政策。"
+  },
+  "resources": [
+    {
+      "id": "wehrle-quid-for-quo",
+      "title": "Quid for your Quo",
+      "creator": "Cole Wehrle / Wehrlegig Games",
+      "href": "https://wehrlegig.com/blogs/essays/quid-for-your-quo",
+      "type": "设计师谈判机制日志",
+      "evidenceType": "designer_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "用 John Company 二版说明谈判需要可交换价值、否决与同意边界、有限参与范围和可收束的终局节奏。",
+      "limitation": "单一商业项目的设计回顾；具体限制服务该游戏的结构，不能直接变成所有谈判游戏的处方。",
+      "status": "article_level",
+      "lastCheckedAt": "2026-08-17"
+    },
+    {
+      "id": "ti4-deals-rules",
+      "title": "Twilight Imperium 4 Rules: Deals",
+      "creator": "TI4 Rules Reference community mirror",
+      "href": "https://www.yjmrobert.com/tirules/rules/r_deals/",
+      "type": "立即交易与未来承诺约束规则",
+      "evidenceType": "official_or_rules_reference",
+      "format": "rules",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "规则与信息"
+      ],
+      "useful": "清楚区分能立即完成的约束交易与未来行为的非约束交易，并给出行动卡、投票、掷骰前后等例子。",
+      "limitation": "第三方规则汇编而非本轮取得的官方 PDF，且分类服务于 TI4 时序；使用时应回查当前官方版本。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "kings-struggle-deals-rules",
+      "title": "King's Struggle Rulebook",
+      "creator": "Robert Burke Games",
+      "href": "https://gusandco.net/wp-content/uploads/2018/12/KS_Rules-ONLINE.pdf",
+      "type": "混合约束条款与未来承诺规则书",
+      "evidenceType": "official_or_rules_reference",
+      "format": "rules",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "规则与信息"
+      ],
+      "useful": "用完整例子展示同一交易可同时含立即约束和未来非约束条款，以及第三方如何用新报价改变未来履行。",
+      "limitation": "单一成品规则案例，不含行为数据；不能证明混合条款更公平、易懂或适合其他时序。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "crescent-moon-negotiation-diary",
+      "title": "Crescent Moon — Design Diary 3: The Gameplay",
+      "creator": "Steve Mathers / Osprey Games",
+      "href": "https://www.ospreypublishing.com/uk/osprey-blog/2022/crescent-moon-design-diary-3-the-gameplay/",
+      "type": "非零和计分与情境联盟设计日志",
+      "evidenceType": "first_party_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "展示非对称计分与可共存位置怎样形成互利但情境化的联盟，使背叛不再是唯一结构终点。",
+      "limitation": "单个商业项目的设计师解释，没有隔离计分、角色、地图和玩家经验；不能推出联盟或背叛频率。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "diplomacy-official-rules",
+      "title": "Diplomacy: The Game of International Intrigue",
+      "creator": "Avalon Hill / Hasbro",
+      "href": "https://www.hasbro.com/common/instruct/diplomacy.pdf",
+      "type": "外交、秘密命令、同时揭示与限时官方规则",
+      "evidenceType": "official_or_rules_reference",
+      "format": "rules",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "规则与信息",
+        "测试与反馈"
+      ],
+      "useful": "把外交谈判、秘密写单、同时揭示、调整和禁止交流的窗口分开，并提供时长与新手教学操作建议。",
+      "limitation": "官方规则说明的是一个经典作品，不验证建议时长的无障碍或普适效果，也不能代表所有谈判渠道。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "chinatown-accessibility-teardown",
+      "title": "Chinatown Accessibility Teardown",
+      "creator": "Michael Heron / Meeple Like Us",
+      "href": "https://www.meeplelikeus.co.uk/chinatown-1999-accessibility-teardown/",
+      "type": "同时交易、情绪与沟通无障碍长评",
+      "evidenceType": "expert_review",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "最小原型",
+        "测试与反馈",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "具体拆解并行报价、棋盘扫描、快速反驳、隐蔽价值、社会排斥、长谈和身体/感官条件如何交叉影响参与。",
+      "limitation": "单一评者针对一个版本的启发式长评，虽采用 CC BY 4.0 也不能代表所有残障玩家或给出发生率。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "crabb-heron-communication-challenges",
+      "title": "Communication Challenges in Social Board Games",
+      "creator": "Michael Crabb & Michael Heron",
+      "href": "https://research.chalmers.se/en/publication/536430",
+      "type": "社交桌游沟通无障碍质性研究",
+      "evidenceType": "academic_direct",
+      "format": "paper",
+      "access": "abstract",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "以四场社交游戏观察提出语速与表达、观看位置、权力平衡、访问策略和对他人觉察等测试主题。",
+      "limitation": "本轮只取得摘要，且四场质性会话样本小；不能提供困难比例或最佳谈判节奏。",
+      "status": "abstract_level",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "smith-promises-punishment",
+      "title": "Promises and Punishment",
+      "creator": "Alec Smith et al. / Journal of Economic Behavior & Organization",
+      "href": "https://www.sciencedirect.com/science/article/pii/S0167268126002726",
+      "type": "承诺、信任预期与代价性惩罚实验",
+      "evidenceType": "academic_adjacent",
+      "format": "paper",
+      "access": "abstract",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "测量消息前后信念，支持把承诺、提高的履行预期、违约与代价性惩罚分开观察。",
+      "limitation": "2026 年实验信任任务和单次预先消息不能直接泛化到同桌多人游戏、长期信誉或情绪安全。",
+      "status": "abstract_level",
+      "lastCheckedAt": "2026-08-20"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "wehrle-quid-for-quo",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "检查谈判是否有真实杠杆、可交换后果、同意边界和终局收束机制。",
+      "doNotUseFor": "不要照搬 John Company 的交易限制或节奏结构到所有谈判游戏。",
+      "reviewedAt": "2026-08-17",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "ti4-deals-rules",
+      "useModes": [
+        "learn",
+        "lookup",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "比较立即可履行、未来行动、随机结果和投票承诺怎样被分成约束与非约束。",
+      "doNotUseFor": "规则镜像需回查官方现行版本，也不能当作所有游戏的合约标准。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "kings-struggle-deals-rules",
+      "useModes": [
+        "learn",
+        "case_study",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "看同一报价如何拆成立即约束和未来非约束部分，并由第三方再次交易改变。",
+      "doNotUseFor": "成品规则案例没有比较测试，不能宣称混合条款更公平或易学。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "crescent-moon-negotiation-diary",
+      "useModes": [
+        "learn",
+        "case_study",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "比较零和冲突与非对称计分怎样支持互利、共存和情境联盟。",
+      "doNotUseFor": "不要从一篇项目日志估计玩家背叛、合作或偏好比例。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "diplomacy-official-rules",
+      "useModes": [
+        "learn",
+        "lookup",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "拆分谈判、秘密提交、同时揭示、禁谈窗口和时间管理。",
+      "doNotUseFor": "经典作品的时间建议不是无障碍验证或通用谈判时长。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "chinatown-accessibility-teardown",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "reusable_license_verified",
+      "commercialContext": "unknown",
+      "bestFor": "把同时谈判的视觉扫描、速度、表达、情绪、排斥与桌面条件转成可用性任务。",
+      "doNotUseFor": "单一评者和单一版本不能代表残障玩家总体或评价游戏质量。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "crabb-heron-communication-challenges",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "metadata_only",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "观察语速、表达、位置、访问策略、权力平衡与群体引导。",
+      "doNotUseFor": "四场质性会话和摘要不能给发生率、最佳节奏或完整干预方案。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "smith-promises-punishment",
+      "useModes": [
+        "learn",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "advanced"
+      ],
+      "reviewDepth": "metadata_only",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "narrow",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "分开消息、预期、信任、违约与代价性惩罚的测量。",
+      "doNotUseFor": "实验信任游戏不能给桌游背叛频率、惩罚值或情绪安全结论。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    }
+  ]
+}

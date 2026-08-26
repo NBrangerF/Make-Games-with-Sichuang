@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "id": "tabletop-resource-contribution-package",
+  "principle": "参与、保存、引用公开与公共许可是四个独立决定；默认只允许离线内部审阅。",
+  "allowedValues": {
+    "status": ["draft", "participation_confirmed", "under_review", "publication_candidate", "published", "withdrawn"],
+    "contributionType": ["player_experience", "design_log", "course_reflection", "resource_correction", "accessibility_task_record", "production_case"],
+    "identityMode": ["anonymous", "pseudonym", "named", "collective"],
+    "role": ["lived_experience", "design_practice", "conceptualization", "investigation", "data_curation", "analysis", "validation", "translation_or_communication_support", "writing", "review_editing", "community_liaison"],
+    "participationChoice": ["not_decided", "declined", "agreed"],
+    "storageChoice": ["not_decided", "session_only", "until_review_complete", "until_date"],
+    "publicationMode": ["review_only", "link_and_summary", "approved_excerpt", "cc_by_4_0"],
+    "quoteChoice": ["no_quotes", "anonymous_approved_quotes_only", "attributed_approved_quotes_only"],
+    "mediaChoice": ["none", "approved_still_images_only", "approved_audio_only", "approved_video_only"],
+    "editorialStatus": ["not_reviewed", "needs_clarification", "rights_review", "safeguarding_review", "contributor_review", "approved", "rejected", "withdrawn"],
+    "evidenceClassification": ["unclassified", "first_person", "co_analyzed_first_person", "design_practice_record", "institutional_account", "editorial_inference"]
+  },
+  "publicationCandidateRequires": [
+    "consent.participationChoice=agreed",
+    "consent.informationVersion non-empty",
+    "consent.withdrawalExplained=true",
+    "consent.canSkip=true",
+    "consent.canStop=true",
+    "rights.contributorConfirmsAuthority=true",
+    "review.finalPublicCopyPresent=true",
+    "review.contributorApprovalRecorded=true",
+    "review.scopeAndLimitsPresent=true",
+    "privacy.publicFieldsReviewed=true",
+    "withdrawal.lookupKeyPresent=true"
+  ],
+  "conditionalRules": [
+    "publicationMode is never preselected beyond review_only",
+    "cc_by_4_0 requires ccIrrevocabilityExplained and explicitLicenseApproval",
+    "quotes require quote-specific approval in the final public copy",
+    "media require media-specific approval and a rights record for every item",
+    "third-party material requires a source and publication basis for every item",
+    "minorOrAdditionalSafeguardingNeeds blocks publication_candidate unless professionalReviewRecorded, guardianConsentRecorded when applicable, and participantAssentRecorded are all true",
+    "contact details and raw consent evidence must not appear in the shareable package"
+  ],
+  "noAggregateScore": true,
+  "notLegalOrEthicsApproval": true,
+  "publicSubmissionEnabled": false
+}

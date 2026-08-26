@@ -1,0 +1,384 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "auction-value-discovery",
+    "title": "诊断竞价、拍卖与价值发现",
+    "question": "玩家不知道该出多少、成交价失控、有人只抬价、并列和流拍临时协商，或拍卖吞掉整款游戏；我该换暗标、二价、储备价还是限制预算？",
+    "outcome": "先拆标的、价值与信息，再写完整竞价、分配、支付、资金流和边界协议；分开估值、报价、支付与兑现，只改一个字段复测。",
+    "resourceIds": [
+      "modern-art-official-rules",
+      "high-society-official-rules",
+      "medici-auction-interview",
+      "yale-auction-lecture",
+      "thaler-winners-curse",
+      "high-society-accessibility-teardown",
+      "reserve-price-collusion-experiment",
+      "reddit-auction-valuation"
+    ],
+    "evidenceBoundary": "组合正式规则、设计师访谈、拍卖课程与综述、实验/田野研究、无障碍长评和玩家症状；它们支持写价值类型、完整协议、资金流、边界状态、反馈和任务负担，不提供最佳拍卖形式、起价、加价、预算、储备价、次数、耗时、合谋率或玩家偏好。"
+  },
+  "resources": [
+    {
+      "id": "modern-art-official-rules",
+      "title": "Modern Art Official Rulebook",
+      "creator": "Reiner Knizia / CMON",
+      "href": "https://www.cmon.com/wp-content/uploads/2023/06/MA_Rulebbok_Artbook_v18-low.pdf",
+      "type": "五种竞价、卖方资金流与内生市场官方规则",
+      "evidenceType": "official_or_rules_reference",
+      "format": "rules",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "规则与信息",
+        "测试与反馈"
+      ],
+      "useful": "在同一经济里展示公开升价、一次报价、暗标、固定价与双件拍卖，以及卖家、银行、市场排名和跨轮价值的连接。",
+      "limitation": "正式规则能证明协议如何执行，不能证明某种形式普遍更有趣、公平或适合新手。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "high-society-official-rules",
+      "title": "High Society Official Rulebook",
+      "creator": "Reiner Knizia / Osprey Games",
+      "href": "https://www.ospreypublishing.com/media/1fohbutt/hisoc_rulebook_for_web.pdf",
+      "type": "不可撤回面额、正负竞价与贫者淘汰官方规则",
+      "evidenceType": "official_or_rules_reference",
+      "format": "rules",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "规则与信息",
+        "测试与反馈"
+      ],
+      "useful": "对比正面拍品赢家支付与负面拍品退出者拿牌、其余玩家全支付，并明确全员不出价、终局触发和最低资金淘汰。",
+      "limitation": "单一作品的紧缩经济和突发终局不能给出通用面额、预算或淘汰政策。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "medici-auction-interview",
+      "title": "Reiner Knizia on Auction Board Games and Medici",
+      "creator": "Reiner Knizia / Wargamer",
+      "href": "https://www.wargamer.com/medici/reiner-knizia-auction-board-games",
+      "type": "拍卖失稳、货舱约束与互动设计师访谈",
+      "evidenceType": "first_party_practice",
+      "format": "interview",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "由设计师说明拍卖怎样制造即时互动，也说明滚雪球、过价与无限收货会使系统失稳，以及有限货舱怎样约束选择。",
+      "limitation": "回顾性访谈把多项机制与开发判断放在一起，不能隔离货舱容量或竞价形式的独立因果。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "yale-auction-lecture",
+      "title": "ECON 159 Lecture 24: Auctions",
+      "creator": "Ben Polak / Open Yale Courses",
+      "href": "https://oyc.yale.edu/economics/econ-159/lecture-24",
+      "type": "价值类型、一价二价与信息揭示公开课程",
+      "evidenceType": "academic_adjacent",
+      "format": "course",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "清楚区分私人、共同和混合价值，比较公开升价、密封一价、二价和压价，并列出诚实报价与收入等价所需强假设。",
+      "limitation": "经济学课程讨论分配与收益，不直接测桌游趣味、可理解性、情绪或实体操作。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "thaler-winners-curse",
+      "title": "Anomalies: The Winner's Curse",
+      "creator": "Richard H. Thaler",
+      "href": "https://www.aeaweb.org/articles?id=10.1257%2Fjep.2.1.191&page=604",
+      "type": "共同价值、估值噪声与赢家选择效应综述",
+      "evidenceType": "academic_adjacent",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "用共同价值案例界定赢家诅咒：最乐观估计更容易获胜，因此条件于获胜的估计会偏高。",
+      "limitation": "经济拍卖综述不能把所有桌游高价、后悔或失败都解释成赢家诅咒。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "high-society-accessibility-teardown",
+      "title": "High Society Accessibility Teardown",
+      "creator": "Michael Heron / Meeple Like Us",
+      "href": "https://www.meeplelikeus.co.uk/high-society-1995-accessibility-teardown/",
+      "type": "面额组合、隐藏记忆与情绪无障碍长评",
+      "evidenceType": "expert_review",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "最小原型",
+        "测试与反馈",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "具体分析不可替换的竞价牌如何把精确算术、组合规划、他人资金记忆、未来最小加价和抬价情绪绑定在一起。",
+      "limitation": "单一评者针对一个版本的启发式长评，不能代表所有残障玩家、给出发生率或判定游戏质量。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "reserve-price-collusion-experiment",
+      "title": "Deterring Collusion with a Reserve Price: An Auction Experiment",
+      "creator": "Pacharasut Sujarittanonta & Pongsakorn Viriyavipart",
+      "href": "https://www.cambridge.org/core/journals/experimental-economics/article/abs/deterring-collusion-with-a-reserve-price-an-auction-experiment/DCA85B34E8B60950078E61C584CC736E",
+      "type": "储备价、拍前贿赂、合谋与效率实验",
+      "evidenceType": "academic_adjacent",
+      "format": "paper",
+      "access": "abstract",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "显示储备价可能同时降低拍前退出贿赂和成功合谋，并改变效率与剩余分配，适合生成多轨测试。",
+      "limitation": "摘要级一价密封实验含明确贿赂机制，不等同同桌朋友的默契压价，也不给最佳储备价。",
+      "status": "abstract_level",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "reddit-auction-valuation",
+      "title": "How to Determine Value in Auction Board Games?",
+      "creator": "r/boardgames community",
+      "href": "https://www.reddit.com/r/boardgames/comments/eyut2i",
+      "type": "估值困难、赢家诅咒与落败付费玩家讨论",
+      "evidenceType": "community_discussion",
+      "format": "discussion",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "提供玩家不知如何定价、把高价归因为赢家诅咒，以及落败者部分付费等具体症状和相反解释。",
+      "limitation": "自选社区讨论混合多种作品与术语，没有代表性、发生率或机制因果。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "modern-art-official-rules",
+      "useModes": [
+        "learn",
+        "lookup",
+        "compare",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "在同一价值系统内比较五种竞价、卖方决策、支付对象和跨轮市场。",
+      "doNotUseFor": "规则可以展示实现，不能证明任一拍卖形式普遍优越。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "high-society-official-rules",
+      "useModes": [
+        "learn",
+        "lookup",
+        "compare",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "比较赢家付费、负面全支付、固定面额、全员不出价和最低资金淘汰。",
+      "doNotUseFor": "不要把单一作品的紧缩、淘汰或突发终局当作通用拍卖处方。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "medici-auction-interview",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "理解拍卖为何容易即时互动，也为何要用库存、容量与机会成本抑制滚雪球和过价。",
+      "doNotUseFor": "不要把回顾性访谈当作货舱容量的独立实验或通用参数。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "yale-auction-lecture",
+      "useModes": [
+        "learn",
+        "lookup",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "区分价值类型并识别一价、二价、公开升价与诚实报价结论所需假设。",
+      "doNotUseFor": "经济分配课程不直接回答桌游趣味、情绪、教学或实体操作。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "thaler-winners-curse",
+      "useModes": [
+        "learn",
+        "lookup",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "给赢家诅咒加上共同价值、估值噪声和条件于获胜的选择边界。",
+      "doNotUseFor": "不要用它给所有过价、后悔、抬价或私人价值失败贴同一个标签。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "high-society-accessibility-teardown",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "reusable_license_verified",
+      "commercialContext": "unknown",
+      "bestFor": "把面额组合、不可撤回、隐藏弃牌、未来最小加价与抬价情绪转成任务观察。",
+      "doNotUseFor": "单一启发式评者不能代表残障玩家总体或给出困难发生率。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "reserve-price-collusion-experiment",
+      "useModes": [
+        "learn",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "advanced"
+      ],
+      "reviewDepth": "metadata_only",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "narrow",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "同时观察储备价对合谋、效率和剩余分配的不同影响。",
+      "doNotUseFor": "含拍前贿赂的实验不能给朋友桌的合谋概率或通用储备价。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "reddit-auction-valuation",
+      "useModes": [
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "partial",
+      "actionability": "diagnostic",
+      "transferability": "narrow",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "unknown",
+      "bestFor": "生成估值无锚、过价归因和落败付费的玩家症状测试。",
+      "doNotUseFor": "社区讨论不提供发生率、代表性或机制因果。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    }
+  ]
+}

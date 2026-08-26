@@ -1,0 +1,98 @@
+{
+  "manifestVersion": "1.0.0",
+  "policy": "The current build is internal-only. Runtime assets need an open photo license, an explicit depicted-work note, and useScope=internal-only. A future public build must run a new rights review.",
+  "assets": [
+    {
+      "id": "catan",
+      "gameTitle": "卡坦岛",
+      "runtimePath": "/assets/classic-games/catan-board-cc0.webp",
+      "width": 1200,
+      "height": 675,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Partida_Catan.jpg",
+      "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Partida_Catan.jpg",
+      "creator": "Pepenic1",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "rightsStatus": "cleared-open",
+      "useScope": "internal-only",
+      "depictedWorkStatus": "open-photo-with-identifiable-commercial-game",
+      "publicUseAllowed": false,
+      "sha256": "f5f8bcdeb6019b31b02ee51c2948850f5461b48a78e6cf23e13ab9ee721f8f1d",
+      "cropUse": "首页视觉标本；1200×675 WebP；CSS 可作居中横向裁切",
+      "modified": true,
+      "modifications": [
+        "由来源 JPEG 转换为 WebP",
+        "缩放至 1200×675；未做生成式编辑"
+      ]
+    },
+    {
+      "id": "azul",
+      "gameTitle": "花砖物语",
+      "runtimePath": "/assets/classic-games/azul-table-cc0.webp",
+      "width": 1200,
+      "height": 900,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:A_four-player_game_of_the_board_game_Azul.jpg",
+      "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/A_four-player_game_of_the_board_game_Azul.jpg",
+      "creator": "Gábor Zehetmayer",
+      "license": "CC0 1.0",
+      "licenseUrl": "https://creativecommons.org/publicdomain/zero/1.0/",
+      "rightsStatus": "cleared-open",
+      "useScope": "internal-only",
+      "depictedWorkStatus": "open-photo-with-identifiable-commercial-game",
+      "publicUseAllowed": false,
+      "sha256": "c8e1eb81edf8ad32db7f1dd61786cce4c6241e216e8d0aea5b50ca75b0cfffc6",
+      "cropUse": "首页视觉标本；1200×900 WebP；CSS 可作居中方形裁切",
+      "modified": true,
+      "modifications": [
+        "由来源 JPEG 转换为 WebP",
+        "缩放至 1200×900；未做生成式编辑"
+      ]
+    },
+    {
+      "id": "ticket-to-ride",
+      "gameTitle": "车票之旅",
+      "runtimePath": "/assets/classic-games/ticket-to-ride-cc-by-2.webp",
+      "width": 1200,
+      "height": 800,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Ticket_to_Ride_(16298587785).jpg",
+      "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Ticket_to_Ride_(16298587785).jpg",
+      "creator": "Billie Grace Ward",
+      "license": "CC BY 2.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/2.0/",
+      "rightsStatus": "cleared-open",
+      "useScope": "internal-only",
+      "depictedWorkStatus": "open-photo-with-identifiable-commercial-game",
+      "publicUseAllowed": false,
+      "sha256": "9000fed45a978dea9f022c63fe96884bb2cbe93626acca13151459e5ff41953e",
+      "cropUse": "首页视觉标本；1200×800 WebP；CSS 可作路线细节横向裁切",
+      "modified": true,
+      "modifications": [
+        "由来源 JPEG 转换为 WebP",
+        "缩放至 1200×800；未做生成式编辑"
+      ]
+    },
+    {
+      "id": "carcassonne",
+      "gameTitle": "卡卡颂",
+      "runtimePath": "/assets/classic-games/carcassonne-cc-by-4.webp",
+      "width": 960,
+      "height": 1283,
+      "sourcePage": "https://commons.wikimedia.org/wiki/File:Carcassone_jogo-game.jpg",
+      "downloadUrl": "https://commons.wikimedia.org/wiki/Special:Redirect/file/Carcassone_jogo-game.jpg",
+      "creator": "L’Éclipse",
+      "license": "CC BY 4.0",
+      "licenseUrl": "https://creativecommons.org/licenses/by/4.0/",
+      "rightsStatus": "cleared-open",
+      "useScope": "internal-only",
+      "depictedWorkStatus": "open-photo-with-identifiable-commercial-game",
+      "publicUseAllowed": false,
+      "sha256": "6100efe23bbed2bff8a92af4578ce151cbfea5f86107faf2043505581559df29",
+      "cropUse": "首页视觉标本；960×1283 WebP；CSS 可作版图拼接细节纵向裁切",
+      "modified": true,
+      "modifications": [
+        "由来源 JPEG 转换为 WebP",
+        "缩放至 960×1283；未做生成式编辑"
+      ]
+    }
+  ]
+}

@@ -1,0 +1,3510 @@
+{
+  "schemaVersion": 1,
+  "principle": "这些入口来自词条与核心/专题指南中显式维护的关系，用来继续阅读或打开工作单；它们不是自动推荐、质量排名或适用于所有项目的固定顺序。",
+  "specialGuides": [
+    {
+      "id": "special-test-type-selection",
+      "title": "这轮应该怎么测试",
+      "stage": "测试与反馈"
+    },
+    {
+      "id": "special-blind-rules-test",
+      "title": "把盲测拆成四个可观察任务",
+      "stage": "规则与信息"
+    },
+    {
+      "id": "special-accessibility-task-observation",
+      "title": "用一个任务记录无障碍障碍",
+      "stage": "规则与信息"
+    },
+    {
+      "id": "special-balance-one-risk",
+      "title": "先定义这轮到底在平衡什么",
+      "stage": "核心系统"
+    },
+    {
+      "id": "special-learning-path",
+      "title": "让玩家先做对第一件事",
+      "stage": "规则与信息"
+    },
+    {
+      "id": "special-decision-trace",
+      "title": "别数选项，追一轮真实决定",
+      "stage": "核心系统"
+    },
+    {
+      "id": "special-shared-decision-observation",
+      "title": "别数谁说得多，追一次共同决定",
+      "stage": "测试与反馈"
+    },
+    {
+      "id": "special-theme-commitment-harm-review",
+      "title": "别问主题够不够浓，追它让玩家做了什么",
+      "stage": "体验意图"
+    },
+    {
+      "id": "special-production-assumption-ledger",
+      "title": "别先问一盒多少钱，先冻结一份生产假设",
+      "stage": "呈现与发布"
+    },
+    {
+      "id": "special-publishing-route-responsibility-map",
+      "title": "先别问去哪出版，先画清谁要把游戏交到谁手里",
+      "stage": "呈现与发布"
+    },
+    {
+      "id": "special-purposeful-play",
+      "title": "别急着评价，拆一局你不喜欢但有人喜欢的游戏",
+      "stage": "体验意图"
+    },
+    {
+      "id": "special-embodied-time-window",
+      "title": "别只计秒，追一次身体—时间窗口",
+      "stage": "测试与反馈"
+    },
+    {
+      "id": "special-cross-project-learning-trace",
+      "title": "别数做了几个，追一个判断怎样迁移",
+      "stage": "测试与反馈"
+    },
+    {
+      "id": "special-cross-session-follow-up",
+      "title": "别只问还想不想玩，追下一局什么真的变了",
+      "stage": "测试与反馈"
+    },
+    {
+      "id": "special-campaign-state-passport",
+      "title": "战役不是同一版多玩几局，先保存四条历史",
+      "stage": "测试与反馈"
+    },
+    {
+      "id": "special-solo-mode-contract",
+      "title": "先写单人承诺，再决定是否造一个机器人",
+      "stage": "核心系统"
+    },
+    {
+      "id": "special-player-count-configuration",
+      "title": "把“2–5 人”拆成可测试的人数配置",
+      "stage": "核心系统"
+    },
+    {
+      "id": "special-ending-contract",
+      "title": "先写结束体验，再选择终局触发器",
+      "stage": "核心系统"
+    },
+    {
+      "id": "special-randomness-contract",
+      "title": "先画随机事件前后的决定，再调概率",
+      "stage": "核心系统"
+    },
+    {
+      "id": "special-scoring-contract",
+      "title": "先写分数奖励的行为，再调分值",
+      "stage": "核心系统"
+    },
+    {
+      "id": "special-turn-structure-contract",
+      "title": "别先加同步行动，先画谁在什么时候决定",
+      "stage": "核心系统"
+    },
+    {
+      "id": "special-spatial-relationship-contract",
+      "title": "别先画世界地图，先写每条空间关系在做什么",
+      "stage": "核心系统"
+    },
+    {
+      "id": "special-negotiation-commitment-contract",
+      "title": "别先写‘可以自由谈判’，先写一句承诺怎样变成结果",
+      "stage": "核心系统"
+    },
+    {
+      "id": "special-auction-protocol-contract",
+      "title": "别先选英式还是暗标，先写赢家为什么会后悔",
+      "stage": "核心系统"
+    },
+    {
+      "id": "special-market-state-transition-contract",
+      "title": "别先写‘买一件涨一格’，先写市场记住了什么",
+      "stage": "核心系统"
+    },
+    {
+      "id": "special-resource-production-chain-contract",
+      "title": "别先调 2 木换 1 板，先追一件资源去了哪里",
+      "stage": "核心系统"
+    },
+    {
+      "id": "special-hidden-information-hand-economy-contract",
+      "title": "别先把牌扣起来，先写谁在什么时候知道什么",
+      "stage": "规则与信息"
+    },
+    {
+      "id": "special-deck-building-draw-cycle-contract",
+      "title": "别先加一张强牌，先算它什么时候第一次出现",
+      "stage": "核心系统"
+    },
+    {
+      "id": "special-card-language-effect-resolution-contract",
+      "title": "别先争哪张牌更强，先把这段效果完整走一遍",
+      "stage": "规则与信息"
+    },
+    {
+      "id": "special-card-pool-version-governance-contract",
+      "title": "别先宣布全部兼容，先让旧版玩家找到今天该用哪份文字",
+      "stage": "呈现与发布"
+    },
+    {
+      "id": "special-issue-to-system-translation",
+      "title": "别把观点贴在棋盘上，先让玩家在系统里碰到它",
+      "stage": "核心系统"
+    },
+    {
+      "id": "special-reading-to-action",
+      "title": "别把设计书读成收藏，用一个问题换一次上桌行动",
+      "stage": "体验意图"
+    }
+  ],
+  "entries": [
+    {
+      "conceptId": "experience-intent",
+      "specialGuideIds": [
+        "special-purposeful-play",
+        "special-reading-to-action"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "theme",
+      "specialGuideIds": [
+        "special-theme-commitment-harm-review"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "theme-review"
+      ]
+    },
+    {
+      "conceptId": "mechanic",
+      "specialGuideIds": [],
+      "toolIds": [
+        "core-loop"
+      ]
+    },
+    {
+      "conceptId": "dynamics",
+      "specialGuideIds": [
+        "special-purposeful-play"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "core-loop",
+      "specialGuideIds": [],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope"
+      ]
+    },
+    {
+      "conceptId": "meaningful-choice",
+      "specialGuideIds": [
+        "special-balance-one-risk",
+        "special-decision-trace"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "balance-pass",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "agency",
+      "specialGuideIds": [
+        "special-decision-trace",
+        "special-shared-decision-observation",
+        "special-theme-commitment-harm-review",
+        "special-embodied-time-window",
+        "special-campaign-state-passport",
+        "special-solo-mode-contract",
+        "special-randomness-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "decision-trace",
+        "shared-decision",
+        "theme-review"
+      ]
+    },
+    {
+      "conceptId": "information-structure",
+      "specialGuideIds": [
+        "special-accessibility-task-observation",
+        "special-learning-path",
+        "special-hidden-information-hand-economy-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "accessibility-observation",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "resource",
+      "specialGuideIds": [
+        "special-resource-production-chain-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "constraint",
+      "specialGuideIds": [],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope"
+      ]
+    },
+    {
+      "conceptId": "goal",
+      "specialGuideIds": [
+        "special-scoring-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "prototype",
+      "specialGuideIds": [],
+      "toolIds": [
+        "prototype-scope",
+        "playtest-selector"
+      ]
+    },
+    {
+      "conceptId": "prototype-fidelity",
+      "specialGuideIds": [
+        "special-test-type-selection",
+        "special-accessibility-task-observation",
+        "special-production-assumption-ledger",
+        "special-embodied-time-window"
+      ],
+      "toolIds": [
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "accessibility-observation",
+        "production-ledger",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "hypothesis",
+      "specialGuideIds": [
+        "special-test-type-selection",
+        "special-balance-one-risk",
+        "special-decision-trace",
+        "special-purposeful-play",
+        "special-cross-project-learning-trace",
+        "special-reading-to-action"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "balance-pass",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "playtest-question",
+      "specialGuideIds": [
+        "special-test-type-selection",
+        "special-cross-session-follow-up"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "playtest-type",
+      "specialGuideIds": [
+        "special-test-type-selection",
+        "special-blind-rules-test"
+      ],
+      "toolIds": [
+        "playtest-selector",
+        "teaching-path"
+      ]
+    },
+    {
+      "conceptId": "observation",
+      "specialGuideIds": [
+        "special-test-type-selection",
+        "special-blind-rules-test",
+        "special-accessibility-task-observation",
+        "special-balance-one-risk",
+        "special-learning-path",
+        "special-decision-trace",
+        "special-shared-decision-observation",
+        "special-purposeful-play",
+        "special-embodied-time-window",
+        "special-cross-project-learning-trace",
+        "special-cross-session-follow-up"
+      ],
+      "toolIds": [
+        "playtest-selector",
+        "teaching-path",
+        "accessibility-observation",
+        "balance-pass",
+        "decision-trace",
+        "shared-decision"
+      ]
+    },
+    {
+      "conceptId": "feedback",
+      "specialGuideIds": [],
+      "toolIds": [
+        "playtest-selector"
+      ]
+    },
+    {
+      "conceptId": "design-decision",
+      "specialGuideIds": [
+        "special-theme-commitment-harm-review",
+        "special-cross-project-learning-trace"
+      ],
+      "toolIds": [
+        "playtest-selector",
+        "theme-review",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "version",
+      "specialGuideIds": [
+        "special-blind-rules-test",
+        "special-balance-one-risk",
+        "special-learning-path",
+        "special-purposeful-play",
+        "special-embodied-time-window",
+        "special-cross-project-learning-trace",
+        "special-cross-session-follow-up",
+        "special-campaign-state-passport",
+        "special-player-count-configuration",
+        "special-reading-to-action"
+      ],
+      "toolIds": [
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "balance-pass",
+        "decision-trace",
+        "experience-intent"
+      ]
+    },
+    {
+      "conceptId": "rulebook",
+      "specialGuideIds": [
+        "special-blind-rules-test",
+        "special-accessibility-task-observation",
+        "special-learning-path"
+      ],
+      "toolIds": [
+        "teaching-path",
+        "playtest-selector",
+        "accessibility-observation"
+      ]
+    },
+    {
+      "conceptId": "player-aid",
+      "specialGuideIds": [
+        "special-blind-rules-test",
+        "special-accessibility-task-observation",
+        "special-learning-path"
+      ],
+      "toolIds": [
+        "teaching-path",
+        "playtest-selector",
+        "accessibility-observation"
+      ]
+    },
+    {
+      "conceptId": "accessibility-task",
+      "specialGuideIds": [
+        "special-blind-rules-test",
+        "special-accessibility-task-observation",
+        "special-shared-decision-observation",
+        "special-embodied-time-window",
+        "special-auction-protocol-contract"
+      ],
+      "toolIds": [
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "accessibility-observation",
+        "shared-decision",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "release-candidate",
+      "specialGuideIds": [
+        "special-production-assumption-ledger",
+        "special-publishing-route-responsibility-map"
+      ],
+      "toolIds": [
+        "production-ledger",
+        "route-map"
+      ]
+    },
+    {
+      "conceptId": "balance-target",
+      "specialGuideIds": [
+        "special-balance-one-risk"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "balance-pass"
+      ]
+    },
+    {
+      "conceptId": "expected-value",
+      "specialGuideIds": [
+        "special-balance-one-risk",
+        "special-randomness-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "balance-pass",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "feedback-loop",
+      "specialGuideIds": [
+        "special-balance-one-risk",
+        "special-market-state-transition-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "balance-pass",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "resource-flow",
+      "specialGuideIds": [
+        "special-balance-one-risk",
+        "special-market-state-transition-contract",
+        "special-resource-production-chain-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "balance-pass",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "onboarding",
+      "specialGuideIds": [
+        "special-learning-path"
+      ],
+      "toolIds": [
+        "teaching-path",
+        "playtest-selector"
+      ]
+    },
+    {
+      "conceptId": "teaching-path",
+      "specialGuideIds": [
+        "special-learning-path"
+      ],
+      "toolIds": [
+        "teaching-path"
+      ]
+    },
+    {
+      "conceptId": "lookup-path",
+      "specialGuideIds": [
+        "special-learning-path"
+      ],
+      "toolIds": [
+        "teaching-path"
+      ]
+    },
+    {
+      "conceptId": "teach-back",
+      "specialGuideIds": [
+        "special-learning-path"
+      ],
+      "toolIds": [
+        "teaching-path",
+        "playtest-selector"
+      ]
+    },
+    {
+      "conceptId": "decision-space",
+      "specialGuideIds": [
+        "special-decision-trace",
+        "special-solo-mode-contract",
+        "special-ending-contract",
+        "special-randomness-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "viable-option",
+      "specialGuideIds": [
+        "special-decision-trace"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "strategic-depth",
+      "specialGuideIds": [
+        "special-decision-trace",
+        "special-cross-session-follow-up"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "interaction-path",
+      "specialGuideIds": [
+        "special-decision-trace",
+        "special-shared-decision-observation",
+        "special-purposeful-play",
+        "special-embodied-time-window"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "decision-trace",
+        "shared-decision"
+      ]
+    },
+    {
+      "conceptId": "replayability",
+      "specialGuideIds": [
+        "special-decision-trace",
+        "special-cross-session-follow-up"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "variability",
+      "specialGuideIds": [
+        "special-decision-trace",
+        "special-randomness-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "shared-decision",
+      "specialGuideIds": [
+        "special-shared-decision-observation"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "shared-decision"
+      ]
+    },
+    {
+      "conceptId": "decision-substitution",
+      "specialGuideIds": [
+        "special-shared-decision-observation"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "shared-decision"
+      ]
+    },
+    {
+      "conceptId": "decision-ownership",
+      "specialGuideIds": [
+        "special-shared-decision-observation",
+        "special-player-count-configuration",
+        "special-negotiation-commitment-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "shared-decision",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "information-asymmetry",
+      "specialGuideIds": [
+        "special-shared-decision-observation",
+        "special-solo-mode-contract",
+        "special-hidden-information-hand-economy-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "playtest-selector",
+        "shared-decision",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "communication-constraint",
+      "specialGuideIds": [
+        "special-shared-decision-observation",
+        "special-negotiation-commitment-contract",
+        "special-hidden-information-hand-economy-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "shared-decision",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "negotiation-leverage",
+      "specialGuideIds": [
+        "special-shared-decision-observation",
+        "special-negotiation-commitment-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "shared-decision",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "theme-commitment",
+      "specialGuideIds": [
+        "special-theme-commitment-harm-review",
+        "special-issue-to-system-translation"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "theme-review",
+        "issue-to-system"
+      ]
+    },
+    {
+      "conceptId": "historical-abstraction",
+      "specialGuideIds": [
+        "special-theme-commitment-harm-review",
+        "special-spatial-relationship-contract",
+        "special-issue-to-system-translation"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "theme-review",
+        "decision-trace",
+        "issue-to-system"
+      ]
+    },
+    {
+      "conceptId": "playable-perspective",
+      "specialGuideIds": [
+        "special-theme-commitment-harm-review",
+        "special-issue-to-system-translation"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "theme-review",
+        "issue-to-system"
+      ]
+    },
+    {
+      "conceptId": "cultural-collaboration",
+      "specialGuideIds": [
+        "special-theme-commitment-harm-review",
+        "special-issue-to-system-translation"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "playtest-selector",
+        "theme-review",
+        "issue-to-system"
+      ]
+    },
+    {
+      "conceptId": "content-note",
+      "specialGuideIds": [
+        "special-theme-commitment-harm-review",
+        "special-campaign-state-passport"
+      ],
+      "toolIds": [
+        "teaching-path",
+        "theme-review",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "exposure-path",
+      "specialGuideIds": [
+        "special-theme-commitment-harm-review"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "theme-review"
+      ]
+    },
+    {
+      "conceptId": "exit-repair-path",
+      "specialGuideIds": [
+        "special-theme-commitment-harm-review",
+        "special-campaign-state-passport",
+        "special-ending-contract"
+      ],
+      "toolIds": [
+        "playtest-selector",
+        "teaching-path",
+        "theme-review",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "production-assumption",
+      "specialGuideIds": [
+        "special-production-assumption-ledger"
+      ],
+      "toolIds": [
+        "prototype-scope",
+        "production-ledger"
+      ]
+    },
+    {
+      "conceptId": "bill-of-materials",
+      "specialGuideIds": [
+        "special-production-assumption-ledger"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "production-ledger"
+      ]
+    },
+    {
+      "conceptId": "quote-scope",
+      "specialGuideIds": [
+        "special-production-assumption-ledger"
+      ],
+      "toolIds": [
+        "production-ledger"
+      ]
+    },
+    {
+      "conceptId": "landed-cost",
+      "specialGuideIds": [
+        "special-production-assumption-ledger"
+      ],
+      "toolIds": [
+        "production-ledger"
+      ]
+    },
+    {
+      "conceptId": "evidence-state",
+      "specialGuideIds": [
+        "special-production-assumption-ledger",
+        "special-publishing-route-responsibility-map",
+        "special-reading-to-action"
+      ],
+      "toolIds": [
+        "prototype-scope",
+        "playtest-selector",
+        "production-ledger",
+        "route-map",
+        "experience-intent"
+      ]
+    },
+    {
+      "conceptId": "pre-production-copy",
+      "specialGuideIds": [
+        "special-production-assumption-ledger"
+      ],
+      "toolIds": [
+        "playtest-selector",
+        "teaching-path",
+        "production-ledger"
+      ]
+    },
+    {
+      "conceptId": "mass-production-copy",
+      "specialGuideIds": [
+        "special-production-assumption-ledger"
+      ],
+      "toolIds": [
+        "production-ledger"
+      ]
+    },
+    {
+      "conceptId": "packout-task",
+      "specialGuideIds": [
+        "special-production-assumption-ledger"
+      ],
+      "toolIds": [
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "production-ledger"
+      ]
+    },
+    {
+      "conceptId": "publishing-route",
+      "specialGuideIds": [
+        "special-publishing-route-responsibility-map"
+      ],
+      "toolIds": [
+        "playtest-selector",
+        "teaching-path",
+        "route-map"
+      ]
+    },
+    {
+      "conceptId": "route-responsibility",
+      "specialGuideIds": [
+        "special-publishing-route-responsibility-map"
+      ],
+      "toolIds": [
+        "route-map"
+      ]
+    },
+    {
+      "conceptId": "submission-fit",
+      "specialGuideIds": [
+        "special-publishing-route-responsibility-map"
+      ],
+      "toolIds": [
+        "playtest-selector",
+        "teaching-path",
+        "route-map"
+      ]
+    },
+    {
+      "conceptId": "licensing-agreement",
+      "specialGuideIds": [
+        "special-publishing-route-responsibility-map"
+      ],
+      "toolIds": [
+        "route-map"
+      ]
+    },
+    {
+      "conceptId": "public-commitment",
+      "specialGuideIds": [
+        "special-publishing-route-responsibility-map"
+      ],
+      "toolIds": [
+        "route-map"
+      ]
+    },
+    {
+      "conceptId": "reward-fulfillment",
+      "specialGuideIds": [
+        "special-publishing-route-responsibility-map"
+      ],
+      "toolIds": [
+        "route-map"
+      ]
+    },
+    {
+      "conceptId": "inventory-exposure",
+      "specialGuideIds": [
+        "special-publishing-route-responsibility-map"
+      ],
+      "toolIds": [
+        "route-map"
+      ]
+    },
+    {
+      "conceptId": "platform-dependency",
+      "specialGuideIds": [
+        "special-publishing-route-responsibility-map"
+      ],
+      "toolIds": [
+        "teaching-path",
+        "route-map"
+      ]
+    },
+    {
+      "conceptId": "design-mode",
+      "specialGuideIds": [
+        "special-purposeful-play",
+        "special-cross-project-learning-trace"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "purposeful-play",
+      "specialGuideIds": [
+        "special-purposeful-play",
+        "special-cross-project-learning-trace",
+        "special-reading-to-action"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "subtractive-test",
+      "specialGuideIds": [
+        "special-purposeful-play"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "learning-budget",
+      "specialGuideIds": [
+        "special-purposeful-play"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "embodied-action",
+      "specialGuideIds": [
+        "special-embodied-time-window"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "time-contract",
+      "specialGuideIds": [
+        "special-embodied-time-window",
+        "special-solo-mode-contract",
+        "special-player-count-configuration",
+        "special-ending-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "action-repair",
+      "specialGuideIds": [
+        "special-embodied-time-window"
+      ],
+      "toolIds": [
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "physical-skill-curve",
+      "specialGuideIds": [
+        "special-embodied-time-window"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "design-frame",
+      "specialGuideIds": [
+        "special-cross-project-learning-trace"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "learning-extraction",
+      "specialGuideIds": [
+        "special-cross-project-learning-trace",
+        "special-cross-session-follow-up",
+        "special-reading-to-action"
+      ],
+      "toolIds": [
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace",
+        "experience-intent"
+      ]
+    },
+    {
+      "conceptId": "transfer-test",
+      "specialGuideIds": [
+        "special-cross-project-learning-trace",
+        "special-reading-to-action"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "practice-container",
+      "specialGuideIds": [
+        "special-cross-project-learning-trace"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "returning-player-track",
+      "specialGuideIds": [
+        "special-cross-session-follow-up"
+      ],
+      "toolIds": [
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "group-history",
+      "specialGuideIds": [
+        "special-cross-session-follow-up",
+        "special-campaign-state-passport"
+      ],
+      "toolIds": [
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "session-snippet",
+      "specialGuideIds": [
+        "special-cross-session-follow-up"
+      ],
+      "toolIds": [
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "actual-replay",
+      "specialGuideIds": [
+        "special-cross-session-follow-up"
+      ],
+      "toolIds": [
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "campaign-state-passport",
+      "specialGuideIds": [
+        "special-campaign-state-passport"
+      ],
+      "toolIds": [
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "revealed-content-scope",
+      "specialGuideIds": [
+        "special-campaign-state-passport"
+      ],
+      "toolIds": [
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "campaign-migration",
+      "specialGuideIds": [
+        "special-campaign-state-passport"
+      ],
+      "toolIds": [
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "campaign-catchup-method",
+      "specialGuideIds": [
+        "special-campaign-state-passport"
+      ],
+      "toolIds": [
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "state-custody",
+      "specialGuideIds": [
+        "special-campaign-state-passport"
+      ],
+      "toolIds": [
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "solo-mode-promise",
+      "specialGuideIds": [
+        "special-solo-mode-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "interaction-interface",
+      "specialGuideIds": [
+        "special-solo-mode-contract",
+        "special-turn-structure-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "dummy-player",
+      "specialGuideIds": [
+        "special-solo-mode-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "automated-opponent",
+      "specialGuideIds": [
+        "special-solo-mode-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "bot-upkeep",
+      "specialGuideIds": [
+        "special-solo-mode-contract"
+      ],
+      "toolIds": [
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "bot-information-model",
+      "specialGuideIds": [
+        "special-solo-mode-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "player-count-configuration",
+      "specialGuideIds": [
+        "special-player-count-configuration",
+        "special-ending-contract",
+        "special-turn-structure-contract",
+        "special-spatial-relationship-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "primary-player-count",
+      "specialGuideIds": [
+        "special-player-count-configuration"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "prototype-scope",
+        "playtest-selector"
+      ]
+    },
+    {
+      "conceptId": "interaction-topology",
+      "specialGuideIds": [
+        "special-player-count-configuration",
+        "special-spatial-relationship-contract",
+        "special-negotiation-commitment-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "scaling-dimension",
+      "specialGuideIds": [
+        "special-player-count-configuration"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector"
+      ]
+    },
+    {
+      "conceptId": "functional-dummy",
+      "specialGuideIds": [
+        "special-player-count-configuration"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path"
+      ]
+    },
+    {
+      "conceptId": "role-consolidation",
+      "specialGuideIds": [
+        "special-player-count-configuration"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "teaching-path"
+      ]
+    },
+    {
+      "conceptId": "session-time-breakdown",
+      "specialGuideIds": [
+        "special-ending-contract",
+        "special-turn-structure-contract"
+      ],
+      "toolIds": [
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "end-trigger",
+      "specialGuideIds": [
+        "special-ending-contract",
+        "special-scoring-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "final-round-policy",
+      "specialGuideIds": [
+        "special-ending-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "pace-shape",
+      "specialGuideIds": [
+        "special-ending-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "progress-legibility",
+      "specialGuideIds": [
+        "special-ending-contract",
+        "special-scoring-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "tail-play",
+      "specialGuideIds": [
+        "special-ending-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "concession-protocol",
+      "specialGuideIds": [
+        "special-ending-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "player-elimination",
+      "specialGuideIds": [
+        "special-ending-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "uncertainty-source",
+      "specialGuideIds": [
+        "special-randomness-contract",
+        "special-hidden-information-hand-economy-contract",
+        "special-deck-building-draw-cycle-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "randomness-loop",
+      "specialGuideIds": [
+        "special-randomness-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "random-exposure",
+      "specialGuideIds": [
+        "special-randomness-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "response-window",
+      "specialGuideIds": [
+        "special-randomness-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "mitigation-action",
+      "specialGuideIds": [
+        "special-randomness-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "outcome-randomness",
+      "specialGuideIds": [
+        "special-randomness-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "seeded-comparison",
+      "specialGuideIds": [
+        "special-randomness-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "outcome-attribution",
+      "specialGuideIds": [
+        "special-randomness-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "win-condition",
+      "specialGuideIds": [
+        "special-scoring-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "scoring-function",
+      "specialGuideIds": [
+        "special-scoring-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "scoring-event",
+      "specialGuideIds": [
+        "special-scoring-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "scoring-path",
+      "specialGuideIds": [
+        "special-scoring-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "scoring-pace",
+      "specialGuideIds": [
+        "special-scoring-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "score-visibility",
+      "specialGuideIds": [
+        "special-scoring-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "incentive-alignment",
+      "specialGuideIds": [
+        "special-scoring-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "dominant-scoring-path",
+      "specialGuideIds": [
+        "special-scoring-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "scoring-legibility",
+      "specialGuideIds": [
+        "special-scoring-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "turn-structure",
+      "specialGuideIds": [
+        "special-turn-structure-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "action-window",
+      "specialGuideIds": [
+        "special-turn-structure-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "action-economy",
+      "specialGuideIds": [
+        "special-turn-structure-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "action-granularity",
+      "specialGuideIds": [
+        "special-turn-structure-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "decision-latency",
+      "specialGuideIds": [
+        "special-turn-structure-contract"
+      ],
+      "toolIds": [
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "plan-survival",
+      "specialGuideIds": [
+        "special-turn-structure-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "mandatory-monitoring",
+      "specialGuideIds": [
+        "special-turn-structure-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "handoff-friction",
+      "specialGuideIds": [
+        "special-turn-structure-contract"
+      ],
+      "toolIds": [
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "initiative-control",
+      "specialGuideIds": [
+        "special-turn-structure-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "maintenance-function",
+      "specialGuideIds": [
+        "special-turn-structure-contract",
+        "special-resource-production-chain-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "spatial-model",
+      "specialGuideIds": [
+        "special-spatial-relationship-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "prototype-scope",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "adjacency-rule",
+      "specialGuideIds": [
+        "special-spatial-relationship-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "movement-metric",
+      "specialGuideIds": [
+        "special-spatial-relationship-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "graph-degree",
+      "specialGuideIds": [
+        "special-spatial-relationship-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "path-distance",
+      "specialGuideIds": [
+        "special-spatial-relationship-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "bottleneck",
+      "specialGuideIds": [
+        "special-spatial-relationship-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "spatial-density",
+      "specialGuideIds": [
+        "special-spatial-relationship-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "node-capacity",
+      "specialGuideIds": [
+        "special-spatial-relationship-contract",
+        "special-resource-production-chain-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "modular-layout",
+      "specialGuideIds": [
+        "special-spatial-relationship-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "map-legibility",
+      "specialGuideIds": [
+        "special-spatial-relationship-contract"
+      ],
+      "toolIds": [
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "tabletop-territory",
+      "specialGuideIds": [
+        "special-spatial-relationship-contract"
+      ],
+      "toolIds": [
+        "prototype-scope",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "negotiation-object",
+      "specialGuideIds": [
+        "special-negotiation-commitment-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "prototype-scope",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "outside-option",
+      "specialGuideIds": [
+        "special-negotiation-commitment-contract",
+        "special-auction-protocol-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "deal-lifecycle",
+      "specialGuideIds": [
+        "special-negotiation-commitment-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "binding-deal",
+      "specialGuideIds": [
+        "special-negotiation-commitment-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "prototype-scope",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "nonbinding-promise",
+      "specialGuideIds": [
+        "special-negotiation-commitment-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "conditional-promise",
+      "specialGuideIds": [
+        "special-negotiation-commitment-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "settlement-timing",
+      "specialGuideIds": [
+        "special-negotiation-commitment-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "breach-cost",
+      "specialGuideIds": [
+        "special-negotiation-commitment-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "reputation-state",
+      "specialGuideIds": [
+        "special-negotiation-commitment-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "coalition",
+      "specialGuideIds": [
+        "special-negotiation-commitment-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "alliance-exit",
+      "specialGuideIds": [
+        "special-negotiation-commitment-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "negotiation-channel",
+      "specialGuideIds": [
+        "special-negotiation-commitment-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "auction-lot",
+      "specialGuideIds": [
+        "special-auction-protocol-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "private-value",
+      "specialGuideIds": [
+        "special-auction-protocol-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "common-value",
+      "specialGuideIds": [
+        "special-auction-protocol-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "interdependent-value",
+      "specialGuideIds": [
+        "special-auction-protocol-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "bid-protocol",
+      "specialGuideIds": [
+        "special-auction-protocol-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "allocation-rule",
+      "specialGuideIds": [
+        "special-auction-protocol-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "payment-rule",
+      "specialGuideIds": [
+        "special-auction-protocol-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "first-price-auction",
+      "specialGuideIds": [
+        "special-auction-protocol-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "second-price-auction",
+      "specialGuideIds": [
+        "special-auction-protocol-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "all-pay-auction",
+      "specialGuideIds": [
+        "special-auction-protocol-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "reserve-price",
+      "specialGuideIds": [
+        "special-auction-protocol-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "bid-increment",
+      "specialGuideIds": [
+        "special-auction-protocol-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "winners-curse",
+      "specialGuideIds": [
+        "special-auction-protocol-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "bid-shading",
+      "specialGuideIds": [
+        "special-auction-protocol-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "auction-feedback",
+      "specialGuideIds": [
+        "special-auction-protocol-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "market-state",
+      "specialGuideIds": [
+        "special-market-state-transition-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "market-slot",
+      "specialGuideIds": [
+        "special-market-state-transition-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "restock-protocol",
+      "specialGuideIds": [
+        "special-market-state-transition-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "restock-cadence",
+      "specialGuideIds": [
+        "special-market-state-transition-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "market-rotation",
+      "specialGuideIds": [
+        "special-market-state-transition-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "stale-market",
+      "specialGuideIds": [
+        "special-market-state-transition-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "demand-signal",
+      "specialGuideIds": [
+        "special-market-state-transition-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "supply-signal",
+      "specialGuideIds": [
+        "special-market-state-transition-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "price-movement",
+      "specialGuideIds": [
+        "special-market-state-transition-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "price-timing",
+      "specialGuideIds": [
+        "special-market-state-transition-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "stockout",
+      "specialGuideIds": [
+        "special-market-state-transition-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "oversupply",
+      "specialGuideIds": [
+        "special-market-state-transition-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "inventory-holding",
+      "specialGuideIds": [
+        "special-market-state-transition-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "market-event-density",
+      "specialGuideIds": [
+        "special-market-state-transition-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "feedback-delay",
+      "specialGuideIds": [
+        "special-market-state-transition-contract",
+        "special-resource-production-chain-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "resource-stock",
+      "specialGuideIds": [
+        "special-resource-production-chain-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "resource-rate",
+      "specialGuideIds": [
+        "special-resource-production-chain-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "production-capacity",
+      "specialGuideIds": [
+        "special-resource-production-chain-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "resource-source",
+      "specialGuideIds": [
+        "special-resource-production-chain-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "resource-sink",
+      "specialGuideIds": [
+        "special-resource-production-chain-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "resource-pool",
+      "specialGuideIds": [
+        "special-resource-production-chain-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "resource-converter",
+      "specialGuideIds": [
+        "special-resource-production-chain-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "prototype-scope",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "conversion-rate",
+      "specialGuideIds": [
+        "special-resource-production-chain-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "conversion-window",
+      "specialGuideIds": [
+        "special-resource-production-chain-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "conversion-order",
+      "specialGuideIds": [
+        "special-resource-production-chain-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "upkeep-cost",
+      "specialGuideIds": [
+        "special-resource-production-chain-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "carrying-cost",
+      "specialGuideIds": [
+        "special-resource-production-chain-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "resource-decay",
+      "specialGuideIds": [
+        "special-resource-production-chain-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "payback-window",
+      "specialGuideIds": [
+        "special-resource-production-chain-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "residual-value",
+      "specialGuideIds": [
+        "special-resource-production-chain-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "debt-path",
+      "specialGuideIds": [
+        "special-resource-production-chain-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "information-state",
+      "specialGuideIds": [
+        "special-hidden-information-hand-economy-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "private-information",
+      "specialGuideIds": [
+        "special-hidden-information-hand-economy-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "public-information",
+      "specialGuideIds": [
+        "special-hidden-information-hand-economy-contract"
+      ],
+      "toolIds": [
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "trackable-information",
+      "specialGuideIds": [
+        "special-hidden-information-hand-economy-contract"
+      ],
+      "toolIds": [
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "information-owner",
+      "specialGuideIds": [
+        "special-hidden-information-hand-economy-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "information-source",
+      "specialGuideIds": [
+        "special-hidden-information-hand-economy-contract"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "signal-reliability",
+      "specialGuideIds": [
+        "special-hidden-information-hand-economy-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "inference-path",
+      "specialGuideIds": [
+        "special-hidden-information-hand-economy-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "claim-challenge",
+      "specialGuideIds": [
+        "special-hidden-information-hand-economy-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "verification-window",
+      "specialGuideIds": [
+        "special-hidden-information-hand-economy-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "reveal-lifecycle",
+      "specialGuideIds": [
+        "special-hidden-information-hand-economy-contract"
+      ],
+      "toolIds": [
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "hand-capacity",
+      "specialGuideIds": [
+        "special-hidden-information-hand-economy-contract",
+        "special-deck-building-draw-cycle-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "hand-order",
+      "specialGuideIds": [
+        "special-hidden-information-hand-economy-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "card-lifecycle",
+      "specialGuideIds": [
+        "special-hidden-information-hand-economy-contract",
+        "special-deck-building-draw-cycle-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "memory-interface",
+      "specialGuideIds": [
+        "special-hidden-information-hand-economy-contract"
+      ],
+      "toolIds": [
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "communication-channel",
+      "specialGuideIds": [
+        "special-hidden-information-hand-economy-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "information-expiry",
+      "specialGuideIds": [
+        "special-hidden-information-hand-economy-contract"
+      ],
+      "toolIds": [
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "deck-composition",
+      "specialGuideIds": [
+        "special-deck-building-draw-cycle-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "draw-pile",
+      "specialGuideIds": [
+        "special-deck-building-draw-cycle-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "discard-pile",
+      "specialGuideIds": [
+        "special-deck-building-draw-cycle-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "personal-deck",
+      "specialGuideIds": [
+        "special-deck-building-draw-cycle-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "market-deck",
+      "specialGuideIds": [
+        "special-deck-building-draw-cycle-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "deck-cycle",
+      "specialGuideIds": [
+        "special-deck-building-draw-cycle-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "shuffle-boundary",
+      "specialGuideIds": [
+        "special-deck-building-draw-cycle-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "acquisition-latency",
+      "specialGuideIds": [
+        "special-deck-building-draw-cycle-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "draw-density",
+      "specialGuideIds": [
+        "special-deck-building-draw-cycle-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "target-card",
+      "specialGuideIds": [
+        "special-deck-building-draw-cycle-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "hypergeometric-draw",
+      "specialGuideIds": [
+        "special-deck-building-draw-cycle-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "deck-thinning",
+      "specialGuideIds": [
+        "special-deck-building-draw-cycle-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "deck-bloat",
+      "specialGuideIds": [
+        "special-deck-building-draw-cycle-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "dead-draw",
+      "specialGuideIds": [
+        "special-deck-building-draw-cycle-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "combo-density",
+      "specialGuideIds": [
+        "special-deck-building-draw-cycle-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "topdeck",
+      "specialGuideIds": [
+        "special-deck-building-draw-cycle-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "deck-pollution",
+      "specialGuideIds": [
+        "special-deck-building-draw-cycle-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "shuffle-protocol",
+      "specialGuideIds": [
+        "special-deck-building-draw-cycle-contract"
+      ],
+      "toolIds": [
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "ability-grammar",
+      "specialGuideIds": [
+        "special-card-language-effect-resolution-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "timing-window",
+      "specialGuideIds": [
+        "special-card-language-effect-resolution-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "static-effect",
+      "specialGuideIds": [
+        "special-card-language-effect-resolution-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "activated-ability",
+      "specialGuideIds": [
+        "special-card-language-effect-resolution-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "triggered-effect",
+      "specialGuideIds": [
+        "special-card-language-effect-resolution-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "replacement-effect",
+      "specialGuideIds": [
+        "special-card-language-effect-resolution-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "delayed-effect",
+      "specialGuideIds": [
+        "special-card-language-effect-resolution-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "effect-queue",
+      "specialGuideIds": [
+        "special-card-language-effect-resolution-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "priority",
+      "specialGuideIds": [
+        "special-card-language-effect-resolution-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "simultaneous-effect",
+      "specialGuideIds": [
+        "special-card-language-effect-resolution-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "order-owner",
+      "specialGuideIds": [
+        "special-card-language-effect-resolution-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "controlled-vocabulary",
+      "specialGuideIds": [
+        "special-card-language-effect-resolution-contract"
+      ],
+      "toolIds": [
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "reminder-text",
+      "specialGuideIds": [
+        "special-card-language-effect-resolution-contract"
+      ],
+      "toolIds": [
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "keyword-expansion",
+      "specialGuideIds": [
+        "special-card-language-effect-resolution-contract"
+      ],
+      "toolIds": [
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "effect-trace",
+      "specialGuideIds": [
+        "special-card-language-effect-resolution-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "teaching-path",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "repeated-state",
+      "specialGuideIds": [
+        "special-card-language-effect-resolution-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "mandatory-loop",
+      "specialGuideIds": [
+        "special-card-language-effect-resolution-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "optional-loop",
+      "specialGuideIds": [
+        "special-card-language-effect-resolution-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "teaching-path",
+        "playtest-selector",
+        "decision-trace"
+      ]
+    },
+    {
+      "conceptId": "content-passport",
+      "specialGuideIds": [
+        "special-card-pool-version-governance-contract"
+      ],
+      "toolIds": [
+        "version-governance"
+      ]
+    },
+    {
+      "conceptId": "availability-path",
+      "specialGuideIds": [
+        "special-card-pool-version-governance-contract"
+      ],
+      "toolIds": [
+        "version-governance"
+      ]
+    },
+    {
+      "conceptId": "as-played-frequency",
+      "specialGuideIds": [
+        "special-card-pool-version-governance-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "version-governance"
+      ]
+    },
+    {
+      "conceptId": "rarity-role",
+      "specialGuideIds": [
+        "special-card-pool-version-governance-contract"
+      ],
+      "toolIds": [
+        "core-loop",
+        "version-governance"
+      ]
+    },
+    {
+      "conceptId": "compatibility-matrix",
+      "specialGuideIds": [
+        "special-card-pool-version-governance-contract"
+      ],
+      "toolIds": [
+        "version-governance"
+      ]
+    },
+    {
+      "conceptId": "compatibility-state",
+      "specialGuideIds": [
+        "special-card-pool-version-governance-contract"
+      ],
+      "toolIds": [
+        "playtest-selector",
+        "version-governance"
+      ]
+    },
+    {
+      "conceptId": "declared-support",
+      "specialGuideIds": [
+        "special-card-pool-version-governance-contract"
+      ],
+      "toolIds": [
+        "version-governance"
+      ]
+    },
+    {
+      "conceptId": "validated-configuration",
+      "specialGuideIds": [
+        "special-card-pool-version-governance-contract"
+      ],
+      "toolIds": [
+        "playtest-selector",
+        "version-governance"
+      ]
+    },
+    {
+      "conceptId": "current-rules-source",
+      "specialGuideIds": [
+        "special-card-pool-version-governance-contract"
+      ],
+      "toolIds": [
+        "teaching-path",
+        "version-governance"
+      ]
+    },
+    {
+      "conceptId": "current-card-text",
+      "specialGuideIds": [
+        "special-card-pool-version-governance-contract"
+      ],
+      "toolIds": [
+        "teaching-path",
+        "version-governance"
+      ]
+    },
+    {
+      "conceptId": "change-class",
+      "specialGuideIds": [
+        "special-card-pool-version-governance-contract"
+      ],
+      "toolIds": [
+        "teaching-path",
+        "version-governance"
+      ]
+    },
+    {
+      "conceptId": "errata-scope",
+      "specialGuideIds": [
+        "special-card-pool-version-governance-contract"
+      ],
+      "toolIds": [
+        "version-governance"
+      ]
+    },
+    {
+      "conceptId": "governance-timeline",
+      "specialGuideIds": [
+        "special-card-pool-version-governance-contract"
+      ],
+      "toolIds": [
+        "version-governance"
+      ]
+    },
+    {
+      "conceptId": "legality-date",
+      "specialGuideIds": [
+        "special-card-pool-version-governance-contract"
+      ],
+      "toolIds": [
+        "version-governance"
+      ]
+    },
+    {
+      "conceptId": "review-window",
+      "specialGuideIds": [
+        "special-card-pool-version-governance-contract"
+      ],
+      "toolIds": [
+        "playtest-selector",
+        "version-governance"
+      ]
+    },
+    {
+      "conceptId": "rollback-gate",
+      "specialGuideIds": [
+        "special-card-pool-version-governance-contract"
+      ],
+      "toolIds": [
+        "playtest-selector",
+        "version-governance"
+      ]
+    },
+    {
+      "conceptId": "configuration-regression",
+      "specialGuideIds": [
+        "special-card-pool-version-governance-contract"
+      ],
+      "toolIds": [
+        "playtest-selector",
+        "version-governance"
+      ]
+    },
+    {
+      "conceptId": "migration-labor",
+      "specialGuideIds": [
+        "special-card-pool-version-governance-contract"
+      ],
+      "toolIds": [
+        "version-governance"
+      ]
+    },
+    {
+      "conceptId": "prototype-filter",
+      "specialGuideIds": [],
+      "toolIds": [
+        "prototype-scope",
+        "playtest-selector"
+      ]
+    },
+    {
+      "conceptId": "prototype-manifestation",
+      "specialGuideIds": [],
+      "toolIds": [
+        "prototype-scope"
+      ]
+    },
+    {
+      "conceptId": "prototype-scope",
+      "specialGuideIds": [],
+      "toolIds": [
+        "prototype-scope",
+        "playtest-selector"
+      ]
+    },
+    {
+      "conceptId": "fidelity-profile",
+      "specialGuideIds": [],
+      "toolIds": [
+        "prototype-scope",
+        "playtest-selector"
+      ]
+    },
+    {
+      "conceptId": "proxy-operation",
+      "specialGuideIds": [],
+      "toolIds": [
+        "prototype-scope",
+        "playtest-selector"
+      ]
+    },
+    {
+      "conceptId": "prototype-stop-condition",
+      "specialGuideIds": [],
+      "toolIds": [
+        "prototype-scope",
+        "playtest-selector"
+      ]
+    },
+    {
+      "conceptId": "system-thesis",
+      "specialGuideIds": [
+        "special-issue-to-system-translation"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "issue-to-system"
+      ]
+    },
+    {
+      "conceptId": "values-translation",
+      "specialGuideIds": [
+        "special-issue-to-system-translation"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "prototype-scope",
+        "issue-to-system"
+      ]
+    },
+    {
+      "conceptId": "omission-ledger",
+      "specialGuideIds": [
+        "special-issue-to-system-translation"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "issue-to-system"
+      ]
+    },
+    {
+      "conceptId": "affected-stakeholder",
+      "specialGuideIds": [
+        "special-issue-to-system-translation"
+      ],
+      "toolIds": [
+        "experience-intent",
+        "core-loop",
+        "playtest-selector",
+        "issue-to-system"
+      ]
+    },
+    {
+      "conceptId": "values-verification",
+      "specialGuideIds": [
+        "special-issue-to-system-translation"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "issue-to-system"
+      ]
+    },
+    {
+      "conceptId": "debrief-dependency",
+      "specialGuideIds": [
+        "special-issue-to-system-translation"
+      ],
+      "toolIds": [
+        "core-loop",
+        "playtest-selector",
+        "teaching-path",
+        "issue-to-system"
+      ]
+    }
+  ]
+}

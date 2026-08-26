@@ -1,0 +1,202 @@
+{
+  "meta": {
+    "schemaVersion": 1,
+    "productBrand": "桌游设计工坊",
+    "designSystemName": "开放桌面 Open Table",
+    "version": "3.1.0-implemented",
+    "date": "2026-08-23",
+    "status": "implemented-in-open-table-v4-browser-validated",
+    "tokenValueSource": "this JSON file",
+    "runtimeSource": "generated CSS custom properties",
+    "synchronization": "generate tokens.css from this file and compare in CI"
+  },
+  "dials": {
+    "explorationReference": {
+      "designVariance": 6,
+      "motionIntensity": 3,
+      "visualDensity": 5
+    },
+    "productionCeiling": {
+      "designVariance": 5,
+      "motionIntensity": 2,
+      "visualDensity": 5
+    },
+    "templateBudgets": {
+      "entry": { "designVariance": 3, "motionIntensity": 1, "visualDensity": 3 },
+      "topicReadingMethod": { "designVariance": 4, "motionIntensity": 2, "visualDensity": 4 },
+      "guidedTool": { "designVariance": 5, "motionIntensity": 2, "visualDensity": 5 },
+      "system": { "designVariance": 3, "motionIntensity": 1, "visualDensity": 3 }
+    }
+  },
+  "color": {
+    "canvas": "#F4F3ED",
+    "surface": "#FFFEFA",
+    "ink": "#17201D",
+    "muted": "#58615C",
+    "rule": "#C9CEC6",
+    "ruleStrong": "#858F88",
+    "action": "#174F43",
+    "actionHover": "#0E3C32",
+    "actionSoft": "#E7EFEA",
+    "editorial": "#A23D2E",
+    "editorialSoft": "#F3E8E4",
+    "focus": "#174F43",
+    "error": "#9A2E2E",
+    "errorSoft": "#F6E7E5",
+    "success": "#2E6746",
+    "successSoft": "#E5F0E8",
+    "dimensionBlue": "#2D5B91",
+    "dimensionOchre": "#76611E",
+    "dimensionOchreRole": "fourth-series-in-comparison-charts-only",
+    "dimensionTerracotta": "#8E5538",
+    "dimensionMoss": "#4B6C51"
+  },
+  "typography": {
+    "families": {
+      "ui": "\"Noto Sans CJK SC\", \"Source Han Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+      "editorial": "\"Noto Serif CJK SC\", \"Source Han Serif SC\", STSong, SimSun, serif"
+    },
+    "roles": {
+      "display": {
+        "desktop": { "minPx": 56, "maxPx": 72 },
+        "mobile": { "minPx": 44, "maxPx": 52 },
+        "lineHeight": 1.08,
+        "weight": 700
+      },
+      "h1": {
+        "desktop": { "minPx": 44, "maxPx": 56 },
+        "mobile": { "minPx": 36, "maxPx": 44 },
+        "lineHeight": 1.14,
+        "weight": 700
+      },
+      "h2": {
+        "desktop": { "minPx": 30, "maxPx": 38 },
+        "mobile": { "minPx": 28, "maxPx": 32 },
+        "lineHeight": 1.24,
+        "weight": 600
+      },
+      "h3": {
+        "desktop": { "minPx": 22, "maxPx": 26 },
+        "mobile": { "minPx": 21, "maxPx": 24 },
+        "lineHeight": 1.35,
+        "weight": 600
+      },
+      "body": {
+        "desktop": { "minPx": 17, "preferredPx": 17 },
+        "mobile": { "minPx": 16, "preferredPx": 17 },
+        "lineHeight": 1.75,
+        "weight": 400
+      },
+      "reading": {
+        "desktop": { "minPx": 18, "preferredPx": 18 },
+        "mobile": { "minPx": 17, "preferredPx": 17 },
+        "lineHeight": 1.88,
+        "weight": 400
+      },
+      "small": {
+        "desktop": { "minPx": 15, "preferredPx": 15 },
+        "mobile": { "minPx": 14, "preferredPx": 15 },
+        "lineHeight": 1.6,
+        "weight": 400
+      },
+      "label": {
+        "desktop": { "minPx": 15, "preferredPx": 15 },
+        "mobile": { "minPx": 14, "preferredPx": 15 },
+        "lineHeight": 1.4,
+        "weight": 600
+      }
+    }
+  },
+  "spacePx": {
+    "1": 4,
+    "2": 8,
+    "3": 12,
+    "4": 16,
+    "6": 24,
+    "8": 32,
+    "12": 48,
+    "16": 64,
+    "20": 80,
+    "24": 96
+  },
+  "radius": {
+    "nonePx": 0,
+    "controlPx": 4,
+    "panelPx": 6,
+    "circle": "50%",
+    "circleConstraint": "equal-width-and-height-elements-only"
+  },
+  "border": {
+    "hairlinePx": 1,
+    "emphasisPx": 2,
+    "focusPx": 3,
+    "focusOffsetPx": 3
+  },
+  "graphic": {
+    "entryShapeDesktopPx": 32,
+    "entryShapeMobilePx": 28,
+    "connectionDotPx": 8,
+    "arrowOpticalPx": 20,
+    "arrowStrokePx": 1.75,
+    "brandMarkDesktopPx": 32,
+    "brandMarkHiddenBelowPx": 480
+  },
+  "shadow": {
+    "default": "none",
+    "overlayOnly": "0 16px 40px rgba(23, 32, 29, 0.16)"
+  },
+  "motionMs": {
+    "instant": 0,
+    "fast": 120,
+    "standard": 160,
+    "disclosure": 200,
+    "maximumNonEssential": 200
+  },
+  "layout": {
+    "contentWidthPx": {
+      "readingText": 720,
+      "readingShell": 1040,
+      "resourceDetail": 960,
+      "decisionEntry": 1120,
+      "indexDetail": 1240,
+      "tool": 1080
+    },
+    "pageGutterPx": {
+      "wide": 48,
+      "medium": 32,
+      "narrow": 20,
+      "minimum": 16
+    },
+    "chapterRailPx": {
+      "wide": 184,
+      "medium": 152,
+      "wideGap": 40,
+      "mediumGap": 32
+    },
+    "headerPx": {
+      "desktopMinimumHeight": 72,
+      "mobileMinimumHeight": 108,
+      "stickyOffset": 16
+    }
+  },
+  "breakpointPx": {
+    "wideReading": 1180,
+    "twoColumnCollapse": 960,
+    "singleColumn": 720,
+    "narrow": 480
+  },
+  "interaction": {
+    "minimumTargetPx": 44,
+    "preferredPrimaryTargetPx": 48,
+    "minimumTextContrast": 4.5,
+    "minimumNonTextContrast": 3,
+    "hoverMayMoveLayout": false,
+    "colorMayBeOnlySignal": false
+  },
+  "texture": {
+    "paperOpacityMaximum": 0.025,
+    "woodGrainAllowed": false,
+    "feltAllowed": false,
+    "gradientAllowed": false
+  }
+}

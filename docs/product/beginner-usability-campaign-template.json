@@ -1,0 +1,56 @@
+{
+  "schemaVersion": 1,
+  "method": "two-round-beginner-resource-site-usability",
+  "evidenceClass": "blank_template",
+  "campaignStatus": "planned",
+  "productVersion": "",
+  "objective": "验证新手能否定位内容，并从体验意图走到可恢复、可导出的测试记录。",
+  "rounds": [
+    {
+      "roundId": "pilot",
+      "status": "planned",
+      "participantMin": 2,
+      "participantMax": 3,
+      "fullTrackMin": 2,
+      "newToVersionRequired": true,
+      "changePolicy": "freeze_baseline"
+    },
+    {
+      "roundId": "confirmation",
+      "status": "locked_until_repairs",
+      "participantMin": 5,
+      "participantMax": 7,
+      "fullTrackMin": 4,
+      "newToVersionRequired": true,
+      "changePolicy": "one_documented_revision_set"
+    }
+  ],
+  "charterGates": {
+    "newcomerContentFindersMin": 5,
+    "independentFullLoopsMin": 4,
+    "quickTasks": ["N1", "R1"],
+    "fullTasks": ["N1", "R1", "W1", "D1"],
+    "quickStartSecondsMax": 900,
+    "unresolvedCriticalMax": 0,
+    "unresolvedSeriousMax": 0,
+    "fictionalEvidenceMayCount": false
+  },
+  "sessionFiles": [],
+  "revisionLog": [],
+  "privacy": {
+    "realNamesAllowed": false,
+    "contactDetailsAllowed": false,
+    "rawRecordingAllowed": false,
+    "aggregateScoreAllowed": false,
+    "withdrawalMustBeTraceableByAlias": true
+  },
+  "decision": {
+    "state": "not_assessed",
+    "unassistedNewcomerFinders": 0,
+    "independentFullLoops": 0,
+    "unresolvedCriticalIssues": 0,
+    "unresolvedSeriousIssues": 0,
+    "nextStep": "run_pilot",
+    "rationale": "没有真实参与者会话；虚构示例和机器守卫不能计入章程指标。"
+  }
+}

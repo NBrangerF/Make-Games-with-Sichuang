@@ -1,0 +1,941 @@
+{
+  "schemaVersion": 2,
+  "updatedAt": "2026-08-22",
+  "principle": "完整中文学习体验不等于无授权全文翻译。内容模式、权利依据、完整度和发布范围必须分开记录。",
+  "rightsStatuses": {
+    "site_owned_original": "正文是本站原创学习内容；引用来源仍分别受各自权利状态约束。",
+    "reusable_license_verified": "已保存可核验的开放许可或书面授权依据。",
+    "link_and_summarize": "未获得全文翻译或转载依据；仅链接、非替代性导读或原创综合。",
+    "restricted": "存在更严格限制，不进入公开全文内容流程。"
+  },
+  "contentModes": {
+    "original_complete": {
+      "label": "本站原创完整内容",
+      "description": "本站原创或委托创作、可独立读完的中文学习单元，不是来源全文的翻译。",
+      "completeBodyRequired": true,
+      "publicAllowed": true
+    },
+    "original_case_synthesis": {
+      "label": "本站原创案例综合",
+      "description": "本站基于多个已标注来源独立撰写的完整中文案例；不按任一原作的结构或表达逐段替代原文。",
+      "completeBodyRequired": true,
+      "publicAllowed": true
+    },
+    "authorized_full_translation": {
+      "label": "已授权完整译文",
+      "description": "已有可核验开放许可或书面授权，且正文完整的中文翻译。",
+      "completeBodyRequired": true,
+      "publicAllowed": true
+    },
+    "authorized_zh_republication": {
+      "label": "已授权中文原文转载",
+      "description": "来源本身已是中文，已有可核验开放许可或书面授权，且站内正文完整。",
+      "completeBodyRequired": true,
+      "publicAllowed": true
+    },
+    "internal_full_translation": {
+      "label": "仅内部完整译文",
+      "description": "用于内部研究、校对或授权评估的完整翻译，不得进入公开发布面。",
+      "completeBodyRequired": true,
+      "publicAllowed": false
+    },
+    "guide_only": {
+      "label": "仅中文导读",
+      "description": "本站原创的非替代性导读、摘要或阅读任务，不声称覆盖来源全文。",
+      "completeBodyRequired": false,
+      "publicAllowed": true
+    }
+  },
+  "publicationStatuses": {
+    "draft": "尚未进入内部学习主版或公开候选的工作稿。",
+    "internal-ready": "可直接用于本项目内部学习的主版本，没有进入公开发布面。",
+    "public-candidate": "拟公开的候选副本，仍需显式公开发布决定与权利/范围检查。",
+    "published": "已经显式公开发布决定并进入公开发布面。",
+    "withdrawn": "已撤回，不得被公开路线或深链继续使用。"
+  },
+  "humanReviewStatuses": {
+    "not_required": "根据本项目决定，人工双语复核不是该版本作为内部学习主版的前置条件；这不表示已经人工审定。",
+    "pending": "待人工双语和内容复核。",
+    "changes-requested": "人工复核已提出必须修订项。",
+    "approved": "人工复核已批准该版本。"
+  },
+  "translationAuthorities": {
+    "codex_ai_complete": "由 Codex AI 完成全文翻译；不声称为人工翻译或人工审定。",
+    "human_translator": "由有明确记录的人类译者完成翻译。",
+    "mixed_team": "由人类译者与 AI 共同完成，必须保存具体分工记录。"
+  },
+  "internalLearningStatuses": {
+    "not_ready": "尚不能作为内部学习正文使用。",
+    "supplementary": "可作为内部补充材料，但不是主版。",
+    "authoritative": "该条目当前的内部学习主版本。"
+  },
+  "authoritativeItemPolicy": {
+    "registration": "explicit_allowlist",
+    "allowedContentModes": [
+      "original_complete",
+      "original_case_synthesis",
+      "authorized_full_translation"
+    ],
+    "description": "权威学习内容只由本列表显式收录：已核验开放许可或书面授权的完整译文、本站原创完整单元和本站原创案例综合。未核验公开翻译权的外部全文译文不得因为文件存在而自动进入本契约。"
+  },
+  "authoritativeItems": [
+    {
+      "itemId": "game-design-concepts-level-01-zh-CN",
+      "resourceId": "game-design-concepts",
+      "titleZh": "第 1 关：概览 / 什么是游戏？",
+      "contentMode": "authorized_full_translation",
+      "sourceUrl": "https://gamedesignconcepts.wordpress.com/2009/06/29/level-1-overview-what-is-a-game/",
+      "sourceLanguage": "en",
+      "translatorNote": "由 Codex AI 完整翻译该篇课程正文，不含评论、WordPress 侧栏与页脚。它是当前内部学习主版，不以人工双语复核为前置条件；不声称为人工翻译、法律审定或已公开发布版本。",
+      "license": {
+        "kind": "open_license",
+        "name": "Creative Commons Attribution",
+        "version": "3.0 US",
+        "evidenceUrl": "https://gamedesignconcepts.wordpress.com/about/",
+        "evidenceCapturedAt": "2026-08-21",
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "reusable_license_verified",
+      "completeness": "complete",
+      "translationAuthority": "codex_ai_complete",
+      "humanTranslatorClaimed": false,
+      "humanReviewStatus": "not_required",
+      "internalLearningStatus": "authoritative",
+      "publicationScope": "internal",
+      "publicationStatus": "internal-ready",
+      "legalReviewStatus": "not_reviewed",
+      "legalApprovalClaimed": false,
+      "metadataFile": "content/translations/game-design-concepts-level-01-zh-CN.metadata.json",
+      "bodyFile": "content/translations/game-design-concepts-level-01-zh-CN.md"
+    },
+    {
+      "itemId": "game-design-concepts-level-02-zh-CN",
+      "resourceId": "game-design-concepts",
+      "titleZh": "第 2 关：游戏设计 / 迭代与快速原型",
+      "contentMode": "authorized_full_translation",
+      "sourceUrl": "https://gamedesignconcepts.wordpress.com/2009/07/02/level-2-game-design-iteration-and-rapid-prototyping/",
+      "sourceLanguage": "en",
+      "translatorNote": "由 Codex AI 完整翻译该篇课程正文，不含评论、WordPress 导航、侧栏与页脚；保留课程行政信息、流程图、迭代练习和 Homeplay。它是当前内部学习主版，不以人工双语复核为前置条件；不声称为人工翻译、法律审定或已公开发布版本。",
+      "license": {
+        "kind": "open_license",
+        "name": "Creative Commons Attribution",
+        "version": "3.0 US",
+        "evidenceUrl": "https://gamedesignconcepts.wordpress.com/about/",
+        "evidenceCapturedAt": "2026-08-21",
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "reusable_license_verified",
+      "completeness": "complete",
+      "translationAuthority": "codex_ai_complete",
+      "humanTranslatorClaimed": false,
+      "humanReviewStatus": "not_required",
+      "internalLearningStatus": "authoritative",
+      "publicationScope": "internal",
+      "publicationStatus": "internal-ready",
+      "legalReviewStatus": "not_reviewed",
+      "legalApprovalClaimed": false,
+      "metadataFile": "content/translations/game-design-concepts-level-02-zh-CN.metadata.json",
+      "bodyFile": "content/translations/game-design-concepts-level-02-zh-CN.md"
+    },
+    {
+      "itemId": "what-makes-a-rulebook-accessible-and-entertaining-zh-CN",
+      "resourceId": "accessible-rulebook-best-practices",
+      "titleZh": "怎样让规则书既无障碍又有趣？最佳实践建议",
+      "contentMode": "authorized_full_translation",
+      "sourceUrl": "https://repository.kulib.kyoto-u.ac.jp/handle/2433/298016",
+      "sourceLanguage": "en",
+      "translatorNote": "由 Codex AI 依据京都大学学术信息库正式版本完成全文翻译；保留 66 个编号段落、六张表、注释、参考文献与游戏作品目录，三幅图以中文文字替代呈现而不复载图像。它是当前内部学习主版，不声称人工翻译、法律审定或已公开发布。",
+      "license": {
+        "kind": "open_license",
+        "name": "Creative Commons Attribution",
+        "version": "4.0 International",
+        "evidenceUrl": "https://repository.kulib.kyoto-u.ac.jp/handle/2433/298016",
+        "evidenceCapturedAt": "2026-08-22",
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "reusable_license_verified",
+      "completeness": "complete",
+      "translationAuthority": "codex_ai_complete",
+      "humanTranslatorClaimed": false,
+      "humanReviewStatus": "not_required",
+      "internalLearningStatus": "authoritative",
+      "publicationScope": "internal",
+      "publicationStatus": "internal-ready",
+      "legalReviewStatus": "not_reviewed",
+      "legalApprovalClaimed": false,
+      "metadataFile": "content/translations/what-makes-a-rulebook-accessible-and-entertaining-zh-CN.metadata.json",
+      "bodyFile": "content/translations/what-makes-a-rulebook-accessible-and-entertaining-zh-CN.md"
+    },
+    {
+      "itemId": "systematic-unit-00-question-first-zh-CN",
+      "resourceId": "game-design-concepts",
+      "titleZh": "单元 0：从一个具体问题开始",
+      "contentMode": "original_complete",
+      "sourceUrl": "https://gamedesignconcepts.wordpress.com/2009/07/02/level-2-game-design-iteration-and-rapid-prototyping/",
+      "sourceLanguage": "en",
+      "sourceReferences": [
+        "https://gamedesignconcepts.wordpress.com/2009/07/02/level-2-game-design-iteration-and-rapid-prototyping/",
+        "https://www.gamedeveloper.com/design/how-i-teach-game-design-lesson-1-the-game-design-process-",
+        "https://daniel.games/prototyping/"
+      ],
+      "translatorNote": "本站原创中文学习单元，由 Codex 基于列明来源完成综合撰写；不是任一来源的全文翻译，不声称人工撰写或法律审定。",
+      "license": {
+        "kind": "site_owned",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "site_owned_original",
+      "completeness": "complete",
+      "internalLearningStatus": "authoritative",
+      "publicationScope": "internal",
+      "publicationStatus": "internal-ready",
+      "legalReviewStatus": "not_reviewed",
+      "legalApprovalClaimed": false,
+      "metadataFile": "content/learning-units/systematic-unit-00-question-first-zh-CN.metadata.json",
+      "bodyFile": "content/learning-units/systematic-unit-00-question-first-zh-CN.md"
+    },
+    {
+      "itemId": "systematic-unit-01-experience-intent-zh-CN",
+      "resourceId": "mda-framework",
+      "titleZh": "单元 1：玩家体验与设计意图",
+      "contentMode": "original_complete",
+      "sourceUrl": "https://aaai.org/papers/ws04-04-001-mda-a-formal-approach-to-game-design-and-game-research/",
+      "sourceLanguage": "en",
+      "sourceReferences": [
+        "https://aaai.org/papers/ws04-04-001-mda-a-formal-approach-to-game-design-and-game-research/",
+        "https://boardgamedesigncourse.com/getting-to-the-core-of-your-game/"
+      ],
+      "translatorNote": "本站原创中文学习单元，由 Codex 基于列明来源完成综合撰写；不是任一来源的全文翻译，不声称人工撰写或法律审定。",
+      "license": {
+        "kind": "site_owned",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "site_owned_original",
+      "completeness": "complete",
+      "internalLearningStatus": "authoritative",
+      "publicationScope": "internal",
+      "publicationStatus": "internal-ready",
+      "legalReviewStatus": "not_reviewed",
+      "legalApprovalClaimed": false,
+      "metadataFile": "content/learning-units/systematic-unit-01-experience-intent-zh-CN.metadata.json",
+      "bodyFile": "content/learning-units/systematic-unit-01-experience-intent-zh-CN.md"
+    },
+    {
+      "itemId": "systematic-unit-02-decisions-core-loop-zh-CN",
+      "resourceId": "zimmerman-core-mechanic",
+      "titleZh": "单元 2：决定与核心循环",
+      "contentMode": "original_complete",
+      "sourceUrl": "https://www.gamedesignworkshop.com/the-core-mechanic",
+      "sourceLanguage": "en",
+      "sourceReferences": [
+        "https://www.gamedesignworkshop.com/the-core-mechanic",
+        "https://daniel.games/the-core/",
+        "https://boardgamedesigncourse.com/getting-to-the-core-of-your-game/",
+        "https://magic.wizards.com/en/news/making-magic/decisions-decisions-part-i-2009-07-27"
+      ],
+      "translatorNote": "本站原创中文学习单元，由 Codex 基于列明来源完成综合撰写；不是任一来源的全文翻译，不声称人工撰写或法律审定。",
+      "license": {
+        "kind": "site_owned",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "site_owned_original",
+      "completeness": "complete",
+      "internalLearningStatus": "authoritative",
+      "publicationScope": "internal",
+      "publicationStatus": "internal-ready",
+      "legalReviewStatus": "not_reviewed",
+      "legalApprovalClaimed": false,
+      "metadataFile": "content/learning-units/systematic-unit-02-decisions-core-loop-zh-CN.metadata.json",
+      "bodyFile": "content/learning-units/systematic-unit-02-decisions-core-loop-zh-CN.md"
+    },
+    {
+      "itemId": "systematic-unit-03-mechanisms-information-interaction-zh-CN",
+      "resourceId": "game-design-concepts",
+      "titleZh": "单元 3：机制、信息与互动",
+      "contentMode": "original_complete",
+      "sourceUrl": "https://gamedesignconcepts.wordpress.com/2009/07/06/level-3-formal-elements-of-games/",
+      "sourceLanguage": "en",
+      "sourceReferences": [
+        "https://gamedesignconcepts.wordpress.com/2009/07/06/level-3-formal-elements-of-games/",
+        "https://aaai.org/papers/ws04-04-001-mda-a-formal-approach-to-game-design-and-game-research/",
+        "https://www.clei.org/cleiej/index.php/cleiej/article/view/473",
+        "https://www.thamesandkosmos.com/manuals/full/691868_Crew_Manual.pdf",
+        "https://www.scorpionmasque.com/sites/scorpionmasque.com/files/decrypto_en_rules_20sep2019_1.pdf",
+        "https://ubm-twvideo01.s3.amazonaws.com/o1/vault/gdc2019/presentations/Hova_Gil_Why_Indirect_Zero.pdf",
+        "https://faidutti.com/blog/blog/2022/04/27/indirect-interaction/",
+        "https://news.direwolfdigital.com/dune-imperium-designer-diary-1-beginnings/",
+        "https://daniel.games/information-overload/"
+      ],
+      "translatorNote": "本站原创中文学习单元，由 Codex 基于列明来源完成综合撰写；不是任一来源的全文翻译，并明确区分规则事实、作者观点与本站教学综合。",
+      "license": {
+        "kind": "site_owned",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "site_owned_original",
+      "completeness": "complete",
+      "internalLearningStatus": "authoritative",
+      "publicationScope": "internal",
+      "publicationStatus": "internal-ready",
+      "legalReviewStatus": "not_reviewed",
+      "legalApprovalClaimed": false,
+      "metadataFile": "content/learning-units/systematic-unit-03-mechanisms-information-interaction-zh-CN.metadata.json",
+      "bodyFile": "content/learning-units/systematic-unit-03-mechanisms-information-interaction-zh-CN.md"
+    },
+    {
+      "itemId": "systematic-unit-04-minimum-prototype-zh-CN",
+      "resourceId": "kathleen-mercury-prototyping",
+      "titleZh": "单元 4：最小原型",
+      "contentMode": "original_complete",
+      "sourceUrl": "https://www.kathleenmercury.com/prototyping.html",
+      "sourceLanguage": "en",
+      "sourceReferences": [
+        "https://www.kathleenmercury.com/prototyping.html",
+        "https://www.kathleenmercury.com/recommended-materials.html",
+        "https://daniel.games/prototyping/",
+        "https://www.ttgda.org/get-assistance/newpage",
+        "https://www.ttgda.org/in-person-playtesting",
+        "https://gamedesignconcepts.wordpress.com/2009/07/02/level-2-game-design-iteration-and-rapid-prototyping/",
+        "https://faculty.washington.edu/jtenenbg/publications/limAnatomyOfPrototypes-tochi2008.pdf"
+      ],
+      "translatorNote": "本站原创中文学习单元，由 Codex 基于列明来源完成综合撰写；不是任一来源的全文翻译，具体组件数、人数与时长不被写成统一门槛。",
+      "license": {
+        "kind": "site_owned",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "site_owned_original",
+      "completeness": "complete",
+      "internalLearningStatus": "authoritative",
+      "publicationScope": "internal",
+      "publicationStatus": "internal-ready",
+      "legalReviewStatus": "not_reviewed",
+      "legalApprovalClaimed": false,
+      "metadataFile": "content/learning-units/systematic-unit-04-minimum-prototype-zh-CN.metadata.json",
+      "bodyFile": "content/learning-units/systematic-unit-04-minimum-prototype-zh-CN.md"
+    },
+    {
+      "itemId": "systematic-unit-05-single-question-test-zh-CN",
+      "resourceId": "ttgda-playtesting",
+      "titleZh": "单元 5：单问题测试",
+      "contentMode": "original_complete",
+      "sourceUrl": "https://www.ttgda.org/in-person-playtesting",
+      "sourceLanguage": "en",
+      "sourceReferences": [
+        "https://www.ttgda.org/in-person-playtesting",
+        "https://www.kathleenmercury.com/providing-feedback-on-prototypes-the-winq.html",
+        "https://www.kathleenmercury.com/playtesting.html",
+        "https://gamedesignconcepts.wordpress.com/2009/07/02/level-2-game-design-iteration-and-rapid-prototyping/",
+        "https://gamesuserresearch.com/running-a-games-user-research-study/",
+        "https://eprints.whiterose.ac.uk/id/eprint/216480/",
+        "https://faculty.washington.edu/jtenenbg/publications/limAnatomyOfPrototypes-tochi2008.pdf",
+        "https://dschool.stanford.edu/s/dschool_testing.pdf"
+      ],
+      "translatorNote": "本站原创中文学习单元，由 Codex 基于列明来源完成综合撰写；不是任一来源的全文翻译。正文把示范测试计划与真实测试结果明确分开，不把一次场次写成证明或通过分。",
+      "license": {
+        "kind": "site_owned",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "site_owned_original",
+      "completeness": "complete",
+      "internalLearningStatus": "authoritative",
+      "publicationScope": "internal",
+      "publicationStatus": "internal-ready",
+      "legalReviewStatus": "not_reviewed",
+      "legalApprovalClaimed": false,
+      "metadataFile": "content/learning-units/systematic-unit-05-single-question-test-zh-CN.metadata.json",
+      "bodyFile": "content/learning-units/systematic-unit-05-single-question-test-zh-CN.md"
+    },
+    {
+      "itemId": "systematic-unit-06-evidence-to-next-version-zh-CN",
+      "resourceId": "game-design-concepts",
+      "titleZh": "单元 6：从证据到下一版",
+      "contentMode": "original_complete",
+      "sourceUrl": "https://gamedesignconcepts.wordpress.com/2009/07/02/level-2-game-design-iteration-and-rapid-prototyping/",
+      "sourceLanguage": "en",
+      "sourceReferences": [
+        "https://gamedesignconcepts.wordpress.com/2009/07/02/level-2-game-design-iteration-and-rapid-prototyping/",
+        "https://gamedesignconcepts.wordpress.com/2009/08/13/level-14-playing-with-non-designers/",
+        "https://www.kathleenmercury.com/providing-feedback-on-prototypes-the-winq.html",
+        "https://www.ttgda.org/in-person-playtesting",
+        "https://www.tricorngames.com/designer-blog/2017/8/26/playtesting-with-purpose",
+        "https://danielsolisblog.blogspot.com/2014/03/3-steps-to-intepreting-playtest-feedback.html",
+        "https://danielsolisblog.blogspot.com/2014/05/revising-constants-and-variables-in.html",
+        "https://unwinnable.com/2013/02/11/the-proving-ground/",
+        "https://www.gov.uk/service-manual/user-research/taking-notes-and-recording-user-research-sessions",
+        "https://pmc.ncbi.nlm.nih.gov/articles/PMC6846267/",
+        "https://pages.cs.wisc.edu/~markhill/science64_strong_inference.pdf",
+        "https://ftp.cs.ucla.edu/pub/stat_ser/r350-reprint.pdf",
+        "https://doi.org/10.1037/h0031322"
+      ],
+      "translatorNote": "本站原创中文学习单元，由 Codex 基于列明来源完成综合撰写；不是任一来源的全文翻译。完整走例使用明确标记的 DEMO-01 教学演练，不伪造真人场次、交换结果、停止方式、参与者身份或证据次数。",
+      "license": {
+        "kind": "site_owned",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "site_owned_original",
+      "completeness": "complete",
+      "internalLearningStatus": "authoritative",
+      "publicationScope": "internal",
+      "publicationStatus": "internal-ready",
+      "legalReviewStatus": "not_reviewed",
+      "legalApprovalClaimed": false,
+      "metadataFile": "content/learning-units/systematic-unit-06-evidence-to-next-version-zh-CN.metadata.json",
+      "bodyFile": "content/learning-units/systematic-unit-06-evidence-to-next-version-zh-CN.md"
+    },
+    {
+      "itemId": "learn-by-playing-one-moment-zh-CN",
+      "resourceId": "game-design-concepts",
+      "titleZh": "边玩边学 01：只分析一局里的一个时刻",
+      "contentMode": "original_complete",
+      "sourceUrl": "https://gamedesignconcepts.wordpress.com/2009/07/06/level-3-formal-elements-of-games/",
+      "sourceLanguage": "en",
+      "sourceReferences": [
+        "https://gamedesignconcepts.wordpress.com/2009/07/06/level-3-formal-elements-of-games/",
+        "https://gamedesignconcepts.wordpress.com/2009/08/31/level-19-game-criticism-and-analysis/",
+        "https://www.cs.northwestern.edu/~hunicke/MDA.pdf",
+        "https://www.clei.org/cleiej/index.php/cleiej/article/view/473",
+        "https://www.blueorangegames.com/games/king-domino",
+        "https://blueorangegames.com/webroot/img/games/rules/cfa0f38157341a002eab1100aab478ea-Kingdomino-Rules-US-2nd-Edition.pdf"
+      ],
+      "translatorNote": "本站原创中文学习脚手架，由 Codex 基于列明来源、官方规则与项目研究完成；不是外部文章或规则书的全文翻译。《Kingdomino》动作与话语明确标为虚构教学记录，不冒充参与者数据、设计师意图或普遍效果。",
+      "license": {
+        "kind": "site_owned",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "site_owned_original",
+      "completeness": "complete",
+      "internalLearningStatus": "authoritative",
+      "publicationScope": "internal",
+      "publicationStatus": "internal-ready",
+      "legalReviewStatus": "not_reviewed",
+      "legalApprovalClaimed": false,
+      "metadataFile": "content/learning-units/learn-by-playing-one-moment-zh-CN.metadata.json",
+      "bodyFile": "content/learning-units/learn-by-playing-one-moment-zh-CN.md"
+    },
+    {
+      "itemId": "monsoon-market-variables-case-synthesis-zh-CN-internal",
+      "resourceId": "monsoon-market-variables",
+      "titleZh": "一次只测试一种变化：《Monsoon Market》怎样收缩变量",
+      "contentMode": "original_case_synthesis",
+      "sourceUrl": "https://danielsolisblog.blogspot.com/2014/05/revising-constants-and-variables-in.html",
+      "sourceLanguage": "en",
+      "sourceReferences": [
+        "https://danielsolisblog.blogspot.com/2014/05/revising-constants-and-variables-in.html"
+      ],
+      "translatorNote": "本站原创中文案例综合，由 Codex 基于列明来源重新组织为学习案例；不是外部文章的全文翻译，不复制照片、评论或原页结构。",
+      "license": {
+        "kind": "site_owned",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "site_owned_original",
+      "completeness": "complete",
+      "internalLearningStatus": "authoritative",
+      "publicationScope": "internal",
+      "publicationStatus": "internal-ready",
+      "legalReviewStatus": "not_reviewed",
+      "legalApprovalClaimed": false,
+      "metadataFile": "content/guides/monsoon-market-variables-case-synthesis-zh-CN-internal.metadata.json",
+      "bodyFile": "content/guides/monsoon-market-variables-case-synthesis-zh-CN-internal.md"
+    },
+    {
+      "itemId": "dune-imperium-beginnings-zh-CN-internal",
+      "resourceId": "dune-imperium-deck-worker-diary",
+      "titleZh": "一张牌怎样接起两个系统：《Dune: Imperium》起点案例",
+      "contentMode": "original_case_synthesis",
+      "sourceUrl": "https://news.direwolfdigital.com/dune-imperium-designer-diary-1-beginnings/",
+      "sourceLanguage": "en",
+      "sourceReferences": [
+        "https://news.direwolfdigital.com/dune-imperium-designer-diary-1-beginnings/",
+        "https://www.direwolfdigital.com/assets/dune/DUNE_IMPERIUM_Rules_2020_10_26.pdf",
+        "https://www.direwolfdigital.com/dune-imperium/"
+      ],
+      "translatorNote": "本站原创中文案例综合，由 Codex 将作者报告、本站推断、未知与迁移动作分层重组；不是原文全译，不收录小说引文、图像或商标素材。",
+      "license": {
+        "kind": "site_owned",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "site_owned_original",
+      "completeness": "complete",
+      "internalLearningStatus": "authoritative",
+      "publicationScope": "internal",
+      "publicationStatus": "internal-ready",
+      "legalReviewStatus": "not_reviewed",
+      "legalApprovalClaimed": false,
+      "metadataFile": "content/translations/dune-imperium-beginnings-zh-CN-internal.metadata.json",
+      "bodyFile": "content/translations/dune-imperium-beginnings-zh-CN-internal.md"
+    },
+    {
+      "itemId": "quid-for-your-quo-case-synthesis-zh-CN-internal",
+      "resourceId": "wehrle-quid-for-quo",
+      "titleZh": "删掉旧机制后系统为什么垮了：《John Company》的承诺机制重做",
+      "contentMode": "original_case_synthesis",
+      "sourceUrl": "https://wehrlegig.com/blogs/essays/quid-for-your-quo",
+      "sourceLanguage": "en",
+      "sourceReferences": [
+        "https://wehrlegig.com/blogs/essays/quid-for-your-quo",
+        "https://boardgamegeek.com/thread/2641352/designer-diary-3-quid-for-your-quo"
+      ],
+      "translatorNote": "本站原创中文案例综合，由 Codex 把作者报告的开发轨迹重组为八个学习维度；不是原文全译，不复制原文结构、图片、评论或长段表达。",
+      "license": {
+        "kind": "site_owned",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "site_owned_original",
+      "completeness": "complete",
+      "internalLearningStatus": "authoritative",
+      "publicationScope": "internal",
+      "publicationStatus": "internal-ready",
+      "legalReviewStatus": "not_reviewed",
+      "legalApprovalClaimed": false,
+      "metadataFile": "content/guides/quid-for-your-quo-case-synthesis-zh-CN-internal.metadata.json",
+      "bodyFile": "content/guides/quid-for-your-quo-case-synthesis-zh-CN-internal.md"
+    },
+    {
+      "itemId": "paul-grogan-rulebook-layout-case-synthesis-zh-CN-internal",
+      "resourceId": "naylor-paul-grogan-rulebook",
+      "titleZh": "文字改完以后，为什么编辑还不能离场？Paul Grogan 的规则书交接判断",
+      "contentMode": "original_case_synthesis",
+      "sourceUrl": "https://naylorgames.com/blogs/blog/producing-fun-4-paul-grogan-rulebook-editor-content-creator",
+      "sourceLanguage": "en",
+      "sourceReferences": [
+        "https://naylorgames.com/blogs/blog/producing-fun-4-paul-grogan-rulebook-editor-content-creator",
+        "https://www.tricorngames.com/designer-blog/2017/7/4/ruling-the-roost"
+      ],
+      "translatorNote": "本站原创中文案例综合，由 Codex 将从业者报告、本站推断、未知与迁移动作分层重组；不是访谈全文翻译，不复制逐字稿结构、音频、图片或评论。",
+      "license": {
+        "kind": "site_owned",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "site_owned_original",
+      "completeness": "complete",
+      "internalLearningStatus": "authoritative",
+      "publicationScope": "internal",
+      "publicationStatus": "internal-ready",
+      "legalReviewStatus": "not_reviewed",
+      "legalApprovalClaimed": false,
+      "metadataFile": "content/guides/paul-grogan-rulebook-layout-case-synthesis-zh-CN-internal.metadata.json",
+      "bodyFile": "content/guides/paul-grogan-rulebook-layout-case-synthesis-zh-CN-internal.md"
+    },
+    {
+      "itemId": "new-bedford-manufacturing-constraint-case-synthesis-zh-CN-internal",
+      "resourceId": "oakleaf-manufacturing-design-tool",
+      "titleZh": "一张纸为什么会决定二十座建筑：《New Bedford》把生产限制带回机制",
+      "contentMode": "original_case_synthesis",
+      "sourceUrl": "https://oakleafgames.wordpress.com/2014/03/24/manufacturing-as-a-design-tool/",
+      "sourceLanguage": "en",
+      "sourceReferences": [
+        "https://oakleafgames.wordpress.com/2014/03/24/manufacturing-as-a-design-tool/",
+        "https://oakleafgames.wordpress.com/2013/10/13/notes-from-new-bedford-part-5-goods-and-money/",
+        "https://oakleafgames.wordpress.com/games/new-bedford/"
+      ],
+      "translatorNote": "本站原创中文案例综合，由 Codex 把生产限制、组件工作与版本边界重组为八个学习维度；不是原文全译，不复制原文结构、图片、评论或长段表达。",
+      "license": {
+        "kind": "site_owned",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "site_owned_original",
+      "completeness": "complete",
+      "internalLearningStatus": "authoritative",
+      "publicationScope": "internal",
+      "publicationStatus": "internal-ready",
+      "legalReviewStatus": "not_reviewed",
+      "legalApprovalClaimed": false,
+      "metadataFile": "content/guides/new-bedford-manufacturing-constraint-case-synthesis-zh-CN-internal.metadata.json",
+      "bodyFile": "content/guides/new-bedford-manufacturing-constraint-case-synthesis-zh-CN-internal.md"
+    }
+  ],
+  "records": [
+    {
+      "resourceId": "game-design-concepts",
+      "contentMode": "guide_only",
+      "sourceUrl": "https://gamedesignconcepts.wordpress.com/",
+      "sourceLanguage": "en",
+      "translatorNote": "来源采用 CC BY 3.0 US。第 1 关和第 2 关文章已有 Codex AI 完整译文内部学习主版；整个资源集合仍只能标为导读。",
+      "license": {
+        "kind": "open_license",
+        "name": "Creative Commons Attribution",
+        "version": "3.0 US",
+        "evidenceUrl": "https://gamedesignconcepts.wordpress.com/about/",
+        "evidenceCapturedAt": "2026-08-21",
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "reusable_license_verified",
+      "completeness": "guide_only",
+      "publicationScope": "public",
+      "body": ""
+    },
+    {
+      "resourceId": "kathleen-mercury-resources",
+      "contentMode": "guide_only",
+      "sourceUrl": "https://www.kathleenmercury.com/",
+      "sourceLanguage": "en",
+      "translatorNote": "当前只发布本站原创中文导读；来源内容混合多种权利主体，未取得全文翻译与网络发布授权。",
+      "license": {
+        "kind": "none_verified",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "link_and_summarize",
+      "completeness": "guide_only",
+      "publicationScope": "public",
+      "body": ""
+    },
+    {
+      "resourceId": "kobold-guide-board-game-design-official",
+      "contentMode": "guide_only",
+      "sourceUrl": "https://koboldpress.com/kpstore/product/kobold-guide-to-board-game-design/",
+      "sourceLanguage": "en",
+      "translatorNote": "当前只发布本站原创中文导读；多作者付费出版物未取得全文翻译与网络发布授权。",
+      "license": {
+        "kind": "none_verified",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "link_and_summarize",
+      "completeness": "guide_only",
+      "publicationScope": "public",
+      "body": ""
+    },
+    {
+      "resourceId": "joe-slack-getting-to-core",
+      "contentMode": "guide_only",
+      "sourceUrl": "https://boardgamedesigncourse.com/getting-to-the-core-of-your-game/",
+      "sourceLanguage": "en",
+      "translatorNote": "当前只发布本站原创中文导读；未取得该文完整翻译与网络发布授权。",
+      "license": {
+        "kind": "none_verified",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "link_and_summarize",
+      "completeness": "guide_only",
+      "publicationScope": "public",
+      "body": ""
+    },
+    {
+      "resourceId": "zimmerman-core-mechanic",
+      "contentMode": "guide_only",
+      "sourceUrl": "https://www.gamedesignworkshop.com/the-core-mechanic",
+      "sourceLanguage": "en",
+      "translatorNote": "当前只发布本站原创中文导读；该文与出版物的改编权利链尚未釐清。",
+      "license": {
+        "kind": "unresolved",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "link_and_summarize",
+      "completeness": "guide_only",
+      "publicationScope": "public",
+      "body": ""
+    },
+    {
+      "resourceId": "loops-and-metagames",
+      "contentMode": "guide_only",
+      "sourceUrl": "https://www.fdg2015.org/papers/fdg2015_paper_22.pdf",
+      "sourceLanguage": "en",
+      "translatorNote": "当前只发布本站原创中文导读；论文的复制声明不足以证明完整中文翻译和公开发布授权。",
+      "license": {
+        "kind": "none_verified",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "link_and_summarize",
+      "completeness": "guide_only",
+      "publicationScope": "public",
+      "body": ""
+    },
+    {
+      "resourceId": "sspai-mvp-prototype",
+      "contentMode": "guide_only",
+      "sourceUrl": "https://sspai.com/post/91653",
+      "sourceLanguage": "zh-CN",
+      "translatorNote": "来源已是中文；当前只发布本站原创导读，完整站内转载仍需书面授权。",
+      "license": {
+        "kind": "none_verified",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "link_and_summarize",
+      "completeness": "guide_only",
+      "publicationScope": "public",
+      "body": ""
+    },
+    {
+      "resourceId": "daniel-games-prototyping",
+      "contentMode": "guide_only",
+      "sourceUrl": "https://daniel.games/prototyping/",
+      "sourceLanguage": "en",
+      "translatorNote": "当前只发布本站原创中文导读；未取得该页完整翻译与网络发布授权。",
+      "license": {
+        "kind": "none_verified",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "link_and_summarize",
+      "completeness": "guide_only",
+      "publicationScope": "public",
+      "body": ""
+    },
+    {
+      "resourceId": "gcores-appraisal-company-diary",
+      "contentMode": "guide_only",
+      "sourceUrl": "https://www.gcores.com/articles/153538",
+      "sourceLanguage": "zh-CN",
+      "translatorNote": "来源已是中文；当前只发布本站原创导读，完整站内转载及图片复用仍需书面授权。",
+      "license": {
+        "kind": "none_verified",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "link_and_summarize",
+      "completeness": "guide_only",
+      "publicationScope": "public",
+      "body": ""
+    },
+    {
+      "resourceId": "ttgda-playtesting",
+      "contentMode": "guide_only",
+      "sourceUrl": "https://www.ttgda.org/in-person-playtesting",
+      "sourceLanguage": "en",
+      "translatorNote": "当前只发布本站原创中文导读；未取得该页完整翻译与网络发布授权。",
+      "license": {
+        "kind": "none_verified",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "link_and_summarize",
+      "completeness": "guide_only",
+      "publicationScope": "public",
+      "body": ""
+    },
+    {
+      "resourceId": "bgdl-playtest-like-a-boss",
+      "contentMode": "guide_only",
+      "sourceUrl": "https://boardgamedesignlab.com/playtest-like-a-boss/",
+      "sourceLanguage": "en",
+      "translatorNote": "当前只发布本站原创中文导读；来源包含第三方引语与表格，未取得完整翻译与发布授权。",
+      "license": {
+        "kind": "none_verified",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "link_and_summarize",
+      "completeness": "guide_only",
+      "publicationScope": "public",
+      "body": ""
+    },
+    {
+      "resourceId": "break-my-game-code",
+      "contentMode": "guide_only",
+      "sourceUrl": "https://www.breakmygame.com/codeofconduct",
+      "sourceLanguage": "en",
+      "translatorNote": "当前只发布本站原创中文导读；未取得行为准则的完整中文本地化与网络发布授权。",
+      "license": {
+        "kind": "none_verified",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "link_and_summarize",
+      "completeness": "guide_only",
+      "publicationScope": "public",
+      "body": ""
+    },
+    {
+      "resourceId": "dvgiochi-standard-rulebook",
+      "contentMode": "guide_only",
+      "sourceUrl": "https://www.dvgiochi.com/net/dv/dV-How_to_write_a_rulebook.pdf",
+      "sourceLanguage": "en",
+      "translatorNote": "当前只发布本站原创中文导读；多方编辑与来源作品的权利链尚未釐清。",
+      "license": {
+        "kind": "unresolved",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "link_and_summarize",
+      "completeness": "guide_only",
+      "publicationScope": "public",
+      "body": ""
+    },
+    {
+      "resourceId": "accessible-rulebook-best-practices",
+      "contentMode": "guide_only",
+      "sourceUrl": "https://doi.org/10.14989/jarps_6_20e",
+      "sourceLanguage": "en",
+      "translatorNote": "来源采用 CC BY 4.0；该论文已有 Codex AI 完整中文译文内部学习主版。资源目录记录仍保持导读层级，全文由权威条目单独登记。",
+      "license": {
+        "kind": "open_license",
+        "name": "Creative Commons Attribution",
+        "version": "4.0 International",
+        "evidenceUrl": "https://repository.kulib.kyoto-u.ac.jp/handle/2433/298016",
+        "evidenceCapturedAt": "2026-08-21",
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "reusable_license_verified",
+      "completeness": "guide_only",
+      "publicationScope": "public",
+      "body": ""
+    },
+    {
+      "resourceId": "pratt-rulebook-editors-interview",
+      "contentMode": "guide_only",
+      "sourceUrl": "https://www.meeplemountain.com/interviews/the-exception-and-the-rules-an-interview-with-emanuela-robert-pratt/",
+      "sourceLanguage": "en",
+      "translatorNote": "当前只发布本站原创中文导读；访谈文本、受访者和配图涉及多方权利，未取得全文授权。",
+      "license": {
+        "kind": "none_verified",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "link_and_summarize",
+      "completeness": "guide_only",
+      "publicationScope": "public",
+      "body": ""
+    },
+    {
+      "resourceId": "bgdl-get-published",
+      "contentMode": "guide_only",
+      "sourceUrl": "https://boardgamedesignlab.com/how-to-get-your-game-published/",
+      "sourceLanguage": "en",
+      "translatorNote": "当前只发布本站原创中文导读；来源混合第三方引语、文档和书籍，未取得完整翻译与发布授权。",
+      "license": {
+        "kind": "none_verified",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "link_and_summarize",
+      "completeness": "guide_only",
+      "publicationScope": "public",
+      "body": ""
+    },
+    {
+      "resourceId": "panda-manufacturing-tools",
+      "contentMode": "guide_only",
+      "sourceUrl": "https://pandagm.com/tools/",
+      "sourceLanguage": "en",
+      "translatorNote": "当前只发布本站原创中文导读；下载和使用工具不等于获得完整翻译与再发布权。",
+      "license": {
+        "kind": "none_verified",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "link_and_summarize",
+      "completeness": "guide_only",
+      "publicationScope": "public",
+      "body": ""
+    },
+    {
+      "resourceId": "ttgda-contract-basics",
+      "contentMode": "guide_only",
+      "sourceUrl": "https://www.ttgda.org/contract-basics",
+      "sourceLanguage": "en",
+      "translatorNote": "当前只发布本站原创中文导读；来源包含第三方合同材料，未取得完整翻译与发布授权。",
+      "license": {
+        "kind": "none_verified",
+        "name": null,
+        "version": null,
+        "evidenceUrl": null,
+        "evidenceCapturedAt": null,
+        "permissionEvidenceId": null
+      },
+      "rightsStatus": "link_and_summarize",
+      "completeness": "guide_only",
+      "publicationScope": "public",
+      "body": ""
+    }
+  ]
+}

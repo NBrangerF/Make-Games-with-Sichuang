@@ -1,0 +1,369 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "prototype-scope-and-fidelity",
+    "title": "把完整游戏裁成这一轮可回答的原型",
+    "question": "我已经知道想验证什么，却仍不知道该做哪些组件、做到多真实、玩到哪里停，以及什么时候该重做表示而不是继续加内容。",
+    "outcome": "先写问题和非目标，再选择最多两个要观察的过滤维度；逐项配置材料、分辨率与范围，裁出能重复关键决定的可玩切片，并写代理运转、停止和重做信号。",
+    "resourceIds": [
+      "kathleen-mercury-prototyping",
+      "games-to-experiment-prototype-questions",
+      "lim-prototype-anatomy",
+      "houde-hill-prototype-purpose",
+      "ttgda-playtesting",
+      "mit-paper-prototyping",
+      "khoo-low-fidelity-case",
+      "board-game-design-lab-prototypes"
+    ],
+    "evidenceBoundary": "组合桌游教师与设计师实践、原型目录、视频游戏教学和 HCI 相邻理论；它们支持按问题裁范围、把保真度拆成多维配置、记录媒介代理与停止/重做信号，不提供最佳组件数、回合数、制作时长、保真等级或适合所有游戏的最小内容量。"
+  },
+  "resources": [
+    {
+      "id": "kathleen-mercury-prototyping",
+      "title": "Prototyping",
+      "creator": "Kathleen Mercury",
+      "href": "https://www.kathleenmercury.com/prototyping.html",
+      "type": "课堂中的快速、低成本桌游原型实践",
+      "evidenceType": "teaching_curation",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "让新手尽早用索引卡、方块和现成组件做出可测版本，并避免先做完整牌组和装饰。",
+      "limitation": "来自教师个人课堂经验；“快且便宜”不能覆盖触感、可见度或实体操作本身就是问题的测试。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "games-to-experiment-prototype-questions",
+      "title": "How to Design and Playtest Your Games? (version 2.0)",
+      "creator": "Antti Kirjavainen",
+      "href": "https://learninggamedev.wordpress.com/2013/02/22/how-to-design-and-playtest-your-games-version-2-0/",
+      "type": "从目标、测试问题到原型子集的经验式游戏设计框架",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "按优先风险选择测试问题，只实现与该问题相关的机制，并允许主持人暂时代运转非目标系统。",
+      "limitation": "作者自述的工作中框架，受 Lean/MDA 影响；不是比较不同原型流程成效的研究。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "lim-prototype-anatomy",
+      "title": "The Anatomy of Prototypes: Prototypes as Filters, Prototypes as Manifestations of Design Ideas",
+      "creator": "Youn-Kyung Lim, Erik Stolterman & Josh Tenenberg",
+      "href": "https://faculty.washington.edu/jtenenbg/publications/limAnatomyOfPrototypes-tochi2008.pdf",
+      "type": "原型过滤维度、表现维度与经济原则研究",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "把外观、数据、功能、互动、空间等过滤维度与材料、分辨率、范围分开，避免把保真度压成一个高低分。",
+      "limitation": "HCI 与产品设计相邻研究，不直接研究桌游；案例样本小且不同媒介的发现不可机械外推。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "houde-hill-prototype-purpose",
+      "title": "What Do Prototypes Prototype?",
+      "creator": "Stephanie Houde & Charles Hill",
+      "href": "https://creativetech.mat.ucsb.edu/readings/Prototypes_prototype.pdf",
+      "type": "用角色、外观与感觉、实现来界定原型目的",
+      "evidenceType": "academic_practice",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "先说明原型要探索角色、使用体验还是实现，并把有限用途明确告诉测试者。",
+      "limitation": "1997 年交互系统设计文章且本轮页面解析失败；只据原始论文入口和可核对摘要使用，不作为桌游参数依据。",
+      "status": "metadata_only",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "ttgda-playtesting",
+      "title": "Playtesting Resources",
+      "creator": "Tabletop Game Designers Association",
+      "href": "https://www.ttgda.org/in-person-playtesting",
+      "type": "行业协会",
+      "evidenceType": "teaching_curation",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "最小原型",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "区分自测、引导测试与更晚阶段的测试任务。",
+      "limitation": "具体活动与链接会随时间变化，需要查看核验日期。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-13"
+    },
+    {
+      "id": "mit-paper-prototyping",
+      "title": "Paper Prototyping",
+      "creator": "MIT OpenCourseWare / Philip Tan",
+      "href": "https://ocw.mit.edu/courses/cms-611j-creating-video-games-fall-2014/348ee58d265e61e4760d196bd97b1ad1_MITCMS_611JF14_Paper_Prot.pdf",
+      "type": "可证伪问题、纸面原型能力与媒介盲区讲义",
+      "evidenceType": "teaching_curation",
+      "format": "slides",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "把问题写成可被推翻的形式，利用实体原型迫使系统定义，同时标出感觉与实现可行性盲区。",
+      "limitation": "视频游戏课程讲义而非桌游研究；多原型与主持建议需要按团队和测试成本调整。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "khoo-low-fidelity-case",
+      "title": "Play Testing a Game Design the Low Fidelity Way",
+      "creator": "Chris Khoo",
+      "href": "https://www.gamedeveloper.com/design/play-testing-a-game-design-the-low-fidelity-way",
+      "type": "用桌游组件重建数字回合制核心的设计师复盘",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "识别技术实现掩盖的规则复杂度，并把无法快速纸面化当成需要进一步解释的症状。",
+      "limitation": "单个数字回合制游戏的回顾案例，不能证明低保真原型普遍节省同等时间或适合实时体验。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "board-game-design-lab-prototypes",
+      "title": "Prototypes",
+      "creator": "Board Game Design Lab",
+      "href": "https://boardgamedesignlab.com/prototypes/",
+      "type": "桌游原型文章、材料、工具与阶段目录",
+      "evidenceType": "curated_directory",
+      "format": "directory",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "最小原型",
+        "测试与反馈",
+        "呈现与发布"
+      ],
+      "useful": "从快速原型、三个阶段、组件制作到虚拟工具继续发现不同做法。",
+      "limitation": "聚合页含旧链接、商业工具与不同作者观点；目录存在不等于逐篇内容已复核。",
+      "status": "article_level",
+      "lastCheckedAt": "2026-08-21"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "kathleen-mercury-prototyping",
+      "useModes": [
+        "learn",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "让新手尽快用现成材料做出第一版，并避免完整牌组与装饰投入锁定错误方向。",
+      "doNotUseFor": "不要把课堂经验里的快且便宜变成忽略触感、可见度和操作证据的普遍规则。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "games-to-experiment-prototype-questions",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "broad",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "从目标和高风险问题反推本轮机制子集、主持代理和测试顺序。",
+      "doNotUseFor": "作者框架未比较不同流程效果，不能当唯一成熟度路线。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "lim-prototype-anatomy",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "把原型保真度拆成过滤性质与材料、分辨率、范围，避免单一总分。",
+      "doNotUseFor": "HCI 小样本案例不能提供桌游组件、回合或保真阈值。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "houde-hill-prototype-purpose",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "metadata_only",
+      "contextClarity": "partial",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "向团队和测试者说明原型主要探索角色、外观与感觉还是实现。",
+      "doNotUseFor": "本轮正文解析失败且语境是旧 HCI 文章，不应用作桌游参数依据。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "ttgda-playtesting",
+      "useModes": [
+        "learn",
+        "lookup"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "partial",
+      "actionability": "directory",
+      "transferability": "conditional",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "快速获得多种测试文章、社群和服务入口，再按当前测试问题选择下一步。",
+      "doNotUseFor": "不要假定目录中的每个外链仍可访问或经过同等审阅；打开前需逐项核验。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "mit-paper-prototyping",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "写可证伪问题、标出纸面媒介盲区，并用多原型降低对单一方案的依恋。",
+      "doNotUseFor": "视频游戏课程不能证明桌游的身体、社交和印刷条件。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "khoo-low-fidelity-case",
+      "useModes": [
+        "learn",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "识别技术实现或代理操作是否掩盖了尚未解决的规则复杂度。",
+      "doNotUseFor": "单个数字回合制案例不能证明纸面原型普遍节省相同时长。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "board-game-design-lab-prototypes",
+      "useModes": [
+        "lookup"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "partial",
+      "actionability": "directory",
+      "transferability": "broad",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "继续寻找桌游原型阶段、材料、组件制作和虚拟工具文章。",
+      "doNotUseFor": "聚合页中的单篇链接、商业关系与陈旧内容必须另行核验。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    }
+  ]
+}

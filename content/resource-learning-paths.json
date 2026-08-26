@@ -1,0 +1,174 @@
+{
+  "schemaVersion": 1,
+  "principle": "每个设计阶段只提供三份起步资料。顺序表达学习脚手架，不代表质量排名；完成一个动作后，再决定是否浏览完整清单。",
+  "paths": [
+    {
+      "entryId": "choose-learning-spine",
+      "title": "从一条主线开始学习",
+      "intro": "先用练习建立自己的问题，再比较不同课程和设计师怎样安排学习。",
+      "steps": [
+        {
+          "resourceId": "game-design-concepts",
+          "guideTitle": "用练习建立第一条设计主线",
+          "purpose": "先体验一套会要求你动手产出的课程，而不是继续收集书单。",
+          "focus": "留意每个概念怎样被转换成一项练习，以及练习产生了什么设计材料。",
+          "action": "写下当前最想解决的一个设计问题，并选一个今天能完成的练习。"
+        },
+        {
+          "resourceId": "kathleen-mercury-resources",
+          "guideTitle": "比较从游玩到原型的课堂路径",
+          "purpose": "观察另一套教学结构怎样把游玩、机制、主题、原型和反馈连接起来。",
+          "focus": "寻找与你当前问题直接相关的单元，不必从第一页顺序读到最后。",
+          "action": "从课程中补一个活动，并说明它会改变或检验你的哪项设计判断。"
+        },
+        {
+          "resourceId": "kobold-guide-board-game-design-official",
+          "guideTitle": "听见不同设计师的判断",
+          "purpose": "用多位设计师的经验扩展视角，同时保留建议之间的差异。",
+          "focus": "区分作者的工作语境、设计对象和经验判断，不把章节结论当成通用规则。",
+          "action": "记录一条与你现有做法相反的建议，并写出它在什么条件下可能成立。"
+        }
+      ]
+    },
+    {
+      "entryId": "core-loop-handoff",
+      "title": "把体验意图接成一个循环",
+      "intro": "先确认玩家要经历什么，再隔离最小交互，最后写清输入、状态和反馈。",
+      "steps": [
+        {
+          "resourceId": "joe-slack-getting-to-core",
+          "guideTitle": "先写体验，再寻找核心",
+          "purpose": "避免从机制清单出发，把核心重新连接到预期玩家体验。",
+          "focus": "检查机制、主题和终局是否共同支持同一个体验承诺。",
+          "action": "用一句话写下玩家反复做什么，以及你希望这件事让他们感到什么。"
+        },
+        {
+          "resourceId": "zimmerman-core-mechanic",
+          "guideTitle": "隔离最小可玩的交互",
+          "purpose": "观察一个核心交互怎样在没有完整游戏的情况下被单独制作和测试。",
+          "focus": "留意加入对象、危险和目标之前，最小版本已经能回答什么问题。",
+          "action": "删掉暂时不影响核心选择的内容，只留下一个输入、一个变化和一个反馈。"
+        },
+        {
+          "resourceId": "loops-and-metagames",
+          "guideTitle": "把交互写成可重复循环",
+          "purpose": "为最小交互补上状态、规则处理、反馈和再次行动的条件。",
+          "focus": "区分短循环、整局流程和局外活动，不把所有重复都画进一张图。",
+          "action": "画出输入、处理、反馈和下一次输入，并标出循环在哪种条件下停止。"
+        }
+      ]
+    },
+    {
+      "entryId": "first-prototype",
+      "title": "把点子缩成今天能玩的版本",
+      "intro": "先理解最小原型为什么必要，再选择材料和范围，最后看一个中文开发案例。",
+      "steps": [
+        {
+          "resourceId": "sspai-mvp-prototype",
+          "guideTitle": "先验证核心，不先补完整内容",
+          "purpose": "用中文成本案例理解为什么完整原型常常掩盖真正需要回答的问题。",
+          "focus": "分开核心玩法、题材匹配、美术投入和样品成本，找出本轮唯一未知。",
+          "action": "写下这一版必须回答的问题，以及为了回答它可以暂时删除的内容。"
+        },
+        {
+          "resourceId": "daniel-games-prototyping",
+          "guideTitle": "制作便宜、快速、可以丢弃的原型",
+          "purpose": "把原型视为学习工具，降低第一次尝试失败时的心理和制作成本。",
+          "focus": "观察材料精度怎样服务测试问题，而不是服务作品展示。",
+          "action": "限定一小时和手边材料，做出能完成一次核心选择的版本。"
+        },
+        {
+          "resourceId": "gcores-appraisal-company-diary",
+          "guideTitle": "跟随一款小盒游戏逐步成形",
+          "purpose": "从真实中文开发记录中观察规格限制、测试怀疑和产品化怎样互相影响。",
+          "focus": "留意作者何时增加第二重决策张力，以及哪些内容直到后期才进入。",
+          "action": "为自己的原型写一条明确的组件上限，并预测它会迫使你做出什么取舍。"
+        }
+      ]
+    },
+    {
+      "entryId": "first-playtest",
+      "title": "准备一场只回答一个问题的测试",
+      "intro": "先选择测试类型，再准备观察和追问，最后确认参与边界与反馈礼仪。",
+      "steps": [
+        {
+          "resourceId": "ttgda-playtesting",
+          "guideTitle": "先判断这一轮需要哪种测试",
+          "purpose": "区分自测、引导测试和更晚阶段测试能够提供的不同证据。",
+          "focus": "不要因为能找到测试者就开始测试，先确认他们能帮助回答什么。",
+          "action": "写下本轮唯一问题，并选择最便宜、最合适的一种测试方式。"
+        },
+        {
+          "resourceId": "bgdl-playtest-like-a-boss",
+          "guideTitle": "观察行为，再提出追问",
+          "purpose": "准备测试前、中、后的主持动作，减少临场解释和遗漏。",
+          "focus": "分开身体行为、玩家感受、玩家建议和设计者自己的决定。",
+          "action": "准备三列记录：发生了什么、玩家怎样描述、我暂时怎样解释。"
+        },
+        {
+          "resourceId": "break-my-game-code",
+          "guideTitle": "给测试者清楚、安全的参与边界",
+          "purpose": "把时间、互惠、录制同意、反馈礼仪和退出方式变成可执行约定。",
+          "focus": "检查测试者是否知道活动目的、预计时长、记录方式和如何停止参与。",
+          "action": "写一段一分钟开场说明，并加入退出、录制和反馈边界。"
+        }
+      ]
+    },
+    {
+      "entryId": "rules-and-teaching",
+      "title": "让陌生人能学会，也能查回来",
+      "intro": "先建立规则结构，再检查阅读负担，最后用编辑工作流寻找歧义。",
+      "steps": [
+        {
+          "resourceId": "dvgiochi-standard-rulebook",
+          "guideTitle": "搭出能教学也能查询的规则结构",
+          "purpose": "先用目标、设置、流程、终局、例子和术语建立最小完整结构。",
+          "focus": "检查信息出现的顺序是否支持第一次行动，也支持局中快速查找。",
+          "action": "只写目标、设置和第一次决定，并让一名未参与设计的人照着开始。"
+        },
+        {
+          "resourceId": "accessible-rulebook-best-practices",
+          "guideTitle": "把理解困难视为材料问题",
+          "purpose": "从认知负荷、易读语言和多维无障碍重新检查规则表达。",
+          "focus": "寻找长句、术语跳跃、隐含前提和只能依赖记忆恢复的信息。",
+          "action": "选择一段最难理解的规则，拆成短句、动作和一个具体例子。"
+        },
+        {
+          "resourceId": "pratt-rulebook-editors-interview",
+          "guideTitle": "用两位编辑的差异寻找歧义",
+          "purpose": "观察独立学习、共同游玩和比较理解差异怎样暴露规则问题。",
+          "focus": "留意术语、玩家辅助、查询路径和首局材料之间的分工。",
+          "action": "请两个人分别阅读同一段规则，再比较他们第一次执行不同的地方。"
+        }
+      ]
+    },
+    {
+      "entryId": "production-and-publishing",
+      "title": "先选路线，再冻结交付责任",
+      "intro": "先比较投稿与自出版，再核对实体规格，最后理解合同怎样分配责任和退出方式。",
+      "steps": [
+        {
+          "resourceId": "bgdl-get-published",
+          "guideTitle": "比较投稿与自出版的责任",
+          "purpose": "先理解目录匹配、提案、样品、合同和自行承担生产的差异。",
+          "focus": "不要先问哪条路线更好，先问自己愿意承担哪些工作和风险。",
+          "action": "列出设计、编辑、美术、生产、营销和履约，并为每项写下当前负责人。"
+        },
+        {
+          "resourceId": "panda-manufacturing-tools",
+          "guideTitle": "把游戏转换成可交付的组件规格",
+          "purpose": "认识纸品文件、非纸组件、模板和规格表需要不同的生产信息。",
+          "focus": "区分设计想法、组件数量、尺寸材质、印刷文件和样品核验。",
+          "action": "为当前版本建立一页组件清单，标出数量、尺寸、材料和仍未确认的假设。"
+        },
+        {
+          "resourceId": "ttgda-contract-basics",
+          "guideTitle": "用合同问题检查责任与退出方式",
+          "purpose": "把合同视为双方责任、所得、期限和权利回归的明确分配。",
+          "focus": "关注交付、修改、付款、授权范围、期限、终止和权利回归，不只看版税数字。",
+          "action": "写下五个必须在签署前获得明确答案的问题，并记录谁能提供专业复核。"
+        }
+      ]
+    }
+  ]
+}

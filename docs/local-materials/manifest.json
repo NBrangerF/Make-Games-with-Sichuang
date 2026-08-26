@@ -1,0 +1,667 @@
+{
+  "schemaVersion": 1,
+  "generatedAt": "2026-08-20T17:10:24.744Z",
+  "scope": [
+    {
+      "id": "camp-course-2023",
+      "title": "桌游设计·光华营地"
+    },
+    {
+      "id": "original-design-course-2019-2020",
+      "title": "原创桌游解构与设计课程"
+    },
+    {
+      "id": "hanzi-board-game-course-2022",
+      "title": "云谷汉字桌游设计融合课"
+    },
+    {
+      "id": "social-science-board-game-course-2023",
+      "title": "桌游公司·桌游×社会科学"
+    }
+  ],
+  "policy": {
+    "originalFilesCopiedToRepository": false,
+    "personalAndAdministrativeFilesExcluded": true,
+    "publicUse": "Only original summaries and structural observations until rights are reviewed."
+  },
+  "count": 57,
+  "duplicateGroups": [
+    [
+      "camp-course-2023/第三课时/试玩反馈单.pdf",
+      "camp-course-2023/第五课时/试玩反馈单.pdf"
+    ],
+    [
+      "camp-course-2023/第三课时/主题学习单.pdf",
+      "camp-course-2023/第四课时/主题学习单.pdf"
+    ]
+  ],
+  "records": [
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "第二课时/团队共识方法·秘籍.pdf",
+      "format": "pdf",
+      "bytes": 577282,
+      "modifiedAt": "2023-06-13T07:09:14.000Z",
+      "sha256": "d9d9236987b1512ff2ec514081e194b56d8f052f0c73cc38bd9f3ccdf065e0c2",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "第二课时/桌游反馈表 get bit.pdf",
+      "format": "pdf",
+      "bytes": 538703,
+      "modifiedAt": "2023-06-13T07:09:06.000Z",
+      "sha256": "acfc19ee46f38d4c48d009d02fa58ea1a3008b3bda366887c405572848f01988",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "第二课时/桌游设计第二课时.pptx",
+      "format": "pptx",
+      "bytes": 57859334,
+      "modifiedAt": "2023-06-13T07:09:22.000Z",
+      "sha256": "9c8cc53770b8cb4f3432648683b801755ddae6fbbbc7c3f6812415e012beafeb",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "第二课时/get bit 秘籍纸.pdf",
+      "format": "pdf",
+      "bytes": 519075,
+      "modifiedAt": "2023-06-13T07:08:55.000Z",
+      "sha256": "ca25d671fb8e5e86d0e788ece7fa2ed8f48673ca267438e9448b20f51601f0ea",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "第三课时/试玩反馈单.pdf",
+      "format": "pdf",
+      "bytes": 526904,
+      "modifiedAt": "2023-06-13T06:51:03.000Z",
+      "sha256": "70687d3da7d66e75ef814122a629e667fac233c9012de4d3d0bcdf8fb94a6e74",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "第三课时/主题学习单.pdf",
+      "format": "pdf",
+      "bytes": 613456,
+      "modifiedAt": "2023-06-13T06:55:25.000Z",
+      "sha256": "f799bfed85cfc4e3d095ccee44dff616a003bebe46b1c86332416bd77306ce76",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "第三课时/桌游反馈表 走开，大坏蛋！.pdf",
+      "format": "pdf",
+      "bytes": 537617,
+      "modifiedAt": "2023-06-13T07:04:50.000Z",
+      "sha256": "3a9682e700663f33bee99b115443c3271f6238c2f907ed6c97b3c64e536cb79a",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "第三课时/桌游设计第三课时 .pptx",
+      "format": "pptx",
+      "bytes": 66249416,
+      "modifiedAt": "2023-06-13T07:02:28.000Z",
+      "sha256": "13200b9b82e4a81bb96d3579fcb86a6c7171503b2da77a84493bc77d5a204b8b",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "第四课时/游戏机制·秘籍.pdf",
+      "format": "pdf",
+      "bytes": 524156,
+      "modifiedAt": "2023-06-13T06:55:18.000Z",
+      "sha256": "08ad5bd37485b6aa59a15bee7762153bc67060898484613fff571c7a4f2461ca",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "第四课时/主题学习单.pdf",
+      "format": "pdf",
+      "bytes": 613456,
+      "modifiedAt": "2023-06-13T06:55:25.000Z",
+      "sha256": "f799bfed85cfc4e3d095ccee44dff616a003bebe46b1c86332416bd77306ce76",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "第四课时/桌游反馈表 方程式D.pdf",
+      "format": "pdf",
+      "bytes": 538216,
+      "modifiedAt": "2023-06-13T06:54:42.000Z",
+      "sha256": "8c3230aa0eb344d1b7381be686cf0a389d032e34a010aded49d878a0e76b74d0",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "第四课时/桌游设计第四课时.pptx",
+      "format": "pptx",
+      "bytes": 64773408,
+      "modifiedAt": "2023-06-13T06:58:41.000Z",
+      "sha256": "e44b8b7cfb003620ebbf6ffb5efc769bc413917a72cc07e118cbd9b0a6a4424c",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "第五课时/反馈+修改 记录单.pdf",
+      "format": "pdf",
+      "bytes": 517600,
+      "modifiedAt": "2023-06-13T06:50:53.000Z",
+      "sha256": "f060d174c85dc5f807c1d385ce3d1333c687b97f5661fdece1aae02252d7a434",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "第五课时/讲解游戏·秘籍纸.pdf",
+      "format": "pdf",
+      "bytes": 526265,
+      "modifiedAt": "2023-06-13T06:50:48.000Z",
+      "sha256": "bd9ee82a18ff5340a3d780307d26a11f27a28644fc50f97b5b172c3ec807791e",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "第五课时/试玩反馈单.pdf",
+      "format": "pdf",
+      "bytes": 526904,
+      "modifiedAt": "2023-06-13T06:51:03.000Z",
+      "sha256": "70687d3da7d66e75ef814122a629e667fac233c9012de4d3d0bcdf8fb94a6e74",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "第五课时/桌游设计第五课时 .pptx",
+      "format": "pptx",
+      "bytes": 65481872,
+      "modifiedAt": "2023-06-13T06:50:25.000Z",
+      "sha256": "78b6d1dc638e2b7644af08c0a6e4af51066a7e52643795f310144086899c284b",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "第一课时/飞行棋反馈表  .pdf",
+      "format": "pdf",
+      "bytes": 536473,
+      "modifiedAt": "2023-06-13T07:13:37.000Z",
+      "sha256": "e76367dbb3079a91bb4bd395a5e3c13ee4b66c90bf3e938fe0d9181ccfef661e",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "第一课时/游玩行为准则海报 光华营地.pdf",
+      "format": "pdf",
+      "bytes": 726803,
+      "modifiedAt": "2023-06-12T10:59:49.000Z",
+      "sha256": "431c4153dfce83a2e2a284c98f102e05ee0301a68aad0ab1f6a75b2ce1eb498b",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "第一课时/桌游反馈表 1.pdf",
+      "format": "pdf",
+      "bytes": 536343,
+      "modifiedAt": "2023-06-13T07:13:49.000Z",
+      "sha256": "a4eb924e1ae650ad743ef2252f28466ea9f587c70d9cd745a1c1237554cfa963",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "第一课时/桌游设计第一课时.pptx",
+      "format": "pptx",
+      "bytes": 77916460,
+      "modifiedAt": "2023-06-13T07:14:09.000Z",
+      "sha256": "e353b153f82f024d867bf8a851f97be4377a19003511fe293cfb56b08491c7b1",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "第一课时/sushi go 秘籍纸.pdf",
+      "format": "pdf",
+      "bytes": 572121,
+      "modifiedAt": "2023-06-13T07:13:43.000Z",
+      "sha256": "e18ba67fdda6dc6d5104c9b86384c13598a57b3bafacf889358dde8e84600d69",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "空白棋盘模版/11x17_0.55_square_30x19 (1).doc",
+      "format": "doc",
+      "bytes": 75264,
+      "modifiedAt": "2023-06-13T06:53:16.000Z",
+      "sha256": "63dd7f5b64bea316c8c60a0e823f0bf7db742fdd7bc9f1122ade4515024df2d8",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "空白棋盘模版/11x17_0.82_square_13x20 (3).doc",
+      "format": "doc",
+      "bytes": 49664,
+      "modifiedAt": "2023-06-13T06:53:15.000Z",
+      "sha256": "2f1d0127c9b1cb3f0db9e6a12e51e6ad8208c8737c31a4b653189bd73f163054",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "空白棋盘模版/11x17_1.10_square_9x15 (3).doc",
+      "format": "doc",
+      "bytes": 40448,
+      "modifiedAt": "2023-06-13T06:53:14.000Z",
+      "sha256": "80d45eff5466a7c204228f6e1243b2a40d0fa1b8d4c1900ed5299340c3fd2f4b",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "空白棋盘模版/11x17_16mm_hex_-_horiz_31x16.5.doc",
+      "format": "doc",
+      "bytes": 69632,
+      "modifiedAt": "2023-06-12T06:40:15.000Z",
+      "sha256": "0f8a324585f98ef62a5833c90aab2a941a48cd56584905dbd74b0e85fbe4e9a5",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "空白棋盘模版/11x17_19mm_-_hex_-_horiz_26x13.5.doc",
+      "format": "doc",
+      "bytes": 64512,
+      "modifiedAt": "2023-06-13T06:53:19.000Z",
+      "sha256": "67ad966bfb1af0e8e0474180fdfae42007e4f213d8c98897a05980e4187cff79",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "空白棋盘模版/11x17_26mm_hex_-_horiz_18x9.5.doc",
+      "format": "doc",
+      "bytes": 45056,
+      "modifiedAt": "2023-06-13T06:53:20.000Z",
+      "sha256": "1b8a2fc86f19a55bece4da1a4ca76a7cd0aaeff7a0e1fef5924ee5d21f4ff768",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "空白棋盘模版/11x17_34mm_hex_-_horiz_14x7 (1).doc",
+      "format": "doc",
+      "bytes": 39936,
+      "modifiedAt": "2023-06-13T06:53:21.000Z",
+      "sha256": "f32d9c2a8ba437ce09d4d1fa5cfaa166aff7e1f8421e6ffabc17cb24caea975c",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "空白棋盘模版/11x17_48mm_hex_-_horiz_10x5 (1).doc",
+      "format": "doc",
+      "bytes": 34816,
+      "modifiedAt": "2023-06-13T06:53:22.000Z",
+      "sha256": "322a2fed541e421903b89a9cdce8c4a8ed4c27b04d201aa9cb7a0b0488f6f403",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "camp-course-2023",
+      "collectionTitle": "桌游设计·光华营地",
+      "relativePath": "空白棋盘模版/11x17_point68_square_15x24 (3).doc",
+      "format": "doc",
+      "bytes": 60416,
+      "modifiedAt": "2023-06-12T06:40:12.000Z",
+      "sha256": "db8508e2134f635b2b4fb052f350652cb954e48cf9ba426881aad1b7e67277c3",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "hanzi-board-game-course-2022",
+      "collectionTitle": "云谷汉字桌游设计融合课",
+      "relativePath": "创意生成表.pages",
+      "format": "pages",
+      "bytes": 151752,
+      "modifiedAt": "2022-05-07T10:31:48.000Z",
+      "sha256": "0fab2baa5b9867457f0a74847ba291d75b5f12d03d7ba93f16727fe6e20aae9c",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "hanzi-board-game-course-2022",
+      "collectionTitle": "云谷汉字桌游设计融合课",
+      "relativePath": "反馈及修改表格.pages",
+      "format": "pages",
+      "bytes": 125696,
+      "modifiedAt": "2023-06-13T06:26:09.000Z",
+      "sha256": "5f992487a2cf1025b57b134cfa882918cfdface1d5dc6759528b1ebe8806ad49",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "hanzi-board-game-course-2022",
+      "collectionTitle": "云谷汉字桌游设计融合课",
+      "relativePath": "如何讲解游戏笔记.pages",
+      "format": "pages",
+      "bytes": 117050,
+      "modifiedAt": "2022-05-10T03:06:59.000Z",
+      "sha256": "c5854315508da81334ca5dc6ada27036493e4bc4ad1237eb921d6918738941df",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "hanzi-board-game-course-2022",
+      "collectionTitle": "云谷汉字桌游设计融合课",
+      "relativePath": "云谷5年级融合课支持方案 by cheer21 初版.docx",
+      "format": "docx",
+      "bytes": 10326,
+      "modifiedAt": "2022-04-20T10:25:02.000Z",
+      "sha256": "02404bc3500115a2f5dac91a09499d3e125b5a658b583ff71dae324d3069a054",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "hanzi-board-game-course-2022",
+      "collectionTitle": "云谷汉字桌游设计融合课",
+      "relativePath": "桌面游戏设计成功标准.pages",
+      "format": "pages",
+      "bytes": 225586,
+      "modifiedAt": "2022-05-04T17:04:53.000Z",
+      "sha256": "f0423b842a82dd90dc121f369e67f5c1ad923c0d4a57daadc133c3088c4d566c",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "hanzi-board-game-course-2022",
+      "collectionTitle": "云谷汉字桌游设计融合课",
+      "relativePath": "桌游反馈表.pages",
+      "format": "pages",
+      "bytes": 163480,
+      "modifiedAt": "2022-05-07T10:13:20.000Z",
+      "sha256": "0fdeeec65561f24dce71bd8a80cce57ced9f93490514f552f96ed08e73b3ab6f",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "original-design-course-2019-2020",
+      "collectionTitle": "原创桌游解构与设计课程",
+      "relativePath": "机制介绍.docx",
+      "format": "docx",
+      "bytes": 94099,
+      "modifiedAt": "2018-10-30T09:52:54.000Z",
+      "sha256": "30e2ceca12510686f8d9ceb95918ae01cfbf89fe67acbb845d621be1abf8e394",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "original-design-course-2019-2020",
+      "collectionTitle": "原创桌游解构与设计课程",
+      "relativePath": "如何讲解游戏笔记 2.pages",
+      "format": "pages",
+      "bytes": 110313,
+      "modifiedAt": "2022-04-12T02:47:22.000Z",
+      "sha256": "bf853c5d851621380f659d0c7a540bced9a0618360d740578a36bf31f98b2d73",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "original-design-course-2019-2020",
+      "collectionTitle": "原创桌游解构与设计课程",
+      "relativePath": "如何讲解游戏笔记.pages",
+      "format": "pages",
+      "bytes": 110178,
+      "modifiedAt": "2022-05-07T09:59:27.000Z",
+      "sha256": "1d0ebfb491850f938ec2510f23f41b66072b384e00871eab5d74aa4ffe70254f",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "original-design-course-2019-2020",
+      "collectionTitle": "原创桌游解构与设计课程",
+      "relativePath": "什么是策略游戏.ppt",
+      "format": "ppt",
+      "bytes": 4442624,
+      "modifiedAt": "2018-09-25T15:38:27.000Z",
+      "sha256": "ccc13956a7460b4cd97cb18f31b0f9df43bdbdc3c86f25a1233010011327e4be",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "original-design-course-2019-2020",
+      "collectionTitle": "原创桌游解构与设计课程",
+      "relativePath": "适合桌游设计的教室玩耍守则.pptx",
+      "format": "pptx",
+      "bytes": 64744,
+      "modifiedAt": "2022-02-24T02:20:52.000Z",
+      "sha256": "e8734ff73a6df37df122e1dd8880006a38764422fc5f1f82c23a4de98c7410ba",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "original-design-course-2019-2020",
+      "collectionTitle": "原创桌游解构与设计课程",
+      "relativePath": "原创桌游解构与设计课程 syllabus.pdf",
+      "format": "pdf",
+      "bytes": 69812,
+      "modifiedAt": "2020-07-28T09:03:17.000Z",
+      "sha256": "9f6d320e2bdf99f66b99288da8c02ed33c6e98b3c21206323c70c419c552e9f3",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "original-design-course-2019-2020",
+      "collectionTitle": "原创桌游解构与设计课程",
+      "relativePath": "原创桌游与设计 class 1.pages",
+      "format": "pages",
+      "bytes": 748509,
+      "modifiedAt": "2021-04-01T13:35:22.000Z",
+      "sha256": "3ac373652608c12fa4174a5647220272aecc8c353315ffc826b9b7439a1176a2",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "original-design-course-2019-2020",
+      "collectionTitle": "原创桌游解构与设计课程",
+      "relativePath": "原创桌游与设计 class 1.pdf",
+      "format": "pdf",
+      "bytes": 141714,
+      "modifiedAt": "2019-05-23T01:50:17.000Z",
+      "sha256": "5af2aaf383289e7cdff970cfdc94f63ff34b98897de2ec271a907e8f354270ba",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "original-design-course-2019-2020",
+      "collectionTitle": "原创桌游解构与设计课程",
+      "relativePath": "原创桌游与设计 class 2.pages",
+      "format": "pages",
+      "bytes": 765288,
+      "modifiedAt": "2021-03-23T03:09:55.000Z",
+      "sha256": "64ba905fe21e20f771eaa590a36f5b51f868b43b6736d60d09fb98971b3643f8",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "original-design-course-2019-2020",
+      "collectionTitle": "原创桌游解构与设计课程",
+      "relativePath": "原创桌游与设计 class 2.pdf",
+      "format": "pdf",
+      "bytes": 146959,
+      "modifiedAt": "2019-05-23T01:50:34.000Z",
+      "sha256": "81a10c9d50565a1a3e78418560dc2d73f3c532d9c1cf33cd5055765619f50b85",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "original-design-course-2019-2020",
+      "collectionTitle": "原创桌游解构与设计课程",
+      "relativePath": "原创桌游与设计 class 3.pages",
+      "format": "pages",
+      "bytes": 734697,
+      "modifiedAt": "2018-09-13T09:14:32.000Z",
+      "sha256": "65e16d0939a597b9724ff7ff4aea46d091d1522411fa81fc9c71e0dad00bd792",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "original-design-course-2019-2020",
+      "collectionTitle": "原创桌游解构与设计课程",
+      "relativePath": "原创桌游与设计 class 3.pdf",
+      "format": "pdf",
+      "bytes": 142369,
+      "modifiedAt": "2019-05-23T01:50:47.000Z",
+      "sha256": "26eb4fdf975a906421ee2b3be02499a204e30e3db4c2325ebfbc2023f799e432",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "original-design-course-2019-2020",
+      "collectionTitle": "原创桌游解构与设计课程",
+      "relativePath": "原创桌游与设计 class 4.pages",
+      "format": "pages",
+      "bytes": 739679,
+      "modifiedAt": "2018-08-25T08:17:05.000Z",
+      "sha256": "08e183ef93fdec3757893230e0045d37cb8c6476825b58046c9fd1417a9d1933",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "original-design-course-2019-2020",
+      "collectionTitle": "原创桌游解构与设计课程",
+      "relativePath": "原创桌游与设计 class 4.pdf",
+      "format": "pdf",
+      "bytes": 147643,
+      "modifiedAt": "2020-07-28T09:05:19.000Z",
+      "sha256": "d6332d624a6befa31dd11630a84ea9129dc14207aa14272e2ac64d57ff57fb9d",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "original-design-course-2019-2020",
+      "collectionTitle": "原创桌游解构与设计课程",
+      "relativePath": "原型.key",
+      "format": "key",
+      "bytes": 1147541,
+      "modifiedAt": "2019-04-28T13:35:11.000Z",
+      "sha256": "45427d44c72cf866cd12ca8a8c5af8b77052710aebfbcff70f9b36d0b13f1c71",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "original-design-course-2019-2020",
+      "collectionTitle": "原创桌游解构与设计课程",
+      "relativePath": "主题调查.docx",
+      "format": "docx",
+      "bytes": 42705,
+      "modifiedAt": "2018-11-07T08:52:20.000Z",
+      "sha256": "58867273f6f225f1d20cdef6bd78fcb39acc83df3668e861126d9454dee00fcd",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "original-design-course-2019-2020",
+      "collectionTitle": "原创桌游解构与设计课程",
+      "relativePath": "主题调查.pages",
+      "format": "pages",
+      "bytes": 672346,
+      "modifiedAt": "2022-12-01T08:02:00.000Z",
+      "sha256": "0ed71e9071fe0ebd48269888f28ca372861ea2342026bb7072dfee161f777b7d",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "original-design-course-2019-2020",
+      "collectionTitle": "原创桌游解构与设计课程",
+      "relativePath": "桌面游戏反馈表.docx",
+      "format": "docx",
+      "bytes": 18685,
+      "modifiedAt": "2019-01-03T09:44:09.000Z",
+      "sha256": "a04a9f382cfc6274660bfcdf839d6a8eef838bec6f9485ddfe8e4b8ea4f21bba",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "original-design-course-2019-2020",
+      "collectionTitle": "原创桌游解构与设计课程",
+      "relativePath": "definition_of_a_game.pptx",
+      "format": "pptx",
+      "bytes": 442049,
+      "modifiedAt": "2018-07-24T02:55:09.000Z",
+      "sha256": "a3fcefb5c281fe354217243dd2a2824ad5ec4f8002b37dac567a20acd0cf16a7",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "original-design-course-2019-2020",
+      "collectionTitle": "原创桌游解构与设计课程",
+      "relativePath": "Theme & Conflict.pptx",
+      "format": "pptx",
+      "bytes": 3093865,
+      "modifiedAt": "2018-11-19T01:18:53.000Z",
+      "sha256": "9dbf1d3d61a6817597faae9c49cfae0aed54ecdf03c628134d01ba86b96c584c",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    },
+    {
+      "collectionId": "social-science-board-game-course-2023",
+      "collectionTitle": "桌游公司·桌游×社会科学",
+      "relativePath": "桌游公司（桌游x社会科学） Course introduction课程介绍.pdf",
+      "format": "pdf",
+      "bytes": 4689049,
+      "modifiedAt": "2023-01-04T12:19:12.000Z",
+      "sha256": "3a06156697749789b94ce88f458e234910de126cf0077ab52e2c014ec8a44a17",
+      "privacy": "internal_course_material",
+      "publication": "summary_only_until_rights_reviewed"
+    }
+  ]
+}

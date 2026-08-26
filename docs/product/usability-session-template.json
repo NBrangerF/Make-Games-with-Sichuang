@@ -1,0 +1,32 @@
+{
+  "schemaVersion": 1,
+  "round": "01",
+  "participant": {
+    "id": "P01",
+    "tabletopDesignExperience": "none",
+    "familiarGames": [],
+    "priorFrameworkKnowledge": []
+  },
+  "session": {
+    "date": "",
+    "device": "",
+    "viewport": "",
+    "facilitator": ""
+  },
+  "tasks": [
+    { "id": "T1", "result": "not_run", "firstDeviation": "", "recovery": "", "prompts": 0, "quotes": [], "issues": [] },
+    { "id": "T2", "result": "not_run", "firstDeviation": "", "recovery": "", "prompts": 0, "quotes": [], "issues": [] },
+    { "id": "T3", "result": "not_run", "firstDeviation": "", "recovery": "", "prompts": 0, "quotes": [], "issues": [] },
+    { "id": "T4", "result": "not_run", "firstDeviation": "", "recovery": "", "prompts": 0, "quotes": [], "issues": [] }
+  ],
+  "privacy": {
+    "consentRecorded": false,
+    "screenRecording": false,
+    "personallyIdentifyingInformationRemoved": false
+  },
+  "summary": {
+    "blockingIssues": [],
+    "highFrictionIssues": [],
+    "revisionHypotheses": []
+  }
+}

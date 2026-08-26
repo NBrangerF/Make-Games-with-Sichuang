@@ -1,0 +1,30 @@
+{
+  "schemaVersion": 1,
+  "itemId": "monsoon-market-variables-case-synthesis-zh-CN-internal",
+  "resourceId": "monsoon-market-variables",
+  "titleZh": "一次只测试一种变化：《Monsoon Market》怎样收缩变量",
+  "contentMode": "original_case_synthesis",
+  "language": "zh-CN",
+  "version": "1.0.0-internal",
+  "authorship": {
+    "author": "落桌",
+    "production": "Codex 基于公开来源与项目资源评估完成原创案例综合",
+    "humanReviewRequired": false,
+    "fullTranslationClaimed": false
+  },
+  "source": {
+    "title": "Revising the Constants and Variables in Monsoon Market",
+    "author": "Daniel Solis",
+    "url": "https://danielsolisblog.blogspot.com/2014/05/revising-constants-and-variables-in.html",
+    "publishedAt": "2014-05-19",
+    "translationPermissionVerified": false
+  },
+  "publication": {
+    "visibility": "internal",
+    "status": "published-internal",
+    "publicReleaseEnabled": false,
+    "rightsBasis": "原创事实综合与分析；不复制来源表达、照片、评论或页面结构。"
+  },
+  "file": "content/guides/monsoon-market-variables-case-synthesis-zh-CN-internal.md",
+  "updatedAt": "2026-08-21"
+}

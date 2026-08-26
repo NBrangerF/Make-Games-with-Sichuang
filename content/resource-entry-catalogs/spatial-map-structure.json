@@ -1,0 +1,391 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "spatial-map-structure",
+    "title": "诊断空间、距离、邻接与地图结构",
+    "question": "地图看起来完整，但玩家总走同一路线、搞错相邻、低人数碰不到彼此，或远座看不清关键状态；我该缩图、加路线、换网格还是重画？",
+    "outcome": "先把地图还原成地点—连接—成本—容量关系，再绑定激励、人数与时间；最后从真实座位测试图形、触达和只改一个空间变量。",
+    "resourceIds": [
+      "oath-map-remembers",
+      "faidutti-map-territory",
+      "insidegmt-cartography-game-board",
+      "ticket-to-ride-adjacency-analysis",
+      "spirit-island-jagged-earth-map-diary",
+      "new-yorker-map-incentive-playtest",
+      "scott-tabletop-territoriality",
+      "reddit-table-space-access"
+    ],
+    "evidenceBoundary": "组合设计师地图理论、一手商业日志、官方规则、玩家图论分析、实体桌面研究、记者现场案例和社区症状；它们支持把地图视为规则空间、分开视觉/规则距离、描述拓扑、绑定人数与激励并做真实座位任务，不提供最佳尺寸、格数、路线数、度数、直径、瓶颈、容量、网格排名、历史精度或玩家偏好。"
+  },
+  "resources": [
+    {
+      "id": "oath-map-remembers",
+      "title": "Oath Designer Diary 4: A Map That Remembers",
+      "creator": "Cole Wehrle / Leder Games",
+      "href": "https://ledergames.com/blogs/news/oath-designer-diary-4-a-map-that-remembers",
+      "type": "距离抽象、地图容量与跨局保存设计日志",
+      "evidenceType": "first_party_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "呈现与发布"
+      ],
+      "useful": "展示如何先问地图要承载什么，再用中心—边缘区域表达相对距离、卡牌容量、重心迁移和跨局保存。",
+      "limitation": "单个复杂商业项目的一手回顾，地图与行动、牌库、战役状态同时迭代；不能证明区域模型优于网格或当前距离值可移植。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "faidutti-map-territory",
+      "title": "The Map and The Territory",
+      "creator": "Bruno Faidutti",
+      "href": "https://faidutti.com/blog/blog/2012/12/11/la-carte-et-le-territoire-the-map-and-the-territory/",
+      "type": "桌游地图形式与制图史设计师文章",
+      "evidenceType": "designer_argument",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en",
+        "fr"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "呈现与发布"
+      ],
+      "useful": "比较拼图式区域、规则网格、点线网络和游戏中生成地图，并强调棋盘是行动表面而非只供观看的地图。",
+      "limitation": "以大量案例形成的设计随笔，不是效果比较或完整分类；对六角格、历史风格和作品的评价保留作者偏好。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "insidegmt-cartography-game-board",
+      "title": "From Bellin's Map to B&T's Game Board: How I Use Cartography in Game Design",
+      "creator": "Marc Rodrigue / InsideGMT",
+      "href": "https://insidegmt.com/bt-biweekly-issue-5-from-bellins-map-to-bts-game-board-how-i-use-cartography-in-game-design/",
+      "type": "历史地图、移动网络与制图可读性设计日志",
+      "evidenceType": "first_party_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "记录历史水路颜色怎样诱发错误移动、为何删无规则作用的地貌，以及怎样弯曲视觉比例同时保留相对位置和游戏空间。",
+      "limitation": "针对一款十八世纪点对点兵棋的作者日志；历史考证与具体距离修正不能直接泛化，且多项图形和系统调整并行。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "ticket-to-ride-adjacency-analysis",
+      "title": "Ticket to Ride's Adjacency Matrix",
+      "creator": "Dan Scott / The Drafting Table",
+      "href": "https://danbscott.ghost.io/ticket-to-rides-adjacency-matrix/",
+      "type": "玩家图论分析与路线网络案例",
+      "evidenceType": "player_analysis",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "示范用邻接矩阵、节点度数、半径、直径和候选瓶颈描述路线网络，并明确未计入边权与未测试策略推断。",
+      "limitation": "一位玩家对 Ticket to Ride 单张地图的静态计算；没有处理路线长度、牌供给、目标票、人数规则和真人行为，指标不是质量分。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "spirit-island-jagged-earth-map-diary",
+      "title": "Spirit Island: Jagged Earth — Alternate Island Layouts",
+      "creator": "Greater Than Games / Jagged Earth development team",
+      "href": "https://spirit-island-jagged-earth.backerkit.com/hosted_preorders/project_updates?page=10",
+      "type": "模块拼接、中心/角落与协作覆盖设计日志",
+      "evidenceType": "first_party_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈",
+        "呈现与发布"
+      ],
+      "useful": "比较紧凑、拉长、双中心和星形布局怎样改变覆盖、支援、内陆安全区、角落风险与瓶颈。",
+      "limitation": "扩展开发和众筹更新中的项目特定解释，没有隔离角色组合、敌人和经验；不提供模块地图通用难度公式。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "new-yorker-map-incentive-playtest",
+      "title": "The Personal, Political Art of Board-Game Design",
+      "creator": "Matthew Hutson / The New Yorker",
+      "href": "https://www.newyorker.com/culture/annals-of-inquiry/the-personal-political-art-of-board-game-design",
+      "type": "设计师现场地图缩小与激励迭代报道",
+      "evidenceType": "reported_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "记录三人原型因地图过大而很少相遇，随后同时缩图、增加高价值位置并观察玩家路线改变的现场案例。",
+      "limitation": "记者参与的一次非正式测试且同时改动多个变量；设计师引语是实践判断，不能证明地图密度或激励的通用因果。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "scott-tabletop-territoriality",
+      "title": "Territoriality in Collaborative Tabletop Workspaces",
+      "creator": "Stacey D. Scott, M. Sheelagh T. Carpendale & Kori M. Inkpen",
+      "href": "https://cspages.ucalgary.ca/~sheelagh/wiki/uploads/Main/Publications/scott_cscw2004.pdf",
+      "type": "实体桌面个人/群组/储存区域观察研究",
+      "evidenceType": "academic_direct",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "最小原型",
+        "测试与反馈",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "以自然观察和三组实验描述个人、群组与储存区域，及取物、保留、传递和监看怎样随桌面位置组织。",
+      "limitation": "研究目标是协作工作空间与数字桌面设计，任务以拼图和布局为主且样本小；不能直接规定竞争桌游座位或最佳尺寸。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "reddit-table-space-access",
+      "title": "Experience Ruined by Game's Table Space — Does This Happen to Anyone Else?",
+      "creator": "r/boardgames community",
+      "href": "https://www.reddit.com/r/boardgames/comments/1sktdpw/experience_ruined_by_games_table_space_does_this/",
+      "type": "远座信息、触达与桌面占用玩家讨论",
+      "evidenceType": "community_discussion",
+      "format": "discussion",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "最小原型",
+        "测试与反馈",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "提供同一大桌体验的相反陈述，并具体描述远座读卡、传递组件、信息保密、站立、代理操作和忽略远端选项等症状。",
+      "limitation": "自选讨论、桌型、视力、座位和作品版本混杂；不能估计发生率，也不能把单一玩家困难或反对意见当产品结论。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "oath-map-remembers",
+      "useModes": [
+        "learn",
+        "case_study",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "先写地图要承载的距离、容量、发展与跨局状态，再比较区域、网格和一维展开等表达。",
+      "doNotUseFor": "不要移植 Oath 的三区距离、卡牌数量或持久化结构，也不能从多系统日志隔离单一因果。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "faidutti-map-territory",
+      "useModes": [
+        "learn",
+        "compare",
+        "lookup"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "比较区域拼图、规则网格、点线网络和游戏中生成地图分别把哪些关系做成规则。",
+      "doNotUseFor": "不要把案例枚举当完整分类或把作者对六角格、历史风格的偏好当效果证据。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "insidegmt-cartography-game-board",
+      "useModes": [
+        "learn",
+        "case_study",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "检查每项制图线索是否有规则作用、是否诱发错误动作，并区分视觉比例、相对距离与放置空间。",
+      "doNotUseFor": "不要照搬历史水路、点对点移动或距离修正；作者的一款兵棋不能代表其他尺度和主题。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "ticket-to-ride-adjacency-analysis",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "学习把节点—边关系转成邻接矩阵，并用度数、半径、直径和瓶颈生成测试问题。",
+      "doNotUseFor": "不要把静态网络指标当平衡或趣味分，也不能忽略边权、规则、人数、目标和玩家行为。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "spirit-island-jagged-earth-map-diary",
+      "useModes": [
+        "case_study",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "比较紧凑、拉长、多中心、角落和瓶颈怎样改变协作覆盖与局部安全区。",
+      "doNotUseFor": "众筹更新的项目内判断受角色、敌人和经验影响，不能生成模块地图通用难度值。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "new-yorker-map-incentive-playtest",
+      "useModes": [
+        "case_study",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "unknown",
+      "bestFor": "观察地图密度和高价值位置怎样共同改变玩家相遇，而不是单独把缩图称为修复。",
+      "doNotUseFor": "一次记者参与的非正式测试同时改多变量，不能提供交互密度公式或因果证明。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "scott-tabletop-territoriality",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "观察个人、群组与储存区域，以及取、传、保留和监看怎样随真实桌面位置变化。",
+      "doNotUseFor": "小样本协作任务与数字桌面目标不能规定竞争桌游座位、尺寸或所有权规则。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "reddit-table-space-access",
+      "useModes": [
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "partial",
+      "actionability": "diagnostic",
+      "transferability": "narrow",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "unknown",
+      "bestFor": "生成远座读卡、触达、传递、站立、保密、代理操作和忽略远端选项的形成性测试任务。",
+      "doNotUseFor": "讨论不能估计发生率或裁决作品；必须回到目标玩家、真实桌型、座位和任务。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    }
+  ]
+}

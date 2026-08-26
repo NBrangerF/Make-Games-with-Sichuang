@@ -1,0 +1,2872 @@
+[
+  {
+    "id": "kathleen-mercury-resources",
+    "title": "Resources to Teach Strategy Game Design",
+    "href": "https://www.kathleenmercury.com/"
+  },
+  {
+    "id": "game-design-concepts",
+    "title": "Game Design Concepts",
+    "href": "https://gamedesignconcepts.wordpress.com/"
+  },
+  {
+    "id": "mda-framework",
+    "title": "MDA: A Formal Approach to Game Design",
+    "href": "https://aaai.org/papers/ws04-04-001-mda-a-formal-approach-to-game-design-and-game-research/"
+  },
+  {
+    "id": "five-part-model",
+    "title": "5-Part Model: A Formal Approach to Designing Mechanics",
+    "href": "https://www.clei.org/cleiej/index.php/cleiej/article/view/473"
+  },
+  {
+    "id": "tag-framework",
+    "title": "Design and Implementation of TAG: A Tabletop Games Framework",
+    "href": "https://arxiv.org/abs/2009.12065"
+  },
+  {
+    "id": "ludii-system",
+    "title": "Ludii — The Ludemic General Game System",
+    "href": "https://arxiv.org/abs/1905.05013"
+  },
+  {
+    "id": "ttgda-playtesting",
+    "title": "Playtesting Resources",
+    "href": "https://www.ttgda.org/in-person-playtesting"
+  },
+  {
+    "id": "daniel-games-prototyping",
+    "title": "Prototyping",
+    "href": "https://daniel.games/prototyping/"
+  },
+  {
+    "id": "show-your-cards",
+    "title": "“Show your cards!”",
+    "href": "https://tabletopgamesworkshop.org/papers/show_your_cards_what_do_creators_need_for_the_game_design_process.pdf"
+  },
+  {
+    "id": "meeple-centred-design",
+    "title": "Meeple Centred Design",
+    "href": "https://www.meeplelikeus.co.uk/meeple-centred-design-a-heuristic-toolkit-for-evaluating-the-accessibility-of-tabletop-games/"
+  },
+  {
+    "id": "ttgda-software-tools",
+    "title": "Software Tools for Tabletop Game Design",
+    "href": "https://www.ttgda.org/software-tools"
+  },
+  {
+    "id": "bgdl-playtest-like-a-boss",
+    "title": "How to Playtest like a Boss",
+    "href": "https://boardgamedesignlab.com/playtest-like-a-boss/"
+  },
+  {
+    "id": "oath-keeping-the-oath",
+    "title": "Oath Developer Diary: Keeping the Oath",
+    "href": "https://ledergames.com/blogs/news/oath-developer-diary-keeping-the-oath"
+  },
+  {
+    "id": "oath-suit-spotlight",
+    "title": "Oath Designer Diary 14: Suit Spotlight",
+    "href": "https://ledergames.com/blogs/news/oath-designer-diary-14-suit-spotlight-order-and-beasts"
+  },
+  {
+    "id": "wingspan-interview",
+    "title": "Crazy Eights—Elizabeth Hargrave on Wingspan",
+    "href": "https://gamingtrend.com/interviews/crazy-eights-elizabeth-hargrave-on-wingspan/"
+  },
+  {
+    "id": "undaunted-diary",
+    "title": "Designer Diary: Creating Undaunted—Normandy",
+    "href": "https://www.ospreypublishing.com/uk/osprey-blog/2019/designer-diary-creating-undaunted-normandy/"
+  },
+  {
+    "id": "palm-of-your-hand-diary",
+    "title": "Designer Diary: In the Palm of Your Hand",
+    "href": "https://www.hachetteboardgames.com/blogs/infos/designer-diary-in-the-palm-of-your-hand"
+  },
+  {
+    "id": "quarterbacking-player-analysis",
+    "title": "Mitigating Quarterbacking in Cooperative Games",
+    "href": "https://www.donteatthemeeples.com/mitigating-quarterbacking-cooperative-games/"
+  },
+  {
+    "id": "rulebook-ruling-the-roost",
+    "title": "Ruling the Roost",
+    "href": "https://www.tricorngames.com/designer-blog/2017/7/4/ruling-the-roost"
+  },
+  {
+    "id": "sspai-mvp-prototype",
+    "title": "为什么你不需要完整的原型——兼谈桌游的 MVP 测试",
+    "href": "https://sspai.com/post/91653"
+  },
+  {
+    "id": "gcores-light-medium-design",
+    "title": "轻中策桌游设计方法／经验分享",
+    "href": "https://www.gcores.com/articles/176848"
+  },
+  {
+    "id": "zhiyanjia-course-retro",
+    "title": "从玩家到创造者：儿童桌游设计课课程总结",
+    "href": "https://www.zhiyanjia.com/%E4%BB%8E%E7%8E%A9%E5%AE%B6%E5%88%B0%E5%88%9B%E9%80%A0%E8%80%85%EF%BC%9A2025%E7%A7%8B%E5%AD%A3%E5%AD%A3%E5%84%BF%E7%AB%A5%E6%A1%8C%E6%B8%B8%E8%AE%BE%E8%AE%A1%E8%AF%BE%E8%AF%BE%E7%A8%8B%E6%80%BB/"
+  },
+  {
+    "id": "james-ernest-blueprint",
+    "title": "Interview with James Ernest",
+    "href": "https://www.fairplaygames.com/gamedisplay.asp?gameid=2028"
+  },
+  {
+    "id": "knizia-parallel-projects",
+    "title": "Reiner Knizia Designs Seven Board Games at Once",
+    "href": "https://www.wargamer.com/reiner-knizia-7-board-games"
+  },
+  {
+    "id": "visual-cognitive-ergonomics",
+    "title": "Don't Flip the Table Yet",
+    "href": "https://journals.sagepub.com/doi/abs/10.1177/15554120241248487"
+  },
+  {
+    "id": "autobg-2026",
+    "title": "AutoBG: A Board Game Design Assistant",
+    "href": "https://arxiv.org/abs/2606.01976"
+  },
+  {
+    "id": "break-my-game-code",
+    "title": "Playtesting Code of Conduct",
+    "href": "https://www.breakmygame.com/codeofconduct"
+  },
+  {
+    "id": "protospiel-online",
+    "title": "Protospiel Online",
+    "href": "https://protospiel.online/"
+  },
+  {
+    "id": "unpub-network",
+    "title": "The Unpublished Games Network",
+    "href": "https://www.unpub.org/"
+  },
+  {
+    "id": "greg-blind-playtesting",
+    "title": "The Importance of Blind Playtesting",
+    "href": "https://greginplay.com/posts/blind-playtesting.html"
+  },
+  {
+    "id": "deck-of-lenses",
+    "title": "The Art of Game Design: Deck of Lenses",
+    "href": "https://schellgames.com/art-of-game-design"
+  },
+  {
+    "id": "deck-of-ideas",
+    "title": "Deck of Ideas",
+    "href": "https://www.gateongames.com/en/deck-of-ideas/"
+  },
+  {
+    "id": "rapid-prototyping-game",
+    "title": "The Rapid Prototyping Game",
+    "href": "https://www.gamedeveloper.com/design/the-rapid-prototyping-game"
+  },
+  {
+    "id": "panda-omnideck",
+    "title": "OMNIDECK",
+    "href": "https://pandagm.com/omnideck/"
+  },
+  {
+    "id": "panda-p20-rulebook",
+    "title": "p20 Submission Requirements",
+    "href": "https://pandagm.com/p20/"
+  },
+  {
+    "id": "constraint-creativity-joyce",
+    "title": "The Blank Page: Effects of Constraint on Creativity",
+    "href": "https://papers.ssrn.com/sol3/papers.cfm?abstract_id=1552835"
+  },
+  {
+    "id": "game-ideation-techniques-comparison",
+    "title": "Comparing Ideation Techniques for Games Education",
+    "href": "https://doi.org/10.1145/3409456.3409460"
+  },
+  {
+    "id": "mixed-reality-game-cards",
+    "title": "Developing Ideation Cards for Mixed Reality Game Design",
+    "href": "https://todigra.org/index.php/todigra/article/view/1746"
+  },
+  {
+    "id": "smeft-decks",
+    "title": "The SMeFT Decks",
+    "href": "https://doi.org/10.1145/3572921.3572933"
+  },
+  {
+    "id": "blv-tabletop-experiences",
+    "title": "Understanding Tabletop Games Accessibility",
+    "href": "https://doi.org/10.1145/3490149.3501327"
+  },
+  {
+    "id": "blv-rulebook-voice-agent",
+    "title": "Exploring Rulebook Accessibility and Companionship in Board Games via Voice Agent",
+    "href": "https://doi.org/10.1145/3563657.3595970"
+  },
+  {
+    "id": "accessible-rulebook-best-practices",
+    "title": "What Makes a Rulebook Accessible and Entertaining?",
+    "href": "https://doi.org/10.14989/jarps_6_20e"
+  },
+  {
+    "id": "rulebook-design-curators",
+    "title": "Designing a Board Game Rulebook — It Is Harder Than You Would Think",
+    "href": "https://www.diva-portal.org/smash/record.jsf?pid=diva2%3A1354328"
+  },
+  {
+    "id": "intuitive-rules-evaluation",
+    "title": "Intuitive Rules Design Evaluation Methods and Case Study",
+    "href": "https://ceur-ws.org/Vol-2313/KEG_2019_paper_2.pdf"
+  },
+  {
+    "id": "resonym-writing-rulebooks",
+    "title": "Writing Rulebooks",
+    "href": "https://resonym.com/writing-rulebooks/"
+  },
+  {
+    "id": "daniel-solis-color-coding",
+    "title": "A Quick Guide to Color-Coding in Tabletop Games",
+    "href": "https://danielsolisblog.blogspot.com/2015/01/a-quick-guide-to-color-coding-in.html"
+  },
+  {
+    "id": "mcd-heuristic-toolkit-paper",
+    "title": "Meeple Centred Design: A Heuristic Toolkit for Evaluating the Accessibility of Tabletop Games",
+    "href": "https://doi.org/10.1007/s40869-018-0057-8"
+  },
+  {
+    "id": "communication-challenges-social-board-games",
+    "title": "Communication Challenges in Social Board Games",
+    "href": "https://doi.org/10.1177/10468781231183908"
+  },
+  {
+    "id": "games-inclusion-lab-neurodivergent",
+    "title": "Games Inclusion Lab: Accessible Games with Neurodivergent Adults",
+    "href": "https://papers.academic-conferences.org/index.php/ecgbl/article/view/4031"
+  },
+  {
+    "id": "tega-inclusive-analog-toolkit",
+    "title": "TEGA: A Toolkit for Enhancing Inclusive Analog Game Design in Higher Education",
+    "href": "https://doi.org/10.3389/feduc.2025.1670301"
+  },
+  {
+    "id": "abletop-mobility",
+    "title": "Abletop Episode 2: Mobility Accessibility in Tabletop Gaming",
+    "href": "https://access-ability.uk/2025/02/26/abletop-episode-2-mobility-accessibility-in-tabletop-gaming/"
+  },
+  {
+    "id": "abletop-cognitive",
+    "title": "Abletop Episode 4: Cognitive Accessibility in Board Gaming",
+    "href": "https://access-ability.uk/2025/03/12/abletop-episode-4-cognitive-accessibility-in-board-gaming/"
+  },
+  {
+    "id": "abletop-communication",
+    "title": "Abletop Episode 5: Communication Accessibility",
+    "href": "https://access-ability.uk/2025/03/19/abletop-episode-5-communication-accessibility/"
+  },
+  {
+    "id": "abletop-accessibility-cost",
+    "title": "Abletop Episode 6: Board Game Accessibility Bits & Bobs",
+    "href": "https://access-ability.uk/2025/03/26/abletop-episode-6-board-game-accessibility-bits-bobs/"
+  },
+  {
+    "id": "tabletop-game-accessibility-book",
+    "title": "Tabletop Game Accessibility: Meeple Centred Design",
+    "href": "https://www.routledge.com/Tabletop-Game-Accessibility-Meeple-Centred-Design/Heron/p/book/9781032541471"
+  },
+  {
+    "id": "game-balance-intro",
+    "title": "Level 1: Intro to Game Balance",
+    "href": "https://gamebalanceconcepts.wordpress.com/2010/07/07/level-1-intro-to-game-balance/"
+  },
+  {
+    "id": "game-balance-cost-curves",
+    "title": "Level 3: Transitive Mechanics and Cost Curves",
+    "href": "https://gamebalanceconcepts.wordpress.com/2010/07/21/level-3-transitive-mechanics-and-cost-curves/"
+  },
+  {
+    "id": "game-balance-probability",
+    "title": "Level 4: Probability and Randomness",
+    "href": "https://gamebalanceconcepts.wordpress.com/2010/07/28/level-4-probability-and-randomness/"
+  },
+  {
+    "id": "game-balance-metrics",
+    "title": "Level 8: Metrics and Statistics",
+    "href": "https://gamebalanceconcepts.wordpress.com/2010/08/25/level-8-metrics-and-statistics/"
+  },
+  {
+    "id": "game-balance-feedback-pacing",
+    "title": "Level 7: Advancement, Progression and Pacing",
+    "href": "https://gamebalanceconcepts.wordpress.com/2010/08/18/level-7-advancement-progression-and-pacing/"
+  },
+  {
+    "id": "boardgame-balance-experience-study",
+    "title": "A Study on the Correlation Between Board Game Balance Factors and Play Experience",
+    "href": "https://www.kci.go.kr/kciportal/ci/sereArticleSearch/ciSereArtiView.kci?sereArticleSearchBean.artiId=ART003253365"
+  },
+  {
+    "id": "underdog-catch-up-mechanisms",
+    "title": "Catch-up Mechanisms in Tabletop Games",
+    "href": "https://www.underdoggames.com/a/blog/catch-up-mechanisms-in-tabletop-games"
+  },
+  {
+    "id": "lostgarden-value-chains",
+    "title": "Value Chains — A Method for Creating and Balancing Faucet-and-Drain Game Economies",
+    "href": "https://lostgarden.com/2021/12/12/value-chains/"
+  },
+  {
+    "id": "league-game-elements-resources",
+    "title": "Game Elements: Resources",
+    "href": "https://www.leagueofgamemakers.com/game-elements-resources/"
+  },
+  {
+    "id": "game-balance-book",
+    "title": "Game Balance",
+    "href": "https://www.routledge.com/Game-Balance/Romero-Schreiber/p/book/9781498799577"
+  },
+  {
+    "id": "characteristics-of-games-book",
+    "title": "Characteristics of Games",
+    "href": "https://mitpress.mit.edu/9780262542692/characteristics-of-games/"
+  },
+  {
+    "id": "building-blocks-tabletop-book",
+    "title": "Building Blocks of Tabletop Game Design: An Encyclopedia of Mechanisms (2nd Edition)",
+    "href": "https://www.routledge.com/Building-Blocks-of-Tabletop-Game-Design-An-Encyclopedia-of-Mechanisms/Engelstein-Shalev/p/book/9781032015811"
+  },
+  {
+    "id": "uncertainty-in-games-book",
+    "title": "Uncertainty in Games",
+    "href": "https://mitpress.mit.edu/9780262018968/uncertainty-in-games/"
+  },
+  {
+    "id": "quarantine-economy-diary",
+    "title": "Designer Diary: Quarantine — A Hospital Game from Conception to Delivery",
+    "href": "https://boardgamegeek.com/blog/1/blogpost/16096/designer-diary-quarantine-a-hospital-game-from-con"
+  },
+  {
+    "id": "shake-that-city-diary",
+    "title": "Designer Diary: Shake That City",
+    "href": "https://boardgamegeek.com/blog/1/blogpost/151200/designer-diary-shake-that-city"
+  },
+  {
+    "id": "bushner-hobbyist-rulebook-practices",
+    "title": "Hobbyist Board Game Design Practices: How Do Board Game Designers Craft Their Rules Manuals and Solicit User Feedback on Prototype Games?",
+    "href": "https://docs.lib.purdue.edu/dissertations/AAI30503529/"
+  },
+  {
+    "id": "wanstrom-physical-digital-rulebook",
+    "title": "Technical Aids in Mega Games: A Comparative Study of Physical and Digital Rulebooks",
+    "href": "https://liu.diva-portal.org/smash/record.jsf?pid=diva2%3A1890838"
+  },
+  {
+    "id": "frontiers-two-part-onboarding",
+    "title": "Two-part Onboarding for Game-based Learning Environments",
+    "href": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2023.980881/full"
+  },
+  {
+    "id": "dvgiochi-standard-rulebook",
+    "title": "How to Write a Standard Game Rulebook",
+    "href": "https://www.dvgiochi.com/net/dv/dV-How_to_write_a_rulebook.pdf"
+  },
+  {
+    "id": "naylor-paul-grogan-rulebook",
+    "title": "Producing Fun #4: Paul Grogan — Rulebook Editor & Content Creator",
+    "href": "https://naylorgames.com/blogs/blog/producing-fun-4-paul-grogan-rulebook-editor-content-creator"
+  },
+  {
+    "id": "pratt-rulebook-editors-interview",
+    "title": "The Exception and the Rules: An Interview with Emanuela & Robert Pratt",
+    "href": "https://www.meeplemountain.com/interviews/the-exception-and-the-rules-an-interview-with-emanuela-robert-pratt/"
+  },
+  {
+    "id": "hollandspiele-rulebook-examples",
+    "title": "e.g.",
+    "href": "https://hollandspiele.com/blogs/hollandazed-thoughts-ideas-and-miscellany/e-g"
+  },
+  {
+    "id": "unfair-rulebook-glossary",
+    "title": "Board Game Rulebook Writing Glossary",
+    "href": "https://www.unfair-game.com/dev-glossary"
+  },
+  {
+    "id": "dized-tutorial-creation",
+    "title": "Dized Tutorial Creation Course",
+    "href": "https://dized.com/dized-tutorial-course-sep-2023/"
+  },
+  {
+    "id": "rulepop-digital-rules",
+    "title": "Rulepop: Game Rules Done Right",
+    "href": "https://rulepop.com/"
+  },
+  {
+    "id": "bumbling-teach-board-game",
+    "title": "How to Teach a Board Game Well",
+    "href": "https://bumblingthroughdungeons.com/how-to-teach-a-board-game-well/"
+  },
+  {
+    "id": "bumbling-great-rulebook",
+    "title": "Writing a Great Board Game Rulebook",
+    "href": "https://bumblingthroughdungeons.com/writing-a-great-board-game-rulebook/"
+  },
+  {
+    "id": "rulebook-writing-blog",
+    "title": "How to Write a Board Game Rulebook",
+    "href": "https://howtowriteaboardgamerulebook.wordpress.com/"
+  },
+  {
+    "id": "board-game-professor-cope",
+    "title": "Effective Technical Writing for Rulebooks: Introduction to COPE Framework",
+    "href": "https://bgprofessor.wordpress.com/2025/08/04/effective-technical-writing-for-rulebooks-introduction-to-cope-framework/"
+  },
+  {
+    "id": "semester-baru-media-comparison",
+    "title": "Comparative Analysis of Rulebook, Video Tutorial, and Playtest Website for Semester Baru",
+    "href": "https://journal.ubm.ac.id/index.php/titik-imaji/article/view/8050"
+  },
+  {
+    "id": "intuitive-gamer-nature-2026",
+    "title": "People Use Fast and Flat Simulation to Reason About New Games",
+    "href": "https://pubmed.ncbi.nlm.nih.gov/42457994/"
+  },
+  {
+    "id": "king-meaningful-choice-2018",
+    "title": "Meaningful Choice, Decision, Agency?",
+    "href": "https://ualresearchonline.arts.ac.uk/id/eprint/26132/"
+  },
+  {
+    "id": "lantz-depth-strategic-games",
+    "title": "Depth in Strategic Games",
+    "href": "https://www.nealen.net/papers/Lantz2017Depth.pdf"
+  },
+  {
+    "id": "rosewater-decisions-part-one",
+    "title": "Decisions, Decisions, Part I",
+    "href": "https://magic.wizards.com/en/news/making-magic/decisions-decisions-part-i-2009-07-27"
+  },
+  {
+    "id": "hoffman-improving-player-choices",
+    "title": "Improving Player Choices",
+    "href": "https://www.gamedeveloper.com/design/improving-player-choices"
+  },
+  {
+    "id": "gil-hova-interaction-slides",
+    "title": "Why Indirect or Zero Player Interaction Can Be Great",
+    "href": "https://ubm-twvideo01.s3.amazonaws.com/o1/vault/gdc2019/presentations/Hova_Gil_Why_Indirect_Zero.pdf"
+  },
+  {
+    "id": "faidutti-indirect-interaction",
+    "title": "Indirect Interaction",
+    "href": "https://faidutti.com/blog/blog/2022/04/27/indirect-interaction/"
+  },
+  {
+    "id": "wehrle-kingmaking-gdc",
+    "title": "King Me: A Defense of King-Making in Board Game Design",
+    "href": "https://www.gdcvault.com/play/1025683/board-game-design-day-king"
+  },
+  {
+    "id": "oath-wehrle-interview",
+    "title": "Oath: An Interview with Cole Wehrle",
+    "href": "https://www.tabletopgaming.co.uk/features/oath-an-interview-with-cole-wehrle/"
+  },
+  {
+    "id": "skeleton-code-kingmaking",
+    "title": "Is Kingmaking a Problem to Be Solved?",
+    "href": "https://www.skeletoncodemachine.com/p/kingmaking"
+  },
+  {
+    "id": "daniel-games-replayability",
+    "title": "Replayability",
+    "href": "https://daniel.games/replayability/"
+  },
+  {
+    "id": "decision-space-depth-2026",
+    "title": "Going Deep on Depth in Games",
+    "href": "https://www.decisionspacepodcast.com/articles/going-deep-on-depth-in-games"
+  },
+  {
+    "id": "decision-space-shapes",
+    "title": "Types of Decision Spaces: Waxing, Waning, Static, Dynamic",
+    "href": "https://www.decisionspacepodcast.com/articles/types-of-decision-spaces-waxing-waning-static-dynamic"
+  },
+  {
+    "id": "decision-space-objectives",
+    "title": "The Three Types of Objectives in Games",
+    "href": "https://www.decisionspacepodcast.com/articles/the-three-types-of-objectives-in-games"
+  },
+  {
+    "id": "variable-replayability-player",
+    "title": "Variable Replayability",
+    "href": "https://therewillbe.games/articles-essays/8942-variable-replayability"
+  },
+  {
+    "id": "bumbling-depth-replayability",
+    "title": "The Optics—and Actuality—of Depth and Replayability in Games",
+    "href": "https://bumblingthroughdungeons.com/depth-replayability-in-tabletop-games/"
+  },
+  {
+    "id": "uw-secondary-objectives",
+    "title": "On the Harmfulness of Secondary Game Objectives",
+    "href": "https://grail.cs.washington.edu/projects/game-abtesting/fdg2011/"
+  },
+  {
+    "id": "reis-coop-information-asymmetry",
+    "title": "Exploring Asymmetry of Information in Cooperative Games",
+    "href": "https://researchportal.ulisboa.pt/en/publications/exploring-asymmetry-ofinformation-incooperative-games/"
+  },
+  {
+    "id": "joint-focus-coop-communication-framework",
+    "title": "A Framework for Cooperative Communication Game Mechanics from Grounded Theory",
+    "href": "https://doi.org/10.1145/2658537.2658681"
+  },
+  {
+    "id": "linderoth-anonymity-coop-board-games",
+    "title": "Exploring Anonymity in Cooperative Board Games",
+    "href": "https://dl.digra.org/index.php/dl/article/download/535/535/532"
+  },
+  {
+    "id": "miller-quarterbacking-consent",
+    "title": "Roleplaying as a Solution to the Quarterbacking Problem of Cooperative and Educational Games",
+    "href": "https://analoggamestudies.org/2021/06/roleplaying-as-a-solution-to-the-quarterbacking-problem-of-cooperative-and-educational-games/"
+  },
+  {
+    "id": "wiseman-social-deduction-data",
+    "title": "What Data do Players Rely on in Social Deduction Games?",
+    "href": "https://research.gold.ac.uk/27015/1/AxelRodChiPlayCameraReady.pdf"
+  },
+  {
+    "id": "koster-trust-spectrum",
+    "title": "The Trust Spectrum",
+    "href": "https://www.gamedeveloper.com/design/the-trust-spectrum"
+  },
+  {
+    "id": "wehrle-quid-for-quo",
+    "title": "Quid for your Quo",
+    "href": "https://wehrlegig.com/blogs/essays/quid-for-your-quo"
+  },
+  {
+    "id": "goldman-paint-roses-quarterbacking",
+    "title": "Paint the Roses: Ben Goldman Talks about Coops",
+    "href": "https://www.northstargames.com/blogs/northstarnews/quarterbacking-in-coop-games"
+  },
+  {
+    "id": "gideon-quarterbacking-player-problem",
+    "title": "Board Game Quarterbacking: Player Problem or Game Problem?",
+    "href": "https://gideonsgaming.com/board-game-quarterbacking-player-problem-or-game-problem/"
+  },
+  {
+    "id": "dude-limited-communication-games",
+    "title": "I'm Not Talking to You – Games Where You Can't Communicate",
+    "href": "https://dudetakeyourturn.ca/2026/05/22/im-not-talking-to-you-games-where-you-cant-communicate/"
+  },
+  {
+    "id": "mantigeist-social-deduction-diary",
+    "title": "Mantigeist: How I Designed The Social Deduction Game",
+    "href": "https://starshinescribbles.com/mantigeist-behind-the-scenes-of-the-social-deduction-ttrpg/"
+  },
+  {
+    "id": "lauret-four-atoms-coop",
+    "title": "The Four Atoms of Cooperative Video Games",
+    "href": "https://www.gamedeveloper.com/design/the-four-atoms-of-cooperative-video-games"
+  },
+  {
+    "id": "xinmao-hidden-information",
+    "title": "浅谈桌游设计中的隐藏信息",
+    "href": "https://www.gcores.com/articles/177332"
+  },
+  {
+    "id": "pingo-trackable-public-information",
+    "title": "桌遊裏隱藏的公開資訊",
+    "href": "https://medium.com/@pingo95412/%E6%A1%8C%E9%81%8A%E8%A3%8F%E9%9A%B1%E8%97%8F%E7%9A%84%E5%85%AC%E9%96%8B%E8%B3%87%E8%A8%8A-accacaf2564d"
+  },
+  {
+    "id": "daniel-solis-theme-mechanics",
+    "title": "Theme first or mechanics first? It doesn't matter.",
+    "href": "https://danielsolisblog.blogspot.com/2013/09/theme-first-or-mechanics-first-it.html"
+  },
+  {
+    "id": "values-at-play-methodology",
+    "title": "A Game Design Methodology to Incorporate Social Activist Themes",
+    "href": "https://tiltfactor.org/wp-content/uploads2/A-Game-Design-Methodology.pdf"
+  },
+  {
+    "id": "analog-orientalism-abstraction",
+    "title": "Orientalism and Abstraction in Eurogames",
+    "href": "https://analoggamestudies.org/2014/12/orientalism-and-abstraction-in-eurogames/"
+  },
+  {
+    "id": "rubio-history-50-years",
+    "title": "What History are we playing today? An analysis over 50 years of historical board games",
+    "href": "https://www.tandfonline.com/doi/full/10.1080/23311983.2024.2417503"
+  },
+  {
+    "id": "vidal-designing-narrative",
+    "title": "Designing the Narrative: Telling Colonialism Through Rules, Illustrations and Components",
+    "href": "https://ejournals.epublishing.ekt.gr/index.php/DAC/article/view/42961"
+  },
+  {
+    "id": "coyote-crow-consulting",
+    "title": "Cultural Consulting",
+    "href": "https://coyoteandcrow.net/consulting/"
+  },
+  {
+    "id": "perez-gaming-with-past",
+    "title": "Gaming with the past",
+    "href": "https://boardgamegeek.com/blog/17242/gaming-with-the-past"
+  },
+  {
+    "id": "sdhist-gaming-unpleasant",
+    "title": "Designer roundtable: Gaming the unpleasant",
+    "href": "https://sdhist.com/designer-roundtable-gaming-the-unpleasant/"
+  },
+  {
+    "id": "beyond-solitaire-no-go-theme",
+    "title": "No-Go Board Game Theme",
+    "href": "https://www.beyondsolitaire.net/blog/no-go-board-game-theme"
+  },
+  {
+    "id": "ijrp-psychological-safety",
+    "title": "Philosophies of Psychological Safety in Analog Role-playing Game Discourses",
+    "href": "https://journals.uu.se/IJRP/article/view/989"
+  },
+  {
+    "id": "trigger-warning-meta-analysis",
+    "title": "A Meta-Analysis of the Efficacy of Trigger Warnings, Content Warnings, and Content Notes",
+    "href": "https://doi.org/10.1177/21677026231186625"
+  },
+  {
+    "id": "mit-games-colonialism",
+    "title": "Games & Colonialism",
+    "href": "https://gamelab.mit.edu/research/games-and-colonialism/"
+  },
+  {
+    "id": "panda-manufacturing-tools",
+    "title": "Tools & Resources",
+    "href": "https://pandagm.com/tools/"
+  },
+  {
+    "id": "panda-manufacturing-process",
+    "title": "Our Process",
+    "href": "https://pandagm.com/our-process/"
+  },
+  {
+    "id": "panda-graphic-design-guidebook",
+    "title": "Graphic Design Guidebook",
+    "href": "https://pandagm.com/wp-content/uploads/2022/10/PandaGM-GraphicDesignGuidebook-V4-0922.pdf"
+  },
+  {
+    "id": "panda-component-guidebook",
+    "title": "Component Guidebook",
+    "href": "https://pandagm.com/wp-content/uploads/2022/10/PandaGM-ComponentGuidebook-V2-0922.pdf"
+  },
+  {
+    "id": "game-crafter-bulk-pricing",
+    "title": "Bulk Pricing",
+    "href": "https://help.thegamecrafter.com/article/84-bulk-pricing"
+  },
+  {
+    "id": "ttgda-development-review",
+    "title": "Development of Game Content, Mechanics, and Theme",
+    "href": "https://www.ttgda.org/4a-development"
+  },
+  {
+    "id": "ttgda-final-graphic-test",
+    "title": "Art and Graphic Design",
+    "href": "https://www.ttgda.org/4b-art-and-graphic-design"
+  },
+  {
+    "id": "kickstarter-fulfillment-2026",
+    "title": "From Funded to Delivered: A Creator's Guide to Fulfillment",
+    "href": "https://updates.kickstarter.com/from-funded-to-delivered-a-creators-guide-to-fulfillment/"
+  },
+  {
+    "id": "oakleaf-manufacturing-design-tool",
+    "title": "Manufacturing as a Design Tool",
+    "href": "https://oakleafgames.wordpress.com/2014/03/24/manufacturing-as-a-design-tool/"
+  },
+  {
+    "id": "daniel-solis-punch-components",
+    "title": "Designing Punch Out Components for Board Games",
+    "href": "https://danielsolisblog.blogspot.com/2024/05/designing-punch-out-components-for.html"
+  },
+  {
+    "id": "entro-manufacturing-materials",
+    "title": "How to Make a Game: Manufacturing Considerations and Materials",
+    "href": "https://entrogames.substack.com/p/how-to-make-a-game-manufacturing"
+  },
+  {
+    "id": "gcores-tabletop-production",
+    "title": "桌游是怎么生产出来的？",
+    "href": "https://www.gcores.com/articles/135446"
+  },
+  {
+    "id": "gamelab-board-game-lca",
+    "title": "The Environmental Impact of Video and Board Games",
+    "href": "https://gamelab-lausanne.ch/the-environmental-impact-of-video-and-board-games/"
+  },
+  {
+    "id": "jack-neal-plastic-case",
+    "title": "Designer Diary: The Case for the Plastic Case",
+    "href": "https://jacknealgames.itch.io/get-rust-and-revenue/devlog/1092453/designer-diary-the-case-for-the-plastic-case"
+  },
+  {
+    "id": "store-all-bits-insert",
+    "title": "Board Game Insert Designer Diary: Assess Space and Components",
+    "href": "https://www.storeallthebits.com/site/2021/10/22/board-game-insert-designer-diary-assess-space-and-components/"
+  },
+  {
+    "id": "eric-martin-smaller-games-2026",
+    "title": "Why Board Game Publishers Are Making Games Smaller",
+    "href": "https://www.wericmartin.com/to-succeed-in-2026-make-your-game-smaller/"
+  },
+  {
+    "id": "ttgda-contract-basics",
+    "title": "Contract Basics for Game Designers",
+    "href": "https://www.ttgda.org/contract-basics"
+  },
+  {
+    "id": "dark-imp-pitch-publish",
+    "title": "Pitch or publish?",
+    "href": "https://www.thedarkimp.com/blog/2024/02/21/pitch-or-publish/"
+  },
+  {
+    "id": "bgdl-get-published",
+    "title": "How to Get Your Game Published",
+    "href": "https://boardgamedesignlab.com/how-to-get-your-game-published/"
+  },
+  {
+    "id": "cardboard-edison-compendium",
+    "title": "The Compendium: Board Game Publisher Directory",
+    "href": "https://cardboardedison.com/directoryinfo"
+  },
+  {
+    "id": "ravensburger-inventor-days-2026",
+    "title": "Ravensburger Game Inventor Days 2026",
+    "href": "https://www.ravensburger.de/de-AT/entdecken/spiele/game-inventor-days"
+  },
+  {
+    "id": "piatnik-author-submissions",
+    "title": "For Authors: Fresh Game Ideas",
+    "href": "https://www.piatnik.com/en/for-authors"
+  },
+  {
+    "id": "chaosium-board-submissions",
+    "title": "Board and Card Game Submissions",
+    "href": "https://www.chaosium.com/board-and-card-game-submissions/"
+  },
+  {
+    "id": "wodc-v7-2026",
+    "title": "第七届世界原创桌游设计大赛",
+    "href": "https://playbest.hk/v7/h5/"
+  },
+  {
+    "id": "modian-project-guide",
+    "title": "项目发起指南",
+    "href": "https://zhongchou.modian.com/about/guide"
+  },
+  {
+    "id": "sspai-art-self-publish",
+    "title": "桌游设计杂记（1）：为什么不建议设计师自己花钱买美术",
+    "href": "https://sspai.com/post/90613"
+  },
+  {
+    "id": "sspai-self-printing-practice",
+    "title": "从等人发牌到自己印牌：我的桌游设计新实践",
+    "href": "https://sspai.com/post/96648"
+  },
+  {
+    "id": "gcores-seagull-crowdfunding",
+    "title": "从概念到众筹，海鸥来袭桌游的诞生",
+    "href": "https://www.gcores.com/articles/214453"
+  },
+  {
+    "id": "gcores-inventory-bed",
+    "title": "做“假币”能做这么火？专访桌游设计师墨鱼",
+    "href": "https://www.gcores.com/articles/133740"
+  },
+  {
+    "id": "tgc-publishing-help",
+    "title": "Publishing Help",
+    "href": "https://help.thegamecrafter.com/article/109-publishing-help"
+  },
+  {
+    "id": "tgc-crowd-sale-creator",
+    "title": "Crowd Sale Creator FAQ",
+    "href": "https://help.thegamecrafter.com/article/401-crowd-sale-creator"
+  },
+  {
+    "id": "itch-creator-page",
+    "title": "Your First itch.io Page",
+    "href": "https://itch.io/docs/creators/getting-started.amp"
+  },
+  {
+    "id": "itch-physical-rewards",
+    "title": "Exclusive Content & Rewards",
+    "href": "https://itch.io/docs/creators/exclusive-content"
+  },
+  {
+    "id": "kickstarter-project-budget",
+    "title": "Using Project Budget to Calculate Your Funding Goal",
+    "href": "https://help.kickstarter.com/hc/en-us/articles/360035551894-Using-Project-Budget-to-calculate-your-project-s-funding-goal"
+  },
+  {
+    "id": "kickstarter-fulfillment-dashboard",
+    "title": "Using the Fulfillment Dashboard",
+    "href": "https://help.kickstarter.com/hc/en-us/articles/360035848053-How-can-I-use-the-Fulfillment-dashboard-to-manage-reward-production-and-fulfillment"
+  },
+  {
+    "id": "kickstarter-creator-obligation",
+    "title": "What Is a Creator Obligated to Do Once Funded?",
+    "href": "https://help.kickstarter.com/hc/en-us/articles/115005028834-What-is-a-creator-obligated-to-do-once-their-project-is-funded"
+  },
+  {
+    "id": "gcores-mechanism-component-cards",
+    "title": "聊聊《机制牌》与《配件牌》",
+    "href": "https://www.gcores.com/articles/180494"
+  },
+  {
+    "id": "gcores-appraisal-company-diary",
+    "title": "《鉴定公司》设计、开发过程回溯",
+    "href": "https://www.gcores.com/articles/153538"
+  },
+  {
+    "id": "gcores-game-structure",
+    "title": "什么是游戏结构、如何搭建游戏结构",
+    "href": "https://www.gcores.com/articles/195857"
+  },
+  {
+    "id": "gcores-tabletop-editor-role",
+    "title": "“桌游编辑”，桌游行业最缺的人才",
+    "href": "https://www.gcores.com/articles/162239"
+  },
+  {
+    "id": "cowlevel-design-road-1",
+    "title": "桌游设计之路：记录自己的桌游设计过程 1",
+    "href": "https://cowlevel.net/article/1904305"
+  },
+  {
+    "id": "cowlevel-design-road-2",
+    "title": "桌游设计之路：记录自己的桌游设计过程 2",
+    "href": "https://cowlevel.net/article/1904596"
+  },
+  {
+    "id": "tbd-playtest-86",
+    "title": "第 86 场 TBD 测试会回顾",
+    "href": "https://www.tbd.com.tw/blogs/prototype/144877"
+  },
+  {
+    "id": "tbd-playtest-125",
+    "title": "第 125 次测试月会回顾",
+    "href": "https://www.tbd.com.tw/blogs/prototype/118806"
+  },
+  {
+    "id": "sspai-heavy-wargame-testing",
+    "title": "桌游设计杂记（5）：用三个月，测试并编辑一个重度的战棋游戏",
+    "href": "https://sspai.com/post/97061"
+  },
+  {
+    "id": "hkfyg-time2play-interview",
+    "title": "自己桌遊自己整",
+    "href": "https://cps.hkfyg.org.hk/2023/12/21/ysm-081-feature2/"
+  },
+  {
+    "id": "gcores-fusion-inspiration",
+    "title": "《桌上核聚变》桌游的灵感来源",
+    "href": "https://www.gcores.com/articles/161468"
+  },
+  {
+    "id": "thepaper-chinese-designer-roles",
+    "title": "45 亿市场背后的桌游设计师如何啃下这块蛋糕？",
+    "href": "https://www.thepaper.cn/newsDetail_forward_14604755"
+  },
+  {
+    "id": "vocus-deaf-event-access",
+    "title": "〖回憶之錄〗熱愛生活的冒險旅程",
+    "href": "https://vocus.cc/article/64e56e69fd89780001236414"
+  },
+  {
+    "id": "ptt-blind-game-discovery",
+    "title": "適合盲人的桌遊 且能買到的",
+    "href": "https://www.ptt.cc/bbs/BoardGame/M.1715159851.A.351.html"
+  },
+  {
+    "id": "ptt-wheelchair-venue-audit",
+    "title": "提供無障礙空間的台北桌遊店",
+    "href": "https://www.pttweb.cc/bbs/Disabled/M.1279022058.A.B91"
+  },
+  {
+    "id": "special-needs-boardgame-adjustment",
+    "title": "應用桌上遊戲於特殊需求學生之調整方式",
+    "href": "https://www.researchgate.net/publication/349519014_The_Adjustment_of_Using_Board_Games_in_Teaching_Students_With_Special_Needs_yingyongzhuoshangyouxiyuteshuxuqiuxueshengzhidiaozhengfangshi"
+  },
+  {
+    "id": "vocus-spirit-island-player",
+    "title": "〖桌遊心得〗精靈島 Spirit Island",
+    "href": "https://vocus.cc/article/5f38dd8ffd89780001d1d481"
+  },
+  {
+    "id": "ptt-dadaocheng-downtime",
+    "title": "Dadaocheng 翻轉大稻埕",
+    "href": "https://www.ptt.cc/bbs/BoardGame/M.1451048868.A.808.html"
+  },
+  {
+    "id": "ptt-parent-child-boardgame",
+    "title": "教兒子玩桌遊～經驗分享 熊熊公園",
+    "href": "https://www.ptt.cc/bbs/BoardGame/M.1658477276.A.DBA.html"
+  },
+  {
+    "id": "ptt-im-the-boss-house-rules",
+    "title": "Re: I'm the boss 我是大老闆遊戲心得",
+    "href": "https://www.ptt.cc/bbs/BoardGame/M.1527278624.A.34D.html"
+  },
+  {
+    "id": "ptt-rulebook-lookup-friction",
+    "title": "縱橫股海、牙馬加、捕蜂高手",
+    "href": "https://www.ptt.cc/bbs/BoardGame/M.1538905647.A.7F2.html"
+  },
+  {
+    "id": "ptt-mad-boardgame-shop-teach",
+    "title": "瘋狂桌遊店教學流程／心得",
+    "href": "https://www.ptt.cc/bbs/BoardGame/M.1562511725.A.7A4.html"
+  },
+  {
+    "id": "ptt-diplomacy-player-experience",
+    "title": "60 年老遊戲－強權外交 Diplomacy",
+    "href": "https://www.ptt.cc/bbs/BoardGame/M.1643865074.A.F77.html"
+  },
+  {
+    "id": "kobold-guide-board-game-design-official",
+    "title": "Kobold Guide to Board Game Design",
+    "href": "https://koboldpress.com/kpstore/product/kobold-guide-to-board-game-design/"
+  },
+  {
+    "id": "game-developer-purposeful-play",
+    "title": "How to Play a Game If You Want to Learn About Making One",
+    "href": "https://www.gamedeveloper.com/design/how-to-play-a-game-"
+  },
+  {
+    "id": "sellers-systems-analysis",
+    "title": "Analyzing Games from a Systems View",
+    "href": "https://www.informit.com/articles/article.aspx?p=2916285&seqNum=3"
+  },
+  {
+    "id": "your-turn-tabletop-guide",
+    "title": "Your Turn!: The Guide to Great Tabletop Game Design",
+    "href": "https://uat.store.wiley.com/en-us/your-turn%21-the-guide-to-great-tabletop-game-design-p-9781119981596"
+  },
+  {
+    "id": "white-box-game-design",
+    "title": "The White Box: A Game Design Workshop-in-a-Box",
+    "href": "https://atlas-games.com/product_tables/AG2903"
+  },
+  {
+    "id": "game-design-workshop-fifth",
+    "title": "Game Design Workshop: A Playcentric Approach to Creating Innovative Games (5th Edition)",
+    "href": "https://www.routledge.com/Game-Design-Workshop-A-Playcentric-Approach-to-Creating-Innovative-Games/Fullerton/p/book/9781032607009"
+  },
+  {
+    "id": "rules-of-play-book",
+    "title": "Rules of Play: Game Design Fundamentals",
+    "href": "https://mitpress.mit.edu/9780262240451/rules-of-play/"
+  },
+  {
+    "id": "art-of-game-design-book",
+    "title": "The Art of Game Design: A Book of Lenses (3rd Edition)",
+    "href": "https://www.routledge.com/The-Art-of-Game-Design-A-Book-of-Lenses-Third-Edition/Schell/p/book/9781315208435"
+  },
+  {
+    "id": "tabletop-analog-game-design",
+    "title": "Tabletop: Analog Game Design",
+    "href": "https://playstorypress.org/books/tabletop-analog-game-design/"
+  },
+  {
+    "id": "series-interesting-choices",
+    "title": "A Series of Interesting Choices",
+    "href": "https://www.eriksvedang.com/aseriesofinterestingchoices/"
+  },
+  {
+    "id": "gamespace-idea-generation-games",
+    "title": "Designing ‘Game Idea Generation’ Games",
+    "href": "https://loading.journals.publicknowledgeproject.org/index.php/loading/article/download/71/73"
+  },
+  {
+    "id": "weapon-of-criticism-design-game",
+    "title": "Gameplay-Supported Reflections on the Dialectics of Design Practice",
+    "href": "https://odr.chalmers.se/server/api/core/bitstreams/f55215f1-d7a2-4f50-a264-1ea247891135/content"
+  },
+  {
+    "id": "goventure-game-maker-kit",
+    "title": "Game Maker Kit",
+    "href": "https://www.goventure.net/gmk"
+  },
+  {
+    "id": "what-the-deck",
+    "title": "What The Deck",
+    "href": "https://www.thegamecrafter.com/games/what-the-deck"
+  },
+  {
+    "id": "martha-game-mechanic-cards",
+    "title": "Game Mechanic Cards: A Workshop Inspiration Tool",
+    "href": "https://marthasadie.wordpress.com/2015/08/16/game-mechanic-cards-a-workshop-inspiration-tool-for-generating-game-ideas/"
+  },
+  {
+    "id": "polyu-game-kit-2",
+    "title": "游戏套件 2.0（The Game Kit 2.0）",
+    "href": "https://soinnohub.polyujcsoinno.hk/zh-hant/tool/the-game-kit-2-0/"
+  },
+  {
+    "id": "league-ideation-toolkit",
+    "title": "LEAGUE Ideation Toolkit",
+    "href": "https://www.mdpi.com/2071-1050/12/20/8487"
+  },
+  {
+    "id": "bennett-autistic-adults-boardgames",
+    "title": "“Life has more purpose now”: A Grounded Theory Investigation of the Impact of Table-top Board Games on Wellbeing and Functioning in Autistic Adults",
+    "href": "https://www.sciencedirect.com/science/article/pii/S3050656525001166"
+  },
+  {
+    "id": "ran-blv-mobile-games-china",
+    "title": "How Users Who are Blind or Low Vision Play Mobile Games: Perceptions, Challenges, and Strategies",
+    "href": "https://arxiv.org/html/2502.09866"
+  },
+  {
+    "id": "wang-visually-impaired-tabletop-thesis",
+    "title": "視覺障礙者桌上遊戲創作研究－以《齊魏爭霸之孫臏兵法》為例",
+    "href": "https://ndltd.ncl.edu.tw/cgi-bin/gs32/gsweb.cgi?o=dnclcdr&s=id%3D%22106TFDU0785022%22.&searchmode=basic"
+  },
+  {
+    "id": "flyingv-braille-boardgame-playtests",
+    "title": "星際奇航｜為視障兒童打造的親子桌遊",
+    "href": "https://www.flyingv.cc/projects/16547"
+  },
+  {
+    "id": "tpwl-tactile-party-game",
+    "title": "視障者都這樣玩桌遊～來場真心話不冒險吧",
+    "href": "https://www.tpwl.org/news/102/"
+  },
+  {
+    "id": "peopo-houli-braille-boardgame",
+    "title": "用桌遊帶領視障者看見后里",
+    "href": "https://www.peopo.org/news/667298"
+  },
+  {
+    "id": "tainan-disabled-boardgame-session",
+    "title": "南市社會局社區學苑桌遊趣　身障者歡樂學習",
+    "href": "https://sab.tainan.gov.tw/News_Content.aspx?n=21215&s=4375649"
+  },
+  {
+    "id": "dcard-wheelchair-boardgame-venue",
+    "title": "請益：台北無障礙設施桌遊店",
+    "href": "https://www.dcard.tw/f/board_game/p/254363843"
+  },
+  {
+    "id": "dislocated-boardgames",
+    "title": "Dislocated Boardgames: Design Potentials for Remote Tangible Play",
+    "href": "https://www.mdpi.com/2414-4088/3/4/72"
+  },
+  {
+    "id": "thinking-with-body-boardgames",
+    "title": "Thinking with the Body: Embodying Thinking as a Practice in Board Games",
+    "href": "https://liu.diva-portal.org/smash/record.jsf?pid=diva2%3A1703538"
+  },
+  {
+    "id": "embodied-move-repair",
+    "title": "Verbal and Bodily Practices for Addressing Trouble Associated with Embodied Moves in Game Play",
+    "href": "https://doi.org/10.1075/slsi.36.07gol"
+  },
+  {
+    "id": "aesthetic-camaraderie-patterns",
+    "title": "Exploring Aesthetical Gameplay Design Patterns – Camaraderie in Four Games",
+    "href": "https://www.diva-portal.org/smash/get/diva2%3A1043335/FULLTEXT01.pdf"
+  },
+  {
+    "id": "full-body-game-guidelines-review",
+    "title": "Systematic Review of Design Guidelines for Full-Body Interactive Games",
+    "href": "https://doi.org/10.1093/iwc/iwaa026"
+  },
+  {
+    "id": "accessible-dexterity-computer-supported",
+    "title": "Computer Supported Accessible Dexterity-Based Board Games",
+    "href": "https://doi.org/10.24140/ijgsi.v1.n2.05"
+  },
+  {
+    "id": "handwavey-game",
+    "title": "The Handwavey Game",
+    "href": "https://doi.org/10.14434/ijdl.v12i1.31264"
+  },
+  {
+    "id": "captain-sonar-rules",
+    "title": "Captain Sonar Rulebook",
+    "href": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Captain%20Sonar.pdf"
+  },
+  {
+    "id": "captain-sonar-creator-note",
+    "title": "Captain Sonar: How Did I Create the Game?",
+    "href": "https://fragames.com/en/game/captain-sonar/"
+  },
+  {
+    "id": "magic-maze-rules",
+    "title": "Magic Maze Rulebook",
+    "href": "https://sitdown-games.com/wp-content/uploads/2018/09/MM_Rules_EN_HR_Sept2018_LD.pdf"
+  },
+  {
+    "id": "fit-to-print-diary",
+    "title": "Designer Diary: Fit to Print",
+    "href": "https://svarogsden.com/designer-diary-fit-to-print/"
+  },
+  {
+    "id": "geeky-gimp-accessibility-hacks",
+    "title": "Six Board Game Accessibility Fails, and How to Hack Them: Part One",
+    "href": "https://geekygimp.com/six-board-game-accessibility-fails-and-how-to-hack-them/"
+  },
+  {
+    "id": "cross-design-expertise-overview",
+    "title": "Expertise in Design: an overview",
+    "href": "https://oro.open.ac.uk/3271/"
+  },
+  {
+    "id": "dorst-design-expertise-levels",
+    "title": "Levels of Expertise in Design Education",
+    "href": "https://northamericanchapter.designsociety.org/publication/19588/LEVELS%2BOF%2BEXPERTISE%2BIN%2BDESIGN%2BEDUCATION"
+  },
+  {
+    "id": "educational-game-praxis-interviews",
+    "title": "Engagement Through Praxis in Educational Game Design: Common Threads",
+    "href": "https://doi.org/10.1177/1046878114553570"
+  },
+  {
+    "id": "game-design-conversations-professionals",
+    "title": "Exploring game design approaches through conversations with designers",
+    "href": "https://u-pad.unimc.it/handle/11393/332510"
+  },
+  {
+    "id": "undergraduate-game-design-logs",
+    "title": "The Forms and Uses of Undergraduate Student Game Design Logs",
+    "href": "https://cardinalscholar.bsu.edu/items/37ebe8e8-c964-4019-b72a-36fb6073a315"
+  },
+  {
+    "id": "game-jam-learning-systematic-review",
+    "title": "Future-oriented skills and knowledge in game jams, a systematic literature review",
+    "href": "https://doi.org/10.1016/j.caeo.2023.100129"
+  },
+  {
+    "id": "educational-board-game-jam",
+    "title": "Facilitating an Educational Board Game Jam: Analysing Different Game Design Strategies",
+    "href": "https://doi.org/10.34190/ecgbl.17.1.1759"
+  },
+  {
+    "id": "cosmic-colonies-long-diary",
+    "title": "Designer Diary - Making a Good Game Great!",
+    "href": "https://floodgate.games/blogs/news/designer-diary-making-a-good-game-great"
+  },
+  {
+    "id": "rebuilding-seattle-long-diary",
+    "title": "Designer Diary for Rebuilding Seattle",
+    "href": "https://wizkids.com/2022/11/28/designer-diary-for-rebuilding-seattle/"
+  },
+  {
+    "id": "wannabe-designer-contest-diary",
+    "title": "Wannabe Board Game Designer: Diary",
+    "href": "https://wannabeboardgamedesigner.com/diary/"
+  },
+  {
+    "id": "ten-game-hacks-ten-weeks",
+    "title": "10 game hacks in 10 weeks",
+    "href": "https://medium.com/10-game-hacks-in-10-weeks/10-game-hacks-in-10-weeks-68d0255e3a52"
+  },
+  {
+    "id": "wodc-judge-growth-reflection",
+    "title": "一个 WODC 评委眼中的桌游设计比赛与入围作品",
+    "href": "https://www.sohu.com/a/552916676_99978201"
+  },
+  {
+    "id": "fox-mmo-player-diary-study",
+    "title": "Player experiences in a massively multiplayer online game: A diary study of performance, motivation, and social interaction",
+    "href": "https://journals.sagepub.com/doi/10.1177/1461444818767102"
+  },
+  {
+    "id": "mekler-fez-completion-diary",
+    "title": "A diary study exploring game completion and player experience",
+    "href": "https://dl.acm.org/doi/10.1145/2658537.2661304"
+  },
+  {
+    "id": "ribbens-player-experience-triangulation",
+    "title": "Researching player experiences through the use of different qualitative methods",
+    "href": "https://dl.digra.org/index.php/dl/article/view/366"
+  },
+  {
+    "id": "iacovides-gameplay-learning-involvement",
+    "title": "Making sense of game-play: How can we examine learning and involvement?",
+    "href": "https://todigra.org/index.php/todigra/article/view/1692"
+  },
+  {
+    "id": "txt4l8r-diary-snippets",
+    "title": "txt 4 l8r: Lowering the Burden for Diary Studies Under Mobile Conditions",
+    "href": "https://hci.stanford.edu/cstr/reports/2007-01.pdf"
+  },
+  {
+    "id": "gerken-longitudinal-hci",
+    "title": "Longitudinal Research in Human-Computer Interaction",
+    "href": "https://www.uni-konstanz.de/mmsp/pubsys/publishedFiles/Gerken2011.pdf"
+  },
+  {
+    "id": "diary-reactivity-double-edged",
+    "title": "Diary studies, a double-edged sword? An experimental exploration of possible distortions due to daily reporting of social interactions",
+    "href": "https://doi.org/10.1002/job.2633"
+  },
+  {
+    "id": "inclusive-playtesting-cognitive-load",
+    "title": "Designing an Inclusive Playtesting Process Using Cognitive Load Theory",
+    "href": "https://press.etc.cmu.edu/articles/designing-inclusive-playtesting-process-using-cognitive-load-theory"
+  },
+  {
+    "id": "designerly-gameplay-experience-sampling",
+    "title": "Designerly Ways of Analysing Gameplay and Player Experiences",
+    "href": "https://dl.digra.org/index.php/dl/article/view/1926"
+  },
+  {
+    "id": "games-user-research-returning-players",
+    "title": "Run a playtest with your Discord community",
+    "href": "https://gamesuserresearch.com/run-a-playtest-with-your-discord-community/"
+  },
+  {
+    "id": "first-take-invasion-returning-new",
+    "title": "The Invasion Plods Onwards",
+    "href": "https://firsttakesomedice.blogspot.com/2017/11/the-invasion-plods-onwards.html"
+  },
+  {
+    "id": "starfront-forty-versions-diary",
+    "title": "Designer Diary: Starfront Scouting Academy",
+    "href": "https://entrogames.substack.com/p/designer-diary-starfront-scouting"
+  },
+  {
+    "id": "failed-games-single-session-impact",
+    "title": "Failed Games: Lessons Learned from Promising but Problematic Game Prototypes in Designing for Diversity",
+    "href": "https://dl.digra.org/index.php/dl/article/view/735"
+  },
+  {
+    "id": "gameplay-extension-actual-return",
+    "title": "Play the game then forever can begin: Designing games to extend gameplay",
+    "href": "https://pure.lib.cgu.edu.tw/en/publications/play-the-game-then-forever-can-begin-designing-games-to-extend-ga/"
+  },
+  {
+    "id": "mosca-legacy-irreversibility",
+    "title": "Legacy’s Legacy: Irreversibility and Permadeath in Legacy Games",
+    "href": "https://analoggamestudies.org/2017/01/legacys-legacy-irreversibility-and-permadeath-in-legacy-games/"
+  },
+  {
+    "id": "henderson-legacy-ludology",
+    "title": "Ludicrous Legacies and Legacy Ludology",
+    "href": "https://openrepository.aut.ac.nz/items/82b45cf6-5cd7-4924-9097-4ce988e5e95d"
+  },
+  {
+    "id": "pandemic-legacy-gdc-making",
+    "title": "Board Game Design Day: The Making of Pandemic Legacy",
+    "href": "https://www.gdcvault.com/play/1024300/Board-Game-Design-Day-The"
+  },
+  {
+    "id": "leacock-pandemic-legacy-official",
+    "title": "Pandemic Legacy: Season 1",
+    "href": "https://www.leacock.com/pandemic-legacy"
+  },
+  {
+    "id": "charterstone-design-diary-attendance",
+    "title": "Charterstone Design Diary",
+    "href": "https://stonemaiergames.com/games/charterstone/design-diary/"
+  },
+  {
+    "id": "charterstone-faq-joining",
+    "title": "Charterstone FAQ",
+    "href": "https://stonemaiergames.com/games/charterstone/faq/"
+  },
+  {
+    "id": "seafall-playtester-experience",
+    "title": "The Seafall Playtester Experience",
+    "href": "https://www.boardgamefightclub.com/articles/The-Seafall-Playtester-Experience/"
+  },
+  {
+    "id": "gnome-stew-campaign-playtesting",
+    "title": "Design Flow: Campaign Playtesting",
+    "href": "https://gnomestew.com/design-flow-campaign-playtesting/"
+  },
+  {
+    "id": "pretendo-playtesting-perils",
+    "title": "Playtesting Perils",
+    "href": "https://pretendo.games/2018/12/23/playtesting-perils/"
+  },
+  {
+    "id": "wired-betrayal-legacy-setup",
+    "title": "How the Betrayal Legacy Board Game Tells a Story Over 13 Games",
+    "href": "https://www.wired.com/story/board-game-design-betrayal-legacy-rob-daviau/"
+  },
+  {
+    "id": "yuan-remote-tabletop-campaign-state",
+    "title": "Tabletop Games in the Age of Remote Collaboration",
+    "href": "https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445512"
+  },
+  {
+    "id": "rogerson-boardgames-with-apps",
+    "title": "Unpacking Boardgames with Apps: The Hybrid Digital Boardgame Model",
+    "href": "https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445077"
+  },
+  {
+    "id": "katsantonis-coop-boardgame-review",
+    "title": "From Pandemic Legacy to Serious Games",
+    "href": "https://onlinelibrary.wiley.com/doi/10.1111/ejed.70048"
+  },
+  {
+    "id": "leorke-solo-player-motivations",
+    "title": "Solo Board Gaming: An Analysis of Player Motivations",
+    "href": "https://analoggamestudies.org/2018/12/solo-board-gaming-an-analysis-of-player-motivations/"
+  },
+  {
+    "id": "nougher-single-player-sociality",
+    "title": "If Only I Had Someone to Play With: Sociality in Single Player Board Games",
+    "href": "https://press-start.gla.ac.uk/press-start/article/view/301"
+  },
+  {
+    "id": "chola-sad-mode-automated-players",
+    "title": "A Happier Life Through Sad Mode — Designing Automated Players for Single Player Games",
+    "href": "https://wiredspace.wits.ac.za/items/a87857a3-e4f8-4507-a4dc-109d32a6cbf4"
+  },
+  {
+    "id": "automa-factory-approach",
+    "title": "The Automa Approach",
+    "href": "https://automafactory.com/about/"
+  },
+  {
+    "id": "mullins-solo-variant-elements",
+    "title": "The Basic Elements of Solo Variant Design",
+    "href": "https://cardboardedison.com/blog/guest-post-the-basic-elements-of-solo-variant-design"
+  },
+  {
+    "id": "imperium-solo-mode-design",
+    "title": "Imperium Blog — Solo Modes",
+    "href": "https://www.ospreypublishing.com/ca/osprey-blog/2021/imperium-blog-solo-modes/"
+  },
+  {
+    "id": "stamp-swap-solo-design-diary",
+    "title": "Stamp Swap Design Diary — Pinzetta Solo Mode",
+    "href": "https://stonemaiergames.com/games/stamp-swap/design-diary/"
+  },
+  {
+    "id": "wyrmspan-solo-design-diary",
+    "title": "Wyrmspan Design Diary — Automa",
+    "href": "https://stonemaiergames.com/games/wyrmspan/design-diary/"
+  },
+  {
+    "id": "origin-story-solo-information",
+    "title": "Origin Story Design Diary — Solo Information Model",
+    "href": "https://stonemaiergames.com/games/origin-story/design-diary/"
+  },
+  {
+    "id": "zhang-weird-solo-mode",
+    "title": "A Weird Approach to a Solo Mode",
+    "href": "https://www.jorgezhang.com/2023/5/solo/index.html"
+  },
+  {
+    "id": "pedersen-automa-interview",
+    "title": "Q&A with Morten Monrad Pedersen",
+    "href": "https://zatu.com/blogs/interviews/qa-with-morten-monrad-pedersen"
+  },
+  {
+    "id": "boardgameshots-galactic-cruise-solo",
+    "title": "Galactic Cruise Board Game Review",
+    "href": "https://boardgameshots.com/2025/06/03/galactic-cruise-board-game-review/"
+  },
+  {
+    "id": "goodman-multiplayer-game-spaces",
+    "title": "Visualising Multiplayer Game Spaces",
+    "href": "https://arxiv.org/abs/2202.05773"
+  },
+  {
+    "id": "daniel-player-count",
+    "title": "Player Count",
+    "href": "https://www.daniel.games/player-count/"
+  },
+  {
+    "id": "gamesprecipice-player-count-scalability",
+    "title": "Player Count & Scalability",
+    "href": "https://www.gamesprecipice.com/player-count-scalability/"
+  },
+  {
+    "id": "amritsar-player-count-diary",
+    "title": "Designer Diary: Amritsar: The Golden Temple",
+    "href": "https://svarogsden.com/designer-diary-amritsar-the-golden-temple/"
+  },
+  {
+    "id": "root-hirelings-player-count-diary",
+    "title": "Root: The Marauder Expansion Designer Diary 4 — Hirelings Galore",
+    "href": "https://ledergames.com/blogs/news/root-the-marauder-expansion-designer-diary-4-hirelings-galore"
+  },
+  {
+    "id": "popcorn-simultaneous-player-count-diary",
+    "title": "Victor Saumont's Designer Diary for Popcorn",
+    "href": "https://iellogames.com/victor-saumonts-designer-diary-for-popcorn/"
+  },
+  {
+    "id": "dixit-three-player-rules",
+    "title": "Dixit Disney Rulebook — Playing with 3 Players",
+    "href": "https://cdn.svc.asmodee.net/production-libellud/uploads/2023/07/DIXIT_DISNEY_RULES_EN_HD-1.pdf"
+  },
+  {
+    "id": "codenames-low-count-rules",
+    "title": "Codenames Rulebook — Two- and Three-Player Games",
+    "href": "https://czechgames.com/files/rules/codenames-rules-en.pdf"
+  },
+  {
+    "id": "bgg-xml-api-player-count-polls",
+    "title": "BGG XML API2 — User Suggested Number of Players Poll",
+    "href": "https://boardgamegeek.com/wiki/page/BGG_XML_API2"
+  },
+  {
+    "id": "daniel-game-length",
+    "title": "Game Length",
+    "href": "https://daniel.games/game-length/"
+  },
+  {
+    "id": "jaffee-game-end-dynamics",
+    "title": "The End Is Nigh! Game End Dynamics and How to Use Them",
+    "href": "https://sedjtroll.blogspot.com/2018/03/the-end-is-nigh-game-end-dynamics-and.html"
+  },
+  {
+    "id": "gamesprecipice-end-conditions",
+    "title": "Late Game Structures — End Conditions",
+    "href": "https://www.gamesprecipice.com/endings/"
+  },
+  {
+    "id": "drillers-game-duration-diary",
+    "title": "Under the Surface: The Design Journey of Drillers Part 1",
+    "href": "https://www.czechgames.com/news/under-the-surface-the-design-journey-of-drillers-part-1"
+  },
+  {
+    "id": "djinn-game-end-diary",
+    "title": "Designer Diary — Benjamin Schwer about Djinn",
+    "href": "https://news.pegasus.de/en/designer-diary-benjamin-schwer-about-djinn/"
+  },
+  {
+    "id": "old-world-ending-diary",
+    "title": "Old World Designer Notes #11: The End",
+    "href": "https://www.designer-notes.com/old-world-designer-notes-11-the-end/"
+  },
+  {
+    "id": "rogerson-player-elimination",
+    "title": "Understanding Player Elimination in Boardgames as a Form of Permadeath",
+    "href": "https://dl.digra.org/index.php/dl/article/view/1003"
+  },
+  {
+    "id": "alexandrovsky-game-disengagement",
+    "title": "Disengagement From Games: Characterizing the Experience and Process of Exiting Play Sessions",
+    "href": "https://arxiv.org/abs/2406.00189"
+  },
+  {
+    "id": "aquaria-game-length-review",
+    "title": "Aquaria Review",
+    "href": "https://boardgamegeek.com/blog/8626/blogpost/180503/aquaria-review"
+  },
+  {
+    "id": "reddit-concession-social-contract",
+    "title": "Social Contract of Gaming — What to Do If Winners or Losers Are Known Far Ahead of the End?",
+    "href": "https://www.reddit.com/r/boardgames/comments/cuhrp1"
+  },
+  {
+    "id": "daniel-randomness",
+    "title": "Randomness",
+    "href": "https://daniel.games/randomness/"
+  },
+  {
+    "id": "shalev-random-loops",
+    "title": "Design Patterns: Random Loops",
+    "href": "https://www.kindfortress.com/2018/10/03/design-patterns-random-loops/"
+  },
+  {
+    "id": "przybylski-randomness-strategy",
+    "title": "How Randomness Contributes to Strategic Thinking",
+    "href": "https://www.gamedeveloper.com/design/how-randomness-contributes-to-strategic-thinking"
+  },
+  {
+    "id": "goodman-skill-stochasticity",
+    "title": "Seeding for Success: Skill and Stochasticity in Tabletop Games",
+    "href": "https://arxiv.org/abs/2503.02686"
+  },
+  {
+    "id": "zhang-input-output-randomness",
+    "title": "Effect of Input-output Randomness on Gameplay Satisfaction in Collectable Card Games",
+    "href": "https://arxiv.org/abs/2107.08437"
+  },
+  {
+    "id": "ernest-volatility-game-design",
+    "title": "Volatility in Game Design: Lecture Notes from Gen Con 2012",
+    "href": "https://www.crabfragmentlabs.com/s/Volatility-in-Game-Design.pdf"
+  },
+  {
+    "id": "with-smile-gun-randomness-diary",
+    "title": "Designer Diary #1: The Spark",
+    "href": "https://subsurfacegames.ca/2020/07/17/designer-diary-1-the-spark/"
+  },
+  {
+    "id": "takeover-randomness-diary",
+    "title": "Designer Diary: Takeover, or How I Stopped Hating Ladder Climbers",
+    "href": "https://boardgamegeek.com/blog/1/blogpost/171928/designer-diary-takeover-or-how-i-stopped-hating-la"
+  },
+  {
+    "id": "spots-randomness-player-review",
+    "title": "Spots Review",
+    "href": "https://shelfgamer.com/reviews/spots/"
+  },
+  {
+    "id": "wohl-luck-illusory-control",
+    "title": "The Deployment of Personal Luck: Sympathetic Magic and Illusory Control in Games of Pure Chance",
+    "href": "https://doi.org/10.1177/014616702236870"
+  },
+  {
+    "id": "okamoto-luck-skill-attribution",
+    "title": "Blaming Luck, Claiming Skill: Self-attribution Bias in Error Assignment",
+    "href": "https://doi.org/10.1371/journal.pcbi.1013787"
+  },
+  {
+    "id": "daniel-winning-losing",
+    "title": "Winning & Losing",
+    "href": "https://daniel.games/winning-and-losing/"
+  },
+  {
+    "id": "russell-victory-conditions",
+    "title": "Victory Conditions",
+    "href": "https://hollandspiele.com/blogs/hollandazed-thoughts-ideas-and-miscellany/victory-conditions-by-tom-russell"
+  },
+  {
+    "id": "burgun-against-score-systems",
+    "title": "Against Score Systems (and for Success and Failure)",
+    "href": "https://www.gamedeveloper.com/design/against-score-systems-and-for-success-and-failure-"
+  },
+  {
+    "id": "with-smile-gun-scoring-diary",
+    "title": "Designer Diary #3: The Nuts and Bolts",
+    "href": "https://subsurfacegames.ca/2020/08/17/designer-diary-3-the-nuts-and-bolts/"
+  },
+  {
+    "id": "hegemony-scoring-diary",
+    "title": "Designer Diary: Hegemony: Lead Your Class to Victory",
+    "href": "https://boardgamegeek.com/blog/1/blogpost/145459/designer-diary-hegemony-lead-your-class-to-victory"
+  },
+  {
+    "id": "daybreak-victory-diary",
+    "title": "Designer Diary: Daybreak",
+    "href": "https://boardgamegeek.com/blog/1/blogpost/163737/designer-diary-daybreak"
+  },
+  {
+    "id": "pacts-scoring-diary",
+    "title": "Designer Diary: Pacts",
+    "href": "https://boardgamegeek.com/blog/1/blogpost/179913/designer-diary-pacts"
+  },
+  {
+    "id": "szulawski-boggle-rewards",
+    "title": "Is Self-determination Good for Your Effectiveness?",
+    "href": "https://doi.org/10.1371/journal.pone.0256558"
+  },
+  {
+    "id": "gajadhar-score-visibility",
+    "title": "Understanding Player Experience in Social Digital Games: The Role of Social Presence",
+    "href": "https://doi.org/10.6100/IR731192"
+  },
+  {
+    "id": "sanctuary-scoring-review",
+    "title": "Sanctuary Review",
+    "href": "https://www.gamesradar.com/games/board-games/sanctuary-review/"
+  },
+  {
+    "id": "point-salad-scoring-review",
+    "title": "Point Salad Review: Quick Drafting and Constant Choices",
+    "href": "https://whatsericplaying.com/2019/07/22/point-salad/"
+  },
+  {
+    "id": "reddit-hidden-scoring",
+    "title": "What Do You Think About Hidden Scoring?",
+    "href": "https://www.reddit.com/r/boardgames/comments/1okpcgq/what_do_you_think_about_hidden_scoring/"
+  },
+  {
+    "id": "daniel-turn-structure",
+    "title": "Turn Structure",
+    "href": "https://daniel.games/turn-structure/"
+  },
+  {
+    "id": "bishop-game-design-concepts",
+    "title": "Game Design Concepts",
+    "href": "https://dspacemainprd01.lib.uwaterloo.ca/server/api/core/bitstreams/de73cdfc-77ed-4fff-9fb1-c2b2bf601fa4/content"
+  },
+  {
+    "id": "rogers-turn-hierarchy",
+    "title": "Game > Round > Phase > Turn > Action",
+    "href": "https://mrbossdesign.blogspot.com/2019/09/game-round-turn-phase-action.html"
+  },
+  {
+    "id": "ducksauce-card-turn-loop",
+    "title": "How to Design a Card Game",
+    "href": "https://www.ducksauce.games/blog/how-to-design-a-card-game"
+  },
+  {
+    "id": "oath-action-economy-diary",
+    "title": "Oath Designer Diary 9: The Long March to Oath's Combat System",
+    "href": "https://ledergames.com/blogs/news/oath-designer-diary-9-the-long-march-to-oaths-combat-system"
+  },
+  {
+    "id": "arcs-action-structure-diary",
+    "title": "Arcs Designer Diary 3: The Trick's the Thing",
+    "href": "https://ledergames.com/blogs/news/arcs-designer-diary-3-the-trick-s-the-thing"
+  },
+  {
+    "id": "pax-pamir-free-action-diary",
+    "title": "No Such Thing as a Free Action",
+    "href": "https://wehrlegig.com/blogs/essays/no-such-thing-as-a-free-action"
+  },
+  {
+    "id": "elden-ring-action-economy-diary",
+    "title": "Combat, Initiative & Deck Building in the ELDEN RING Board Game (Part Two)",
+    "href": "https://steamforged.com/blogs/brands/combat-part-two-elden-ring-board-game"
+  },
+  {
+    "id": "daniel-who-goes-first",
+    "title": "Who Goes First?",
+    "href": "https://daniel.games/who-goes-first/"
+  },
+  {
+    "id": "xu-chores-social-play",
+    "title": "Chores Are Fun: Understanding Social Play in Board Games for Digital Tabletop Game Design",
+    "href": "https://dl.digra.org/index.php/dl/article/download/591/591/588"
+  },
+  {
+    "id": "pape-tabletop-coordination-policies",
+    "title": "Coordination Policies for Tabletop Gaming",
+    "href": "https://equis.cs.queensu.ca/~equis/pubs/2010/pape-gi-10.pdf"
+  },
+  {
+    "id": "hofstetter-turn-transition",
+    "title": "Achieving Preallocation: Turn Transition Practices in Board Games",
+    "href": "https://doi.org/10.1080/0163853X.2020.1816401"
+  },
+  {
+    "id": "reddit-downtime-design",
+    "title": "Downtime in Board Games & What to Do About It",
+    "href": "https://www.reddit.com/r/tabletopgamedesign/comments/1k57ffj"
+  },
+  {
+    "id": "brass-action-economy-review",
+    "title": "Brass: Birmingham Review",
+    "href": "https://www.gamesradar.com/games/board-games/brass-birmingham-review/"
+  },
+  {
+    "id": "oath-map-remembers",
+    "title": "Oath Designer Diary 4: A Map That Remembers",
+    "href": "https://ledergames.com/blogs/news/oath-designer-diary-4-a-map-that-remembers"
+  },
+  {
+    "id": "faidutti-map-territory",
+    "title": "The Map and The Territory",
+    "href": "https://faidutti.com/blog/blog/2012/12/11/la-carte-et-le-territoire-the-map-and-the-territory/"
+  },
+  {
+    "id": "insidegmt-cartography-game-board",
+    "title": "From Bellin's Map to B&T's Game Board: How I Use Cartography in Game Design",
+    "href": "https://insidegmt.com/bt-biweekly-issue-5-from-bellins-map-to-bts-game-board-how-i-use-cartography-in-game-design/"
+  },
+  {
+    "id": "byways-map-development",
+    "title": "Birth of Byways: A Peek Into My Early Board Game Development Process",
+    "href": "https://brandonthegamedev.com/birth-of-byways-peek-into-my-early-board-game-development-process/"
+  },
+  {
+    "id": "daniel-scaling-map",
+    "title": "Scaling",
+    "href": "https://daniel.games/scaling/"
+  },
+  {
+    "id": "ticket-to-ride-adjacency-analysis",
+    "title": "Ticket to Ride's Adjacency Matrix",
+    "href": "https://danbscott.ghost.io/ticket-to-rides-adjacency-matrix/"
+  },
+  {
+    "id": "new-yorker-map-incentive-playtest",
+    "title": "The Personal, Political Art of Board-Game Design",
+    "href": "https://www.newyorker.com/culture/annals-of-inquiry/the-personal-political-art-of-board-game-design"
+  },
+  {
+    "id": "spirit-island-thematic-map-rules",
+    "title": "Spirit Island Rulebook: Thematic Map",
+    "href": "https://gamers-hq.de/media/pdf/de/e2/8e/Spirit_island_Rulebook.pdf"
+  },
+  {
+    "id": "spirit-island-jagged-earth-map-diary",
+    "title": "Spirit Island: Jagged Earth — Alternate Island Layouts",
+    "href": "https://spirit-island-jagged-earth.backerkit.com/hosted_preorders/project_updates?page=10"
+  },
+  {
+    "id": "dinosaur-world-route-diary",
+    "title": "Designer Diary: Dinosaur World, or Life, Uh, Finds a Way",
+    "href": "https://boardgamegeek.com/blog/1/blogpost/108734/designer-diary-dinosaur-world-or-life-uh-finds-a-w"
+  },
+  {
+    "id": "fateforge-map-exploration-diary",
+    "title": "Designer Diary: Fateforge — Map Exploration",
+    "href": "https://boardgamegeek.com/blog/1/blogpost/171531/designer-diary-fateforge-chronicles-of-kaan-or-bac"
+  },
+  {
+    "id": "scott-tabletop-territoriality",
+    "title": "Territoriality in Collaborative Tabletop Workspaces",
+    "href": "https://cspages.ucalgary.ca/~sheelagh/wiki/uploads/Main/Publications/scott_cscw2004.pdf"
+  },
+  {
+    "id": "whalen-boardgame-tabletop-interface",
+    "title": "Playing Well with Others: Applying Board Game Design to Tabletop Display Interfaces",
+    "href": "https://uist.acm.org/archive/adjunct/2003/pdf/posters/p4-whalen.pdf"
+  },
+  {
+    "id": "kosa-us-territory-map-process",
+    "title": "The Design Process of a Board Game for Exploring the Territories of the United States",
+    "href": "https://scispace.com/pdf/the-design-process-of-a-board-game-for-exploring-the-5eaya6v566.pdf"
+  },
+  {
+    "id": "reddit-board-map-design",
+    "title": "Designing Interesting Board Game Maps",
+    "href": "https://www.reddit.com/r/BoardgameDesign/comments/104q0bq"
+  },
+  {
+    "id": "reddit-table-space-access",
+    "title": "Experience Ruined by Game's Table Space — Does This Happen to Anyone Else?",
+    "href": "https://www.reddit.com/r/boardgames/comments/1sktdpw/experience_ruined_by_games_table_space_does_this/"
+  },
+  {
+    "id": "crescent-moon-negotiation-diary",
+    "title": "Crescent Moon — Design Diary 3: The Gameplay",
+    "href": "https://www.ospreypublishing.com/uk/osprey-blog/2022/crescent-moon-design-diary-3-the-gameplay/"
+  },
+  {
+    "id": "president-social-engine-diary",
+    "title": "Designer Diary: President",
+    "href": "https://boardgameslive.games/designer-diary-president/"
+  },
+  {
+    "id": "golden-blade-promise-diary",
+    "title": "Designer Diary: Diplomacy — The Golden Blade Card Game",
+    "href": "https://boardgamegeek.com/blog/1/blogpost/185137/designer-diary-diplomacy-the-golden-blade-card-gam"
+  },
+  {
+    "id": "ti4-deals-rules",
+    "title": "Twilight Imperium 4 Rules: Deals",
+    "href": "https://www.yjmrobert.com/tirules/rules/r_deals/"
+  },
+  {
+    "id": "kings-struggle-deals-rules",
+    "title": "King's Struggle Rulebook",
+    "href": "https://gusandco.net/wp-content/uploads/2018/12/KS_Rules-ONLINE.pdf"
+  },
+  {
+    "id": "oath-negotiation-risk-diary",
+    "title": "Oath Designer Diary 17: Development Update",
+    "href": "https://ledergames.com/blogs/news/oath-designer-diary-17-development-update"
+  },
+  {
+    "id": "zoo-vadis-publisher-diary",
+    "title": "Publisher Diary: Reiner Knizia's Zoo Vadis",
+    "href": "https://bitewinggames.com/publisher-diary-reiner-knizias-zoo-vadis/"
+  },
+  {
+    "id": "diplomacy-official-rules",
+    "title": "Diplomacy: The Game of International Intrigue",
+    "href": "https://www.hasbro.com/common/instruct/diplomacy.pdf"
+  },
+  {
+    "id": "chinatown-accessibility-teardown",
+    "title": "Chinatown Accessibility Teardown",
+    "href": "https://www.meeplelikeus.co.uk/chinatown-1999-accessibility-teardown/"
+  },
+  {
+    "id": "crabb-heron-communication-challenges",
+    "title": "Communication Challenges in Social Board Games",
+    "href": "https://research.chalmers.se/en/publication/536430"
+  },
+  {
+    "id": "mischkowski-promises-expectations",
+    "title": "Promises, Expectations, and Social Cooperation",
+    "href": "https://chicagounbound.uchicago.edu/jle/vol62/iss4/5/"
+  },
+  {
+    "id": "smith-promises-punishment",
+    "title": "Promises and Punishment",
+    "href": "https://www.sciencedirect.com/science/article/pii/S0167268126002726"
+  },
+  {
+    "id": "charness-broken-promises-experiment",
+    "title": "Broken Promises: An Experiment",
+    "href": "https://escholarship.org/uc/item/6836m74q"
+  },
+  {
+    "id": "broken-promises-hidden-partnerships",
+    "title": "Broken Promises and Hidden Partnerships: An Experiment",
+    "href": "https://www.sciencedirect.com/science/article/pii/S0167268118303032"
+  },
+  {
+    "id": "coalition-formation-dynamics-experiment",
+    "title": "The Dynamics of Coalition Formation",
+    "href": "https://www.sciencedirect.com/science/article/pii/S0167268116301408"
+  },
+  {
+    "id": "online-coalition-game-tool",
+    "title": "The Online Coalition Game",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9170619/"
+  },
+  {
+    "id": "diplomacy-negotiation-messages-study",
+    "title": "It Takes Two to Negotiate",
+    "href": "https://arxiv.org/abs/2311.08666"
+  },
+  {
+    "id": "diplomacy-betrayal-language-study",
+    "title": "Linguistic Harbingers of Betrayal",
+    "href": "https://arxiv.org/abs/1506.04744"
+  },
+  {
+    "id": "reddit-negotiation-hallmarks",
+    "title": "Hallmarks of Great Negotiation Games",
+    "href": "https://www.reddit.com/r/boardgames/comments/1uo181j/hallmarks_of_great_negotiation_games/"
+  },
+  {
+    "id": "noncooperative-preplay-negotiation",
+    "title": "Non-cooperative Games with Preplay Negotiations",
+    "href": "https://arxiv.org/abs/1208.1718"
+  },
+  {
+    "id": "medici-auction-interview",
+    "title": "Reiner Knizia on Auction Board Games and Medici",
+    "href": "https://www.wargamer.com/medici/reiner-knizia-auction-board-games"
+  },
+  {
+    "id": "modern-art-official-rules",
+    "title": "Modern Art Official Rulebook",
+    "href": "https://www.cmon.com/wp-content/uploads/2023/06/MA_Rulebbok_Artbook_v18-low.pdf"
+  },
+  {
+    "id": "high-society-official-rules",
+    "title": "High Society Official Rulebook",
+    "href": "https://www.ospreypublishing.com/media/1fohbutt/hisoc_rulebook_for_web.pdf"
+  },
+  {
+    "id": "ra-official-auction-rules",
+    "title": "Ra Rulebook",
+    "href": "https://images.zmangames.com/filer_public/1c/f1/1cf1f19e-70bb-413f-8756-13e1e5239b8a/kn27_ra_rulebook_eng.pdf"
+  },
+  {
+    "id": "estates-auction-rules",
+    "title": "The Estates Game Rules",
+    "href": "https://www.ultraboardgames.com/the-estates/game-rules.php"
+  },
+  {
+    "id": "qe-auction-rules",
+    "title": "QE Rulebook",
+    "href": "https://cdn.1j1ju.com/medias/d8/60/b3-qe-rulebook.pdf"
+  },
+  {
+    "id": "for-sale-publisher-overview",
+    "title": "For Sale!",
+    "href": "https://www.eagle-gryphon.com/products/for-sale"
+  },
+  {
+    "id": "trinket-trove-auction-diary",
+    "title": "Designer Diary: Trinket Trove",
+    "href": "https://boardgamegeek.com/blog/1/blogpost/175683/designer-diary-trinket-trove"
+  },
+  {
+    "id": "high-society-accessibility-teardown",
+    "title": "High Society Accessibility Teardown",
+    "href": "https://www.meeplelikeus.co.uk/high-society-1995-accessibility-teardown/"
+  },
+  {
+    "id": "modern-art-accessibility-teardown",
+    "title": "Modern Art Accessibility Teardown",
+    "href": "https://www.meeplelikeus.co.uk/modern-art-1992-accessibility-teardown/"
+  },
+  {
+    "id": "yale-auction-lecture",
+    "title": "ECON 159 Lecture 24: Auctions",
+    "href": "https://oyc.yale.edu/economics/econ-159/lecture-24"
+  },
+  {
+    "id": "thaler-winners-curse",
+    "title": "Anomalies: The Winner's Curse",
+    "href": "https://www.aeaweb.org/articles?id=10.1257%2Fjep.2.1.191&page=604"
+  },
+  {
+    "id": "foreman-learning-winners-curse",
+    "title": "Learning to Avoid the Winner's Curse",
+    "href": "https://www.sciencedirect.com/science/article/pii/S0749597896900722"
+  },
+  {
+    "id": "common-value-auction-learning",
+    "title": "Learning in Common Value Auctions",
+    "href": "https://www.sciencedirect.com/science/article/pii/0167268194901058"
+  },
+  {
+    "id": "reserve-price-collusion-experiment",
+    "title": "Deterring Collusion with a Reserve Price: An Auction Experiment",
+    "href": "https://www.cambridge.org/core/journals/experimental-economics/article/abs/deterring-collusion-with-a-reserve-price-an-auction-experiment/DCA85B34E8B60950078E61C584CC736E"
+  },
+  {
+    "id": "bidder-curse-cash-field",
+    "title": "The Bidder's Curse",
+    "href": "https://eml.berkeley.edu/~ulrike/Papers/bidderscurse19.pdf"
+  },
+  {
+    "id": "winners-curse-natural-markets",
+    "title": "The Winner's Curse in Naturally Occurring Data",
+    "href": "https://www.nber.org/papers/w13072"
+  },
+  {
+    "id": "bgg-auction-design-analysis",
+    "title": "How to Design Auction Games: A Strategic Analysis of Mechanics, Value, and Player Psychology",
+    "href": "https://boardgamegeek.com/blog/17011/blogpost/183257/how-to-design-auction-games-a-strategic-analysis-o"
+  },
+  {
+    "id": "reddit-auction-valuation",
+    "title": "How to Determine Value in Auction Board Games?",
+    "href": "https://www.reddit.com/r/boardgames/comments/eyut2i"
+  },
+  {
+    "id": "reddit-auction-design-takeover",
+    "title": "What Are Your Opinions on Auctions as a Mechanic?",
+    "href": "https://www.reddit.com/r/BoardgameDesign/comments/ufsuzo"
+  },
+  {
+    "id": "power-grid-recharged-market-rules",
+    "title": "Power Grid: Recharged Rulebook",
+    "href": "https://meepletron-storage.s3.us-east-2.amazonaws.com/resources/power-grid-recharged-rulebook.pdf"
+  },
+  {
+    "id": "clans-caledonia-market-rules",
+    "title": "Clans of Caledonia Rulebook",
+    "href": "https://cdn.1j1ju.com/medias/17/ed/42-clans-of-caledonia-rulebook.pdf"
+  },
+  {
+    "id": "century-spice-road-market-rules",
+    "title": "Century: Spice Road Rules",
+    "href": "https://papmajor.dk/wp-content/uploads/EN-Century-Spice-Road-Rules-2017-08-02.pdf"
+  },
+  {
+    "id": "container-official-market-overview",
+    "title": "Container",
+    "href": "https://store.asmodee.com/products/container"
+  },
+  {
+    "id": "brass-birmingham-market-rules",
+    "title": "Brass: Birmingham Rulebook",
+    "href": "https://fgbradleys.com/wp-content/uploads/Brass-Birmingham-Rulebook.pdf"
+  },
+  {
+    "id": "mars-needs-mechanics-market-interview",
+    "title": "Meaningful Decisions: Ben Rosset on Mars Needs Mechanics",
+    "href": "https://cardboardedison.com/blog/meaningful-decisions-ben-rosset"
+  },
+  {
+    "id": "stale-markets-design-discussion",
+    "title": "Design Discussion: Stale Markets",
+    "href": "https://chrisbeckdesign.com/2021/11/20/design-discussion-stale-markets/"
+  },
+  {
+    "id": "monsoon-market-variables",
+    "title": "Revising the Constants and Variables in Monsoon Market",
+    "href": "https://danielsolisblog.blogspot.com/2014/05/revising-constants-and-variables-in.html"
+  },
+  {
+    "id": "skeleton-dynamic-markets",
+    "title": "Dynamic Markets and Dutch Auctions",
+    "href": "https://www.skeletoncodemachine.com/p/dutch-auctions"
+  },
+  {
+    "id": "game-developer-economy-market",
+    "title": "The Trials and Tribulations of Balancing Your In-game Economy",
+    "href": "https://www.gamedeveloper.com/design/the-trials-and-tribulations-of-balancing-your-in-game-economy"
+  },
+  {
+    "id": "through-ages-market-accessibility",
+    "title": "Through the Ages Accessibility Teardown",
+    "href": "https://www.meeplelikeus.co.uk/ages-new-story-civilization-2015-accessibility-teardown/"
+  },
+  {
+    "id": "classroom-double-auction-2000",
+    "title": "Evidence of General Economic Principles from 2,000 Classroom Experiments",
+    "href": "https://authors.library.caltech.edu/records/1ytq0-24n12"
+  },
+  {
+    "id": "double-auction-market-power-boundary",
+    "title": "Testing the Boundaries of the Double Auction: Complete Information and Market Power",
+    "href": "https://epublications.marquette.edu/econ_fac/580/"
+  },
+  {
+    "id": "nonstationary-market-experiment",
+    "title": "Markets with Nonstationary Supply and Demand",
+    "href": "https://www.sciencedirect.com/science/article/pii/0167268193900049"
+  },
+  {
+    "id": "transaction-cost-price-discovery",
+    "title": "Transaction and Offering Costs in Shifting Markets",
+    "href": "https://authors.library.caltech.edu/records/fnhzb-n0e58"
+  },
+  {
+    "id": "shubik-double-auction-teaching",
+    "title": "A Double Auction Market: Teaching, Experiment and Theory",
+    "href": "https://elischolar.library.yale.edu/cowles-discussion-paper-series/1719/"
+  },
+  {
+    "id": "beer-game-outcome-feedback",
+    "title": "Exploration of Outcome Feedback for Dynamic Decision Making",
+    "href": "https://proceedings.systemdynamics.org/1999/PAPERS/PARA98.PDF"
+  },
+  {
+    "id": "dynamic-pricing-capacity-experiment",
+    "title": "Dynamic Pricing Decisions and Seller-Buyer Interactions under Capacity Constraints",
+    "href": "https://ideas.repec.org/a/gam/jgames/v9y2018i1p10-d132752.html"
+  },
+  {
+    "id": "few-traders-market-experiment",
+    "title": "Competition with Indivisibilities and Few Traders",
+    "href": "https://www.cambridge.org/core/journals/experimental-economics/article/competition-with-indivisibilities-and-few-traders/F0BA414399820BDC102B3FA31B189253"
+  },
+  {
+    "id": "reddit-century-stale-market",
+    "title": "Century: Spice Road Stale Market House Rules",
+    "href": "https://www.reddit.com/r/boardgames/comments/bmf5sp"
+  },
+  {
+    "id": "reddit-century-skipped-cube-error",
+    "title": "Century: Spice Road Skipped-card Cube Rule Error",
+    "href": "https://www.reddit.com/r/boardgames/comments/wmmqk9"
+  },
+  {
+    "id": "bgg-stale-row-disagreement",
+    "title": "Idea of How to Unclog the Trade Row",
+    "href": "https://boardgamegeek.com/thread/3125219/idea-of-how-to-unclog-the-trade-row"
+  },
+  {
+    "id": "agricola-resource-cycle-rules",
+    "title": "Agricola Rulebook",
+    "href": "https://www.lookout-spiele.de/upload/en_agricola.html_Rules_Agricola_EN.pdf"
+  },
+  {
+    "id": "le-havre-production-chain-rules",
+    "title": "Le Havre Rulebook",
+    "href": "https://cdn.1j1ju.com/medias/98/d1/2f-le-havre-rulebook.pdf"
+  },
+  {
+    "id": "race-galaxy-produce-consume-rules",
+    "title": "Race for the Galaxy Second Edition Rules",
+    "href": "https://www.riograndegames.com/wp-content/uploads/2013/02/RFTG_2e_rules.pdf"
+  },
+  {
+    "id": "terraforming-mars-production-rules",
+    "title": "Terraforming Mars Rulebook",
+    "href": "https://fryxgames.se/wp-content/uploads/2023/04/TMRULESFINAL.pdf"
+  },
+  {
+    "id": "food-chain-magnate-upkeep-rules",
+    "title": "Food Chain Magnate Rules",
+    "href": "https://goblins.net/files/downloads/FCM_Rules_English.pdf"
+  },
+  {
+    "id": "fantastic-factories-production-rules",
+    "title": "Fantastic Factories Rulebook",
+    "href": "https://cs.uwaterloo.ca/~dtompkin/dtlib/base/Fantastic%20Factories.pdf"
+  },
+  {
+    "id": "daniel-engines-resource-web",
+    "title": "Engines",
+    "href": "https://daniel.games/engines/"
+  },
+  {
+    "id": "machinations-economy-nodes",
+    "title": "Machinations: A New Way to Design Game Mechanics",
+    "href": "https://www.gamedeveloper.com/design/the-designer-s-notebook-machinations-a-new-way-to-design-game-mechanics"
+  },
+  {
+    "id": "fantastic-factories-runaway-diary",
+    "title": "Catch Me If You Can: The Runaway Leader and Catch-up Mechanics",
+    "href": "https://fantastic-factories.medium.com/catch-me-if-you-can-the-runaway-leader-and-catch-up-mechanics-53f0356c440d"
+  },
+  {
+    "id": "deliberate-resource-loop",
+    "title": "Resources Loop",
+    "href": "https://deliberategamedesign.com/resources-loop/"
+  },
+  {
+    "id": "stock-flow-failure-study",
+    "title": "Why Don't Well-Educated Adults Understand Accumulation?",
+    "href": "https://web.mit.edu/jsterman/www/Why_Adults_Accumulation.html"
+  },
+  {
+    "id": "jmu-stock-flow-guide",
+    "title": "System Dynamics Learning Guide: Stocks and Flows",
+    "href": "https://pressbooks.lib.jmu.edu/sdlearningguide/chapter/systems-thinking-a-new-way-to-tackle-problems/"
+  },
+  {
+    "id": "beer-game-history",
+    "title": "History of the Beer Game",
+    "href": "https://onlinelibrary.wiley.com/doi/full/10.1002/sdr.1767"
+  },
+  {
+    "id": "race-galaxy-accessibility",
+    "title": "Race for the Galaxy Accessibility Teardown",
+    "href": "https://www.meeplelikeus.co.uk/race-for-the-galaxy-2007-accessibility-teardown/"
+  },
+  {
+    "id": "terraforming-mars-accessibility",
+    "title": "Terraforming Mars Accessibility Teardown",
+    "href": "https://www.meeplelikeus.co.uk/terraforming-mars-2016-accessibility-teardown/"
+  },
+  {
+    "id": "reddit-rftg-consume-order",
+    "title": "Race for the Galaxy Trade and Consume Order Question",
+    "href": "https://www.reddit.com/r/boardgames/comments/1illcy8"
+  },
+  {
+    "id": "reddit-le-havre-feeding-window",
+    "title": "Le Havre at Four or More Players",
+    "href": "https://www.reddit.com/r/boardgames/comments/1rhxga4/is_le_havre_realy_that_bad_at_4_players/"
+  },
+  {
+    "id": "reddit-terraforming-beginner-economy",
+    "title": "Been Playing Terraforming Mars Horribly Wrong",
+    "href": "https://www.reddit.com/r/TerraformingMarsGame/comments/hbb5ff/been_playing_the_game_horribly_wrong_how_do_you/"
+  },
+  {
+    "id": "reddit-resource-growth-repetition",
+    "title": "How to Make Resource Growth and Management Exciting?",
+    "href": "https://www.reddit.com/r/tabletopgamedesign/comments/1i0bbnu"
+  },
+  {
+    "id": "hanabi-hidden-hand-rules",
+    "title": "The Rules of Hanabi",
+    "href": "https://github.com/hanabi/hanabi.github.io/blob/main/misc/rules.md"
+  },
+  {
+    "id": "crew-limited-communication-rules",
+    "title": "The Crew: The Quest for Planet Nine Manual",
+    "href": "https://www.thamesandkosmos.com/manuals/full/691868_Crew_Manual.pdf"
+  },
+  {
+    "id": "bohnanza-hand-order-rules",
+    "title": "Bohnanza Rule Booklet",
+    "href": "https://www.lookout-spiele.de/wp-content/uploads/fan-bohnanza-en.pdf"
+  },
+  {
+    "id": "coup-claim-challenge-rules",
+    "title": "Coup Rulebook",
+    "href": "https://artofthegame.github.io/coup/rulebook.pdf"
+  },
+  {
+    "id": "decrypto-clue-interception-rules",
+    "title": "Decrypto Rules",
+    "href": "https://www.scorpionmasque.com/sites/scorpionmasque.com/files/decrypto_en_rules_20sep2019_1.pdf"
+  },
+  {
+    "id": "flamme-rouge-card-cycle-diary",
+    "title": "Heat: Pedal to the Metal — Design History",
+    "href": "https://cdn.svc.asmodee.net/staging-daysofwonder/uploads/2024/07/ht_diary.pdf"
+  },
+  {
+    "id": "daniel-information-overload",
+    "title": "Information Overload",
+    "href": "https://daniel.games/information-overload/"
+  },
+  {
+    "id": "brian-bluffing-incentives",
+    "title": "On Bluffing Games",
+    "href": "https://brianhamrick.com/blog/bluffing-games"
+  },
+  {
+    "id": "balangay-social-deduction-information",
+    "title": "Designing a Social Deduction Tabletop Game",
+    "href": "https://www.balangay.games/designing-a-social-deduction-tabletop-game/"
+  },
+  {
+    "id": "auburn-hand-management-guidelines",
+    "title": "Design Guidelines for Creating Visual Hand Management Board Games",
+    "href": "https://etd.auburn.edu/handle/10415/6627"
+  },
+  {
+    "id": "deception-cue-baseline-study",
+    "title": "Observers' Performance at Evaluating Truthfulness with Baselines",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC6762160/"
+  },
+  {
+    "id": "werewolf-persuasion-dataset",
+    "title": "Werewolf Among Us: Multimodal Resources for Modeling Persuasion",
+    "href": "https://aclanthology.org/2023.findings-acl.411.pdf"
+  },
+  {
+    "id": "coup-player-psychology-study",
+    "title": "Player Psychology and Decision-Making in the Card Game Coup",
+    "href": "https://escholarship.org/content/qt0p3904t5/qt0p3904t5.pdf"
+  },
+  {
+    "id": "hanabi-accessibility",
+    "title": "Hanabi Accessibility Teardown",
+    "href": "https://www.meeplelikeus.co.uk/hanabi-2010-accessibility-teardown/"
+  },
+  {
+    "id": "coup-accessibility",
+    "title": "Coup Accessibility Teardown",
+    "href": "https://www.meeplelikeus.co.uk/coup-2012-accessibility-teardown/"
+  },
+  {
+    "id": "reddit-crew-communication-rule",
+    "title": "The Crew: Where Does the Playing Silent Rule Come From?",
+    "href": "https://www.reddit.com/r/boardgames/comments/vszdrk"
+  },
+  {
+    "id": "reddit-bohnanza-hand-confusion",
+    "title": "Question About Bohnanza",
+    "href": "https://www.reddit.com/r/boardgames/comments/x9shfm"
+  },
+  {
+    "id": "reddit-social-deduction-noise",
+    "title": "Problem Elements and Solutions in Social Deduction Games",
+    "href": "https://www.reddit.com/r/BoardgameDesign/comments/19dq1x4"
+  },
+  {
+    "id": "dominion-deck-cycle-rules",
+    "title": "Dominion Game Rules",
+    "href": "https://www.riograndegames.com/wp-content/uploads/2020/03/Dominion-gameRules.pdf"
+  },
+  {
+    "id": "star-realms-deck-cycle-rules",
+    "title": "Star Realms Rules of Play",
+    "href": "https://files.wisewizardgames.com/starrealms/SRROE_Rulebook_2023-01-30.pdf"
+  },
+  {
+    "id": "aeons-end-no-shuffle-rules",
+    "title": "Aeon's End Rules",
+    "href": "https://aeonsend.wiki.gg/wiki/Rules"
+  },
+  {
+    "id": "imperium-deck-cycle-overview",
+    "title": "Imperium Blog: Mechanisms Overview",
+    "href": "https://www.ospreypublishing.com/us/osprey-blog/2021/imperium-blog-mechanisms-overview/"
+  },
+  {
+    "id": "dale-merchants-stall-rules",
+    "title": "Dale of Merchants Collection Rules",
+    "href": "https://snowdaledesign.fi/wp-content/uploads/2018/09/Dale_of_Merchants_C_Rules_EN_6.pdf"
+  },
+  {
+    "id": "el-dorado-card-lifecycle-rules",
+    "title": "The Quest for El Dorado Rulebook",
+    "href": "https://www.rulespal.com/the-quest-for-el-dorado/rulebook"
+  },
+  {
+    "id": "vaccarino-dominion-decisions",
+    "title": "Meaningful Decisions: Donald X. Vaccarino on Dominion",
+    "href": "https://cardboardedison.com/blog/meaningful-decisions-donald-x-vaccarino-dominion"
+  },
+  {
+    "id": "imperium-horizons-design-diary",
+    "title": "Imperium: Horizons Design Diary",
+    "href": "https://www.ospreypublishing.com/uk/osprey-blog/2024/imperium-horizons-design-diary/"
+  },
+  {
+    "id": "dune-imperium-deck-worker-diary",
+    "title": "Dune: Imperium Designer Diary 1 — Beginnings",
+    "href": "https://news.direwolfdigital.com/dune-imperium-designer-diary-1-beginnings/"
+  },
+  {
+    "id": "aeons-end-riley-interview",
+    "title": "Aeon's End: Interview with Kevin Riley",
+    "href": "https://www.goblins.net/articoli/aeon-s-end-intervista-kevin-riley-goblin-magnifico"
+  },
+  {
+    "id": "nealen-ascension-deckbuilding-analysis",
+    "title": "Analyzing the Design Space of Deckbuilding Games",
+    "href": "https://www.nealen.net/ascension.pdf"
+  },
+  {
+    "id": "psu-hypergeometric",
+    "title": "Lesson 7: Hypergeometric Distribution",
+    "href": "https://online.stat.psu.edu/stat414/Lesson07"
+  },
+  {
+    "id": "nist-hypergeometric",
+    "title": "Hypergeometric Distribution",
+    "href": "https://www.itl.nist.gov/div898/handbook/glossary.htm"
+  },
+  {
+    "id": "dominion-deep-rl-study",
+    "title": "Playing Dominion Using Deep Reinforcement Learning",
+    "href": "https://ojs.aaai.org/index.php/AIIDE/article/download/27518/27291/31569"
+  },
+  {
+    "id": "dominion-online-benchmark",
+    "title": "Dominion: A New Frontier for AI Research",
+    "href": "https://arxiv.org/abs/2405.06846"
+  },
+  {
+    "id": "dominion-markov-buying",
+    "title": "Optimizing Buying Strategies in Dominion",
+    "href": "https://scholar.rose-hulman.edu/rhumj/vol25/iss1/2/"
+  },
+  {
+    "id": "riffle-repeated-cards-study",
+    "title": "Riffle Shuffles of Decks with Repeated Cards",
+    "href": "https://arxiv.org/abs/math/0503233"
+  },
+  {
+    "id": "star-realms-accessibility",
+    "title": "Star Realms Accessibility Teardown",
+    "href": "https://www.meeplelikeus.co.uk/star-realms-2014-accessibility-teardown/"
+  },
+  {
+    "id": "dominion-accessibility-review",
+    "title": "Dominion Accessibility Review",
+    "href": "https://www.accessiblegames.biz/dominion-review/"
+  },
+  {
+    "id": "reddit-deckbuilder-improvements",
+    "title": "What Are Some Improvements You'd Like to See in Deckbuilders?",
+    "href": "https://www.reddit.com/r/tabletopgamedesign/comments/16e927n"
+  },
+  {
+    "id": "reddit-deckbuilding-problems",
+    "title": "Problems with My Deckbuilding Game",
+    "href": "https://www.reddit.com/r/BoardgameDesign/comments/1juh2h0"
+  },
+  {
+    "id": "reddit-aeons-end-discard-order",
+    "title": "Aeon's End Discard Order Question",
+    "href": "https://www.reddit.com/r/boardgames/comments/dd19y7"
+  },
+  {
+    "id": "reddit-el-dorado-card-removal",
+    "title": "Quest for El Dorado Card Removal Question",
+    "href": "https://www.reddit.com/r/boardgames/comments/1ca70bg"
+  },
+  {
+    "id": "magic-comprehensive-rules-timing",
+    "title": "Magic: The Gathering Comprehensive Rules (2026-08-07)",
+    "href": "https://media.wizards.com/2026/downloads/MagicCompRules%2020260807.pdf"
+  },
+  {
+    "id": "arkham-lcg-ability-timing-rules",
+    "title": "Arkham Horror: The Card Game Rules Reference",
+    "href": "https://images-cdn.fantasyflightgames.com/filer_public/50/be/50bed4be-034c-4ed5-9ce6-8509ce8d3352/ahc60_rules_reference_eng-compressed.pdf"
+  },
+  {
+    "id": "netrunner-comprehensive-ability-rules",
+    "title": "Netrunner Comprehensive Rules v26.03",
+    "href": "https://rules.nullsignal.games/"
+  },
+  {
+    "id": "marvel-champions-timing-update",
+    "title": "Mission Updates: Marvel Champions Rules Reference 1.8",
+    "href": "https://www.fantasyflightgames.com/en/news/2026/7/23/mission-updates/"
+  },
+  {
+    "id": "root-law-effect-precedence",
+    "title": "The Law of Root, October 2025",
+    "href": "https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Base_Law_Oct_2025.pdf"
+  },
+  {
+    "id": "spirit-island-action-tree-rules",
+    "title": "Spirit Island Wiki: Actions",
+    "href": "https://spiritislandwiki.com/index.php?title=Actions"
+  },
+  {
+    "id": "rosewater-keyword-wise",
+    "title": "Keyword to the Wise",
+    "href": "https://magic.wizards.com/en/news/making-magic/keyword-wise-2003-05-19"
+  },
+  {
+    "id": "rosewater-keyword-play",
+    "title": "Keyword Play",
+    "href": "https://magic.wizards.com/en/news/making-magic/keyword-play-2007-06-18"
+  },
+  {
+    "id": "rosewater-reminder-text",
+    "title": "Common Knowledge",
+    "href": "https://magic.wizards.com/en/news/making-magic/common-knowledge-2011-04-18"
+  },
+  {
+    "id": "daniel-solis-card-hierarchy",
+    "title": "Three Principles of Card Design: Visibility, Hierarchy, Brevity",
+    "href": "https://danielsolisblog.blogspot.com/2024/02/three-principles-of-card-design.html"
+  },
+  {
+    "id": "daniel-games-card-icons",
+    "title": "Icons",
+    "href": "https://daniel.games/icons/"
+  },
+  {
+    "id": "challengers-timing-keyphrases-diary",
+    "title": "Designer Diary: Challengers!",
+    "href": "https://boardgamegeek.com/blog/1/blogpost/152306/designer-diary-challengers"
+  },
+  {
+    "id": "paleo-wording-clarifications",
+    "title": "FAQ / Clarifications | Designer Diary: Paleo",
+    "href": "https://boardgamegeek.com/blog/10659/blogpost/126860/faq-clarifications"
+  },
+  {
+    "id": "jason-begy-rules-style-guide",
+    "title": "Jason's 18xx Rules Template and Style Guide",
+    "href": "https://www.jasonbegy.com/18xx-games.html"
+  },
+  {
+    "id": "cardscript-unified-language-paper",
+    "title": "Towards a Unified Language for Card Game Design",
+    "href": "https://ir.cwi.nl/pub/32967/32967.pdf"
+  },
+  {
+    "id": "card-game-description-language",
+    "title": "A Card Game Description Language",
+    "href": "https://citeseerx.ist.psu.edu/document?doi=f6ce44ef8bc394abf2730131e6c9c7f9a9876852&repid=rep1&type=pdf"
+  },
+  {
+    "id": "rulebook-logical-extraction-study",
+    "title": "Learning Board Game Rules from an Instruction Manual",
+    "href": "https://digital.lib.washington.edu/researchworks/items/80e44865-480d-420e-a196-f58acb93bbfe"
+  },
+  {
+    "id": "ludii-manual-generation",
+    "title": "Automatic Generation of Board Game Manuals",
+    "href": "https://arxiv.org/abs/2109.09507"
+  },
+  {
+    "id": "mtg-turing-complete",
+    "title": "Magic: The Gathering is Turing Complete",
+    "href": "https://arxiv.org/abs/1904.09828"
+  },
+  {
+    "id": "sarah-reed-visual-card-accessibility",
+    "title": "Interview with Sarah Reed: Visually Accessible Games",
+    "href": "https://weirdgiraffegames.com/carla/2020/02/14/interview-with-sarah-reed-visually-accessible-games/"
+  },
+  {
+    "id": "arnak-accessibility-teardown",
+    "title": "Lost Ruins of Arnak Accessibility Teardown",
+    "href": "https://www.meeplelikeus.co.uk/lost-ruins-of-arnak-2020-accessibility-teardown/"
+  },
+  {
+    "id": "colorblind-card-typography-interview",
+    "title": "Readability and Typography with Matt Paquette",
+    "href": "https://colorblindgames.com/2026/03/22/readability-and-typography-with-matt-paquette/"
+  },
+  {
+    "id": "reddit-marvel-response-repeat",
+    "title": "Can the Same Response Trigger Repeatedly?",
+    "href": "https://www.reddit.com/r/marvelchampionslcg/comments/1en9ymx"
+  },
+  {
+    "id": "reddit-spirit-island-infinite-loop",
+    "title": "Infinite Loop in Spirit Island?",
+    "href": "https://www.reddit.com/r/spiritisland/comments/qyqh3d"
+  },
+  {
+    "id": "reddit-reactive-power-icons",
+    "title": "Text-based Powers and Reactive Icons",
+    "href": "https://www.reddit.com/r/BoardgameDesign/comments/1r7dhj7"
+  },
+  {
+    "id": "magic-new-world-order",
+    "title": "New World Order",
+    "href": "https://magic.wizards.com/en/news/making-magic/new-world-order-2011-12-05"
+  },
+  {
+    "id": "magic-play-booster-skeleton",
+    "title": "Nuts & Bolts #16: Play Boosters",
+    "href": "https://magic.wizards.com/en/news/making-magic/nuts-and-bolts-16-play-boosters"
+  },
+  {
+    "id": "magic-banned-restricted-2026-08",
+    "title": "Banned and Restricted Announcement — August 10, 2026",
+    "href": "https://magic.wizards.com/en/news/announcements/banned-and-restricted-august-10-2026"
+  },
+  {
+    "id": "magic-pauper-trial-unban-2026",
+    "title": "Pauper Format Check-In — May 18, 2026",
+    "href": "https://magic.wizards.com/en/news/announcements/pauper-format-check-in-may-18-2026"
+  },
+  {
+    "id": "arkham-faq-v25",
+    "title": "Arkham Horror: The Card Game FAQ v2.5 — The Legacy Edition",
+    "href": "https://images-cdn.fantasyflightgames.com/filer_public/c1/d0/c1d0fab6-7fa6-4ce2-af6a-16416381a19b/ahc_faq_v25_february_2026-web.pdf"
+  },
+  {
+    "id": "arkham-guided-unseen-faq-cadence",
+    "title": "Guided by the Unseen",
+    "href": "https://www.fantasyflightgames.com/en/news/2021/6/28/guided-by-the-unseen/"
+  },
+  {
+    "id": "marvel-champions-game-environments",
+    "title": "Championing New Rules",
+    "href": "https://www.fantasyflightgames.com/en/news/2025/12/17/championing-new-rules/"
+  },
+  {
+    "id": "netrunner-current-rules-hub",
+    "title": "Netrunner Comprehensive Rules Hub",
+    "href": "https://nullsignal.games/rules/comp-rules/"
+  },
+  {
+    "id": "netrunner-elevation-rotation",
+    "title": "Everything You Need to Know About Elevation",
+    "href": "https://nullsignal.games/blog/everything-you-need-to-know-about-elevation/"
+  },
+  {
+    "id": "netrunner-banlist-cadence",
+    "title": "A New Approach to Standard Ban Lists",
+    "href": "https://nullsignal.games/blog/a-new-approach-to-standard-ban-lists/"
+  },
+  {
+    "id": "netrunner-measured-response-development",
+    "title": "Measured Response: A Tale from Elevation Development",
+    "href": "https://nullsignal.games/blog/measured-response-a-tale-from-elevation-development/"
+  },
+  {
+    "id": "netrunner-rotation-availability",
+    "title": "Liberation Part 2, Upcoming Products, and Rotation",
+    "href": "https://nullsignal.games/blog/liberation-part-2-upcoming-products-and-rotation/"
+  },
+  {
+    "id": "spirit-island-errata-pack",
+    "title": "Spirit Island: Errata Pack 1",
+    "href": "https://shop.greaterthangames.com/products/spirit-island-errata-pack-1"
+  },
+  {
+    "id": "root-upgrade-kit",
+    "title": "Root Upgrade Kit",
+    "href": "https://ledergames.com/products/root-upgrade-kit"
+  },
+  {
+    "id": "dominion-second-edition-update-pack",
+    "title": "Dominion 2nd Edition Update Pack",
+    "href": "https://www.riograndegames.com/games/dominion-update-pack/"
+  },
+  {
+    "id": "euphoria-essential-update-pack",
+    "title": "Euphoria Essential Update Pack",
+    "href": "https://store.stonemaiergames.com/products/euphoria-essential-board-pack"
+  },
+  {
+    "id": "wingspan-europe-expansion-compatibility",
+    "title": "Wingspan: European Expansion",
+    "href": "https://store.stonemaiergames.com/products/wingspan-european-expansion"
+  },
+  {
+    "id": "gmt-congress-vienna-living-rules",
+    "title": "Congress of Vienna, 2nd Printing — Living Rules",
+    "href": "https://www.gmtgames.com/p-1167-congress-of-vienna-2nd-printing.aspx"
+  },
+  {
+    "id": "lorcana-resource-hub",
+    "title": "Disney Lorcana TCG Resources",
+    "href": "https://www.disneylorcana.com/en-US/resources"
+  },
+  {
+    "id": "bgg-version-entry-policy",
+    "title": "When to Make a New Entry",
+    "href": "https://boardgamegeek.com/wiki/page/when_to_make_a_new_entry"
+  },
+  {
+    "id": "power-creep-conservative-metric",
+    "title": "A Conservative Metric of Power Creep",
+    "href": "https://doi.org/10.1177/15554120211050812"
+  },
+  {
+    "id": "nist-combinatorial-testing",
+    "title": "Combinatorial Testing",
+    "href": "https://www.nist.gov/publications/combinatorial-testing"
+  },
+  {
+    "id": "software-product-line-testing-review",
+    "title": "Software Product Line Testing: A Systematic Literature Review",
+    "href": "https://link.springer.com/article/10.1007/s10664-024-10516-x"
+  },
+  {
+    "id": "reddit-expansion-burden",
+    "title": "Thoughts on Never-ending Expansions",
+    "href": "https://www.reddit.com/r/boardgames/comments/1uv29g1/debate_what_are_your_thoughts_on_neverending/"
+  },
+  {
+    "id": "reddit-expansion-quality-symptoms",
+    "title": "What Makes an Expansion Truly Great?",
+    "href": "https://www.reddit.com/r/boardgames/comments/1u9161y/what_makes_an_expansion_truly_great/"
+  },
+  {
+    "id": "kathleen-mercury-prototyping",
+    "title": "Prototyping",
+    "href": "https://www.kathleenmercury.com/prototyping.html"
+  },
+  {
+    "id": "games-to-experiment-prototype-questions",
+    "title": "How to Design and Playtest Your Games? (version 2.0)",
+    "href": "https://learninggamedev.wordpress.com/2013/02/22/how-to-design-and-playtest-your-games-version-2-0/"
+  },
+  {
+    "id": "lim-prototype-anatomy",
+    "title": "The Anatomy of Prototypes: Prototypes as Filters, Prototypes as Manifestations of Design Ideas",
+    "href": "https://faculty.washington.edu/jtenenbg/publications/limAnatomyOfPrototypes-tochi2008.pdf"
+  },
+  {
+    "id": "houde-hill-prototype-purpose",
+    "title": "What Do Prototypes Prototype?",
+    "href": "https://creativetech.mat.ucsb.edu/readings/Prototypes_prototype.pdf"
+  },
+  {
+    "id": "board-game-design-lab-prototypes",
+    "title": "Prototypes",
+    "href": "https://boardgamedesignlab.com/prototypes/"
+  },
+  {
+    "id": "khoo-low-fidelity-case",
+    "title": "Play Testing a Game Design the Low Fidelity Way",
+    "href": "https://www.gamedeveloper.com/design/play-testing-a-game-design-the-low-fidelity-way"
+  },
+  {
+    "id": "mit-paper-prototyping",
+    "title": "Paper Prototyping",
+    "href": "https://ocw.mit.edu/courses/cms-611j-creating-video-games-fall-2014/348ee58d265e61e4760d196bd97b1ad1_MITCMS_611JF14_Paper_Prot.pdf"
+  },
+  {
+    "id": "jimmsdesign-prototype-process-2026",
+    "title": "My Board Game Prototype Process Explained in 7 Key Stages",
+    "href": "https://blog.jimmsdesign.co.uk/my-board-game-prototype-process-explained-in-7-key-stages/"
+  },
+  {
+    "id": "grow-a-game-values-tool",
+    "title": "Grow-A-Game: A Tool for Values Conscious Design and Analysis of Digital Games",
+    "href": "https://tiltfactor.org/wp-content/uploads2/Digra2011-GrowAGameTool-BelmanNissenbaumFlanaganDiamond.pdf"
+  },
+  {
+    "id": "black-boxes-cardboard-algorithmic-literacy",
+    "title": "Black Boxes out of Cardboard: Algorithmic Literacy through Critical Board Game Design",
+    "href": "https://analoggamestudies.org/2018/12/black-boxes-out-of-cardboard-algorithmic-literacy-through-critical-board-game-design/"
+  },
+  {
+    "id": "learning-evaluate-analog-education",
+    "title": "Learning to Evaluate Analog Games for Education",
+    "href": "https://analoggamestudies.org/2015/05/evaluating-educational-goals-in-party-games/"
+  },
+  {
+    "id": "design-justice-network-principles",
+    "title": "Design Justice Network Principles",
+    "href": "https://designjustice.org/read-the-principles"
+  },
+  {
+    "id": "practical-social-issue-game-design",
+    "title": "Designing Games to Effect Social Change",
+    "href": "https://dl.digra.org/index.php/dl/article/download/334/334/331"
+  },
+  {
+    "id": "civic-education-playful-game-design",
+    "title": "From Consumers to Creators: Bridging Game Play and Playful Game Design for Impactful Civic Education",
+    "href": "https://analoggamestudies.org/2024/06/from-consumers-to-creators-bridging-game-play-and-playful-game-design-for-impactful-civic-education/"
+  },
+  {
+    "id": "daniel-games-core",
+    "title": "The Core",
+    "href": "https://daniel.games/the-core/"
+  },
+  {
+    "id": "joe-slack-getting-to-core",
+    "title": "Getting to the Core of Your Game",
+    "href": "https://boardgamedesigncourse.com/getting-to-the-core-of-your-game/"
+  },
+  {
+    "id": "loops-and-metagames",
+    "title": "Loops and Metagames: Understanding Game Design Structures",
+    "href": "https://www.fdg2015.org/papers/fdg2015_paper_22.pdf"
+  },
+  {
+    "id": "zimmerman-core-mechanic",
+    "title": "The Core Mechanic",
+    "href": "https://www.gamedesignworkshop.com/the-core-mechanic"
+  },
+  {
+    "id": "kathleen-mercury-winq",
+    "title": "Providing Feedback on Prototypes: The WINQ",
+    "href": "https://www.kathleenmercury.com/providing-feedback-on-prototypes-the-winq.html"
+  },
+  {
+    "id": "games-user-research-running-study",
+    "title": "Running a Games User Research Study",
+    "href": "https://gamesuserresearch.com/running-a-games-user-research-study/"
+  },
+  {
+    "id": "denisova-democratising-games-user-research",
+    "title": "Towards Democratisation of Games User Research: Exploring Playtesting Challenges of Indie Video Game Developers",
+    "href": "https://eprints.whiterose.ac.uk/id/eprint/216480/"
+  },
+  {
+    "id": "kulik-moderating-playtest",
+    "title": "Asking the Right Questions — Moderating a Great Usability Playtest",
+    "href": "https://www.gamedeveloper.com/business/asking-the-right-questions---moderating-a-great-usability-playtest"
+  },
+  {
+    "id": "stanford-dschool-testing-guide",
+    "title": "How to Test with Users",
+    "href": "https://dschool.stanford.edu/s/dschool_testing.pdf"
+  },
+  {
+    "id": "diegetic-playtest-tracking-template",
+    "title": "Playtest Tracking Template with Airtable",
+    "href": "https://diegeticgames.com/blog/2017/08/13/Playtest-Tracking-Template-2017.html"
+  },
+  {
+    "id": "mc-allister-observation-template",
+    "title": "The Observation Template",
+    "href": "https://grahammcallister.com/playtesting-book/observation-template"
+  },
+  {
+    "id": "tricorn-playtesting-with-purpose",
+    "title": "Playtesting with Purpose",
+    "href": "https://www.tricorngames.com/designer-blog/2017/8/26/playtesting-with-purpose"
+  },
+  {
+    "id": "pam-walls-playtesting-notes",
+    "title": "How to Take Better Playtesting Notes",
+    "href": "https://pamwallsgamedesign.substack.com/p/how-to-take-better-playtesting-notes"
+  },
+  {
+    "id": "govuk-research-notes-recording",
+    "title": "Taking Notes and Recording User Research Sessions",
+    "href": "https://www.gov.uk/service-manual/user-research/taking-notes-and-recording-user-research-sessions"
+  },
+  {
+    "id": "govuk-informed-consent-research",
+    "title": "Getting Informed Consent for User Research",
+    "href": "https://www.gov.uk/service-manual/user-research/getting-users-consent-for-research"
+  },
+  {
+    "id": "games-user-research-debriefing",
+    "title": "Debriefing a Study",
+    "href": "https://gamesuserresearch.com/debriefing-a-study/"
+  },
+  {
+    "id": "games-user-research-analysis",
+    "title": "Analysing a Games User Research Study",
+    "href": "https://gamesuserresearch.com/analysing-a-games-user-research-study/"
+  },
+  {
+    "id": "woodard-effective-playtest",
+    "title": "Running an Effective Play Test",
+    "href": "https://woodar.dj/blog/running-an-effective-play-test/"
+  },
+  {
+    "id": "govuk-analyse-research-session",
+    "title": "Analyse a Research Session",
+    "href": "https://www.gov.uk/service-manual/user-research/analyse-a-research-session"
+  },
+  {
+    "id": "govuk-rainbow-spreadsheet",
+    "title": "How a Spreadsheet Can Make Usability Analysis Faster and Easier",
+    "href": "https://userresearch.blog.gov.uk/2019/09/13/how-a-spreadsheet-can-make-usability-analysis-faster-and-easier/"
+  },
+  {
+    "id": "ixdf-affinity-diagram",
+    "title": "Affinity Diagrams",
+    "href": "https://ixdf.org/literature/topics/affinity-diagrams"
+  },
+  {
+    "id": "boardssey-review-results",
+    "title": "Review Playtest Results",
+    "href": "https://learn.boardssey.com/en/articles/15044774-review-playtest-results"
+  },
+  {
+    "id": "measuringu-severity-ratings",
+    "title": "Rating the Severity of Usability Problems",
+    "href": "https://measuringu.com/severity-ratings/"
+  },
+  {
+    "id": "gale-framework-method",
+    "title": "Using the Framework Method for the Analysis of Qualitative Data in Multi-disciplinary Health Research",
+    "href": "https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/1471-2288-13-117"
+  },
+  {
+    "id": "saltzman-longitudinal-matrix",
+    "title": "Utilizing a Matrix Approach to Analyze Qualitative Longitudinal Research: A Case Example During the COVID-19 Pandemic",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9442150/"
+  },
+  {
+    "id": "calman-longitudinal-trajectory-analysis",
+    "title": "Analyzing Longitudinal Qualitative Data: The Application of Trajectory and Recurrent Cross-sectional Approaches",
+    "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4776420/"
+  },
+  {
+    "id": "lane-negative-case-analysis",
+    "title": "If Adorno Met Intersectionality Theory: Reconceiving the Method of Negative Case Analysis",
+    "href": "https://journals.sagepub.com/doi/10.1177/16094069211045473"
+  },
+  {
+    "id": "gitlab-uxr-insights-repository",
+    "title": "Why We Built a UX Research Insights Repository",
+    "href": "https://about.gitlab.com/blog/building-a-ux-research-insights-repository/"
+  },
+  {
+    "id": "mind-mgmt-designer-diary",
+    "title": "MIND MGMT Designer Diary",
+    "href": "https://boardgamegeek.com/thread/2384661/wip-mind-mgmt-designer-diary"
+  },
+  {
+    "id": "daybreak-designer-diary-forecast",
+    "title": "Designer Diary: Daybreak",
+    "href": "https://boardgamegeek.com/blog/1/blogpost/163737/designer-diary-daybreak"
+  },
+  {
+    "id": "hegemony-designer-diary-playtime",
+    "title": "Designer Diary: Hegemony: Lead Your Class to Victory",
+    "href": "https://boardgamegeek.com/blog/1/blogpost/145459/designer-diary-hegemony-lead-your-class-to-victory"
+  },
+  {
+    "id": "w3c-prov-o",
+    "title": "PROV-O: The PROV Ontology",
+    "href": "https://www.w3.org/TR/prov-o/"
+  },
+  {
+    "id": "white-qualitative-audit-trail",
+    "title": "Management of a Large Qualitative Data Set: Establishing Trustworthiness of the Data",
+    "href": "https://journals.sagepub.com/doi/10.1177/160940691201100305"
+  },
+  {
+    "id": "magic-playtesting-stages-2026",
+    "title": "Playtesting",
+    "href": "https://magic.wizards.com/en/news/making-magic/playtesting"
+  },
+  {
+    "id": "timo-bron-iteration-log",
+    "title": "Plateau of Leng: Iteration Log",
+    "href": "https://timobron.com/document/document-plateau-of-leng-iteration-log/"
+  },
+  {
+    "id": "weirdwood-manor-designer-diary",
+    "title": "Designer Diary: The Story of Weirdwood Manor",
+    "href": "https://boardgamegeek.com/blog/1/blogpost/159260/designer-diary-the-story-of-weirdwood-manor"
+  },
+  {
+    "id": "roy-warren-card-design-tools-review",
+    "title": "Card-based Design Tools: A Review and Analysis of 155 Card Decks for Designers and Designing",
+    "href": "https://oro.open.ac.uk/61472/"
+  },
+  {
+    "id": "benton-examples-children-game-narrative",
+    "title": "Leading by Example: Exploring the Influence of Design Examples on Children’s Creative Ideation",
+    "href": "https://discovery.ucl.ac.uk/id/eprint/10056359/"
+  },
+  {
+    "id": "chan-example-interface-fixation",
+    "title": "Formulating or Fixating: Effects of Examples on Problem Solving Vary as a Function of Example Presentation Interface Design",
+    "href": "https://arxiv.org/abs/2401.11022"
+  },
+  {
+    "id": "wang-fixation-defixation-review",
+    "title": "How to Effectively Overcome Fixation: A Systematic Review of Fixation and Defixation Studies on the Basis of Fixation Source and Problem Type",
+    "href": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2023.1183025/full"
+  },
+  {
+    "id": "vercher-strategy-game-redesign-steam",
+    "title": "How Can Strategy Games Teach Design Thinking in Primary Education? A Design-based Study of Maker-oriented STEAM Learning Through Game Redesign",
+    "href": "https://link.springer.com/article/10.1007/s11528-026-01183-4"
+  }
+]

@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "deck-building-draw-cycle",
+    "title": "设计牌库构筑、抽牌概率与循环控制",
+    "question": "新买的牌总到终局才出现、牌越买越卡、组合抽不到一起、市场和手牌都很随机，或频繁洗牌让玩家停下来；我该改牌价、抽牌量、压缩、置顶还是终局？",
+    "outcome": "先按功能和区域盘点牌库，再追踪获得到首次使用与终局的时间线；写清洗牌边界和概率假设，分开市场与个人抽牌，并用一次真实循环任务只改一个字段。",
+    "resourceIds": [
+      "dominion-deck-cycle-rules",
+      "star-realms-deck-cycle-rules",
+      "aeons-end-no-shuffle-rules",
+      "vaccarino-dominion-decisions",
+      "nealen-ascension-deckbuilding-analysis",
+      "psu-hypergeometric",
+      "dominion-deep-rl-study",
+      "star-realms-accessibility"
+    ],
+    "evidenceBoundary": "组合正式规则、设计师实践、数学与计算研究、无障碍评测和玩家症状；它们支持描述牌库功能/区域、获得延迟、洗牌边界、抽样假设、压缩/膨胀、组合共抽、双重随机性与重复操作成本，不提供最佳牌库规模、手牌量、命中率、市场宽度、压缩速度、价格、组合概率或终局长度。"
+  },
+  "resources": [
+    {
+      "id": "dominion-deck-cycle-rules",
+      "title": "Dominion Game Rules",
+      "creator": "Donald X. Vaccarino / Rio Grande Games",
+      "href": "https://www.riograndegames.com/wp-content/uploads/2020/03/Dominion-gameRules.pdf",
+      "type": "起始牌组、五牌手牌、获得、弃牌、洗牌边界、移除与供应耗尽正式规则",
+      "evidenceType": "official_or_rules_reference",
+      "format": "rulebook",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "规则与信息",
+        "测试与反馈"
+      ],
+      "useful": "把个人牌库构筑写成可追踪的区域和时序：获得牌先入弃牌堆，只在需要抽取或展示且牌库不足时洗牌，移除牌离开循环。",
+      "limitation": "单一成熟游戏的规则说明不是通用最佳牌组规模、手牌量或购买曲线。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "star-realms-deck-cycle-rules",
+      "title": "Star Realms Rules of Play",
+      "creator": "Wise Wizard Games",
+      "href": "https://files.wisewizardgames.com/starrealms/SRROE_Rulebook_2023-01-30.pdf",
+      "type": "个人循环牌库、共享交易列、基地持续区、获得与移除的正式规则",
+      "evidenceType": "official_or_rules_reference",
+      "format": "rulebook",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "规则与信息",
+        "测试与反馈"
+      ],
+      "useful": "对照个人抽牌随机性、共享市场随机性和持续留场卡，检查同一张牌何时进入循环、何时暂离循环。",
+      "limitation": "双人对战中的攻击、派系和交易列相互作用不能单独归因于某个循环规则。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "aeons-end-no-shuffle-rules",
+      "title": "Aeon's End Rules",
+      "creator": "Indie Boards & Cards / Aeon's End Wiki",
+      "href": "https://aeonsend.wiki.gg/wiki/Rules",
+      "type": "弃牌顺序可控且个人牌库不洗牌的循环规则参考",
+      "evidenceType": "official_or_rules_reference",
+      "format": "rules_reference",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "规则与信息"
+      ],
+      "useful": "提供不洗牌的相反案例：弃牌堆翻转成新牌库，使弃牌顺序成为可计划的未来状态。",
+      "limitation": "本轮页面访问受限，仅按规则摘要核对；版本和扩展差异仍需回到正式规则书。",
+      "status": "article_level",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "vaccarino-dominion-decisions",
+      "title": "Meaningful Decisions: Donald X. Vaccarino on Dominion",
+      "creator": "Cardboard Edison / Donald X. Vaccarino",
+      "href": "https://cardboardedison.com/blog/meaningful-decisions-donald-x-vaccarino-dominion",
+      "type": "Dominion 起始牌组、五牌抽取、十分牌市场与胜利牌负担的设计师访谈",
+      "evidenceType": "first_party_practice",
+      "format": "interview",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "解释为什么所有已购牌都保留、每轮抽五张、市场同时可见，以及得分牌进入牌库后怎样形成机会成本。",
+      "limitation": "创作者回顾是设计意图和案例证据，不是受控机制比较或唯一可行方案。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "nealen-ascension-deckbuilding-analysis",
+      "title": "Analyzing the Design Space of Deckbuilding Games",
+      "creator": "Andrew Nealen et al.",
+      "href": "https://www.nealen.net/ascension.pdf",
+      "type": "购买成本摊销、循环、动态中心列、组合共抽与终局时钟分析",
+      "evidenceType": "academic_adjacent",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "提供一组可迁移的分析参数：一张牌需要循环几次才能回本、组合牌能否共抽、市场随机性和终局时钟怎样影响购买。",
+      "limitation": "以机制分析和案例为主，不提供玩家实验来证明某参数组合更好玩。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "psu-hypergeometric",
+      "title": "Lesson 7: Hypergeometric Distribution",
+      "creator": "Penn State Department of Statistics",
+      "href": "https://online.stat.psu.edu/stat414/Lesson07",
+      "type": "有限总体不放回抽样与超几何分布课程",
+      "evidenceType": "academic_adjacent",
+      "format": "course",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "用于计算随机洗匀牌库中，固定手牌抽到至少一张或若干目标牌的基线概率。",
+      "limitation": "公式要求有限总体、随机抽样和不放回等假设；已知顺序、搜索、保留和中途洗回会改变模型。",
+      "status": "article_level",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "dominion-deep-rl-study",
+      "title": "Playing Dominion Using Deep Reinforcement Learning",
+      "creator": "AAAI AIIDE authors",
+      "href": "https://ojs.aaai.org/index.php/AIIDE/article/download/27518/27291/31569",
+      "type": "Dominion 购买策略、动作密度、晚购牌无机会抽到与引擎序列的深度强化学习研究",
+      "evidenceType": "academic_adjacent",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "提供机器代理失败症状：过买行动牌、太晚购买导致未抽到、长引擎序列难学；可转成设计师的终局回抽检查。",
+      "limitation": "简化双人基础牌池、奖励塑形和代理训练结果不能等同人类乐趣、平衡或最优策略。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "star-realms-accessibility",
+      "title": "Star Realms Accessibility Teardown",
+      "creator": "Michael Heron / Meeple Like Us",
+      "href": "https://www.meeplelikeus.co.uk/star-realms-2014-accessibility-teardown/",
+      "type": "频繁洗牌、牌面阅读、市场行距离、颜色与状态记忆无障碍长评",
+      "evidenceType": "expert_review",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "规则与信息",
+        "测试与反馈",
+        "呈现与发布"
+      ],
+      "useful": "把循环设计转为真实桌面任务：抓握并洗牌、从不同座位读市场、区分派系与记住持续基地。",
+      "limitation": "单一评者、版本和替代方案不代表所有残障玩家，仍需共同测试。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "dominion-deck-cycle-rules",
+      "useModes": [
+        "learn",
+        "lookup",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "追踪起始牌组、获得、抽取、弃牌、洗牌、移除和供应耗尽的完整时序。",
+      "doNotUseFor": "不能从一个规则案例推出通用最佳牌组规模或购买曲线。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "star-realms-deck-cycle-rules",
+      "useModes": [
+        "learn",
+        "compare",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "分开个人牌库、共享市场、持续区和移除区的随机性与卡牌去向。",
+      "doNotUseFor": "不能单独归因双人攻击、派系、市场和循环的体验效果。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "aeons-end-no-shuffle-rules",
+      "useModes": [
+        "compare",
+        "lookup",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "partial",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "比较随机洗牌与保留弃牌顺序的牌库循环。",
+      "doNotUseFor": "访问受限且版本可能变化，应回正式规则书核对细节。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "vaccarino-dominion-decisions",
+      "useModes": [
+        "learn",
+        "compare",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "理解起始牌组、每轮抽五、全市场可见和得分牌负担背后的设计意图。",
+      "doNotUseFor": "设计师回顾不是受控比较或通用最优答案。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "nealen-ascension-deckbuilding-analysis",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "broad",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "分析回本循环、组合共抽、动态市场、卡牌密度和终局时钟。",
+      "doNotUseFor": "机制分析没有证明某组参数对玩家更好玩。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "psu-hypergeometric",
+      "useModes": [
+        "learn",
+        "lookup"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "broad",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "计算随机洗匀、无放回抽牌中命中目标牌数量的概率基线。",
+      "doNotUseFor": "已知顺序、搜索、保留、替换抽牌和中途洗回必须改模型。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "dominion-deep-rl-study",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "生成行动牌过密、晚购牌来不及抽到和长引擎序列难执行的测试症状。",
+      "doNotUseFor": "机器代理、简化牌池与奖励塑形不能等同人类体验或平衡。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "star-realms-accessibility",
+      "useModes": [
+        "diagnose",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "reusable_license_verified",
+      "commercialContext": "none_disclosed",
+      "bestFor": "从真实座位检查洗牌、持牌、市场行读取、派系辨认和持续状态记忆。",
+      "doNotUseFor": "单一长评不能替代与目标玩家共同测试。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    }
+  ]
+}

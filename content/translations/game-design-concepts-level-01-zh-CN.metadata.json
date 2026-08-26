@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 2,
+  "translationId": "game-design-concepts-level-01-zh-CN",
+  "resourceId": "game-design-concepts",
+  "original": {
+    "title": "Level 1: Overview / What is a Game?",
+    "author": "Ian Schreiber",
+    "url": "https://gamedesignconcepts.wordpress.com/2009/06/29/level-1-overview-what-is-a-game/",
+    "publishedAt": "2009-06-29",
+    "retrievedAt": "2026-08-21",
+    "wordCountApprox": 4025
+  },
+  "license": {
+    "id": "CC-BY-3.0-US",
+    "url": "https://creativecommons.org/licenses/by/3.0/us/",
+    "evidenceUrl": "https://gamedesignconcepts.wordpress.com/about/",
+    "permitsTranslation": true,
+    "attributionRequired": true
+  },
+  "translation": {
+    "language": "zh-CN",
+    "version": "1.0.0-internal",
+    "translator": "Codex AI",
+    "translationAuthority": "codex_ai_complete",
+    "humanTranslatorClaimed": false,
+    "scope": "完整翻译文章正文；不含评论、WordPress 侧栏与页脚。课程行政信息和 Homeplay 保留；第三方定义改为带归属的概述。",
+    "sourceStructurePreserved": true,
+    "exercisesPreserved": true,
+    "linkSemanticsPreserved": true,
+    "hanCharacterCount": 5703,
+    "humanReviewStatus": "not_required",
+    "internalLearningStatus": "authoritative"
+  },
+  "publication": {
+    "visibility": "internal-ready",
+    "publicUseBasis": "CC BY 3.0 US",
+    "internalOnly": true,
+    "publicReleaseEnabled": false,
+    "requiresHumanReviewBeforeInternalUse": false,
+    "requiresHumanReviewBeforeRelease": false,
+    "requiresExplicitPublicReleaseDecision": true,
+    "legalReviewStatus": "not_reviewed",
+    "legalApprovalClaimed": false
+  },
+  "file": "content/translations/game-design-concepts-level-01-zh-CN.md"
+}

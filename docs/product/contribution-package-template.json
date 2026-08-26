@@ -1,0 +1,117 @@
+{
+  "schemaVersion": 1,
+  "method": "tabletop-resource-contribution-package",
+  "localFirst": true,
+  "publicSubmissionEnabled": false,
+  "package": {
+    "id": "",
+    "createdAt": "",
+    "status": "draft",
+    "contributionType": "player_experience",
+    "title": "",
+    "purpose": "",
+    "scope": {
+      "gameOrProject": "",
+      "versionOrEdition": "",
+      "taskOrMoment": "",
+      "placeOrRegion": "",
+      "timeContext": "",
+      "assistanceOrAccessContext": "",
+      "whatThisDoesNotRepresent": ""
+    }
+  },
+  "contributor": {
+    "identityMode": "anonymous",
+    "preferredPublicAttribution": "",
+    "preferredCommunicationFormat": "",
+    "roles": ["lived_experience"],
+    "contactMappingHeldSeparately": false,
+    "compensationOrExpensePlanExplained": false,
+    "compensationOrExpensePlan": ""
+  },
+  "consent": {
+    "informationVersion": "",
+    "informationFormatChosenByContributor": "",
+    "participationChoice": "not_decided",
+    "storageChoice": "not_decided",
+    "publicationMode": "review_only",
+    "quoteChoice": "no_quotes",
+    "mediaChoice": "none",
+    "withdrawalExplained": false,
+    "ccIrrevocabilityExplained": false,
+    "canSkip": true,
+    "canStop": true,
+    "recordedAt": "",
+    "continuedConsentChecks": []
+  },
+  "rights": {
+    "contributorConfirmsAuthority": false,
+    "explicitLicenseApproval": false,
+    "requestedAttributionText": "",
+    "editorialChangesAllowed": "not_decided",
+    "thirdPartyMaterials": []
+  },
+  "privacy": {
+    "containsPersonalData": false,
+    "containsHealthOrDisabilityDetails": false,
+    "rawAudioVideoOrPhotosIncluded": false,
+    "minorOrAdditionalSafeguardingNeeds": false,
+    "dataMinimizationReason": "",
+    "retentionEnd": "",
+    "publicFieldsReviewed": false,
+    "directIdentifiersRemoved": false,
+    "contactDetailsExcludedFromPackage": true,
+    "rawConsentEvidenceExcludedFromPackage": true
+  },
+  "safeguarding": {
+    "professionalReviewRecorded": false,
+    "guardianConsentRecordedWhenApplicable": false,
+    "participantAssentRecorded": false,
+    "stopAndEscalationPlan": ""
+  },
+  "content": {
+    "contributorAccount": "",
+    "editorialSummary": "",
+    "approvedQuotes": [],
+    "mediaItems": [],
+    "contextAndCounterexamples": "",
+    "editorialInference": ""
+  },
+  "review": {
+    "editorialStatus": "not_reviewed",
+    "evidenceClassification": "unclassified",
+    "finalPublicCopy": "",
+    "finalPublicCopyPresent": false,
+    "contributorApprovalRecorded": false,
+    "approvedAt": "",
+    "scopeAndLimitsPresent": false,
+    "rolesAndAttributionReviewed": false,
+    "rightsReviewed": false,
+    "decisionLog": []
+  },
+  "publication": {
+    "published": false,
+    "publishedAt": "",
+    "publicUrl": "",
+    "publicFields": [],
+    "omittedFields": [],
+    "changesFromApprovedCopy": ""
+  },
+  "withdrawal": {
+    "lookupKeyPresent": false,
+    "requested": false,
+    "requestedAt": "",
+    "requestedScope": "",
+    "siteRemovalCompleted": false,
+    "workingCopiesDeleted": false,
+    "publicCopyLimitsExplained": false,
+    "completedAt": "",
+    "nonIdentifyingCompletionNote": ""
+  },
+  "boundaries": {
+    "noAutomaticPublication": true,
+    "noGroupGeneralization": true,
+    "noAggregateScore": true,
+    "notLegalOrEthicsApproval": true
+  }
+}

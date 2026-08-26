@@ -1,0 +1,380 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "production-and-publishing",
+    "title": "准备生产、投稿或发布",
+    "question": "设计接近稳定，但我不清楚规格、合同、平台、预算与履约分别由谁负责。",
+    "outcome": "先冻结版本、交付对象和责任范围，再核对当前官方要求、样品门、预算边界与退出条件。",
+    "resourceIds": [
+      "panda-manufacturing-tools",
+      "ttgda-contract-basics",
+      "bgdl-get-published",
+      "tgc-publishing-help",
+      "kickstarter-project-budget",
+      "sspai-self-printing-practice",
+      "hkfyg-time2play-interview",
+      "thepaper-chinese-designer-roles"
+    ],
+    "evidenceBoundary": "制造商、平台与出版教学资料具有商业或高时效语境；必须按行动日期重查，不能据此取得报价、合同、销量或交付保证。"
+  },
+  "resources": [
+    {
+      "id": "panda-manufacturing-tools",
+      "title": "Tools & Resources",
+      "creator": "Panda Game Manufacturing",
+      "href": "https://pandagm.com/tools/",
+      "type": "生产规格工具",
+      "evidenceType": "official_vendor_documentation",
+      "format": "directory",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "最小原型",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "集中提供印刷设计指南、组件指南、组件规格表与常见/自定义模板，显示纸品文件和非纸组件需要不同规格交付。",
+      "limitation": "特定生产商的当前工具和要求，不是全球统一标准；实际项目应使用供应商最新模板。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-17"
+    },
+    {
+      "id": "ttgda-contract-basics",
+      "title": "Contract Basics for Game Designers",
+      "creator": "Tabletop Game Designers Association",
+      "href": "https://www.ttgda.org/contract-basics",
+      "type": "行业协会合同教育",
+      "evidenceType": "industry_guidance",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "呈现与发布"
+      ],
+      "useful": "把出版合同视为分配双方责任、所得、期限和退出方式的关系规则，并给出付款与权利回归问题入口。",
+      "limitation": "教育材料不是法律意见；具体条款、司法辖区、谈判结果和行业条件必须由专业人士与当事方核对。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-17"
+    },
+    {
+      "id": "bgdl-get-published",
+      "title": "How to Get Your Game Published",
+      "creator": "Gabe Barrett / Board Game Design Lab",
+      "href": "https://boardgamedesignlab.com/how-to-get-your-game-published/",
+      "type": "桌游出版教学策展",
+      "evidenceType": "teaching_curation",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "把目录匹配、短提案、sell sheet、样品、合同和自出版责任串成新手可读入口。",
+      "limitation": "示例流程与成功判断是作者综合，不代表每家出版方要求、等待周期、成功概率或合同条件。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-17"
+    },
+    {
+      "id": "tgc-publishing-help",
+      "title": "Publishing Help",
+      "creator": "The Game Crafter",
+      "href": "https://help.thegamecrafter.com/article/109-publishing-help",
+      "type": "POD 平台发布指南",
+      "evidenceType": "official_platform_documentation",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "要求设计者发布前订购并检查实体成品，并说明页面、价格、营销与平台字段的当前流程。",
+      "limitation": "只代表该平台；不能证明需求、利润、玩家体验、儿童产品适用性或其他地区合规。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-17"
+    },
+    {
+      "id": "kickstarter-project-budget",
+      "title": "Using Project Budget to Calculate Your Funding Goal",
+      "creator": "Kickstarter Support",
+      "href": "https://help.kickstarter.com/hc/en-us/articles/360035551894-Using-Project-Budget-to-calculate-your-project-s-funding-goal",
+      "type": "众筹预算工具说明",
+      "evidenceType": "official_platform_documentation",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "呈现与发布"
+      ],
+      "useful": "把研发、原型、生产、包装、运输、劳动、税费与误差拆开，防止只用工厂单价设目标。",
+      "limitation": "功能只适用于部分分类；模板与缓冲建议不是项目财务、税务或融资意见。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-17"
+    },
+    {
+      "id": "sspai-self-printing-practice",
+      "title": "从等人发牌到自己印牌：我的桌游设计新实践",
+      "creator": "乔淼",
+      "href": "https://sspai.com/post/96648",
+      "type": "中文设计师利益相关日志",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "zh-CN"
+      ],
+      "stages": [
+        "测试与反馈",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "记录跨国投稿合作停滞、规格转译、分段美术验收和设计者重新接手部分产品职责的过程。",
+      "limitation": "作者披露直接利益关系；是少数进行中项目，不能证明自出版普遍快于或优于授权。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-17"
+    },
+    {
+      "id": "hkfyg-time2play-interview",
+      "title": "自己桌遊自己整",
+      "creator": "青年空間 / TIME2PLAY",
+      "href": "https://cps.hkfyg.org.hk/2023/12/21/ysm-081-feature2/",
+      "type": "香港设计师与编辑访谈",
+      "evidenceType": "first_party_practice",
+      "format": "interview",
+      "access": "free",
+      "language": [
+        "zh"
+      ],
+      "stages": [
+        "体验意图",
+        "测试与反馈",
+        "呈现与发布"
+      ],
+      "useful": "从香港派对游戏案例比较设计师投稿、出版社编辑、受众取材与商业定位的不同责任。",
+      "limitation": "大众杂志访谈只呈现一家公司与一个成功投稿者；市场偏好与盈利判断不是香港玩家调查。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "thepaper-chinese-designer-roles",
+      "title": "45 亿市场背后的桌游设计师如何啃下这块蛋糕？",
+      "creator": "壹娱观察 / 澎湃号",
+      "href": "https://www.thepaper.cn/newsDetail_forward_14604755",
+      "type": "中国桌游行业访谈报道",
+      "evidenceType": "community",
+      "format": "interview",
+      "access": "free",
+      "language": [
+        "zh-CN"
+      ],
+      "stages": [
+        "最小原型",
+        "测试与反馈",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "并列三位从业者的设计、公司内培养、独立投稿、自出版与协作角色，适合作为 2021 年行业语境案例。",
+      "limitation": "标题市场数字、版税、运费与渠道信息陈旧且未在本文独立核验；报道由受访者经验构成，不代表当前行业统计。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "panda-manufacturing-tools",
+      "useModes": [
+        "lookup",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "directory",
+      "transferability": "conditional",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "准备向该生产商询价或理解印刷文件、非纸组件规格与模板为何要分开维护。",
+      "doNotUseFor": "不要复制成通用工业标准，或从模板齐全推断供应商质量与项目适配度。",
+      "reviewedAt": "2026-08-17",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "ttgda-contract-basics",
+      "useModes": [
+        "learn",
+        "lookup",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "建立出版合同问题清单，分开责任、报酬、期限、付款和权利回归，再决定需要什么专业审阅。",
+      "doNotUseFor": "不要把协会示例当法律意见、通用合同模板、版税基准或对特定条款的公平评分。",
+      "reviewedAt": "2026-08-17",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "bgdl-get-published",
+      "useModes": [
+        "learn",
+        "lookup",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "理解目录匹配、短提案、sell sheet、样品和合同的大致关系，并找到进一步资源。",
+      "doNotUseFor": "不要把作者示意的线性流程当每家出版方的必经顺序、等待时长或成功概率。",
+      "reviewedAt": "2026-08-17",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "tgc-publishing-help",
+      "useModes": [
+        "lookup",
+        "learn"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "narrow",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "按平台当前步骤订购、验收成品并准备 POD 商店页面。",
+      "doNotUseFor": "不要把完成平台字段当玩家需求、可访问性、盈利、其他渠道适配或合规证明。",
+      "reviewedAt": "2026-08-17",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "kickstarter-project-budget",
+      "useModes": [
+        "learn",
+        "lookup",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "把众筹目标拆成研发、原型、生产、包装、运输、劳动、税费和误差，不只看单盒生产价。",
+      "doNotUseFor": "不要把模板、分类可用性或平台缓冲建议当财务、税务或融资专业意见。",
+      "reviewedAt": "2026-08-17",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "sspai-self-printing-practice",
+      "useModes": [
+        "case_study",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "分析授权合作中规格、沟通、资源和验收责任不清如何造成停滞。",
+      "doNotUseFor": "作者披露利益关系；不要由两个项目判断出版方普遍不可靠，或自出版必然更快。",
+      "reviewedAt": "2026-08-17",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "hkfyg-time2play-interview",
+      "useModes": [
+        "case_study",
+        "compare",
+        "learn"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "了解香港派对游戏投稿案例中，设计者和出版社编辑如何分别考虑内容广度、受众与商业可行性。",
+      "doNotUseFor": "不要把一家公司对大众市场的选择当香港市场研究，也不要推出策略游戏没有出版空间。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "thepaper-chinese-designer-roles",
+      "useModes": [
+        "case_study",
+        "compare",
+        "lookup"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "比较 2021 年受访者描述的独立设计、公司设计、投稿、自出版及团队分工。",
+      "doNotUseFor": "不要采用标题市场额、版税比例、运费、渠道和玩家偏好作为 2026 年事实；行动时查当前一手来源。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    }
+  ]
+}

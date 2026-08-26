@@ -1,0 +1,230 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tabletop-design-workshop.invalid/schemas/beginner-usability-session-v1.json",
+  "title": "Beginner resource-site usability session",
+  "type": "object",
+  "additionalProperties": false,
+  "required": ["schemaVersion", "method", "evidenceClass", "sessionStatus", "campaignRound", "productVersion", "participant", "consent", "privacy", "environment", "tasks", "sessionSummary"],
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "method": { "const": "moderated-beginner-resource-site-usability" },
+    "evidenceClass": { "enum": ["blank_template", "fictional_example", "participant_session"] },
+    "sessionStatus": { "enum": ["blank", "recorded"] },
+    "campaignRound": { "enum": ["not_assigned", "pilot", "confirmation"] },
+    "productVersion": { "type": "string" },
+    "participant": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["alias", "track", "tabletopDesignExperience", "usedSiteVersionBefore", "supportConfiguration"],
+      "properties": {
+        "alias": { "type": "string" },
+        "track": { "enum": ["not_assigned", "quick", "full"] },
+        "tabletopDesignExperience": { "enum": ["not_recorded", "none", "one_project", "two_projects"] },
+        "usedSiteVersionBefore": { "type": "boolean" },
+        "supportConfiguration": { "type": "array", "items": { "type": "string" }, "uniqueItems": true }
+      }
+    },
+    "consent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["participation", "deidentifiedNotes", "withdrawalExplained", "screenRecording", "audioRecording"],
+      "properties": {
+        "participation": { "type": "boolean" },
+        "deidentifiedNotes": { "type": "boolean" },
+        "withdrawalExplained": { "type": "boolean" },
+        "screenRecording": { "const": false },
+        "audioRecording": { "const": false }
+      }
+    },
+    "privacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["containsRealName", "containsContactDetails", "containsRawRecording", "localOnly", "deleteBy"],
+      "properties": {
+        "containsRealName": { "const": false },
+        "containsContactDetails": { "const": false },
+        "containsRawRecording": { "const": false },
+        "localOnly": { "const": true },
+        "deleteBy": { "type": "string" }
+      }
+    },
+    "environment": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["baseUrl", "buildId", "device", "browser", "viewport", "inputMode", "routeAtStart", "disposableProfileConfirmed"],
+      "properties": {
+        "baseUrl": { "type": "string" },
+        "buildId": { "type": "string" },
+        "device": { "type": "string" },
+        "browser": { "type": "string" },
+        "viewport": { "type": "string" },
+        "inputMode": { "type": "string" },
+        "routeAtStart": { "const": "#path" },
+        "disposableProfileConfirmed": { "type": "boolean" }
+      }
+    },
+    "tasks": {
+      "type": "array",
+      "minItems": 4,
+      "maxItems": 4,
+      "prefixItems": [
+        { "$ref": "#/$defs/n1Task" },
+        { "$ref": "#/$defs/r1Task" },
+        { "$ref": "#/$defs/w1Task" },
+        { "$ref": "#/$defs/d1Task" }
+      ],
+      "items": false
+    },
+    "sessionSummary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["workingCases", "failureCases", "criticalIssues", "seriousIssues", "isolatedFactor", "repairBeforeRetest", "nextResearchStep", "rationale"],
+      "properties": {
+        "workingCases": { "type": "array", "items": { "type": "string" } },
+        "failureCases": { "type": "array", "items": { "type": "string" } },
+        "criticalIssues": { "type": "array", "items": { "type": "string" } },
+        "seriousIssues": { "type": "array", "items": { "type": "string" } },
+        "isolatedFactor": { "type": "string" },
+        "repairBeforeRetest": { "type": "array", "items": { "type": "string" } },
+        "nextResearchStep": { "enum": ["hold", "repair_and_retest", "add_session", "ready_for_confirmation"] },
+        "rationale": { "type": "string" }
+      }
+    }
+  },
+  "$defs": {
+    "intervention": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["kind", "at", "detail"],
+      "properties": {
+        "kind": { "enum": ["neutral_think_aloud", "access_setup", "task_help", "safety_stop"] },
+        "at": { "type": "string" },
+        "detail": { "type": "string" }
+      }
+    },
+    "taskBase": {
+      "type": "object",
+      "required": ["taskId", "status", "startedAt", "endedAt", "observedActions", "participantWords", "firstDeviation", "recovery", "interventions", "severity", "candidateCause", "candidateRepair", "retestRequired", "taskData"],
+      "properties": {
+        "taskId": { "enum": ["N1", "R1", "W1", "D1"] },
+        "status": { "enum": ["not_started", "completed", "partial", "blocked"] },
+        "startedAt": { "type": "string" },
+        "endedAt": { "type": "string" },
+        "observedActions": { "type": "array", "items": { "type": "string" } },
+        "participantWords": { "type": "array", "items": { "type": "string" } },
+        "firstDeviation": { "type": "string" },
+        "recovery": { "type": "string" },
+        "interventions": { "type": "array", "items": { "$ref": "#/$defs/intervention" } },
+        "severity": { "enum": ["none", "recoverable", "serious", "critical"] },
+        "candidateCause": { "type": "string" },
+        "candidateRepair": { "type": "string" },
+        "retestRequired": { "type": "boolean" }
+      }
+    },
+    "n1Task": {
+      "allOf": [
+        { "$ref": "#/$defs/taskBase" },
+        {
+          "properties": {
+            "taskId": { "const": "N1" },
+            "taskData": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["destinationHash", "stageFound", "nextStepExplained", "elapsedSeconds", "taskHelpCount", "neutralPromptCount", "unassisted"],
+              "properties": {
+                "destinationHash": { "type": "string" },
+                "stageFound": { "type": "boolean" },
+                "nextStepExplained": { "type": "boolean" },
+                "elapsedSeconds": { "type": "integer", "minimum": 0 },
+                "taskHelpCount": { "type": "integer", "minimum": 0 },
+                "neutralPromptCount": { "type": "integer", "minimum": 0 },
+                "unassisted": { "type": "boolean" }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "r1Task": {
+      "allOf": [
+        { "$ref": "#/$defs/taskBase" },
+        {
+          "properties": {
+            "taskId": { "const": "R1" },
+            "taskData": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["entryPoint", "resourceTitle", "fitExplained", "boundaryExplained", "rankingMisread", "elapsedSeconds", "taskHelpCount", "unassisted"],
+              "properties": {
+                "entryPoint": { "type": "string" },
+                "resourceTitle": { "type": "string" },
+                "fitExplained": { "type": "boolean" },
+                "boundaryExplained": { "type": "boolean" },
+                "rankingMisread": { "type": "boolean" },
+                "elapsedSeconds": { "type": "integer", "minimum": 0 },
+                "taskHelpCount": { "type": "integer", "minimum": 0 },
+                "unassisted": { "type": "boolean" }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "w1Task": {
+      "allOf": [
+        { "$ref": "#/$defs/taskBase" },
+        {
+          "properties": {
+            "taskId": { "const": "W1" },
+            "taskData": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["experienceIntentRecordId", "coreLoopRecordId", "prototypeScopeRecordId", "testPlanRecordId", "playtestSessionRecordId", "mainQuestion", "observablePrediction", "counterSignal", "explicitHandoffs", "scriptedEventLabeledAsDrill", "elapsedSeconds", "taskHelpCount", "unassisted"],
+              "properties": {
+                "experienceIntentRecordId": { "type": "string" },
+                "coreLoopRecordId": { "type": "string" },
+                "prototypeScopeRecordId": { "type": "string" },
+                "testPlanRecordId": { "type": "string" },
+                "playtestSessionRecordId": { "type": "string" },
+                "mainQuestion": { "type": "string" },
+                "observablePrediction": { "type": "string" },
+                "counterSignal": { "type": "string" },
+                "explicitHandoffs": { "type": "boolean" },
+                "scriptedEventLabeledAsDrill": { "type": "boolean" },
+                "elapsedSeconds": { "type": "integer", "minimum": 0 },
+                "taskHelpCount": { "type": "integer", "minimum": 0 },
+                "unassisted": { "type": "boolean" }
+              }
+            }
+          }
+        }
+      ]
+    },
+    "d1Task": {
+      "allOf": [
+        { "$ref": "#/$defs/taskBase" },
+        {
+          "properties": {
+            "taskId": { "const": "D1" },
+            "taskData": {
+              "type": "object",
+              "additionalProperties": false,
+              "required": ["routeRestored", "recordsRestored", "projectExportDownloaded", "expectedCategories", "localBoundaryExplained", "recordCountMisreadAsQuality", "elapsedSeconds", "taskHelpCount", "unassisted"],
+              "properties": {
+                "routeRestored": { "type": "boolean" },
+                "recordsRestored": { "type": "boolean" },
+                "projectExportDownloaded": { "type": "boolean" },
+                "expectedCategories": { "type": "array", "items": { "type": "string" }, "uniqueItems": true },
+                "localBoundaryExplained": { "type": "boolean" },
+                "recordCountMisreadAsQuality": { "type": "boolean" },
+                "elapsedSeconds": { "type": "integer", "minimum": 0 },
+                "taskHelpCount": { "type": "integer", "minimum": 0 },
+                "unassisted": { "type": "boolean" }
+              }
+            }
+          }
+        }
+      ]
+    }
+  }
+}

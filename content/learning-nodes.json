@@ -1,0 +1,383 @@
+{
+  "schemaVersion": 1,
+  "principle": "主线只呈现连续节点。每个节点只有一种思维、一个轻量工具、一次动作和一个看得见的结果；阶段、年龄、游戏类型与完整工作台只作为内部标签或按需支持。",
+  "modes": [
+    {
+      "id": "guided",
+      "label": "带着做",
+      "minutes": "5–10 分钟",
+      "description": "使用短句和口头提问，由带领者读题，但把最后选择留给学习者。"
+    },
+    {
+      "id": "independent",
+      "label": "自己做",
+      "minutes": "15–25 分钟",
+      "description": "直接阅读例子并独立留下一个结果，适合普通新手。"
+    },
+    {
+      "id": "project",
+      "label": "项目版",
+      "minutes": "20–40 分钟",
+      "description": "把当前项目、版本与真实材料带进同一个节点，需要时再打开完整工作台。"
+    }
+  ],
+  "nodes": [
+    {
+      "id": "node-01",
+      "order": 1,
+      "title": "抓住一个具体时刻",
+      "question": "我只记得这局好玩或不好玩，不知道该从哪里开始分析。",
+      "thought": "先描述一个真正发生的时刻，不评价整款游戏。",
+      "example": "轮到阿鹿时，他看了自己的挡水工具，又看了阿兔前面的急流，停了几秒，最后仍选择向前走。",
+      "action": "从最近一局里选一个让人犹豫、等待、惊讶或改变计划的时刻，只写镜头能看到和听到的事。",
+      "guidedHint": "请带领者问：刚才谁做了什么？先不要问为什么。",
+      "projectHint": "补上游戏名、版本、人数和时刻发生前的局面。",
+      "toolTitle": "时刻卡",
+      "toolPrompt": "这一刻，谁在什么局面做了什么？",
+      "toolPlaceholder": "例如：第 3 回合，阿鹿看了两张工具牌，停了几秒，选择向前走。",
+      "output": "一段不含好坏评价的桌面记录。",
+      "doneWhen": "别人只看这段话，也能指出当时谁做了什么。",
+      "limit": "这一刻不能代表整款游戏，也不能直接证明玩家为什么这样做。",
+      "toolId": "decision-trace",
+      "conceptIds": ["observation", "information-state"],
+      "resourceEntryIds": ["learn-by-playing"],
+      "sourceContentIds": ["learn-by-playing-one-moment", "systematic-unit-00-question-first"],
+      "sourceGuideIds": ["special-purposeful-play", "special-decision-trace"],
+      "cases": [],
+      "branches": [
+        { "id": "special-purposeful-play", "title": "想继续把一局变成练习" }
+      ],
+      "nextNodeId": "node-02"
+    },
+    {
+      "id": "node-02",
+      "order": 2,
+      "title": "说出想看见的行动",
+      "question": "我知道想要紧张、合作或策略感，但这些词还不能指导第一版。",
+      "thought": "体验不能直接装进盒子，要先变成玩家可能做出的行动。",
+      "example": "不要只写“玩家会紧张合作”；写“玩家会为了同伴下一步，主动放弃一次眼前前进”。",
+      "action": "把一个体验词改写成一句玩家可能做出的行动。",
+      "guidedHint": "请带领者问：如果真的发生了，我们会看见玩家做什么？",
+      "projectHint": "写清目标玩家和这次故意不追求的体验。",
+      "toolTitle": "行动句",
+      "toolPrompt": "我希望玩家会……",
+      "toolPlaceholder": "例如：我希望玩家会为了同伴下一步，主动放弃一次眼前前进。",
+      "output": "一句可以在桌面上寻找的玩家行动。",
+      "doneWhen": "句子里有玩家和动作，不只有有趣、沉浸、平衡或策略。",
+      "limit": "这句话只是当前方向，不保证真实玩家一定这样行动。",
+      "toolId": "experience-intent",
+      "conceptIds": ["experience-intent", "hypothesis"],
+      "resourceEntryIds": ["first-prototype"],
+      "sourceContentIds": ["systematic-unit-01-experience-intent"],
+      "sourceGuideIds": ["guide-experience-intent"],
+      "cases": [
+        { "id": "designer-case-dune-imperium-beginnings", "title": "看一张牌怎样接起两种体验" }
+      ],
+      "branches": [
+        { "id": "special-theme-commitment-harm-review", "title": "题材或议题本身很重要" }
+      ],
+      "nextNodeId": "node-03"
+    },
+    {
+      "id": "node-03",
+      "order": 3,
+      "title": "找到真正的选择",
+      "question": "规则里有很多行动，但玩家还是总走同一条路。",
+      "thought": "真正的选择不只要有两个按钮，还要让玩家看见不同代价。",
+      "example": "现在前进可以更快到终点；现在交出工具会失去本回合前进，却可能让同伴通过急流。",
+      "action": "从节点 1 的时刻中写出玩家真正考虑的两个选项，以及每个选项失去什么。",
+      "guidedHint": "请带领者问：他还能做什么？如果这样做，会少掉什么？",
+      "projectHint": "把规则允许但玩家没有考虑的行动放到旁边，不要硬算成有效选择。",
+      "toolTitle": "决定线",
+      "toolPrompt": "玩家在……和……之间选择；前者会失去……，后者会失去……。",
+      "toolPlaceholder": "例如：玩家在立刻前进和交出工具之间选择；前者可能让同伴受阻，后者会失去自己的前进机会。",
+      "output": "一条包含两个选项和两种代价的决定线。",
+      "doneWhen": "两个选项都会改变后续局面，而且都不是明显免费的。",
+      "limit": "规则上的合法行动不一定都进入了玩家当时的实际考虑。",
+      "toolId": "decision-trace",
+      "conceptIds": ["meaningful-choice", "constraint"],
+      "resourceEntryIds": ["core-loop-handoff"],
+      "sourceContentIds": ["systematic-unit-02-decisions-core-loop"],
+      "sourceGuideIds": ["guide-core-system", "special-decision-trace"],
+      "cases": [
+        { "id": "designer-case-dune-imperium-beginnings", "title": "看双用途卡怎样制造代价" }
+      ],
+      "branches": [
+        { "id": "special-balance-one-risk", "title": "只有一个选项总是占优" }
+      ],
+      "nextNodeId": "node-04"
+    },
+    {
+      "id": "node-04",
+      "order": 4,
+      "title": "把结果接回下一步",
+      "question": "我能说清一次行动，却不知道它为什么值得反复发生。",
+      "thought": "一次行动的结果要改变下一次决定，才形成可以测试的循环。",
+      "example": "交出工具会改变工具归属和两人的位置选择；下一回合两人必须根据新的归属重新分工。",
+      "action": "把当前信息、选择、代价、变化和下一次输入连成一条箭头。",
+      "guidedHint": "请带领者逐次问：先看见什么？做了什么？桌面变了什么？下一次要重新想什么？",
+      "projectHint": "只画一条会重复的短循环，不把整局流程全部塞进来。",
+      "toolTitle": "循环箭头",
+      "toolPrompt": "看见…… → 在……之间选择 → 付出…… → 桌面变成…… → 下一次要根据……再选。",
+      "toolPlaceholder": "例如：看见急流 → 前进或交出工具 → 放弃一步 → 工具归属改变 → 根据新归属重新分工。",
+      "output": "一条能回到下一次决定的短循环。",
+      "doneWhen": "箭头最后产生了新的信息或局面，而不是只停在得到分数。",
+      "limit": "循环完整不等于游戏已经好玩，也不覆盖长局节奏和社交体验。",
+      "toolId": "core-loop",
+      "conceptIds": ["core-loop", "feedback"],
+      "resourceEntryIds": ["core-loop-handoff"],
+      "sourceContentIds": ["systematic-unit-02-decisions-core-loop"],
+      "sourceGuideIds": ["guide-core-system"],
+      "cases": [
+        { "id": "designer-case-quid-for-your-quo", "title": "看删掉旧机制后循环为什么断了" }
+      ],
+      "branches": [
+        { "id": "special-randomness-contract", "title": "循环里有随机结果" },
+        { "id": "special-scoring-contract", "title": "循环被分数带偏" },
+        { "id": "special-turn-structure-contract", "title": "循环卡在回合与等待" }
+      ],
+      "nextNodeId": "node-05"
+    },
+    {
+      "id": "node-05",
+      "order": 5,
+      "title": "标出谁知道什么",
+      "question": "选择看起来成立，但玩家经常没发现关键信息，或者知道了也来不及回应。",
+      "thought": "信息只有在正确的人、正确的时刻能看见并使用，才会进入选择。",
+      "example": "阿鹿知道自己有挡水工具，但不知道阿兔下一格是急流；工具虽然公开，关系仍没有被看见。",
+      "action": "选择一项关键信息，写清谁拥有、谁能看见、何时出现，以及看见后能做什么。",
+      "guidedHint": "请带领者问：这条消息现在在谁那里？另一个人什么时候才知道？",
+      "projectHint": "从真实座位检查字号、位置、触达和查询，不要只看规则设计图。",
+      "toolTitle": "信息表",
+      "toolPrompt": "这条信息由……拥有，……能在……时看见，看见后可以……。",
+      "toolPlaceholder": "例如：挡水工具由阿鹿拥有，阿兔在行动前能看见；看见后可以提出交换。",
+      "output": "一行带有拥有者、时点和用途的信息记录。",
+      "doneWhen": "能明确指出信息怎样改变一个选择或回应。",
+      "limit": "公开不等于看得见，看得见也不等于玩家知道它为什么重要。",
+      "toolId": "decision-trace",
+      "conceptIds": ["information-structure", "agency"],
+      "resourceEntryIds": ["hidden-information-hand-economy"],
+      "sourceContentIds": ["systematic-unit-03-mechanisms-information-interaction"],
+      "sourceGuideIds": ["special-hidden-information-hand-economy-contract", "special-shared-decision-observation"],
+      "cases": [
+        { "id": "designer-case-dune-imperium-beginnings", "title": "看信息和机会怎样共用一张牌" }
+      ],
+      "branches": [
+        { "id": "special-hidden-information-hand-economy-contract", "title": "隐藏信息、手牌或线索" },
+        { "id": "special-negotiation-commitment-contract", "title": "谈判、承诺或联盟" },
+        { "id": "special-shared-decision-observation", "title": "多人共同做一个决定" }
+      ],
+      "nextNodeId": "node-06"
+    },
+    {
+      "id": "node-06",
+      "order": 6,
+      "title": "一次只改一处",
+      "question": "我有很多想法想一起加入，但改完后不知道哪一处造成了变化。",
+      "thought": "比较不是少做创意，而是先保留其他条件，只让一处关系发生变化。",
+      "example": "保持地图、人数和工具效果不变，只把工具从公开改成各自私有，再观察是否仍会提前讨论交换。",
+      "action": "写下这一版保持不变的东西，以及下一版只改变的一处。",
+      "guidedHint": "请带领者问：如果只能动一块，你最想知道哪一块有没有作用？",
+      "projectHint": "另写一句什么情况说明这处改动没有产生预计变化。",
+      "toolTitle": "改动卡",
+      "toolPrompt": "保持……不变；下一版只把……改成……；我预计会看见……。",
+      "toolPlaceholder": "例如：保持地图和工具效果不变；只把工具改为私有；我预计玩家会更晚提出交换。",
+      "output": "一张写清保持项、唯一改动和预计行为的改动卡。",
+      "doneWhen": "下一次比较时，能说清唯一主动改变的关系。",
+      "limit": "出现安全、无障碍或无法继续的问题时可以立即修复，不必保护单一改动。",
+      "toolId": "redesign",
+      "conceptIds": ["hypothesis", "version"],
+      "resourceEntryIds": ["first-prototype", "prototype-scope-and-fidelity"],
+      "sourceContentIds": ["systematic-unit-00-question-first", "systematic-unit-03-mechanisms-information-interaction", "systematic-unit-06-evidence-to-next-version"],
+      "sourceGuideIds": ["special-balance-one-risk", "special-reading-to-action"],
+      "cases": [
+        { "id": "designer-case-monsoon-market-variables", "title": "看设计师怎样收缩变量" }
+      ],
+      "branches": [
+        { "id": "special-balance-one-risk", "title": "正在处理一项平衡风险" },
+        { "id": "special-reading-to-action", "title": "想把阅读变成一次上桌行动" }
+      ],
+      "nextNodeId": "node-07"
+    },
+    {
+      "id": "node-07",
+      "order": 7,
+      "title": "做最短可玩片段",
+      "question": "我知道想测试什么，却仍在制作完整地图、全部卡牌和正式美术。",
+      "thought": "原型只需要让当前决定出现、产生一次后果，并能在合适的地方停下。",
+      "example": "为了测试工具交换，只需要两只动物、两张工具、三段路和一次会遇到的障碍，不需要完整世界地图。",
+      "action": "列出当前问题必须真实的三样东西，并明确写下一样这次不做的内容。",
+      "guidedHint": "请带领者问：少了哪一样就不能做出刚才那个选择？",
+      "projectHint": "分别检查信息、空间、操作和社交条件中，哪些不能被纸面替代。",
+      "toolTitle": "原型范围卡",
+      "toolPrompt": "这次必须有……；可以用……代替……；这次明确不做……；出现……时停止。",
+      "toolPlaceholder": "例如：必须有两张不同工具；用纸片代替角色；不做完整地图；两次交换决定后停止。",
+      "output": "一份可以今天制作并运行的最小材料范围。",
+      "doneWhen": "材料足以重复目标决定并看见一次后果，没有为了完整胜负带回无关系统。",
+      "limit": "粗糙不等于可以看不懂；与问题有关的信息和操作必须足够清楚。",
+      "toolId": "prototype-scope",
+      "conceptIds": ["prototype", "prototype-fidelity"],
+      "resourceEntryIds": ["prototype-scope-and-fidelity", "first-prototype"],
+      "sourceContentIds": ["systematic-unit-04-minimum-prototype"],
+      "sourceGuideIds": ["guide-minimum-prototype"],
+      "cases": [
+        { "id": "designer-case-new-bedford-manufacturing-constraint", "title": "看一张纸怎样改变机制范围" }
+      ],
+      "branches": [
+        { "id": "special-spatial-relationship-contract", "title": "地图和空间关系必须真实" },
+        { "id": "special-player-count-configuration", "title": "要测试不同人数" },
+        { "id": "special-solo-mode-contract", "title": "要加入单人模式" }
+      ],
+      "nextNodeId": "node-08"
+    },
+    {
+      "id": "node-08",
+      "order": 8,
+      "title": "不提示地跑一次",
+      "question": "测试时我总会解释、提示和临场改规则，最后不知道原型自己会发生什么。",
+      "thought": "一轮测试先回答一个问题；主持人的每次介入都会改变能得出的判断。",
+      "example": "问题只问玩家会不会在遇到障碍前讨论交换；开始后不提醒他们查看工具，第一次卡住时按预先条件停止。",
+      "action": "写一个问题、一句不会泄露答案的任务和一个停止条件，然后运行一次短测试。",
+      "guidedHint": "请带领者只负责读任务和保证安全，不告诉参与者设计者希望看到什么。",
+      "projectHint": "补上版本、参与者、媒介和主持方式；测试中发生的介入逐次记录。",
+      "toolTitle": "单问题测试单",
+      "toolPrompt": "这次只问……；请玩家……；出现……或到……时停止。",
+      "toolPlaceholder": "例如：只问是否提前讨论交换；请完成前三段路；两次交换决定或 8 分钟时停止。",
+      "output": "一份可以直接带到桌边的短测试任务。",
+      "doneWhen": "问题、任务和停止条件都已写清，而且任务没有告诉玩家预期答案。",
+      "limit": "一场短测试不能证明总体偏好、因果或游戏已经完成。",
+      "toolId": "test-plan",
+      "conceptIds": ["playtest-question", "playtest-type"],
+      "resourceEntryIds": ["single-question-playtest", "first-playtest"],
+      "sourceContentIds": ["systematic-unit-05-single-question-test"],
+      "sourceGuideIds": ["special-test-type-selection", "special-blind-rules-test"],
+      "cases": [],
+      "branches": [
+        { "id": "special-test-type-selection", "title": "不知道该自测、主持还是盲测" },
+        { "id": "special-blind-rules-test", "title": "要把规则交给陌生玩家" },
+        { "id": "special-campaign-state-passport", "title": "要测试连续多局或战役" }
+      ],
+      "nextNodeId": "node-09"
+    },
+    {
+      "id": "node-09",
+      "order": 9,
+      "title": "分开看到、听到和猜到",
+      "question": "测试结束后，动作、玩家意见和我的解释混成了一段笔记。",
+      "thought": "看到的动作、听到的原话和设计者的猜测是三种不同材料。",
+      "example": "动作：阿鹿没有查看同伴工具。原话：我以为工具只能自己用。猜测：工具归属可能没有被看见。",
+      "action": "从刚才测试里选一个事件，分别写下一条动作、一句原话和一个暂时猜测。",
+      "guidedHint": "请带领者把“他觉得”“她想要”圈出来，追问这是原话还是猜测。",
+      "projectHint": "每条记录带上版本和时间点；至少保留一个其他可能的解释。",
+      "toolTitle": "三栏记录",
+      "toolPrompt": "我看见……；我听见玩家说……；我暂时猜……。",
+      "toolPlaceholder": "例如：我看见他没看工具；他说以为只能自己用；我猜归属提示没有被读到。",
+      "output": "一条把动作、原话和解释分开的测试记录。",
+      "doneWhen": "三句话互相不能替代，并且猜测仍允许被下一次观察推翻。",
+      "limit": "玩家原话很重要，但一条原话仍不能代表全部玩家或唯一原因。",
+      "toolId": "playtest-session",
+      "conceptIds": ["observation", "feedback"],
+      "resourceEntryIds": ["live-playtest-session"],
+      "sourceContentIds": ["systematic-unit-05-single-question-test", "systematic-unit-06-evidence-to-next-version"],
+      "sourceGuideIds": ["guide-playtest-feedback", "special-decision-trace"],
+      "cases": [],
+      "branches": [
+        { "id": "special-decision-trace", "title": "想追完整的一次决定" },
+        { "id": "special-shared-decision-observation", "title": "想记录多人共同决定" }
+      ],
+      "nextNodeId": "node-10"
+    },
+    {
+      "id": "node-10",
+      "order": 10,
+      "title": "选下一版的一处改变",
+      "question": "我有很多反馈和建议，不知道下一版到底先改什么。",
+      "thought": "证据帮助你比较解释，但最后仍由设计者选择一处最值得学习的改变。",
+      "example": "先不改交换代价，只让双方工具在开局更容易看见；如果仍然没人提前比较，再检查交换收益。",
+      "action": "为同一现象写两个可能原因，选择一个先改，并写下什么情况说明这个原因站不住。",
+      "guidedHint": "请带领者问：除了你最先想到的原因，还可能是什么？",
+      "projectHint": "写清保持不变的部分、目标版本和回退条件；其他想法放入停车区。",
+      "toolTitle": "下一版卡",
+      "toolPrompt": "也可能因为……或……；下一版先改……；如果看见……，我就换一个解释。",
+      "toolPlaceholder": "例如：也可能没看见工具或觉得交换不值；先改开局提示；若看见仍不换，就检查收益。",
+      "output": "一张包含备选原因、单项改动和回看条件的下一版卡。",
+      "doneWhen": "下一版只有一个主要学习性改动，并且保留了其他解释。",
+      "limit": "出现次数不能自动决定严重度、优先级、因果或唯一修法。",
+      "toolId": "feedback",
+      "conceptIds": ["design-decision", "version", "hypothesis"],
+      "resourceEntryIds": ["evidence-review-change-brief"],
+      "sourceContentIds": ["systematic-unit-06-evidence-to-next-version"],
+      "sourceGuideIds": ["guide-playtest-feedback", "special-cross-session-follow-up"],
+      "cases": [
+        { "id": "designer-case-monsoon-market-variables", "title": "看设计师怎样保留比较条件" }
+      ],
+      "branches": [
+        { "id": "special-cross-session-follow-up", "title": "同一个发现跨了多场测试" },
+        { "id": "special-cross-project-learning-trace", "title": "想把判断带到下一个项目" }
+      ],
+      "nextNodeId": "node-11"
+    },
+    {
+      "id": "node-11",
+      "order": 11,
+      "title": "让别人自己开始",
+      "question": "我能亲自教会游戏，但陌生人不知道从哪里设置、先看什么和怎样完成第一步。",
+      "thought": "教学不是一次讲完所有规则，而是让玩家看见目标、完成第一件事并能从卡点恢复。",
+      "example": "玩家先看港口需求，拿一件货物完成一次交货；货舱溢出规则等第一次装满时再出现。",
+      "action": "选择玩家的第一件事，写下现在必须知道的内容、可以延后的内容和卡住时的查询入口。",
+      "guidedHint": "请带领者让学习者实际做一次，不用复述规则来代替动作。",
+      "projectHint": "交给没有接触过当前版本的人；记录第一次偏离和主持人提示。",
+      "toolTitle": "第一行动检查表",
+      "toolPrompt": "玩家第一件事是……；现在只要知道……；……可以以后再说；卡住时从……找答案。",
+      "toolPlaceholder": "例如：先完成一次交货；只要知道港口、货物和收入；套装分以后说；从个人辅助查满舱。",
+      "output": "一条从解释到行动再到恢复的首次使用路径。",
+      "doneWhen": "陌生人可以完成第一件事，卡住时也知道从哪里找回准确答案。",
+      "limit": "一次成功只说明当前玩家、版本、任务和媒介组合可以运行。",
+      "toolId": "teaching-path",
+      "conceptIds": ["teaching-path", "player-aid", "lookup-path"],
+      "resourceEntryIds": ["rules-and-teaching", "accessibility-task-path"],
+      "sourceContentIds": ["what-makes-a-rulebook-accessible-and-entertaining"],
+      "sourceGuideIds": ["guide-rules-information", "special-learning-path", "special-accessibility-task-observation"],
+      "cases": [
+        { "id": "designer-case-paul-grogan-rulebook-layout", "title": "看规则文字怎样交给陌生玩家" }
+      ],
+      "branches": [
+        { "id": "special-accessibility-task-observation", "title": "玩家在实际任务中遇到障碍" },
+        { "id": "special-card-language-effect-resolution-contract", "title": "卡牌文字和效果结算反复争议" }
+      ],
+      "nextNodeId": "node-12"
+    },
+    {
+      "id": "node-12",
+      "order": 12,
+      "title": "交出一个找得到的版本",
+      "question": "游戏能玩，但介绍、规则、文件和测试记录属于不同版本，别人不知道该从哪里开始。",
+      "thought": "可交付首先不是包装精美，而是接收者能找到正确版本并完成下一件事。",
+      "example": "试玩者从同一入口拿到 v0.9 规则、打印文件和设置说明；旧版明确标记，不与当前文件混放。",
+      "action": "写清接收者、当前版本、唯一开始入口和交付包中必须一致的四样东西。",
+      "guidedHint": "请带领者扮演第一次收到文件的人，只问：我先打开哪一个？",
+      "projectHint": "再记录权利状态、仍未覆盖的责任和何时停止这条发布路线。",
+      "toolTitle": "版本包清单",
+      "toolPrompt": "这份包交给……；当前版本是……；请先打开……；规则、组件、介绍和记录都必须标为……。",
+      "toolPlaceholder": "例如：交给公开试玩者；当前 v0.9；先打开《开始这里》；所有文件统一标注 v0.9。",
+      "output": "一份接收者能找到、核对并开始使用的最小版本包清单。",
+      "doneWhen": "不靠设计者解释，接收者也能指出当前版本、开始入口和下一行动。",
+      "limit": "版本包不证明作品适合出版，也不提供法律、制造、销量或履约结论。",
+      "toolId": "route-map",
+      "conceptIds": ["version", "handoff-friction", "release-candidate"],
+      "resourceEntryIds": ["production-and-publishing"],
+      "sourceContentIds": ["designer-case-new-bedford-manufacturing-constraint"],
+      "sourceGuideIds": ["guide-presentation-release", "special-publishing-route-responsibility-map", "special-production-assumption-ledger"],
+      "cases": [
+        { "id": "designer-case-new-bedford-manufacturing-constraint", "title": "看生产限制怎样回到版本决定" }
+      ],
+      "branches": [
+        { "id": "special-production-assumption-ledger", "title": "准备询价或生产" },
+        { "id": "special-publishing-route-responsibility-map", "title": "准备投稿、PnP、自出版或众筹" },
+        { "id": "special-card-pool-version-governance-contract", "title": "需要维护扩展、勘误或长期卡池" }
+      ],
+      "nextNodeId": "node-06",
+      "nextKind": "loop"
+    }
+  ]
+}

@@ -1,0 +1,11 @@
+.git/
+.vercel/
+node_modules/
+dist/
+tmp/
+design/qa/
+docs/qa/screenshots/
+*.tsbuildinfo
+.DS_Store
+.env*
+!.env.example

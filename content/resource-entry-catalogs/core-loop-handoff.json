@@ -1,0 +1,377 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "core-loop-handoff",
+    "title": "把体验意图接成可重复的核心循环",
+    "question": "我已经写了玩家、决定与预期行为，但不知道怎样把它变成会改变下一次决定的规则关系。",
+    "outcome": "把当前信息、可行选择、代价/承诺、状态变化、可见反馈与下一次输入接成一条短循环，并明确出口、单一变量和反驳信号。",
+    "resourceIds": [
+      "daniel-games-core",
+      "joe-slack-getting-to-core",
+      "loops-and-metagames",
+      "zimmerman-core-mechanic",
+      "mda-framework",
+      "five-part-model",
+      "rosewater-decisions-part-one",
+      "kathleen-mercury-resources"
+    ],
+    "evidenceBoundary": "组合两篇桌游设计师实践、一个设计案例、一个循环结构论文和既有 MDA/5PM/教学来源；它们支持把体验意图接到输入—选择—代价—状态—反馈—下一输入，并记录循环出口，不提供核心循环质量分、最佳机制、循环长度、奖励频率或玩家体验结论。"
+  },
+  "resources": [
+    {
+      "id": "daniel-games-core",
+      "title": "The Core",
+      "creator": "Daniel Piechnick",
+      "href": "https://daniel.games/the-core/",
+      "type": "设计师关于核心系统、删减与清晰度的实践文章",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型"
+      ],
+      "useful": "用桌游案例说明核心不是功能清单，并要求移除不支持中心挑战的额外系统，让第一份测试保持清晰。",
+      "limitation": "作者把核心的重要性表达得很强，也偏好精简设计；这不能证明所有长局、多层或叙事游戏都应缩成单一机制。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "joe-slack-getting-to-core",
+      "title": "Getting to the Core of Your Game",
+      "creator": "Joe Slack",
+      "href": "https://boardgamedesigncourse.com/getting-to-the-core-of-your-game/",
+      "type": "桌游设计师关于愿景、体验与核心关系的文章",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型"
+      ],
+      "useful": "提醒设计者先写预期玩家体验，再检查机制、主题、终局与删减是否仍服务同一个核心。",
+      "limitation": "是个人设计课程与实践建议，没有比较不同核心识别方法，也不能给出循环长度或复杂度阈值。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "loops-and-metagames",
+      "title": "Loops and Metagames: Understanding Game Design Structures",
+      "creator": "Miguel Angel Sicart",
+      "href": "https://www.fdg2015.org/papers/fdg2015_paper_22.pdf",
+      "type": "游戏循环与元游戏结构研究",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "把循环定义为玩家输入、系统按状态与规则处理、反馈输出和重复/中断条件，帮助区分短循环与整局流程。",
+      "limitation": "跨数字与非数字游戏的概念论文，不提供桌游核心循环的质量量表，也不证明循环越短或越闭合越好。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "zimmerman-core-mechanic",
+      "title": "The Core Mechanic",
+      "creator": "Eric Zimmerman",
+      "href": "https://www.gamedesignworkshop.com/the-core-mechanic",
+      "type": "设计师与教师的核心交互原型案例",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "通过 LOOP 的迭代案例展示先隔离最小交互、测试输入与反馈，再逐步加入对象、危险与目标。",
+      "limitation": "案例来自数字游戏并聚焦新鼠标交互；不能直接外推桌游的实体操作、社交关系或循环结构。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "mda-framework",
+      "title": "MDA: A Formal Approach to Game Design",
+      "creator": "Hunicke, LeBlanc & Zubek",
+      "href": "https://aaai.org/papers/ws04-04-001-mda-a-formal-approach-to-game-design-and-game-research/",
+      "type": "学术框架",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "帮助连接机制、运行中形成的动态和玩家体验。",
+      "limitation": "不是桌游专用，也不是从零到成品的完整配方。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-13"
+    },
+    {
+      "id": "five-part-model",
+      "title": "5-Part Model: A Formal Approach to Designing Mechanics",
+      "creator": "Mora-Zamora, Brenes-Villalobos & Durán",
+      "href": "https://www.clei.org/cleiej/index.php/cleiej/article/view/473",
+      "type": "学术框架",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "用呈现、操控物、资源、决定和三层目标拆解并诊断一项机制。",
+      "limitation": "正文以电子游戏案例说明；作者把真实环境测试列为未来工作，不能视为已验证的机制定律。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-13"
+    },
+    {
+      "id": "rosewater-decisions-part-one",
+      "title": "Decisions, Decisions, Part I",
+      "creator": "Mark Rosewater / Wizards of the Coast",
+      "href": "https://magic.wizards.com/en/news/making-magic/decisions-decisions-part-i-2009-07-27",
+      "type": "设计师选择结构文章",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统"
+      ],
+      "useful": "用 Magic 的多层设计说明增加决定并非纯收益，并区分只增加能力的选项与迫使能力互相取舍的选择。",
+      "limitation": "作者明确使用自定术语且主要来自集换式卡牌长期开发；不能把其二分法当作跨游戏标准。",
+      "status": "article_level",
+      "lastCheckedAt": "2026-08-17"
+    },
+    {
+      "id": "kathleen-mercury-resources",
+      "title": "Resources to Teach Strategy Game Design",
+      "creator": "Kathleen Mercury",
+      "href": "https://www.kathleenmercury.com/",
+      "type": "教学策展",
+      "evidenceType": "teaching_curation",
+      "format": "course",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "从游玩、机制、主题到原型、WINQ 反馈和规则的完整课堂路径；首页也明确说明免费共享与回馈期待。",
+      "limitation": "以教师主持和青少年学期课程为语境；可用不等于可再出版，站点明确禁止将材料自行出版，单项第三方材料仍需核对权利。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-21"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "daniel-games-core",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "检查额外系统是否真的支持中心挑战，并把第一份核心测试缩到清楚可见。",
+      "doNotUseFor": "不要把作者的精简偏好当成所有长局、多层或叙事作品的唯一结构。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "joe-slack-getting-to-core",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "从预期体验回看机制、主题和终局是否仍指向同一个项目愿景。",
+      "doNotUseFor": "个人课程文章没有验证最佳循环长度、系统数量或删减阈值。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "loops-and-metagames",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "broad",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "区分玩家输入、系统处理、反馈输出、重复与中断条件，并比较不同层级循环。",
+      "doNotUseFor": "概念模型不能评分循环质量，也不能证明闭环越短、奖励越频繁越好。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "zimmerman-core-mechanic",
+      "useModes": [
+        "learn",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "看见设计团队如何先隔离输入—反馈交互，再通过原型逐层加入对象、目标与危险。",
+      "doNotUseFor": "数字鼠标交互案例不能直接代表桌游的实体、社交或信息任务。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "mda-framework",
+      "useModes": [
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "区分规则、运行动态与体验结果，检查设计意图在实现链条中哪里断裂。",
+      "doNotUseFor": "不要把三个层次当成能自动生成机制的线性配方，也不要用它代替玩家观察。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "five-part-model",
+      "useModes": [
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "把一个机制拆成目标、约束、资源、状态与行动关系，发现定义中缺失的部件。",
+      "doNotUseFor": "不要把模型中的分类误当成设计质量标准；分类完整不等于游戏有效。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "rosewater-decisions-part-one",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "检查增加的按钮、能力或例外是否真的制造取舍，还是只增加学习和记忆负担。",
+      "doNotUseFor": "不要把作者为 Magic 定义的 options/choices 术语当作通用字典，也不要假设减少决定必然简化体验。",
+      "reviewedAt": "2026-08-17",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "kathleen-mercury-resources",
+      "useModes": [
+        "learn",
+        "lookup"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "沿着教学单元建立桌游设计课程或自学路径，并按主题继续寻找活动与案例。",
+      "doNotUseFor": "不要把面向课堂的材料顺序直接视为所有成人自学者都适用的唯一流程，也不要因为免费使用就复制或再出版原材料。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    }
+  ]
+}

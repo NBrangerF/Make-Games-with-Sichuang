@@ -1,0 +1,3091 @@
+[
+  {
+    "id": "special-test-type-selection",
+    "title": "这轮应该怎么测试",
+    "stage": "测试与反馈",
+    "problem": "我知道游戏需要测试，却不知道该自己多跑几次、找熟人、去设计师社群，还是直接把规则书交给陌生人。",
+    "outcome": "一份测试方式决定单：本轮问题、建议方式、设计者角色、测试者、停止条件，以及这轮不能推出什么。",
+    "coreMinutes": 8,
+    "opening": "系统刚改完货舱容量，回合流程仍可能断裂，而本轮问题是玩家会不会为了下一港口保留货物。此时先自测到核心决定出现两次；运行稳定后，再由设计者统一讲解并观察真实取舍。规则盲测并不会因为更晚出现就更高级。",
+    "steps": [
+      {
+        "label": "把问题写成事件",
+        "prompt": "写清谁在什么局面会做什么，以及什么行为会反驳假设；不要问总体上是否好玩。",
+        "example": "玩家在能立刻得 3 分时，会至少一次保留货物等待下一港口；若所有人总是立即交货，假设不成立。"
+      },
+      {
+        "label": "先判断失败成本",
+        "prompt": "如果系统仍可能卡死、无限循环、无合法行动或组件不足，先用设计者自测取得最便宜的运行证据。",
+        "example": "设计者同时操作两方，首次无法继续时停止，不邀请外部测试者替自己排结构错误。"
+      },
+      {
+        "label": "判断设计者能否影响答案",
+        "prompt": "要现场改规则就主持；要观察自然行为就讲解后退开；要检查自主学习就做局部或完整盲测。",
+        "example": "本轮只观察货物取舍，因此设计者讲解一次，不提示期望策略。"
+      },
+      {
+        "label": "选择最低成本的足够方式",
+        "prompt": "按运行、行为、外部理解、自主设置与查询、完整自主使用或极端边界选择方式，而不是按成熟度升级。",
+        "example": "设置与查询问题只做局部盲测，不承担整局成本。"
+      },
+      {
+        "label": "写停止条件与不能推出",
+        "prompt": "写清观察几次核心决定、什么问题立刻停止，以及本轮证据明确不能支持哪些结论。",
+        "example": "第二次交货后停止；不能据此宣称规则书清楚、四人平衡或所有目标玩家都会保留货物。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把盲测当成比自测更高级的阶段。",
+        "repair": "只在问题是自主使用时选择盲测；系统会现场改动时先回到自测或引导测试。"
+      },
+      {
+        "mistake": "一次外部测试同时追问平衡、时长、规则和市场。",
+        "repair": "保留一至三个主问题，其他异常只记录，不自动改变本轮判断。"
+      },
+      {
+        "mistake": "把线上测试视为等价的实体测试。",
+        "repair": "先列出线上删掉的触感、设置劳动、桌面空间、身体动作和社交信号。"
+      }
+    ],
+    "whenToBreak": [
+      "安全、无障碍或伦理问题不应等到预定停止点；出现风险时立即停止。",
+      "目标玩家很难招募时可以先用代理受众发现明显问题，但必须记录他们与目标语境的差异。",
+      "固定发布门禁有助于团队管理，却不能替代每轮先定义证据问题。"
+    ],
+    "exercise": {
+      "title": "填一张测试方式决定单",
+      "prompt": "写版本、本轮问题、预计行为、反驳信号、建议方式、设计者角色、测试者、停止条件与不能推出。",
+      "exampleOutput": "v0.4；观察是否保留货物；两名未接触项目的轻中策玩家；引导测试三回合；不能推出规则书已经清楚或四人平衡成立。"
+    },
+    "evidenceBoundary": "测试分类来自协会、社群规范和设计师实践的综合。它们提供做法与反例，不能证明固定顺序或某种方式普遍更有效；本站选择规则仍需新手任务测试。",
+    "resourceIds": ["ttgda-playtesting", "break-my-game-code", "protospiel-online", "daniel-games-prototyping", "greg-blind-playtesting"],
+    "claimIds": ["claim-playtest-mode-follows-question", "claim-observation-not-solution"],
+    "conceptIds": ["playtest-question", "playtest-type", "hypothesis", "observation", "prototype-fidelity"],
+    "doneWhen": [
+      "问题描述可观察行为，而不是总体评价。",
+      "方式理由能回到问题和系统稳定度。",
+      "设计者角色与停止条件已写清。",
+      "至少写出一项本轮不能证明的结论。"
+    ],
+    "backtracksTo": ["guide-minimum-prototype"],
+    "nextOptions": ["guide-playtest-feedback", "special-blind-rules-test"],
+    "toolIds": ["playtest-selector", "test-plan"],
+    "status": "review"
+  },
+  {
+    "id": "special-blind-rules-test",
+    "title": "把盲测拆成四个可观察任务",
+    "stage": "规则与信息",
+    "problem": "我把规则书交给陌生玩家后得到很多问题，却不知道应该改规则、组件、玩家辅助，还是核心系统。",
+    "outcome": "一份只测试设置、反向教学、规则查询或完整游玩之一的盲测任务单，以及第一次偏离与恢复路径记录。",
+    "coreMinutes": 9,
+    "opening": "盲测不必一开始就要求陌生玩家完整玩一局。可以只让他们摆好开局、向另一人解释回合，或用规则书处理一个真实局面；系统足够稳定后，再检验从设置到结算的完整交付包。",
+    "steps": [
+      {
+        "label": "冻结同一版本的交付包",
+        "prompt": "规则、玩家辅助、组件表与原型使用同一版本号；口头勘误单独记录，不能悄悄替换包内规则。",
+        "example": "v0.6 规则、港口板和玩家辅助一起封包，测试中新增解释记为协助。"
+      },
+      {
+        "label": "只选一种自主任务",
+        "prompt": "在设置、反向教学、查询和整局之间选一项，并把成功写成可观察动作。",
+        "example": "两名玩家只靠材料完成三港口设置，并指出起始玩家的三个合法行动。"
+      },
+      {
+        "label": "测试前定义协助协议",
+        "prompt": "选择完全不回答、只给勘误、卡死后给最小提示或允许查询式提问；每次协助都记录。",
+        "example": "允许查看一页勘误，不回答口头问题；第一次不可恢复偏离时停止。"
+      },
+      {
+        "label": "记录第一次偏离和查找路径",
+        "prompt": "记录玩家实际做了什么、先查看哪里、需要什么提示，以及问题属于缺失、顺序、术语、图示、组件或系统例外。",
+        "example": "玩家先查组件表却没找到港口背面标记，于是把三块板都翻到错误一面。"
+      },
+      {
+        "label": "先修最早的上游原因",
+        "prompt": "设置错误若导致后续全局误玩，先修设置信息，再用同一任务复测；不要一次重写所有下游段落。",
+        "example": "先给组件表增加正反面图，再重复设置任务，而不是同时改动十条回合规则。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "规则写在那里，玩家没看到就是玩家的问题。",
+        "repair": "把位置、目录、术语、图示和组件提示视为同一使用界面。"
+      },
+      {
+        "mistake": "玩家没有提问就等于规则清楚。",
+        "repair": "记录实际动作；玩家可能沉默猜测并在错误状态下完成整局。"
+      },
+      {
+        "mistake": "第一次盲测失败说明游戏失败。",
+        "repair": "把第一次偏离当作产出，停止下游任务、修复上游信号，再复测同一任务。"
+      }
+    ],
+    "whenToBreak": [
+      "很早期可以只测术语、图示、设置或查询，不必等待完整系统稳定。",
+      "涉及儿童、健康信息或其他敏感场景时，观察与录制需要更严格的同意和退出机制。",
+      "若测试目标是触感、触达或桌面可见度，相关组件必须达到足够精度，不能用纯文字替代。"
+    ],
+    "exercise": {
+      "title": "写一个二十分钟盲测任务",
+      "prompt": "写包版本、任务类型、任务句、成功信号、允许协助、记录者和停止条件。",
+      "exampleOutput": "v0.6 设置测试；两人只靠材料摆出三港口开局；允许查看勘误，不回答口头问题；第一次猜测组件用途即标记，十分钟停止。"
+    },
+    "evidenceBoundary": "公开实践证明盲测是现实设计与交付的一部分，但不提供统一通过率或样本数量。四任务拆分和第一次偏离记录是本站的产品推断。",
+    "resourceIds": ["bgdl-playtest-like-a-boss", "greg-blind-playtesting", "panda-p20-rulebook", "rulebook-ruling-the-roost"],
+    "claimIds": ["claim-blind-test-whole-delivery", "claim-rulebook-three-jobs"],
+    "conceptIds": ["rulebook", "player-aid", "playtest-type", "observation", "version", "accessibility-task"],
+    "doneWhen": [
+      "规则、组件和玩家辅助有同一版本号。",
+      "本轮只指定一种自主使用任务。",
+      "协助协议在测试前写清。",
+      "能指出第一次偏离，而不只统计总问题数。",
+      "下一改动针对最早的上游原因。"
+    ],
+    "backtracksTo": ["guide-minimum-prototype", "special-test-type-selection"],
+    "nextOptions": ["guide-rules-information", "special-accessibility-task-observation", "guide-presentation-release"],
+    "toolIds": ["playtest-selector", "test-plan"],
+    "status": "review"
+  },
+  {
+    "id": "special-accessibility-task-observation",
+    "title": "用一个任务记录无障碍障碍",
+    "stage": "规则与信息",
+    "problem": "我知道应该考虑无障碍，却只会检查字号、颜色或组件清单，不知道怎样把玩家实际遇到的阻碍变成下一次设计实验。",
+    "outcome": "一份不含总分的任务观察单：版本、媒介、具体任务、实际动作、阻碍、受影响的组件功能、协助与代价、玩家原话和复测实验。",
+    "coreMinutes": 10,
+    "opening": "玩家从桌子对面读不到港口需求，请同伴代读后完成了交货。但代读同时暴露了他准备保留的私人货物。若只记录“在帮助下完成”，设计者会错过自主性和策略隐私已经改变。无障碍观察要记录任务、帮助和帮助的代价。",
+    "steps": [
+      {
+        "label": "冻结版本、媒介和一个任务",
+        "prompt": "不要测试抽象的‘视觉无障碍’。写清玩家要开盒、设置、识别、选择、操作、查询、沟通、结算或收纳什么，以及座位、节奏、组件精度和现场条件。",
+        "example": "v0.7 实体桌；玩家坐在长边，从自己位置读取三座港口需求并选择一座交货。"
+      },
+      {
+        "label": "先写实际动作，再写障碍判断",
+        "prompt": "记录停顿、靠近、旋转组件、误拿、询问、放弃或使用辅助技术等可观察动作，避免先写诊断或人格解释。",
+        "example": "玩家两次把港口板转向自己，靠近到约 20 厘米，仍把蓝色需求读成绿色。"
+      },
+      {
+        "label": "指出受影响的信息或组件功能",
+        "prompt": "说明它承载公共状态、私人状态、随机器、计数、空间关系、规则查询或其他功能；同一种物件在不同功能中会产生不同障碍。",
+        "example": "港口板承载所有人都需从远处读取的公共状态，不是只在手中查看的私人卡牌。"
+      },
+      {
+        "label": "记录玩家策略、协助和协助代价",
+        "prompt": "把协助者当作一个系统角色：分开记录玩家策略、他人看见的信息、代替的动作或决定、介入时点，并检查时间、隐私、身体、关系与适配劳动代价。",
+        "example": "同伴代读使任务继续，但同时看到玩家准备保留的货物，改变了谈判信息。"
+      },
+      {
+        "label": "只改一个条件并复测同一任务",
+        "prompt": "把候选修法写成实验和成功信号；同一玩家不代表全部玩家，同一次成功也不代表整款游戏通过。",
+        "example": "在港口颜色旁加可从任意方向识别的形状；复测时玩家无需转板或代读即可选择，且私人货物保持隐藏。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "勾完一张清单就给游戏一个无障碍总分。",
+        "repair": "保留每个任务的语境、阻碍、协助和代价；标签只用于检索，不能替代细节。"
+      },
+      {
+        "mistake": "根据医学诊断猜玩家需要什么。",
+        "repair": "邀请有相关生活经验的玩家参与，记录他们实际采用的策略和原话，不让设计者替他们发言。"
+      },
+      {
+        "mistake": "有人帮忙后完成任务，就算问题解决。",
+        "repair": "检查帮助是否代替决定、暴露私人信息、拖慢实时机制或把适配劳动推给玩家。"
+      },
+      {
+        "mistake": "把所有障碍都修成更多文字。",
+        "repair": "先识别受影响的功能；形状、位置、触觉、声音、节奏或规则结构可能比增加段落更合适。"
+      },
+      {
+        "mistake": "一种适配在当前维度有效，就当作整项任务已解决。",
+        "repair": "用同一任务检查它是否制造新的操作、沟通、认知、隐私、时间或成本障碍。"
+      }
+    ],
+    "whenToBreak": [
+      "出现疼痛、安全、羞辱、强烈情绪或玩家要求停止时立即停止，不等待任务完成。",
+      "没有目标玩家参与时可以做启发式预检，但必须标为设计者假设，并安排有生活经验的玩家复核。",
+      "某些适配会有意改变时间压力、隐藏信息或难度；可以作为变体，但要明确它改变了哪些体验条件。"
+    ],
+    "exercise": {
+      "title": "填写一张任务观察单",
+      "prompt": "选择一次已经发生的设置、读取、操作、查询或沟通任务，写实际动作、阻碍、组件功能、玩家策略、外部协助、协助代价和一个复测实验。",
+      "exampleOutput": "v0.7 实体桌；从长边读取港口；玩家转板两次仍误读；板块承载公共状态；同伴代读暴露私人计划；下版加形状编码，复测无需代读且信息不泄露。"
+    },
+    "evidenceBoundary": "本指南综合桌游参与者研究、中文视障与行动障碍参与记录、中国视障玩家数字游戏相邻研究、听障玩家沟通研究、神经多样性成人研究、Meeple Centred Design 与残障顾问实践。中文桌游材料仍多由机构、亲友或开发者转述，自闭症成人桌游研究来自英国，数字游戏证据不能直接规定实体组件；它们不能代表全部残障经验，也不能替代共同设计或真实任务测试。任务维度是记录入口，不是通过标准。",
+    "resourceIds": ["meeple-centred-design", "mcd-heuristic-toolkit-paper", "blv-tabletop-experiences", "blv-rulebook-voice-agent", "accessible-rulebook-best-practices", "daniel-solis-color-coding", "communication-challenges-social-board-games", "games-inclusion-lab-neurodivergent", "abletop-mobility", "abletop-accessibility-cost", "bennett-autistic-adults-boardgames", "ran-blv-mobile-games-china", "flyingv-braille-boardgame-playtests", "tpwl-tactile-party-game", "dcard-wheelchair-boardgame-venue"],
+    "claimIds": ["claim-accessibility-no-total-score", "claim-accessibility-observation-preserves-autonomy", "claim-rulebook-access-is-format-and-pace", "claim-information-interface-needs-task-testing", "claim-accessibility-is-intersectional-task", "claim-communication-access-is-pace-position-power", "claim-physical-access-includes-setup-precision-time", "claim-cognitive-access-needs-observation-codesign", "claim-access-cost-is-part-of-access", "claim-access-distinguishes-entry-agency-belonging", "claim-assistance-is-a-system-role", "claim-accessible-adaptation-is-versioned", "claim-structure-can-reduce-or-shift-social-load", "claim-venue-access-needs-current-path-data"],
+    "conceptIds": ["accessibility-task", "observation", "information-structure", "player-aid", "rulebook", "prototype-fidelity"],
+    "doneWhen": [
+      "记录的是一个具体任务和实际动作，而不是诊断推测。",
+      "写清受影响的信息或组件功能。",
+      "玩家策略、外部协助和协助代价彼此分开。",
+      "下一版只改变一个条件，并用同一任务复测。",
+      "没有把一次结果压成总分或全部玩家结论。"
+    ],
+    "backtracksTo": ["special-blind-rules-test", "guide-minimum-prototype"],
+    "nextOptions": ["guide-rules-information", "guide-playtest-feedback", "guide-presentation-release"],
+    "toolIds": ["accessibility-observation", "test-plan"],
+    "status": "review"
+  },
+  {
+    "id": "special-balance-one-risk",
+    "title": "先定义这轮到底在平衡什么",
+    "stage": "核心系统",
+    "problem": "我有很多胜率、卡牌数值和测试意见，却不知道这款游戏是否真的不平衡，也不知道下一版该动哪里。",
+    "outcome": "一张不生成总分的平衡诊断单：目标体验、一个失效风险、系统基线、要记录的证据、反驳信号与单一改动。",
+    "coreMinutes": 11,
+    "opening": "两人海上贸易游戏的先手平均多 4 分，并不自动等于失败。先问差距来自第一轮市场选择、高手对新手、某条资源复利，还是目标体验允许的主动权；再决定记录座位、选项、每轮收入、分差或玩家是否仍认为自己能改变结果。平衡诊断从问题开始，不从一个总分开始。",
+    "steps": [
+      {
+        "label": "写清要保护的体验",
+        "prompt": "说明目标玩家、人数、时长与希望保留的张力，再选择本轮只处理的一种失效风险。",
+        "example": "两名熟悉规则的轻中策玩家应在 45 分钟内都能通过市场选择影响收入；本轮只查先手优势是否持续复利。"
+      },
+      {
+        "label": "画出产生差距的关系",
+        "prompt": "按资源来源、保存、转换、消耗和计分，或按选项成本、收益、限制与反馈回路，写出最小系统模型。",
+        "example": "先手先买港口 → 港口每轮产 1 金 → 更多金币更早买第二港口 → 领先继续扩大。"
+      },
+      {
+        "label": "只计算当前问题需要的基线",
+        "prompt": "可写期望值、成本换算、牌库分布或理论上限，但必须同时写模型假设与它无法证明的体验。",
+        "example": "港口若平均存活四轮，基础产出是 4 金；这不能证明玩家感到公平，也未包含被封锁概率。"
+      },
+      {
+        "label": "把指标连到版本和行为",
+        "prompt": "选择最多三项会改变决定的记录，并写清版本、人数/座位、玩家经验、测试情境与样本量；不要收集用不上的数字。",
+        "example": "v0.8；交换先后手的配对测试；记录第一选择、每轮收入和终局分差，同时记录落后者第几轮认为已无法追回。"
+      },
+      {
+        "label": "先写反驳信号，再改一个条件",
+        "prompt": "说明什么结果会让你保留现状或改换解释；下一版只改变一个源头、成本、信息或反馈关系，再复测同一问题。",
+        "example": "若换座后优势跟着玩家而非座位移动，先手假设被削弱；若跟着座位移动，下版只给后手 1 枚一次性折扣。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把所有选项胜率接近 50% 当成平衡完成。",
+        "repair": "先定义当前环境中的公平、能动性、可恢复性、信息与受众目标；不同问题需要不同指标。"
+      },
+      {
+        "mistake": "看见期望值相同就认定两个选项一样。",
+        "repair": "同时检查结果分布、时机、机会成本、组合、可见信息和玩家对后果的控制。"
+      },
+      {
+        "mistake": "一轮同时改起始资源、卡牌成本和终局计分。",
+        "repair": "保留同一诊断问题，只改变最可能的上游关系，否则新结果无法归因。"
+      },
+      {
+        "mistake": "只保留胜负，不记录版本和玩家语境。",
+        "repair": "让每个指标都能回到规则版本、人数/座位、玩家经验、局面与测试方式。"
+      }
+    ],
+    "whenToBreak": [
+      "不对称阵营可以有意提供不同难度、信息和学习曲线；目标不一定是单局 50% 胜率，但差异需要清楚标示和测试。",
+      "极短、派对或家庭向游戏可能有意采用明显自动追赶或高随机性；若它保护目标玩家的参与感，不必为了隐藏机制而移除。",
+      "涉及赌博、付费、公平竞赛或安全风险时，需要更严格的数学、伦理和领域审查；本站诊断单不能作为合规结论。",
+      "核心决定尚未出现时，先回到最小原型；不要用精细数值替代一条可反复发生的选择。"
+    ],
+    "exercise": {
+      "title": "完成一次单风险平衡诊断",
+      "prompt": "选择当前最担心的一种失效，写目标体验、系统关系、当前基线、最多三项证据、反驳信号和下一版唯一改动。",
+      "exampleOutput": "v0.8 两人局；查先手市场优势是否复利；交换先后手记录首选、每轮收入、终局分差；若优势随玩家而非座位移动则反驳；下版只测试后手一次性折扣。"
+    },
+    "evidenceBoundary": "平衡课程和设计师日志提供可操作模型与案例，韩国研究提供一个 78 名大学生、八款游戏、八周问卷的相关性样本；它们都不能给出适用于所有桌游的通过率、样本量或参数。本站的单风险流程是把这些证据与原型测试方法结合后的产品推断。",
+    "resourceIds": ["game-balance-intro", "game-balance-cost-curves", "game-balance-probability", "game-balance-metrics", "game-balance-feedback-pacing", "boardgame-balance-experience-study", "underdog-catch-up-mechanisms", "lostgarden-value-chains", "league-game-elements-resources", "quarantine-economy-diary"],
+    "claimIds": ["claim-balance-needs-target", "claim-probability-is-not-experience-proof", "claim-cost-curve-is-baseline", "claim-feedback-loop-needs-purpose", "claim-balance-data-needs-provenance", "claim-resource-flow-before-tuning", "claim-balance-pass-is-one-risk"],
+    "conceptIds": ["balance-target", "expected-value", "feedback-loop", "resource-flow", "meaningful-choice", "hypothesis", "observation", "version"],
+    "doneWhen": [
+      "只处理一种明确的平衡失效风险。",
+      "系统基线写明假设与不能证明的体验。",
+      "指标连到版本、人数/座位、玩家语境和行为。",
+      "反驳信号在查看新结果前已经写下。",
+      "下一版只改变一个上游条件并复测同一问题。"
+    ],
+    "backtracksTo": ["guide-experience-intent", "guide-core-system", "guide-minimum-prototype"],
+    "nextOptions": ["special-test-type-selection", "guide-playtest-feedback"],
+    "toolIds": ["balance-pass", "playtest-selector", "test-plan"],
+    "status": "review"
+  },
+  {
+    "id": "special-learning-path",
+    "title": "让玩家先做对第一件事",
+    "stage": "规则与信息",
+    "problem": "规则已经写得很完整，但首局讲解仍然很长；玩家听完能复述名词，却不知道轮到自己时先看哪里、做什么、遇到问题怎样恢复。",
+    "outcome": "一张不生成理解分的单任务学习路径：目标玩家、现在必须知道的内容、立即实践、延后信息、查询入口、第一次偏离和下一版单一改动。",
+    "coreMinutes": 12,
+    "opening": "海上贸易游戏有十种港口奖励。首局不必先解释全部组合；本轮只验证新玩家能否看懂需求、选择一件货物并完成一次交货。讲解目标和当前三个动作后，让玩家实际执行，再观察他是否能从个人辅助找到容量限制。教学完成的证据不是讲者说完，而是玩家在桌面做出第一个有意义决定并知道卡住时去哪里找。",
+    "steps": [
+      {
+        "label": "冻结一个学习任务和语境",
+        "prompt": "写规则版本、玩家的桌游经验与语言、教学媒介和一个要完成的动作；不要用‘理解整款游戏’作为任务。",
+        "example": "v0.9；两名第一次接触项目的中文轻中策玩家；口头讲解加实体组件；只完成一次合法交货。"
+      },
+      {
+        "label": "分开现在要用与可以延后",
+        "prompt": "只保留完成当前决定所需的目标、对象、动作和反馈；把少见例外、完整计分和策略建议标到何时再引入。",
+        "example": "现在说明港口需求、交货与收入；货舱溢出在首次容量已满时指出查询入口，终局套装分暂不讲。"
+      },
+      {
+        "label": "解释后立刻安排桌面动作",
+        "prompt": "用真实组件演示或让玩家完成一个可重置、低风险决定；预先写可观察的成功动作，而不是问‘懂了吗’。",
+        "example": "玩家从三个港口中指出可交货目标，移动一枚货物并自己更新金币；允许演示局面重置。"
+      },
+      {
+        "label": "给卡住时的查询与恢复入口",
+        "prompt": "为高频步骤和易忘限制指定玩家辅助、规则索引、图示或数字入口；从玩家真实用词测试能否找到并执行答案。",
+        "example": "玩家说‘船装满了怎么办’，先在个人辅助看到容量图标，再按‘货舱已满’入口找到弃置规则。"
+      },
+      {
+        "label": "记录第一次偏离并只改一处",
+        "prompt": "保留第一次错误动作、查看位置、恢复路径和主持人介入；下一版只改最早的上游信息，再用同一任务复测。",
+        "example": "玩家先看终局计分页并把订单当货物；主持人在 03:10 指向组件表。下版只给订单背面增加同名标签并重测交货任务。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把规则书目录从头到尾讲一遍。",
+        "repair": "围绕玩家下一步要做的决定排序；查询结构可以与教学顺序不同，但必须有清楚入口。"
+      },
+      {
+        "mistake": "玩家点头或复述正确就宣告教学成功。",
+        "repair": "让玩家在桌面执行并更新状态；复述只用来发现遗漏和换词，不能替代行动证据。"
+      },
+      {
+        "mistake": "把所有规则压进一张小字玩家辅助。",
+        "repair": "为一个高频任务和明确持有人设计辅助，测试座位可见度、私人信息与真实查询路径。"
+      },
+      {
+        "mistake": "看见视频或互动教程就默认比纸质规则好。",
+        "repair": "在同一任务、玩家与环境中比较媒介；同时保留离线、长期可维护和可查询的规则入口。"
+      }
+    ],
+    "whenToBreak": [
+      "隐藏身份、谜题与推理游戏可能不能让玩家正式执行示例决定；可使用公开练习局面、虚构组件或结束后反向教学。",
+      "极短派对游戏可能直接在一轮演示中完成全部上手，不需要独立教学路径文档，但仍应记录第一次无法开始的位置。",
+      "经验玩家可能从完整规则和熟悉机制更快建立模型；不要把新手渐进顺序强迫给所有玩家，提供跳过与查询入口。",
+      "视频、应用和网页会失效、断网或过期；即使选择数字教学，也应保留与同一版本兼容的盒内规则和勘误路径。"
+    ],
+    "exercise": {
+      "title": "画一条十分钟学习路径",
+      "prompt": "选择设置、第一次决定、完整回合、查询、反向教学或中断后恢复中的一个任务；写现在要知道、延后内容、一次桌面动作、恢复入口、成功动作和预计第一偏离。",
+      "exampleOutput": "v0.9；第一次交货；现在讲需求/交货/收入，延后套装分；玩家自己选择港口并更新金币；容量限制从个人辅助进入；若先查看终局页，下一版只改入口标签。"
+    },
+    "evidenceBoundary": "Purdue 研究摘要确认 12 名设计师/编辑访谈，但本轮未取得正文；Linköping 研究只有 20 人、单款大型游戏，实体与数字规则的任务时间和导航错误无显著差异；另一项三媒介研究只有 12 人、单款教育游戏。职业编辑、玩家博客和数字工具提供可操作案例与相互冲突的立场，不能给出统一教学顺序或媒介排名。本站的单任务学习路径是把这些证据与本地课程、狗头人指南第 50–53 页的规则写作和按规则试玩结构结合后的产品推断。",
+    "resourceIds": ["bushner-hobbyist-rulebook-practices", "wanstrom-physical-digital-rulebook", "frontiers-two-part-onboarding", "dvgiochi-standard-rulebook", "naylor-paul-grogan-rulebook", "pratt-rulebook-editors-interview", "hollandspiele-rulebook-examples", "unfair-rulebook-glossary", "dized-tutorial-creation", "rulepop-digital-rules", "bumbling-teach-board-game", "bumbling-great-rulebook", "semester-baru-media-comparison"],
+    "claimIds": ["claim-teaching-and-reference-are-different-tasks", "claim-onboarding-needs-action", "claim-rule-medium-needs-task-context", "claim-player-aid-needs-task-and-owner", "claim-examples-need-diagnostic-purpose", "claim-terminology-is-interface-contract", "claim-teachability-data-needs-provenance"],
+    "conceptIds": ["onboarding", "teaching-path", "lookup-path", "teach-back", "rulebook", "player-aid", "information-structure", "observation", "version"],
+    "doneWhen": [
+      "规则版本、玩家语境和一个学习任务已经冻结。",
+      "现在必须知道与可以延后的信息分开记录。",
+      "讲解后有一次可重置、可观察的桌面动作。",
+      "高频卡点有能从玩家真实用词进入的恢复路径。",
+      "第一次偏离、主持人介入和下一版单一改动都被保留。"
+    ],
+    "backtracksTo": ["guide-rules-information", "special-blind-rules-test", "special-test-type-selection"],
+    "nextOptions": ["special-accessibility-task-observation", "guide-playtest-feedback", "guide-presentation-release"],
+    "toolIds": ["teaching-path", "accessibility-observation", "test-plan"],
+    "status": "review"
+  },
+  {
+    "id": "special-decision-trace",
+    "title": "别数选项，追一轮真实决定",
+    "stage": "核心系统",
+    "problem": "规则里有很多行动、卡牌和得分路线，但测试者每轮仍走同一条路；设计者只看到合法选项树，不知道玩家当时真正考虑了什么、怎样预测后果、其他玩家是否改变了判断。",
+    "outcome": "一张不计算决定质量或策略深度的单轮决定轨迹：当前目标、所见信息、表面选项、玩家认为可行的选项、机会成本、互动作用路径、预测、实际行动、后果和下一版单一改动。",
+    "coreMinutes": 14,
+    "opening": "海上贸易游戏让玩家在航行、交货、交易和升级中选择。设计者以为有四个选择；测试者却只考虑航行与交货，因为升级收益要三轮后才看得见，而交易又被他误解为帮助对手。先不要新增第五个按钮。冻结港口即将补货前的这一轮，记录玩家目标、真正进入考虑的选项、他预测谁会受影响，以及行动后怎样修正模型。",
+    "steps": [
+      {
+        "label": "冻结一个决定时刻和玩家语境",
+        "prompt": "写版本、人数/座位、玩家经验、阶段、轮次和一个真实决定；不要用‘整局策略’代替具体时刻。",
+        "example": "v1.1；四人实体局；第一次玩；第 3 轮补货前；蓝色玩家必须决定交货还是保留货物。"
+      },
+      {
+        "label": "分开合法选项与玩家的可行选项",
+        "prompt": "先列桌面上规则允许的候选，再请玩家在行动后回顾当时真的考虑了哪些；记录被排除的第一原因。",
+        "example": "合法：航行/交货/交易/升级；玩家只考虑航行和交货，认为交易等于白送对手，升级回报看不见。"
+      },
+      {
+        "label": "写目标、信息与机会成本",
+        "prompt": "记录玩家当时想推进或避免什么、看到/没看到什么，以及选择一项会放弃哪一项有价值的可能。",
+        "example": "目标是本轮拿到 5 金避免贷款；不知道下一张港口需求；现在交货会放弃等补货后凑套装的机会。"
+      },
+      {
+        "label": "画出互动作用路径和预测",
+        "prompt": "若他人影响决定，写谁的什么行动通过状态、信息、价值或关系改变了候选，以及玩家预计对方会怎样回应。",
+        "example": "红色玩家买走唯一蓝货，使套装路线贬值；蓝色玩家预计若保留货物，红色会继续封锁北港。"
+      },
+      {
+        "label": "比较预测与后果，只改一处",
+        "prompt": "记录实际行动、即时/延后后果、反馈是否可见，以及玩家模型怎样改变；只修改最早让决定坍缩或变得任意的条件。",
+        "example": "玩家交货后才发现升级会立即增加容量。下版只在升级格增加即时容量变化，不增加新行动。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把规则上的四个合法动作当成四个有意义选择。",
+        "repair": "记录玩家当时真的考虑了什么，以及其余动作因显然更差、信息不清、后果相同还是负担过重被排除。"
+      },
+      {
+        "mistake": "用思考时间长证明策略很深。",
+        "repair": "分开规则检索、状态计算、信息不清和长期学习；第一局卡住可能只是摩擦。"
+      },
+      {
+        "mistake": "把直接攻击调低就称为更好的互动。",
+        "repair": "画作用路径和回应机会；直接度只描述方式，仍要按目标体验测试伤害、谈判、权力和节奏。"
+      },
+      {
+        "mistake": "为了可重玩性先加阵营、卡牌和随机地图。",
+        "repair": "先找到重复局次中趋同的决定；只有变体迫使玩家重新估值时才增加。"
+      }
+    ],
+    "whenToBreak": [
+      "派对、即兴、角色扮演和表达型游戏的决定可能主要改变关系或叙事，不必都连接胜率；把目标改写为相应体验后仍可追踪。",
+      "同时行动、竞速或实时游戏无法完整口述思考过程；可用桌面录像、行动顺序和简短回顾，但不要让回顾干扰节奏。",
+      "隐藏身份和谈判局的公开追问可能泄露信息或改变后续关系；在局后回顾，并记录记忆偏差和玩家是否愿意分享。",
+      "形式化双人游戏可以用枚举或代理先找必胜路线；真人轨迹仍回答玩家何时能看见它、是否觉得有选择。"
+    ],
+    "exercise": {
+      "title": "追踪一个刚刚发生的决定",
+      "prompt": "选一轮不超过两分钟的决定；写合法选项、玩家认为可行的选项、当时目标、机会成本、他人作用、行动前预测、实际后果和第一项应改条件。",
+      "exampleOutput": "四个合法动作中只考虑两项；玩家以为升级三轮后才生效，选择立即交货；结果发现容量即时增加。下版只改升级格的即时反馈，并用同一局势复测。"
+    },
+    "evidenceBoundary": "2026 年 Nature 研究覆盖超过 1000 人和 121 款多数陌生的双人策略棋盘游戏，支持新手会使用浅层目标导向模拟，但不能外推到谈判、合作、隐藏信息和熟练社群。Lantz 等人的策略深度论文明确是奠基性形式模型，不是现成评分器。两款 Flash 游戏、超过 27000 人的次要目标 A/B 结果不能直接代表实体桌游乐趣。设计师演讲、访谈、玩家博客和 Decision Space 分析提供相互冲突的分类与案例；本站的单轮轨迹是把它们转成可反驳观察的产品推断。",
+    "resourceIds": ["intuitive-gamer-nature-2026", "king-meaningful-choice-2018", "lantz-depth-strategic-games", "rosewater-decisions-part-one", "hoffman-improving-player-choices", "gil-hova-interaction-slides", "faidutti-indirect-interaction", "wehrle-kingmaking-gdc", "oath-wehrle-interview", "skeleton-code-kingmaking", "daniel-games-replayability", "decision-space-depth-2026", "decision-space-shapes", "decision-space-objectives", "variable-replayability-player", "bumbling-depth-replayability", "uw-secondary-objectives"],
+    "claimIds": ["claim-option-count-is-not-choice-quality", "claim-novices-use-shallow-goal-search", "claim-depth-is-sustained-learning-not-complexity", "claim-interaction-needs-effect-path", "claim-interaction-directness-is-not-value", "claim-objective-structure-shapes-tradeoffs", "claim-replayability-is-not-variability", "claim-decision-trace-needs-player-model"],
+    "conceptIds": ["decision-space", "viable-option", "strategic-depth", "interaction-path", "replayability", "variability", "meaningful-choice", "agency", "observation", "hypothesis"],
+    "doneWhen": [
+      "版本、玩家语境、局面和一个决定时刻已经冻结。",
+      "合法选项与玩家当时真正考虑的可行选项分开记录。",
+      "目标、信息、机会成本和互动作用路径至少有一项具体证据。",
+      "行动前预测、实际后果和反馈可见性已经比较。",
+      "下一版只修改一个让决定坍缩、任意或不可见的上游条件。"
+    ],
+    "backtracksTo": ["guide-experience-intent", "guide-core-system", "special-balance-one-risk"],
+    "nextOptions": ["special-test-type-selection", "guide-playtest-feedback", "special-learning-path"],
+    "toolIds": ["decision-trace", "balance-pass", "test-plan"],
+    "status": "review"
+  },
+  {
+    "id": "special-shared-decision-observation",
+    "title": "别数谁说得多，追一次共同决定",
+    "stage": "测试与反馈",
+    "problem": "合作、谈判或隐藏信息局里，有人觉得自己没有参与决定。观察者却只记谁说话最多，马上把某人贴成“强势玩家”，没有分开信息、提案、否决、拍板、执行、同意与沟通可达性。",
+    "outcome": "一张不计算参与度或合作能力的共同决定轨迹：参与约定、决定归属、信息与权限分布、提案与回应、最终行动、执行、后果、同意核对、沟通条件、第一次权力错位和下一版单一改动。",
+    "coreMinutes": 16,
+    "opening": "四人合作游戏中，红色玩家提出路线、解释风险并帮蓝色玩家移动棋子。仅凭这些动作无法判断是否发生决定代办：蓝色玩家可能主动请求教学，也可能本想自己判断却来不及说话。先冻结这次航线决定，问清本桌如何约定建议与拍板，再追谁掌握信息、谁能提案/否决/执行、蓝色如何回应，以及最终后果落在谁的角色上。",
+    "steps": [
+      {
+        "label": "先写参与约定和一个决定时刻",
+        "prompt": "用角色名或代号记录版本、桌面语境和一个具体决定；局前或局后确认本桌希望自由建议、行动者拍板、共同共识、指定导师还是其他方式。",
+        "example": "v0.7；四人第一次合作局；第 3 轮选择航线；约定先讨论，再由当前驾驶员拍板，除非他主动请求代办。"
+      },
+      {
+        "label": "画信息与权限，而不是数发言",
+        "prompt": "分别写谁知道什么、哪些信息可分享，以及谁能提案、质疑、修改、否决、拍板和执行；不要把坐得近、说得快或动棋子等同决定权。",
+        "example": "侦察员知道风暴牌，可口述不可展示；所有人能提案；驾驶员可否决并拍板；记录员只执行移动。"
+      },
+      {
+        "label": "追提案、回应与沉默",
+        "prompt": "按顺序记录提出的选项、追问、反提案、接受、拒绝与中断。沉默只记为‘未确认’，不要推断同意、理解或没有想法。",
+        "example": "红提出北航线；蓝问燃料；绿提出南线；红打断解释最优解；蓝未再回应。观察者不能把蓝的沉默写成接受。"
+      },
+      {
+        "label": "比较归属、执行、后果与同意",
+        "prompt": "写最终是谁决定、谁执行、谁承担资源或角色后果；事后用中性问题确认指导是否被请求、是否符合约定，以及玩家是否想在下一次改变边界。",
+        "example": "红替蓝拍板，记录员移动蓝的船，燃料从蓝的角色板扣除；蓝事后说只想听两个选项，不希望别人直接定。"
+      },
+      {
+        "label": "只修第一次错位，再复现",
+        "prompt": "先修改信息、权限、轮次、沟通通道、时间或提示中的一个上游条件；用相近决定复测，不以输赢或发言均等作为成功。",
+        "example": "下版只加入‘行动者复述两个选项后拍板’提示，不隐藏新信息；复测蓝是否能提出、拒绝并理解后果。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "用发言次数、音量或资历给玩家贴‘alpha’标签。",
+        "repair": "追信息、权限、提案、否决、拍板、执行与已确认的参与约定；记录行为，不诊断人格。"
+      },
+      {
+        "mistake": "把所有私人信息和禁言规则当作反决定代办解法。",
+        "repair": "先写它要创造的核心体验，再测试信息分配是否真的产生贡献，同时检查学习、指导和无障碍代价。"
+      },
+      {
+        "mistake": "角色各不相同就默认每个人都有能动性。",
+        "repair": "追角色是否拥有可用信息、可拒绝的决定和可见后果；专属能力可能仍由别人替他计算和选择。"
+      },
+      {
+        "mistake": "谈得热闹就称为有意义的谈判。",
+        "repair": "写提议改变了什么、谁有拒绝杠杆、承诺能否执行，以及谈判怎样在终局前收束。"
+      }
+    ],
+    "whenToBreak": [
+      "玩家主动请求导师、翻译、规则协助或代为操作时，权力不对称可能符合其同意；仍要允许随时收回或改变。",
+      "安静、手语、文字、辅助沟通设备或延迟回应同样是参与；不要用口语速度和眼神接触定义投入。",
+      "社交推理、谈判和背叛游戏可能有意制造压力、误导与沉默；先声明社会契约与安全边界，再区分角色内行为和桌外同意。",
+      "局后回顾会受记忆、礼貌和群体关系影响；保留‘无法判断’，不要从沉默、笑声或胜负反推真实同意。"
+    ],
+    "exercise": {
+      "title": "追踪一次刚刚发生的共同决定",
+      "prompt": "冻结一次不超过三分钟的行动；写参与约定、决定归属、信息与权限、提案顺序、回应、最终拍板、执行者、后果、同意核对、沟通条件和第一处错位。",
+      "exampleOutput": "本桌约定驾驶员拍板；侦察员持有风暴信息，所有人可提案；红连续给出结论并替蓝选航线，蓝沉默，记录员执行，燃料由蓝承担。局后蓝说想自己从两个选项中选。下版只加入行动者复述并确认后拍板的停顿。"
+    },
+    "evidenceBoundary": "关于决定代办的同意分类来自 Analog Game Studies 的文献回顾与案例论证，不是发生率量表。DiGRA 匿名合作桌游研究是小型探索性焦点小组与原型。信息不对称研究目前只取得十对数字原型参与者的摘要；社交推理研究为三十三名不同玩家的单一应用辅助设置。设计师日志和玩家评论提供机制意图与体验反例，不能单独证明因果。沟通无障碍研究提醒语速、重叠、座位、渠道与信息可见性本身会分配参与权。本指南和工具因此只形成一次局面的可反驳记录，不计算领导力、合作能力、同意或参与度总分。中文一线设计文章仍稀少，现有两篇主要覆盖对抗游戏的可预期与可追踪信息，不足以代表中文合作桌游社群。",
+    "resourceIds": [
+      "miller-quarterbacking-consent",
+      "linderoth-anonymity-coop-board-games",
+      "reis-coop-information-asymmetry",
+      "joint-focus-coop-communication-framework",
+      "wiseman-social-deduction-data",
+      "koster-trust-spectrum",
+      "wehrle-quid-for-quo",
+      "goldman-paint-roses-quarterbacking",
+      "gideon-quarterbacking-player-problem",
+      "dude-limited-communication-games",
+      "mantigeist-social-deduction-diary",
+      "lauret-four-atoms-coop",
+      "communication-challenges-social-board-games",
+      "quarterbacking-player-analysis",
+      "xinmao-hidden-information",
+      "pingo-trackable-public-information"
+    ],
+    "claimIds": [
+      "claim-shared-decision-needs-consent-context",
+      "claim-coop-contribution-needs-effect-path",
+      "claim-communication-limits-are-mechanics-not-default-fix",
+      "claim-private-information-redistributes-power",
+      "claim-negotiation-needs-leverage-and-bounds",
+      "claim-social-deduction-uses-lived-social-data",
+      "claim-communication-access-is-pace-position-power"
+    ],
+    "conceptIds": [
+      "shared-decision",
+      "decision-substitution",
+      "decision-ownership",
+      "information-asymmetry",
+      "communication-constraint",
+      "negotiation-leverage",
+      "agency",
+      "interaction-path",
+      "observation",
+      "accessibility-task"
+    ],
+    "doneWhen": [
+      "版本、桌面语境、一个决定时刻和参与约定已经写明。",
+      "信息、提案、修改、否决、拍板与执行权限分开记录。",
+      "提案与回应按顺序保存，沉默没有被自动解释为同意。",
+      "最终决定、执行、后果和事后同意核对已经比较。",
+      "下一版只修改第一次出现的权力、信息或沟通错位，并准备相近局面复测。"
+    ],
+    "backtracksTo": ["guide-experience-intent", "guide-core-system", "special-decision-trace"],
+    "nextOptions": ["guide-playtest-feedback", "special-accessibility-task-observation", "special-test-type-selection"],
+    "toolIds": ["shared-decision", "decision-trace", "accessibility-observation", "test-plan"],
+    "status": "review"
+  },
+  {
+    "id": "special-theme-commitment-harm-review",
+    "title": "别问主题够不够浓，追它让玩家做了什么",
+    "stage": "体验意图",
+    "problem": "设计者说作品‘尊重历史’或‘关于共情’，却没有检查玩家反复执行、被奖励、需要扮演和可以退出的具体路径；史实、解读、虚构与顾问意见也混在一起。",
+    "outcome": "一张不计算伦理分或安全分的主题承诺与伤害复核：受众/语境、可玩视角、重复行动/奖励/省略、史料与创作边界、文化协作、内容暴露、告知与退出/修复，以及第一处不匹配。",
+    "coreMinutes": 18,
+    "opening": "一款关于保护岛屿社群的合作游戏，可能在文案中充满关怀，却让玩家每轮以不可玩居民为无名劳力、用增长分数奖励搬迁。先不判定作品是否‘有害’：把声称的承诺与玩家实际位置并排，追踪行动、奖励、被自动化的人与玩家暴露强度，再决定是改系统、补研究、引入协作，还是提供透明的选择路径。",
+    "steps": [
+      {
+        "label": "写一句主题承诺和一个受众语境",
+        "prompt": "不写‘主题是海岛’；写这款作品希望玩家透过哪个位置理解哪种关系，并写预期谁在何种桌面或教学语境中游玩。",
+        "example": "承诺：让家庭玩家看见债务、基础设施与社群自治的冲突；语境：波多黎各内外玩家的公共活动。"
+      },
+      {
+        "label": "追可玩视角、重复行动与奖励",
+        "prompt": "写玩家是谁，每轮反复做什么，系统为什么奖励或惩罚他们，以及谁和什么只被当作资源、背景或自动过程。",
+        "example": "玩家被称为社群组织者，但只能将无名居民方块分配到工作位，且分数只奖励财务增长；承诺与奖励出现第一处错位。"
+      },
+      {
+        "label": "分开史料、解读、虚构与协作",
+        "prompt": "为关键声称记录来源与不确定性；把设计为聚焦而做的解读、为可玩性做的虚构另列。如果涉及具体在世社群，写明与谁、何时、以什么权限协作，不寻找一次性背书。",
+        "example": "财政委员会的法定权限附官方来源；‘债务木筏’是设计隐喻；早期工作坊参与者可修改角色与目标，而非只改措辞。"
+      },
+      {
+        "label": "画内容暴露、告知、选择与修复路径",
+        "prompt": "写玩家会阅读、观察、选择、执行、扮演或对他人施加什么。再写在购买/组局前如何告知，游玩中如何跳过、暂停或结束，出现问题后怎样修复。不询问玩家创伤史。",
+        "example": "玩家会以官员角色选择削减医疗；盒背和组局页提前说明扮演强度；事件模块可事先移除，桌中可无需解释地暂停或结束。"
+      },
+      {
+        "label": "只修第一处不匹配并在相关语境复测",
+        "prompt": "从角色、行动、奖励、省略、研究、协作、内容提示或退出路径中只改一个上游条件；预计谁应看见什么不同，保留拒绝参与与分歧。",
+        "example": "下版只把增长分拆成公共品、自治和债务三项可冲突后果；与预期受众复测是否看见取舍，不以‘没人投诉’为成功。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "主题先出现，就认为机制一定真实。",
+        "repair": "不审查起点，审查最终玩家角色、重复行动、奖励、因果反馈与省略。"
+      },
+      {
+        "mistake": "史实没写错，就认为历史呈现已完成。",
+        "repair": "区分事实正确、可玩视角与伦理取舍；检查谁能行动，谁只被资源化或省略。"
+      },
+      {
+        "mistake": "找一位顾问末期签字，就称作品代表了一个文化。",
+        "repair": "说明顾问的具体位置、权限、阶段与不同意见；支付并署名，让协作有机会改变系统。"
+      },
+      {
+        "mistake": "列了内容提示，就声称游戏安全。",
+        "repair": "把透明告知、选择、退出、修复与实际感受分开；不让提示承担它做不到的保证。"
+      }
+    ],
+    "whenToBreak": [
+      "严肃、不愉快或令人不适的主题可以是作品故意追求的体验；复核不要求消除冲突，而要求意图、暴露与选择清楚。",
+      "抽象游戏没有现实历史人物，仍可透过奖励、所有权、合作或排除表达价值；但不必强行为每项机制发明现实寓意。",
+      "设计者本身属于所表达社群时，其经验是重要来源，但仍不代表社群内部的所有位置或对作品的认可。",
+      "情绪安全证据中的大量程序来自 TTRPG、自由形式与 LARP；封闭系统桌游只能把它们当成待测假设，不能直接宣称效果。"
+    ],
+    "exercise": {
+      "title": "复核一轮主题行动",
+      "prompt": "选玩家每轮都会做的一项行动；写主题承诺、可玩角色、奖励与省略、史料/解读/虚构、涉及的文化协作、玩家暴露方式、内容提示、退出/修复，以及第一处不匹配。",
+      "exampleOutput": "承诺关于社群自治，但玩家只扮演外部管理者、以财务增长得分，居民只是方块。下版只先改目标：让居民组织拥有否决与公共品结果，与相关社群协作复测。"
+    },
+    "evidenceBoundary": "Values at Play 是数字教育游戏方法论和案例；主题/机制双向流程为设计师个人实践。殖民叙事研究包含三款游戏的文档比较、单一批评案例和基于 BGG 的 8786 款语料分析：能支持‘省略也是选择’，不能给单款游戏算伦理分。文化协作来源为顾问、商业团队和 MIT 参与式项目的一手记录，没有成品效果对照。玩家博客提供真实拒绝边界，不代表人群比例。安全话语主要来自 TTRPG/LARP；内容提示元分析主要使用阅读与视听刺激，显示其不会在平均上降低接触后痛苦，但不否定透明告知与知情选择的其他价值。本指南与工具只形成可反驳复核，不证明作品安全、无害、真实或被某社群认可。",
+    "resourceIds": [
+      "daniel-solis-theme-mechanics",
+      "values-at-play-methodology",
+      "analog-orientalism-abstraction",
+      "rubio-history-50-years",
+      "vidal-designing-narrative",
+      "coyote-crow-consulting",
+      "perez-gaming-with-past",
+      "sdhist-gaming-unpleasant",
+      "beyond-solitaire-no-go-theme",
+      "ijrp-psychological-safety",
+      "trigger-warning-meta-analysis",
+      "mit-games-colonialism"
+    ],
+    "claimIds": [
+      "claim-theme-is-system-commitment",
+      "claim-starting-order-does-not-prove-integration",
+      "claim-historical-abstraction-is-selective",
+      "claim-representation-needs-early-participation",
+      "claim-designer-intent-can-diverge-from-player-impact",
+      "claim-content-notes-inform-not-guarantee",
+      "claim-safety-is-contextual-procedure",
+      "claim-harm-review-needs-exposure-path"
+    ],
+    "conceptIds": [
+      "theme-commitment",
+      "historical-abstraction",
+      "playable-perspective",
+      "cultural-collaboration",
+      "content-note",
+      "exposure-path",
+      "exit-repair-path",
+      "theme",
+      "agency",
+      "design-decision"
+    ],
+    "doneWhen": [
+      "一句主题承诺、预期受众与游玩语境已写明。",
+      "可玩角色、重复行动、奖励后果与被自动/省略的人事物已并排。",
+      "关键声称的史料、解读、虚构与不确定性已分开。",
+      "如果涉及具体社群，协作对象、阶段、权限、署名与付费边界已写明或标记为待办。",
+      "内容暴露强度、提前告知、选择、退出与修复路径已分开，且不要求玩家披露创伤。",
+      "第一处不匹配与下一版的单一改动/协作/研究行动已确定。"
+    ],
+    "backtracksTo": ["guide-experience-intent", "guide-core-system", "guide-rules-information"],
+    "nextOptions": ["special-test-type-selection", "guide-playtest-feedback", "guide-presentation-release"],
+    "toolIds": ["theme-review", "test-plan", "feedback"],
+    "status": "review"
+  },
+  {
+    "id": "special-production-assumption-ledger",
+    "title": "别先问一盒多少钱，先冻结一份生产假设",
+    "stage": "呈现与发布",
+    "problem": "一个没有版本、数量、币种、组件规格、包含项和排除项的‘每盒成本’，会让设计者误以为项目已有可靠报价；组件、包装或地区一改，数字已经不再描述同一个产品。",
+    "outcome": "一份把交付路线、带功能的组件规格、报价范围、包装任务、样品验证门与下一条证据连在一起的生产假设账本。",
+    "coreMinutes": 14,
+    "opening": "‘这盒做出来大概 30 元’看起来像答案，却没有说明印量、组件、币种、是否含工装、运输、税费、仓储或履约。生产假设不是为了更早做商业承诺，而是让团队知道现在究竟知道什么、谁说的、属于哪个版本，以及哪条未知最可能改变决定。",
+    "steps": [
+      {
+        "label": "先选交付路线和当前决定",
+        "prompt": "写明投出版社、免费 PnP、小批/POD、自出版大货或众筹，以及目标地区、数量场景和这轮只要作出的一个决定。",
+        "example": "v0.8，自出版 1500 份，目标中国大陆与新加坡；本轮只决定四种异形木件是否改成标准圆片后再询价。"
+      },
+      {
+        "label": "先写组件功能，再写规格",
+        "prompt": "为每项组件记录每盒数量、尺寸/材料/加工、玩家或系统功能、替代方案与证据状态；不知道就明确写未知。",
+        "example": "24 枚 20×4mm 四色单面丝印木圆片，用于盲抽后识别阵营；纸板备选保留图标，但需复测抓取和磨损。"
+      },
+      {
+        "label": "冻结有范围的价格证据",
+        "prompt": "记录币种、日期、数量、来源级别与明确包含/排除项；分开工厂生产、落地到仓和项目全成本。",
+        "example": "USD，1500 份，供应商书面报价；含印刷、木件、装配与外箱，不含模具修改、国际货运、税费、入仓和末端履约。"
+      },
+      {
+        "label": "把包装变成玩家任务",
+        "prompt": "实测盒内空间、整盒尺寸/重量、牌套、开启、取出、设置、桌上取用、复原和辅助需求，不只检查能否塞进。",
+        "example": "戴套后卡堆增加 13mm；可放入但无法单手取出，四人设置还要把全部资源倒出重新分类。"
+      },
+      {
+        "label": "只批准当前样品门能证明的风险",
+        "prompt": "选择文件/印前、组件样、PPC、MPC 或入库抽检；写本门验证任务、预期、实际结果、批准者与仍未覆盖的风险。",
+        "example": "PPC 验证卡牌文字、冲切偏移、盒内 fit 和完整设置；不据此宣称整批无色差或国际运输无损。"
+      },
+      {
+        "label": "只把一个未知升级为更强证据",
+        "prompt": "选择最可能改变当前决定的一项，从粗略假设升级为真实模板、实测、书面报价、样品或发票，并保持其他条件不变。",
+        "example": "只取得两种木件在同一 1500 份数量和盒型下的书面差价，并用替代件复测盲抽识别；其他规格不变。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "用一个工厂单价表示全部项目成本。",
+        "repair": "标明版本、数量、币种、日期、范围与包含/排除项；分开生产、落地和完整项目范围。"
+      },
+      {
+        "mistake": "组件越少、越标准或越便宜就一定更好。",
+        "repair": "先写玩家功能；替换后用同一信息、操作、主题和可访问性任务复测。"
+      },
+      {
+        "mistake": "看过 PDF 校样就批准全部生产。",
+        "repair": "分开文件、材料、PPC、MPC 和入库门，每一门只证明它实际覆盖的风险。"
+      },
+      {
+        "mistake": "所有东西能塞进盒子就认为包装完成。",
+        "repair": "让真实玩家完成开盒、取出、设置、桌上取用、复原与戴套组件收纳。"
+      },
+      {
+        "mistake": "写了环保材料就宣称产品可持续。",
+        "repair": "记录材料、重量、耐用与供应链证据，不生成绿色认证，并保留可访问性复测。"
+      }
+    ],
+    "whenToBreak": [
+      "投出版社时，设计者可能不负责最终生产；仍要说明组件功能、替代底线与希望参与的审阅节点，但不假定自己拥有最终控制权。",
+      "免费 PnP 不需要大货报价，却仍有打印尺寸、耗材、裁切、可访问性和玩家自制劳动。",
+      "小批艺术版或收藏版可以主动接受较高单位成本；账本说明取舍，不强制最低价格或最少组件。",
+      "地区安全标识、测试、知识产权、税务、海关和消费者规则会变化；本指南只标责任与未知，不能替代专业意见。"
+    ],
+    "exercise": {
+      "title": "冻结一个报价场景",
+      "prompt": "选择当前版本与一种交付路线，列出三个最影响产品的组件；为每项写玩家功能、规格、替代和证据状态，再写数量场景、成本范围、包装任务、当前样品门和下一条证据。",
+      "exampleOutput": "v0.8 / 小批 100 份；牌、木圆片、折叠板。当前只有平台计算器价格，不含运费；盒内尺寸未实测。下一步用戴套卡堆和全部组件测最小内部空间，再按相同规格取得正式购物车价格。"
+    },
+    "evidenceBoundary": "本指南综合生产商当前流程与模板、小批平台计价规则、行业协会开发/最终图形审阅、众筹平台履约指南、设计师制造日志、中文生产实践和三个假设盒型的 LCA 传播。供应商页面只描述自身能力，设计师日志是具体项目，环境研究不能给单款游戏算环保分。工具不提供报价、利润预测、供应商排名、合同/税务/海关/合规意见或可持续认证；所有时效数字必须回到当前正式文件、书面报价与专业人员。",
+    "resourceIds": [
+      "panda-manufacturing-tools",
+      "panda-manufacturing-process",
+      "panda-graphic-design-guidebook",
+      "panda-component-guidebook",
+      "game-crafter-bulk-pricing",
+      "ttgda-development-review",
+      "ttgda-final-graphic-test",
+      "kickstarter-fulfillment-2026",
+      "oakleaf-manufacturing-design-tool",
+      "daniel-solis-punch-components",
+      "entro-manufacturing-materials",
+      "gcores-tabletop-production",
+      "gamelab-board-game-lca",
+      "jack-neal-plastic-case",
+      "store-all-bits-insert",
+      "eric-martin-smaller-games-2026"
+    ],
+    "claimIds": [
+      "claim-production-specs-are-design-contract",
+      "claim-quote-needs-versioned-scope",
+      "claim-factory-cost-is-not-delivered-cost",
+      "claim-proof-gates-answer-different-risks",
+      "claim-final-material-needs-task-retest",
+      "claim-packaging-is-player-and-logistics-interface",
+      "claim-component-reduction-needs-function-test",
+      "claim-environmental-impact-needs-system-boundary",
+      "claim-publisher-handoff-needs-responsibility"
+    ],
+    "conceptIds": [
+      "production-assumption",
+      "bill-of-materials",
+      "quote-scope",
+      "landed-cost",
+      "evidence-state",
+      "pre-production-copy",
+      "mass-production-copy",
+      "packout-task",
+      "prototype-fidelity",
+      "release-candidate"
+    ],
+    "doneWhen": [
+      "交付路线、目标地区、数量场景与当前只作的一个决定明确。",
+      "每个关键组件都有玩家功能、可复核规格、替代方案和证据状态。",
+      "价格证据带版本、币种、日期、范围、包含与排除项，没有被包装成价格预测。",
+      "包装完成设置、取用、复原、整盒尺寸与重量的实际任务检查。",
+      "当前验证门、验证任务、实际结果、批准责任与未覆盖风险明确。",
+      "下一步只升级一项会改变决定的未知证据。"
+    ],
+    "backtracksTo": ["guide-minimum-prototype", "guide-rules-information", "guide-presentation-release"],
+    "nextOptions": ["guide-playtest-feedback", "special-accessibility-task-observation", "guide-presentation-release"],
+    "toolIds": ["production-ledger", "test-plan", "accessibility-observation"],
+    "status": "review"
+  },
+  {
+    "id": "special-publishing-route-responsibility-map",
+    "title": "先别问去哪出版，先画清谁要把游戏交到谁手里",
+    "stage": "呈现与发布",
+    "problem": "我不知道该投出版社、发 PnP、用 POD、自己囤货还是做众筹，也容易把平台或合作方想象成会自动接管全部工作。",
+    "outcome": "一张不做路线排名的发布责任图：接收者、公开承诺、不可交换条件、八类工作所有者、证据状态、当前验证门和退出条件。",
+    "coreMinutes": 10,
+    "opening": "一款游戏可以同时存在用于投稿的 v0.9 原型、受控盲测 PnP 和未来众筹设想，但它们不是同一承诺。先写谁要完成什么行动，再把每段责任交给有证据的主体。",
+    "steps": [
+      {
+        "label": "写接收者和可观察行动",
+        "prompt": "写清出版编辑、下载者、平台买家或众筹支持者要收到什么，并完成什么；不要只写我要出版。",
+        "example": "三家目前接受家庭轻策投稿的编辑，用 v0.9 规则、三分钟视频和原型完成首次内部评估。"
+      },
+      {
+        "label": "选当前主路线与不可交换条件",
+        "prompt": "选择授权、PnP、POD、库存自出版、众筹、比赛/展示或混合路线，并写不愿为了它牺牲的权利、体验、时间或责任边界。",
+        "example": "优先授权；历史顾问必须复核最终文本。合作方若不能写入开发节点，就不是当前可接受路线。"
+      },
+      {
+        "label": "逐项分配八类责任",
+        "prompt": "分开设计开发、产品编辑、权利合同、生产质检、需求营销、资金合规、履约客服、版本更新；不要用平台会负责一笔带过。",
+        "example": "POD 平台负责按单生产与寄送；设计者仍负责成品检查、文件权利、页面、推广、玩家支持和更新。"
+      },
+      {
+        "label": "为每个所有者标证据状态",
+        "prompt": "把尚未核验、官网当前要求、书面沟通、合同/服务条款和已完成实测分开，并记录页面或文件日期。",
+        "example": "官网只证明第一轮先交规则与照片；美术、开发和最终批准责任尚未进入合同，保持未定。"
+      },
+      {
+        "label": "审计公开承诺、资金/库存和权利",
+        "prompt": "分别写已经公开说过、收过、签过或生产过什么；路线变化前检查比赛资格、共同创作者、平台、回报和尾货冲突。",
+        "example": "已提交比赛但未签排他、未收款、未生产；联系出版方前核对本届是否限制同期投稿。"
+      },
+      {
+        "label": "只升级一个未知并写退出条件",
+        "prompt": "选择当前核对投稿、合同/合作、需求、众筹预算、履约或入口盲测门；下一步只取得一条会改变路线的证据。",
+        "example": "先核对三家当前目录与征稿页；若都因 90 分钟体量不匹配，回到产品定位而不是立即开众筹。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "按可能的每盒收入给路线排榜。",
+        "repair": "比较责任、不可逆资金/库存、权利、公开承诺和证据缺口，不输出收益预测。"
+      },
+      {
+        "mistake": "把平台、出版方或外包者写成全部工作的所有者。",
+        "repair": "按八类工作回到当前官网、书面沟通、合同或服务条款逐项确认。"
+      },
+      {
+        "mistake": "准备一份万能投稿包群发。",
+        "repair": "为每个目标记录当前开放状态、目录匹配、第一份材料、样品请求顺序和核验日期。"
+      },
+      {
+        "mistake": "众筹成功后才研究 SKU、地区和履约。",
+        "repair": "发起前冻结回报清单、数量转换、供应链、预算、地区与异常处理责任。"
+      },
+      {
+        "mistake": "PnP 或 POD 没有库存，所以没有交付责任。",
+        "repair": "继续验证文件/成品、玩家制作劳动、权利、页面、推广、支持、平台依赖和版本更新。"
+      }
+    ],
+    "whenToBreak": [
+      "只是给朋友做一份礼物时，可以缩成接收者、权利、版本检查和交付，不必填商业责任。",
+      "拿到合同、税务、产品安全或跨境问题时，本工具只整理问题，不能替代当地专业人士。",
+      "出现抄袭、共同创作者争议、玩家安全或无法履约风险时，先暂停公开承诺，不等待责任图填完。",
+      "一条混合路线可以合理存在，但每项公开版本、权利与实体回报必须分开，不得用同一所有者假设覆盖。"
+    ],
+    "exercise": {
+      "title": "画一张发布路线责任图",
+      "prompt": "为同一版本选择一条主路线，写接收者、行动、不可交换条件；给八类工作指定所有者和证据，最后只选一个验证门、下一条证据和退出条件。",
+      "exampleOutput": "v0.9 / 投出版社；接收者是家庭游戏编辑。生产、营销和履约仍未由任何合同承担；下一步核对三家当前征稿与目录，若体量都不匹配则回到产品定位。"
+    },
+    "evidenceBoundary": "本指南综合设计师/出版者博客、协会合同教育、具体出版方/赛事投稿页、POD/数字/众筹平台文档，以及中国设计师自出版和合作复盘。它不提供路线排名、成功率、收益预测、合同条款、平台合规或法律/税务意见。当前征稿、费率、资格、平台和地区规则必须在行动时重新核验；案例金额不能外推为市场平均。",
+    "resourceIds": [
+      "ttgda-contract-basics",
+      "dark-imp-pitch-publish",
+      "bgdl-get-published",
+      "cardboard-edison-compendium",
+      "ravensburger-inventor-days-2026",
+      "piatnik-author-submissions",
+      "chaosium-board-submissions",
+      "wodc-v7-2026",
+      "modian-project-guide",
+      "sspai-art-self-publish",
+      "sspai-self-printing-practice",
+      "gcores-seagull-crowdfunding",
+      "gcores-inventory-bed",
+      "tgc-publishing-help",
+      "tgc-crowd-sale-creator",
+      "itch-creator-page",
+      "itch-physical-rewards",
+      "kickstarter-project-budget",
+      "kickstarter-fulfillment-dashboard",
+      "kickstarter-creator-obligation"
+    ],
+    "claimIds": [
+      "claim-publishing-route-is-responsibility-allocation",
+      "claim-no-universal-low-risk-publishing-route",
+      "claim-submission-needs-current-fit-evidence",
+      "claim-submission-contract-publication-are-distinct",
+      "claim-self-publishing-means-product-operations",
+      "claim-crowdfunding-converts-demand-to-obligation",
+      "claim-crowdfunding-budget-needs-whole-project",
+      "claim-pod-removes-inventory-not-demand-work",
+      "claim-pnp-removes-physical-not-file-delivery",
+      "claim-route-change-needs-commitment-audit"
+    ],
+    "conceptIds": [
+      "publishing-route",
+      "route-responsibility",
+      "submission-fit",
+      "licensing-agreement",
+      "public-commitment",
+      "reward-fulfillment",
+      "inventory-exposure",
+      "platform-dependency",
+      "evidence-state",
+      "release-candidate"
+    ],
+    "doneWhen": [
+      "接收者、行动、版本和当前主路线明确。",
+      "不可交换条件与路线理由可被反驳或更新。",
+      "八类工作各有所有者和证据状态，未定责任没有被平台名称遮住。",
+      "公开承诺、资金/库存暴露和权利状态分开记录。",
+      "当前验证门、下一条证据和退出条件只处理一个会改变路线的未知。",
+      "没有生成路线排名、成功率、收益、法律或合同判断。"
+    ],
+    "backtracksTo": ["guide-presentation-release", "special-production-assumption-ledger", "guide-rules-information"],
+    "nextOptions": ["special-production-assumption-ledger", "guide-playtest-feedback", "guide-presentation-release"],
+    "toolIds": ["route-map", "production-ledger", "test-plan"],
+    "status": "review"
+  },
+  {
+    "id": "special-purposeful-play",
+    "title": "别急着评价，拆一局你不喜欢但有人喜欢的游戏",
+    "stage": "体验意图",
+    "problem": "我玩过不少游戏，却只会写好玩、不好玩和机制清单，不知道怎样把一局变成设计能力。",
+    "outcome": "一页有目的游玩记录：学习问题、选择理由、自身体验、可观察行为、系统关系、他人语境，以及一条不照抄规则的可测试迁移假设。",
+    "coreMinutes": 9,
+    "opening": "你不需要先喜欢一款游戏，才有资格研究它。先假设设计者和玩家有自己的理由：这一局只问一个问题，例如为什么别人回合仍值得注意，然后把感受、行为、规则关系和他人语境分开。",
+    "steps": [
+      {
+        "label": "先写学习问题再选游戏",
+        "prompt": "说明你想研究教学、等待、互动、风险、主题或实体操作中的哪一项，以及为什么这款游戏能让问题出现；可以选喜欢或不喜欢的作品。",
+        "example": "我想研究等待；选择一款四人共享盘面游戏，因为他人行动会持续改变我下一回合的局面。"
+      },
+      {
+        "label": "记录自己的时刻而非总评",
+        "prompt": "在游玩中记下一个具体时刻：当时任务、所见信息、行动、感受和后果。先不解释设计者为什么这样做。",
+        "example": "第三轮等待时，我的两个预案连续失效；轮到我后重新扫描盘面 40 秒，感到自己之前没有可用工作。"
+      },
+      {
+        "label": "再画系统作用路径",
+        "prompt": "从规则、状态、组件和反馈追踪什么改变了谁的选择；不要用轮抽、工放等机制名字代替关系。",
+        "example": "每次转动共享宝石环都会改变所有人的可购买组合，因此回合外预案很难存活。"
+      },
+      {
+        "label": "寻找不同玩家语境",
+        "prompt": "观察同桌玩家，或查带版本、人数和经历的长评；记录谁得到了什么价值，而不是用多数意见覆盖差异。",
+        "example": "熟悉玩家享受即时应变，新玩家需要更长重新扫描；两种体验都保留，不写成这游戏四人一定拖。"
+      },
+      {
+        "label": "切换到收束并写迁移假设",
+        "prompt": "明确从发散观察切到评估：写你想保留的关系、不会照抄的表面规则、在自己原型中的最小改动、行为预测和反驳信号。",
+        "example": "保留共享状态制造应变，但给玩家一个不会失效的私人准备位；若回合外准备没有增加且选择变显然，就否定改动。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "只列机制并判断先进或落后。",
+        "repair": "追到具体局面中，规则怎样改变信息、可行选项、玩家关系和反馈。"
+      },
+      {
+        "mistake": "因为自己不喜欢就推断设计失败。",
+        "repair": "保留个人体验，同时寻找目标玩家、同桌行为和其他语境；不要求自己改成喜欢。"
+      },
+      {
+        "mistake": "把设计者意图当成玩家效果。",
+        "repair": "把意图写成推断；玩家行为与原话单列，无法取得的信息保持未知。"
+      },
+      {
+        "mistake": "看到好点子就复制完整规则。",
+        "repair": "先写想迁移的系统关系，再在自己的体验意图下做最小、可反驳的版本。"
+      },
+      {
+        "mistake": "分析结束后永远只做增加。",
+        "repair": "同时提出一个删减实验，记录删除会暴露什么决定、又可能移走什么功能。"
+      }
+    ],
+    "whenToBreak": [
+      "纯粹为了休息、关系或快乐而玩时，不需要打开工作单；有目的游玩不应吞掉休闲价值。",
+      "无法合法取得游戏、规则或必要辅助时，可以先看官方玩法和完整对局，但媒介删掉的触感、桌面空间、沟通和设置劳动必须标为未知。",
+      "研究具体文化、残障或创伤经验时，外部观察不能代替相关玩家参与；不要把设计师拆解当成群体声音。",
+      "一局已经出现安全、歧视或强迫参与问题时，先停止并处理现场，不为完成分析继续暴露玩家。"
+    ],
+    "exercise": {
+      "title": "拆一局你通常会避开的游戏",
+      "prompt": "选一款你不喜欢、但能找到具体玩家价值的游戏。写学习问题、一个局面、系统作用路径、不同玩家语境，再写一条迁移假设和一个删减实验。",
+      "exampleOutput": "我研究高随机游戏为何仍让人投入；记录掷骰后全桌同时关注交易的时刻；迁移的是公共结果触发谈判，不复制移动规则；在原型里测试公开事件是否让两名非当前玩家主动提议。"
+    },
+    "evidenceBoundary": "本指南综合 2024 年从业者的有目的游玩流程、Michael Sellers 的系统分析章节、Kathleen Mercury 的课堂路径、中文玩家长评，以及用户提供《狗头人》55 页预读版中 Richard Garfield 的文章。前两项偏数字/跨媒介实践，Sellers 章节来自商业书，Kathleen 是特定课堂，玩家帖子是单一语境，本地 PDF 受版权保护且不是完整书。它们支持观察和记录动作，不证明完成工作单会提高设计质量，也不把个人好恶、公共讨论热度或一次游玩变成总体玩家证据。",
+    "resourceIds": [
+      "game-developer-purposeful-play",
+      "sellers-systems-analysis",
+      "kathleen-mercury-resources",
+      "kobold-guide-board-game-design-official",
+      "ptt-dadaocheng-downtime",
+      "vocus-spirit-island-player",
+      "gcores-game-structure",
+      "game-design-concepts"
+    ],
+    "claimIds": [
+      "claim-purposeful-play-separates-perspectives",
+      "claim-player-symptom-needs-situation-chain",
+      "claim-generative-and-evaluative-modes-need-transition",
+      "claim-removal-is-versioned-experiment",
+      "claim-structure-analysis-is-comparison-space",
+      "claim-innovation-needs-learning-budget"
+    ],
+    "conceptIds": [
+      "purposeful-play",
+      "design-mode",
+      "subtractive-test",
+      "learning-budget",
+      "experience-intent",
+      "observation",
+      "dynamics",
+      "interaction-path",
+      "hypothesis",
+      "version"
+    ],
+    "doneWhen": [
+      "选择理由由一个学习问题驱动，而不是只选最喜欢或最新的游戏。",
+      "至少一条记录包含局面、信息、行动、感受和后果，没有只有总评。",
+      "自己的体验、可观察行为、系统推断和他人语境分开保存。",
+      "能说出想迁移的关系和明确不照抄的表面规则。",
+      "迁移假设与删减实验各有行为预测、反驳信号和版本。"
+    ],
+    "backtracksTo": ["guide-experience-intent", "guide-core-system"],
+    "nextOptions": ["guide-experience-intent", "guide-core-system", "guide-minimum-prototype", "special-decision-trace"],
+    "toolIds": ["decision-trace", "redesign", "constraint-deck"],
+    "status": "review"
+  },
+  {
+    "id": "special-embodied-time-window",
+    "title": "别只计秒，追一次身体—时间窗口",
+    "stage": "测试与反馈",
+    "problem": "实时或操作型原型看起来很紧张，但我分不清玩家面对的是有意挑战，还是来自计时、桌面、组件、座位与协助方式的意外摩擦。",
+    "outcome": "一页身体—时间窗口记录：版本与体验承诺、一个动作窗口、身体和材料条件、注意—权限链、第一次偏离与修复，以及只改变一个条件后的体验得失。",
+    "coreMinutes": 10,
+    "opening": "四名玩家要在 45 秒内把三角零件送进红色区域。不要先问时间够不够；先冻结一名玩家的一次动作窗口，追踪他要看见、够到、拿稳、决定、表达、确认与恢复什么。",
+    "steps": [
+      {
+        "label": "冻结承诺与一个动作窗口",
+        "prompt": "写下版本、人数、任务与希望出现的体验，再选一个从触发到结果或修复结束的短窗口；不要用整局平均时间覆盖差异。",
+        "example": "v0.7，四人协作；希望玩家在压力下互相校准。只追踪玩家甲听到警报后，把三角零件送进红区的 18 秒。"
+      },
+      {
+        "label": "写清身体与材料条件",
+        "prompt": "记录玩家选择公开的操作方式，以及工具、姿势、触达、精度、力度、速度和重复次数；同时写桌面尺寸、表面、座位与噪声。只记录任务相关信息，不诊断身体。",
+        "example": "玩家坐在长桌短边，需越过两块板图；零件薄且贴桌，先用指甲挑起，再绕过计时器。"
+      },
+      {
+        "label": "画注意—权限链",
+        "prompt": "按顺序写谁能看、听、触、决定、说、确认与等待；实时不只是变快，也可能把信息和行动权分到不同人手中。",
+        "example": "乙看见目标但不能移动；甲能移动却被丙的口令打断；丁负责翻计时器，没人知道能否暂停确认。"
+      },
+      {
+        "label": "记录第一次偏离与修复",
+        "prompt": "写预期动作第一次在哪里改变、谁先发现、谁触碰或解释、是否取得同意，以及玩家失去或恢复了哪些信息、行动权和节奏。",
+        "example": "甲拿不起零件后乙直接代拿；任务完成，但甲没有选择路线，也没人确认这次协助是否想要。"
+      },
+      {
+        "label": "只改一个条件再测",
+        "prompt": "只改变计时、暂停规则、组件、表面、座位、角色或输入中的一项，使用相同任务重测；把新增与失去的体验都写出，不把替代版本称为天然等价。",
+        "example": "只给零件加 8 毫米拉片。甲能自己拿起，但细小堆叠变慢；若压力来源转成整理拉片，就继续改组件而不是延长总时间。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "只记完成秒数和输赢。",
+        "repair": "同时记录动作序列、注意转移、权限交接、第一次偏离与恢复成本。"
+      },
+      {
+        "mistake": "把快、吵、笑或手忙脚乱直接当成投入。",
+        "repair": "回到体验承诺，寻找可观察行为、玩家原话和反例；强度不是参与质量的代理。"
+      },
+      {
+        "mistake": "线上模拟顺利就宣称实体操作已验证。",
+        "repair": "把触感、桌面空间、够取、遮挡、同步口令与组件恢复列为实体版未知项。"
+      },
+      {
+        "mistake": "有人代做后任务完成，就认为无障碍问题解决。",
+        "repair": "分开完成、同意、信息、决定权、操作权与关系成本；协助也必须作为规则角色审阅。"
+      }
+    ],
+    "whenToBreak": [
+      "出现疼痛、疲劳、惊慌或安全风险时立即停止；完成一轮记录不优先于退出和恢复。",
+      "早期原型可以使用粗糙材料，但若问题正是抓取、触感、视线、同步或空间，就不能用低精度材料回答高精度问题。",
+      "协助可以是玩家主动选择的互相依赖体验；不要预设独立操作总是目标，但要记录谁选择、谁承担和谁可撤回。",
+      "回合制、远程或替代输入可以成为有效版本；应写清保留和移走的体验，不承诺与实时实体版等价。"
+    ],
+    "exercise": {
+      "title": "观察一次 30 秒身体—时间窗口",
+      "prompt": "选一个含计时、同步沟通、拿取、摆放、瞄准或速度要求的短任务。先跑原版，再只改一个条件；两次都记录身体/材料条件、注意—权限链、第一次偏离、修复和体验得失。",
+      "exampleOutput": "原版中玩家需越桌抓薄片，乙未经确认代拿，甲保留答案但失去落子时机；加拉片后甲独立完成，耗时多 4 秒，团队口令更少。下一版不改计时，只测试拉片是否遮挡图标。"
+    },
+    "evidenceBoundary": "本指南综合桌游互动研究、关于实体代理与时间的理论文章、相邻的全身游戏系统综述、无用户测试的 Crokinole 辅助原型、官方实时游戏规则与设计日志，以及一名身体残障玩家的第一人称文章。它们支持把身体动作、桌面条件、时间和权限当作可观察系统变量，但不提供普遍秒数、体能门槛或无障碍认证。全身游戏综述主要来自数字媒介；Crokinole 原型未由残障玩家测试；规则书和设计日志只能证明结构与设计意图；单篇玩家文章不能代表全部经验。中文第一人称实体桌游操作资料仍明显不足。",
+    "resourceIds": [
+      "dislocated-boardgames",
+      "thinking-with-body-boardgames",
+      "embodied-move-repair",
+      "aesthetic-camaraderie-patterns",
+      "accessible-dexterity-computer-supported",
+      "captain-sonar-rules",
+      "captain-sonar-creator-note",
+      "magic-maze-rules",
+      "fit-to-print-diary",
+      "geeky-gimp-accessibility-hacks"
+    ],
+    "claimIds": [
+      "claim-embodied-action-is-system-input",
+      "claim-realtime-reallocates-attention-and-authority",
+      "claim-intensity-is-not-engagement-proof",
+      "claim-action-repair-is-gameplay-data",
+      "claim-alternate-pace-is-version-not-equivalence",
+      "claim-physical-context-is-versioned"
+    ],
+    "conceptIds": [
+      "embodied-action",
+      "time-contract",
+      "action-repair",
+      "physical-skill-curve",
+      "accessibility-task",
+      "observation",
+      "interaction-path",
+      "agency",
+      "version",
+      "prototype-fidelity"
+    ],
+    "doneWhen": [
+      "记录明确到一个版本、一个体验承诺和一个短动作窗口。",
+      "身体、工具、姿势、桌面、表面、座位与噪声只按任务需要记录。",
+      "能复述看、听、触、决定、表达、确认与等待如何分配。",
+      "第一次偏离与修复包含同意、信息、行动权和恢复成本。",
+      "第二次测试只改变一个条件，并使用相同任务比较。",
+      "结论同时写新增与失去的体验，不把完成、强度或替代版本当成质量证明。"
+    ],
+    "backtracksTo": ["guide-core-system", "guide-minimum-prototype", "special-decision-trace"],
+    "nextOptions": ["guide-playtest-feedback", "special-accessibility-task-observation", "special-shared-decision-observation", "guide-rules-information"],
+    "toolIds": ["decision-trace", "shared-decision", "accessibility-observation", "test-plan"],
+    "status": "review"
+  },
+  {
+    "id": "special-cross-project-learning-trace",
+    "title": "别数做了几个，追一个判断怎样迁移",
+    "stage": "测试与反馈",
+    "problem": "我做完了不少原型、比赛或练习，却说不清自己的哪项设计判断改变了，也不知道上一项目的经验能否带到下一项目。",
+    "outcome": "一页跨项目学习轨迹：设计锚点、一个原判断、版本证据、修订边界、只改变一个变量的迁移任务、迁移结果与反向信号。",
+    "coreMinutes": 12,
+    "opening": "不要从“这是我的第五个游戏”开始。选一个足够小的判断，例如“私密信息会让合作玩家更愿意各自发言”，追它在两个不同项目中怎样成立、适配或失效。",
+    "steps": [
+      {
+        "label": "只冻结一个判断",
+        "prompt": "从上一版本选一句可被行为反驳的判断，写明玩家、局面和预期结果；不要总结整个项目，也不要用“更好玩”作结果。",
+        "example": "在四人合作游戏中，每人持有一条不可直接展示的线索，会让四人在决定前都说出信息。"
+      },
+      {
+        "label": "分开锚点与可改项",
+        "prompt": "写这次要保护的体验或责任锚点，以及可以随证据改变的问题框架、机制和表现形式；锚点也不是永远正确。",
+        "example": "锚点是让每人保有一个必要贡献；私密手牌只是可改解法，不能因沉没成本保留。"
+      },
+      {
+        "label": "把证据接到修订",
+        "prompt": "引用具体版本、桌面行为或反例，写原判断是保留、缩小、扩大、反转还是搁置；同时写新判断不适用于什么。",
+        "example": "v0.8 中两人直接把线索交给熟练玩家代解。判断缩小为：私密信息只有在不可代办且发言权受保护时才可能分散领导。"
+      },
+      {
+        "label": "安排改变情境的任务",
+        "prompt": "把修订判断放入新项目或微型原型，只改变一个关键变量，例如玩家年龄、关系、类型、材料、时长或团队；其余尽量固定。",
+        "example": "做 30 分钟亲子合作微原型，保留分散线索，只把玩家关系从成人朋友改为一名成人与一名儿童。"
+      },
+      {
+        "label": "比较迁移并决定出口",
+        "prompt": "记录继续成立、需要适配或失效，以及一个反向信号；选择继续、改写或搁置，不给自己累计经验值。",
+        "example": "儿童有必要信息却请成人代读，贡献仍被替代；下一版先测试图形线索。若仍需代办，就搁置私密信息方案。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "用项目数、工时、版本数、参赛或名次证明成长。",
+        "repair": "把数量降为背景，只展示一个行动前判断、证据、修订和新情境结果。"
+      },
+      {
+        "mistake": "给自己贴新手、中级或专家总标签。",
+        "repair": "改写成任务级描述：在哪个判断上能独立工作，在哪个情境仍需要脚手架。"
+      },
+      {
+        "mistake": "出版后故事讲得很顺，就认为当时因果已经清楚。",
+        "repair": "区分设计中记录、测试后复盘和后来叙事；缺失的同期信息保持未知。"
+      },
+      {
+        "mistake": "把上一项目的规则原样复制到新项目。",
+        "repair": "迁移带边界的判断，不复制表面配方；每次明确只改变了哪个情境变量。"
+      },
+      {
+        "mistake": "停止机制或项目就等于失败。",
+        "repair": "若证据说明不再服务锚点，记录搁置原因和复用边界；停止也是设计决定。"
+      }
+    ],
+    "whenToBreak": [
+      "纯休闲、关系或恢复性创作不需要强制形成学习档案；练习目标不能吞掉创作的其他价值。",
+      "交付期限、赛事规则或合同可能要求先完成作品；把交付评价与学习评价分开记录即可。",
+      "出现健康、安全、权利、歧视或团队冲突时先停止；不要为完成迁移测试继续暴露参与者。",
+      "当前项目尚未产生可说清的局部判断时，不要硬凑跨项目结论；先保存未知和下一条最小问题。",
+      "新旧情境同时改变过多变量时，不宣称完成迁移验证；把结果降级为新探索。"
+    ],
+    "exercise": {
+      "title": "把一个旧判断带进 30 分钟新情境",
+      "prompt": "从旧项目选一句带情境的设计判断，写证据和边界；新建一个只改变玩家、关系、类型、材料或时长中一项的 30–60 分钟微原型，再记录继续、适配或搁置。",
+      "exampleOutput": "旧判断：公开倒计时会让合作玩家更快分工。证据：朋友组主动报时，但新手组停止讨论。迁移：在相同任务中只把计时器改为个人可见提醒；结果是讨论恢复但协同紧迫感下降，判断改为“共享计时适合已有职责语言的团队”。"
+    },
+    "evidenceBoundary": "本指南综合跨设计领域的专长综述、一名工业设计学生三年自评的探索模型、11 位职业游戏设计师与 22 位教育电子游戏设计师访谈、单门桌游课程日志研究、25 篇 Game Jam 学习研究的系统综述、一日教育桌游 Jam 试点，以及商业设计师、新手比赛与个人挑战日记。它们支持把学习拆成情境化判断、反思、版本和迁移，但不提供桌游设计师的通用等级、最低工时、项目数量或能力分数。职业访谈多偏数字游戏；教育与 Jam 研究多为短期、描述性或自报；设计日记受回顾与成功叙事偏差影响；中文材料主要是赛事评委视角。跨项目学习轨迹是本站基于这些边界形成的产品推论，仍需用户测试。",
+    "resourceIds": [
+      "cross-design-expertise-overview",
+      "dorst-design-expertise-levels",
+      "game-design-conversations-professionals",
+      "undergraduate-game-design-logs",
+      "game-jam-learning-systematic-review",
+      "educational-board-game-jam",
+      "cosmic-colonies-long-diary",
+      "rebuilding-seattle-long-diary",
+      "wannabe-designer-contest-diary",
+      "ten-game-hacks-ten-weeks",
+      "wodc-judge-growth-reflection"
+    ],
+    "claimIds": [
+      "claim-design-practice-needs-learning-extraction",
+      "claim-design-expertise-is-task-specific",
+      "claim-transfer-needs-changed-context",
+      "claim-expertise-balances-stability-and-change",
+      "claim-design-logs-need-decision-links",
+      "claim-challenges-are-practice-containers"
+    ],
+    "conceptIds": [
+      "design-frame",
+      "learning-extraction",
+      "transfer-test",
+      "practice-container",
+      "purposeful-play",
+      "design-mode",
+      "version",
+      "hypothesis",
+      "observation",
+      "design-decision"
+    ],
+    "doneWhen": [
+      "记录只追一个带玩家、局面和预期行为的判断，不是整个项目总评。",
+      "设计锚点与可修改的问题框架、机制和表现形式分开。",
+      "修订引用具体版本、行为或反例，并写出不适用边界。",
+      "新情境只改变一个关键变量，其他条件尽量固定。",
+      "迁移结果可以是继续、适配或搁置，且至少保存一个反向信号。",
+      "项目数、工时、完成和名次没有被汇总为能力等级。"
+    ],
+    "backtracksTo": ["special-purposeful-play", "special-decision-trace", "guide-playtest-feedback"],
+    "nextOptions": ["guide-core-system", "special-test-type-selection", "guide-minimum-prototype", "guide-presentation-release"],
+    "toolIds": ["decision-trace", "test-plan", "feedback", "redesign"],
+    "status": "review"
+  },
+  {
+    "id": "special-cross-session-follow-up",
+    "title": "别只问还想不想玩，追下一局什么真的变了",
+    "stage": "测试与反馈",
+    "problem": "首局反馈看起来不错或很糟，但我不知道规则熟悉后会出现策略空间、重复劳动还是同组惯例，也分不清愿意再玩和后来真的回来。",
+    "outcome": "一页跨局回访序列：版本与问题、新玩家/回流玩家/同组历史轨道、每局片段、局后变化、延迟实际再玩与阻碍、缺失状态和继续/分支/停止决定。",
+    "coreMinutes": 12,
+    "opening": "首局结束时三名玩家都说愿意再玩。不要立刻写“可重玩性通过”。先选一个随重复可能改变的问题，标记谁是新玩家、谁玩过旧版、谁属于同一固定组，再追下一次是否发生以及注意、策略和关系怎样改变。",
+    "steps": [
+      {
+        "label": "冻结一个变化问题与序列",
+        "prompt": "写版本、玩家、场地和一个需要时间才能回答的问题；同时写固定条件、允许改变的一项条件与停止点，不预设通用局数或天数。",
+        "example": "v0.8；同一四人组；问题是第二次游玩时货舱规划会产生更多候选路线还是收敛成固定解；规则和场地固定，只让熟练度变化。"
+      },
+      {
+        "label": "分开三种玩家轨道",
+        "prompt": "逐人标记首次接触、回流玩家与同组历史；混桌时记录谁讲解、谁借用谁的策略、谁的发言或决定被替代。",
+        "example": "甲乙玩过 v0.7，丙丁首次接触；甲在第一回合替丁指出最优装货，记录为策略传播，不把丁的顺畅算作独立新手理解。"
+      },
+      {
+        "label": "局中只留一至三个片段",
+        "prompt": "在预定触发事件出现时只记时间点、局面或规则、关键词和可选媒体编号，局后再展开；玩家可跳过、换媒介或退出。",
+        "example": "第 3 回合记“第二次查卸货／先翻玩家辅助／照片 02”；局后补充查找路径、耗时感受和与上局差异。"
+      },
+      {
+        "label": "局后比较变化而非总评",
+        "prompt": "分别问这局注意什么、什么因熟悉变易或变烦、学到或借用了谁的做法、下局想尝试什么；愿意再玩只标为意向。",
+        "example": "乙不再查行动顺序，却说每轮仍只有一种值得做的装货；下一局想测试保留货物。记录为规则负担下降、候选策略未增加。"
+      },
+      {
+        "label": "延迟回访并决定继续或分支",
+        "prompt": "到由问题决定的时间再记录是否实际游玩、没发生的机会阻碍、记得的策略与记录负担；关键版本或语境改变就建立新分支，漏记和退出保留原状态。",
+        "example": "两周后没有成局，原因是缺人而非拒玩；v0.9 同时改了货舱和计分，于是结束 v0.8 序列，新建版本分支，不画成第三局熟练趋势。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "同一人玩十局，就当有十名玩家支持结论。",
+        "repair": "把局次嵌套在玩家和固定组历史下；另招独立新玩家或新组回答首次接触与跨组问题。"
+      },
+      {
+        "mistake": "回流玩家玩得顺，说明规则书已经清楚。",
+        "repair": "回流轨道只支持记忆与熟练后的使用；规则教学、设置和查询仍需新玩家或盲测。"
+      },
+      {
+        "mistake": "玩家说还想玩，就把可重玩性标为通过。",
+        "repair": "分开再玩意向、研究者安排的下一局和实际自发再玩，并记录时间、组局、拥有与设置等机会条件。"
+      },
+      {
+        "mistake": "中途改规则后继续把曲线叫作第二局、第三局。",
+        "repair": "关键版本、玩家构成或场地改变时结束或分支序列；比较版本可以是问题，但不能伪装成熟练变化。"
+      },
+      {
+        "mistake": "只有完整填写每局日记的人进入分析。",
+        "repair": "把漏记、跳题、拒答、退出和没再玩分开保存；检查记录负担是否筛掉了最需要被看见的人。"
+      }
+    ],
+    "whenToBreak": [
+      "若问题只是验证一次设置卡死、组件短缺或单条术语，单局定向测试已经足够，不必制造纵向负担。",
+      "出现疼痛、安全、隐私、骚扰、强烈冲突或玩家要求停止时立即终止；资料保留与删除由既定同意协议处理。",
+      "剧情剧透、战役进度或遗产式改造会改变后续可体验内容，应把暴露历史当版本条件，不能用普通重开序列比较。",
+      "不是所有游戏都以重复游玩为目标；一次性、仪式性、教育活动或短期社交体验可以使用与其承诺相符的结束标准。",
+      "记录本身是训练或反思活动时可以有意改变注意，但要把它标成干预，不声称观察的是未受影响的自然游玩。"
+    ],
+    "exercise": {
+      "title": "安排两局和一次延迟回访",
+      "prompt": "选一个随重复可能改变的问题，写版本、三类玩家轨道、固定/变化条件、每局最多三个触发片段、局后四问、回访时间的选择理由、实际再玩与阻碍字段，以及何时分支或停止。",
+      "exampleOutput": "v0.8；同一组两局，另留两名新玩家检验教学；只让熟练度变化；记录首次查规则、策略传播和主动提出新路线；十天后回访是否成局与缺人/时间/设置阻碍；任何计分改动都新建序列。"
+    },
+    "evidenceBoundary": "本指南综合数字游戏的三个月日记、自然情境玩家日记、日记/录像回看/焦点小组三角验证、三周学习与投入多案例、纵向 HCI 分类、片段式移动日记、日记反应性实验、包容性教育桌游测试、抽象策略桌游体验采样协议、游戏用户研究实践和两篇桌游设计日志。证据支持把时间、玩家历史、版本、负担和实际行为分开，但不提供桌游通用局数、间隔、样本或留存标准。多数纵向研究来自数字游戏或一般 HCI；实体桌游证据多为案例与设计师实践。三轨道、分支规则和最小片段协议是本站产品综合，仍需新手与真实测试者验证。",
+    "resourceIds": [
+      "mekler-fez-completion-diary",
+      "fox-mmo-player-diary-study",
+      "ribbens-player-experience-triangulation",
+      "iacovides-gameplay-learning-involvement",
+      "gerken-longitudinal-hci",
+      "txt4l8r-diary-snippets",
+      "diary-reactivity-double-edged",
+      "inclusive-playtesting-cognitive-load",
+      "designerly-gameplay-experience-sampling",
+      "games-user-research-returning-players",
+      "first-take-invasion-returning-new",
+      "gameplay-extension-actual-return"
+    ],
+    "claimIds": [
+      "claim-first-and-returning-play-need-separate-tracks",
+      "claim-repeated-sessions-are-nested-history",
+      "claim-session-snippets-need-later-expansion",
+      "claim-replay-intent-is-not-return-behavior",
+      "claim-version-change-branches-longitudinal-sequence",
+      "claim-longitudinal-recording-can-change-play"
+    ],
+    "conceptIds": [
+      "returning-player-track",
+      "group-history",
+      "session-snippet",
+      "actual-replay",
+      "replayability",
+      "strategic-depth",
+      "version",
+      "observation",
+      "playtest-question",
+      "learning-extraction"
+    ],
+    "doneWhen": [
+      "研究问题明确到什么会随重复改变，不是总体好玩或至少玩几局。",
+      "新玩家、回流玩家和同组历史逐人标记，策略传播与代办可追踪。",
+      "每局片段数量有限，局后展开，玩家可以跳过、换媒介或退出。",
+      "再玩意向、安排参与、实际再玩与机会阻碍分开保存。",
+      "关键版本或语境变化会建立分支，不与熟练趋势混合。",
+      "漏记、拒答、退出与没再玩没有被删除或自动评分为负面。"
+    ],
+    "backtracksTo": ["guide-playtest-feedback", "special-test-type-selection", "special-cross-project-learning-trace"],
+    "nextOptions": ["guide-core-system", "special-learning-path", "special-shared-decision-observation", "guide-rules-information"],
+    "toolIds": ["test-plan", "decision-trace", "feedback", "playtest-selector"],
+    "status": "review"
+  },
+  {
+    "id": "special-campaign-state-passport",
+    "title": "战役不是同一版多玩几局，先保存四条历史",
+    "stage": "测试与反馈",
+    "problem": "我的游戏有章节、成长、秘密或永久组件变化；规则一改、有人缺席或换手，我就不知道后续测试还是不是同一条序列。",
+    "outcome": "一张无剧透战役状态护照：跨局机制、规则/世界/角色/玩家四条历史、本局差异、加入与缺席接续、版本迁移、保管与退出决定。",
+    "coreMinutes": 12,
+    "opening": "第三章结束后，你把计分规则从 v0.8 改到 v0.9；乙缺席，丁第一次加入，地图上已有两张永久贴纸。不要只写“第 4 局”。先给当前世界一个状态编号，分开规则、世界、角色和逐人知识，再决定旧状态是继续、迁移、复制还是停止。",
+    "steps": [
+      {
+        "label": "只选一个跨局机制",
+        "prompt": "写清哪个成长、结转、分支、解锁或关系后果必须经过多个章节才会出现；若一局内能回答，就退回局部测试。",
+        "example": "只追“港口声望跨三章是否产生两条可行路线”；本轮不同时证明剧情质量、所有职业平衡和完整战役时长。"
+      },
+      {
+        "label": "冻结四条历史与知识范围",
+        "prompt": "给世界状态编号，分别记录规则版、世界/组件变化、角色历史和逐名玩家已揭示范围；隐藏内容只记内部编号。",
+        "example": "C-07／规则 v0.8；地图贴 A2；领航员有伤痕 S1；甲乙见过包 4，丙缺席只收无剧透摘要。"
+      },
+      {
+        "label": "逐局只记差异与接续",
+        "prompt": "记录本局新揭示、永久改造、角色变化和缺席/加入；对补偿、摘要、托管、机器人、跳过或暂停，写它保存了什么、替代了什么。",
+        "example": "乙缺席，由机器人维持资源但不替他选角色升级；回归后乙读两句摘要并亲自处理未分配升级。"
+      },
+      {
+        "label": "改版前选择迁移分支",
+        "prompt": "在继续旧版、把状态映射到新版、复制为并行分支或由新组重开之间作决定；写丢失、补偿与不可比较项。",
+        "example": "v0.9 删除顾问牌；旧组保留 v0.8 完成故事，复制 C-07 给新组并用映射表替换两张牌，不把结果接成原组第 4 局。"
+      },
+      {
+        "label": "安排恢复、保管与退出",
+        "prompt": "写谁保管副本、存档和恢复凭证，错误怎样检测与求助；玩家可拒绝剧透、永久改造、记录或继续，并决定退出后的角色和资料。",
+        "example": "盒子由甲保管，状态护照全组可导出；贴错先拍状态编号并暂停。丁退出后删除私密备注，角色回到公共池，不打开未揭示包。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "只写规则 v0.9 和第 4 局，就认为条件足够。",
+        "repair": "补世界状态、角色历史与逐人知识；同版规则也可能有不同分支，重置组件也不能重置玩家记忆。"
+      },
+      {
+        "mistake": "用资源补偿或机器人代班后，说缺席者等于参与过。",
+        "repair": "只声明保存的功能，并记录谁做了决定、谁看见揭示、谁承担维护，以及回归者怎样恢复行动权。"
+      },
+      {
+        "mistake": "规则大改后把新结果继续画在原组熟练曲线上。",
+        "repair": "把迁移当设计事件，明确旧分支、映射、复制或重开；不同历史可以比较，但不能伪装成连续重复。"
+      },
+      {
+        "mistake": "公开日志复制隐藏卡文和分支答案，方便其他组复现。",
+        "repair": "公开记录只用内部编号、状态类别和差异摘要；完整内容留在有权限的私有材料中，并遵守许可与撤回。"
+      },
+      {
+        "mistake": "为了完成战役要求测试者继续不喜欢的剧情或永久动作。",
+        "repair": "把暂停、跳过改造、退出、删除记录与副本交接写成正常分支；战役完成不是质量或参与者忠诚证明。"
+      }
+    ],
+    "whenToBreak": [
+      "问题只涉及单次数值、行动经济、术语、设置或局部教学时，先用隔离原型，不承担完整战役成本。",
+      "身体或情绪安全、隐私、骚扰、版权、儿童保护或玩家撤回出现问题时立即停止，不等待章节结束。",
+      "作品有意让不可逆错误成为体验时，可以不提供完全回滚，但必须事前让玩家理解风险并可拒绝。",
+      "知情玩家仍可测试规则执行、后期平衡和恢复流程；只是不再把他们当首次揭示样本。",
+      "数字存档、可移除贴纸、重置包或第二副本可作为新版本测试，不能预设与首次实体揭示等价。"
+    ],
+    "exercise": {
+      "title": "为第三章结束后的世界做一张状态护照",
+      "prompt": "用虚构编号写跨局机制、规则/世界/角色/玩家四条历史、本局三个差异、一名缺席者的接续方法、一次改版的四选一迁移决定、保管人、错误恢复和退出处理；不要写任何隐藏正文。",
+      "exampleOutput": "C-07／v0.8；只追声望分支；地图贴 A2，领航员伤痕 S1；甲乙知包 4、丙不知；乙缺席由机器人保资源但升级留空；v0.9 复制为 C-07b 给新组；盒甲保管、护照全组导出；贴错暂停；退出者备注删除、角色回公共池。"
+    },
+    "evidenceBoundary": "本指南综合 Legacy 不可逆性理论、一项 Legacy 创作硕士研究、Pandemic Legacy 一手设计演讲与官方 FAQ、Charterstone 官方设计日志和 FAQ、SeaFall 长期测试者记录、两篇战役测试实践复盘、Betrayal Legacy 设置事故报道，以及远程桌游和混合数字桌游的 CHI 研究。证据支持分开规则、世界、角色、玩家知识，记录状态迁移、接续功能、保管与恢复；但不提供通用战役局数、固定组规模、完成率、补偿公式或媒介等价性。SeaFall、Charterstone、Betrayal 与 TTRPG 资料均是单项目或特定类型案例；远程 Legacy 接续在论文中只是单个定性案例。四历史护照和迁移四选一是本站产品综合，仍需中文新手、缺席回归者与战役主持者验证。",
+    "resourceIds": [
+      "mosca-legacy-irreversibility",
+      "pandemic-legacy-gdc-making",
+      "leacock-pandemic-legacy-official",
+      "charterstone-design-diary-attendance",
+      "charterstone-faq-joining",
+      "seafall-playtester-experience",
+      "gnome-stew-campaign-playtesting",
+      "pretendo-playtesting-perils",
+      "wired-betrayal-legacy-setup",
+      "yuan-remote-tabletop-campaign-state",
+      "rogerson-boardgames-with-apps"
+    ],
+    "claimIds": [
+      "claim-campaign-state-has-four-histories",
+      "claim-player-knowledge-cannot-be-reset",
+      "claim-campaign-migration-is-design-event",
+      "claim-campaign-catchup-is-functional-substitution",
+      "claim-irreversible-setup-needs-recovery-path",
+      "claim-campaign-window-follows-mechanism"
+    ],
+    "conceptIds": [
+      "campaign-state-passport",
+      "revealed-content-scope",
+      "campaign-migration",
+      "campaign-catchup-method",
+      "state-custody",
+      "version",
+      "group-history",
+      "content-note",
+      "exit-repair-path",
+      "agency"
+    ],
+    "doneWhen": [
+      "本轮只追一个确实需要跨章节触发的机制，而不是完整战役总评。",
+      "规则、世界、角色和逐名玩家知识都有独立状态，隐藏内容只用内部编号。",
+      "缺席、加入、回归和换手的方法写明保存与牺牲的功能及决定权。",
+      "关键改版已选择旧分支、迁移、并行复制或新组重开，并说明不可比较项。",
+      "副本、存档和恢复凭证有明确保管与求助路径。",
+      "拒绝剧透、跳过永久动作、暂停、退出和删除记录都可执行，不以战役完成惩罚参与者。"
+    ],
+    "backtracksTo": ["special-cross-session-follow-up", "special-test-type-selection", "guide-playtest-feedback"],
+    "nextOptions": ["guide-rules-information", "special-decision-trace", "special-learning-path", "guide-presentation-release"],
+    "toolIds": ["test-plan", "decision-trace", "feedback", "playtest-selector"],
+    "status": "review"
+  },
+  {
+    "id": "special-solo-mode-contract",
+    "title": "先写单人承诺，再决定是否造一个机器人",
+    "stage": "核心系统",
+    "problem": "我想在盒侧加上 1 人，但不知道该用计分、场景、dummy、Automa 还是多手控制，也担心 bot 规则比自己的回合更累。",
+    "outcome": "一张单人模式契约：体验承诺、保留的互动接口、结构选择、信息与运行协议、难度输入，以及新手盲测和暂停恢复记录。",
+    "coreMinutes": 12,
+    "opening": "多人局的紧张来自对手拿走市场牌、推进结束并公开下一步倾向。不要先做 18 张 Automa 牌。先选这次单人模式是多人练习、独立挑战、对手替代还是座位填补，再逐项决定哪些互动必须留下。",
+    "steps": [
+      {
+        "label": "冻结一个单人承诺",
+        "prompt": "从多人练习与迁移、独立挑战或沉浸、对手替代、座位填补中选本轮第一承诺；写不承诺还原的体验。",
+        "example": "本轮首先提供独立挑战；不承诺还原谈判，但必须保留市场竞争、结束压力和可读反制。"
+      },
+      {
+        "label": "把对手改写成互动接口",
+        "prompt": "只列会改变玩家选项、信息、时机或压力的对手作用；每项写玩家因此面对的决定，删掉不影响这些决定的内部状态。",
+        "example": "保留拿牌、推进时钟和公开倾向；不建立 bot 资源池和个人版图，因为玩家从未据此改变选择。"
+      },
+      {
+        "label": "在限制后选择结构",
+        "prompt": "先写可用卡数、额外组件、规则篇幅、桌面与设置限制，再比较删除、变设置、计分/场景、dummy、自动对手和多手控制。",
+        "example": "只能增加两面玩家辅助，故先用三条优先级的 dummy 维持市场；不做独立 20 张行为牌。"
+      },
+      {
+        "label": "写可执行的信息与维护协议",
+        "prompt": "逐步写翻取、行动、目标、平手、持续效果、卡死和错误恢复；标明行动前可见信号与随机扰动，并逐动作记录玩家维护。",
+        "example": "翻 1 张；先拿最左稀有牌，平手取离回合标最近；无牌则推进时钟。玩家行动前看见下一张颜色；无合法目标时不临场代选。"
+      },
+      {
+        "label": "分别验证难度与产品可用性",
+        "prompt": "难度档逐项写改变的资源、效率、信息、随机性、惩罚、时间或目标；让新玩家仅靠规则设置和运行，另测利用路径、暂停后恢复与自己的回合是否被打断。",
+        "example": "困难档只让时钟每轮多走一格，不增加查表；新玩家离桌两天后能从桌面状态恢复，第三局发现固定拿牌循环则建立修复假设。"
+      }
+    ],
+    "commonMistakes": [
+      {"mistake": "先决定做 Automa，再寻找它该模拟什么。", "repair": "退回单人承诺与互动接口；结构是实现选择，不是目标或质量标签。"},
+      {"mistake": "bot 也有资源、手牌和版图，所以更像真人。", "repair": "逐项问玩家能否看到并据此改变决定；不能影响目标体验的内部状态先删除。"},
+      {"mistake": "把所有目标与平手都交给玩家合理选择。", "repair": "尽量提供桌面可执行的优先级与无合法行动分支；若主题上必须代选，标明它怎样改变决定权和负担。"},
+      {"mistake": "困难档只加资源或例外，胜率下降就算成功。", "repair": "记录具体难度输入，并检查候选策略、可解释性、利用路径和维护动作是否一起恶化。"},
+      {"mistake": "设计者用 bot 跑了几十局，所以正式单人模式已验证。", "repair": "把内部诊断与目标玩家产品测试分开；安排新玩家盲设、规则查询、纠错、暂停恢复和回桌。"}
+    ],
+    "whenToBreak": [
+      "纯单人原创游戏没有多人对手可拆时，直接从体验承诺、完成条件和玩家决定开始，不必制造虚构的多人等价物。",
+      "目标就是完全信息谜题、计分练习或高随机生存时，可以不造对手；诚实说明它不模拟真人竞争。",
+      "谈判、欺骗、承诺、共同叙事或关系变化是核心时，自动系统可能只能保留机械接口；不要宣称完整替代人类经验。",
+      "玩家多手控制是作品明确乐趣时可以采用；仍要测试信息泄漏、角色切换、决定所有权和认知负担。",
+      "无合法行动、无限循环、规则冲突或错误恢复需要玩家临场设计时停止该次证据记录，先修运行协议。"
+    ],
+    "exercise": {
+      "title": "把一个三人互动游戏缩成一张单人契约",
+      "prompt": "选一个现有原型，写第一单人承诺和一个不承诺项；列最多四个互动接口、删除的内部状态、组件限制、所选结构、行动/目标/平手/卡死协议、一项信息信号、一项难度输入，以及新玩家盲测与暂停恢复条件。",
+      "exampleOutput": "承诺独立挑战，不还原谈判；保留市场拿牌、时钟、公开倾向；删 bot 资源池；仅用双面辅助，选择 dummy；最左稀有牌、平手近时钟、无牌推进；困难档只加快时钟；新玩家独立设置并隔两天恢复。"
+    },
+    "evidenceBoundary": "本指南综合两项单人玩家研究、一篇 Root 自动玩家研究型创作硕士论文、Automa Factory 官方六项原则、Mike Mullins 的单人变体方法、Imperium 与三个 Stonemaier 项目的一手日志、一个生产限制下的个人实验、专业设计师访谈和一篇玩家长评。证据支持先区分玩家承诺、保留互动接口、把维护和信息当可测试变量，并把内部测试 bot 与正式模式分开；但不提供通用胜率、随机度、规则页数、组件数、难度档数或测试局数。多数设计日志来自商业成功项目，中文玩家与完整规则书比较仍不足；本指南的五步契约是本站综合，仍需中文新手和单人玩家验证。",
+    "resourceIds": ["leorke-solo-player-motivations", "nougher-single-player-sociality", "chola-sad-mode-automated-players", "automa-factory-approach", "mullins-solo-variant-elements", "imperium-solo-mode-design", "stamp-swap-solo-design-diary", "wyrmspan-solo-design-diary", "origin-story-solo-information", "zhang-weird-solo-mode", "pedersen-automa-interview", "boardgameshots-galactic-cruise-solo"],
+    "claimIds": ["claim-solo-promise-precedes-structure", "claim-solo-preserves-decisions-not-opponent-state", "claim-bot-upkeep-is-player-cost", "claim-bot-information-model-is-design-variable", "claim-test-bot-is-not-solo-product", "claim-solo-difficulty-needs-explicit-input"],
+    "conceptIds": ["solo-mode-promise", "interaction-interface", "dummy-player", "automated-opponent", "bot-upkeep", "bot-information-model", "agency", "decision-space", "information-asymmetry", "time-contract"],
+    "doneWhen": [
+      "本轮单人承诺和明确不承诺项已经写下，不用支持 1 人代替体验意图。",
+      "每个保留的对手功能都能对应玩家可感知的选项、信息、时机或压力。",
+      "结构选择考虑组件、规则、桌面、设置与生产限制，没有默认必须造 Automa。",
+      "行动、目标、平手、无合法行动、循环和错误恢复可按桌面协议执行。",
+      "信息信号与随机扰动分开，难度档写明具体改变的输入。",
+      "内部诊断、熟练单人玩家和新玩家盲测回答不同问题，暂停后恢复也有记录。"
+    ],
+    "backtracksTo": ["guide-experience-intent", "guide-core-system", "special-test-type-selection"],
+    "nextOptions": ["guide-minimum-prototype", "guide-rules-information", "guide-playtest-feedback", "special-decision-trace"],
+    "toolIds": ["test-plan", "decision-trace", "feedback", "playtest-selector"],
+    "status": "review"
+  },
+  {
+    "id": "special-player-count-configuration",
+    "title": "把“2–5 人”拆成可测试的人数配置",
+    "stage": "核心系统",
+    "problem": "原型在三人局能跑，我想标 2–5 人，但不知道哪些数字、地图、市场和角色要改，也分不清低人数 dummy 与高人数同步行动到底在修什么。",
+    "outcome": "一张人数配置契约：主要/支持/实验配置、体验承诺、互动拓扑、总行动与密度、角色/dummy 修补，以及分配置测试和可比较边界。",
+    "coreMinutes": 15,
+    "opening": "不要从“每多一人加两张牌”开始。先把三人四方竞争、四人两队和两人对抗写成不同配置，再找人数变化后缺失或过量的功能。能完成一局只证明规则可运行，不证明该配置值得写进盒侧承诺。",
+    "steps": [
+      {
+        "label": "冻结主要配置与承诺层级",
+        "prompt": "为每个人数写人数、队伍、角色、模式、座位和版本；标主要、支持、实验或不支持，并写此配置保留与不承诺的体验。",
+        "example": "4P-2v2-v0.8 是主要配置，承诺队内分工和实时沟通；3P-FFA 仅实验，不承诺相同团队张力。"
+      },
+      {
+        "label": "画互动拓扑而不是只列人数",
+        "prompt": "逐配置画谁能影响谁、第三方怎样受益、信息向谁流动、谁能结盟或拍板；标出两人零和化、三人第三方与邻接变化。",
+        "example": "4 人中 A 攻击 B 会让 C、D 相对受益；2 人中收益只回到 A，因此早期领先更难被桌面生态纠正。"
+      },
+      {
+        "label": "拆开总行动、密度与结束速度",
+        "prompt": "分别列自己回合、局外触发、公共阶段、同时动作和串行冲突；再检查地图、市场、候选、资源、目标、轮数和结束条件的功能。",
+        "example": "每人仍有 4 动作，但局外跟随从三人局每轮 6 次降为两人局 2 次；先修触发机会，不把个人资源翻倍。"
+      },
+      {
+        "label": "给每个修补写唯一工作",
+        "prompt": "若用功能性 dummy、角色合并/拆分、团队、同步行动或设置差异，写它保存的功能、玩家维护、信息和平手；说明它牺牲什么。",
+        "example": "中立工人只占用市场最旧一格，维持刷新压力；不计分、不阻挡地图，也不宣称模拟第三位玩家。"
+      },
+      {
+        "label": "按配置分轨测试并限制比较",
+        "prompt": "为每个配置记录版本、座位、经验、总行动、局长、等待、密度、桌面/组件/教学变化和第一次特有故障；只比较含义未变的指标。",
+        "example": "2P 与 4P 都记录市场刷新和第一次无可选牌；4P 另记录队内等待，2P 另记录 dummy 维护，不把两者合成缩放分。"
+      }
+    ],
+    "commonMistakes": [
+      {"mistake": "规则能跑到五人，所以盒侧可以写 2–5 人。", "repair": "把可运行、实验、支持和主要配置分开；目标玩家验证、组件和规则交付完成后再扩大承诺。"},
+      {"mistake": "每多一人就按比例加资源、牌或地图。", "repair": "为每一项写要保存的竞争、候选、触发、角色或结束功能；没有功能理由的增减先不做。"},
+      {"mistake": "低人数少一人，就放一个会做完整回合的 dummy。", "repair": "只补已经观察到的缺失功能，并逐动作记录维护；需要胜负和可反制策略时再考虑自动对手。"},
+      {"mistake": "高人数等待长，所有人同时做就解决了。", "repair": "重写锁定、冲突、信息、先后与组件提示，并测试操作速度、错误恢复和无障碍代价。"},
+      {"mistake": "BGG 最佳人数票最多的配置就是正确答案。", "repair": "把票数当发现信号，保留日期与总票数；回到当前版本、具体长评和目标玩家桌面证据。"}
+    ],
+    "whenToBreak": [
+      "作品的核心就是固定人数、固定队伍、秘密身份或成对关系时，可以明确只支持该配置，不必为了范围牺牲结构。",
+      "低互动系统的相邻人数配置若多轮证据稳定，可以共享部分设置与测试；仍保留配置标签和边缘故障记录。",
+      "高人数本来就以喧闹、表演、等待观察或社交谈判为乐趣时，不应只为压缩秒数改成完全同时行动。",
+      "角色合并使一名玩家无法同时读取、操作或安全完成实时任务时，停止该模式承诺，不以熟练设计者能做到作为可用证据。",
+      "不同人数已经改变胜负关系、团队、信息或主要决定时，允许把它们视为不同模式；不要强迫分数、局长或乐趣直接可比。"
+    ],
+    "exercise": {
+      "title": "把一个 2–5 人原型拆成四张配置卡",
+      "prompt": "为 2、3、4、5 人分别写配置 ID、承诺层级、互动拓扑、自己/局外/公共动作、地图或市场密度、角色变化、dummy 或同步修补、桌面与组件差异、一个配置特有失败和一个不可跨人数比较的指标。",
+      "exampleOutput": "2P-FFA 为支持配置：更直接零和；每轮 8 自己动作、2 次局外触发；中立工人只补市场刷新，每轮维护 1 次；不把 2P 分差与 4P 队伍分差直接比较。"
+    },
+    "evidenceBoundary": "本指南综合一项 8 款已实现桌游的计算研究、三篇商业产品一手设计日志、一篇设计师实践、一篇实践综述、Dixit/Codenames/Captain Sonar 官方规则、一个角色等待设计日志、中文玩家停机时间长评和 BGG 平台数据结构。证据支持把人数视为配置、按缺失功能缩放、单独计算局外行动，并把同步行动与角色合并视为结构变化；但不提供通用最佳人数、资源/地图公式、允许等待秒数、dummy 复杂度、同时行动效果或测试局数。计算研究不测人的体验，官方规则不证明效果，商业成功日志存在回顾与幸存者偏差，社区投票缺少代表性与情境；本站五步契约仍需中文新手、混合熟练度和不同可访问性玩家验证。",
+    "resourceIds": ["goodman-multiplayer-game-spaces", "daniel-player-count", "gamesprecipice-player-count-scalability", "amritsar-player-count-diary", "root-hirelings-player-count-diary", "popcorn-simultaneous-player-count-diary", "dixit-three-player-rules", "codenames-low-count-rules", "bgg-xml-api-player-count-polls", "captain-sonar-rules", "palm-of-your-hand-diary", "ptt-dadaocheng-downtime"],
+    "claimIds": ["claim-player-count-is-configuration-not-scalar", "claim-player-count-total-actions-can-be-nonlinear", "claim-player-count-scaling-needs-function", "claim-low-count-dummy-needs-one-function", "claim-simultaneous-play-is-structural-refactor", "claim-community-best-count-is-discovery-signal", "claim-player-count-configurations-need-separate-tests"],
+    "conceptIds": ["player-count-configuration", "primary-player-count", "interaction-topology", "scaling-dimension", "functional-dummy", "role-consolidation", "time-contract", "decision-ownership", "version"],
+    "doneWhen": [
+      "每个候选人数都写成含队伍、角色、模式、座位和版本的配置，并标主要、支持、实验或不支持。",
+      "互动拓扑说明直接对手、第三方、邻接、信息与决定权怎样变化，不用人数代替关系。",
+      "自己回合、局外触发、公共阶段、同时动作和串行冲突分别计数。",
+      "地图、市场、牌库、候选、目标、轮数、角色和资源的每项变化都有功能理由。",
+      "dummy、角色合并与同步行动写明维护、信息、错误恢复和牺牲项。",
+      "各配置绑定版本、座位、经验、时间、空间与特有故障，且只比较仍有相同含义的指标。"
+    ],
+    "backtracksTo": ["guide-experience-intent", "guide-core-system", "special-test-type-selection"],
+    "nextOptions": ["guide-minimum-prototype", "guide-playtest-feedback", "guide-rules-information", "guide-presentation-release"],
+    "toolIds": ["test-plan", "playtest-selector", "decision-trace", "shared-decision", "feedback"],
+    "status": "review"
+  },
+  {
+    "id": "special-ending-contract",
+    "title": "先写结束体验，再选择终局触发器",
+    "stage": "核心系统",
+    "problem": "原型能结束，但盒侧分钟不稳定、最后几轮忽快忽慢；我不知道该删轮数、换结束条件、给所有人最后一回合，还是允许投降。",
+    "outcome": "一张结束契约：会话时间口径、节奏形状、触发与可见性、最后一轮规则、拖尾诊断，以及投降、退出与淘汰后的处理路径。",
+    "coreMinutes": 13,
+    "opening": "不要先在‘固定八轮’和‘有人到 30 分’之间投票。先写这局怎样让玩家感觉接近结尾、谁可以加速或拖延、触发后还有什么决定，以及玩家若无法或不愿继续会怎样。结束条件是一个时间、信息与能动性契约。",
+    "steps": [
+      {
+        "label": "冻结时间承诺与计量口径",
+        "prompt": "写目标会话范围，并说明从设置、教学、正式游玩、查询、结算到收纳哪些计入；把首局、熟练局、人数、版本与支持条件分轨。",
+        "example": "四人首局承诺整桌 120–150 分：设置 10–15、教学 20–25、游玩 80–100、结算约 8；熟练局另记，不用设计师演示局代替。"
+      },
+      {
+        "label": "画节奏形状和公共时钟",
+        "prompt": "按开局建立、中盘转化、终局加速或停滞画出决定、等待、查询和重复执行；标出玩家怎样看见离结束还有多远。",
+        "example": "1–3 轮建立引擎；4–6 轮出现转化决定；7 轮后市场枯竭但仍重复采集。公共轨道能看到剩余约两轮，但必须数他人版图才能判断谁会触发。"
+      },
+      {
+        "label": "写完整终局契约",
+        "prompt": "明确触发条件与触发者、行动前可见信号、触发后谁还行动几次、是否等回合、是否知道最后行动，以及先后手或触发者的补偿与激励。",
+        "example": "任一玩家填满第六格后触发；全桌始终可见。完成当前轮后再共同一轮，所以人人等回合且知道最后一轮；触发者不额外得分，避免只为结束冲刺。"
+      },
+      {
+        "label": "拆开结果确定与剩余决定价值",
+        "prompt": "在测试中分别询问/观察玩家何时认为冠军已定，以及之后还有哪些策略、表达、排名或叙事收束；把维护、重复执行和等待另列为拖尾。",
+        "example": "第 8 轮三人都认为冠军已定；第二名仍可争一轮，但第 10 轮只有把资源逐个换分。下版只提前资源兑换，不自动砍掉争第二名的阶段。"
+      },
+      {
+        "label": "为退出、投降与淘汰写协议并复测",
+        "prompt": "分别写整桌提前结束、两人认输、多人中一人退出、玩家淘汰时的同意、状态、隐藏信息、旁观义务、重新加入与结果记录；用首局/熟练局和关键人数复测。",
+        "example": "多人局单人退出不能直接瓜分资源：全桌可选择暂停保存或共同结束；淘汰者 10 分钟内进入下一小局，否则规则提供无剧透旁观区与自由离桌。"
+      }
+    ],
+    "commonMistakes": [
+      {"mistake": "只记‘这局 95 分钟’，不记设置、教学、人数和经验。", "repair": "先声明计时起止并分段；把版本、配置、首局/熟练局和支持条件绑定到每条记录。"},
+      {"mistake": "所有人回合数相等，所以结尾一定公平。", "repair": "另问每个座位何时知道最后行动、跨回合计划能否完成、谁有结束激励和补偿。"},
+      {"mistake": "玩家能数出来，所以终局已经清楚。", "repair": "观察他们是否在行动前实际读取进度；频繁重数别人组件、依赖主持提醒也是系统成本。"},
+      {"mistake": "领先者明显会赢，就立刻提前结束。", "repair": "分开结果确信和剩余决定价值；记录排名、表达、叙事与学习是否仍是目标体验。"},
+      {"mistake": "允许投降或把落后者淘汰，就修复拖尾。", "repair": "写退出如何改变地图、资源、信息和他人胜负，并提供同意、状态处理、重新加入或整桌停止程序。"}
+    ],
+    "whenToBreak": [
+      "极短竞速或一次性揭晓游戏可立即结束，不必强行等回合；仍检查先后手、未完成动作和结果可理解性。",
+      "隐藏倒计时、突发灾难或未知牌库耗尽是核心紧张来源时，可以不提供精确剩余轮数；应验证玩家仍有足够信号承担风险。",
+      "沙盒、叙事或开放探索作品可让玩家自行选择停止；仍需协调多人目标、保存/收纳和某位玩家想离桌时的路径。",
+      "锦标赛、积分或完整排名要求可能需要执行到正式终局，即使冠军高度确定；把名次与资格写成仍在进行的目标。",
+      "玩家淘汰是短轮紧张、主题表达或让落后者脱离长局的一部分时可以保留；必须记录到重新加入的真实时间和剩余社交义务。"
+    ],
+    "exercise": {
+      "title": "把一局‘约 90 分钟’改写成结束契约",
+      "prompt": "选一个当前原型，写首局与熟练局计量口径；画三段节奏；写触发、可见性和最后一轮规则；记录一次结果确信点与剩余决定；最后补整桌提前结束、单人退出和淘汰路径。",
+      "exampleOutput": "v0.7 四人首局：设置 12、教学 18、游玩 92、结算 6；第 6 轮后安全循环；公共轨道触发、完成当前轮再一轮；第 8 轮冠军高确信但第二名仍有一轮；单人退出时全桌暂停或共同结算，不瓜分其状态。"
+    },
+    "evidenceBoundary": "本指南综合三篇实体桌游设计师实践/日志、一篇实践分类、一篇数字 4X 相邻设计日志、一篇桌游淘汰研究短文、一项数字游戏退出研究、一篇玩家长评、一组多人投降讨论，以及站内已有的反馈回路、停机时间和人数配置材料。证据支持拆开局长口径、节奏形状、进度可见性、触发后行动、结果确信与剩余决定，并把退出视为系统变化；但不提供最佳分钟数、固定轮数、最后一轮公式、拖尾阈值、投降礼仪或淘汰接受率。学术材料对实体终局效果的直接证据有限，商业日志缺少完整样本，玩家讨论不具代表性；本站五步契约是综合工具，仍需中文新手、熟练组和不同可访问性条件验证。",
+    "resourceIds": ["daniel-game-length", "jaffee-game-end-dynamics", "gamesprecipice-end-conditions", "drillers-game-duration-diary", "djinn-game-end-diary", "old-world-ending-diary", "rogerson-player-elimination", "alexandrovsky-game-disengagement", "aquaria-game-length-review", "reddit-concession-social-contract", "game-balance-feedback-pacing", "ptt-dadaocheng-downtime", "goodman-multiplayer-game-spaces"],
+    "claimIds": ["claim-duration-needs-measured-interval", "claim-ending-is-contract-not-trigger-alone", "claim-equal-turns-and-last-turn-certainty-differ", "claim-progress-visibility-changes-pacing-behavior", "claim-pace-is-shape-not-average", "claim-tail-needs-two-observations", "claim-exit-and-elimination-need-protocol", "claim-first-and-returning-duration-need-separate-tracks"],
+    "conceptIds": ["session-time-breakdown", "end-trigger", "final-round-policy", "pace-shape", "progress-legibility", "tail-play", "concession-protocol", "player-elimination", "time-contract", "player-count-configuration", "decision-space", "exit-repair-path"],
+    "doneWhen": [
+      "每条局长记录说明计时起止、版本、人数配置、经验与支持条件，首局和熟练局不混合。",
+      "节奏形状标出建立、转化、加速或停滞，以及等待、查询和重复执行集中发生的位置。",
+      "结束触发、触发者、可见信号、剩余行动、等回合与最后行动确定性都已写明。",
+      "结果确信与剩余决定价值分别记录，拖尾不只由分差或分钟判定。",
+      "投降、单人退出与玩家淘汰分别有同意、状态、信息、旁观和重新加入/整桌停止路径。",
+      "关键方案在首局、熟练局和主要人数配置复测，只比较口径仍相同的时间与行为。"
+    ],
+    "backtracksTo": ["guide-experience-intent", "guide-core-system", "special-player-count-configuration", "special-test-type-selection"],
+    "nextOptions": ["guide-minimum-prototype", "guide-playtest-feedback", "guide-rules-information", "guide-presentation-release"],
+    "toolIds": ["test-plan", "decision-trace", "feedback", "playtest-selector", "balance-pass"],
+    "status": "review"
+  },
+  {
+    "id": "special-randomness-contract",
+    "title": "先画随机事件前后的决定，再调概率",
+    "stage": "核心系统",
+    "problem": "玩家说原型‘太看运气’或‘没有控制’，但我不知道该减少骰子、改成抽牌、加重掷、公开概率，还是保留这种戏剧性。",
+    "outcome": "一张随机性契约：不确定性来源、决定—随机—回应循环、风险暴露、缓解动作、结果影响，以及计算轨道与真人体验轨道的分工。",
+    "coreMinutes": 14,
+    "opening": "先不要争论输入随机和输出随机谁更高级，也不要先加一个重掷资源。挑一个玩家真的抱怨或兴奋的事件，把它前后的决定、信息、 stakes、回应和归因画出来。随机性是时点、分布、能动性与体验共同形成的契约。",
+    "steps": [
+      {
+        "label": "写不确定性承诺与失效",
+        "prompt": "说明这段体验为什么需要不可预测：惊喜、适应、平衡差距、冒险、叙事还是对手读取；再写最不想制造的失败，并区分随机装置与其他不确定性来源。",
+        "example": "目标是让远征有可管理的风险并产生桌上欢呼；不希望一名玩家因单次坏抽失去整轮。未知来自事件牌和对手抢先，骰子只是伤害幅度。"
+      },
+      {
+        "label": "画决定—随机—回应—下一决定",
+        "prompt": "从事件前最后一个真实选择开始，标随机何时揭示、结果何时锁定、玩家多久和几次能回应，以及它怎样改变下一次候选行动。不要只贴输入/输出标签。",
+        "example": "选是否深入→抽事件→可支付绳索改成撤退→选择保存遗物或继续→再抽。第一次抽牌是前一决定的输出，也是止损决定的输入。"
+      },
+      {
+        "label": "写暴露、信息、分布与 stakes",
+        "prompt": "记录谁选择承担哪条分布，选择前能看到什么，最好/常见/最坏结果及损失是否可恢复；若没有稳定替代路线，也要明确写出。",
+        "example": "玩家在公开剩余 3/12 张灾难牌时选择继续；成功多拿 3 分，失败失去本轮 5 分但不损伤永久能力。保守路线可立即保存。"
+      },
+      {
+        "label": "拆开缓解动作、成本与所有权",
+        "prompt": "逐项标记事前准备、选择暴露、改分布、择果、重试、结果转换、事后适应与止损；写谁付什么、动作真正改变什么，并删除只增加维护的假选择。",
+        "example": "护符在抽前移除一张灾难牌；绳索在抽后支付 2 资源撤退；同伴允许二选一但由另一玩家决定。三者分别改变分布、结果与所有权。"
+      },
+      {
+        "label": "分开结果测量与真人体验",
+        "prompt": "若可模拟，用共享种子/序列比较随机源对明确指标的贡献；真人桌分别记录实际决定、理解、情绪与归因。两轨绑定同一版本、配置和经验，但不合成随机性分数。",
+        "example": "代理轨固定地图后发现事件牌只小幅改变胜率；四人首局仍有两人认为单次坏抽让决定无效。下一版先改结果后的回应窗口，不据胜率结论否定体验。"
+      }
+    ],
+    "commonMistakes": [
+      {"mistake": "输入随机就是好设计，输出随机就是坏设计。", "repair": "把两者当相对某次决定的时点；继续画到下一次决定，并验证信息、回应窗口和目标体验。"},
+      {"mistake": "游戏掷很多次骰，所以胜负一定更随机。", "repair": "分开事件数、单次分布和结果贡献；许多事件可能平均，一次事件也可能卡在阈值上决定整局。"},
+      {"mistake": "加三次重掷，就有足够的运气缓解。", "repair": "写重掷是全体还是部分、发生前后、由谁支付、是否改变分布或只是再次抽样，并观察它是否新增决定。"},
+      {"mistake": "模拟显示胜率影响不大，所以玩家说看运气是错的。", "repair": "代理结果与人类体验分轨；检查玩家看到的序列、损失时点、可恢复性、代理能力和所选指标。"},
+      {"mistake": "玩家说输在运气，就立刻降低方差。", "repair": "同时记录事件前选择、真实随机源、结果正负、回应与确信；归因是需要理解的观察，不是自动因果。"}
+    ],
+    "whenToBreak": [
+      "纯机会、派对或戏剧性揭晓作品可以不给玩家缓解；仍应让 stakes、局长和目标人群知道自己同意了什么。",
+      "隐藏概率本身是推断或主题的一部分时，不必公开精确百分比；应提供足以承担风险的可学习信号，并验证新手不会误读关键后果。",
+      "极短游戏可以让一次随机事件决定胜负，快速重开本身就是恢复路径；仍要记录首局解释、失败后的等待和是否有人被迫旁观。",
+      "随机设置只为打破固定开局且对所有人公开时，可以把重点放在设置后的决定；仍需检查某些种子是否给座位不可逆优势。",
+      "实体掷骰、抽牌或袋抽承担触觉、仪式和共同悬念时，不应只按数学等价替换；同时观察可访问性、读取、操作和维护成本。"
+    ],
+    "exercise": {
+      "title": "拆一段‘太看运气’的原型",
+      "prompt": "选一个测试者抱怨的事件，写目标不确定性；画两轮决定—随机—回应；列暴露信息和 stakes；把每个缓解动作归类；最后分别写一个计算问题和一个真人任务问题。",
+      "exampleOutput": "v0.6 探索：目标是止损张力；决定继续→袋抽→可弃护符撤退→决定再抽。灾难 3/12 公开，最坏失本轮 5 分。护符是抽后止损，不改分布。计算测灾难序列对胜率；真人观察是否理解撤退成本与把失败归因何处。"
+    },
+    "evidenceBoundary": "本指南综合两项桌游/卡牌随机性计算与体验研究、两项纯机会或技能—随机归因的相邻心理学研究、四篇设计师理论/讲义、两篇商业项目一手日志、一篇玩家长评，以及站内既有概率与桌游体验材料。证据支持把不确定性来源、随机时点循环、风险暴露、缓解操作、结果影响和结果归因分开；但不提供最佳随机度、输入优于输出、可接受失败率、通用重掷次数、策略深度或玩家偏好比例。Goodman 等的结果依赖计算代理与指标；Zhang 等只有 18 名数字卡牌参与者；心理学任务不是现代桌游；设计日志和玩家长评不具代表性。本站五步契约是综合工具，仍需中文新手、熟练玩家、关键人数与不同可访问性支持下验证。",
+    "resourceIds": ["daniel-randomness", "shalev-random-loops", "przybylski-randomness-strategy", "goodman-skill-stochasticity", "zhang-input-output-randomness", "ernest-volatility-game-design", "with-smile-gun-randomness-diary", "takeover-randomness-diary", "spots-randomness-player-review", "wohl-luck-illusory-control", "okamoto-luck-skill-attribution", "game-balance-probability", "boardgame-balance-experience-study"],
+    "claimIds": ["claim-uncertainty-source-is-not-random-device", "claim-input-output-is-timing-not-quality", "claim-random-event-count-is-not-outcome-impact", "claim-random-agency-needs-exposure-and-response", "claim-mitigation-needs-operation-cost-owner", "claim-random-variety-is-not-decision-variety", "claim-randomness-simulation-and-experience-need-two-tracks", "claim-outcome-attribution-needs-event-context"],
+    "conceptIds": ["uncertainty-source", "randomness-loop", "random-exposure", "response-window", "mitigation-action", "outcome-randomness", "seeded-comparison", "outcome-attribution", "expected-value", "variability", "agency", "decision-space"],
+    "doneWhen": [
+      "目标不确定性与不可接受失效已写明，随机装置和其他不确定性来源分开。",
+      "至少一段决定—随机—回应—下一决定循环已画出，随机相对时点和回应窗口可见。",
+      "每次关键随机暴露都记录所有者、事前信息、分布、最好/最坏 stakes 与恢复路径。",
+      "每个缓解动作都注明操作类型、成本、所有权与时点，不用按钮数替代能动性。",
+      "随机事件数量、结果影响、决定变化与玩家主观随机感分别报告。",
+      "模拟/代理与真人体验绑定同一版本和配置但分轨解释，结果归因保留事件上下文。"
+    ],
+    "backtracksTo": ["guide-experience-intent", "guide-core-system", "guide-minimum-prototype", "special-balance-one-risk"],
+    "nextOptions": ["guide-minimum-prototype", "guide-playtest-feedback", "guide-rules-information", "special-decision-trace"],
+    "toolIds": ["decision-trace", "balance-pass", "test-plan", "feedback", "playtest-selector"],
+    "status": "review"
+  },
+  {
+    "id": "special-scoring-contract",
+    "title": "先写分数奖励的行为，再调分值",
+    "stage": "核心系统",
+    "problem": "游戏能算出赢家，但玩家只追同一条路线、看不懂自己是否前进，或终局才发现整局方向错了；我不知道该改分值、公开分数、加隐藏目标还是重做胜利条件。",
+    "outcome": "一张计分契约：结束、胜负与换算的边界，一个得分事件的行为链，两条路径的真实承诺，计分速度与可见性，以及系统/理解/互动/体验的分轨证据。",
+    "coreMinutes": 15,
+    "opening": "先不要把 3 分改成 2 分，也不要先加一张秘密目标。选择测试里最常见或最可疑的一次得分，把玩家怎样走到这里、当时知道什么、牺牲什么、得到哪些非分数反馈，以及这次奖励会让他下一轮重复什么画出来。",
+    "steps": [
+      {
+        "label": "拆开结束、胜负与计分",
+        "prompt": "分别写游戏何时停止或收尾、什么状态决定谁胜/败/平，以及哪些行动和状态怎样换算；再写作品希望玩家反复做什么、不希望用什么行为赢。",
+        "example": "牌库耗尽后完成当前轮；最高净声望获胜；交付订单即时加声望、欠债终局扣分。承诺是为长期航线延迟兑现，不希望囤货不交也稳定获胜。"
+      },
+      {
+        "label": "追踪一个得分事件的行为链",
+        "prompt": "从得分前最后一个真实决定开始，记录当时信息、合法候选、机会成本、即时非分数反馈、得分时点与数值，再写它怎样改变下一次目标与重复行为。",
+        "example": "保留蓝货→放弃眼前 2 金→下一轮抢到北港→立即得 4 声望并解锁仓位→玩家决定继续保留套装货；对手可在港口出现时抢先。"
+      },
+      {
+        "label": "比较两条路径的承诺与切换",
+        "prompt": "为两条候选路线写所需状态、时点、机会成本、切换损失、互动表面、失败信号和各阶段贡献；若两路由同一引擎同步推进，要承认它们只是计分来源。",
+        "example": "航运要早投仓位并暴露港口竞争；金融保留现金、终局兑现且中途弱。第 2 轮后改路线会损失已建仓位；若收入同时无成本推进两者，则不是独立路径。"
+      },
+      {
+        "label": "写速度、可见性与回应",
+        "prompt": "标记每项分数是即时、阶段、延迟还是终局；公开、私密、可推断或可追踪但隐藏；分别记录实际/感知进展、计算和记忆劳动，以及玩家知道后能合法改变什么。",
+        "example": "公共交付分即时移动，秘密合同终局加分；对手只能粗估 4–8 分但可抢港口。新手第 3 轮仍误以为金融玩家落后，需要给进展信号而非直接公开合同。"
+      },
+      {
+        "label": "分轨验证，只改一个关系",
+        "prompt": "系统轨看分差和路径贡献；决定轨看事前理解与选择；互动轨看阻断、围攻和协商；体验轨看进展、能力、自主与主题后果。绑定版本、人数和经验，只改一项分值、时点、可见性或反馈。",
+        "example": "v0.7 只把保育目标从 5 分改 3 分；四局记录目标贡献和胜负，但同时观察玩家是否仍能说出替代路线、是否改选牌，以及终局惊讶来自哪里。"
+      }
+    ],
+    "commonMistakes": [
+      {"mistake": "有六种得分方法，所以有六条策略。", "repair": "逐路写承诺、机会成本、切换成本与互动；同一引擎同步抬高的只是多个结果栏。"},
+      {"mistake": "玩家抱怨算分复杂，就把所有数值四舍五入。", "repair": "先定位复杂度发生在行动前比较、阶段维护还是终局结算；只删不改变决定的精确换算。"},
+      {"mistake": "隐藏分数可以防止围攻，所以更友善。", "repair": "先写知道领先者后玩家能做什么；隐藏也可能增加记忆劳动、随机攻击和无法适应。"},
+      {"mistake": "非对称角色落后是特色，不需要解释。", "repair": "不要求同速，但要验证目标玩家能读取积累、兑现时点和仍可做的决定，并记录其他玩家如何判断威胁。"},
+      {"mistake": "把平均分和终局分差调近，就证明激励对齐。", "repair": "另看玩家追了什么、何时看懂、能否回应、是否形成目标体验；系统结果不能替代行为和体验。"}
+    ],
+    "whenToBreak": [
+      "纯沙盒、表达或个人高分活动可以没有唯一胜利条件；仍应说明分数承担回顾、挑战还是比较，避免它暗中成为唯一目标。",
+      "隐藏身份、诈唬和揭晓型作品可以故意隐藏真实进展；仍应提供足以作决定的其他信号，并测试终局惊讶是否可理解。",
+      "极短游戏可让一次目标同时触发结束、直接判胜且无需计分；仍需处理同时达成、先后手和快速重开。",
+      "历史模拟或不对称冲突可为各方设不同阈值、速度和胜利等级；不必制造表面同分，但要让各方目标与进展可执行。",
+      "复杂经济游戏可以把精确换算本身做成核心挑战；仍应验证目标玩家能在行动前比较、在错误后恢复，并给非目标算术劳动设置辅助。"
+    ],
+    "exercise": {
+      "title": "拆一项‘看起来最值钱’的得分",
+      "prompt": "选测试中最常被追逐的一项得分：分开结束/胜负/换算；画一次行动链；与一条替代路径比较承诺和切换；写计分时点、可见性和合法回应；最后各写一个系统指标、行为任务与反驳信号。",
+      "exampleOutput": "v0.7 保育目标：拿图标→放弃高基础分动物→完成目标得 5 分并触发最后一轮。替代动物组合没有独立加速且切换无成本，暂不称第二路径。系统看目标贡献；行为看玩家能否指出替代计划；若降到 3 分后仍全员优先完成，分值不是唯一原因。"
+    },
+    "evidenceBoundary": "本指南综合三篇桌游设计师理论/实践、四篇商业项目一手日志、一项 200 人 Boggle 奖励实验、一篇含 126 人分数可见性实验的数字游戏博士论文、两篇玩家长评、一项非代表性社区讨论，以及站内多目标、终局、平衡与主题材料。证据支持拆开结束/胜负/计分、追踪得分事件、记录路径承诺、计分速度和可见性，并把系统结果与理解/互动/体验分轨；不提供最佳计分制、公开比例、隐藏目标数量、分值尺度、策略路径数、平手链或追赶公式。Boggle 奖励不是游戏内 VP；Gajadhar 是数字 FPS；BGG 日志部分只能文章级复核；玩家与社区材料不代表总体。五步契约是本站综合工具，仍需中文新手、熟练玩家、关键人数和不同可访问性支持下验证。",
+    "resourceIds": ["daniel-winning-losing", "russell-victory-conditions", "burgun-against-score-systems", "with-smile-gun-scoring-diary", "hegemony-scoring-diary", "daybreak-victory-diary", "pacts-scoring-diary", "szulawski-boggle-rewards", "gajadhar-score-visibility", "sanctuary-scoring-review", "point-salad-scoring-review", "reddit-hidden-scoring", "decision-space-objectives", "uw-secondary-objectives", "old-world-ending-diary"],
+    "claimIds": ["claim-end-win-score-are-separate-rules", "claim-scoring-function-is-behavioral-incentive", "claim-scoring-precision-needs-decision-value", "claim-scoring-pace-shapes-perceived-progress", "claim-score-visibility-is-information-design", "claim-scoring-sources-are-not-strategy-paths", "claim-hidden-score-needs-response-question", "claim-scoring-evidence-needs-multiple-tracks"],
+    "conceptIds": ["win-condition", "scoring-function", "scoring-event", "scoring-path", "scoring-pace", "score-visibility", "incentive-alignment", "dominant-scoring-path", "scoring-legibility", "end-trigger", "progress-legibility", "goal"],
+    "doneWhen": [
+      "结束条件、胜利条件和计分函数已分别写清，并说明希望奖励与不希望奖励的行为。",
+      "至少一个关键得分事件已连接前置决定、信息、机会成本、即时反馈、分数与下一行为。",
+      "至少两条候选路径已比较承诺、切换成本、互动表面和阶段贡献，不用计分栏数量代替路径。",
+      "计分时点、可见性、实际/感知进展、记忆/计算劳动与知道后的合法回应已记录。",
+      "系统结果、决定理解、互动变化、体验与归因分别报告，且绑定同一版本、人数与经验。",
+      "下一轮只改变分值、时点、可见性或反馈关系之一，并预先写反驳信号。"
+    ],
+    "backtracksTo": ["guide-experience-intent", "guide-core-system", "special-ending-contract", "special-balance-one-risk", "special-decision-trace"],
+    "nextOptions": ["guide-minimum-prototype", "guide-playtest-feedback", "guide-rules-information", "special-balance-one-risk", "special-ending-contract"],
+    "toolIds": ["decision-trace", "balance-pass", "test-plan", "feedback", "playtest-selector"],
+    "status": "review"
+  },
+  {
+    "id": "special-turn-structure-contract",
+    "title": "别先加同步行动，先画谁在什么时候决定",
+    "stage": "核心系统",
+    "problem": "高人数等待长、玩家漏阶段或轮到自己才开始想；我不知道该缩短回合、拆成阶段、让所有人同步、增加反应，还是直接删掉维护。",
+    "outcome": "一张回合结构契约：目标节奏与共同注意、窗口权限图、完整行动经济、六类等待与维护功能，以及只改一个窗口的验证计划。",
+    "coreMinutes": 16,
+    "opening": "先不要给每个人一块同时行动板，也不要先把三行动砍成一行动。选测试中最慢、最常漏或最让预案失效的一个窗口，从谁先看见信息、谁开始决定、谁能操作和回应、何时锁定，到谁确认并把权力交给下一位完整画出来。",
+    "steps": [
+      {
+        "label": "写节奏与共同注意承诺",
+        "prompt": "说明这段游戏希望玩家何时独立思考、观看、讨论、表演、突然应变或短暂休息；写一种不可接受的等待，并用自己的术语画出游戏、轮、阶段、回合、行动和反应窗口。",
+        "example": "希望玩家在他人运货时观察港口竞争，但不必每张牌后检查反应；不可接受的是等待三人后两个预案全失效。每轮：同时计划→交错行动→共同补市场。"
+      },
+      {
+        "label": "画一个窗口的权限与信息",
+        "prompt": "按顺序标谁能看、谁必须决定、谁能行动或回应、何时提交/锁定/揭示、冲突怎样解决、谁执行与确认、怎样进入下一窗口；把没有所有者的步骤圈出。",
+        "example": "全员看公开订单→各自在盾牌后选一张并锁定→同时揭示→主动权高者先选港口→受影响玩家可拦截一次→主动玩家结算并移动标记→左手玩家确认市场。"
+      },
+      {
+        "label": "展开行动经济与粒度",
+        "prompt": "列行动槽、当前可用动作、顺序/组合、机会成本、免费/触发动作、反应储备、维护与未来能力；再问一次行动是否太小或太大，避免只调整行动点数量。",
+        "example": "两行动：航行或交货；贷款占一槽并降收入。免费装货虽不占槽，却每次要查容量并触发拦截。候选不是加第三行动，而是把装货并入航行并保留一次公开拦截。"
+      },
+      {
+        "label": "分解等待与维护功能",
+        "prompt": "逐人记录钟表等待、决定开始、预案是否存活、必须监看的触发、交接和错误恢复；每项维护注明状态、信息、决定、纠错、学习/表演或无当前功能。",
+        "example": "乙等待 74 秒；第 23 秒形成预案，甲行动后失效；轮到乙又扫盘 19 秒。轮末补货无决定且两次漏做，但共同翻港口卡会让全桌重新聚焦，两个步骤不一起删除。"
+      },
+      {
+        "label": "只改一个窗口并复测得失",
+        "prompt": "从删除、批处理、缩短、交错、同步、重定粒度、减少反应或明确交接中选一项；预先写要降低的成本、必须保留的功能和反驳信号，在同版本/人数/经验下复测。",
+        "example": "v0.8 只把四人依次选订单改成同时锁定揭示；预计钟表等待下降，必须保留抢单信息。若冲突解释超过节省时间、快手获利或两人看错锁定，否定方案。"
+      }
+    ],
+    "commonMistakes": [
+      {"mistake": "四人等待长，让所有人同时做就解决。", "repair": "分别写决定和实体操作能否并行，并补锁定、泄密、冲突、最慢者屏障、速度优势与错误恢复。"},
+      {"mistake": "每回合只有一个行动，所以一定很快。", "repair": "展开该行动的候选、前置查询、触发、结算、反应和维护；一个标签可藏着完整多阶段流程。"},
+      {"mistake": "玩家一直看着桌面，说明没有 downtime。", "repair": "记录他在计划、强制监看、学习、聊天、等待还是恢复，并请玩家解释关键时刻；注视不是投入证据。"},
+      {"mistake": "反应让非主动玩家参与，所以越多越互动。", "repair": "逐窗口记录实际响应、检查资格、通过声明、漏触发和资源保留；没有响应也可能产生监看成本。"},
+      {"mistake": "维护不是决定，全部自动化或移到轮末。", "repair": "先写状态、信息、纠错、共同注意和表演功能；只删无功能劳动，并复测状态可见与错误。"}
+    ],
+    "whenToBreak": [
+      "派对、表演或社交谈判游戏可以保留观看、起哄和较长个人时刻；仍要验证旁观者有同意的参与方式和离开/恢复路径。",
+      "实时、速度或身体操作本身是目标挑战时，不必给无限思考；仍应提供清楚权限、暂停/修复和目标玩家需要的可访问性替代。",
+      "复杂战争、经济或组合游戏可以给长回合与多行动；需要证明组合空间改变决定，并记录尾部回合、预案失效和重新扫描。",
+      "合作游戏可允许玩家自由排序行动；仍要记录决定所有权、沉默玩家、重复行动、谁宣布完成与状态一致性。",
+      "教学版可把隐含步骤拆成显式阶段帮助理解；熟练后可合并，但首局与熟练局必须分轨，不把教学冗余当永久节奏。"
+    ],
+    "exercise": {
+      "title": "拆一段‘轮到我才开始想’",
+      "prompt": "选一轮真实测试：画窗口权限；列行动槽与所有附带动作；为每名玩家记六类等待；给维护写功能；最后只选一种结构改动，并写一个收益、一个损失和一个否定信号。",
+      "exampleOutput": "v0.7 四人：同时看市场，甲依序行动，所有人可在交货后响应。丙等待 96 秒、预案失效两次、轮到后扫描 21 秒；五个反应窗无人用。v0.8 只把无卡者自动通过并用标记显示资格；若有人漏掉可响应时机则回退。"
+    },
+    "evidenceBoundary": "本指南综合三篇桌游设计师理论/实践、五篇商业项目一手日志、一篇玩家长评、一项非代表性设计社区讨论、一项 262 分钟/9 人的桌游录像质性研究、一篇 21 款游戏的会话分析摘要、一篇数字桌面协调政策短论文，以及官方实时/合作规则和站内人数、局长、交互材料。证据支持把回合视为权限与信息结构、扩展行动经济、分解等待、写阶段/维护功能，并把同步与反应当协调政策变化；不提供最佳回合秒数、行动数、阶段数、反应次数、可接受等待、先手补偿或同步提速比例。Bishop 不是受控实验；Xu 等样本小且同校；Pape 与 Graham 只有初步数字实现；Hofstetter 本轮只取得摘要；设计日志、评者与社区材料均不能代表总体。五步契约仍需中文新手、熟练玩家、主要人数与不同可访问性条件下验证。",
+    "resourceIds": ["daniel-turn-structure", "bishop-game-design-concepts", "building-blocks-tabletop-book", "ducksauce-card-turn-loop", "oath-action-economy-diary", "arcs-action-structure-diary", "pax-pamir-free-action-diary", "elden-ring-action-economy-diary", "daniel-who-goes-first", "popcorn-simultaneous-player-count-diary", "xu-chores-social-play", "pape-tabletop-coordination-policies", "hofstetter-turn-transition", "reddit-downtime-design", "brass-action-economy-review", "ptt-dadaocheng-downtime", "captain-sonar-rules", "magic-maze-rules"],
+    "claimIds": ["claim-turn-structure-allocates-authority-and-information", "claim-action-count-is-not-action-economy", "claim-action-granularity-is-design-variable", "claim-shorter-turns-do-not-guarantee-less-waiting", "claim-waiting-needs-multiple-measures", "claim-phase-needs-observable-function", "claim-reaction-windows-create-monitoring-cost", "claim-maintenance-has-cost-and-possible-function", "claim-initiative-advantage-has-multiple-surfaces", "claim-simultaneous-play-is-structural-refactor"],
+    "conceptIds": ["turn-structure", "action-window", "action-economy", "action-granularity", "decision-latency", "plan-survival", "mandatory-monitoring", "handoff-friction", "initiative-control", "maintenance-function", "interaction-interface", "player-count-configuration", "session-time-breakdown"],
+    "doneWhen": [
+      "目标节奏、共同注意和不可接受等待已写明，项目自己的回合层级术语前后一致。",
+      "至少一个关键窗口标明观察者、决定者、行动/回应者、锁定、揭示、冲突、执行、确认与结束。",
+      "行动槽、可用动作、顺序、机会成本、免费/触发动作、反应储备、维护和动作粒度已展开。",
+      "钟表等待、决定延迟、预案存活、强制监看、交接摩擦和恢复劳动分别记录。",
+      "每项高频维护注明当前功能；删除、批处理或自动化同时写要保留的状态、信息或社交作用。",
+      "下一版只改变一个窗口、粒度或协调政策，并预先写收益、损失和反驳信号。"
+    ],
+    "backtracksTo": ["guide-experience-intent", "guide-core-system", "special-player-count-configuration", "special-ending-contract", "special-embodied-time-window"],
+    "nextOptions": ["guide-minimum-prototype", "guide-playtest-feedback", "guide-rules-information", "special-test-type-selection", "special-balance-one-risk"],
+    "toolIds": ["decision-trace", "test-plan", "feedback", "playtest-selector", "balance-pass"],
+    "status": "review"
+  },
+  {
+    "id": "special-spatial-relationship-contract",
+    "title": "别先画世界地图，先写每条空间关系在做什么",
+    "stage": "核心系统",
+    "problem": "地图看起来像一个世界，但玩家总走同一路线、搞错相邻、低人数碰不到彼此，或远座看不清也够不到关键状态；我不知道该缩图、加路线、换六角格、做模块地图还是先重画美术。",
+    "outcome": "一张空间关系契约：目标空间体验、地点—连接骨架、距离与容量、激励和人数密度、制图线索与实体座位任务，以及只改一项关系的比较测试。",
+    "coreMinutes": 18,
+    "opening": "先把地图美术盖住，也不要立刻换成六角格。选测试中最常走、最常误读或最难触达的一段空间，用圆点表示地点、线表示当前操作允许的连接；然后写清玩家为什么要去、到那里要付什么、能放下什么，以及谁会因此受到影响。",
+    "steps": [
+      {
+        "label": "写空间承诺与地图功能",
+        "prompt": "说明玩家应反复体验的是接近、远征、封锁、绕行、探索、聚集、分工还是建造；再列地图承担的状态、移动、作用范围、所有权、信息、叙事和实体摆放功能，以及一种不可接受的空间结果。",
+        "example": "承诺是为了稀缺港口在近路争抢、远路避战；地图记录船位、航线费用、港口容量和公共订单。不可接受：三人局前两轮彼此没有任何可感知影响。"
+      },
+      {
+        "label": "先画节点、连接、距离与容量",
+        "prompt": "去掉美术，列地点/区域、每种操作的邻接、边权或行动成本、单向/临时连接、阻断、地点逻辑容量和实际组件容量；标出不可达、角落、中心和候选瓶颈。",
+        "example": "8 港 11 线；移动沿实线，支援可跨一条虚线；风向让东行少 1 燃料。北港逻辑容量 2 船，但纸面只能清楚放 1 船和订单，属于实体失效。"
+      },
+      {
+        "label": "把空间与激励、人数和时间连起来",
+        "prompt": "逐个关键位置写为什么值得去、停多久、谁能回应和有什么替代路线；绑定玩家人数、单位数、行动范围与目标分布，观察实际接触、堵塞、独占、无效空区和重复路线。",
+        "example": "三人版 12 地点但订单只在中央 4 港，实际密度集中；西线有同等奖励却多花两行动，因此从未使用。候选不是只删 4 地点，而是先让西线承担避战和秘密交付。"
+      },
+      {
+        "label": "叠加地理、图形与真实桌面",
+        "prompt": "为每条河、边界、颜色、路径和地貌写是否有规则作用；从各座位测试定位、邻接、距离、占用和目标读取，再记录触达、传递、站立、遮挡、保密与个人/群组/储存区。",
+        "example": "蓝色河只作装饰却让两人误以为可航行，改成低对比背景；远座无法读市场费用，复制一份个人辅助而不是让邻座代替决定。"
+      },
+      {
+        "label": "只改一个空间关系并复测",
+        "prompt": "从连接、边权、目标位置、容量、人数布局、模块拼法、图形线索或实体位置中只改一项；预先写要保留的功能、预期行为和反驳信号，在同版本、人数、座位与经验下比较。",
+        "example": "v0.9 只给西线增加一条耗 2 燃料的回环，不改奖励。预计落后者至少一次绕过中央封锁；若它成为无风险最短路、玩家仍看不见连接或局长增加，回退。"
+      }
+    ],
+    "commonMistakes": [
+      {"mistake": "地图太空，把格子减半就会增加互动。", "repair": "同时记录目标位置、行动范围、占用时长和回应路径；缩图可能只增加堵塞或随机碰撞。"},
+      {"mistake": "六角格有六个方向，所以比方格更战略。", "repair": "先写当前操作需要的邻接与距离，再比较网格是否减少歧义或支持动作；方向数量不是深度证据。"},
+      {"mistake": "中心节点度数最高，所以一定最强。", "repair": "补边权、容量、目标、时机、暴露和替代路线；图指标只描述结构，不给地点自动定价。"},
+      {"mistake": "现实地图越准确，主题越真实。", "repair": "验证图形是否支持目标视角和规则任务；精确地貌若暗示不存在的移动，反而破坏玩法与历史理解。"},
+      {"mistake": "在 TTS 上所有人都能缩放，所以实体地图也清楚。", "repair": "用目标桌型和各座位测试视距、方向、触达、遮挡、传递与保密；数字镜头不是实体证据。"}
+    ],
+    "whenToBreak": [
+      "抽象棋可让空间本身成为全部主题，不必映射现实地理；仍要明确邻接、边界、对称与先后手怎样被验证。",
+      "历史、教育或导航作品可以把地理精确设为主要目标；仍要公开压缩、遗漏与视角，并测试玩家能否完成学习任务。",
+      "探索游戏可有意隐藏地图和距离；未知不等于含糊，玩家仍需知道可采取的探索操作、风险范围与错误恢复。",
+      "模块或程序生成地图可以接受局间难度不等；必须声明是变体还是主要配置，并避免不可达、无解或无意座位锁死。",
+      "身体移动、尺量或弹射游戏可以让真实桌面距离直接成为规则；需要同时测试容差、触达、辅助操作、空间安全和争议处理。"
+    ],
+    "exercise": {
+      "title": "把一张漂亮地图还原成关系图",
+      "prompt": "选当前地图：盖住美术，画地点和每种操作的边；写距离、容量、目标和人数配置；从最远座位完成一次定位—比较—移动任务；最后只改一个连接或激励，并写否定信号。",
+      "exampleOutput": "v0.8 三人航运：9 港 13 线，中央港度数 5、容量 1；西南两港只有一条出口且无订单。远座把装饰河误当航线。v0.9 只把河降为背景，不增路线；若邻接错误仍出现，改用端点标记再测。"
+    },
+    "evidenceBoundary": "本指南综合四篇桌游设计师地图文章/日志、六个商业项目或官方规则案例、两项实体桌面/HCI 研究、一项 12 人教育型领土游戏迭代、一篇玩家图论分析、一篇记者现场测试和两项非代表性社区讨论，并复用站内人数、互动、历史抽象和无障碍研究。证据支持先定义地图功能，分开视觉尺度与规则距离，明确操作特定邻接，用图指标描述而非评分，将空间密度绑定人数和激励，并从真实座位测试信息与触达；不提供最佳地图大小、节点/路线数量、度数、直径、六角/方格排名、瓶颈比例、容量、历史精度或玩家偏好。商业日志多变量并行，Scott 等小样本协作任务不代表竞争桌游，Kosa/Yilmaz 只有 12 人，New Yorker 与 Reddit 不能建立因果或比例。五步契约仍需中文新手、主要人数、不同座位和可访问性支持下验证。",
+    "resourceIds": [
+      "oath-map-remembers",
+      "faidutti-map-territory",
+      "insidegmt-cartography-game-board",
+      "byways-map-development",
+      "daniel-scaling-map",
+      "ticket-to-ride-adjacency-analysis",
+      "new-yorker-map-incentive-playtest",
+      "spirit-island-thematic-map-rules",
+      "spirit-island-jagged-earth-map-diary",
+      "dinosaur-world-route-diary",
+      "fateforge-map-exploration-diary",
+      "scott-tabletop-territoriality",
+      "whalen-boardgame-tabletop-interface",
+      "kosa-us-territory-map-process",
+      "reddit-board-map-design",
+      "reddit-table-space-access",
+      "gamesprecipice-player-count-scalability",
+      "amritsar-player-count-diary",
+      "root-hirelings-player-count-diary",
+      "mcd-heuristic-toolkit-paper"
+    ],
+    "claimIds": [
+      "claim-map-is-rule-bearing-spatial-model",
+      "claim-distance-is-rule-not-visual-scale",
+      "claim-adjacency-needs-explicit-operation",
+      "claim-topology-metrics-are-descriptions-not-quality",
+      "claim-spatial-density-needs-incentive-and-count-context",
+      "claim-node-capacity-shapes-interaction",
+      "claim-modular-layout-changes-structure-not-just-variety",
+      "claim-geographic-fidelity-and-play-fidelity-can-diverge",
+      "claim-tabletop-layout-is-access-interface",
+      "claim-map-legibility-needs-seat-task-testing"
+    ],
+    "conceptIds": [
+      "spatial-model",
+      "adjacency-rule",
+      "movement-metric",
+      "graph-degree",
+      "path-distance",
+      "bottleneck",
+      "spatial-density",
+      "node-capacity",
+      "modular-layout",
+      "map-legibility",
+      "tabletop-territory",
+      "interaction-topology",
+      "player-count-configuration",
+      "historical-abstraction"
+    ],
+    "doneWhen": [
+      "目标空间体验、地图当前功能和一种不可接受空间结果已写明。",
+      "去美术的节点—连接图能分别说明移动、攻击、传播、支援或计分的邻接。",
+      "关键路径的成本、方向、阻断、地点逻辑容量和实体组件容量可被执行。",
+      "空间密度绑定一个明确人数配置、目标位置、行动范围和占用时间，不用地点/人数单比值替代。",
+      "每项显著制图线索注明规则作用；至少两个相反座位完成定位、邻接、距离、占用和目标任务。",
+      "下一版只改变一个连接、边权、激励、容量、布局或图形线索，并预先写反驳信号。"
+    ],
+    "backtracksTo": [
+      "guide-experience-intent",
+      "guide-core-system",
+      "special-player-count-configuration",
+      "special-theme-commitment-harm-review"
+    ],
+    "nextOptions": [
+      "guide-minimum-prototype",
+      "guide-playtest-feedback",
+      "guide-rules-information",
+      "special-accessibility-task-observation",
+      "special-balance-one-risk"
+    ],
+    "toolIds": [
+      "decision-trace",
+      "test-plan",
+      "feedback",
+      "playtest-selector",
+      "balance-pass",
+      "accessibility-observation",
+      "redesign"
+    ],
+    "status": "review"
+  },
+  {
+    "id": "special-negotiation-commitment-contract",
+    "title": "别先写‘可以自由谈判’，先写一句承诺怎样变成结果",
+    "stage": "核心系统",
+    "problem": "玩家可以交易、许诺和结盟，但桌谈被忽略或拖得很长；强势玩家垄断报价，未来承诺经常争议，联盟直到终局才突然决定赢家。我不知道该强制守约、做承诺牌、限制私聊、加计时还是禁止结盟。",
+    "outcome": "一张谈判与承诺契约：社会体验与边界、谈判对象和外部选项、交易生命周期与约束性、联盟和第三方、沟通渠道，以及只改一项规则的比较测试。",
+    "coreMinutes": 20,
+    "opening": "先选测试里最常争议的一句承诺，不评价谁做人不可靠。把它写成一句可核对报价：谁给谁什么、换什么、何时生效、谁能听见；再沿时间画到履行、到期或违约，看看规则究竟在哪一步把工作交给了记忆和桌外关系。",
+    "steps": [
+      {
+        "label": "写社会体验与不可接受结果",
+        "prompt": "说明要的是互利交换、威胁、试探、共同承担风险、公开政治还是短期联盟；写一种不可接受的社会结果，并区分局内冲突与玩家真实关系伤害。",
+        "example": "承诺是让弱势玩家用未来护航换眼前现金，并让第三方有机会反报价。不可接受：同桌伴侣无论局势都固定组队，另两人第二轮后不再得到任何报价。"
+      },
+      {
+        "label": "列谈判对象、价值与外部选项",
+        "prompt": "逐方列可交易资源、组件、信息、权限、行动、否决、风险和时机；写各自为什么价值不同，不成交还能做什么，以及有哪些替代对象或谈判伙伴。",
+        "example": "甲有 2 金但需要北港，乙有否决权且缺现金；甲拒绝后可花两行动绕行，乙拒绝后只能等待下一轮。否决权不是抽象桌谈，而是乙当前筹码。"
+      },
+      {
+        "label": "画交易生命周期并拆约束",
+        "prompt": "按报价、反报价、接受、记录、结算、到期、违约、修复画流程；每个条款标立即约束、未来非约束或条件约束，并写条件判断者、撤回点和组件去向。",
+        "example": "甲公开给乙 2 金换本轮不封港：接受时钱立即转移并受约束；不封港是未来非约束，轮末到期。乙若违约不退钱，但信誉标记翻面且甲可在下轮优先反报价。"
+      },
+      {
+        "label": "检查联盟、第三方与沟通渠道",
+        "prompt": "写联盟如何进入、维持、到期、单边退出和处理共同资产；再查未参与者的价格、路线与发言机会。为公开/私下、顺序/同时、口头/书面、限时/不限时写谁能听、反报价、记录和跟上。",
+        "example": "甲乙护航联盟两轮后自然到期，可在轮初退出、轮末生效。所有交易先依次公开报价一次，再自由讨论；文字报价卡允许需要较慢表达者提交同等反报价。"
+      },
+      {
+        "label": "只改一个交易变量并复测",
+        "prompt": "从约束性、结算时机、条件、记录组件、转让、谈判窗口、公开范围、限时或退出规则中只选一项；预先写要改善的行为、必须保留的功能和反驳信号。",
+        "example": "v0.6 只把跨轮口头护航改为公开承诺牌，不改收益。预计记忆争议下降且弱者更常报价；若牌成为无脑货币、暴露私图或维护增加而报价不变，回退。"
+      }
+    ],
+    "commonMistakes": [
+      {"mistake": "可交易东西越多，谈判越丰富。", "repair": "为每一方写差异价值、稀缺性、外部选项和替代伙伴；没有杠杆的项目只是更长清单。"},
+      {"mistake": "说出口就必须守，不守是玩家素质问题。", "repair": "规则逐条标约束性、结算和违约处理；把系统设计、局内信誉与桌外关系分开。"},
+      {"mistake": "把所有承诺做成卡牌就没有争议。", "repair": "先判断是否跨窗口、多条件、多方或可转让；组件会改变公开信息、维护和市场价值，也要单独测试。"},
+      {"mistake": "联盟只影响盟友，所以双赢就健康。", "repair": "逐名写非成员失去的路线、报价对象与回应机会，并给联盟到期、退出和共同资产协议。"},
+      {"mistake": "谈得久、成交多或背叛多说明互动成功。", "repair": "补谁发言、谁等待、拒绝与反报价、第三方行为、履约历史和玩家解释；数量不能单独说明体验。"}
+    ],
+    "whenToBreak": [
+      "纯拍卖或固定报价游戏可以没有自由桌谈；仍要明确报价顺序、信息、撤回、平手与未成交处理。",
+      "所有承诺有意非约束的外交游戏可以保留背叛；仍需写谈判窗口、订单锁定、到期和目标群体的社会边界。",
+      "实时派对游戏可以奖励快速插话与表演；必须确认这是目标挑战，并提供暂停、修复、替代表达和离开方式。",
+      "整局固定团队不需要动态退盟；仍需明确共同胜负、队内决定所有权、掉线/离桌和人数不均处理。",
+      "秘密谈判可以有意让非参与者不知道条款；未知不等于没有回应，仍需检查渠道访问、桌面位置、窃听边界和公开结果。"
+    ],
+    "exercise": {
+      "title": "把一句口头交易画到违约以后",
+      "prompt": "选一笔真实报价：列对象与外部选项，画接受到到期，拆约束条款，写第三方和联盟退出，再只改一个变量并给出否定信号。",
+      "exampleOutput": "v0.5：甲给乙 3 金换两轮不进北区；钱立即约束，未来行为非约束，没记录到期。丙因此失去唯一交易对象。v0.6 只加一枚轮末到期标记；若争议下降但丙仍整局无反报价窗口，则下一版改渠道而非加惩罚。"
+    },
+    "evidenceBoundary": "本指南综合五篇设计师/出版实践、三份正式或准正式规则材料、五项承诺与联盟实验研究、两项在线 Diplomacy 消息/关系研究、一项四场社交桌游沟通质性研究、一篇无障碍长评和一项非代表性玩家讨论，并复用站内互动、计分、回合、人数与伤害检查材料。证据支持先写筹码和外部选项、画交易生命周期、把约束性当时间变量、分开系统/信誉/情绪违约成本、检查联盟第三方和退出，并把谈判渠道视为参与接口；不提供最佳交易对象数、报价次数、谈判秒数、约束比例、守约率、联盟规模、背叛频率、信誉惩罚、私聊规则或玩家偏好。商业日志多变量并行；Golden Blade 与 Zoo Vadis 本轮正文受限；实验任务不等同桌游；Crabb/Heron 只有四场质性会话；在线英文 Diplomacy 和 Reddit 不能代表同桌中文玩家。五步契约仍需中文新手、主要人数、不同熟人关系与沟通无障碍条件下验证。",
+    "resourceIds": [
+      "wehrle-quid-for-quo",
+      "crescent-moon-negotiation-diary",
+      "president-social-engine-diary",
+      "golden-blade-promise-diary",
+      "oath-negotiation-risk-diary",
+      "zoo-vadis-publisher-diary",
+      "ti4-deals-rules",
+      "kings-struggle-deals-rules",
+      "diplomacy-official-rules",
+      "chinatown-accessibility-teardown",
+      "crabb-heron-communication-challenges",
+      "mischkowski-promises-expectations",
+      "smith-promises-punishment",
+      "charness-broken-promises-experiment",
+      "broken-promises-hidden-partnerships",
+      "coalition-formation-dynamics-experiment",
+      "online-coalition-game-tool",
+      "diplomacy-negotiation-messages-study",
+      "diplomacy-betrayal-language-study",
+      "noncooperative-preplay-negotiation",
+      "reddit-negotiation-hallmarks"
+    ],
+    "claimIds": [
+      "claim-negotiation-space-needs-objects-and-outside-options",
+      "claim-deal-needs-explicit-lifecycle",
+      "claim-bindingness-is-timing-design-variable",
+      "claim-promises-shape-expectations-without-enforcement",
+      "claim-breach-costs-need-separate-tracks",
+      "claim-commitment-components-are-memory-interfaces",
+      "claim-coalitions-need-third-party-analysis",
+      "claim-alliance-needs-exit-and-expiry",
+      "claim-negotiation-channel-allocates-participation",
+      "claim-negotiation-history-needs-action-trace"
+    ],
+    "conceptIds": [
+      "negotiation-object",
+      "outside-option",
+      "deal-lifecycle",
+      "binding-deal",
+      "nonbinding-promise",
+      "conditional-promise",
+      "settlement-timing",
+      "breach-cost",
+      "reputation-state",
+      "coalition",
+      "alliance-exit",
+      "negotiation-channel",
+      "negotiation-leverage",
+      "interaction-topology",
+      "decision-ownership",
+      "communication-constraint"
+    ],
+    "doneWhen": [
+      "目标社会体验与一种不可接受社会结果已写明，并区分局内冲突和桌外伤害。",
+      "每方的谈判对象、差异价值、外部选项和替代伙伴可以列出。",
+      "至少一笔交易从报价画到履行、到期或违约，每个条款有约束性和判断者。",
+      "联盟进入、到期、退出、生效时点和共同资产处理有可执行规则。",
+      "至少一名非交易方的价格、路线、信息或发言机会已被观察。",
+      "下一版只改变一项约束、时机、记录、渠道或退出变量，并预先写反驳信号。"
+    ],
+    "backtracksTo": [
+      "guide-experience-intent",
+      "guide-core-system",
+      "special-theme-commitment-harm-review"
+    ],
+    "nextOptions": [
+      "guide-minimum-prototype",
+      "guide-playtest-feedback",
+      "guide-rules-information",
+      "special-accessibility-task-observation",
+      "special-balance-one-risk"
+    ],
+    "toolIds": [
+      "decision-trace",
+      "test-plan",
+      "feedback",
+      "playtest-selector",
+      "balance-pass",
+      "accessibility-observation",
+      "redesign"
+    ],
+    "status": "review"
+  },
+  {
+    "id": "special-auction-protocol-contract",
+    "title": "别先选英式还是暗标，先写赢家为什么会后悔",
+    "stage": "核心系统",
+    "problem": "原型里有喊价、暗标、竞拍先手或市场出清，但玩家不知道该出多少、成交价失控、有人只负责抬价、并列和流拍总临时协商，或拍卖太刺激反而吞掉整款游戏。我不知道该换二价、加预算、设储备价还是公布更多信息。",
+    "outcome": "一张拍卖协议契约：目标压力、标的与价值模型、信息和外部选项、竞价步骤、分配与支付、资金流、边界状态、反馈和整局连接，以及只改一项协议字段的比较测试。",
+    "coreMinutes": 20,
+    "opening": "先找最近一次‘买贵了’或‘不知道怎么出价’，不要马上称为赢家诅咒。请玩家分别写这件拍品最多值多少、为什么值、实际报多少、付多少和后来兑现多少；再沿竞价时间线标出哪些信息当时可见。五个数对不上，正是协议要解释的地方。",
+    "steps": [
+      {
+        "label": "写目标压力与不可接受结果",
+        "prompt": "说明玩家应在当前拍品与哪种未来机会之间取舍：预算、库存、位置、行动、信息、阻断或风险；再写一种不可接受的参与或经济失败。",
+        "example": "玩家为了补路线，在眼前 6 分与保留下轮竞价能力间犹豫。不可接受：第一次误价后现金清零，之后三轮没有合法出价。"
+      },
+      {
+        "label": "拆标的、价值、信息与外部选项",
+        "prompt": "逐人列直接得分、组合、位置、转售、阻断与节省行动；标私人、共同或相互依赖价值。写开拍前、竞价中与结算后才知道的信号，以及不赢还能做什么。",
+        "example": "港口给甲 4 分并补路线，给乙只值 1 分，但控制者会使全员货价 +2；甲私图已知，市场涨幅只知区间。甲退出后可花两行动绕行。"
+      },
+      {
+        "label": "写逐步可执行的竞价协议",
+        "prompt": "写谁开拍和参与、顺序/同时、公开/隐藏、合法报价、起价、最小加价、可加几次、能否撤回、退出能否返回、零报价和沟通权限。",
+        "example": "从拍卖师左手开始，每人只报一次整元或退出；不能超过可见现金，退出不能返回；拍卖师不报价，在末尾选择出售或保留。"
+      },
+      {
+        "label": "写分配、支付、资金流与边界状态",
+        "prompt": "写谁得到标的、付多少、付给谁、落败者损失什么、何时返还或销毁；明确并列、全员退出、储备未达、流拍、非法出价、暂离和无法同时动作。",
+        "example": "最高者得牌并把自己报价付给银行，落败者收回；并列者重拍一次，再并列则拍品弃置且无人支付。书写困难者可用同信息报价牌密封提交。"
+      },
+      {
+        "label": "接回整局并只改一个变量",
+        "prompt": "写拍卖怎样改变预算、库存、先手、位置、市场、结束和胜负；从渠道、支付、资金去向、落败成本、储备、并列或反馈中只改一项，预写支持和反驳信号。",
+        "example": "v0.4 只把公布全部暗标改为只公布赢家与成交价。预计跟价减少；若新手连续两轮仍无法解释价格区间，则恢复全公开。"
+      }
+    ],
+    "commonMistakes": [
+      {"mistake": "大家总买贵，所以一定是赢家诅咒。", "repair": "先分私人、共同和相互依赖价值，再分开估值、报价、支付与兑现；阻断、压价失败和误解是不同解释。"},
+      {"mistake": "暗标一定更快、更公平。", "repair": "同时提交会把负担转到书写、隐藏、计算和同步动作；按任务验证，并提供不改变信息与时机的等价操作。"},
+      {"mistake": "赢家付多少就是拍品价值。", "repair": "记录每人的主观最高价值、价值构成、实际报价、支付、兑现价值和当时解释。"},
+      {"mistake": "并列、零报价和流拍太少见，可以临时判。", "repair": "这些规则会反向改变正常报价；开拍前写清并至少演一次边界局。"},
+      {"mistake": "拍卖本身很刺激，所以可以在任何系统里多放几次。", "repair": "说明每次拍卖怎样改变库存、位置、市场、风险或胜负；没有功能连接时先减少频率。"}
+    ],
+    "whenToBreak": [
+      "纯拍卖游戏可以让价值发现本身成为核心，不必接到另一套行动系统；仍要说明每轮的新信息、预算和学习从哪里来。",
+      "实时喊价游戏可以把快速计算、插话和表演设为目标挑战；必须确认目标群体同意，并提供暂停、退出和等价操作。",
+      "主题性黑箱市场可以不公开所有报价或实现价值；仍需决定玩家靠什么信号学习，以及长期无锚是否属于目标体验。",
+      "单人或自动对手竞价不涉及玩家合谋；仍要写自动报价依据、信息优势、并列和玩家能否形成估值。",
+      "一次性终局拍卖可以弱化资金流对后续经济的影响；付款对象仍可能改变相对胜负、主题与玩家理解。"
+    ],
+    "exercise": {
+      "title": "把一笔高价拆成五个数",
+      "prompt": "选一次真实竞拍，逐人写主观最高价值及构成、实际报价、支付、后来兑现价值和退出点；再补完整协议并只改一个字段。",
+      "exampleOutput": "甲认为港口值 8（4 分+路线 3+阻断 1），暗标 11、支付 11、兑现 6；不是仅凭结果就称赢家诅咒。v0.5 只在竞价前公开未来货价区间；若高价下降但阻断仍能被解释，支持信息噪声假设。"
+    },
+    "evidenceBoundary": "本指南综合六份正式或规则级案例、两项设计师实践、五项拍卖课程/综述/实验与田野研究、两篇无障碍长评、一篇社区设计博客和两项非代表性玩家/设计讨论。证据支持先写价值类型、把报价与估值分开、界定赢家诅咒、明确分配/支付/资金去向/落败成本、把并列储备流拍视为策略状态、设计反馈并按任务检查竞价渠道；不提供最佳拍卖形式、起价、最小加价、预算、储备价、拍卖次数、反馈量、耗时、合谋率或玩家偏好。经济实验不等同桌游，规则案例是多变量系统，设计日志与玩家讨论无代表性；五步契约仍需中文新手、主要人数和无障碍条件下验证。",
+    "resourceIds": [
+      "medici-auction-interview",
+      "modern-art-official-rules",
+      "high-society-official-rules",
+      "ra-official-auction-rules",
+      "estates-auction-rules",
+      "qe-auction-rules",
+      "for-sale-publisher-overview",
+      "trinket-trove-auction-diary",
+      "high-society-accessibility-teardown",
+      "modern-art-accessibility-teardown",
+      "yale-auction-lecture",
+      "thaler-winners-curse",
+      "foreman-learning-winners-curse",
+      "common-value-auction-learning",
+      "reserve-price-collusion-experiment",
+      "bidder-curse-cash-field",
+      "winners-curse-natural-markets",
+      "bgg-auction-design-analysis",
+      "reddit-auction-valuation",
+      "reddit-auction-design-takeover"
+    ],
+    "claimIds": [
+      "claim-auction-needs-complete-protocol",
+      "claim-value-model-precedes-format",
+      "claim-bid-is-not-direct-valuation",
+      "claim-winners-curse-has-common-value-boundary",
+      "claim-payment-destination-reshapes-economy",
+      "claim-loser-cost-shapes-escalation",
+      "claim-auction-boundary-states-are-strategic",
+      "claim-bid-instruments-create-temporal-economy",
+      "claim-auction-feedback-shapes-learning",
+      "claim-auction-integration-needs-functional-link",
+      "claim-bidder-count-and-communication-affect-collusion",
+      "claim-bid-channel-allocates-access-burdens"
+    ],
+    "conceptIds": [
+      "auction-lot",
+      "private-value",
+      "common-value",
+      "interdependent-value",
+      "bid-protocol",
+      "allocation-rule",
+      "payment-rule",
+      "first-price-auction",
+      "second-price-auction",
+      "all-pay-auction",
+      "reserve-price",
+      "bid-increment",
+      "winners-curse",
+      "bid-shading",
+      "auction-feedback",
+      "outside-option",
+      "accessibility-task"
+    ],
+    "doneWhen": [
+      "目标压力与一种不可接受的经济或参与失败已写明。",
+      "至少一个拍品的价值构成、私人/共同/相互依赖类型、信息信号和外部选项可列出。",
+      "陌生玩家无需设计师补充即可从开拍执行到结算和下一轮交接。",
+      "分配、支付、收款者、落败成本、并列、零报价、储备未达与流拍都有规则或不可发生证明。",
+      "测试记录分开主观价值、实际报价、支付、兑现价值、退出点和理由。",
+      "下一版只改变一个协议字段，并预先写支持与反驳信号。"
+    ],
+    "backtracksTo": [
+      "guide-experience-intent",
+      "guide-core-system",
+      "special-balance-one-risk"
+    ],
+    "nextOptions": [
+      "guide-minimum-prototype",
+      "guide-playtest-feedback",
+      "guide-rules-information",
+      "special-balance-one-risk",
+      "special-accessibility-task-observation"
+    ],
+    "toolIds": [
+      "decision-trace",
+      "test-plan",
+      "feedback",
+      "playtest-selector",
+      "balance-pass",
+      "accessibility-observation",
+      "redesign"
+    ],
+    "status": "review"
+  },
+  {
+    "id": "special-market-state-transition-contract",
+    "title": "别先写‘买一件涨一格’，先写市场记住了什么",
+    "stage": "核心系统",
+    "problem": "原型有资源市场或卡牌列，但玩家说价格失控、先手买光、后手没选项、市场滞销、刷新替别人做嫁衣，或补货后谁也说不清价格。我不知道该改补货量、价格步幅、容量、刷新还是玩家人数。",
+    "outcome": "一张市场状态转移契约：目标压力、槽位与供给、补货协议、交易顺序、统一/边际价格、容量与囤积、短缺/过剩/滞销、反馈时点、真实座位读取，以及只改一项市场变量的事件比较。",
+    "coreMinutes": 20,
+    "opening": "选最近一次‘市场坏了’的事件，不先改数字。把交易前的槽位、数量、价格、行动者资金与容量摆回去；让一位没参与设计的人执行这一笔交易到下一位开始。凡是需要设计师补一句的地方，就是缺失的状态或时序字段。",
+    "steps": [
+      {
+        "label": "写目标压力与不可接受结果",
+        "prompt": "说明市场要玩家在什么之间取舍：现在买/等待、囤积/使用、获利/阻断、稳定/操纵。再写一种不可接受的经济失败和一种参与失败。",
+        "example": "目标是让玩家在便宜囤煤与保留现金间犹豫。不可接受经济失败：首轮缺货后连续三轮无法买煤；参与失败：远座玩家只能请别人代算价格。"
+      },
+      {
+        "label": "画槽位、来源与补货协议",
+        "prompt": "列每个市场对象和槽位，写容量、供给来源、进入顺序、补货量、补货时点、轮换/淘汰、组件不足，以及人数和阶段调整。",
+        "example": "六个煤槽从 1 到 6 元；回合末按三人第二阶段补 5 个，从最高价空槽向低价放，组件不足则放尽为止。"
+      },
+      {
+        "label": "写一笔交易的精确顺序",
+        "prompt": "逐步写资格、选择商品和数量、检查容量、读取成交价、支付/收款、移动货物、移动价格、触发效果、补货与交接；注明整批统一价或逐件边际价。",
+        "example": "甲声明买 3 铁，容量足够；三件都按起始价 2 结算共付 6，移入仓库后价格一次升 3 格；本行动不补货。"
+      },
+      {
+        "label": "追踪一单位和三个异常状态",
+        "prompt": "追踪一件货从来源到市场、玩家库存、使用/转售与消耗；再演短缺、过剩和滞销，检查囤积容量、刷新成本与下一位选项。",
+        "example": "最后一煤被乙囤入仓库，供应池为空导致补货失败；丙无合法购买。另测木材连续两轮无人取，是买不起、无用还是看不懂。"
+      },
+      {
+        "label": "记市场事件并只改一个变量",
+        "prompt": "记录前态、行动、数量、成交价、移价时点、剩余存量、持有、补货、下一位选项、滞销年龄与理解错误；只改补货、时点、步幅、容量、轮换、补贴或呈现之一。",
+        "example": "v0.6 只把回合末补 6 改为每位玩家行动后补 2。支持信号：缺货窗口缩短；反驳信号：后手仍无选择且维护次数翻倍。"
+      }
+    ],
+    "commonMistakes": [
+      {"mistake": "买涨卖跌已经是完整市场规则。", "repair": "补上批量结算基准、移价时点、库存容量、补货、组件不足和交接。"},
+      {"mistake": "滞销就自动丢最旧的。", "repair": "先分不想要、买不起、当前无关、策略等待、刷新成本或信息负担；不同修复改变不同变量。"},
+      {"mistake": "给旧牌加钱就能解决买不起。", "repair": "确认补贴能否在支付前使用；否则它只提高取得后的净收益。"},
+      {"mistake": "四人局把两人补货量乘二。", "repair": "记录玩家两次行动间发生的交易、移价、淘汰与补货数量，再比较控制感和合法选项。"},
+      {"mistake": "公开价格不存在可用性问题。", "repair": "从最远座位执行读取、批量结算、移价和补货任务，记录视觉、记忆、算术和协助。"}
+    ],
+    "whenToBreak": [
+      "固定价无限商店可以省略动态移价和缺货；仍要写资格、支付、获得物与刷新。",
+      "以市场崩溃或振荡为主题的游戏可以保留失控；玩家仍需能读出因果并拥有目标体验所承诺的回应空间。",
+      "纯策略阻断游戏可以允许囤货制造短缺；应验证被阻断者仍有有意义外部选项。",
+      "黑箱市场可以隐藏部分供需信号；仍要决定玩家通过什么反馈学习，而不是靠设计师解释。",
+      "实时交易可以接受高事件密度；须确认目标玩家同意速度压力，并提供暂停、退出或等价操作。"
+    ],
+    "exercise": {
+      "title": "重放一件货物的一生",
+      "prompt": "从一次真实市场事件选一件货，写其来源、进入槽位、成交价、资金去向、玩家容量、价格移动、使用/转售/消耗和下一次补货；再演短缺、过剩或滞销之一。",
+      "exampleOutput": "煤 A 从供应池进入 4 元槽；甲用 4 元买入并占仓库 1/2，价格标记移到 5；甲下轮消耗它发电并回供应池。回合末组件不足只补 2，乙面对 6 元。v0.7 只提高回供应池的可见性。"
+    },
+    "evidenceBoundary": "本指南综合五份规则/出版案例、五项设计师或从业实践、八项实验与相邻动态决策研究、一篇无障碍长评和三项非代表性玩家症状。证据支持把市场写成状态转移、分开补货量和时点、明确批量价格与移价顺序、诊断滞销原因、记录容量/囤积/反馈延迟/市场事件密度并从真实座位测试；不提供最佳槽位数、补货量、价格步幅、容量、刷新频率、波动率、人数公式、均衡目标或玩家偏好。经济实验不等同娱乐桌游，规则案例多变量，博客与社区无代表性；五步契约仍需中文新手和主要人数验证。",
+    "resourceIds": [
+      "power-grid-recharged-market-rules", "clans-caledonia-market-rules", "century-spice-road-market-rules", "container-official-market-overview", "brass-birmingham-market-rules",
+      "mars-needs-mechanics-market-interview", "stale-markets-design-discussion", "monsoon-market-variables", "skeleton-dynamic-markets", "game-developer-economy-market",
+      "through-ages-market-accessibility", "classroom-double-auction-2000", "double-auction-market-power-boundary", "nonstationary-market-experiment", "transaction-cost-price-discovery", "shubik-double-auction-teaching", "beer-game-outcome-feedback", "dynamic-pricing-capacity-experiment", "few-traders-market-experiment",
+      "reddit-century-stale-market", "reddit-century-skipped-cube-error", "bgg-stale-row-disagreement"
+    ],
+    "claimIds": ["claim-market-is-state-transition", "claim-restock-quantity-and-timing-separate", "claim-price-movement-timing-shapes-incentives", "claim-batch-price-needs-explicit-basis", "claim-stale-market-needs-cause-diagnosis", "claim-market-subsidy-not-equal-affordability", "claim-player-paid-refresh-allocates-cost", "claim-inventory-capacity-shapes-scarcity", "claim-player-count-needs-market-event-density", "claim-market-feedback-delay-can-oscillate", "claim-few-traders-can-create-market-power", "claim-open-market-not-automatically-readable"],
+    "conceptIds": ["market-state", "market-slot", "restock-protocol", "restock-cadence", "market-rotation", "stale-market", "demand-signal", "supply-signal", "price-movement", "price-timing", "stockout", "oversupply", "inventory-holding", "market-event-density", "feedback-delay", "resource-flow", "feedback-loop"],
+    "doneWhen": [
+      "目标压力、一种不可接受的经济失败和一种参与失败已写明。",
+      "槽位、供给来源、补货量/时点/顺序、淘汰、组件不足与人数阶段调整可执行。",
+      "陌生玩家无需补充即可完成一笔批量交易、移价、补货并交接。",
+      "短缺、过剩、滞销与容量不足已有规则或不可发生证明。",
+      "真实座位任务能区分当前价、成交价、交易后价与补货后状态。",
+      "下一版只改变一个市场变量，并预写支持与反驳信号。"
+    ],
+    "backtracksTo": ["guide-experience-intent", "guide-core-system", "special-auction-protocol-contract"],
+    "nextOptions": ["guide-minimum-prototype", "guide-playtest-feedback", "guide-rules-information", "special-balance-one-risk", "special-accessibility-task-observation"],
+    "toolIds": ["decision-trace", "test-plan", "feedback", "playtest-selector", "balance-pass", "accessibility-observation", "redesign"],
+    "status": "review"
+  },
+  {
+    "id": "special-resource-production-chain-contract",
+    "title": "别先调 2 木换 1 板，先追一件资源去了哪里",
+    "stage": "核心系统",
+    "problem": "原型已经有采集、生产、转换、维护或引擎，但玩家总是算错收入、忘记腐坏、卡在某种资源、后期爆产、借债后无路可走，或终局留下大量无用库存。我不知道该改比率、产能、维护、容量、来源还是消耗口。",
+    "outcome": "一张可执行的资源生产链契约：分开存量与变化率，追踪来源—池—转换—消耗，写清转换顺序、容量、维护、衰减、债务和终局残值，并用一次真实任务只改一个经济字段。",
+    "coreMinutes": 25,
+    "opening": "选最近一次‘经济坏了’的真实事件，不先调数字。拿一件具体资源，从它进入系统前开始，逐步摆到玩家取得、储存、转换、支付、腐坏或终局；每次设计师需要口头补规则，就在链上新增一个状态、窗口或失败字段。",
+    "steps": [
+      {"label": "分开存量、变化率与结算点", "prompt": "列每种资源当前存量、每个阶段流入/流出率、结算时点、所有者、单位和组件位置；不要把收入轨当作现有库存。", "example": "甲当前 4 粮，收获时每田 +1，喂养时每人 -2；三个数字分别记录，收获前不能提前花未来粮。"},
+      {"label": "画来源、池、转换与消耗口", "prompt": "为每一单位画 source → pool → converter/trader → pool → sink，标出只是转移还是创造/销毁，以及供应不足和容量满时发生什么。", "example": "矿场从盒外创造 2 铁到个人仓库；炼炉消耗 2 铁并创造 1 钢；卖给银行只换钱，钢回公共供应并离开个人链。"},
+      {"label": "写完整转换协议", "prompt": "补资格、投入、产出、比率、批量、窗口、能力顺序、可否重复、中间产物、舍入、过付、组件去向和失败状态。", "example": "生产阶段可重复，每批 3 谷换 2 食物；不能拆批、不能过付；每批完成后食物立即入仓，仓满则本批不得启动。"},
+      {"label": "加入维护、衰减、债务与残值", "prompt": "写触发时点、计费对象、基数、抵扣、无法支付、借款进入/持有/偿还、腐坏清理，以及游戏结束时剩余资源和债务的价值。", "example": "发薪日每名带工资员工付 1；不足先用现金、再强制贷款 4；每轮每有任意贷款付息 1；终局每张未还贷款 -7。"},
+      {"label": "重放、预测并只改一个字段", "prompt": "让新手预测下一结算点存量、执行一次多步转换、在组件被碰动后恢复状态；记录瓶颈、闲置、回本窗口和错误，再只改比率、容量、时点、衰减、维护或呈现之一。", "example": "v0.8 只把钢仓容量 2 改为 3。支持信号：两条转换路线都被使用；反驳信号：回本更早且领先差距扩大。"}
+    ],
+    "commonMistakes": [
+      {"mistake": "写了 2 木换 1 板就算规则完整。", "repair": "补窗口、批量、顺序、容量、舍入、去向和失败状态，再交给陌生玩家执行。"},
+      {"mistake": "平均产出等于平均消耗，所以经济会稳定。", "repair": "按玩家与时点记录局部存量、容量、延迟、欠单和短缺，而不只看全局总量。"},
+      {"mistake": "多加几种资源就会有深度。", "repair": "检查每种资源是否有不同来源、互斥用途和替代路径；删去只增加记忆、不改变决定的资源。"},
+      {"mistake": "维护费就是平衡强引擎。", "repair": "先写维护在体验中承担的功能，再检查触发、基数、支付失败和落后玩家承受度。"},
+      {"mistake": "公开生产轨和方块足够可读。", "repair": "从真实座位做预测、转换、扰动恢复任务，并为面额、身份和所有权提供冗余线索。"}
+    ],
+    "whenToBreak": [
+      "一次性取得并立即消耗的轻量资源可以省略长期存量、衰减和残值；仍要写来源、时点与去向。",
+      "资源无限且只用记录表表示时可以没有实体供应不足；仍需定义系统边界与玩家容量。",
+      "故意让经济崩溃、债务螺旋或后期爆产成为主题时可以保留不稳定；玩家仍应能读出原因并拥有目标体验承诺的回应。",
+      "完全线性的制作链可以没有替代路径；应确认重复劳动本身是承诺体验，而非内容不足。",
+      "数字辅助可以自动处理结算与转换；仍应让玩家看见行动影响、失败原因和终局残值。"
+    ],
+    "exercise": {"title": "追踪一件资源的完整一生", "prompt": "选一次真实局面中的一件资源，记录它的来源、取得时点、所有权、存储、转换投入/产出、维护或衰减、最终消耗和终局残值；再让新手预测下一结算点并执行。", "exampleOutput": "铁 A 在生产阶段从盒外进入甲仓库 2/3；甲下一行动与另一铁一起转成 1 钢，铁回盒外，钢占仓 1/1；维护不收费，终局未用钢 0 分。v0.9 只在仓位旁印容量与残值。"},
+    "evidenceBoundary": "本指南综合六份规则案例、五项设计师或从业方法、三项系统动力学与相邻研究、两篇无障碍长评和四项非代表性玩家症状，并复用价值链与 Beer Game 资料。证据支持分开存量和变化率、把经济写成来源/池/转换/消耗节点、补全转换与维护时序、记录容量/衰减/债务/残值/回本窗口，以及以真实座位任务验证状态恢复；不提供最佳资源数量、转换比率、产能、维护费、利率、容量、腐坏率、回本轮数、来源/消耗平衡或玩家偏好。规则案例多变量，设计文章多为规范性实践，相邻研究不等同娱乐桌游，社区帖无代表性；五步契约仍需中文新手和不同人数验证。",
+    "resourceIds": ["agricola-resource-cycle-rules", "le-havre-production-chain-rules", "race-galaxy-produce-consume-rules", "terraforming-mars-production-rules", "food-chain-magnate-upkeep-rules", "fantastic-factories-production-rules", "daniel-engines-resource-web", "machinations-economy-nodes", "fantastic-factories-runaway-diary", "deliberate-resource-loop", "stock-flow-failure-study", "jmu-stock-flow-guide", "beer-game-history", "race-galaxy-accessibility", "terraforming-mars-accessibility", "reddit-rftg-consume-order", "reddit-le-havre-feeding-window", "reddit-terraforming-beginner-economy", "reddit-resource-growth-repetition", "lostgarden-value-chains", "league-game-elements-resources", "quarantine-economy-diary", "beer-game-outcome-feedback"],
+    "claimIds": ["claim-stock-rate-income-must-separate", "claim-conversion-needs-complete-protocol", "claim-conversion-order-can-change-output", "claim-capacity-and-decay-create-production-cost", "claim-upkeep-needs-trigger-basis-failure", "claim-debt-path-needs-entry-carry-exit", "claim-multiuse-resource-needs-distinct-opportunity-cost", "claim-resource-network-needs-alternative-paths-not-count", "claim-investment-source-needs-payback-window", "claim-source-sink-equality-not-stability", "claim-resource-state-needs-physical-recoverability", "claim-stock-flow-understanding-needs-task-test", "claim-resource-flow-before-tuning", "claim-maintenance-has-cost-and-possible-function"],
+    "conceptIds": ["resource", "resource-flow", "resource-stock", "resource-rate", "production-capacity", "resource-source", "resource-sink", "resource-pool", "resource-converter", "conversion-rate", "conversion-window", "conversion-order", "upkeep-cost", "carrying-cost", "resource-decay", "payback-window", "residual-value", "debt-path", "maintenance-function", "node-capacity", "feedback-delay"],
+    "doneWhen": ["每种核心资源的存量、变化率、结算点、单位、所有者与组件位置已分开。", "至少一单位可从来源经资源池和转换器追到消耗口或终局。", "陌生玩家无需补充即可执行一次批量转换，并处理容量、舍入和失败。", "维护、衰减与债务的触发、基数、抵扣、失败、偿还和残值可执行。", "新手能预测下一结算点并在扰动后恢复关键经济状态。", "下一版只改变一个经济字段，并预写支持与反驳信号。"],
+    "backtracksTo": ["guide-experience-intent", "guide-core-system", "special-market-state-transition-contract"],
+    "nextOptions": ["guide-minimum-prototype", "guide-playtest-feedback", "guide-rules-information", "guide-presentation-release", "special-balance-one-risk", "special-accessibility-task-observation"],
+    "toolIds": ["decision-trace", "production-ledger", "test-plan", "feedback", "playtest-selector", "balance-pass", "accessibility-observation", "redesign"],
+    "status": "review"
+  },
+  {
+    "id": "special-hidden-information-hand-economy-contract",
+    "title": "别先把牌扣起来，先写谁在什么时候知道什么",
+    "stage": "规则与信息",
+    "problem": "原型有隐藏身份、暗牌、受限沟通、线索、诈唬或手牌管理，但首轮只能乱猜，玩家不知道能说什么、总要靠完美记忆、质疑没有理由、辅助会泄密，或一条线索即使正确也来不及改变行动。",
+    "outcome": "一份可执行的信息与手牌契约：逐条标记拥有者、可见者、来源、窗口、可靠度、过期和合法回应；画出卡牌生命周期；补全线索、宣称、质疑、验证、记忆和辅助协议，再用一次真实推断任务验证。",
+    "coreMinutes": 30,
+    "opening": "取最近一次‘他怎么会知道’、‘这能不能说’或‘我早忘了’的真实局面。不要先加更多暗牌。把当时相关的每条信息和每张牌放在桌上，按时间重演；每次设计师需要解释，就新增一个状态、窗口、渠道、过期或回应字段。",
+    "steps": [
+      {
+        "label": "画信息状态表",
+        "prompt": "每条关键信息写所有者、直接可见者、来源、获得时点、公开/私人/可追踪/可推断状态、是否可查询、何时过期，以及接收者剩余的合法回应。",
+        "example": "乙知道甲手中有红牌但不知道数值；这是乙在本轮行动前用标记公开的完整颜色线索；全员可回查，甲可选择打出或弃置。"
+      },
+      {
+        "label": "画每张牌的生命周期",
+        "prompt": "从抽取开始依次写持有、容量、顺序、展示、交换、支付、打出、弃置、移除、洗回、替换和终局保留；标出每一步如何改变行动权、节奏或未来承诺。",
+        "example": "卡从牌库末端抽入手牌最右侧；不可重排；到达最左侧时必须处理；交易后不回手牌而立即种植，因此交易同时释放未来阻塞。"
+      },
+      {
+        "label": "让线索产生可解释的推断",
+        "prompt": "为事件列 2–4 个合理解释，写玩家下一步怎样取得区分证据；把语气、犹豫和熟人印象记为低保证数据，不当作规则认可的测谎器。",
+        "example": "甲跳过护卫可能因为没有、想藏、或诱导质疑；乙可用下一次公开行动检验其中两种解释，而不是凭表情直接定罪。"
+      },
+      {
+        "label": "补全沟通、宣称与验证协议",
+        "prompt": "分别写允许的渠道、内容、频次、时点、标记、越界处理；若可宣称或质疑，再写资格、质疑者、关闭窗口、证据、双方代价及揭示后替换/过期/永久公开。",
+        "example": "每人每任务一次，在出牌前公开一张牌并标最高/唯一/最低；状态变化后标记不更新。角色宣称在效果前可质疑，真牌展示后洗回并补牌，失败者永久翻开一张身份。"
+      },
+      {
+        "label": "做推断、记忆与辅助任务",
+        "prompt": "让陌生玩家说明一条判断的来源和替代解释、执行一次合法沟通或质疑、在状态变化后识别过期信息，并用卡架/代读/复述完成同任务；记录泄密和等待，再只改一个字段。",
+        "example": "v0.6 只新增可公开查询的弃牌分组。支持信号：玩家不再靠记忆争执且质疑率不变；反驳信号：查询本身持续暴露下一步目标。"
+      }
+    ],
+    "commonMistakes": [
+      {"mistake": "把牌扣起来就等于有推理。", "repair": "为每个秘密安排可观察来源、有限替代解释和下一步区分行动。"},
+      {"mistake": "允许说谎就等于有诈唬。", "repair": "列出诚实、说谎、质疑和不质疑各自的收益、成本、风险与验证后果。"},
+      {"mistake": "不能谈手牌就默认全员理解沟通边界。", "repair": "逐项列语音、手势、停顿、复述、公开组件和辅助工具是否允许及何时允许。"},
+      {"mistake": "曾公开过的信息可以要求玩家永远记住。", "repair": "选择可查询、持久记录或明确把记忆作为挑战，并测试意图泄露与可访问性。"},
+      {"mistake": "一条线索降低了不确定性，所以一定有价值。", "repair": "检查接收者是否仍有时间、权限、资源和有区别的行动来回应。"}
+    ],
+    "whenToBreak": [
+      "纯氛围或叙事揭示可以不给玩家后续策略回应；应明确它的价值是情感、解释或表演。",
+      "记忆游戏可以有意不提供持久记录；仍需声明查询规则并与目标玩家测试负荷和辅助方式。",
+      "混乱派对游戏可以允许大量替代解释；仍要确认玩家感受到的是欢乐噪声而非无从参与。",
+      "熟人社交游戏可以依赖历史关系；发布给陌生群体时仍需验证第一局是否有规则内证据。",
+      "数字界面可以私下管理身份和过期状态；玩家仍需看见行动影响、验证结果和可用回应。"
+    ],
+    "exercise": {
+      "title": "追踪一条信息和一张牌的完整一生",
+      "prompt": "从一次真实局面选一条秘密信息和一张相关卡牌。按时间写谁知道、如何知道、能否传递、何时过期、能做什么；同时写卡从抽取到终局的所有区域。让新手复述推断路径并用一种辅助方式重做。",
+      "exampleOutput": "甲的队友身份仅甲可见；甲在第 2 轮用一次公开行动产生 A/B 两种解释；乙第 3 轮可质疑但窗口在行动结算后关闭。身份牌始终面朝下，失败质疑后永久翻开。v0.7 只新增窗口提示标记。"
+    },
+    "evidenceBoundary": "本指南综合六份正式规则或官方设计资料、五项设计师实践、五项学术或相邻研究、两篇无障碍长评和三项非代表性玩家症状，并复用合作信息不对称与公开信息资料。证据支持把信息写成带角色和时点的状态、把手牌写成生命周期、补全沟通与宣称—质疑—验证协议、保留有限替代解释、区分社会线索与测谎、处理记忆和辅助泄密，并用真实任务验证；不提供最佳手牌上限、秘密数量、线索强度、通信次数、质疑奖励、撒谎率、记忆时长或社会推理偏好。规则案例多变量，设计文章多为规范性实践，学术研究情境与样本有限，社区帖无代表性；五步契约仍需中文新手、不同听说读写条件与不同熟悉度群体测试。",
+    "resourceIds": [
+      "hanabi-hidden-hand-rules", "crew-limited-communication-rules", "bohnanza-hand-order-rules", "coup-claim-challenge-rules", "decrypto-clue-interception-rules", "flamme-rouge-card-cycle-diary",
+      "daniel-information-overload", "brian-bluffing-incentives", "balangay-social-deduction-information", "daybreak-victory-diary", "origin-story-solo-information",
+      "auburn-hand-management-guidelines", "deception-cue-baseline-study", "werewolf-persuasion-dataset", "coup-player-psychology-study", "wiseman-social-deduction-data", "crabb-heron-communication-challenges", "reis-coop-information-asymmetry", "pingo-trackable-public-information",
+      "hanabi-accessibility", "coup-accessibility", "reddit-crew-communication-rule", "reddit-bohnanza-hand-confusion", "reddit-social-deduction-noise"
+    ],
+    "claimIds": [
+      "claim-information-state-needs-role-and-time", "claim-hand-is-state-chain-not-count", "claim-hand-order-can-be-resource", "claim-bluff-needs-truth-lie-challenge-incentives", "claim-claim-challenge-needs-verification-lifecycle", "claim-inference-needs-alternative-explanations", "claim-social-cues-are-data-not-lie-detectors", "claim-trackable-public-info-needs-query-rule", "claim-communication-constraint-needs-channel-protocol", "claim-hidden-information-assistance-can-leak", "claim-reveal-can-expire-or-persist", "claim-information-value-needs-legal-response", "claim-private-information-redistributes-power", "claim-uncertainty-source-is-not-random-device"
+    ],
+    "conceptIds": [
+      "information-structure", "information-asymmetry", "information-state", "private-information", "public-information", "trackable-information", "information-owner", "information-source", "signal-reliability", "inference-path", "claim-challenge", "verification-window", "reveal-lifecycle", "hand-capacity", "hand-order", "card-lifecycle", "memory-interface", "communication-channel", "information-expiry", "communication-constraint", "uncertainty-source"
+    ],
+    "doneWhen": [
+      "每条核心信息都有所有者、可见者、来源、获得时点、查询、过期和合法回应。",
+      "至少一张牌可从抽取追到交换、打出、弃置、移除、洗回或终局。",
+      "陌生玩家能为一次判断说出证据、替代解释和下一步区分行动。",
+      "沟通、宣称、质疑、验证和揭示生命周期无需口头补丁即可执行。",
+      "玩家在状态变化后能区分仍有效、已过期和永久公开的信息。",
+      "一种代读、卡架、复述或记录辅助可用，且已检查额外泄密。",
+      "下一版只改变一个信息字段，并预写支持与反驳信号。"
+    ],
+    "backtracksTo": ["guide-experience-intent", "guide-core-system", "guide-rules-information"],
+    "nextOptions": ["guide-minimum-prototype", "guide-playtest-feedback", "guide-presentation-release", "special-accessibility-task-observation", "special-blind-rules-test"],
+    "toolIds": ["decision-trace", "shared-decision", "test-plan", "feedback", "playtest-selector", "accessibility-observation", "redesign"],
+    "status": "review"
+  },
+  {
+    "id": "special-deck-building-draw-cycle-contract",
+    "title": "别先加一张强牌，先算它什么时候第一次出现",
+    "stage": "核心系统",
+    "problem": "原型有个人牌库、市场、购买、抽牌、压缩或组合，但新买的牌常常到终局都没出现，玩家越买越卡、组合文字看起来漂亮却抽不到一起、洗牌频繁打断节奏，或设计师只凭平均概率解释已知顺序和搜索效果。",
+    "outcome": "一份可执行的牌库构筑与循环契约：按功能和区域盘点牌，画获得到首次使用和终局的生命周期，写清洗牌边界与概率假设，分开个人抽牌和市场随机性，并用一次真实循环任务只改一个字段。",
+    "coreMinutes": 30,
+    "opening": "拿最近一次‘买了却没抽到’、‘整手都不能用’或‘又要洗牌’的真实局面。不要先改牌价。把当时所有相关卡按手牌、抽牌堆、弃牌堆、市场、持续区和移除区摆开，并标出距离终局还有几个行动或循环。",
+    "steps": [
+      {
+        "label": "按功能和区域盘点牌库",
+        "prompt": "记录行动、支付、得分、污染、一次性、持续与终局牌各有多少，并分别写它们当前在手牌、抽牌堆、弃牌堆、留场区还是移除区；同时分开个人牌库与市场牌库。",
+        "example": "甲共 14 张：5 支付、4 移动、3 得分、2 污染；手牌 5、抽牌堆 3、弃牌堆 6。公共市场还有 22 张，不计入甲的抽牌密度。"
+      },
+      {
+        "label": "画获得到终局的时间线",
+        "prompt": "为一张新牌写获得时进入哪里、预计何时首次可用、每次使用后去向、终局前最多还能重抽几次，以及立即入手、置顶、保留、搜索、移除和持续区怎样改变时间线。",
+        "example": "第 6 轮购买进弃牌堆；当前抽牌堆 8 张，每轮抽 5，预计第 8 轮首次入手；第 10 轮终局前最多使用两次。若置顶则第 6 轮末即可抽到。"
+      },
+      {
+        "label": "写洗牌边界与概率假设",
+        "prompt": "写明牌库不足时先抽还是先洗、哪些弃牌参与、当前打出的牌是否参与、牌堆方向和查询权限。算命中率前再写总体、目标牌数、抽取数、无放回与随机洗匀；有已知顺序、搜索或保留就改用状态树或实测。",
+        "example": "20 张未知牌中 4 张移动牌，随机无放回抽 5 可用超几何基线；若已知顶端两张不是移动牌，则改算剩余 18 张抽 3，而不是沿用原概率。"
+      },
+      {
+        "label": "检查压缩、膨胀与组合许可",
+        "prompt": "每次增删牌都记录被改变的功能、循环速度与终局重抽次数；组合要检查共抽、手牌上限、行动和资源许可、失败抽法代价及成功收益；市场补牌随机性与个人抽牌随机性分开记录。",
+        "example": "移除 2 张支付牌让启动牌更常见，但购买力从 7 降到 5；A+B 即使共抽，还需两次行动，而规则每回合只有一次，所以当前组合不可执行。"
+      },
+      {
+        "label": "跑完整循环并只改一个字段",
+        "prompt": "让新手实际购买一张牌、完成不足抽牌的洗牌边界、找出首次使用轮次、识别一次无效抽牌并在终局前重抽；同时观察洗牌、持牌、读取和代洗。记录支持与反驳信号后，只改获得位置、抽牌量、压缩、牌库大小、终局或呈现之一。",
+        "example": "v0.7 只让高费牌从入弃牌改为置顶。支持信号：至少使用一次且购买仍有机会成本；反驳信号：领先者立即连锁并让终局提前两轮。"
+      }
+    ],
+    "commonMistakes": [
+      {"mistake": "牌越强，价格调高就会平衡。", "repair": "先记录获得延迟、终局前重抽次数和占用手牌的失败状态；价格不解释牌是否来得及出现。"},
+      {"mistake": "牌库里有 20% 目标牌，所以每手都有 20% 机会。", "repair": "写总体、样本量、无放回和洗匀假设，计算整手至少命中一张的概率；已知顺序则另建模型。"},
+      {"mistake": "删弱牌只会让牌库更顺。", "repair": "注明被删牌的支付、得分、风险、题材、互动和终局功能，再观察机会成本是否一并消失。"},
+      {"mistake": "两张牌文字能联动，就算有组合。", "repair": "同时检查共抽概率、行动/资源许可、手牌容量、失败代价和成功收益。"},
+      {"mistake": "洗牌只是几秒钟的维护动作。", "repair": "按整局次数记录等待、抓握、方向错误、牌面磨损和代洗泄密，并测试可访问协议。"}
+    ],
+    "whenToBreak": [
+      "固定顺序或不洗牌系统可以不追求随机混合；仍要写弃牌顺序、翻转方向、查询、记忆与辅助规则。",
+      "购买即结算、立即得分或直接入手的卡可以没有获得延迟；仍要写它何时离开或再次进入循环。",
+      "故意让得分牌、伤口或污染拖慢牌库时可以保留无效抽牌；应确保玩家看见来源、代价与可回应路径。",
+      "纯构筑而不在局内循环的游戏可以省略洗牌边界；仍要分开牌组构成、抽牌概率与搜索规则。",
+      "数字实现可以自动洗牌、搜索和计数；仍应让玩家理解可用信息、首次使用时间和终局剩余价值。"
+    ],
+    "exercise": {
+      "title": "追踪一张新牌的第一生",
+      "prompt": "从一次真实购买开始，记录新牌进入区域、首次入手、合法使用、弃置或留场、再次抽到和终局；同时记录每次洗牌、搜索、代洗及无效抽牌。让新手先预测，再按组件执行。",
+      "exampleOutput": "第 5 轮买入‘熔炉’进弃牌堆；第 7 轮首次入手，但缺第二次行动而无效；第 9 轮与燃料共抽并使用；第 10 轮终局前不会再出现。v0.8 只把行动上限提示印到牌面。"
+    },
+    "evidenceBoundary": "本指南综合六份正式规则或规则参考、五项设计师实践、六项数学与计算研究、两篇无障碍评测和四项非代表性玩家症状，并复用 Undaunted 设计日记、Meeple Centred Design 与第一人称无障碍实践。证据支持按功能和区域描述牌库、记录获得到首次使用的延迟、明确洗牌边界与抽样假设、区分已知顺序和随机模型、检查压缩/膨胀/组合共抽/市场随机性/终局重抽，以及把反复洗牌和查询辅助视为操作协议；不提供最佳起始牌数、手牌上限、目标牌比例、市场宽度、洗牌次数、压缩速度、卡牌价格、组合概率或终局轮数。规则案例多变量，设计师文章多为创作者回顾，数学模型依赖假设，AI 研究不等同人类体验，社区帖无代表性；五步契约仍需中文新手、不同牌量、不同人数和不同操作条件验证。",
+    "resourceIds": [
+      "dominion-deck-cycle-rules", "star-realms-deck-cycle-rules", "aeons-end-no-shuffle-rules", "imperium-deck-cycle-overview", "dale-merchants-stall-rules", "el-dorado-card-lifecycle-rules",
+      "vaccarino-dominion-decisions", "imperium-horizons-design-diary", "dune-imperium-deck-worker-diary", "aeons-end-riley-interview", "undaunted-diary",
+      "nealen-ascension-deckbuilding-analysis", "psu-hypergeometric", "nist-hypergeometric", "dominion-deep-rl-study", "dominion-online-benchmark", "dominion-markov-buying", "riffle-repeated-cards-study",
+      "mcd-heuristic-toolkit-paper", "star-realms-accessibility", "dominion-accessibility-review", "geeky-gimp-accessibility-hacks",
+      "reddit-deckbuilder-improvements", "reddit-deckbuilding-problems", "reddit-aeons-end-discard-order", "reddit-el-dorado-card-removal"
+    ],
+    "claimIds": [
+      "claim-deck-composition-needs-function-and-zone", "claim-acquisition-value-needs-time-to-first-use", "claim-deck-cycle-needs-explicit-shuffle-boundary", "claim-draw-probability-needs-sampling-assumptions",
+      "claim-known-order-breaks-simple-random-model", "claim-thinning-changes-function-not-only-density", "claim-deck-bloat-needs-endgame-redraw-check", "claim-combo-needs-codraw-permission-and-payoff",
+      "claim-market-randomness-and-personal-draw-must-separate", "claim-deck-cycle-can-be-game-clock", "claim-shuffling-is-repeated-access-cost", "claim-deck-query-and-assistance-need-protocol"
+    ],
+    "conceptIds": [
+      "deck-composition", "draw-pile", "discard-pile", "personal-deck", "market-deck", "deck-cycle", "shuffle-boundary", "acquisition-latency", "draw-density", "target-card",
+      "hypergeometric-draw", "deck-thinning", "deck-bloat", "dead-draw", "combo-density", "topdeck", "deck-pollution", "shuffle-protocol", "card-lifecycle", "hand-capacity", "uncertainty-source"
+    ],
+    "doneWhen": [
+      "个人牌库已按功能与手牌、抽牌、弃牌、留场、市场和移除区域分开记录。",
+      "至少一张新牌可从获得追到首次使用、再次循环和终局，获得延迟可见。",
+      "洗牌或翻转的触发、参与区域、当前抽取、方向和查询权限无需口头补丁即可执行。",
+      "每个命中率都写明总体、目标牌、抽取数、无放回与洗匀假设；已知顺序另行处理。",
+      "一次压缩或膨胀已记录被改变的功能、循环速度和终局前重抽次数。",
+      "至少一组组合已通过共抽、行动、资源、容量、失败代价和成功收益检查。",
+      "新手完成一次购买—洗牌—首次使用任务，并以一种代洗或持牌辅助重做。",
+      "下一版只改变一个循环字段，并预写支持与反驳信号。"
+    ],
+    "backtracksTo": ["guide-experience-intent", "guide-core-system", "special-hidden-information-hand-economy-contract", "special-randomness-contract"],
+    "nextOptions": ["guide-minimum-prototype", "guide-playtest-feedback", "guide-rules-information", "guide-presentation-release", "special-balance-one-risk", "special-accessibility-task-observation"],
+    "toolIds": ["decision-trace", "test-plan", "feedback", "playtest-selector", "constraint-deck", "balance-pass", "accessibility-observation", "redesign"],
+    "status": "review"
+  },
+  {
+    "id": "special-card-language-effect-resolution-contract",
+    "title": "别先争哪张牌更强，先把这段效果完整走一遍",
+    "stage": "规则与信息",
+    "problem": "原型里的卡牌有费用、条件、触发、反应、替代、关键词或组合，但同一句话每桌解释不同；两个效果同时发生时没人知道谁排顺序，‘若/然后/改为’失败后是否继续也不明确，偶尔还会出现互相触发的无限循环。",
+    "outcome": "一份可执行的卡牌语言与结算契约：把能力拆成七槽，选定最小窗口模型，固定逻辑词和关键词展开，用效果轨迹验证组合与循环，并从真实座位完成读取—查询—恢复任务。",
+    "coreMinutes": 30,
+    "opening": "拿最近一次让全桌停下来争论的卡牌局面。不要先改费用、数值或胜负。摆出争议前的全部状态，把初始事件写成 E0，并保留当时谁的回合、谁控制每张牌、哪些资源已经支付。",
+    "steps": [
+      {
+        "label": "把能力拆成七槽",
+        "prompt": "为每项能力依次写窗口/触发、限制、费用、目标、动作、结果、持续时间或去向；没有的槽写无，卡图和口头解释不能承担隐藏规则。",
+        "example": "弃牌后；每轮一次；支付 1 能量；选择另一玩家；查看一张随机手牌；可弃掉它；进入其弃牌堆。"
+      },
+      {
+        "label": "选定最小结算模型",
+        "prompt": "写事件何时成立、谁能打断或回应、同时效果由谁排序、逐项还是整体检查状态、结算后回到哪个窗口；只选择当前游戏所需复杂度。",
+        "example": "本作没有堆叠；替代在事件前，强制在事件后先于可选；同类由当前玩家排序；每项完成后检查淘汰。"
+      },
+      {
+        "label": "固定逻辑词与关键词展开",
+        "prompt": "给当、之后、若、然后、改为、可以、必须、不能、每次和至多建立项目定义；每个关键词保存完整规则、卡面短形、提醒文字、正反例、版本与查询位置。",
+        "example": "连锁 X：主效果完整结算后可支付 X；若支付，做分号后效果。主效果因目标非法完全失败时不进入连锁。"
+      },
+      {
+        "label": "画效果轨迹并检查循环",
+        "prompt": "逐步编号事件，记录来源、触发、控制者、目标、支付、状态前后和新事件；状态重复时区分有限资源、强制循环或可选循环，并指定次数、终态或退出责任。",
+        "example": "E0 甲受伤→E1 乙反击→E2 甲护盾触发→E3 乙受伤→回到同一状态；规则改为同一来源对同一初始事件最多触发一次。"
+      },
+      {
+        "label": "真实座位读取、查询并只改一项",
+        "prompt": "打印真实尺寸，让新手从最远目标座位找费用、触发、目标和关键词，查规则后回到原窗口；再用大字、双编码、卡架或代读重做，只改语言、时序、循环或呈现之一。",
+        "example": "v0.6 只在反击图标旁加短词。支持信号：3 人都能查到展开并回到 E2；反驳信号：短词被误读为第二个效果。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "句子读起来顺，所以规则已经清楚。",
+        "repair": "让另一人按七槽重建合法能力；缺目标、费用、时点或失败处理就补结构。"
+      },
+      {
+        "mistake": "关键词越多，卡面越专业。",
+        "repair": "只压缩高频、稳定、可一致展开的模块；低频变体保留正文和查询入口。"
+      },
+      {
+        "mistake": "同时发生就让玩家现场商量顺序。",
+        "repair": "指定优先类别、排序责任人、是否可回应和状态检查点。"
+      },
+      {
+        "mistake": "互相触发很多次就是有深度的组合。",
+        "repair": "追踪重复状态，区分资源耗尽、强制与可选循环，写终止协议。"
+      },
+      {
+        "mistake": "图标在设计软件里看得清就可以发布。",
+        "repair": "从真实座位、真实尺寸、常见光线和隐藏手牌条件测试识别、展开、查询和代读。"
+      }
+    ],
+    "whenToBreak": [
+      "轻量游戏可以没有回应和堆叠；应明确动作不可中断、同时效果由谁排序和何时检查结果。",
+      "叙事卡可以使用完整自然语言；涉及选择、支付和状态变化的部分仍应可执行地恢复。",
+      "专家向可扩展卡牌游戏可以采用完整优先权与堆叠；要提供示例、术语查询和循环规则。",
+      "纯图标系统可以减少语言依赖；仍要验证相似轮廓、组合语法、色觉、翻译和远座读取。",
+      "数字实现可以自动验证目标和阻止循环；仍应解释能力为何不可用、当前处于哪个窗口。"
+    ],
+    "exercise": {
+      "title": "把一次争议变成效果轨迹",
+      "prompt": "从争议前状态开始编号 E0、E1……，为每步写来源、触发词、强制/可选、排序者、目标、费用、状态前后和新事件；圈出第一次重复状态，然后只改一个字段。",
+      "exampleOutput": "E0 甲弃牌；E1 甲余响可选；E2 乙封锁强制并替代 E0；原规则未说明强制优先。v0.7 只增加‘同一时点强制先于可选’，不改卡值。"
+    },
+    "evidenceBoundary": "本指南综合五套正式规则或更新、一套规则汇编、九项设计师与编辑实践、五项形式/计算研究、五项无障碍资料和三项非代表性玩家症状，并复用 Daybreak 设计日志、dV Giochi 规则指南、Unfair 词表、Meeple Centred Design 与 Race for the Galaxy 无障碍长评。证据支持把能力拆成可执行语法、统一效果类型和时点、明确同时/替代/回应/状态检查、用事件—状态轨迹验证组合、为循环指定终止协议，并把关键词、图标、版式、查询和代读纳入真实任务；不提供最佳关键词数、图标比例、触发窗口、栈深、组合长度、循环次数、每牌效果数、卡文字数、字号、字距或可读距离。正式规则提供不同可行模型而非排名，设计日志多为创作者回顾，计算边界不代表普通原型不可测试，无障碍长评和访谈不能代表所有玩家，社区帖无代表性；五步契约仍需中文新手、不同卡量、座位、光线和支持条件验证。",
+    "resourceIds": [
+      "magic-comprehensive-rules-timing",
+      "arkham-lcg-ability-timing-rules",
+      "netrunner-comprehensive-ability-rules",
+      "marvel-champions-timing-update",
+      "root-law-effect-precedence",
+      "spirit-island-action-tree-rules",
+      "rosewater-keyword-wise",
+      "rosewater-keyword-play",
+      "rosewater-reminder-text",
+      "daniel-solis-card-hierarchy",
+      "daniel-games-card-icons",
+      "daybreak-victory-diary",
+      "challengers-timing-keyphrases-diary",
+      "paleo-wording-clarifications",
+      "jason-begy-rules-style-guide",
+      "dvgiochi-standard-rulebook",
+      "unfair-rulebook-glossary",
+      "cardscript-unified-language-paper",
+      "card-game-description-language",
+      "rulebook-logical-extraction-study",
+      "ludii-manual-generation",
+      "mtg-turing-complete",
+      "mcd-heuristic-toolkit-paper",
+      "sarah-reed-visual-card-accessibility",
+      "arnak-accessibility-teardown",
+      "race-galaxy-accessibility",
+      "colorblind-card-typography-interview",
+      "reddit-marvel-response-repeat",
+      "reddit-spirit-island-infinite-loop",
+      "reddit-reactive-power-icons"
+    ],
+    "claimIds": [
+      "claim-card-ability-needs-executable-grammar",
+      "claim-effect-types-need-one-timing-model",
+      "claim-simultaneous-effects-need-order-owner",
+      "claim-logical-connectors-need-controlled-meaning",
+      "claim-keyword-needs-versioned-expansion",
+      "claim-icons-need-frequency-and-ambiguity-gate",
+      "claim-combo-needs-event-state-trace",
+      "claim-loop-needs-category-and-exit-responsibility",
+      "claim-open-card-pools-cannot-rely-on-complete-solver",
+      "claim-card-readability-needs-real-seat-task",
+      "claim-card-query-needs-return-point",
+      "claim-card-assistance-must-preserve-secrecy-and-decisions"
+    ],
+    "conceptIds": [
+      "ability-grammar",
+      "timing-window",
+      "static-effect",
+      "activated-ability",
+      "triggered-effect",
+      "replacement-effect",
+      "delayed-effect",
+      "effect-queue",
+      "priority",
+      "simultaneous-effect",
+      "order-owner",
+      "controlled-vocabulary",
+      "reminder-text",
+      "keyword-expansion",
+      "effect-trace",
+      "repeated-state",
+      "mandatory-loop",
+      "optional-loop"
+    ],
+    "doneWhen": [
+      "所有核心能力可拆成七槽，省略槽与默认值明确。",
+      "当、之后、若、然后、改为、不能和次数词有项目级定义。",
+      "同时效果、打断、回应、结算和状态检查的责任可查。",
+      "至少一组组合已画成事件—状态轨迹并检查重复状态。",
+      "强制或可选循环有有限次数、终态或退出责任。",
+      "每个关键词有展开、提醒文字、正反例、版本与查询位置。",
+      "新手能从真实座位读取、查询并回到原窗口。",
+      "下一版只改变一个语言、时序、循环或呈现字段。"
+    ],
+    "backtracksTo": [
+      "guide-core-system",
+      "special-turn-structure-contract",
+      "special-hidden-information-hand-economy-contract",
+      "special-deck-building-draw-cycle-contract"
+    ],
+    "nextOptions": [
+      "guide-minimum-prototype",
+      "guide-playtest-feedback",
+      "guide-rules-information",
+      "guide-presentation-release",
+      "special-accessibility-task-observation",
+      "special-balance-one-risk"
+    ],
+    "toolIds": [
+      "decision-trace",
+      "test-plan",
+      "feedback",
+      "playtest-selector",
+      "constraint-deck",
+      "balance-pass",
+      "accessibility-observation",
+      "redesign"
+    ],
+    "status": "review"
+  },
+  {
+    "id": "special-card-pool-version-governance-contract",
+    "title": "别先宣布全部兼容，先让旧版玩家找到今天该用哪份文字",
+    "stage": "呈现与发布",
+    "problem": "游戏准备增加扩展、第二版、勘误、禁限或轮替，但稀有度同时被当成强度与复杂度，兼容只写‘可混用’，规则、FAQ 和卡文分散在多处；旧版玩家不知道自己需要替换什么，测试团队也不可能穷举所有模块组合。",
+    "outcome": "一份可执行的卡池与版本治理契约：内容护照拆开稀有度五字段，兼容矩阵保存配置与证据状态，事实源链区分当前/历史文本，治理时间线给出生效/复查/回退日期，并用配置回归和真实迁移任务只修一个断点。",
+    "coreMinutes": 35,
+    "opening": "拿一张已经改过文字的卡、一个旧印次基础版和一个扩展。不要先写‘向下兼容’。让另一人只靠现有材料回答：手里是哪一版、今天该用哪段文字、这个扩展能否用于指定人数和模式、若不能要替换什么。第一次猜测就是本轮起点。",
+    "steps": [
+      {
+        "label": "给内容建立稳定护照",
+        "prompt": "为每张牌、模块或组件保存稳定 ID；分开印刷文字与当前文字，并分别记录获取方式、实际出现频率、理解/桌面/战略复杂度、系统角色与当前格式的强度风险。",
+        "example": "港务长 C-041；首印文字 A，当前文字 B；固定盒装必得；基础教学不出现；每十张市场牌约出现一张；承担连锁启动而非稀有度奖励。"
+      },
+      {
+        "label": "画带证据状态的兼容矩阵",
+        "prompt": "行写基础版与印次，列写扩展、模块、人数、模式、规则、语言与组件版；每格只写已验证、声明支持、未知、互斥、需替换或停止支持，并链接对应测试或说明。",
+        "example": "基础版首印 × 港口扩展 × 5 人：需替换港口板 v2；设计声明支持，尚无 5 人实体盲测，因此不能标已验证。"
+      },
+      {
+        "label": "指定当前事实源与变更分类",
+        "prompt": "明确当前规则、当前卡文、FAQ、变更日志、历史归档和替换材料分别在哪里；把每项修改标为错字/排版、澄清、技术修复、平衡改动或功能重做，并写影响范围。",
+        "example": "C-041 为平衡改动，不是错字；当前卡文在卡牌数据库 v1.4，纸面首印留在历史页；可下载双面替换卡。"
+      },
+      {
+        "label": "把治理画成有回退门的时间线",
+        "prompt": "分开预览、发售、地区/语言可得、休闲可用、赛事合法、变更生效、复查与归档日期；试行禁限或解禁写触发证据、预期变化、反事实风险、结论日和紧急回退条件。",
+        "example": "8/20 公告，8/27 纸面生效，9/15 复查；若连锁牌组在两次公开测试都占过半且缺少可用反制，则提前回退。"
+      },
+      {
+        "label": "跑配置回归与旧版迁移任务",
+        "prompt": "先排除规则上无效组合，再覆盖核心路径、直接邻接组合、旧版代表配置、最高风险多项交互和教学/无障碍任务；让旧版玩家实际识别、查询、替换、分拣并恢复同一局面，只改一个治理断点。",
+        "example": "v1.4 只把印次识别从规则末页移到盒背与网页首屏。支持信号：玩家两分钟内找到当前文字；反驳信号：大字卡仍没有版本标记。"
+      }
+    ],
+    "commonMistakes": [
+      {"mistake": "稀有牌应该更强、更复杂。", "repair": "分别写可得性、实际出现频率、三类复杂度、系统角色与格式风险；稀有度只保留其真实产品功能。"},
+      {"mistake": "官方说兼容，所以所有组合都通过。", "repair": "把声明支持与已验证分开；未知配置保留未知，并链接最近测试版本。"},
+      {"mistake": "把所有改动都叫勘误。", "repair": "区分错字、澄清、技术修复、平衡改动与重做，让玩家看见策略和替换影响。"},
+      {"mistake": "发公告当天，所有玩家就使用同一版本。", "repair": "分别记录可获得、语言、赛事合法、生效和复查日期。"},
+      {"mistake": "扩展组合太多，所以随机挑几组测试。", "repair": "先排除无效配置，覆盖核心与邻接交互，再为历史故障和高风险多项组合增加定向案例。"},
+      {"mistake": "有免费 PDF 就没有迁移成本。", "repair": "记录识别、打印、裁切、套牌、分拣、重学、教学、收纳、本地化和访问支持劳动。"}
+    ],
+    "whenToBreak": [
+      "固定盒装、单印次且从不更新的游戏可以让纸本成为唯一事实源；一旦发布替换文本就要建立历史与当前层。",
+      "轻量扩展只有更多同类内容时，兼容矩阵可以很小；仍要检查背面、尺寸、语言、分拣和教学出现频率。",
+      "合作休闲游戏可以用可选平衡表而非禁限；必须说明整组采用还是可逐项选择，以及是否影响战役接续。",
+      "安全、赛事完整性或规则不可执行的严重漏洞可以紧急生效；之后仍需补齐范围、迁移与复查。",
+      "数字实现可以自动更新卡文和合法性；仍要向玩家解释历史牌表、补偿、格式和为何不可用。"
+    ],
+    "exercise": {
+      "title": "让旧版玩家完成一次版本迁移",
+      "prompt": "给参与者旧印次基础版、一个扩展和一项当前修订；要求他识别版本、找到当前文本、判断指定配置、完成替换并恢复争议前局面。记录第一次猜测、所有外部协助和迁移劳动。",
+      "exampleOutput": "玩家先在 FAQ 找卡文，错过数据库 v1.4；识别首印用时 4 分钟，打印替换卡后因背面不同无法混洗。v1.5 只新增统一版本角标与可套牌双面文件。"
+    },
+    "evidenceBoundary": "本指南综合 25 个新来源：Magic 的稀有度/补充包骨架与当前禁限、Arkham/Marvel Champions 的 FAQ 与卡池环境、Netrunner 的规则事实源/轮替/禁限节奏/开发日志、五个实体扩展或升级包、GMT 与 Lorcana 的规则入口、BGG 版本治理、一项力量膨胀论文、两项软件配置测试相邻研究和两项非代表性玩家讨论。证据支持拆开稀有度字段、建立带证据状态的兼容矩阵、维护当前卡文与历史文本、分类变更、区分治理日期、约束配置并安排风险回归、记录实体迁移劳动；不提供最佳稀有度、补充包槽位、扩展数量、轮替周期、禁限阈值、版本号、回归样本量、替换价格或兼容年限。持续卡牌游戏不能代表全部桌游，商品页是具体案例，软件覆盖不证明体验充分，社区讨论无代表性；五步契约仍需中文新手、旧版持有者、多语言和不同访问支持条件验证。",
+    "resourceIds": ["magic-new-world-order", "magic-play-booster-skeleton", "magic-banned-restricted-2026-08", "magic-pauper-trial-unban-2026", "arkham-faq-v25", "arkham-guided-unseen-faq-cadence", "marvel-champions-game-environments", "netrunner-current-rules-hub", "netrunner-elevation-rotation", "netrunner-banlist-cadence", "netrunner-measured-response-development", "netrunner-rotation-availability", "spirit-island-errata-pack", "root-upgrade-kit", "dominion-second-edition-update-pack", "euphoria-essential-update-pack", "wingspan-europe-expansion-compatibility", "gmt-congress-vienna-living-rules", "lorcana-resource-hub", "bgg-version-entry-policy", "power-creep-conservative-metric", "nist-combinatorial-testing", "software-product-line-testing-review", "reddit-expansion-burden", "reddit-expansion-quality-symptoms"],
+    "claimIds": ["claim-rarity-needs-separate-design-fields", "claim-as-played-frequency-shapes-environment", "claim-compatibility-is-versioned-matrix", "claim-support-declaration-is-not-validation", "claim-current-card-text-needs-authority-chain", "claim-errata-needs-change-class", "claim-governance-needs-distinct-dates", "claim-ban-rotation-needs-review-and-rollback", "claim-card-power-is-card-pool-relative", "claim-configuration-regression-needs-constraints-and-risk", "claim-physical-errata-needs-migration-path", "claim-expansion-cost-includes-maintenance-labor"],
+    "conceptIds": ["content-passport", "availability-path", "as-played-frequency", "rarity-role", "compatibility-matrix", "compatibility-state", "declared-support", "validated-configuration", "current-rules-source", "current-card-text", "change-class", "errata-scope", "governance-timeline", "legality-date", "review-window", "rollback-gate", "configuration-regression", "migration-labor"],
+    "doneWhen": ["每个可变内容单元有稳定 ID、印刷/当前文字和稀有度五字段。", "兼容矩阵绑定印次、前置产品、规则、模式、人数、语言与组件。", "声明支持、已验证、未知、互斥、需替换和停止支持可区分。", "当前规则和卡文各有唯一权威入口，历史与变更可追。", "每项修订有变更分类、范围、理由和替换材料。", "发布、获取、合法、生效、复查、回退和归档日期不混用。", "回归包覆盖核心、邻接、旧版、高风险与教学/无障碍配置。", "旧版玩家完成识别—查询—替换—恢复任务，迁移劳动被记录。"],
+    "backtracksTo": ["guide-core-system", "guide-rules-information", "special-card-language-effect-resolution-contract", "special-deck-building-draw-cycle-contract"],
+    "nextOptions": ["guide-minimum-prototype", "guide-playtest-feedback", "guide-presentation-release", "special-balance-one-risk", "special-accessibility-task-observation"],
+    "toolIds": ["version-governance", "decision-trace", "test-plan", "feedback", "playtest-selector", "constraint-deck", "balance-pass", "accessibility-observation", "redesign"],
+    "status": "review"
+  },
+  {
+    "id": "special-issue-to-system-translation",
+    "title": "别把观点贴在棋盘上，先让玩家在系统里碰到它",
+    "stage": "核心系统",
+    "problem": "设计者有一个社会、文化或教育议题，却只把事实问答、主题文字或结论贴到现成机制上；玩家可能记住口号，却没有在行动、权限、资源与后果中碰到议题的关系。",
+    "outcome": "一份可测试的议题—系统翻译稿：先声明希望玩家遇见的关系，再把它分解为角色位置、权限、资源、约束、反馈与遗漏，最后用系统行为、玩家理解和受影响者审阅三层证据验证。",
+    "coreMinutes": 35,
+    "opening": "先删掉背景故事和题卡，只留玩家每轮真正能做的动作。问：如果换掉所有名词，这套系统还会产生同一种关系吗？若不会，议题还停留在表面；若会，指出是哪一条权限、交换、延迟或反馈让它发生。",
+    "steps": [
+      {
+        "label": "写系统主张与位置说明",
+        "prompt": "用一句可被反驳的话写清游戏想让玩家碰到的关系，并说明设计团队的位置、谁直接承受该议题、谁有权质疑或修改表达。",
+        "example": "主张：平台把可见度分配给能持续制造互动的人，同时把审核成本转给创作者；受影响者审阅不是发布末期的背书。"
+      },
+      {
+        "label": "把关系翻译成六个系统字段",
+        "prompt": "逐项写角色、权限、资源、约束、反馈和时间尺度；每个字段都要能对应玩家动作或系统响应，而不是只对应一段说明文字。",
+        "example": "创作者可发帖但不能查看完整排序；注意力是资源；持续发帖受精力约束；互动会强化下一轮曝光；审核损失延迟两轮出现。"
+      },
+      {
+        "label": "建立遗漏账本",
+        "prompt": "记录为了可玩性删掉的人、因果、历史与替代解释；为每项遗漏标注可能造成的误读、谁能发现它，以及原型阶段怎样补查。",
+        "example": "原型省略广告主议价权，可能让玩家误以为平台只优化参与度；下一轮加入广告主观察者审阅与一条替代模型。"
+      },
+      {
+        "label": "把议题放进重复决策与后果",
+        "prompt": "让核心关系在一局中至少被玩家反复选择、承受或观察；删除与系统无关的测验和结论卡，检查更名后关系是否仍成立。",
+        "example": "每轮都在短期曝光和长期审核债务之间取舍，而不是答对一道平台知识题才获得曝光。"
+      },
+      {
+        "label": "分层验证并限定复盘职责",
+        "prompt": "分别收集系统是否真的运行、玩家怎样解释、受影响者如何评价的证据。复盘可以揭示差异，不能替一套断裂的系统补讲正确答案。",
+        "example": "日志显示审核债务确实累积；访谈却只谈运气；受影响者指出劳动分配失真。下一版先改反馈可见性，不增加教师讲解。"
+      }
+    ],
+    "commonMistakes": [
+      {"mistake": "先选熟悉机制，再把议题名词换上去。", "repair": "先写关系与六个系统字段，再比较哪些机制能生成同类行动和后果。"},
+      {"mistake": "玩家答对知识题，就证明理解了系统。", "repair": "分开事实回忆、系统解释、策略变化与价值判断，不用单一题目替代。"},
+      {"mistake": "设计意图良善，所以表达不会伤害人。", "repair": "记录团队位置与受影响者参与点，优先检查实际影响和可修改权。"},
+      {"mistake": "抽象就是中立地删掉细节。", "repair": "建立遗漏账本，追踪被删内容如何改变责任、能动性与因果解释。"},
+      {"mistake": "复盘时解释清楚，就能修复游戏里的断裂。", "repair": "若玩家无法从行动与反馈接触核心关系，先改系统；复盘只比较经验与解释。"},
+      {"mistake": "一次课堂成功就能证明长期态度改变。", "repair": "只报告观察到的任务、解释和局限；长期学习或行为结果需要另外研究。"}
+    ],
+    "whenToBreak": [
+      "纯粹练习事实检索的小游戏可以直接使用问答，但要把目标写成事实回忆，不宣称它呈现了复杂系统。",
+      "高度抽象的策略游戏可以不模拟具体议题；一旦借用真实群体、历史或公共问题，就要说明抽象边界和遗漏。",
+      "受安全、隐私或创伤限制时，可以不邀请公开参与；仍需设计替代审阅、匿名反馈和停止机制。",
+      "课堂时间很短时，可以只验证一个关系；应缩小系统主张，而不是用教师讲解填满所有缺口。",
+      "虚构世界可以合成多个现实来源；不能因此把可辨认群体的刻板印象当成无须审阅的装饰。"
+    ],
+    "exercise": {
+      "title": "把一条观点改写成可运行的关系",
+      "prompt": "选择一个议题，写一句系统主张和六字段翻译；列三项遗漏。做一个只含一次循环的纸面原型，让两名参与者先行动再解释发生了什么，最后邀请一位了解或受该议题影响的人审阅。",
+      "exampleOutput": "关于培训竞争的原型把名额、信息差和家长时间变成资源与权限；测试者看见竞争，却没看见机构如何制造稀缺。下一版只增加机构的名额释放反馈。"
+    },
+    "evidenceBoundary": "本指南把汉字桌游课程与桌游×社会科学课程作为本地教学案例，并与 Values at Play、Grow-A-Game、Design Justice、社会议题游戏设计、教育游戏评估、纸板算法素养、公民教育工作坊和欧式桌游抽象批评交叉核对。证据支持从价值发现进入系统翻译、记录抽象遗漏、让直接受影响者更早参与，并把系统行为、玩家解释与利益相关者审阅分层；不证明任何机制会自动带来学习、态度或社会改变，也不提供通用的讲解时长、重玩率、参与人数或达标阈值。汉字课程 DOCX 的视觉渲染缺失中文字符，具体文本依据 OOXML 结构提取；五个 Pages 文件只做元数据索引，不用于内容主张。",
+    "resourceIds": ["values-at-play-methodology", "grow-a-game-values-tool", "black-boxes-cardboard-algorithmic-literacy", "learning-evaluate-analog-education", "design-justice-network-principles", "practical-social-issue-game-design", "civic-education-playful-game-design", "analog-orientalism-abstraction"],
+    "claimIds": ["claim-theme-is-system-commitment", "claim-representation-needs-early-participation", "claim-issue-needs-system-thesis", "claim-abstraction-needs-omission-ledger", "claim-values-verification-needs-layered-evidence", "claim-debrief-cannot-repair-system-disconnection"],
+    "conceptIds": ["theme-commitment", "historical-abstraction", "playable-perspective", "cultural-collaboration", "system-thesis", "values-translation", "omission-ledger", "affected-stakeholder", "values-verification", "debrief-dependency"],
+    "doneWhen": ["系统主张是一句可被测试和反驳的关系，而不是主题口号。", "团队位置、直接受影响者与修改权被明确。", "角色、权限、资源、约束、反馈和时间尺度都对应可观察行为。", "遗漏账本至少记录删除内容、误读风险和补查责任。", "核心关系出现在重复决策或后果中，不依赖外挂问答。", "系统运行、玩家解释和受影响者审阅三层证据分开保存。", "复盘任务与系统必须承担的表达责任有清晰边界。", "本轮只改一个关系字段，并保留替代解释。"],
+    "backtracksTo": ["guide-experience-intent", "guide-core-system", "special-purposeful-play", "special-theme-commitment-harm-review"],
+    "nextOptions": ["guide-minimum-prototype", "guide-playtest-feedback", "guide-rules-information", "special-shared-decision-observation", "special-accessibility-task-observation"],
+    "toolIds": ["issue-to-system", "theme-review", "decision-trace", "shared-decision", "prototype-scope", "test-plan", "feedback", "playtest-selector", "accessibility-observation", "redesign"],
+    "status": "review"
+  },
+  {
+    "id": "special-reading-to-action",
+    "title": "别把设计书读成收藏，用一个问题换一次上桌行动",
+    "stage": "体验意图",
+    "problem": "我收藏了书、课程和设计师文章，阅读时觉得有道理，回到自己的游戏却不知道应该改什么、保留什么、验证什么。",
+    "outcome": "一张阅读—行动合同：当前设计问题、一条学习主线、一个反例或玩家语境、一项最小行动、行为预测、反驳信号和回写日期。",
+    "coreMinutes": 12,
+    "opening": "不必先读完一整本书。先把你现在的设计卡点写成一个会改变下一版的问题，只读能帮你区分候选行动的部分。书、课程、博客、玩家长评和机制百科承担不同工作，不是一个可以混成“正确答案”的排行榜。",
+    "steps": [
+      {
+        "label": "冻结一个会改版本的问题",
+        "prompt": "写清项目版本、当前局面、你不知道的关系，以及得到答案后会做的决定。不要以“我想学平衡”这类无边界主题开始。",
+        "example": "v0.3 中，玩家在别人回合只能等待。我要知道是共享状态变化让预案失效，还是信息只在当前玩家手里；答案会决定下一版改状态可见性还是决策协议。"
+      },
+      {
+        "label": "让一条主线承担结构",
+        "prompt": "从带练习的课程、设计师文章集、系统教材、机制查询或原型工作坊中只选一种主线。记录你实际审阅到章节、目录还是全文，不把书目简介写成深读。",
+        "example": "主线用 Kathleen Mercury 的课堂路径安排动作；《狗头人》本地 55 页预读版只用已审阅的规则与测试页段，不用完整版目录补写缺失正文。"
+      },
+      {
+        "label": "补一个会让你改变理解的声音",
+        "prompt": "主线是教师或设计师时，补一个具体玩家语境；主线是个人长评时，补一个可执行模型或反例。保留人数、版本、经验、媒介与支持条件，不用多数意见抹平差异。",
+        "example": "设计文章建议增加回合外决定；一位使用代读的玩家表明更多隐藏反应反而增加信息与代劳。两者都留在问题中。"
+      },
+      {
+        "label": "把阅读压成一项最小行动",
+        "prompt": "写下你要保留的关系、不会照抄的表面做法、这一版只改的一件事、预期出现的玩家行为与反驳信号。",
+        "example": "保留“等待时仍能维护一个未来决定”，不复制来源游戏的反应卡。v0.4 只加一个公开预留位；若玩家仍不在回合外更新预案，则反驳这项迁移。"
+      },
+      {
+        "label": "上桌后回写，而不是再读一篇",
+        "prompt": "在约定日期记录行动前判断、玩家行为、其他解释、保留/修订/放弃决定，以及该判断要在哪个改变过的新情境再测。只有阅读时长、笔记数和完成章节不能证明设计判断增长。",
+        "example": "两局中三名玩家都更新了预留位，但新手常忘记状态已改变。保留公开位，下轮只换成双编码标记，不得出“系统已解决停机”。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "按知名度排一份必读书单。",
+        "repair": "先问用户现在要完成什么，再根据审阅深度、行动性、语境与权利选入口；不生成总分。"
+      },
+      {
+        "mistake": "从出版社简介或目录推断全书观点。",
+        "repair": "标明只核验元数据、目录、节选或全文；缺失正文保持未知。"
+      },
+      {
+        "mistake": "把一位大师的流程当成唯一成熟度路线。",
+        "repair": "保留作者的团队、市场、媒介和年代语境，只迁移一个可反驳关系。"
+      },
+      {
+        "mistake": "读完立即同时改五个系统。",
+        "repair": "冻结版本，只改一个会暴露当前未知的条件，并先写反驳信号。"
+      },
+      {
+        "mistake": "免费可读就等于可以复制、翻译或重新发布。",
+        "repair": "分开访问与授权；链接、原创摘要、短引和改编各自核对权利边界。"
+      }
+    ],
+    "whenToBreak": [
+      "只想为休息或兴趣阅读时，不必建立行动合同；资源站不应把每次阅读都变成绩效。",
+      "安全、权利、法律或生产硬约束不清时，先查当前一手规则或寻求专业意见，不用旧书中的通用经验做决定。",
+      "所有来源都只是设计者或教师视角时，暂停综合结论，先去寻找玩家、主持人、制造者或直接受影响者的具体语境。",
+      "当前原型还无法运行一次最小循环时，先用原型裁剪器建立可执行版本，不把继续阅读当成完成设计。"
+    ],
+    "exercise": {
+      "title": "用一篇已读文章换一次 20 分钟测试",
+      "prompt": "选一篇你已经读过的文章或一个书中页段。填写当前问题、审阅深度、一个异议语境、最小改动、行为预测和反驳信号；用纸面原型运行 20 分钟后回写决定。",
+      "exampleOutput": "问题是四人局的回合外停机；来源只审到原文与一条玩家长评；v0.4 只加公开预留位；预测是非当前玩家会主动更新预案；若只是加速轮到后的决定，则放弃迁移。"
+    },
+    "evidenceBoundary": "本指南综合 Kathleen Mercury 当前公开的课堂路径与使用/再出版边界、Kobold Press 对 144 页完整英文版的当前书目描述、用户提供 55 页中文预读版的 K01–K11 原创摘要，以及有目的游玩、设计练习学习提取与迁移研究。它们支持区分审阅深度、保留异议语境、把阅读收束为可反驳行动并回写证据；不证明这一流程优于自由阅读，不证明任何书籍会提高设计质量，也不从商品简介、目录、阅读时长或笔记数推断学习成效。本地 PDF 受版权保护且不完整；Kathleen 材料可用不等于可再出版。",
+    "resourceIds": [
+      "kathleen-mercury-resources",
+      "kobold-guide-board-game-design-official",
+      "game-design-concepts",
+      "your-turn-tabletop-guide",
+      "white-box-game-design",
+      "game-design-workshop-fifth",
+      "rules-of-play-book",
+      "building-blocks-tabletop-book",
+      "game-developer-purposeful-play",
+      "ptt-dadaocheng-downtime"
+    ],
+    "claimIds": [
+      "claim-design-practice-needs-learning-extraction",
+      "claim-transfer-needs-changed-context",
+      "claim-purposeful-play-separates-perspectives",
+      "claim-generative-and-evaluative-modes-need-transition",
+      "claim-information-interface-needs-task-testing",
+      "claim-redesign-learning-needs-artifact-trail"
+    ],
+    "conceptIds": [
+      "learning-extraction",
+      "transfer-test",
+      "purposeful-play",
+      "hypothesis",
+      "evidence-state",
+      "version",
+      "experience-intent"
+    ],
+    "doneWhen": [
+      "问题绑定项目版本、具体局面和将被影响的设计决定。",
+      "主线只有一条，并如实标明审阅深度、年代、媒介、商业和权利语境。",
+      "至少保留一个玩家语境、反例或反对解释，没有只有设计者声音。",
+      "最小行动只改一个条件，写清行为预测和反驳信号。",
+      "上桌后保留判断、观察、其他解释、决定和下一次迁移语境。",
+      "没有复制或补写未授权正文，也没有用书单排名、阅读数量或笔记总分表示成长。"
+    ],
+    "backtracksTo": [
+      "guide-experience-intent",
+      "special-purposeful-play",
+      "guide-core-system"
+    ],
+    "nextOptions": [
+      "guide-minimum-prototype",
+      "special-decision-trace",
+      "guide-playtest-feedback",
+      "special-cross-project-learning-trace"
+    ],
+    "toolIds": [
+      "experience-intent",
+      "redesign",
+      "decision-trace",
+      "prototype-scope",
+      "test-plan",
+      "feedback",
+      "playtest-selector"
+    ],
+    "status": "review"
+  }
+]

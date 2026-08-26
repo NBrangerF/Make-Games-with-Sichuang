@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "market-restock-price-feedback",
+    "title": "诊断市场补货、动态价格与供需反馈",
+    "question": "市场短缺、过剩、滞销或价格失控；我该改补货量、价格步幅、容量、刷新、补贴还是人数配置？",
+    "outcome": "先把市场还原为槽位、存量、容量、价格、补货和交接的状态转移；明确批量价格与移价时点，演短缺/过剩/滞销并只改一个变量。",
+    "resourceIds": [
+      "power-grid-recharged-market-rules",
+      "clans-caledonia-market-rules",
+      "century-spice-road-market-rules",
+      "mars-needs-mechanics-market-interview",
+      "stale-markets-design-discussion",
+      "through-ages-market-accessibility",
+      "beer-game-outcome-feedback",
+      "reddit-century-stale-market"
+    ],
+    "evidenceBoundary": "组合正式规则、设计师实践、实验与相邻动态决策研究、无障碍长评和玩家症状；它们支持写状态与时序、分开补货变量、诊断滞销、记录容量/事件密度/反馈并做真实座位任务，不提供最佳槽位、补货、价格、容量、刷新、人数公式、均衡或偏好。"
+  },
+  "resources": [
+    {
+      "id": "power-grid-recharged-market-rules",
+      "title": "Power Grid: Recharged Rulebook",
+      "creator": "Friedemann Friese / rulebook mirror",
+      "href": "https://meepletron-storage.s3.us-east-2.amazonaws.com/resources/power-grid-recharged-rulebook.pdf",
+      "type": "资源价格格、存量容量与人数阶段补货规则",
+      "evidenceType": "official_or_rules_reference",
+      "format": "pdf",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "规则与信息",
+        "测试与反馈"
+      ],
+      "useful": "逐步规定资源价格、购买容量、有限组件、补货顺序及随人数和阶段变化的补货表。",
+      "limitation": "规则镜像且是多变量完整游戏，不能证明某个补货量或价格格单独造成体验效果。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "clans-caledonia-market-rules",
+      "title": "Clans of Caledonia Rulebook",
+      "creator": "Juma Al-JouJou / rulebook mirror",
+      "href": "https://cdn.1j1ju.com/medias/17/ed/42-clans-of-caledonia-rulebook.pdf",
+      "type": "买卖后移价、商人占用与批量结算规则",
+      "evidenceType": "official_or_rules_reference",
+      "format": "pdf",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "规则与信息"
+      ],
+      "useful": "展示按当前价结算整批交易、随后按数量移动价格，以及先操纵价格再交易的时序。",
+      "limitation": "规则案例不能隔离价格时点、玩家人数或其他系统的因果效果。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "century-spice-road-market-rules",
+      "title": "Century: Spice Road Rules",
+      "creator": "Emerson Matsuuchi / rulebook mirror",
+      "href": "https://papmajor.dk/wp-content/uploads/EN-Century-Spice-Road-Rules-2017-08-02.pdf",
+      "type": "位置定价、跳过留置与卡列补货规则",
+      "evidenceType": "official_or_rules_reference",
+      "format": "pdf",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "规则与信息"
+      ],
+      "useful": "规定跳过左侧卡牌需逐张留资源、取得卡牌同时取得累积资源，并在取牌后左移补货。",
+      "limitation": "本轮主要依据可检索规则摘录，不能用累积补贴直接推断玩家可负担性。",
+      "status": "article_level",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "mars-needs-mechanics-market-interview",
+      "title": "Meaningful Decisions: Ben Rosset on Mars Needs Mechanics",
+      "creator": "Ben Rosset / Cardboard Edison",
+      "href": "https://cardboardedison.com/blog/meaningful-decisions-ben-rosset",
+      "type": "供需信号、价格波动与人数控制感设计师访谈",
+      "evidenceType": "first_party_practice",
+      "format": "interview",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "解释如何用近期购买与牌库频率代表需求和供给，并记录市场牌数与玩家人数的项目内迭代。",
+      "limitation": "单项目多变量经验，八张市场牌和不同人数控制感不能当通用阈值。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "stale-markets-design-discussion",
+      "title": "Design Discussion: Stale Markets",
+      "creator": "Christian Beck",
+      "href": "https://chrisbeckdesign.com/2021/11/20/design-discussion-stale-markets/",
+      "type": "自动刷新、玩家刷新、补贴与等待设计讨论",
+      "evidenceType": "first_party_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "区分滞销的价格与相关性原因，并讨论不同刷新方法把成本和收益交给谁。",
+      "limitation": "个人规范性文章没有对照实验，不证明某种刷新法普遍更好。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "through-ages-market-accessibility",
+      "title": "Through the Ages Accessibility Teardown",
+      "creator": "Michael Heron / Meeple Like Us",
+      "href": "https://www.meeplelikeus.co.uk/ages-new-story-civilization-2015-accessibility-teardown/",
+      "type": "高频卡列、空间数值与交叉读取无障碍长评",
+      "evidenceType": "expert_review",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "规则与信息",
+        "测试与反馈",
+        "呈现与发布"
+      ],
+      "useful": "具体分析十三张卡列的轮换、视觉读取、行动机会成本、空间数值与算术负担。",
+      "limitation": "单一评者针对一个版本的长评，不能代表所有残障玩家或给发生率。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "beer-game-outcome-feedback",
+      "title": "Exploration of Outcome Feedback for Dynamic Decision Making",
+      "creator": "System Dynamics researchers",
+      "href": "https://proceedings.systemdynamics.org/1999/PAPERS/PARA98.PDF",
+      "type": "局部信息、订货延迟与结果反馈动态决策研究",
+      "evidenceType": "academic_adjacent",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "借 Beer Distribution Game 讨论局部信息、延迟、库存欠单成本与反馈界面怎样共同影响振荡和难度。",
+      "limitation": "旧研究含电脑化模拟，不能把牛鞭效应直接诊断为所有桌游市场问题。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "reddit-century-stale-market",
+      "title": "Century: Spice Road Stale Market House Rules",
+      "creator": "r/boardgames community",
+      "href": "https://www.reddit.com/r/boardgames/comments/bmf5sp",
+      "type": "滞销卡列、付费刷新与后手获益玩家讨论",
+      "evidenceType": "community_discussion",
+      "format": "discussion",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "提供中后期无人取牌、刷新占用整次行动并可能让后手获益的具体症状。",
+      "limitation": "自选社区和家规讨论没有代表性、发生率或机制因果。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "power-grid-recharged-market-rules",
+      "useModes": [
+        "lookup",
+        "compare",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "核对价格格、购买容量、有限组件与人数阶段补货的完整顺序。",
+      "doNotUseFor": "不能从多变量规则反推通用补货量或价格阶梯。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "clans-caledonia-market-rules",
+      "useModes": [
+        "lookup",
+        "compare",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "比较整批结算、买卖后移价、商人占用与先操纵后交易。",
+      "doNotUseFor": "规则不能隔离时点或人数的效果。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "century-spice-road-market-rules",
+      "useModes": [
+        "lookup",
+        "compare",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "观察位置成本、跳过留置、累积补贴与取牌后补货。",
+      "doNotUseFor": "本轮未逐页深读，也不能假定补贴必然解决可负担性。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "mars-needs-mechanics-market-interview",
+      "useModes": [
+        "learn",
+        "compare",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "把购买频率、牌库频率、市场规模和人数控制感拆成变量。",
+      "doNotUseFor": "不要把八张牌或特定人数体验当通用甜点值。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "stale-markets-design-discussion",
+      "useModes": [
+        "learn",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "unknown",
+      "bestFor": "比较自动刷新、玩家付费刷新、补贴和等待的成本归属。",
+      "doNotUseFor": "规范性文章不证明某种修复普遍有效。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "through-ages-market-accessibility",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "reusable_license_verified",
+      "commercialContext": "unknown",
+      "bestFor": "把公开市场拆成远座读取、轮换记忆、空间数值和算术任务。",
+      "doNotUseFor": "单一评者不能代表所有残障玩家；方案需真实参与者验证。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "beer-game-outcome-feedback",
+      "useModes": [
+        "learn",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "生成局部信息、反馈延迟、库存欠单和界面呈现测试。",
+      "doNotUseFor": "电脑化供应链模拟不能直接诊断所有桌游市场。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "reddit-century-stale-market",
+      "useModes": [
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "partial",
+      "actionability": "diagnostic",
+      "transferability": "narrow",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "unknown",
+      "bestFor": "生成滞销、整行动刷新与后手获益症状。",
+      "doNotUseFor": "社区家规没有代表性或因果。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    }
+  ]
+}

@@ -1,0 +1,323 @@
+{
+  "meta": {
+    "schemaVersion": 1,
+    "productBrand": "桌游设计工坊",
+    "designSystemName": "可玩的桌游档案馆 Playable Tabletop Archive",
+    "productBuildGeneration": "V5",
+    "version": "4.0.0",
+    "date": "2026-08-23",
+    "status": "implementation-authority",
+    "tokenValueSource": "this JSON file",
+    "runtimeSource": "generated CSS custom properties",
+    "synchronization": "generate visual-tokens.css from this file and compare in CI",
+    "distributionScope": "internal-learning-only"
+  },
+  "dials": {
+    "explorationReference": {
+      "designVariance": 9,
+      "motionIntensity": 6,
+      "visualDensity": 6
+    },
+    "productionCeiling": {
+      "designVariance": 8,
+      "motionIntensity": 5,
+      "visualDensity": 6
+    },
+    "templateBudgets": {
+      "entry": { "designVariance": 8, "motionIntensity": 5, "visualDensity": 5 },
+      "learningAnalysisProblem": { "designVariance": 7, "motionIntensity": 4, "visualDensity": 5 },
+      "resourceLibrary": { "designVariance": 7, "motionIntensity": 4, "visualDensity": 6 },
+      "topicDetail": { "designVariance": 7, "motionIntensity": 4, "visualDensity": 5 },
+      "completeReading": { "designVariance": 5, "motionIntensity": 2, "visualDensity": 4 },
+      "method": { "designVariance": 7, "motionIntensity": 4, "visualDensity": 6 },
+      "guidedTool": { "designVariance": 8, "motionIntensity": 5, "visualDensity": 6 },
+      "system": { "designVariance": 4, "motionIntensity": 1, "visualDensity": 4 }
+    },
+    "viewportLimits": {
+      "primaryVisualFields": 1,
+      "simultaneousAccentFamilies": 3,
+      "prominentOutlineFamilies": 2,
+      "primaryMotionPatterns": 1,
+      "primaryDecisions": 1
+    }
+  },
+  "color": {
+    "canvas": "#F5EEDD",
+    "surface": "#FFFDF6",
+    "surfaceRaised": "#FFF9EA",
+    "surfaceInverse": "#081F33",
+    "ink": "#081F33",
+    "inkInverse": "#FFFDF6",
+    "muted": "#4C5961",
+    "mutedInverse": "#DCE4E8",
+    "rule": "#C9BCA8",
+    "ruleStrong": "#58636A",
+    "action": "#0B4FA3",
+    "actionHover": "#083B7A",
+    "actionSoft": "#E4EEF9",
+    "editorial": "#B7352E",
+    "editorialHover": "#8F211C",
+    "editorialSoft": "#F7E4E0",
+    "discovery": "#D79B00",
+    "discoveryHover": "#A96F00",
+    "discoveryInk": "#6B4700",
+    "discoverySoft": "#FFF0BE",
+    "success": "#1A7045",
+    "successHover": "#0F5632",
+    "successSoft": "#E3F1E8",
+    "focus": "#0068D8",
+    "focusInverse": "#FFD53D",
+    "focusHalo": "#FFFDF6",
+    "error": "#A22525",
+    "errorSoft": "#F8E3E0",
+    "warning": "#8A5700",
+    "warningSoft": "#FFF0BE",
+    "supportViolet": "#6539A7",
+    "supportVioletSoft": "#EEE7F8",
+    "contrastPairsVerified": {
+      "inkOnCanvas": 14.48,
+      "mutedOnCanvas": 6.24,
+      "inverseOnAction": 7.75,
+      "inverseOnEditorial": 5.79,
+      "inkOnDiscovery": 6.84,
+      "inverseOnSuccess": 5.98,
+      "inverseOnError": 7.3,
+      "focusOnCanvas": 4.57,
+      "focusInverseOnInk": 11.83
+    }
+  },
+  "typography": {
+    "families": {
+      "ui": "\"Noto Sans CJK SC\", \"Source Han Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+      "display": "\"Noto Sans CJK SC\", \"Source Han Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+      "editorial": "\"Noto Serif CJK SC\", \"Source Han Serif SC\", STSong, SimSun, serif",
+      "numeral": "\"Arial Narrow\", \"Roboto Condensed\", \"DIN Condensed\", system-ui, sans-serif"
+    },
+    "roles": {
+      "display": {
+        "desktop": { "minPx": 64, "maxPx": 88 },
+        "mobile": { "minPx": 42, "maxPx": 56 },
+        "lineHeight": 1.02,
+        "weight": 900,
+        "family": "display"
+      },
+      "h1": {
+        "desktop": { "minPx": 48, "maxPx": 64 },
+        "mobile": { "minPx": 34, "maxPx": 44 },
+        "lineHeight": 1.1,
+        "weight": 900,
+        "family": "display"
+      },
+      "h2": {
+        "desktop": { "minPx": 30, "maxPx": 40 },
+        "mobile": { "minPx": 27, "maxPx": 32 },
+        "lineHeight": 1.2,
+        "weight": 800,
+        "family": "display"
+      },
+      "h3": {
+        "desktop": { "minPx": 22, "maxPx": 28 },
+        "mobile": { "minPx": 21, "maxPx": 24 },
+        "lineHeight": 1.32,
+        "weight": 700,
+        "family": "ui"
+      },
+      "body": {
+        "desktop": { "minPx": 17, "preferredPx": 17 },
+        "mobile": { "minPx": 16, "preferredPx": 17 },
+        "lineHeight": 1.7,
+        "weight": 400,
+        "family": "ui"
+      },
+      "reading": {
+        "desktop": { "minPx": 18, "preferredPx": 18 },
+        "mobile": { "minPx": 17, "preferredPx": 17 },
+        "lineHeight": 1.86,
+        "weight": 400,
+        "family": "ui"
+      },
+      "small": {
+        "desktop": { "minPx": 15, "preferredPx": 15 },
+        "mobile": { "minPx": 14, "preferredPx": 15 },
+        "lineHeight": 1.55,
+        "weight": 400,
+        "family": "ui"
+      },
+      "label": {
+        "desktop": { "minPx": 15, "preferredPx": 15 },
+        "mobile": { "minPx": 14, "preferredPx": 15 },
+        "lineHeight": 1.4,
+        "weight": 700,
+        "family": "ui"
+      },
+      "archiveIndex": {
+        "desktop": { "minPx": 32, "maxPx": 48 },
+        "mobile": { "minPx": 26, "maxPx": 34 },
+        "lineHeight": 1,
+        "weight": 900,
+        "family": "numeral"
+      }
+    }
+  },
+  "spacePx": {
+    "1": 4,
+    "2": 8,
+    "3": 12,
+    "4": 16,
+    "6": 24,
+    "8": 32,
+    "12": 48,
+    "16": 64,
+    "20": 80,
+    "24": 96
+  },
+  "radius": {
+    "nonePx": 0,
+    "controlPx": 2,
+    "panelPx": 4,
+    "cutCornerPx": 12,
+    "circle": "50%",
+    "circleConstraint": "equal-width-and-height-elements-only"
+  },
+  "border": {
+    "hairlinePx": 1,
+    "emphasisPx": 2,
+    "displayPx": 3,
+    "focusPx": 3,
+    "focusOffsetPx": 3
+  },
+  "graphic": {
+    "entryShapeDesktopPx": 64,
+    "entryShapeMobilePx": 48,
+    "routeNodePx": 12,
+    "routeNodeCurrentPx": 18,
+    "connectionDotPx": 10,
+    "arrowOpticalPx": 24,
+    "arrowStrokePx": 2,
+    "brandMarkDesktopPx": 40,
+    "brandMarkMobilePx": 32,
+    "brandMarkHiddenBelowPx": 360,
+    "specimenTapeWidthPx": 72,
+    "specimenTapeHeightPx": 20,
+    "archiveSpineDesktopPx": 12,
+    "archiveSpineMobilePx": 8
+  },
+  "shadow": {
+    "default": "none",
+    "hardSmall": "3px 3px 0 #081F33",
+    "hardMedium": "6px 6px 0 #081F33",
+    "hardColored": "6px 6px 0 #0B4FA3",
+    "pressed": "1px 1px 0 #081F33",
+    "overlayOnly": "0 18px 48px rgba(8, 31, 51, 0.2)"
+  },
+  "motionMs": {
+    "instant": 0,
+    "fast": 120,
+    "standard": 160,
+    "boardMove": 180,
+    "selection": 220,
+    "disclosure": 240,
+    "maximumNonEssential": 240
+  },
+  "layout": {
+    "contentWidthPx": {
+      "readingText": 720,
+      "readingShell": 1120,
+      "resourceDetail": 1120,
+      "decisionEntry": 1360,
+      "indexDetail": 1440,
+      "tool": 1320,
+      "system": 960
+    },
+    "pageGutterPx": {
+      "wide": 48,
+      "medium": 32,
+      "narrow": 20,
+      "minimum": 16
+    },
+    "chapterRailPx": {
+      "wide": 208,
+      "medium": 168,
+      "wideGap": 40,
+      "mediumGap": 32
+    },
+    "contextRailPx": {
+      "wide": 272,
+      "gap": 40
+    },
+    "headerPx": {
+      "desktopMinimumHeight": 72,
+      "mobileMinimumHeight": 108,
+      "stickyOffset": 16
+    },
+    "specimenCollagePx": {
+      "desktopMinimumHeight": 520,
+      "tabletMinimumHeight": 320,
+      "mobileMinimumHeight": 168
+    }
+  },
+  "breakpointPx": {
+    "wideWorkbench": 1280,
+    "wideReading": 1180,
+    "twoColumnCollapse": 960,
+    "singleColumn": 720,
+    "narrow": 480
+  },
+  "interaction": {
+    "minimumTargetPx": 44,
+    "preferredPrimaryTargetPx": 48,
+    "minimumTextContrast": 4.5,
+    "minimumLargeTextContrast": 3,
+    "minimumNonTextContrast": 3,
+    "maximumBoardTranslationPx": 6,
+    "hoverMayMoveLayout": false,
+    "colorMayBeOnlySignal": false,
+    "criticalContentMayRequireHover": false
+  },
+  "texture": {
+    "paperOpacityMaximum": 0.07,
+    "halftoneOpacityMaximum": 0.06,
+    "registrationOffsetMaximumPx": 2,
+    "woodGrainAllowed": false,
+    "feltAllowed": false,
+    "decorativeGradientAllowed": false,
+    "imageScrimGradientAllowed": true,
+    "hardShadowAllowed": true
+  },
+  "assetPolicy": {
+    "approvalStates": [
+      "build-approved",
+      "internal-reference-only",
+      "original-derived-language"
+    ],
+    "publicReleaseRequiresReaudit": true,
+    "hotlinkAllowed": false,
+    "sourceRecordRequired": true,
+    "licenseRecordRequired": true,
+    "changesRecordRequired": true,
+    "altTextRequiredWhenInformative": true,
+    "thirdPartyAssetMayBeBrandMark": false,
+    "thirdPartyAssetMayBeControlSkin": false,
+    "maximumHomepageSpecimens": 4
+  },
+  "component": {
+    "actionBoard": {
+      "minimumHeightPx": 88,
+      "borderPx": 2,
+      "restingShadowPx": 6,
+      "hoverTranslationPx": 6,
+      "pressedShadowPx": 1
+    },
+    "resourceRecord": {
+      "minimumHeightPx": 112,
+      "spineDesktopPx": 12,
+      "spineMobilePx": 8,
+      "featuredImageMinimumPx": 72,
+      "featuredImageMaximumPx": 112
+    },
+    "workbenchZone": {
+      "borderPx": 2,
+      "maximumNestedRaisedLayers": 2
+    }
+  }
+}

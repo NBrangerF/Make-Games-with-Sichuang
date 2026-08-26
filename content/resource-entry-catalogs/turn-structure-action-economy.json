@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "turn-structure-action-economy",
+    "title": "诊断回合结构、行动经济与等待",
+    "question": "高人数等待长、玩家漏阶段或轮到自己才开始想；我该缩短回合、拆阶段、同步行动、加反应还是删维护？",
+    "outcome": "先画每个窗口的观察、决定、操作、回应、锁定与交接，再展开行动经济；把等待和维护按功能分解，只改一个窗口并验证得失。",
+    "resourceIds": [
+      "daniel-turn-structure",
+      "bishop-game-design-concepts",
+      "oath-action-economy-diary",
+      "arcs-action-structure-diary",
+      "xu-chores-social-play",
+      "pape-tabletop-coordination-policies",
+      "reddit-downtime-design",
+      "ptt-dadaocheng-downtime"
+    ],
+    "evidenceBoundary": "组合设计师实践、商业项目一手日志、桌游录像质性研究、数字桌面协调短论文及中英文玩家/社区症状；它们支持把回合视为权限结构、扩展行动经济、分解等待并检查维护功能，不提供最佳回合秒数、行动数、阶段数、反应次数、先手补偿、可接受等待或同步提速比例。"
+  },
+  "resources": [
+    {
+      "id": "daniel-turn-structure",
+      "title": "Turn Structure",
+      "creator": "Daniel Piechnick",
+      "href": "https://daniel.games/turn-structure/",
+      "type": "回合与维护简化设计实践",
+      "evidenceType": "designer_argument",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "以单一重要行动、选择集中、忘记步骤和维护合并为删减压力，并给出多个原型改写案例。",
+      "limitation": "作者规范性偏好与个人测试经验，不是比较实验；不能推出每回合只能一个决定、阶段或轮天然有害。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "bishop-game-design-concepts",
+      "title": "Game Design Concepts",
+      "creator": "Orin Bishop",
+      "href": "https://dspacemainprd01.lib.uwaterloo.ca/server/api/core/bitstreams/de73cdfc-77ed-4fff-9fb1-c2b2bf601fa4/content",
+      "type": "回合、选择与停机时间学位论文",
+      "evidenceType": "academic_adjacent",
+      "format": "thesis",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "比较短回合的交接摩擦、长回合的组合空间与状态波动，并讨论回合前信息、预案失效和重新规划循环。",
+      "limitation": "2009 年本科独立研究，以形式分析和作者实践为主；downtime 段落不是受控体验实验，示例与平衡点不能外推。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "oath-action-economy-diary",
+      "title": "Oath Designer Diary 9: The Long March to Oath's Combat System",
+      "creator": "Cole Wehrle / Leder Games",
+      "href": "https://ledergames.com/blogs/news/oath-designer-diary-9-the-long-march-to-oaths-combat-system",
+      "type": "行动粒度与战役尺度设计日志",
+      "evidenceType": "first_party_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "记录后期多地点冲突超出行动预算时，直接增加行动如何恶化系统，以及把 battle 重定义为 campaign 的修订逻辑。",
+      "limitation": "单个复杂战争游戏的一手回顾，多项战斗与胜利结构同时变化；不能把行动尺度或具体方案移植。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "arcs-action-structure-diary",
+      "title": "Arcs Designer Diary 3: The Trick's the Thing",
+      "creator": "Cole Wehrle / Leder Games",
+      "href": "https://ledergames.com/blogs/news/arcs-designer-diary-3-the-trick-s-the-thing",
+      "type": "行动权限、主动权与节奏设计日志",
+      "evidenceType": "first_party_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "展示行动类型、行动数量、手牌消耗和主动权如何交换，并记录额外 draft 复制行动轮、造成 flow break 后被移除。",
+      "limitation": "项目特定的一手日志，现有系统经历长期多轮迭代；不能证明 trick-taking 行动框架普遍更深或更快。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "xu-chores-social-play",
+      "title": "Chores Are Fun: Understanding Social Play in Board Games for Digital Tabletop Game Design",
+      "creator": "Yan Xu, Evan Barba, Iulian Radu, Maribeth Gandy, Blair MacIntyre",
+      "href": "https://dl.digra.org/index.php/dl/article/download/591/591/588",
+      "type": "桌游维护、等待与社交互动录像研究",
+      "evidenceType": "academic_direct",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "以 262 分钟录像分析等待、规则执行、计分和物件操作怎样支持共同注意、学习、策略讨论、表演和社交节奏。",
+      "limitation": "仅 9 名同校学生、8 个 session、四款游戏的质性研究，目标又是数字桌面转译；不能估计普遍偏好或证明所有维护有益。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "pape-tabletop-coordination-policies",
+      "title": "Coordination Policies for Tabletop Gaming",
+      "creator": "Joey A. Pape, T. C. Nicholas Graham",
+      "href": "https://equis.cs.queensu.ca/~equis/pubs/2010/pape-gi-10.pdf",
+      "type": "回合与实时协调政策短论文",
+      "evidenceType": "academic_adjacent",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "将回合、自由行动、屏障同步、定时动作与涓滴行动点分开，指出并行仍可能受最慢玩家、可见权限和自动动作透明度约束。",
+      "limitation": "两页短论文，仅实现回合制 Checkers/Pandemic 并报告初步非正式观察；其他政策及社会效果仍属未来工作。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "reddit-downtime-design",
+      "title": "Downtime in Board Games & What to Do About It",
+      "creator": "r/tabletopgamedesign community",
+      "href": "https://www.reddit.com/r/tabletopgamedesign/comments/1k57ffj",
+      "type": "等待与玩家注意设计社区讨论",
+      "evidenceType": "community_discussion",
+      "format": "discussion",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "并列计划、监看、聊天、节能退出、反应义务和分阶段等不同等待体验，为任务观察生成竞争假设。",
+      "limitation": "自选社区、作品与玩家语境混杂，本轮通过搜索缓存文章级复核；不能估计比例、接受阈值或改法效果。",
+      "status": "article_level",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "ptt-dadaocheng-downtime",
+      "title": "Dadaocheng 翻轉大稻埕",
+      "creator": "PTT BoardGame 板使用者",
+      "href": "https://www.ptt.cc/bbs/BoardGame/M.1451048868.A.808.html",
+      "type": "繁中玩家长评",
+      "evidenceType": "community_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "zh"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "把共享盘面持续变化、无法提前规划、技巧差距与四人等待感连接起来，为测量决定开始时刻和预案失效提供案例。",
+      "limitation": "记录旧版本与少量局次，作者对最佳人数和等待的判断不能外推到当前版本、所有群体或一般轮抽游戏。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "daniel-turn-structure",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "用重要行动、选择集中、忘记步骤和维护频率逐项质疑当前回合流程。",
+      "doNotUseFor": "不要把作者偏好变成一行动或零阶段定律，也不要只按步骤数判断节奏。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "bishop-game-design-concepts",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "同时检查回合长度、交接摩擦、组合空间、共享状态变化和回合开始时的信息处理。",
+      "doNotUseFor": "不要把本科论文的设计论证当受控体验证据或从示例推出最佳回合长度。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "oath-action-economy-diary",
+      "useModes": [
+        "case_study",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "识别动作粒度无法承载玩家意图时，比较增加行动与重定义一次行动尺度。",
+      "doNotUseFor": "不要移植 campaign action，也不能从多项战斗迭代证明单一改动因果。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "arcs-action-structure-diary",
+      "useModes": [
+        "case_study",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "画行动权限、数量、手牌消耗和主动权之间的交换，并识别复制行动轮的 flow break。",
+      "doNotUseFor": "不要把 trick-taking 框架或其数值当通用行动经济方案。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "xu-chores-social-play",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "在删维护或同步化前，观察等待、计分、查规则和物件操作是否承担共同注意、学习或表演。",
+      "doNotUseFor": "9 名同校参与者的质性结果不能证明所有 chores 有益或代表目标玩家。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "pape-tabletop-coordination-policies",
+      "useModes": [
+        "learn",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "narrow",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "区分回合、自由行动、屏障同步和时间限制，并检查最慢者、权限提示和自动动作透明度。",
+      "doNotUseFor": "两页初步数字桌面论文未测试替代政策效果，不能裁决实体桌游方案。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "reddit-downtime-design",
+      "useModes": [
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "partial",
+      "actionability": "diagnostic",
+      "transferability": "narrow",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "unknown",
+      "bestFor": "生成计划、监看、聊天、注意退出、反应义务和感知等待的相反观察假设。",
+      "doNotUseFor": "自选社区与搜索缓存不能估计玩家比例、等待阈值或改动因果。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "ptt-dadaocheng-downtime",
+      "useModes": [
+        "case_study",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "把等待拆成回合秒数、决定何时开始、共享状态变化和预案失效，形成下一轮可计时观察。",
+      "doNotUseFor": "不要采用旧版本少量局次推断当前平衡、最佳人数或所有玩家对停机时间的容忍度。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    }
+  ]
+}

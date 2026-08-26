@@ -1,0 +1,75 @@
+{
+  "$schema": "https://json-schema.org/draft/2020-12/schema",
+  "$id": "https://tabletop-design.local/schemas/design-aid-loop-session-v1.json",
+  "title": "Design aid loop moderated usability session",
+  "description": "T1–T6 形成性测试记录。禁止真实姓名、联系方式、原始录音/逐字稿与汇总分数。条件语义由项目校验器补充检查。",
+  "type": "object",
+  "required": ["schemaVersion", "method", "sessionStatus", "prototypeVersion", "participantAlias", "consent", "privacy", "tasks", "sessionSummary"],
+  "additionalProperties": false,
+  "properties": {
+    "schemaVersion": { "const": 1 },
+    "method": { "const": "moderated-design-aid-loop-usability" },
+    "sessionStatus": { "enum": ["blank", "completed"] },
+    "prototypeVersion": { "type": "string" },
+    "participantAlias": { "type": "string" },
+    "consent": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["participation", "notes", "withdrawalExplained", "screenRecording"],
+      "properties": {
+        "participation": { "type": "boolean" },
+        "notes": { "type": "boolean" },
+        "withdrawalExplained": { "type": "boolean" },
+        "screenRecording": { "const": false }
+      }
+    },
+    "privacy": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["containsRealName", "containsContactDetails", "containsRawRecording", "localOnly", "privateReflectionRecorded", "privateReflectionExcludedFromShare", "deleteBy"],
+      "properties": {
+        "containsRealName": { "const": false },
+        "containsContactDetails": { "const": false },
+        "containsRawRecording": { "const": false },
+        "localOnly": { "const": true },
+        "privateReflectionRecorded": { "type": "boolean" },
+        "privateReflectionExcludedFromShare": { "const": true },
+        "deleteBy": { "type": "string" }
+      }
+    },
+    "tasks": {
+      "type": "array",
+      "minItems": 6,
+      "maxItems": 6,
+      "items": {
+        "type": "object",
+        "additionalProperties": false,
+        "required": ["taskId", "status", "observedActions", "participantWords", "firstDeviation", "facilitatorIntervention", "severity", "candidateRepair", "retestRequired", "taskData"],
+        "properties": {
+          "taskId": { "enum": ["T1", "T2", "T3", "T4", "T5", "T6"] },
+          "status": { "enum": ["not_started", "completed"] },
+          "observedActions": { "type": "array", "items": { "type": "string" } },
+          "participantWords": { "type": "array", "items": { "type": "string" } },
+          "firstDeviation": { "type": "string" },
+          "facilitatorIntervention": { "type": "string" },
+          "severity": { "enum": ["none", "minor", "serious", "critical"] },
+          "candidateRepair": { "type": "string" },
+          "retestRequired": { "type": "boolean" },
+          "taskData": { "type": "object" }
+        }
+      }
+    },
+    "sessionSummary": {
+      "type": "object",
+      "additionalProperties": false,
+      "required": ["criticalIssues", "seriousIssues", "repairsBeforeRetest", "nextResearchStep", "rationale"],
+      "properties": {
+        "criticalIssues": { "type": "array" },
+        "seriousIssues": { "type": "array" },
+        "repairsBeforeRetest": { "type": "array", "items": { "type": "string" } },
+        "nextResearchStep": { "enum": ["hold", "repair_and_retest", "add_session"] },
+        "rationale": { "type": "string" }
+      }
+    }
+  }
+}

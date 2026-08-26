@@ -1,0 +1,331 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "first-prototype",
+    "title": "第一次把点子做上桌",
+    "question": "我有题材或点子，但不知道怎样缩成今天能测试的东西。",
+    "outcome": "先建立体验问题，再用低成本材料做一轮可观察的原型；不要先读完整机制百科。",
+    "resourceIds": [
+      "kathleen-mercury-resources",
+      "game-design-concepts",
+      "sspai-mvp-prototype",
+      "gcores-light-medium-design",
+      "daniel-games-prototyping",
+      "james-ernest-blueprint",
+      "gcores-appraisal-company-diary"
+    ],
+    "evidenceBoundary": "混合免费课程、教师策展、中文实践与设计师案例；它们能提供动作和反例，不能证明一条原型流程适合所有游戏。"
+  },
+  "resources": [
+    {
+      "id": "kathleen-mercury-resources",
+      "title": "Resources to Teach Strategy Game Design",
+      "creator": "Kathleen Mercury",
+      "href": "https://www.kathleenmercury.com/",
+      "type": "教学策展",
+      "evidenceType": "teaching_curation",
+      "format": "course",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "从游玩、机制、主题到原型、WINQ 反馈和规则的完整课堂路径；首页也明确说明免费共享与回馈期待。",
+      "limitation": "以教师主持和青少年学期课程为语境；可用不等于可再出版，站点明确禁止将材料自行出版，单项第三方材料仍需核对权利。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "game-design-concepts",
+      "title": "Game Design Concepts",
+      "creator": "Ian Schreiber",
+      "href": "https://gamedesignconcepts.wordpress.com/",
+      "type": "免费课程",
+      "evidenceType": "teaching_curation",
+      "format": "course",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "自定进度、带练习的系统入门，明确采用 CC BY 3.0。",
+      "limitation": "课程年代较早；部分工具和行业信息需要更新。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-13"
+    },
+    {
+      "id": "sspai-mvp-prototype",
+      "title": "为什么你不需要完整的原型——兼谈桌游的 MVP 测试",
+      "creator": "乔淼 / 少数派",
+      "href": "https://sspai.com/post/91653",
+      "type": "中文实践",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "zh-CN"
+      ],
+      "stages": [
+        "体验意图",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "用成本案例解释为何要先验证核心玩法和题材匹配，再投入完整内容、美术与样品。",
+      "limitation": "主要案例是教学性虚构反例，不能当作行业成本统计。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-13"
+    },
+    {
+      "id": "gcores-light-medium-design",
+      "title": "轻中策桌游设计方法／经验分享",
+      "creator": "机核社区作者",
+      "href": "https://www.gcores.com/articles/176848",
+      "type": "中文实践",
+      "evidenceType": "community",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "zh-CN"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "讨论主题延展、即时反馈、命名与图标、测试意见筛选及九卡限制练习。",
+      "limitation": "作者经验面向轻中策设计；“乐趣与理解成本”是启发式而非可直接量化公式。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-13"
+    },
+    {
+      "id": "daniel-games-prototyping",
+      "title": "Prototyping",
+      "creator": "Daniel Piechnick",
+      "href": "https://daniel.games/prototyping/",
+      "type": "设计师文章",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "最小原型"
+      ],
+      "useful": "具体说明怎样缩小第一原型并降低被否定的成本。",
+      "limitation": "两人、短时长等强建议服务其个人流程，不适用所有游戏类型。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-13"
+    },
+    {
+      "id": "james-ernest-blueprint",
+      "title": "Interview with James Ernest",
+      "creator": "James Ernest / Fair Play Games",
+      "href": "https://www.fairplaygames.com/gamedisplay.asp?gameid=2028",
+      "type": "设计师访谈",
+      "evidenceType": "first_party_practice",
+      "format": "interview",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "测试与反馈",
+        "呈现与发布"
+      ],
+      "useful": "说明在测试前明确目标玩家、发行方、时长和复杂度，才能判断反馈是否指向同一款游戏。",
+      "limitation": "访谈年代较早且来自零售页面，但设计目标作为反馈边界仍稳定。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-13"
+    },
+    {
+      "id": "gcores-appraisal-company-diary",
+      "title": "《鉴定公司》设计、开发过程回溯",
+      "creator": "新茂",
+      "href": "https://www.gcores.com/articles/153538",
+      "type": "中文设计师开发日志",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "zh-CN"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "测试与反馈",
+        "呈现与发布"
+      ],
+      "useful": "沿着胜利条件、24 张有效卡牌的规格限制、测试中加入第二重矛盾与产品化展示一款游戏的演变。",
+      "limitation": "成功项目的回顾性叙述会压缩失败版本；作者对倒序设计和测试充分度的判断不构成通用方法或效果证明。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "kathleen-mercury-resources",
+      "useModes": [
+        "learn",
+        "lookup"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "沿着教学单元建立桌游设计课程或自学路径，并按主题继续寻找活动与案例。",
+      "doNotUseFor": "不要把面向课堂的材料顺序直接视为所有成人自学者都适用的唯一流程，也不要因为免费使用就复制或再出版原材料。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "game-design-concepts",
+      "useModes": [
+        "learn"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "exercise",
+      "transferability": "broad",
+      "currencyRisk": "medium",
+      "rightsStatus": "reusable_license_verified",
+      "commercialContext": "none_disclosed",
+      "bestFor": "按课程节奏学习核心概念，并通过练习把定义转成自己的设计产出。",
+      "doNotUseFor": "不要假定其中的工具与外部链接仍保持原有可用性；使用前需要复核。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "sspai-mvp-prototype",
+      "useModes": [
+        "learn"
+      ],
+      "audienceLevels": [
+        "beginner"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "用中文案例理解为什么先制作能回答核心问题的最小版本，而非补齐全部内容。",
+      "doNotUseFor": "不要把软件产品中的 MVP 概念原样套用；桌游原型还要保留与问题有关的实体和社交信号。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "gcores-light-medium-design",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "从中文设计经验中理解轻中策游戏的目标玩家、复杂度与迭代取舍。",
+      "doNotUseFor": "不要把轻中策标签当成稳定、统一的复杂度标准，也不要直接外推到重策或派对游戏。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "daniel-games-prototyping",
+      "useModes": [
+        "learn"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "理解快速、便宜、可丢弃的纸面原型怎样服务于明确的设计问题。",
+      "doNotUseFor": "不要把低制作精度当成所有测试的原则；信息可读性与操作测试可能需要更高精度。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "james-ernest-blueprint",
+      "useModes": [
+        "case_study",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "partial",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "理解经验设计师如何谈论设计起点、迭代、商业限制与完成标准。",
+      "doNotUseFor": "不要把访谈中的个人方法当成可复现的完整流程；需要与实际项目记录交叉验证。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "gcores-appraisal-company-diary",
+      "useModes": [
+        "case_study",
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "跟随一个小盒游戏从胜利条件、组件上限、信息设计、测试怀疑到第二重决策张力。",
+      "doNotUseFor": "不要把成功后的回溯当完整版本史，也不要照搬倒序设计、卡牌数量或测试聚会作为充分标准。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    }
+  ]
+}

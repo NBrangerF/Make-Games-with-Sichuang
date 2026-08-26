@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "itemId": "quid-for-your-quo-case-synthesis-zh-CN-internal",
+  "resourceId": "wehrle-quid-for-quo",
+  "titleZh": "删掉旧机制后系统为什么垮了：《John Company》的承诺机制重做",
+  "contentMode": "original_case_synthesis",
+  "documentType": "original_case_synthesis",
+  "language": "zh-CN",
+  "version": "1.0.0-internal",
+  "authorship": {
+    "author": "落桌",
+    "production": "Codex 基于公开来源与项目资源评估完成原创案例综合",
+    "authority": "codex_ai_synthesis",
+    "humanReviewRequired": false,
+    "humanReviewStatus": "not_required",
+    "fullTranslationClaimed": false,
+    "sourceStructurePreserved": false,
+    "directQuoteWordCount": 0
+  },
+  "source": {
+    "title": "Quid for your Quo",
+    "author": "Cole Wehrle",
+    "primaryUrl": "https://wehrlegig.com/blogs/essays/quid-for-your-quo",
+    "originVerificationUrl": "https://boardgamegeek.com/thread/2641352/designer-diary-3-quid-for-your-quo",
+    "displayedPublishedAt": "2021-04-15",
+    "retrievedAt": "2026-08-21",
+    "sourceLanguage": "en",
+    "sourceWordTokensApprox": 2041,
+    "translationPermissionVerified": false,
+    "publicRedistributionPermissionVerified": false
+  },
+  "license": {
+    "kind": "none_verified",
+    "rightsStatus": "link_and_summarize",
+    "evidenceUrl": "https://wehrlegig.com/blogs/essays/quid-for-your-quo",
+    "copyrightNoticeObserved": "© 2026 Wehrlegig Games",
+    "openLicenseObserved": false
+  },
+  "synthesis": {
+    "requiredCaseDimensions": [
+      "语境",
+      "问题",
+      "选项",
+      "决定",
+      "证据",
+      "结果",
+      "仍未知",
+      "迁移动作"
+    ],
+    "requiredCaseDimensionsCovered": 8,
+    "standaloneReadable": true,
+    "authorReportSeparatedFromSiteInference": true,
+    "sourceBodyTranslated": false,
+    "hanCharacterCount": 4189,
+    "learningStages": [
+      "核心系统",
+      "测试与反馈"
+    ]
+  },
+  "excludedComponents": [
+    "Wehrlegig 头图",
+    "Wehrlegig 正文中的三张图片",
+    "BoardGameGeek 评论与用户讨论",
+    "BoardGameGeek 用户头像与徽章",
+    "网站导航、商店、页脚和其他页面外壳",
+    "原文逐段翻译与原文表达结构"
+  ],
+  "publication": {
+    "visibility": "internal",
+    "status": "internal-ready",
+    "publicReleaseEnabled": false,
+    "internalLearningStatus": "authoritative",
+    "legalReviewStatus": "not_reviewed",
+    "legalApprovalClaimed": false,
+    "rightsBasis": "本站原创事实综合、分析与学习脚手架；不复制来源正文、结构、图片、评论或头像。"
+  },
+  "completeness": {
+    "caseFramework": "complete",
+    "requiredDimensions": "8/8",
+    "sourceTextTreatment": "summarized_not_translated",
+    "fullSourceTranslation": "not_created",
+    "silentOmissionsWithinDeclaredCaseScope": 0
+  },
+  "verificationDocument": "docs/research/SOURCE_VERIFICATION_QUID_FOR_YOUR_QUO_SYNTHESIS.md",
+  "file": "content/guides/quid-for-your-quo-case-synthesis-zh-CN-internal.md",
+  "updatedAt": "2026-08-21"
+}

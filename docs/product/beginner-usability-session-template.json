@@ -1,0 +1,156 @@
+{
+  "schemaVersion": 1,
+  "method": "moderated-beginner-resource-site-usability",
+  "evidenceClass": "blank_template",
+  "sessionStatus": "blank",
+  "campaignRound": "not_assigned",
+  "productVersion": "",
+  "participant": {
+    "alias": "",
+    "track": "not_assigned",
+    "tabletopDesignExperience": "not_recorded",
+    "usedSiteVersionBefore": false,
+    "supportConfiguration": []
+  },
+  "consent": {
+    "participation": false,
+    "deidentifiedNotes": false,
+    "withdrawalExplained": false,
+    "screenRecording": false,
+    "audioRecording": false
+  },
+  "privacy": {
+    "containsRealName": false,
+    "containsContactDetails": false,
+    "containsRawRecording": false,
+    "localOnly": true,
+    "deleteBy": ""
+  },
+  "environment": {
+    "baseUrl": "",
+    "buildId": "",
+    "device": "",
+    "browser": "",
+    "viewport": "",
+    "inputMode": "",
+    "routeAtStart": "#path",
+    "disposableProfileConfirmed": false
+  },
+  "tasks": [
+    {
+      "taskId": "N1",
+      "status": "not_started",
+      "startedAt": "",
+      "endedAt": "",
+      "observedActions": [],
+      "participantWords": [],
+      "firstDeviation": "",
+      "recovery": "",
+      "interventions": [],
+      "severity": "none",
+      "candidateCause": "",
+      "candidateRepair": "",
+      "retestRequired": false,
+      "taskData": {
+        "destinationHash": "",
+        "stageFound": false,
+        "nextStepExplained": false,
+        "elapsedSeconds": 0,
+        "taskHelpCount": 0,
+        "neutralPromptCount": 0,
+        "unassisted": false
+      }
+    },
+    {
+      "taskId": "R1",
+      "status": "not_started",
+      "startedAt": "",
+      "endedAt": "",
+      "observedActions": [],
+      "participantWords": [],
+      "firstDeviation": "",
+      "recovery": "",
+      "interventions": [],
+      "severity": "none",
+      "candidateCause": "",
+      "candidateRepair": "",
+      "retestRequired": false,
+      "taskData": {
+        "entryPoint": "",
+        "resourceTitle": "",
+        "fitExplained": false,
+        "boundaryExplained": false,
+        "rankingMisread": false,
+        "elapsedSeconds": 0,
+        "taskHelpCount": 0,
+        "unassisted": false
+      }
+    },
+    {
+      "taskId": "W1",
+      "status": "not_started",
+      "startedAt": "",
+      "endedAt": "",
+      "observedActions": [],
+      "participantWords": [],
+      "firstDeviation": "",
+      "recovery": "",
+      "interventions": [],
+      "severity": "none",
+      "candidateCause": "",
+      "candidateRepair": "",
+      "retestRequired": false,
+      "taskData": {
+        "experienceIntentRecordId": "",
+        "coreLoopRecordId": "",
+        "prototypeScopeRecordId": "",
+        "testPlanRecordId": "",
+        "playtestSessionRecordId": "",
+        "mainQuestion": "",
+        "observablePrediction": "",
+        "counterSignal": "",
+        "explicitHandoffs": false,
+        "scriptedEventLabeledAsDrill": false,
+        "elapsedSeconds": 0,
+        "taskHelpCount": 0,
+        "unassisted": false
+      }
+    },
+    {
+      "taskId": "D1",
+      "status": "not_started",
+      "startedAt": "",
+      "endedAt": "",
+      "observedActions": [],
+      "participantWords": [],
+      "firstDeviation": "",
+      "recovery": "",
+      "interventions": [],
+      "severity": "none",
+      "candidateCause": "",
+      "candidateRepair": "",
+      "retestRequired": false,
+      "taskData": {
+        "routeRestored": false,
+        "recordsRestored": false,
+        "projectExportDownloaded": false,
+        "expectedCategories": [],
+        "localBoundaryExplained": false,
+        "recordCountMisreadAsQuality": false,
+        "elapsedSeconds": 0,
+        "taskHelpCount": 0,
+        "unassisted": false
+      }
+    }
+  ],
+  "sessionSummary": {
+    "workingCases": [],
+    "failureCases": [],
+    "criticalIssues": [],
+    "seriousIssues": [],
+    "isolatedFactor": "",
+    "repairBeforeRetest": [],
+    "nextResearchStep": "hold",
+    "rationale": ""
+  }
+}

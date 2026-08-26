@@ -1,0 +1,365 @@
+[
+  {
+    "name": "home-native-1504x1046",
+    "hash": "#resources",
+    "viewport": {
+      "width": 1504,
+      "height": 1046
+    },
+    "screenshotPath": "/Users/shawn.fsc/Documents/ChatGPT/游戏设计/docs/qa/screenshots/playable-archive-v5-1/home-native-1504x1046.png",
+    "consoleErrors": [],
+    "href": "http://127.0.0.1:8017/?build=playable-archive-v5-1#resources",
+    "title": "桌游设计学习资源站 · 桌游设计工坊",
+    "h1Count": 1,
+    "mainWidth": 1504,
+    "viewportWidth": 1504,
+    "viewportHeight": 1046,
+    "documentWidth": 1504,
+    "horizontalOverflow": false,
+    "bodyBackground": "rgb(247, 248, 250)",
+    "headerHeight": "72px",
+    "h1FontSize": "78px",
+    "h1FontWeight": "800",
+    "specimenTransform": "none",
+    "specimenShadow": "none",
+    "smallInteractiveTargets": [],
+    "images": [
+      {
+        "src": "/assets/classic-games/azul-table-cc0.webp",
+        "complete": true,
+        "naturalWidth": 1200,
+        "naturalHeight": 900
+      },
+      {
+        "src": "/assets/classic-games/catan-board-cc0.webp",
+        "complete": true,
+        "naturalWidth": 1200,
+        "naturalHeight": 675
+      },
+      {
+        "src": "/assets/classic-games/carcassonne-cc-by-4.webp",
+        "complete": true,
+        "naturalWidth": 960,
+        "naturalHeight": 1283
+      },
+      {
+        "src": "/assets/classic-games/ticket-to-ride-cc-by-2.webp",
+        "complete": true,
+        "naturalWidth": 1200,
+        "naturalHeight": 800
+      }
+    ]
+  },
+  {
+    "name": "resource-native-1487x1058",
+    "hash": "#resources/all",
+    "viewport": {
+      "width": 1487,
+      "height": 1058
+    },
+    "screenshotPath": "/Users/shawn.fsc/Documents/ChatGPT/游戏设计/docs/qa/screenshots/playable-archive-v5-1/resource-native-1487x1058.png",
+    "consoleErrors": [],
+    "href": "http://127.0.0.1:8017/?build=playable-archive-v5-1#resources/all",
+    "title": "搜索全部资料 · 桌游设计工坊",
+    "h1Count": 1,
+    "mainWidth": 1320,
+    "viewportWidth": 1487,
+    "viewportHeight": 1058,
+    "documentWidth": 1487,
+    "horizontalOverflow": false,
+    "bodyBackground": "rgb(247, 248, 250)",
+    "headerHeight": "72px",
+    "h1FontSize": "64px",
+    "h1FontWeight": "800",
+    "smallInteractiveTargets": [],
+    "images": []
+  },
+  {
+    "name": "reading-native-1487x1058",
+    "hash": "#resources/learn/game-design-concepts-level-01",
+    "viewport": {
+      "width": 1487,
+      "height": 1058
+    },
+    "screenshotPath": "/Users/shawn.fsc/Documents/ChatGPT/游戏设计/docs/qa/screenshots/playable-archive-v5-1/reading-native-1487x1058.png",
+    "consoleErrors": [],
+    "href": "http://127.0.0.1:8017/?build=playable-archive-v5-1#resources/learn/game-design-concepts-level-01",
+    "title": "第 1 关：概览 / 什么是游戏？ · 桌游设计工坊",
+    "h1Count": 1,
+    "mainWidth": 1200,
+    "viewportWidth": 1487,
+    "viewportHeight": 1058,
+    "documentWidth": 1487,
+    "horizontalOverflow": false,
+    "bodyBackground": "rgb(247, 248, 250)",
+    "headerHeight": "72px",
+    "h1FontSize": "64px",
+    "h1FontWeight": "800",
+    "smallInteractiveTargets": [],
+    "images": []
+  },
+  {
+    "name": "methods-native-1487x1058",
+    "hash": "#method/frameworks",
+    "viewport": {
+      "width": 1487,
+      "height": 1058
+    },
+    "screenshotPath": "/Users/shawn.fsc/Documents/ChatGPT/游戏设计/docs/qa/screenshots/playable-archive-v5-1/methods-native-1487x1058.png",
+    "consoleErrors": [],
+    "href": "http://127.0.0.1:8017/?build=playable-archive-v5-1#method/frameworks",
+    "title": "理论框架 · 桌游设计工坊",
+    "h1Count": 1,
+    "mainWidth": 1320,
+    "viewportWidth": 1487,
+    "viewportHeight": 1058,
+    "documentWidth": 1487,
+    "horizontalOverflow": false,
+    "bodyBackground": "rgb(247, 248, 250)",
+    "headerHeight": "72px",
+    "h1FontSize": "64px",
+    "h1FontWeight": "650",
+    "smallInteractiveTargets": [],
+    "images": []
+  },
+  {
+    "name": "tool-native-1487x1058",
+    "hash": "#tools/prototype-scope",
+    "viewport": {
+      "width": 1487,
+      "height": 1058
+    },
+    "screenshotPath": "/Users/shawn.fsc/Documents/ChatGPT/游戏设计/docs/qa/screenshots/playable-archive-v5-1/tool-native-1487x1058.png",
+    "consoleErrors": [],
+    "href": "http://127.0.0.1:8017/?build=playable-archive-v5-1#tools/prototype-scope",
+    "title": "原型范围裁剪器 · 桌游设计工坊",
+    "h1Count": 1,
+    "mainWidth": 1360,
+    "viewportWidth": 1487,
+    "viewportHeight": 1058,
+    "documentWidth": 1487,
+    "horizontalOverflow": false,
+    "bodyBackground": "rgb(247, 248, 250)",
+    "headerHeight": "72px",
+    "h1FontSize": "64px",
+    "h1FontWeight": "800",
+    "smallInteractiveTargets": [],
+    "images": []
+  },
+  {
+    "name": "home-laptop-1024x768",
+    "hash": "#resources",
+    "viewport": {
+      "width": 1024,
+      "height": 768
+    },
+    "screenshotPath": "/Users/shawn.fsc/Documents/ChatGPT/游戏设计/docs/qa/screenshots/playable-archive-v5-1/home-laptop-1024x768.png",
+    "consoleErrors": [],
+    "href": "http://127.0.0.1:8017/?build=playable-archive-v5-1#resources",
+    "title": "桌游设计学习资源站 · 桌游设计工坊",
+    "h1Count": 1,
+    "mainWidth": 1024,
+    "viewportWidth": 1024,
+    "viewportHeight": 768,
+    "documentWidth": 1024,
+    "horizontalOverflow": false,
+    "bodyBackground": "rgb(247, 248, 250)",
+    "headerHeight": "72px",
+    "h1FontSize": "59.392px",
+    "h1FontWeight": "800",
+    "specimenTransform": "none",
+    "specimenShadow": "none",
+    "smallInteractiveTargets": [],
+    "images": [
+      {
+        "src": "/assets/classic-games/azul-table-cc0.webp",
+        "complete": true,
+        "naturalWidth": 1200,
+        "naturalHeight": 900
+      },
+      {
+        "src": "/assets/classic-games/catan-board-cc0.webp",
+        "complete": true,
+        "naturalWidth": 1200,
+        "naturalHeight": 675
+      },
+      {
+        "src": "/assets/classic-games/carcassonne-cc-by-4.webp",
+        "complete": true,
+        "naturalWidth": 960,
+        "naturalHeight": 1283
+      },
+      {
+        "src": "/assets/classic-games/ticket-to-ride-cc-by-2.webp",
+        "complete": true,
+        "naturalWidth": 1200,
+        "naturalHeight": 800
+      }
+    ]
+  },
+  {
+    "name": "home-tablet-768x900",
+    "hash": "#resources",
+    "viewport": {
+      "width": 768,
+      "height": 900
+    },
+    "screenshotPath": "/Users/shawn.fsc/Documents/ChatGPT/游戏设计/docs/qa/screenshots/playable-archive-v5-1/home-tablet-768x900.png",
+    "consoleErrors": [],
+    "href": "http://127.0.0.1:8017/?build=playable-archive-v5-1#resources",
+    "title": "桌游设计学习资源站 · 桌游设计工坊",
+    "h1Count": 1,
+    "mainWidth": 768,
+    "viewportWidth": 768,
+    "viewportHeight": 900,
+    "documentWidth": 768,
+    "horizontalOverflow": false,
+    "bodyBackground": "rgb(247, 248, 250)",
+    "headerHeight": "72px",
+    "h1FontSize": "50px",
+    "h1FontWeight": "800",
+    "specimenTransform": "none",
+    "specimenShadow": "none",
+    "smallInteractiveTargets": [],
+    "images": [
+      {
+        "src": "/assets/classic-games/azul-table-cc0.webp",
+        "complete": true,
+        "naturalWidth": 1200,
+        "naturalHeight": 900
+      },
+      {
+        "src": "/assets/classic-games/catan-board-cc0.webp",
+        "complete": true,
+        "naturalWidth": 1200,
+        "naturalHeight": 675
+      },
+      {
+        "src": "/assets/classic-games/carcassonne-cc-by-4.webp",
+        "complete": true,
+        "naturalWidth": 960,
+        "naturalHeight": 1283
+      },
+      {
+        "src": "/assets/classic-games/ticket-to-ride-cc-by-2.webp",
+        "complete": true,
+        "naturalWidth": 1200,
+        "naturalHeight": 800
+      }
+    ]
+  },
+  {
+    "name": "home-mobile-390x844",
+    "hash": "#resources",
+    "viewport": {
+      "width": 390,
+      "height": 844
+    },
+    "screenshotPath": "/Users/shawn.fsc/Documents/ChatGPT/游戏设计/docs/qa/screenshots/playable-archive-v5-1/home-mobile-390x844.png",
+    "consoleErrors": [],
+    "href": "http://127.0.0.1:8017/?build=playable-archive-v5-1#resources",
+    "title": "桌游设计学习资源站 · 桌游设计工坊",
+    "h1Count": 1,
+    "mainWidth": 390,
+    "viewportWidth": 390,
+    "viewportHeight": 844,
+    "documentWidth": 390,
+    "horizontalOverflow": false,
+    "bodyBackground": "rgb(247, 248, 250)",
+    "headerHeight": "113px",
+    "h1FontSize": "46.8px",
+    "h1FontWeight": "800",
+    "specimenTransform": "none",
+    "specimenShadow": "none",
+    "smallInteractiveTargets": [],
+    "images": [
+      {
+        "src": "/assets/classic-games/azul-table-cc0.webp",
+        "complete": true,
+        "naturalWidth": 1200,
+        "naturalHeight": 900
+      },
+      {
+        "src": "/assets/classic-games/catan-board-cc0.webp",
+        "complete": true,
+        "naturalWidth": 1200,
+        "naturalHeight": 675
+      },
+      {
+        "src": "/assets/classic-games/carcassonne-cc-by-4.webp",
+        "complete": true,
+        "naturalWidth": 960,
+        "naturalHeight": 1283
+      },
+      {
+        "src": "/assets/classic-games/ticket-to-ride-cc-by-2.webp",
+        "complete": true,
+        "naturalWidth": 1200,
+        "naturalHeight": 800
+      }
+    ]
+  },
+  {
+    "name": "home-mobile-320x800",
+    "hash": "#resources",
+    "viewport": {
+      "width": 320,
+      "height": 800
+    },
+    "screenshotPath": "/Users/shawn.fsc/Documents/ChatGPT/游戏设计/docs/qa/screenshots/playable-archive-v5-1/home-mobile-320x800.png",
+    "consoleErrors": [],
+    "href": "http://127.0.0.1:8017/?build=playable-archive-v5-1#resources",
+    "title": "桌游设计学习资源站 · 桌游设计工坊",
+    "h1Count": 1,
+    "mainWidth": 320,
+    "viewportWidth": 320,
+    "viewportHeight": 800,
+    "documentWidth": 320,
+    "horizontalOverflow": false,
+    "bodyBackground": "rgb(247, 248, 250)",
+    "headerHeight": "113px",
+    "h1FontSize": "38.4px",
+    "h1FontWeight": "800",
+    "specimenTransform": "none",
+    "specimenShadow": "none",
+    "smallInteractiveTargets": [],
+    "images": [
+      {
+        "src": "/assets/classic-games/azul-table-cc0.webp",
+        "complete": true,
+        "naturalWidth": 1200,
+        "naturalHeight": 900
+      },
+      {
+        "src": "/assets/classic-games/catan-board-cc0.webp",
+        "complete": true,
+        "naturalWidth": 1200,
+        "naturalHeight": 675
+      },
+      {
+        "src": "/assets/classic-games/carcassonne-cc-by-4.webp",
+        "complete": true,
+        "naturalWidth": 960,
+        "naturalHeight": 1283
+      },
+      {
+        "src": "/assets/classic-games/ticket-to-ride-cc-by-2.webp",
+        "complete": true,
+        "naturalWidth": 1200,
+        "naturalHeight": 800
+      }
+    ]
+  },
+  {
+    "name": "core-interactions",
+    "learningHash": "#resources/learn",
+    "searchResult": "全部资料中找到 3 份可在站内预览的中文导读",
+    "selectedFramework": "5PM：拆开一项核心机制",
+    "frameworkCount": 5,
+    "toolHeading": "原型范围裁剪器",
+    "stepCount": 5,
+    "pressedSteps": 1,
+    "aboveFoldCopy": "从一个问题开始\n\n桌游设计\n学习资源站\n\n从学习、分析或正在解决的问题开始。核心内容可直接在站内阅读中文版本。\n\n开始学习桌游设计\n按适合自己的方式，走进完整的基础学习内容。\n→\n从设计师角度分析一款游戏\n用清楚的问题拆解体验、决定、互动与系统。\n→\n按正在解决的设计问题找资料\n从原型、测试、规则、平衡等具体困惑进入。\n→\n搜索全部资料\n01\n《花砖物语》\n花砖阵列\n花砖物语照片，Gábor Zehetmayer / CC0 1.0\n02\n《卡坦岛》\n六角地形\n卡坦岛照片，Pepenic1 / CC0 1.0\n03\n《卡卡颂》\n拼接版图\n卡卡颂照片，L’Éclipse / CC BY 4.0\n04\n《车票之旅》\n路线网络\n车票之旅照片，Billie Grace Ward / CC BY 2.0",
+    "consoleErrors": []
+  }
+]

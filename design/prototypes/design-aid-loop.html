@@ -1,0 +1,134 @@
+<!doctype html>
+<html lang="zh-CN">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>设计练习闭环｜低保真测试原型</title>
+  <link rel="stylesheet" href="design-aid-loop.css">
+</head>
+<body>
+  <div class="shell">
+    <header class="topline">
+      <div class="brand">设计练习闭环</div>
+      <p class="prototype-note">低保真可用性测试原型 · 数据只留在当前页面 · 不用于评价设计质量</p>
+    </header>
+
+    <div class="progress-wrap" aria-label="练习进度">
+      <div class="progress-meta"><span id="progressLabel">第 1 / 8 步</span><span id="progressName">选择本轮产出</span></div>
+      <div class="progress-track"><div class="progress-bar" id="progressBar"></div></div>
+    </div>
+
+    <main>
+      <aside class="step-context" aria-labelledby="contextTitle">
+        <div class="step-number" id="stepNumber">01 / 08</div>
+        <h1 id="contextTitle">先决定桌上要多出什么</h1>
+        <p id="contextText">不需要先认识任何工具名称。只选这轮结束时要带走的产物。</p>
+        <div class="evidence-chip" id="evidenceChip">证据状态：练习准备</div>
+      </aside>
+
+      <section class="panel">
+        <section class="screen" data-step="0" aria-labelledby="step0Title">
+          <h2 id="step0Title">这轮结束时，你希望桌上多出什么？</h2>
+          <p class="lead">选产出，不选“最厉害的工具”。你之后仍可返回修改。</p>
+          <fieldset class="choice-list">
+            <legend class="sr-only">选择希望得到的产出</legend>
+            <label class="choice"><input type="radio" name="desiredOutput" value="generate"><span><strong>两个可比较的方向</strong><small>适合只有题材或体验意图、还没有可动手方向时。</small></span></label>
+            <label class="choice"><input type="radio" name="desiredOutput" value="diagnose"><span><strong>一个更具体的问题</strong><small>适合已有可玩片段，但不知道哪一处正在失效时。</small></span></label>
+            <label class="choice"><input type="radio" name="desiredOutput" value="prototype"><span><strong>一份能运行的短规则</strong><small>适合想法太大，今天需要把它缩到能摆上桌时。</small></span></label>
+            <label class="choice"><input type="radio" name="desiredOutput" value="practice_loop"><span><strong>一条来自实际游玩的观察</strong><small>适合已经准备好把规则、预测和一次测试连起来时。</small></span></label>
+          </fieldset>
+        </section>
+
+        <section class="screen" data-step="1" aria-labelledby="step1Title" hidden>
+          <h2 id="step1Title">先写下不能被提示覆盖的边界</h2>
+          <p class="lead">提示只是临时观察角度。与玩家、安全、无障碍或本轮时限冲突时，可以直接拒绝。</p>
+          <div class="form-grid two">
+            <label class="field"><span>目标玩家 <em>必填</em></span><input id="targetPlayers" type="text" autocomplete="off" placeholder="例如：第一次接触合作游戏的成年人"></label>
+            <label class="field"><span>目标体验 <em>必填</em></span><input id="experienceIntent" type="text" autocomplete="off" placeholder="例如：在有限信息中共同承担决定"></label>
+            <label class="field"><span>本轮时限（分钟） <em>必填</em></span><input id="timebox" type="number" min="5" max="240" value="30"></label>
+            <label class="field"><span>硬边界 <em>可选</em></span><input id="hardConstraints" type="text" autocomplete="off" placeholder="例如：不限制玩家说话；只用纸笔"></label>
+          </div>
+          <p class="boundary-box">如果接下来的提示让你违背这里的边界，拒绝它是正常的设计动作，不会失分，也不会中断练习。</p>
+        </section>
+
+        <section class="screen" data-step="2" aria-labelledby="step2Title" hidden>
+          <h2 id="step2Title">取一个临时提示，或自己写</h2>
+          <p class="lead">提示不是命令，也不是答案。它只负责让你从另一个角度看当前问题。</p>
+          <div class="prompt-sheet"><div class="prompt-label">本轮提示 · 项目原创</div><blockquote id="promptText">把一项原本公开的信息改成只能通过询问另一名玩家获得，并写清不回答时会发生什么。</blockquote></div>
+          <div class="prompt-actions">
+            <button class="button primary" id="keepPrompt" type="button">保留这个提示</button>
+            <button class="button" id="swapPrompt" type="button">换一张</button>
+            <button class="button ghost" id="writePrompt" type="button">我自己写</button>
+          </div>
+          <p class="hint">换提示时不必证明上一张很差；与边界不合适就够了。</p>
+          <p class="swap-help" id="swapHelp" hidden>你已经连续换了三次。与其继续找“正确答案”，可以缩小本轮工作，或直接写下你真正需要的提示。</p>
+          <div class="self-prompt" id="selfPromptBox" hidden>
+            <label class="field"><span>我的临时提示</span><textarea id="selfPrompt" placeholder="写一个能改变观察角度、但不替你下结论的提示"></textarea></label>
+            <button class="button" id="useSelfPrompt" type="button">使用我写的提示</button>
+          </div>
+          <div class="status-box" id="promptStatus" hidden></div>
+        </section>
+
+        <section class="screen" data-step="3" aria-labelledby="step3Title" hidden>
+          <h2 id="step3Title">把提示写成玩家可以执行的东西</h2>
+          <p class="lead" id="artifactLead">题材、机制名称或愿望都还不是规则产物。</p>
+          <div class="form-grid" id="artifactFields"></div>
+        </section>
+
+        <section class="screen" data-step="4" aria-labelledby="step4Title" hidden>
+          <h2 id="step4Title">先写下什么能支持或反驳这条路</h2>
+          <p class="lead">这是上桌前的预测，不是结论。真正发生的行为要留到测试之后记录。</p>
+          <div class="form-grid">
+            <label class="field"><span>如果它起作用，我预计会观察到…… <em>必填</em></span><textarea id="supportingSignal" placeholder="只写可看到或听到的行为"></textarea></label>
+            <label class="field"><span>如果它没有起作用，可能会看到…… <em>必填</em></span><textarea id="counterSignal" placeholder="写一个能让你改变判断的反例信号"></textarea></label>
+          </div>
+        </section>
+
+        <section class="screen" data-step="5" aria-labelledby="step5Title" hidden>
+          <h2 id="step5Title">这轮实际拥有哪一种证据？</h2>
+          <p class="lead">选择当前真实能做的事情。找不到测试者时，可以完成准备或自测，但不能把它记成玩家证据。</p>
+          <fieldset class="evidence-options">
+            <legend class="sr-only">选择证据状态</legend>
+            <label class="choice"><input type="radio" name="evidenceStatus" value="preparation"><span><strong>只完成测试准备</strong><small>保存问题、规则和未来参与者条件；这轮没有运行。</small></span></label>
+            <label class="choice"><input type="radio" name="evidenceStatus" value="self_test"><span><strong>自己走查或自测</strong><small>能发现规则断点和操作负担，不能验证目标玩家的体验。</small></span></label>
+            <label class="choice"><input type="radio" name="evidenceStatus" value="external_test"><span><strong>与目标参与者实际测试</strong><small>记录实际发生的动作与原话，不用赞成票替代观察。</small></span></label>
+          </fieldset>
+          <div class="evidence-boundary" id="evidenceBoundary" hidden aria-live="polite"></div>
+          <label class="field" style="margin-top:22px"><span>未来或本轮参与者条件 <em>可选</em></span><textarea id="participantContext" placeholder="例如：2 名第一次接触本项目、熟悉合作游戏的玩家"></textarea></label>
+        </section>
+
+        <section class="screen" data-step="6" aria-labelledby="step6Title" hidden>
+          <h2 id="step6Title">分开记录发生了什么、你怎样解释</h2>
+          <p class="lead">观察、原话、解释和下一步各自占一栏。反思默认私有，可以单独删除。</p>
+          <div class="form-grid two">
+            <label class="field"><span>实际发生的动作 <em>可跳过</em></span><textarea id="observedActions" placeholder="没有实际运行时写‘本轮未测试’"></textarea></label>
+            <label class="field"><span>玩家原话或自身体验 <em>可跳过</em></span><textarea id="participantWords" placeholder="注明是玩家原话，还是自己的走查体验"></textarea></label>
+            <label class="field"><span>当前解释 <em>可跳过</em></span><textarea id="interpretation" placeholder="这是暂时解释，不是事实"></textarea></label>
+            <label class="field"><span>下一版只改什么 <em>必填</em></span><textarea id="nextSingleChange" placeholder="一次只写一个可执行改动"></textarea></label>
+          </div>
+          <div class="privacy-line"><div class="lock-mark" aria-hidden="true">▣</div><div><strong>反思默认私有</strong><p>下方内容不会进入分享摘要。你可以跳过，也可以只删除反思而保留规则、预测和测试记录。</p></div></div>
+          <label class="field"><span>私有反思 <em>可跳过</em></span><textarea id="privateReflection" placeholder="例如：这次决定中我回避了什么；团队讨论哪里让我不舒服"></textarea></label>
+          <div class="prompt-actions">
+            <button class="button" id="previewShare" type="button">预览分享摘要</button>
+            <button class="button danger" id="deleteReflection" type="button">只删除私有反思</button>
+          </div>
+          <div class="share-preview" id="sharePreview" hidden aria-live="polite"><h3>将要分享的项目摘要</h3><dl id="shareFields"></dl><p class="privacy-proof">已排除：私有反思、拒绝理由。当前页面不会上传或保存任何内容。</p></div>
+          <p class="hint" id="reflectionStatus" aria-live="polite"></p>
+        </section>
+
+        <section class="screen" data-step="7" aria-labelledby="step7Title" hidden>
+          <div class="complete-mark" aria-hidden="true">已记录</div>
+          <h2 id="step7Title" style="margin-top:28px">一轮练习记录完成</h2>
+          <p class="lead">你已经留下产物、预测、证据状态和下一次单一改动。</p>
+          <p class="complete-note"><strong>这不代表设计已经通过。</strong>完成步骤、自测顺利或收到正面反馈，都不能自动证明目标体验成立。下一步仍是带着明确问题观察真实玩家。</p>
+          <button class="button" id="restart" type="button">重新开始一轮</button>
+        </section>
+
+        <p class="error" id="error" role="alert" aria-live="assertive"></p>
+        <nav class="navigation" aria-label="步骤导航"><button class="button ghost" id="back" type="button">返回上一步</button><button class="button primary" id="next" type="button">继续</button></nav>
+      </section>
+    </main>
+  </div>
+  <script src="design-aid-loop.js"></script>
+</body>
+</html>

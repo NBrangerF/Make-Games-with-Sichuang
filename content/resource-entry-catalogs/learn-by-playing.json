@@ -1,0 +1,386 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "learn-by-playing",
+    "title": "边玩边学设计",
+    "question": "我玩过不少游戏，但只会写好不好玩，不知道怎样把体验变成设计能力。",
+    "outcome": "先选一个学习问题，再分开记录自身体验、桌面行为、系统关系和他人语境，最后写一条可反驳的迁移假设。",
+    "resourceIds": [
+      "game-developer-purposeful-play",
+      "sellers-systems-analysis",
+      "kathleen-mercury-resources",
+      "game-design-concepts",
+      "gcores-game-structure",
+      "ptt-dadaocheng-downtime",
+      "vocus-spirit-island-player",
+      "kobold-guide-board-game-design-official"
+    ],
+    "evidenceBoundary": "这组材料混合从业者流程、商业书籍章节、教师课程、玩家长评与仅元数据书目；它们提供观察问题和反例，不证明分析表能提高设计质量，也不把单次体验变成总体玩家结论。"
+  },
+  "resources": [
+    {
+      "id": "game-developer-purposeful-play",
+      "title": "How to Play a Game If You Want to Learn About Making One",
+      "creator": "Ishan Manjrekar / Game Developer",
+      "href": "https://www.gamedeveloper.com/design/how-to-play-a-game-",
+      "type": "跨媒介设计师学习实践",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "给出有目的地选游戏、实际体验、记录喜欢与挫折、比较同类作品、查看公共讨论、反思并重复的可执行学习循环，也明确可选自己不喜欢的游戏。",
+      "limitation": "主要面向电子游戏和一位从业者的方法；没有比较该流程与自由游玩对桌游设计学习的效果，公共意见也必须保留版本与样本语境。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "sellers-systems-analysis",
+      "title": "Analyzing Games from a Systems View",
+      "creator": "Michael Sellers / InformIT",
+      "href": "https://www.informit.com/articles/article.aspx?p=2916285&seqNum=3",
+      "type": "系统游戏设计书籍章节",
+      "evidenceType": "first_party_practice",
+      "format": "book_excerpt",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "把分析分成完整体验与心理模型、内部和互动循环、规则与表示物，并用《电力公司》说明系统、反馈与实体组件怎样共同服务体验。",
+      "limitation": "这是商业书籍的免费章节与作者分析框架，不是学习成效研究；跨数字与桌面案例不能证明一种拆解顺序适合所有新手。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "kathleen-mercury-resources",
+      "title": "Resources to Teach Strategy Game Design",
+      "creator": "Kathleen Mercury",
+      "href": "https://www.kathleenmercury.com/",
+      "type": "教学策展",
+      "evidenceType": "teaching_curation",
+      "format": "course",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "从游玩、机制、主题到原型、WINQ 反馈和规则的完整课堂路径；首页也明确说明免费共享与回馈期待。",
+      "limitation": "以教师主持和青少年学期课程为语境；可用不等于可再出版，站点明确禁止将材料自行出版，单项第三方材料仍需核对权利。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "game-design-concepts",
+      "title": "Game Design Concepts",
+      "creator": "Ian Schreiber",
+      "href": "https://gamedesignconcepts.wordpress.com/",
+      "type": "免费课程",
+      "evidenceType": "teaching_curation",
+      "format": "course",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "自定进度、带练习的系统入门，明确采用 CC BY 3.0。",
+      "limitation": "课程年代较早；部分工具和行业信息需要更新。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-13"
+    },
+    {
+      "id": "gcores-game-structure",
+      "title": "什么是游戏结构、如何搭建游戏结构",
+      "creator": "新茂",
+      "href": "https://www.gcores.com/articles/195857",
+      "type": "中文设计师方法文章",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "zh-CN"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "用配件、机制与流程三个观察面拆解《皇家港》，并示范保留结构、替换机制的临摹练习。",
+      "limitation": "“三大要素”和“最优解”是作者提出的分析语言，不是经过比较实验验证的标准模型；文章禁止转载。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "ptt-dadaocheng-downtime",
+      "title": "Dadaocheng 翻轉大稻埕",
+      "creator": "PTT BoardGame 板使用者",
+      "href": "https://www.ptt.cc/bbs/BoardGame/M.1451048868.A.808.html",
+      "type": "繁中玩家长评",
+      "evidenceType": "community_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "zh"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "把共享盘面持续变化、无法提前规划、技巧差距与四人等待感连接起来，为测量决定开始时刻和预案失效提供案例。",
+      "limitation": "记录旧版本与少量局次，作者对最佳人数和等待的判断不能外推到当前版本、所有群体或一般轮抽游戏。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "vocus-spirit-island-player",
+      "title": "〖桌遊心得〗精靈島 Spirit Island",
+      "creator": "桌遊拌飯",
+      "href": "https://vocus.cc/article/5f38dd8ffd89780001d1d481",
+      "type": "繁中玩家长评",
+      "evidenceType": "community_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "zh"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "从玩家视角描述复杂度递进、元素记忆负担，以及 Alpha Player 如何替他人完成思考，并解释不完整信息为何可能促成请求和提议。",
+      "limitation": "一位熟悉玩家对一款高复杂度合作游戏的解释，不是防止四分卫或适合新手的效果研究；群体规范会改变体验。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "kobold-guide-board-game-design-official",
+      "title": "Kobold Guide to Board Game Design",
+      "creator": "Mike Selinker 编 / Kobold Press",
+      "href": "https://koboldpress.com/kpstore/product/kobold-guide-to-board-game-design/",
+      "type": "官方书目与购买入口",
+      "evidenceType": "commercial",
+      "format": "book",
+      "access": "paid",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "测试与反馈",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "核验完整英文版为 144 页、由 15 位贡献者讨论构思、设计、开发与呈现，并提供出版社当前的纸书与 PDF 入口。",
+      "limitation": "官方销售页不是内容评价；价格、库存和格式高时效。用户本地中文文件只有 55 页预读内容，本站未据官方简介补写缺失章节。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-21"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "game-developer-purposeful-play",
+      "useModes": [
+        "learn",
+        "case_study",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "建立选一款游戏、记录自身体验、比较同类、查玩家讨论并反思的有目的游玩习惯。",
+      "doNotUseFor": "不要把个人喜欢与否、一次游玩或公共讨论热度当作机制效果；文章偏电子游戏且没有桌游学习成效比较。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "sellers-systems-analysis",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "从完整体验、心理模型、互动循环、规则和实体表示物多个层次分析一款游戏，而不只列机制名称。",
+      "doNotUseFor": "不要把商业书籍作者的系统框架当唯一正确拆解法，也不要从作品结构直接推断全部玩家感受或设计者真实意图。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "kathleen-mercury-resources",
+      "useModes": [
+        "learn",
+        "lookup"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "沿着教学单元建立桌游设计课程或自学路径，并按主题继续寻找活动与案例。",
+      "doNotUseFor": "不要把面向课堂的材料顺序直接视为所有成人自学者都适用的唯一流程，也不要因为免费使用就复制或再出版原材料。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "game-design-concepts",
+      "useModes": [
+        "learn"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "exercise",
+      "transferability": "broad",
+      "currencyRisk": "medium",
+      "rightsStatus": "reusable_license_verified",
+      "commercialContext": "none_disclosed",
+      "bestFor": "按课程节奏学习核心概念，并通过练习把定义转成自己的设计产出。",
+      "doNotUseFor": "不要假定其中的工具与外部链接仍保持原有可用性；使用前需要复核。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "gcores-game-structure",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "exercise",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "restricted",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "用配件、机制、流程关系拆一款熟悉游戏，并提出同一结构的替代组合。",
+      "doNotUseFor": "不要把作者三分法当正式学术分类或质量公式；只能链接和原创摘要，不能转载原文。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "ptt-dadaocheng-downtime",
+      "useModes": [
+        "case_study",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "把等待拆成回合秒数、决定何时开始、共享状态变化和预案失效，形成下一轮可计时观察。",
+      "doNotUseFor": "不要采用旧版本少量局次推断当前平衡、最佳人数或所有玩家对停机时间的容忍度。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "vocus-spirit-island-player",
+      "useModes": [
+        "case_study",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "从玩家原话讨论合作游戏中建议、代算、决定所有权、不完整信息和认知负担怎样相互影响。",
+      "doNotUseFor": "不要用单篇心得证明《精灵岛》消除了四分卫、适合所有群体，或隐藏信息普遍提高玩家能动性。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "kobold-guide-board-game-design-official",
+      "useModes": [
+        "lookup",
+        "learn"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "metadata_only",
+      "contextClarity": "explicit",
+      "actionability": "directory",
+      "transferability": "broad",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "核验完整英文版的篇幅、贡献者、主题范围与出版社入口，并与本地 55 页中文版预读文件区分。",
+      "doNotUseFor": "不要把销售简介当全书审阅、作者观点证据或购买建议；行动时重新核验价格、库存、格式和地区可得性。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    }
+  ]
+}

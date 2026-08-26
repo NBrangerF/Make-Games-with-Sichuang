@@ -1,0 +1,546 @@
+{
+  "schemaVersion": 1,
+  "principle": "阅读入口只缩小当前选择，不给来源排名，也不替代逐条查看适用范围、阅读深度和限制。",
+  "entryPoints": [
+    {
+      "id": "first-prototype",
+      "title": "第一次把点子做上桌",
+      "question": "我有题材或点子，但不知道怎样缩成今天能测试的东西。",
+      "outcome": "先建立体验问题，再用低成本材料做一轮可观察的原型；不要先读完整机制百科。",
+      "resourceIds": [
+        "kathleen-mercury-resources",
+        "game-design-concepts",
+        "sspai-mvp-prototype",
+        "gcores-light-medium-design",
+        "daniel-games-prototyping",
+        "james-ernest-blueprint",
+        "gcores-appraisal-company-diary"
+      ],
+      "evidenceBoundary": "混合免费课程、教师策展、中文实践与设计师案例；它们能提供动作和反例，不能证明一条原型流程适合所有游戏。"
+    },
+    {
+      "id": "first-playtest",
+      "title": "准备第一次外部测试",
+      "question": "游戏已经能动起来，但我不知道该找谁、问什么，以及何时停止。",
+      "outcome": "先选择本轮问题、测试者和最低成本方式，再把观察、体验、建议和设计决定分开。",
+      "resourceIds": [
+        "ttgda-playtesting",
+        "bgdl-playtest-like-a-boss",
+        "break-my-game-code",
+        "greg-blind-playtesting",
+        "protospiel-online",
+        "unpub-network",
+        "tbd-playtest-86",
+        "sspai-heavy-wargame-testing"
+      ],
+      "evidenceBoundary": "协会、设计师教学和测试社群提供的是流程与入口，不保证某次活动、样本或主持方式足以证明游戏已经可发行。"
+    },
+    {
+      "id": "rules-and-teaching",
+      "title": "让陌生人学会并查得到",
+      "question": "熟人能玩，但陌生人会在设置、第一步或查询时偏离。",
+      "outcome": "把教学、桌面信息、查询恢复和完整盲测分开，记录玩家第一次偏离的动作。",
+      "resourceIds": [
+        "dvgiochi-standard-rulebook",
+        "accessible-rulebook-best-practices",
+        "naylor-paul-grogan-rulebook",
+        "pratt-rulebook-editors-interview",
+        "wanstrom-physical-digital-rulebook",
+        "rulepop-digital-rules",
+        "gcores-tabletop-editor-role",
+        "sspai-heavy-wargame-testing"
+      ],
+      "evidenceBoundary": "编辑经验、最佳实践、产品文档与小样本研究承担不同任务；媒介案例不能推出纸质、视频或数字教程的通用优先级。"
+    },
+    {
+      "id": "production-and-publishing",
+      "title": "准备生产、投稿或发布",
+      "question": "设计接近稳定，但我不清楚规格、合同、平台、预算与履约分别由谁负责。",
+      "outcome": "先冻结版本、交付对象和责任范围，再核对当前官方要求、样品门、预算边界与退出条件。",
+      "resourceIds": [
+        "panda-manufacturing-tools",
+        "ttgda-contract-basics",
+        "bgdl-get-published",
+        "tgc-publishing-help",
+        "kickstarter-project-budget",
+        "sspai-self-printing-practice",
+        "hkfyg-time2play-interview",
+        "thepaper-chinese-designer-roles"
+      ],
+      "evidenceBoundary": "制造商、平台与出版教学资料具有商业或高时效语境；必须按行动日期重查，不能据此取得报价、合同、销量或交付保证。"
+    },
+    {
+      "id": "player-symptom-diagnosis",
+      "title": "把玩家抱怨变成可测试问题",
+      "question": "玩家说拖、乱、没参与感或规则难找，我不知道应该改哪里。",
+      "outcome": "先保留版本、群体、局面、动作和后果，再把评价改写成一个可观察问题；不要从单条长评推断所有玩家。",
+      "resourceIds": [
+        "ptt-dadaocheng-downtime",
+        "vocus-spirit-island-player",
+        "ptt-parent-child-boardgame",
+        "ptt-im-the-boss-house-rules",
+        "ptt-rulebook-lookup-friction",
+        "ptt-mad-boardgame-shop-teach",
+        "vocus-deaf-event-access",
+        "special-needs-boardgame-adjustment"
+      ],
+      "evidenceBoundary": "这些玩家长评、家庭记录、一手无障碍经历与教学综述用于发现症状和设计候选，不代表总体偏好，也不能证明某项修订、适配或教学方法已经有效。"
+    },
+    {
+      "id": "learn-by-playing",
+      "title": "边玩边学设计",
+      "question": "我玩过不少游戏，但只会写好不好玩，不知道怎样把体验变成设计能力。",
+      "outcome": "先选一个学习问题，再分开记录自身体验、桌面行为、系统关系和他人语境，最后写一条可反驳的迁移假设。",
+      "resourceIds": [
+        "game-developer-purposeful-play",
+        "sellers-systems-analysis",
+        "kathleen-mercury-resources",
+        "game-design-concepts",
+        "gcores-game-structure",
+        "ptt-dadaocheng-downtime",
+        "vocus-spirit-island-player",
+        "kobold-guide-board-game-design-official"
+      ],
+      "evidenceBoundary": "这组材料混合从业者流程、商业书籍章节、教师课程、玩家长评与仅元数据书目；它们提供观察问题和反例，不证明分析表能提高设计质量，也不把单次体验变成总体玩家结论。"
+    },
+    {
+      "id": "choose-learning-spine",
+      "title": "选一条能产出行动的学习主线",
+      "question": "指南、课程和书单很多，我不知道哪一种能帮我完成当前的设计任务。",
+      "outcome": "先按当前设计问题选一条主线，再补一个反例或玩家语境；阅读结束时必须留下一个可上桌动作、行为预测和反驳信号。",
+      "resourceIds": [
+        "game-design-concepts",
+        "kathleen-mercury-resources",
+        "your-turn-tabletop-guide",
+        "white-box-game-design",
+        "kobold-guide-board-game-design-official",
+        "game-design-workshop-fifth",
+        "rules-of-play-book",
+        "building-blocks-tabletop-book"
+      ],
+      "evidenceBoundary": "入口按资源结构和当前任务导航，不是质量排名、购买建议或学习成效评测；多数付费书籍只核验官方目录与元数据。"
+    },
+    {
+      "id": "choose-design-aid",
+      "title": "卡住时，先选辅助工具的工作",
+      "question": "我想用卡牌、组件盒或练习游戏推进设计，但不知道应该拿它来构思、诊断、做原型还是练习测试。",
+      "outcome": "先说清本轮要产生的东西，再选择参考词汇、随机约束、诊断问题、协作脚手架、闭环练习或通用组件；提示之后必须留下可测试产出。",
+      "resourceIds": [
+        "martha-game-mechanic-cards",
+        "deck-of-ideas",
+        "deck-of-lenses",
+        "polyu-game-kit-2",
+        "series-interesting-choices",
+        "panda-omnideck",
+        "gamespace-idea-generation-games",
+        "weapon-of-criticism-design-game"
+      ],
+      "evidenceBoundary": "商业产品页只能核验结构与权利边界，工作坊和小样本研究只能提示交互风险；该入口不是购买排名，也不宣称游戏化工具能提高最终设计质量。"
+    },
+    {
+      "id": "accessibility-task-path",
+      "title": "让更多玩家真正参与这一轮",
+      "question": "我想检查游戏或活动是否可参与，但不想用诊断名称、清单分数或‘有人帮忙’替代真实任务。",
+      "outcome": "从抵达、设置、读取、操作、决定、沟通、查询到退出选一个任务，分开玩家策略、外部协助、决定权、关系代价和下一次复测。",
+      "resourceIds": [
+        "vocus-deaf-event-access",
+        "bennett-autistic-adults-boardgames",
+        "ran-blv-mobile-games-china",
+        "flyingv-braille-boardgame-playtests",
+        "tpwl-tactile-party-game",
+        "tainan-disabled-boardgame-session",
+        "dcard-wheelchair-boardgame-venue",
+        "mcd-heuristic-toolkit-paper"
+      ],
+      "evidenceBoundary": "混合桌游参与者研究、中文数字游戏相邻证据、商业测试日志、机构报道与朋友代问；它们用于提出任务、协助和关系问题，不是残障群体画像、合规认证、场地推荐或适配效果证明。"
+    },
+    {
+      "id": "campaign-state-testing",
+      "title": "测试战役、Legacy 与永久变化",
+      "question": "规则会解锁、世界会留下痕迹，玩家还会缺席或换人；我该怎样让后续测试仍可比较？",
+      "outcome": "分开规则、世界、角色与玩家知识，先建状态护照，再为接续、迁移、剧透、保管和退出选择明确分支。",
+      "resourceIds": [
+        "mosca-legacy-irreversibility",
+        "pandemic-legacy-gdc-making",
+        "charterstone-design-diary-attendance",
+        "seafall-playtester-experience",
+        "gnome-stew-campaign-playtesting",
+        "wired-betrayal-legacy-setup",
+        "yuan-remote-tabletop-campaign-state",
+        "rogerson-boardgames-with-apps"
+      ],
+      "evidenceBoundary": "组合 Legacy 理论、一手设计演讲、官方日志、长期测试者案例、记者事故和两项 CHI 研究；它们支持提出状态与恢复问题，不提供通用局数、完成率、补偿公式、固定组要求或数字/实体等价性。"
+    },
+    {
+      "id": "solo-automa-design",
+      "title": "设计单人模式、Automa 与自动对手",
+      "question": "我想让多人原型支持单人，但不知道该保留什么、是否需要 bot，以及怎样避免玩家替它做太多维护。",
+      "outcome": "先声明单人承诺并映射互动接口，再比较计分、场景、dummy、自动对手与多手控制；把信息、维护、难度输入和盲测分开记录。",
+      "resourceIds": [
+        "leorke-solo-player-motivations",
+        "nougher-single-player-sociality",
+        "automa-factory-approach",
+        "mullins-solo-variant-elements",
+        "chola-sad-mode-automated-players",
+        "imperium-solo-mode-design",
+        "origin-story-solo-information"
+      ],
+      "evidenceBoundary": "组合两项玩家研究、一篇研究型创作论文、官方方法、设计师日志、访谈与玩家长评；它们支持提出承诺、互动、信息和维护问题，不提供通用胜率、随机度、组件数、规则页数、难度档数或测试局数。"
+    },
+    {
+      "id": "player-count-scaling",
+      "title": "设计不同玩家人数与配置",
+      "question": "原型在一个人数下成立，但我不知道 2–5 人该改什么、低人数是否要 dummy，以及高人数怎样减少等待。",
+      "outcome": "先把人数、队伍、角色、模式和座位写成配置，再比较互动拓扑、总行动、市场/地图密度与角色劳动；每个修补只承担一个明确功能。",
+      "resourceIds": [
+        "goodman-multiplayer-game-spaces",
+        "daniel-player-count",
+        "amritsar-player-count-diary",
+        "root-hirelings-player-count-diary",
+        "popcorn-simultaneous-player-count-diary",
+        "dixit-three-player-rules",
+        "captain-sonar-rules",
+        "palm-of-your-hand-diary"
+      ],
+      "evidenceBoundary": "组合计算研究、设计师实践、商业产品一手日志和官方规则；它们支持识别配置、非线性总行动、功能性 dummy、角色合并与同步重构，不提供最佳人数、缩放公式、可接受等待秒数、社区偏好比例或跨人数体验等价。"
+    },
+    {
+      "id": "game-length-and-endings",
+      "title": "诊断局长、节奏与终局拖尾",
+      "question": "游戏能结束，但时长不稳定、最后几轮忽快忽慢；我该删轮数、换触发器、给最后一轮，还是允许投降？",
+      "outcome": "先分解设置、教学、游玩与结算，再画节奏形状；把触发、可见性、剩余行动、拖尾、投降和淘汰写成一份可测试的结束契约。",
+      "resourceIds": [
+        "daniel-game-length",
+        "jaffee-game-end-dynamics",
+        "drillers-game-duration-diary",
+        "djinn-game-end-diary",
+        "rogerson-player-elimination",
+        "alexandrovsky-game-disengagement",
+        "aquaria-game-length-review",
+        "reddit-concession-social-contract"
+      ],
+      "evidenceBoundary": "组合设计师实践、商业项目一手日志、桌游淘汰短文、数字游戏退出相邻研究、玩家长评与社区讨论；它们支持提出计时口径、进度可见、最后行动和退出问题，不提供最佳局长、拖尾分钟阈值、等回合公式、投降礼仪或淘汰接受率。"
+    },
+    {
+      "id": "randomness-and-uncertainty",
+      "title": "诊断随机性、运气与可控不确定性",
+      "question": "玩家说原型太看运气或没有控制；我该减少骰子、改成抽牌、加重掷、公开概率，还是保留这种张力？",
+      "outcome": "先画决定—随机—回应循环，再写风险暴露与缓解动作；把随机源对结果的贡献、决定是否改变和玩家如何归因分轨验证。",
+      "resourceIds": [
+        "daniel-randomness",
+        "shalev-random-loops",
+        "goodman-skill-stochasticity",
+        "zhang-input-output-randomness",
+        "ernest-volatility-game-design",
+        "with-smile-gun-randomness-diary",
+        "takeover-randomness-diary",
+        "spots-randomness-player-review"
+      ],
+      "evidenceBoundary": "组合桌游结果计算、小样本数字卡牌实验、相邻归因研究、设计师理论/讲义、商业项目日志与单一玩家长评；它们支持提出时点、暴露、回应、缓解和归因问题，不提供最佳随机度、输入优于输出、通用重掷次数、可接受失败率、策略深度或玩家偏好比例。"
+    },
+    {
+      "id": "scoring-goals-incentives",
+      "title": "诊断计分、目标与激励错位",
+      "question": "游戏能算出赢家，但玩家只追同一路线、看不懂自己是否前进，或终局才发现方向错了；我该改分值、公开分数、加目标还是重做胜利条件？",
+      "outcome": "分开结束、胜负与计分函数，追踪一次得分怎样选择行为；比较真实路径、计分速度和可见性，再分轨验证系统结果、理解、互动与体验。",
+      "resourceIds": [
+        "daniel-winning-losing",
+        "russell-victory-conditions",
+        "with-smile-gun-scoring-diary",
+        "hegemony-scoring-diary",
+        "szulawski-boggle-rewards",
+        "gajadhar-score-visibility",
+        "sanctuary-scoring-review",
+        "point-salad-scoring-review"
+      ],
+      "evidenceBoundary": "组合桌游设计师实践、商业项目日志、相邻奖励与分数可见性实验及两篇玩家长评；它们支持拆开规则、追踪激励、记录路径、速度与信息，不提供最佳计分制、分值尺度、公开比例、隐藏目标数量、策略路径数、追赶公式或玩家偏好比例。"
+    },
+    {
+      "id": "turn-structure-action-economy",
+      "title": "诊断回合结构、行动经济与等待",
+      "question": "高人数等待长、玩家漏阶段或轮到自己才开始想；我该缩短回合、拆阶段、同步行动、加反应还是删维护？",
+      "outcome": "先画每个窗口的观察、决定、操作、回应、锁定与交接，再展开行动经济；把等待和维护按功能分解，只改一个窗口并验证得失。",
+      "resourceIds": [
+        "daniel-turn-structure",
+        "bishop-game-design-concepts",
+        "oath-action-economy-diary",
+        "arcs-action-structure-diary",
+        "xu-chores-social-play",
+        "pape-tabletop-coordination-policies",
+        "reddit-downtime-design",
+        "ptt-dadaocheng-downtime"
+      ],
+      "evidenceBoundary": "组合设计师实践、商业项目一手日志、桌游录像质性研究、数字桌面协调短论文及中英文玩家/社区症状；它们支持把回合视为权限结构、扩展行动经济、分解等待并检查维护功能，不提供最佳回合秒数、行动数、阶段数、反应次数、先手补偿、可接受等待或同步提速比例。"
+    },
+    {
+      "id": "spatial-map-structure",
+      "title": "诊断空间、距离、邻接与地图结构",
+      "question": "地图看起来完整，但玩家总走同一路线、搞错相邻、低人数碰不到彼此，或远座看不清关键状态；我该缩图、加路线、换网格还是重画？",
+      "outcome": "先把地图还原成地点—连接—成本—容量关系，再绑定激励、人数与时间；最后从真实座位测试图形、触达和只改一个空间变量。",
+      "resourceIds": [
+        "oath-map-remembers",
+        "faidutti-map-territory",
+        "insidegmt-cartography-game-board",
+        "ticket-to-ride-adjacency-analysis",
+        "spirit-island-jagged-earth-map-diary",
+        "new-yorker-map-incentive-playtest",
+        "scott-tabletop-territoriality",
+        "reddit-table-space-access"
+      ],
+      "evidenceBoundary": "组合设计师地图理论、一手商业日志、官方规则、玩家图论分析、实体桌面研究、记者现场案例和社区症状；它们支持把地图视为规则空间、分开视觉/规则距离、描述拓扑、绑定人数与激励并做真实座位任务，不提供最佳尺寸、格数、路线数、度数、直径、瓶颈、容量、网格排名、历史精度或玩家偏好。"
+    },
+    {
+      "id": "negotiation-commitment-alliance",
+      "title": "诊断谈判、承诺、交易与联盟",
+      "question": "规则只写‘玩家可以自由交易和结盟’，结果没人谈、谈太久、承诺争议、强势玩家垄断报价，或联盟突然决定终局；我该强制守约、做承诺牌还是限制交流？",
+      "outcome": "先列筹码与外部选项，再画报价到违约的生命周期；拆约束条款、联盟第三方与退出，最后只改变一项结算、记录或渠道规则。",
+      "resourceIds": [
+        "wehrle-quid-for-quo",
+        "ti4-deals-rules",
+        "kings-struggle-deals-rules",
+        "crescent-moon-negotiation-diary",
+        "diplomacy-official-rules",
+        "chinatown-accessibility-teardown",
+        "crabb-heron-communication-challenges",
+        "smith-promises-punishment"
+      ],
+      "evidenceBoundary": "组合设计师实践、正式规则案例、承诺与联盟实验、在线谈判/关系研究、四场社交桌游沟通研究和无障碍长评；它们支持写筹码、交易生命周期、约束时机、违约成本、第三方、联盟退出与谈判渠道，不提供最佳谈判时长、对象数、约束比例、守约率、联盟规模、信誉惩罚、背叛频率或私聊政策。"
+    },
+    {
+      "id": "auction-value-discovery",
+      "title": "诊断竞价、拍卖与价值发现",
+      "question": "玩家不知道该出多少、成交价失控、有人只抬价、并列和流拍临时协商，或拍卖吞掉整款游戏；我该换暗标、二价、储备价还是限制预算？",
+      "outcome": "先拆标的、价值与信息，再写完整竞价、分配、支付、资金流和边界协议；分开估值、报价、支付与兑现，只改一个字段复测。",
+      "resourceIds": [
+        "modern-art-official-rules",
+        "high-society-official-rules",
+        "medici-auction-interview",
+        "yale-auction-lecture",
+        "thaler-winners-curse",
+        "high-society-accessibility-teardown",
+        "reserve-price-collusion-experiment",
+        "reddit-auction-valuation"
+      ],
+      "evidenceBoundary": "组合正式规则、设计师访谈、拍卖课程与综述、实验/田野研究、无障碍长评和玩家症状；它们支持写价值类型、完整协议、资金流、边界状态、反馈和任务负担，不提供最佳拍卖形式、起价、加价、预算、储备价、次数、耗时、合谋率或玩家偏好。"
+    },
+    {
+      "id": "market-restock-price-feedback",
+      "title": "诊断市场补货、动态价格与供需反馈",
+      "question": "市场短缺、过剩、滞销或价格失控；我该改补货量、价格步幅、容量、刷新、补贴还是人数配置？",
+      "outcome": "先把市场还原为槽位、存量、容量、价格、补货和交接的状态转移；明确批量价格与移价时点，演短缺/过剩/滞销并只改一个变量。",
+      "resourceIds": ["power-grid-recharged-market-rules", "clans-caledonia-market-rules", "century-spice-road-market-rules", "mars-needs-mechanics-market-interview", "stale-markets-design-discussion", "through-ages-market-accessibility", "beer-game-outcome-feedback", "reddit-century-stale-market"],
+      "evidenceBoundary": "组合正式规则、设计师实践、实验与相邻动态决策研究、无障碍长评和玩家症状；它们支持写状态与时序、分开补货变量、诊断滞销、记录容量/事件密度/反馈并做真实座位任务，不提供最佳槽位、补货、价格、容量、刷新、人数公式、均衡或偏好。"
+    },
+    {
+      "id": "resource-production-chain",
+      "title": "诊断资源转换、生产链、维护与经济闭环",
+      "question": "经济循环重复、某资源总卡住、收入总算错、维护令人崩溃、引擎后期爆产或终局留下无用库存；我该改比率、来源、容量、衰减还是回本速度？",
+      "outcome": "先分开存量、变化率与结算点，追踪一件资源从来源经池和转换到消耗或残值；补全顺序、容量、维护、债务与衰减，再只改一个经济字段。",
+      "resourceIds": ["agricola-resource-cycle-rules", "le-havre-production-chain-rules", "race-galaxy-produce-consume-rules", "terraforming-mars-production-rules", "daniel-engines-resource-web", "machinations-economy-nodes", "stock-flow-failure-study", "terraforming-mars-accessibility"],
+      "evidenceBoundary": "组合正式规则、设计师方法、系统动力学与相邻研究、无障碍长评和玩家症状；它们支持分开存量/流量、写完整转换与维护协议、追踪容量/衰减/债务/残值/回本，并以真实任务验证状态恢复，不提供最佳资源数、比率、产能、维护、容量、腐坏、回本或偏好。"
+    },
+    {
+      "id": "hidden-information-hand-economy",
+      "title": "设计隐藏信息、手牌经济、线索与质疑",
+      "question": "首轮只能乱猜、玩家不知道能说什么、质疑没有理由、总靠完美记忆或辅助会泄密；我该改秘密数量、线索、手牌、沟通还是验证？",
+      "outcome": "先写谁在何时知道什么、信息何时过期以及收到后能做什么；再追踪一张牌的生命周期，补全线索、沟通、宣称、质疑、验证、记忆和辅助协议。",
+      "resourceIds": ["hanabi-hidden-hand-rules", "crew-limited-communication-rules", "bohnanza-hand-order-rules", "coup-claim-challenge-rules", "daniel-information-overload", "brian-bluffing-incentives", "wiseman-social-deduction-data", "hanabi-accessibility"],
+      "evidenceBoundary": "组合正式规则、设计师实践、相邻研究、无障碍长评和玩家症状；它们支持把信息和手牌写成带时点的生命周期、保留可区分的替代解释、补全沟通/质疑/验证、处理记忆与辅助泄密并用任务测试，不提供最佳手牌、秘密、线索、通信、质疑、撒谎或记忆参数。"
+    },
+    {
+      "id": "deck-building-draw-cycle",
+      "title": "设计牌库构筑、抽牌概率与循环控制",
+      "question": "新买的牌总到终局才出现、牌越买越卡、组合抽不到一起、市场和手牌都很随机，或频繁洗牌让玩家停下来；我该改牌价、抽牌量、压缩、置顶还是终局？",
+      "outcome": "先按功能和区域盘点牌库，再追踪获得到首次使用与终局的时间线；写清洗牌边界和概率假设，分开市场与个人抽牌，并用一次真实循环任务只改一个字段。",
+      "resourceIds": ["dominion-deck-cycle-rules", "star-realms-deck-cycle-rules", "aeons-end-no-shuffle-rules", "vaccarino-dominion-decisions", "nealen-ascension-deckbuilding-analysis", "psu-hypergeometric", "dominion-deep-rl-study", "star-realms-accessibility"],
+      "evidenceBoundary": "组合正式规则、设计师实践、数学与计算研究、无障碍评测和玩家症状；它们支持描述牌库功能/区域、获得延迟、洗牌边界、抽样假设、压缩/膨胀、组合共抽、双重随机性与重复操作成本，不提供最佳牌库规模、手牌量、命中率、市场宽度、压缩速度、价格、组合概率或终局长度。"
+    },
+    {
+      "id": "card-language-effect-resolution",
+      "title": "设计卡牌语言、关键词与效果结算",
+      "question": "同一句卡文每桌解释不同，多个触发不知道谁先，若/然后/改为失败后争议，或两张牌互相触发不停；我该改文字、关键词、时序还是组合？",
+      "outcome": "先把能力拆成七槽并选定结算窗口；固定逻辑词与关键词展开，用事件—状态轨迹验证组合和循环，再从真实座位完成读取、查询与恢复。",
+      "resourceIds": [
+        "magic-comprehensive-rules-timing",
+        "arkham-lcg-ability-timing-rules",
+        "netrunner-comprehensive-ability-rules",
+        "marvel-champions-timing-update",
+        "daniel-games-card-icons",
+        "challengers-timing-keyphrases-diary",
+        "cardscript-unified-language-paper",
+        "sarah-reed-visual-card-accessibility"
+      ],
+      "evidenceBoundary": "组合当前正式规则、设计师与编辑实践、形式研究、无障碍资料和玩家症状；它们支持建立能力语法、统一时点、明确同时/替代/回应/状态检查、验证组合与循环并测试关键词/图标/查询/代读，不提供最佳关键词数、图标比例、窗口数、栈深、组合长度、循环次数、卡文字数、字号或可读距离。"
+    },
+    {
+      "id": "card-pool-version-governance",
+      "title": "维护稀有度、扩展兼容、勘误与长期卡池",
+      "question": "我要增加扩展、第二版、勘误、禁限或轮替，但不知道怎样写兼容，哪份卡文算当前，旧版玩家需要做什么，以及组合太多时该测哪些。",
+      "outcome": "先给内容建立稳定护照和稀有度五字段，再画带证据状态的兼容矩阵；指定当前事实源和变更分类，排出生效/复查/回退时间线，并让旧版玩家完成一次配置回归与迁移任务。",
+      "resourceIds": [
+        "magic-new-world-order",
+        "magic-play-booster-skeleton",
+        "arkham-faq-v25",
+        "netrunner-current-rules-hub",
+        "netrunner-elevation-rotation",
+        "spirit-island-errata-pack",
+        "power-creep-conservative-metric",
+        "nist-combinatorial-testing"
+      ],
+      "evidenceBoundary": "组合持续卡牌游戏的官方设计与维护、实体升级包、同行评审研究和软件配置测试相邻方法；它们支持拆开稀有度字段、版本化兼容、当前文本事实源、变更分类、治理日期、风险回归和实体迁移劳动，不提供最佳稀有度、扩展数量、轮替周期、禁限阈值、测试样本、价格或兼容年限。"
+    },
+    {
+      "id": "prototype-scope-and-fidelity",
+      "title": "把完整游戏裁成这一轮可回答的原型",
+      "question": "我已经知道想验证什么，却仍不知道该做哪些组件、做到多真实、玩到哪里停，以及什么时候该重做表示而不是继续加内容。",
+      "outcome": "先写问题和非目标，再选择最多两个要观察的过滤维度；逐项配置材料、分辨率与范围，裁出能重复关键决定的可玩切片，并写代理运转、停止和重做信号。",
+      "resourceIds": [
+        "kathleen-mercury-prototyping",
+        "games-to-experiment-prototype-questions",
+        "lim-prototype-anatomy",
+        "houde-hill-prototype-purpose",
+        "ttgda-playtesting",
+        "mit-paper-prototyping",
+        "khoo-low-fidelity-case",
+        "board-game-design-lab-prototypes"
+      ],
+      "evidenceBoundary": "组合桌游教师与设计师实践、原型目录、视频游戏教学和 HCI 相邻理论；它们支持按问题裁范围、把保真度拆成多维配置、记录媒介代理与停止/重做信号，不提供最佳组件数、回合数、制作时长、保真等级或适合所有游戏的最小内容量。"
+    },
+    {
+      "id": "issue-to-system-translation",
+      "title": "把社会、文化或教育议题变成可玩系统",
+      "question": "我想用桌游表达一个议题，但现在只有背景故事、知识题或立场口号；怎样让玩家真的在规则中遇到这个关系？",
+      "outcome": "先写可被质疑的系统命题与受影响者，再把关系转成角色、权限、资源、限制和反馈；建立省略台账，最后分层验证规则实现、玩家行动、领域准确性与社群影响。",
+      "resourceIds": [
+        "values-at-play-methodology",
+        "grow-a-game-values-tool",
+        "black-boxes-cardboard-algorithmic-literacy",
+        "learning-evaluate-analog-education",
+        "design-justice-network-principles",
+        "practical-social-issue-game-design",
+        "civic-education-playful-game-design",
+        "analog-orientalism-abstraction"
+      ],
+      "evidenceBoundary": "组合价值敏感设计方法、两个批判性桌游/教育案例、一个公民教育工作坊、早期数字倡议游戏经验、设计正义原则和历史抽象批评；它们支持发现—转译—验证、追踪省略、早期纳入受影响者与分层取证，不证明游戏会改变态度、不输出唯一正确立场，也不提供普遍学习、复玩、清晰度或社会影响阈值。"
+    },
+    {
+      "id": "core-loop-handoff",
+      "title": "把体验意图接成可重复的核心循环",
+      "question": "我已经写了玩家、决定与预期行为，但不知道怎样把它变成会改变下一次决定的规则关系。",
+      "outcome": "把当前信息、可行选择、代价/承诺、状态变化、可见反馈与下一次输入接成一条短循环，并明确出口、单一变量和反驳信号。",
+      "resourceIds": [
+        "daniel-games-core",
+        "joe-slack-getting-to-core",
+        "loops-and-metagames",
+        "zimmerman-core-mechanic",
+        "mda-framework",
+        "five-part-model",
+        "rosewater-decisions-part-one",
+        "kathleen-mercury-resources"
+      ],
+      "evidenceBoundary": "组合两篇桌游设计师实践、一个设计案例、一个循环结构论文和既有 MDA/5PM/教学来源；它们支持把体验意图接到输入—选择—代价—状态—反馈—下一输入，并记录循环出口，不提供核心循环质量分、最佳机制、循环长度、奖励频率或玩家体验结论。"
+    },
+    {
+      "id": "single-question-playtest",
+      "title": "把原型范围变成一场单问题测试",
+      "question": "我已经裁出一段可玩原型，但测试时总是问很多问题、边玩边解释，最后不知道哪条观察能支持或推翻这一版。",
+      "outcome": "只保留一个主问题，绑定行为预测、反驳信号、观察事件、重复与停止条件；再写参与者语境、主持介入边界和局后开放追问。",
+      "resourceIds": [
+        "bgdl-playtest-like-a-boss",
+        "kathleen-mercury-winq",
+        "games-user-research-running-study",
+        "denisova-democratising-games-user-research",
+        "kulik-moderating-playtest",
+        "stanford-dschool-testing-guide",
+        "bushner-hobbyist-rulebook-practices",
+        "ttgda-playtesting"
+      ],
+      "evidenceBoundary": "组合桌游设计师与教师实践、游戏用户研究指南、独立开发者访谈、桌游设计者访谈和通用原型测试教学；它们支持单一证据链、观察/访谈分离、主持中立与语境记录，不提供通用样本量、测试次数、通过率、乐趣分或发行认证。"
+    },
+    {
+      "id": "live-playtest-session",
+      "title": "把测试计划带到桌边，逐事件记下真实发生",
+      "question": "我已经写好了测试计划，但现场既要主持又要观察，最后只剩零散印象、玩家建议和几条脱离时间点的笔记。",
+      "outcome": "冻结本场计划，先确认别名、配置、记录与同意范围；再按时间记录动作、可见状态、随后结果与主持介入，最后把局中证据、局后回答和下一版决定分开。",
+      "resourceIds": [
+        "tricorn-playtesting-with-purpose",
+        "diegetic-playtest-tracking-template",
+        "mc-allister-observation-template",
+        "pam-walls-playtesting-notes",
+        "games-user-research-running-study",
+        "games-user-research-debriefing",
+        "govuk-research-notes-recording",
+        "govuk-informed-consent-research"
+      ],
+      "evidenceBoundary": "组合四份桌游/游戏设计实践、游戏用户研究会话与复盘指南、英国公共服务记录/同意指南和课堂反馈结构；它们支持版本化逐事件记录、观察/回答/决定分离、主持介入与撤回映射，不提供自动严重度、事件次数阈值、因果证明、法律认证或唯一修法。"
+    },
+    {
+      "id": "evidence-review-change-brief",
+      "title": "把一场测试变成有边界的发现与下一版简报",
+      "question": "现场测试已经结束，但笔记、玩家建议和我的解释混在一起；怎样既不丢证据，也不让出现次数自动替我决定改什么？",
+      "outcome": "显式承接一场已完成会话，选择原事件与局后回答，写发现的条件、反证和缺失，再比较候选方案，形成保持项、单一变化轴、回退信号与下一问题。",
+      "resourceIds": [
+        "games-user-research-analysis",
+        "games-user-research-debriefing",
+        "govuk-analyse-research-session",
+        "govuk-rainbow-spreadsheet",
+        "tricorn-playtesting-with-purpose",
+        "woodard-effective-playtest",
+        "boardssey-review-results",
+        "ixdf-affinity-diagram"
+      ],
+      "evidenceBoundary": "组合游戏用户研究、英国公共服务、桌游设计师、产品帮助中心与通用 UX 分组方法；它们支持观察—发现—行动分层、来源回查、候选方案比较和复测，不提供自动洞察、严重度、频次优先级、因果证明、唯一修法或静默项目写回。"
+    },
+    {
+      "id": "cross-session-finding-evolution",
+      "title": "比较多轮测试，让发现随版本演化",
+      "question": "我已经保存了几场测试复盘，但版本、玩家经验和配置都不同；怎样判断一个发现该保留、收窄、拆分还是退役？",
+      "outcome": "显式选择至少两份复盘，先写共同问题与不可比条件，再按时间逐份标记支持、反驳、收窄、不可比或背景；最后保留发现沿革、反例、竞争解释与下一轮唯一比较。",
+      "resourceIds": [
+        "gale-framework-method",
+        "saltzman-longitudinal-matrix",
+        "calman-longitudinal-trajectory-analysis",
+        "lane-negative-case-analysis",
+        "gitlab-uxr-insights-repository",
+        "mind-mgmt-designer-diary",
+        "daybreak-designer-diary-forecast",
+        "hegemony-designer-diary-playtime"
+      ],
+      "evidenceBoundary": "组合质性矩阵、纵向分析、反例方法、软件用户研究仓库与三款桌游设计日志；它们支持来源可追踪、可比边界、时间顺序、反例与生命周期决定，不提供自动聚类、多数表决、严重度、频次优先级、跨版本复现、因果证明或静默项目写回。"
+    },
+    {
+      "id": "finding-lineage-successor-revision",
+      "title": "重开旧发现而不覆盖它，创建可解释的后继修订",
+      "question": "我已经保存过一份跨轮发现，现在有了新证据或边界变化；怎样继续修改，又不把当时的判断抹掉？",
+      "outcome": "先只读重开旧记录，检查来源、边界、反例与当时决定；需要改变时创建新 ID 的后继，保留沿革 ID、父记录、修订号、改变理由和时间，并把项目写回保持为显式动作。",
+      "resourceIds": [
+        "w3c-prov-o",
+        "white-qualitative-audit-trail",
+        "gitlab-uxr-insights-repository",
+        "timo-bron-iteration-log",
+        "magic-playtesting-stages-2026",
+        "weirdwood-manor-designer-diary",
+        "govuk-analyse-research-session",
+        "govuk-informed-consent-research"
+      ],
+      "evidenceBoundary": "组合 W3C 来源标准、质性审计轨迹、软件研究仓库、数字关卡迭代日志、两份桌游/卡牌设计实践与公共服务分析/同意指南；它们支持不可覆盖记录、显式父子修订、何时/为何/改了什么、阶段化测试和撤回来源链，不证明最新修订更正确、不提供自动批准、证据强度、测试次数、完整 PROV-O 实现或站外删除保证。"
+    },
+    {
+      "id": "test-design-aid-before-release",
+      "title": "先测试设计辅助工具，再决定是否上线",
+      "question": "我已经做出卡牌、随机约束或练习原型，怎样发现它是否让新手选错模式、把提示当命令，或把自测误当玩家证据？",
+      "outcome": "把工具拆成任务选择、拒绝提示、可测试产物、诊断改写、证据状态和私有反思六个任务，记录第一次偏离、主持介入、修订与复测。",
+      "resourceIds": [
+        "roy-warren-card-design-tools-review",
+        "benton-examples-children-game-narrative",
+        "chan-example-interface-fixation",
+        "wang-fixation-defixation-review",
+        "vercher-strategy-game-redesign-steam",
+        "league-ideation-toolkit",
+        "gamespace-idea-generation-games",
+        "weapon-of-criticism-design-game"
+      ],
+      "evidenceBoundary": "这组资料混合综述、控制类比实验、儿童工作坊、课堂设计型研究和设计师工具案例；它们用于构造可反驳任务，不证明本站低保真原型有效，也不允许以完成数、好感或点子数替代产物质量与目标玩家测试。"
+    }
+  ]
+}

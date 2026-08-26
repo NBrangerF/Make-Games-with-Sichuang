@@ -1,0 +1,366 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "cross-session-finding-evolution",
+    "title": "比较多轮测试，让发现随版本演化",
+    "question": "我已经保存了几场测试复盘，但版本、玩家经验和配置都不同；怎样判断一个发现该保留、收窄、拆分还是退役？",
+    "outcome": "显式选择至少两份复盘，先写共同问题与不可比条件，再按时间逐份标记支持、反驳、收窄、不可比或背景；最后保留发现沿革、反例、竞争解释与下一轮唯一比较。",
+    "resourceIds": [
+      "gale-framework-method",
+      "saltzman-longitudinal-matrix",
+      "calman-longitudinal-trajectory-analysis",
+      "lane-negative-case-analysis",
+      "gitlab-uxr-insights-repository",
+      "mind-mgmt-designer-diary",
+      "daybreak-designer-diary-forecast",
+      "hegemony-designer-diary-playtime"
+    ],
+    "evidenceBoundary": "组合质性矩阵、纵向分析、反例方法、软件用户研究仓库与三款桌游设计日志；它们支持来源可追踪、可比边界、时间顺序、反例与生命周期决定，不提供自动聚类、多数表决、严重度、频次优先级、跨版本复现、因果证明或静默项目写回。"
+  },
+  "resources": [
+    {
+      "id": "gale-framework-method",
+      "title": "Using the Framework Method for the Analysis of Qualitative Data in Multi-disciplinary Health Research",
+      "creator": "Nicola K. Gale, Gemma Heath, Elaine Cameron, Sabina Rashid & Sabi Redwood",
+      "href": "https://bmcmedresmethodol.biomedcentral.com/articles/10.1186/1471-2288-13-117",
+      "type": "保留个案语境与来源追踪的质性矩阵方法",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "用个案×代码矩阵支持个案内与个案间比较，同时要求摘要能回到原始资料，适合作为跨轮证据表的结构依据。",
+      "limitation": "方法源于健康质性研究；矩阵是组织与解释工具，不提供桌游发现的票数阈值、严重度或因果证明。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "saltzman-longitudinal-matrix",
+      "title": "Utilizing a Matrix Approach to Analyze Qualitative Longitudinal Research: A Case Example During the COVID-19 Pandemic",
+      "creator": "Saltzman et al.",
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC9442150/",
+      "type": "跨时间点质性矩阵与审计轨迹案例",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "展示主题×时间点矩阵怎样同时阅读个案内变化与个案间差异，并在代码本改变时重编早期材料、保留备忘与审计轨迹。",
+      "limitation": "疫情日记案例且示例用代码密度显示显著性；本站只采用时间顺序与可回查结构，不把密度迁移为桌游重要性。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "calman-longitudinal-trajectory-analysis",
+      "title": "Analyzing Longitudinal Qualitative Data: The Application of Trajectory and Recurrent Cross-sectional Approaches",
+      "creator": "Lynn Calman, Allan Brunton & Alex Molassiotis",
+      "href": "https://pmc.ncbi.nlm.nih.gov/articles/PMC4776420/",
+      "type": "时间点比较与同一群体轨迹分析的区别",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "区分比较不同时间点的重复横截面分析与追踪同一对象变化过程的轨迹分析，提醒先按研究问题与样本连续性选择读法。",
+      "limitation": "健康研究方法且讨论人群随时间变化；桌游版本、玩家组与测试问题同时改变时，不能声称是同一轨迹或复现。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "lane-negative-case-analysis",
+      "title": "If Adorno Met Intersectionality Theory: Reconceiving the Method of Negative Case Analysis",
+      "creator": "Jennifer Lane",
+      "href": "https://journals.sagepub.com/doi/10.1177/16094069211045473",
+      "type": "反例分析与多样观点纳入方法",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "把与当前概念矛盾的证据视为继续发现、扩展、收窄或推翻概念的入口，并强调纳入未被代表的观点。",
+      "limitation": "文章重点是交叉性、权力与健康服务研究；本站只迁移反例不能被多数吞掉的分析原则，不把方法简化为通用抽样认证。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "gitlab-uxr-insights-repository",
+      "title": "Why We Built a UX Research Insights Repository",
+      "creator": "Sarah O'Donnell / GitLab",
+      "href": "https://about.gitlab.com/blog/building-a-ux-research-insights-repository/",
+      "type": "可检索的原子发现与证据仓库实践",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "把每项发现作为独立记录并连接支持证据、研究背景与行动；旧报告中的发现可与新研究三角互证，而不要求立即变成任务。",
+      "limitation": "单一软件公司的仓库回顾且流程后来可能演变；它支持可追踪与延迟行动，不证明桌游发现正确或成熟。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "mind-mgmt-designer-diary",
+      "title": "MIND MGMT Designer Diary",
+      "creator": "Sen-Foong Lim & Jay Cormier",
+      "href": "https://boardgamegeek.com/thread/2384661/wip-mind-mgmt-designer-diary",
+      "type": "熟练测试组导致局部适应与复杂度增长的设计日志",
+      "evidenceType": "first_party_practice",
+      "format": "design_diary",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "设计师反思反复使用两组熟悉玩家导致功能与复杂度增长，公开的新鲜测试者无法获得相同体验，促成内容分阶段解锁。",
+      "limitation": "单款游戏的一手回顾，没有公开逐场数据；只能作为‘熟练组成功不等于首次局成功’的实践反例。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "daybreak-designer-diary-forecast",
+      "title": "Designer Diary: Daybreak",
+      "creator": "Matteo Menapace & Matt Leacock",
+      "href": "https://boardgamegeek.com/blog/1/blogpost/163737/designer-diary-daybreak",
+      "type": "同一系统跨版本权衡变化的设计日志",
+      "evidenceType": "first_party_practice",
+      "format": "design_diary",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "记录危机预告从无、三张、两张到一张的版本演化，显示每次改动同时改变可预测性、信息负担与紧张感。",
+      "limitation": "精选后的单款游戏设计叙事，不能隔离改动因果，也不能提供适用于其他游戏的最佳预告数量。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "hegemony-designer-diary-playtime",
+      "title": "Designer Diary: Hegemony: Lead Your Class to Victory",
+      "creator": "Vangelis Bagiartakis & Varnavas Timotheou",
+      "href": "https://boardgamegeek.com/blog/1/blogpost/145459/designer-diary-hegemony-lead-your-class-to-victory",
+      "type": "熟练与首次玩家揭示不同问题的版本迭代日志",
+      "evidenceType": "first_party_practice",
+      "format": "design_diary",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "记录熟练测试让团队逐渐忽略时长，新玩家重新暴露问题；减少轮数与每轮行动又对政策可见度和不同角色产生不对称影响。",
+      "limitation": "复杂非对称游戏的一手回顾，未提供完整会话矩阵；它揭示竞争解释与改动代价，不证明某种缩时方案通用。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "gale-framework-method",
+      "useModes": [
+        "learn",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "用个案×主题矩阵做个案内和个案间比较，并让摘要回到原始资料。",
+      "doNotUseFor": "健康质性方法不能生成桌游票数阈值、严重度、代表性或因果。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "saltzman-longitudinal-matrix",
+      "useModes": [
+        "learn",
+        "compare",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "沿时间点阅读主题变化，代码本改变时回看早期材料并保留审计轨迹。",
+      "doNotUseFor": "疫情日记中的代码密度不能迁移为桌游发现显著性或优先级。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "calman-longitudinal-trajectory-analysis",
+      "useModes": [
+        "learn",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "判断资料是在比较不同时间点，还是追踪同一对象的变化轨迹。",
+      "doNotUseFor": "版本、玩家组和问题都改变时，不得据此声称桌游结果得到纵向复现。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "lane-negative-case-analysis",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "把矛盾材料用于扩展、收窄或推翻暂定概念，并寻找未被代表的观点。",
+      "doNotUseFor": "不要把交叉性与健康研究方法简化成桌游通用抽样认证或反例计分。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "gitlab-uxr-insights-repository",
+      "useModes": [
+        "learn",
+        "case_study",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "把单项发现连接到支持证据、研究背景与行动，并允许尚未可行动的发现继续积累。",
+      "doNotUseFor": "单一软件公司 2019 年流程不证明桌游发现成熟，也不保证当前产品实现相同。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "mind-mgmt-designer-diary",
+      "useModes": [
+        "learn",
+        "case_study",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "识别熟悉测试组的局部适应、功能增长与首次局复杂度之间的差异。",
+      "doNotUseFor": "单款设计回顾没有逐场数据，不能证明熟练组必然造成复杂度增长。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "daybreak-designer-diary-forecast",
+      "useModes": [
+        "learn",
+        "case_study",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "阅读同一危机预告系统跨版本的收益、损失与取舍演化。",
+      "doNotUseFor": "精选设计叙事不能隔离因果，也不提供其他游戏的最佳信息数量。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "hegemony-designer-diary-playtime",
+      "useModes": [
+        "learn",
+        "case_study",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "比较熟练与首次玩家揭示的时长问题，并追踪删轮或删行动对不同系统的连带影响。",
+      "doNotUseFor": "复杂非对称游戏案例不能证明通用缩时方案或角色平衡结论。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    }
+  ]
+}

@@ -1,0 +1,57 @@
+{
+  "schemaVersion": 1,
+  "itemId": "systematic-unit-06-evidence-to-next-version-zh-CN",
+  "titleZh": "单元 6：从证据到下一版",
+  "contentMode": "original_complete",
+  "language": "zh-CN",
+  "version": "1.0.0",
+  "authorship": {
+    "author": "落桌",
+    "production": "Codex 基于项目研究与列明来源完成原创综合",
+    "humanReviewRequired": false
+  },
+  "learningOutcome": "把一场单问题测试的冻结版本、原始观察、玩家原话与设计者解释整理为含备选原因、证据强度、未知、保留/修复/继续观察决定、单项改动、行为预测、反驳信号、停车区和可追踪版本号的下一版简报。",
+  "sourceIds": [
+    "game-design-concepts-iteration",
+    "game-design-concepts-nondesigners",
+    "kathleen-mercury-winq",
+    "ttgda-playtesting",
+    "tricorn-playtesting-purpose",
+    "daniel-solis-feedback",
+    "daniel-solis-monsoon-variables",
+    "nels-anderson-proving-ground",
+    "govuk-research-notes",
+    "fetters-rubinstein-3cs",
+    "platt-strong-inference",
+    "pearl-causal-inference",
+    "tversky-kahneman-small-numbers"
+  ],
+  "sourceUrls": [
+    "https://gamedesignconcepts.wordpress.com/2009/07/02/level-2-game-design-iteration-and-rapid-prototyping/",
+    "https://gamedesignconcepts.wordpress.com/2009/08/13/level-14-playing-with-non-designers/",
+    "https://www.kathleenmercury.com/providing-feedback-on-prototypes-the-winq.html",
+    "https://www.ttgda.org/in-person-playtesting",
+    "https://www.tricorngames.com/designer-blog/2017/8/26/playtesting-with-purpose",
+    "https://danielsolisblog.blogspot.com/2014/03/3-steps-to-intepreting-playtest-feedback.html",
+    "https://danielsolisblog.blogspot.com/2014/05/revising-constants-and-variables-in.html",
+    "https://unwinnable.com/2013/02/11/the-proving-ground/",
+    "https://www.gov.uk/service-manual/user-research/taking-notes-and-recording-user-research-sessions",
+    "https://pmc.ncbi.nlm.nih.gov/articles/PMC6846267/",
+    "https://pages.cs.wisc.edu/~markhill/science64_strong_inference.pdf",
+    "https://ftp.cs.ucla.edu/pub/stat_ser/r350-reprint.pdf",
+    "https://doi.org/10.1037/h0031322"
+  ],
+  "publication": {
+    "visibility": "internal",
+    "status": "published-internal",
+    "rightsBasis": "本站原创综合；来源仅用于研究、归属与事实核验。"
+  },
+  "metrics": {
+    "hanCharacterCount": 12625,
+    "hanCharacterRange": "U+4E00–U+9FFF",
+    "countMethod": "Node.js: (text.match(/[\\u4E00-\\u9FFF]/g) || []).length",
+    "countedAt": "2026-08-22"
+  },
+  "file": "content/learning-units/systematic-unit-06-evidence-to-next-version-zh-CN.md",
+  "updatedAt": "2026-08-22"
+}

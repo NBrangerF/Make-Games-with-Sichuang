@@ -1,0 +1,340 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "solo-automa-design",
+    "title": "设计单人模式、Automa 与自动对手",
+    "question": "我想让多人原型支持单人，但不知道该保留什么、是否需要 bot，以及怎样避免玩家替它做太多维护。",
+    "outcome": "先声明单人承诺并映射互动接口，再比较计分、场景、dummy、自动对手与多手控制；把信息、维护、难度输入和盲测分开记录。",
+    "resourceIds": [
+      "leorke-solo-player-motivations",
+      "nougher-single-player-sociality",
+      "automa-factory-approach",
+      "mullins-solo-variant-elements",
+      "chola-sad-mode-automated-players",
+      "imperium-solo-mode-design",
+      "origin-story-solo-information"
+    ],
+    "evidenceBoundary": "组合两项玩家研究、一篇研究型创作论文、官方方法、设计师日志、访谈与玩家长评；它们支持提出承诺、互动、信息和维护问题，不提供通用胜率、随机度、组件数、规则页数、难度档数或测试局数。"
+  },
+  "resources": [
+    {
+      "id": "leorke-solo-player-motivations",
+      "title": "Solo Board Gaming: An Analysis of Player Motivations",
+      "creator": "Dale Leorke",
+      "href": "https://analoggamestudies.org/2018/12/solo-board-gaming-an-analysis-of-player-motivations/",
+      "type": "单人桌游玩家动机探索研究",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "测试与反馈"
+      ],
+      "useful": "对 BGG 1 Player Guild 公开帖进行探索性编码，把单人游玩动机归为社会、类型与游玩方式原因，提醒设计者不要只假定玩家是缺少同伴。",
+      "limitation": "自选论坛帖子与兴趣社群会偏向高投入爱好者；编码用于发现动机类别，不代表总体比例或因果关系。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "nougher-single-player-sociality",
+      "title": "If Only I Had Someone to Play With: Sociality in Single Player Board Games",
+      "creator": "Liam Nougher",
+      "href": "https://press-start.gla.ac.uk/press-start/article/view/301",
+      "type": "单人桌游问卷与游玩报告",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "测试与反馈"
+      ],
+      "useful": "结合 220 名 BGG 单人玩家问卷与一次 Scythe 游玩报告，讨论自主节奏、放松、沉浸、知识迁移、社群与异步计分等不同需求。",
+      "limitation": "疫情期间从 1 Player Guild 便利抽样，排除了离线与低投入玩家；问卷中计分表一词曾被不同理解，作者的单次游玩报告也不可外推。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "automa-factory-approach",
+      "title": "The Automa Approach",
+      "creator": "Automa Factory",
+      "href": "https://automafactory.com/about/",
+      "type": "官方 Automa 设计原则",
+      "evidenceType": "first_party_practice",
+      "format": "guide",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "列出以人工对手替代真人、保持人类规则与决定、模拟重要互动、避免玩家替 bot 决策并删除无关内部状态的六项原则。",
+      "limitation": "是专业工作室的自述方法与品牌语境，不是实证验证或所有单人结构都必须遵守的定义。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "mullins-solo-variant-elements",
+      "title": "The Basic Elements of Solo Variant Design",
+      "creator": "Mike Mullins / Cardboard Edison",
+      "href": "https://cardboardedison.com/blog/guest-post-the-basic-elements-of-solo-variant-design",
+      "type": "单人变体设计师方法",
+      "evidenceType": "designer_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "呈现与发布"
+      ],
+      "useful": "先找目标与多人互动的核心，再区分删除、随机化、计分挑战、dummy 与决策树式对手，并把可用组件预算放入结构选择。",
+      "limitation": "个人专业实践框架，示例未作比较实验；dummy 与 AI 的术语边界也不是行业统一标准。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "chola-sad-mode-automated-players",
+      "title": "A Happier Life Through Sad Mode — Designing Automated Players for Single Player Games",
+      "creator": "Saili Chola",
+      "href": "https://wiredspace.wits.ac.za/items/a87857a3-e4f8-4507-a4dc-109d32a6cbf4",
+      "type": "自动玩家研究型创作硕士论文",
+      "evidenceType": "academic_practice",
+      "format": "dissertation",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "以 Root 自动玩家进行多轮研究—设计迭代，记录行为相似度、理性、动态难度与玩家维护复杂度之间的冲突。",
+      "limitation": "单一游戏、研究型创作和小规模测试可生成设计命题，不能证明更像真人、更动态或更困难会普遍改善单人体验。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "imperium-solo-mode-design",
+      "title": "Imperium Blog — Solo Modes",
+      "creator": "Nigel Buckle / Osprey Games",
+      "href": "https://www.ospreypublishing.com/ca/osprey-blog/2021/imperium-blog-solo-modes/",
+      "type": "非对称牌组 bot 设计日志",
+      "evidenceType": "first_party_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "展示从内部测试 bot 到正式模式的演化：排序互动、保留对手信号、抽象牌文、处理循环与可利用策略，并交给外部单人玩家测试。",
+      "limitation": "单一复杂非对称牌组项目的发行方日志；具体图标表、难度和反利用修复不能直接移植。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "origin-story-solo-information",
+      "title": "Origin Story Design Diary — Solo Information Model",
+      "creator": "Automa Factory / Stonemaier Games",
+      "href": "https://stonemaiergames.com/games/origin-story/design-diary/",
+      "type": "隐藏信息自动对手设计日志",
+      "evidenceType": "first_party_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "记录 trick-taking 自动对手在隐藏手牌、跟花色和玩家推断之间的困难，以及改用可见手牌后增加策略、减少猜测的明确取舍。",
+      "limitation": "特定轻量 trick-taking 产品的官方设计日志；可见信息方案改变了体验，不能称为多人心理战的等价复制。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "leorke-solo-player-motivations",
+      "useModes": [
+        "learn",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "扩展单人模式体验意图，不把缺少同伴当成唯一动机，并为目标玩家访谈准备开放问题。",
+      "doNotUseFor": "不要把自选 BGG 帖子的类别频率当作市场比例、人口画像或功能优先级。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "nougher-single-player-sociality",
+      "useModes": [
+        "learn",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "区分自主节奏、放松、沉浸、知识迁移和社群等承诺，并查看研究者公开的样本与问卷限制。",
+      "doNotUseFor": "不要把疫情期间 BGG 单人社群样本的百分比外推到全部玩家或今天的市场。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "automa-factory-approach",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "理解一种成熟 Automa 流派怎样优先保留人类决定与互动，同时删去不影响玩家的对手内部状态。",
+      "doNotUseFor": "不要把品牌方法当成所有单人游戏的定义、效果证明或必须满足的认证。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "mullins-solo-variant-elements",
+      "useModes": [
+        "learn",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "从目标、互动与组件限制出发选择删除、计分、dummy 或自动对手，而不是先做一副 bot 牌。",
+      "doNotUseFor": "不要把作者的 dummy/AI 术语分界当作统一行业标准，或直接复制其随机性建议。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "chola-sad-mode-automated-players",
+      "useModes": [
+        "learn",
+        "case_study",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "检查行为相似、理性、动态难度和维护复杂度之间的冲突，并为极端原型设置停止点。",
+      "doNotUseFor": "不要从 Root 的研究型创作迭代推出自动玩家的通用最优复杂度或娱乐效果。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "imperium-solo-mode-design",
+      "useModes": [
+        "learn",
+        "case_study",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "把互动、可读信号、状态抽象、行为循环、利用路径和外部测试连成一条具体设计过程。",
+      "doNotUseFor": "不要直接移植该非对称牌组游戏的图标表、资源捷径、难度或结束条件。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "origin-story-solo-information",
+      "useModes": [
+        "case_study",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "把可见信息、推断、随机性、心理战和玩家可利用性当成明示取舍，而非真假对手评分。",
+      "doNotUseFor": "不要把可见 bot 手牌直接移植到其他隐藏信息游戏，或称其与真人猜测等价。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    }
+  ]
+}

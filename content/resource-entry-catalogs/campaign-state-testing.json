@@ -1,0 +1,387 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "campaign-state-testing",
+    "title": "测试战役、Legacy 与永久变化",
+    "question": "规则会解锁、世界会留下痕迹，玩家还会缺席或换人；我该怎样让后续测试仍可比较？",
+    "outcome": "分开规则、世界、角色与玩家知识，先建状态护照，再为接续、迁移、剧透、保管和退出选择明确分支。",
+    "resourceIds": [
+      "mosca-legacy-irreversibility",
+      "pandemic-legacy-gdc-making",
+      "charterstone-design-diary-attendance",
+      "seafall-playtester-experience",
+      "gnome-stew-campaign-playtesting",
+      "wired-betrayal-legacy-setup",
+      "yuan-remote-tabletop-campaign-state",
+      "rogerson-boardgames-with-apps"
+    ],
+    "evidenceBoundary": "组合 Legacy 理论、一手设计演讲、官方日志、长期测试者案例、记者事故和两项 CHI 研究；它们支持提出状态与恢复问题，不提供通用局数、完成率、补偿公式、固定组要求或数字/实体等价性。"
+  },
+  "resources": [
+    {
+      "id": "mosca-legacy-irreversibility",
+      "title": "Legacy’s Legacy: Irreversibility and Permadeath in Legacy Games",
+      "creator": "Ivan Mosca",
+      "href": "https://analoggamestudies.org/2017/01/legacys-legacy-irreversibility-and-permadeath-in-legacy-games/",
+      "type": "Legacy 游戏理论文章",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "从规则、世界、组件和玩家知识的不可逆性解释 Legacy 怎样改变重试、学习与时间体验，并提出玩家无法恢复第一次未知体验。",
+      "limitation": "哲学与游戏研究论证，不是玩家样本研究、效果实验或战役测试协议；不能把不可逆性当成质量保证。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "pandemic-legacy-gdc-making",
+      "title": "Board Game Design Day: The Making of Pandemic Legacy",
+      "creator": "Matt Leacock & Rob Daviau",
+      "href": "https://www.gdcvault.com/play/1024300/Board-Game-Design-Day-The",
+      "type": "Legacy 游戏一手设计复盘",
+      "evidenceType": "designer_practice",
+      "format": "video",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "测试与反馈",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "拆解排序牌库、封装内容、贴纸、书写、撕卡、命名、伤痕和跨局叙事节拍如何共同制造揭示与持续动机。",
+      "limitation": "成功产品的设计师演讲并含轻微剧透；是回顾性实践而非对照研究，产品局数和结构不能普遍化。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "charterstone-design-diary-attendance",
+      "title": "Charterstone Design Diary",
+      "creator": "Jamey Stegmaier & Team Automa / Stonemaier Games",
+      "href": "https://stonemaiergames.com/games/charterstone/design-diary/",
+      "type": "Legacy 游戏官方设计日志",
+      "evidenceType": "designer_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "记录同组连续参与的现实困难、临时或永久加入/退出、Automa 为缺席者代班，以及逐步解锁规则怎样经过测试调整。",
+      "limitation": "单款商业游戏的官方回顾；机器人只保存部分桌面功能，不证明与缺席玩家的关系、记忆或决定权等价。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "seafall-playtester-experience",
+      "title": "The Seafall Playtester Experience",
+      "creator": "Board Game Fight Club",
+      "href": "https://www.boardgamefightclub.com/articles/The-Seafall-Playtester-Experience/",
+      "type": "Legacy 长期测试者同期复盘",
+      "evidenceType": "player_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "记录两年半测试中的成员退出与重招、多组近似进度比较、逐局报告，以及规则和初始状态更新后把旧世界迁移到新版的劳动。",
+      "limitation": "单名测试组织者对单款未发行项目的第一人称回顾；没有完整版本档案、失败率或独立结果验证。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "gnome-stew-campaign-playtesting",
+      "title": "Design Flow: Campaign Playtesting",
+      "creator": "Phil Vecchione",
+      "href": "https://gnomestew.com/design-flow-campaign-playtesting/",
+      "type": "战役机制测试实践",
+      "evidenceType": "designer_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "区分单次场景可测机制与必须跨故事出现的成长、项目、威胁和退休，并列出规则中途改变、重建角色和运行战役的负担。",
+      "limitation": "来自 TTRPG 设计与主持语境的个人案例；不能直接规定封闭式桌游的测试局数、团队或叙事结构。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "wired-betrayal-legacy-setup",
+      "title": "How the Betrayal Legacy Board Game Tells a Story Over 13 Games",
+      "creator": "Pia Ceres / WIRED",
+      "href": "https://www.wired.com/story/board-game-design-betrayal-legacy-rob-daviau/",
+      "type": "Legacy 设计采访与设置事故",
+      "evidenceType": "journalism",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "最小原型",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "报道两年开发测试，并记录读规则前洗乱有序板块导致副本无法继续的真实事故，可用于首开提示、错误检测和修复路径问题。",
+      "limitation": "记者的一次严重事故不能估计普遍发生率；设计师当场修复也不是普通玩家可获得的恢复条件。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "yuan-remote-tabletop-campaign-state",
+      "title": "Tabletop Games in the Age of Remote Collaboration",
+      "creator": "Ye Yuan, Jan Cao, Ruotong Wang & Svetlana Yarosh",
+      "href": "https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445512",
+      "type": "远程桌游多方法研究",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈",
+        "呈现与发布"
+      ],
+      "useful": "以数字民族志和访谈研究远程桌游；其中一个 Legacy 案例用既有实体棋盘继续战役，避免转移状态或从头开始。",
+      "limitation": "研究重点是疫情期间远程社交体验；Legacy 接续只是一个定性案例，不能证明实体中心式远程方案最佳。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "rogerson-boardgames-with-apps",
+      "title": "Unpacking Boardgames with Apps: The Hybrid Digital Boardgame Model",
+      "creator": "Melissa J. Rogerson, Lucy A. Sparrow & Martin Gibbs",
+      "href": "https://dl.acm.org/doi/fullHtml/10.1145/3411764.3445077",
+      "type": "混合数字桌游功能模型",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "以 237 名玩家、18 名行业人员、关键游玩和 44 人分类活动识别数字工具承担的内容、教学、计算与桌面管理等功能。",
+      "limitation": "模型分类数字功能而非比较存档媒介的效果；不能据此断言应用、纸张、重置包或实体改造体验等价。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "mosca-legacy-irreversibility",
+      "useModes": [
+        "learn",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "区分世界、组件、角色与玩家知识的不可逆性，并检查重置为何不能恢复首次未知体验。",
+      "doNotUseFor": "不要把哲学论证当成玩家效果、Legacy 优越性、测试样本或通用设计流程的证据。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "pandemic-legacy-gdc-making",
+      "useModes": [
+        "learn",
+        "case_study",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "理解排序、封装、命名、永久改造与跨局节拍如何组合，并观察设计者怎样主动划出剧透边界。",
+      "doNotUseFor": "不要照搬产品的局数、叙事节拍、组件破坏或成功经验，也不要忽略演讲本身含剧透。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "charterstone-design-diary-attendance",
+      "useModes": [
+        "learn",
+        "case_study",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "检查固定组、缺席代班、后来加入和逐步解锁规则分别保存或改变了哪些战役条件。",
+      "doNotUseFor": "不要把 Automa 当成人类参与等价物，也不要把单款商业游戏的接续规则推广成统一方案。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "seafall-playtester-experience",
+      "useModes": [
+        "case_study",
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "看见长期 Legacy 原型中换人、多组比较、逐局报告和旧世界向新版映射的真实维护劳动。",
+      "doNotUseFor": "不要从单组回顾估算人员流失、测试成本、最佳组数或 SeaFall 最终设计质量。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "gnome-stew-campaign-playtesting",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "判断一个机制是否真的需要跨故事时间窗，并预先列出持续招募、改版、角色重建与主持负担。",
+      "doNotUseFor": "不要直接把 TTRPG 主持流程、战役长度或作者目标移植到无主持桌游。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "wired-betrayal-legacy-setup",
+      "useModes": [
+        "case_study",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "把首次开箱的不可逆错误改写成前置提示、错误检测、恢复可见性和求助路径的测试问题。",
+      "doNotUseFor": "不要用一次记者事故估算玩家错误率，或假定每位玩家都能获得设计师亲自恢复。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "yuan-remote-tabletop-campaign-state",
+      "useModes": [
+        "learn",
+        "case_study",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "检查实体战役状态由谁保管，以及远程接续怎样影响共享空间、信息、操作权和重建成本。",
+      "doNotUseFor": "不要从一个 Legacy 参与者案例推出实体中心、摄像头或远程游玩是通用最佳方案。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "rogerson-boardgames-with-apps",
+      "useModes": [
+        "learn",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "按内容、教学、计算、桌面管理等具体功能审计战役应用，而不是把数字化当成单一方案。",
+      "doNotUseFor": "不要把功能分类当作应用效果比较，也不要宣称数字存档与纸张、重置包或实体变化等价。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    }
+  ]
+}

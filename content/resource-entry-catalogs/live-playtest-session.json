@@ -1,0 +1,363 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "live-playtest-session",
+    "title": "把测试计划带到桌边，逐事件记下真实发生",
+    "question": "我已经写好了测试计划，但现场既要主持又要观察，最后只剩零散印象、玩家建议和几条脱离时间点的笔记。",
+    "outcome": "冻结本场计划，先确认别名、配置、记录与同意范围；再按时间记录动作、可见状态、随后结果与主持介入，最后把局中证据、局后回答和下一版决定分开。",
+    "resourceIds": [
+      "tricorn-playtesting-with-purpose",
+      "diegetic-playtest-tracking-template",
+      "mc-allister-observation-template",
+      "pam-walls-playtesting-notes",
+      "games-user-research-running-study",
+      "games-user-research-debriefing",
+      "govuk-research-notes-recording",
+      "govuk-informed-consent-research"
+    ],
+    "evidenceBoundary": "组合四份桌游/游戏设计实践、游戏用户研究会话与复盘指南、英国公共服务记录/同意指南和课堂反馈结构；它们支持版本化逐事件记录、观察/回答/决定分离、主持介入与撤回映射，不提供自动严重度、事件次数阈值、因果证明、法律认证或唯一修法。"
+  },
+  "resources": [
+    {
+      "id": "tricorn-playtesting-with-purpose",
+      "title": "Playtesting with Purpose",
+      "creator": "Tricorn Games",
+      "href": "https://www.tricorngames.com/designer-blog/2017/8/26/playtesting-with-purpose",
+      "type": "桌游设计师的现场笔记与问题转译实践",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "示范记录游戏版本、日期、参与经验、座位、测试目的，并把问题、评论、想法和观察连接到具体玩家与重复事件。",
+      "limitation": "单一设计师流程和案例；重复提问次数可帮助定位可见性问题，但不能自动成为严重度或通用阈值。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "diegetic-playtest-tracking-template",
+      "title": "Playtest Tracking Template with Airtable",
+      "creator": "Kathryn Hymes and Nick Punt / Diegetic Games",
+      "href": "https://diegeticgames.com/blog/2017/08/13/Playtest-Tracking-Template-2017.html",
+      "type": "桌游设计师的测试会话、反馈与规则版本记录模板",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "把规则版本、测试者、主持者、观察笔记、照片与公开/私有反馈连接到具体会话，避免反馈脱离版本。",
+      "limitation": "2017 年 Airtable 个人模板依赖外部服务并收集姓名；本站只转译关系结构，不复制表格或默认收集身份信息。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "mc-allister-observation-template",
+      "title": "The Observation Template",
+      "creator": "Graham McAllister",
+      "href": "https://grahammcallister.com/playtesting-book/observation-template",
+      "type": "游戏测试观察模板与团队对齐实践",
+      "evidenceType": "professional_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "要求观察模板围绕本轮假设记录每名玩家做了什么与没有做什么，并允许按玩家或假设组织。",
+      "limitation": "作者书籍的在线章节与团队实践建议；多假设示例不适合直接覆盖本站单问题形成性计划，也没有统一格式证据。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "pam-walls-playtesting-notes",
+      "title": "How to Take Better Playtesting Notes",
+      "creator": "Pam Walls",
+      "href": "https://pamwallsgamedesign.substack.com/p/how-to-take-better-playtesting-notes",
+      "type": "桌游设计师的当前测试笔记工作流反思",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "把会话管理、版本改动、局中观察与玩家反馈分区，并用玩家缩写降低现场记录负担。",
+      "limitation": "2026 年个人工作流，作者也明确仍在尝试转录方式；不能证明纸笔、语音或数字记录哪种最准确。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "games-user-research-running-study",
+      "title": "Running a Games User Research Study",
+      "creator": "Games User Research",
+      "href": "https://gamesuserresearch.com/running-a-games-user-research-study/",
+      "type": "游戏用户研究的会话、任务、观察与访谈实践指南",
+      "evidenceType": "professional_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "分开参与者语境、任务、观察、局后访谈与主持中立，说明任务措辞和帮助会改变可见证据。",
+      "limitation": "主要来自数字游戏研究团队；设施、保密与单人任务条件不能直接代表家庭桌面、多玩家社交或实体组件。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "games-user-research-debriefing",
+      "title": "Debriefing a Study",
+      "creator": "Games User Research",
+      "href": "https://gamesuserresearch.com/debriefing-a-study/",
+      "type": "游戏用户研究的证据汇报与设计决定实践",
+      "evidenceType": "professional_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "要求报告保留版本、任务与问题语境，先沟通学到什么，再发散/收敛解决方案并安排后续验证。",
+      "limitation": "数字游戏团队与跨职能会议语境；不提供桌游个人设计师的优先级公式，也不证明推荐方案正确。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "govuk-research-notes-recording",
+      "title": "Taking Notes and Recording User Research Sessions",
+      "creator": "UK Government Digital Service",
+      "href": "https://www.gov.uk/service-manual/user-research/taking-notes-and-recording-user-research-sessions",
+      "type": "用户研究笔记、录音与隐私操作指南",
+      "evidenceType": "institutional_guidance",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "要求记录前取得知情同意、只按约定使用资料、避免不必要身份信息，并把单条观察与参与者/会话标识连接。",
+      "limitation": "面向英国公共服务研究，不能替代用户所在地法律、机构审查、儿童保护或桌游社群协议。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "govuk-informed-consent-research",
+      "title": "Getting Informed Consent for User Research",
+      "creator": "UK Government Digital Service",
+      "href": "https://www.gov.uk/service-manual/user-research/getting-users-consent-for-research",
+      "type": "用户研究知情同意、撤回与数据关联指南",
+      "evidenceType": "institutional_guidance",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "列出目的、活动、数据、观察/记录、使用分享、保留和随时停止/撤回等同意要素，并要求能把撤回映射到对应资料。",
+      "limitation": "英国政府内部指南不是本站法律意见；涉及儿童、弱势参与者、跨境数据或公开素材时必须按本地要求另行审查。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "tricorn-playtesting-with-purpose",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "记录版本、目的、玩家经验、座位与重复问题，再把建议还原为可能的问题。",
+      "doNotUseFor": "不要把重复次数直接换成严重度或把作者案例外推为所有桌游可见性规则。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "diegetic-playtest-tracking-template",
+      "useModes": [
+        "learn",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "把规则版本、会话、主持、观察和反馈报告建立可回溯关系。",
+      "doNotUseFor": "不要复制姓名字段或依赖外部 Airtable 模板来宣称隐私、备份或长期可用。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "mc-allister-observation-template",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "围绕当前假设设计观察页，并按玩家或观察焦点选择记录布局。",
+      "doNotUseFor": "多假设团队模板不能替代本站单问题边界，也不证明某种矩阵最准确。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "pam-walls-playtesting-notes",
+      "useModes": [
+        "learn",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "比较会话管理、局中观察、玩家反馈和转录负担，并采用匿名别名缩写。",
+      "doNotUseFor": "个人新近工作流不能证明语音转录、纸笔或数字记录的准确度和隐私。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "games-user-research-running-study",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "规划参与者语境、任务、观察、访谈和主持中立，并检查任务措辞是否提前泄露答案。",
+      "doNotUseFor": "数字游戏研究设施流程不能规定桌游样本量、录像设置或家庭测试环境。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "games-user-research-debriefing",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "先汇报版本化证据，再分开发散解决方案、收敛决定和下一轮验证。",
+      "doNotUseFor": "团队会议流程不能自动给个人桌游项目排优先级，也不能保证建议可行。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "govuk-research-notes-recording",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "设计记录范围、匿名化、观察者角色、单点笔记和安全保管的操作清单。",
+      "doNotUseFor": "英国公共服务指南不是其他地区法律、学校审批、儿童保护或伦理认证。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "govuk-informed-consent-research",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "列出参与者在同意前需要理解的内容，并让撤回能映射到具体会话资料。",
+      "doNotUseFor": "勾选或模板不能代替本地法律、数据保护、监护人、机构和无障碍审查。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    }
+  ]
+}

@@ -1,0 +1,55 @@
+import { readFileSync } from 'node:fs'
+
+const read = path => readFileSync(new URL(`../${path}`, import.meta.url), 'utf8')
+const app = read('src/App.tsx')
+const routes = read('src/url-state.ts')
+const deployment = read('src/deployment.ts')
+const styles = read('src/styles.css')
+const vite = read('vite.config.ts')
+const html = read('index.html')
+const robots = read('public/robots.txt')
+const headers = read('public/_headers')
+const vercel = JSON.parse(read('vercel.json'))
+const envExample = read('.env.example')
+const contract = read('docs/product/PUBLIC_TRIAL_RELEASE.md')
+const packageJson = JSON.parse(read('package.json'))
+
+const guards = []
+const guard = (name, pass, detail = '') => guards.push({ name, pass: Boolean(pass), detail })
+
+guard('Vite base is explicit and configurable', vite.includes('PUBLIC_BASE_PATH') && vite.includes('base: publicBasePath'))
+guard('base path rejects ambiguous traversal/query/fragment forms', ['startsWith', 'endsWith', "includes('?')", "includes('#')", "includes('..')"].every(token => vite.includes(token)))
+guard('environment example distinguishes local and public-trial builds', ['VITE_PUBLIC_TRIAL_MODE=false', 'VITE_PUBLIC_HOST_LABEL=本地预览', 'VITE_PRIVACY_CONTACT=', 'VITE_BUILD_ID=local-dev'].every(token => envExample.includes(token)))
+guard('privacy route is shareable', routes.includes("'privacy'") && routes.includes("privacy: '数据与隐私'"))
+guard('privacy footer uses a real hash link', app.includes('function SiteFooter') && app.includes("view: 'privacy'") && app.includes('href={serializeRoute(privacyRoute)}'))
+guard('local data boundary is stated', app.includes('localStorage') && app.includes('当前浏览器') && app.includes('没有账号、云端上传、访问分析、广告追踪或广告 Cookie'))
+guard('clear action is prefix-scoped and two-step', app.includes('key.startsWith(LOCAL_STORAGE_PREFIX)') && app.includes('if (!clearArmed)') && deployment.includes("'tabletop-workshop-'"))
+guard('clear action warns about external copies', app.includes('不会删除托管日志、已下载 JSON、研究者另存的测试记录'))
+guard('unconfigured builds visibly reject recruitment', app.includes('当前构建不用于公开招募') && deployment.includes('isPublicTrialConfigured'))
+guard('privacy surface has responsive styles', styles.includes('.privacy-grid') && styles.includes('.privacy-delete-zone') && styles.includes('.site-footer'))
+guard('HTML trial build is noindex', html.includes('<meta name="robots" content="noindex, nofollow"'))
+guard('crawler policy disallows all paths', /User-agent:\s*\*[\s\S]*Disallow:\s*\//.test(robots))
+guard('static-host headers prevent indexing and sniffing', headers.includes('X-Robots-Tag: noindex, nofollow') && headers.includes('X-Content-Type-Options: nosniff'))
+guard('static-host headers restrict framing, referrers, and device capabilities', headers.includes('X-Frame-Options: DENY') && headers.includes('Referrer-Policy: no-referrer') && headers.includes('Permissions-Policy: camera=(), microphone=(), geolocation=()'))
+guard('static-host CSP is restrictive', ["default-src 'self'", "object-src 'none'", "frame-ancestors 'none'", "form-action 'self'"].every(token => headers.includes(token)))
+guard('hashed assets receive immutable caching', headers.includes('/assets/*') && headers.includes('max-age=31536000, immutable'))
+const vercelHeaders = JSON.stringify(vercel.headers)
+guard('Vercel output and headers match the release boundary', vercel.outputDirectory === 'dist' && vercel.buildCommand === 'pnpm build' && ['X-Robots-Tag', 'X-Content-Type-Options', 'X-Frame-Options', 'Referrer-Policy', 'Permissions-Policy', 'Content-Security-Policy'].every(token => vercelHeaders.includes(token)))
+guard('Vercel immutable asset caching is explicit', vercelHeaders.includes('/assets/(.*)') && vercelHeaders.includes('max-age=31536000, immutable'))
+guard('release contract compares supported platforms', ['Cloudflare Pages', 'Vercel', 'GitHub Pages'].every(token => contract.includes(token)))
+guard('release contract includes go/no-go, smoke, and rollback procedures', ['Go / No-Go', '发布后烟测', '回滚'].every(token => contract.includes(token)))
+guard('release QA is part of the content gate', packageJson.scripts?.['qa:release'] === 'node scripts/check-public-trial-release.mjs' && packageJson.scripts?.['content:check']?.includes('qa:release'))
+
+if (process.argv.includes('--strict-env')) {
+  const base = process.env.PUBLIC_BASE_PATH || '/'
+  guard('strict build enables public-trial mode', process.env.VITE_PUBLIC_TRIAL_MODE === 'true')
+  guard('strict build names the real host', Boolean(process.env.VITE_PUBLIC_HOST_LABEL?.trim()) && process.env.VITE_PUBLIC_HOST_LABEL !== '本地预览')
+  guard('strict build provides a privacy contact', Boolean(process.env.VITE_PRIVACY_CONTACT?.trim()))
+  guard('strict build provides a non-local build id', Boolean(process.env.VITE_BUILD_ID?.trim()) && process.env.VITE_BUILD_ID !== 'local-dev')
+  guard('strict build base path is canonical', base.startsWith('/') && base.endsWith('/') && !/[?#]/.test(base) && !base.includes('..'))
+}
+
+for (const item of guards) console.log(`${item.pass ? 'PASS' : 'FAIL'}  ${item.name}${item.detail ? ` — ${item.detail}` : ''}`)
+const failed = guards.filter(item => !item.pass)
+console.log(`\n${guards.length - failed.length}/${guards.length} public-trial release guards passed.`)
+if (failed.length) process.exit(1)

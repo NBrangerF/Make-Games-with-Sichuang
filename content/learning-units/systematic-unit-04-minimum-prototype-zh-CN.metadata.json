@@ -1,0 +1,38 @@
+{
+  "schemaVersion": 1,
+  "itemId": "systematic-unit-04-minimum-prototype-zh-CN",
+  "titleZh": "单元 4：最小原型",
+  "contentMode": "original_complete",
+  "language": "zh-CN",
+  "version": "1.0.0",
+  "authorship": {
+    "author": "落桌",
+    "production": "Codex 基于项目研究与列明来源完成原创综合",
+    "humanReviewRequired": false
+  },
+  "learningOutcome": "把一个原型问题转换为范围明确、材料最小、信息可读、行动可执行、结果可观察且可版本化的首轮测试切片。",
+  "sourceIds": [
+    "kathleen-mercury-prototyping",
+    "kathleen-mercury-resources",
+    "daniel-games-prototyping",
+    "ttgda-playtesting",
+    "game-design-concepts",
+    "lim-prototype-anatomy"
+  ],
+  "sourceUrls": [
+    "https://www.kathleenmercury.com/prototyping.html",
+    "https://www.kathleenmercury.com/recommended-materials.html",
+    "https://daniel.games/prototyping/",
+    "https://www.ttgda.org/get-assistance/newpage",
+    "https://www.ttgda.org/in-person-playtesting",
+    "https://gamedesignconcepts.wordpress.com/2009/07/02/level-2-game-design-iteration-and-rapid-prototyping/",
+    "https://faculty.washington.edu/jtenenbg/publications/limAnatomyOfPrototypes-tochi2008.pdf"
+  ],
+  "publication": {
+    "visibility": "internal",
+    "status": "published-internal",
+    "rightsBasis": "本站原创综合；来源仅用于研究、归属与事实核验。"
+  },
+  "file": "content/learning-units/systematic-unit-04-minimum-prototype-zh-CN.md",
+  "updatedAt": "2026-08-22"
+}

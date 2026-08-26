@@ -1,0 +1,370 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "single-question-playtest",
+    "title": "把原型范围变成一场单问题测试",
+    "question": "我已经裁出一段可玩原型，但测试时总是问很多问题、边玩边解释，最后不知道哪条观察能支持或推翻这一版。",
+    "outcome": "只保留一个主问题，绑定行为预测、反驳信号、观察事件、重复与停止条件；再写参与者语境、主持介入边界和局后开放追问。",
+    "resourceIds": [
+      "bgdl-playtest-like-a-boss",
+      "kathleen-mercury-winq",
+      "games-user-research-running-study",
+      "denisova-democratising-games-user-research",
+      "kulik-moderating-playtest",
+      "stanford-dschool-testing-guide",
+      "bushner-hobbyist-rulebook-practices",
+      "ttgda-playtesting"
+    ],
+    "evidenceBoundary": "组合桌游设计师与教师实践、游戏用户研究指南、独立开发者访谈、桌游设计者访谈和通用原型测试教学；它们支持单一证据链、观察/访谈分离、主持中立与语境记录，不提供通用样本量、测试次数、通过率、乐趣分或发行认证。"
+  },
+  "resources": [
+    {
+      "id": "bgdl-playtest-like-a-boss",
+      "title": "How to Playtest like a Boss",
+      "creator": "Gabe Barrett / Board Game Design Lab",
+      "href": "https://boardgamedesignlab.com/playtest-like-a-boss/",
+      "type": "实践指南",
+      "evidenceType": "teaching_curation",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "比较熟人、设计师、陌生人和盲测能提供的不同证据，并提醒观察身体语言后再追问。",
+      "limitation": "聚合了多位设计师格言；格言本身不能代替适用条件。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-13"
+    },
+    {
+      "id": "kathleen-mercury-winq",
+      "title": "Providing Feedback on Prototypes: The WINQ",
+      "creator": "Kathleen Mercury",
+      "href": "https://www.kathleenmercury.com/providing-feedback-on-prototypes-the-winq.html",
+      "type": "课堂原型反馈与设计者反思框架",
+      "evidenceType": "teaching_curation",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "把局中书面记录与局后设计者反思分开，并用 Works、Improvement、New ideas、Questions 组织具体反馈。",
+      "limitation": "面向教师主持的课堂，包含评价与评分表语境；不能证明 WINQ 分类适合所有成人、文化或研究问题。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "games-user-research-running-study",
+      "title": "Running a Games User Research Study",
+      "creator": "Games User Research",
+      "href": "https://gamesuserresearch.com/running-a-games-user-research-study/",
+      "type": "游戏用户研究的会话、任务、观察与访谈实践指南",
+      "evidenceType": "professional_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "分开参与者语境、任务、观察、局后访谈与主持中立，说明任务措辞和帮助会改变可见证据。",
+      "limitation": "主要来自数字游戏研究团队；设施、保密与单人任务条件不能直接代表家庭桌面、多玩家社交或实体组件。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "denisova-democratising-games-user-research",
+      "title": "Towards Democratisation of Games User Research: Exploring Playtesting Challenges of Indie Video Game Developers",
+      "creator": "Alena Denisova, Steve Bromley, Pejman Mirza-Babaei, Elisa Mekler",
+      "href": "https://eprints.whiterose.ac.uk/id/eprint/216480/",
+      "type": "独立游戏开发者测试实践与资源限制研究",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "以 13 名独立游戏从业者访谈说明招募合适参与者、处理测试数据与取得研究专长是实际限制。",
+      "limitation": "数字独立游戏的小型访谈研究，不能给桌游规定样本量、测试次数或参与者构成。",
+      "status": "article_level",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "kulik-moderating-playtest",
+      "title": "Asking the Right Questions — Moderating a Great Usability Playtest",
+      "creator": "Jozef Kulik / Game Developer",
+      "href": "https://www.gamedeveloper.com/business/asking-the-right-questions---moderating-a-great-usability-playtest",
+      "type": "游戏可用性测试主持与访谈实践",
+      "evidenceType": "professional_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "说明观察、局后访谈、中立主持、简短开放问题与玩家自身语言各自承担什么证据任务。",
+      "limitation": "来自数字游戏研究设施的从业文章；观察者隔离、录像配置与单人流程不总适用于桌游测试。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "stanford-dschool-testing-guide",
+      "title": "How to Test with Users",
+      "creator": "Stanford d.school",
+      "href": "https://dschool.stanford.edu/s/dschool_testing.pdf",
+      "type": "原型测试、主动观察与追问的教学单页",
+      "evidenceType": "teaching_curation",
+      "format": "worksheet",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "要求把原型交给使用者、只给必要语境、主动观察使用与误用、避免立即纠正，再用开放问题追问。",
+      "limitation": "通用设计思维教学单页，不处理多玩家互动、游戏胜负、招募代表性、同意细节或桌游测试数据分析。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "bushner-hobbyist-rulebook-practices",
+      "title": "Hobbyist Board Game Design Practices: How Do Board Game Designers Craft Their Rules Manuals and Solicit User Feedback on Prototype Games?",
+      "creator": "Anthony Bushner / Purdue University",
+      "href": "https://docs.lib.purdue.edu/dissertations/AAI30503529/",
+      "type": "桌游规则写作博士研究",
+      "evidenceType": "academic",
+      "format": "dissertation",
+      "access": "metadata",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "最小原型",
+        "测试与反馈",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "以 12 名桌游设计师与编辑访谈为基础，确认规则手册起草、原型反馈和技术写作是相连的实践问题。",
+      "limitation": "本轮只取得大学仓储摘要，正文需经 ProQuest；不能把摘要中的最佳实践描述当成已深读访谈结果。",
+      "status": "metadata_only",
+      "lastCheckedAt": "2026-08-14"
+    },
+    {
+      "id": "ttgda-playtesting",
+      "title": "Playtesting Resources",
+      "creator": "Tabletop Game Designers Association",
+      "href": "https://www.ttgda.org/in-person-playtesting",
+      "type": "行业协会",
+      "evidenceType": "teaching_curation",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "最小原型",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "区分自测、引导测试与更晚阶段的测试任务。",
+      "limitation": "具体活动与链接会随时间变化，需要查看核验日期。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-13"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "bgdl-playtest-like-a-boss",
+      "useModes": [
+        "learn",
+        "lookup"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "partial",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "建立一场测试前、中、后的主持与记录清单，减少临场遗漏。",
+      "doNotUseFor": "不要把流程清单当成统一研究协议；儿童、线上或无障碍测试需要另行调整。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "kathleen-mercury-winq",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "把局中书面记录、四类反馈和设计者局后反思分开，降低边玩边讨论对流程的打断。",
+      "doNotUseFor": "课堂评价表和数字评分不能证明作品质量，也不应替代围绕本轮问题的行为观察。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "games-user-research-running-study",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "规划参与者语境、任务、观察、访谈和主持中立，并检查任务措辞是否提前泄露答案。",
+      "doNotUseFor": "数字游戏研究设施流程不能规定桌游样本量、录像设置或家庭测试环境。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "denisova-democratising-games-user-research",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "把招募、数据处理、时间与研究能力写成独立开发者测试计划的现实约束。",
+      "doNotUseFor": "13 名数字游戏从业者访谈不能提供桌游通用参与者数量或完成门槛。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "kulik-moderating-playtest",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "准备中立、简短、开放的局后追问，并识别主持存在、术语和暗示怎样改变资料。",
+      "doNotUseFor": "数字游戏实验室建议不总适合多人桌面、儿童课堂或熟人局；需按语境重写。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "stanford-dschool-testing-guide",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "broad",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "提醒新手让参与者直接使用原型、先观察误用且不立即纠正，再用开放问题追问。",
+      "doNotUseFor": "单页教学材料不覆盖多玩家互动、同意、招募、分析或桌游版本比较。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "bushner-hobbyist-rulebook-practices",
+      "useModes": [
+        "learn",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "metadata_only",
+      "contextClarity": "explicit",
+      "actionability": "directory",
+      "transferability": "broad",
+      "currencyRisk": "low",
+      "rightsStatus": "restricted",
+      "commercialContext": "none_disclosed",
+      "bestFor": "确认规则写作研究确实访问了桌游设计师与编辑，并建立继续取得正文的研究入口。",
+      "doNotUseFor": "不要引用摘要未列出的访谈主题、频率或最佳实践，也不要把 12 人访谈当作有效性实验。",
+      "reviewedAt": "2026-08-14",
+      "status": "metadata_only"
+    },
+    {
+      "resourceId": "ttgda-playtesting",
+      "useModes": [
+        "learn",
+        "lookup"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "partial",
+      "actionability": "directory",
+      "transferability": "conditional",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "快速获得多种测试文章、社群和服务入口，再按当前测试问题选择下一步。",
+      "doNotUseFor": "不要假定目录中的每个外链仍可访问或经过同等审阅；打开前需逐项核验。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    }
+  ]
+}

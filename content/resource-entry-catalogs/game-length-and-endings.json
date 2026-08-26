@@ -1,0 +1,387 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "game-length-and-endings",
+    "title": "诊断局长、节奏与终局拖尾",
+    "question": "游戏能结束，但时长不稳定、最后几轮忽快忽慢；我该删轮数、换触发器、给最后一轮，还是允许投降？",
+    "outcome": "先分解设置、教学、游玩与结算，再画节奏形状；把触发、可见性、剩余行动、拖尾、投降和淘汰写成一份可测试的结束契约。",
+    "resourceIds": [
+      "daniel-game-length",
+      "jaffee-game-end-dynamics",
+      "drillers-game-duration-diary",
+      "djinn-game-end-diary",
+      "rogerson-player-elimination",
+      "alexandrovsky-game-disengagement",
+      "aquaria-game-length-review",
+      "reddit-concession-social-contract"
+    ],
+    "evidenceBoundary": "组合设计师实践、商业项目一手日志、桌游淘汰短文、数字游戏退出相邻研究、玩家长评与社区讨论；它们支持提出计时口径、进度可见、最后行动和退出问题，不提供最佳局长、拖尾分钟阈值、等回合公式、投降礼仪或淘汰接受率。"
+  },
+  "resources": [
+    {
+      "id": "daniel-game-length",
+      "title": "Game Length",
+      "creator": "Daniel Piechnick",
+      "href": "https://daniel.games/game-length/",
+      "type": "原型局长实践建议",
+      "evidenceType": "designer_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "把局长与成长路径、核心循环和可达内容联系起来，并给出持续删轮数、缩目标、保留最好阶段的原型迭代启发。",
+      "limitation": "强烈的个人设计立场；30 分钟等具体建议来自作者偏好的中轻度项目，不能作为类型标准、市场事实或所有受众的最佳时长。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "jaffee-game-end-dynamics",
+      "title": "The End Is Nigh! Game End Dynamics and How to Use Them",
+      "creator": "Seth Jaffee",
+      "href": "https://sedjtroll.blogspot.com/2018/03/the-end-is-nigh-game-end-dynamics-and.html",
+      "type": "终局动态设计框架",
+      "evidenceType": "designer_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "把立即结束、结束当前轮、最后一圈、固定轮数和追加回合等结构按回合是否相等、玩家是否知道这是最后行动拆开比较。",
+      "limitation": "设计师个人分类与案例判断，不是穷尽分类、受控实验或公平公式；具体游戏评价和补偿建议需回到各版本验证。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "drillers-game-duration-diary",
+      "title": "Under the Surface: The Design Journey of Drillers Part 1",
+      "creator": "Adam Španěl / Czech Games Edition",
+      "href": "https://www.czechgames.com/news/under-the-surface-the-design-journey-of-drillers-part-1",
+      "type": "局长、进度可见与终局迭代日志",
+      "evidenceType": "first_party_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "记录熟练与新手局回合数差异、安全策略造成的节奏摩擦、四种终局轨道迭代，以及结束触发后额外行动与补偿的取舍。",
+      "limitation": "单个尚新的商业项目的一手回顾，没有提供样本数、分布或对照数据；10–12、17–18 回合及 18 分补偿不能迁移为通用参数。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "djinn-game-end-diary",
+      "title": "Designer Diary — Benjamin Schwer about Djinn",
+      "creator": "Benjamin Schwer / Pegasus Spiele",
+      "href": "https://news.pegasus.de/en/designer-diary-benjamin-schwer-about-djinn/",
+      "type": "终局可见性与收尾行动设计日志",
+      "evidenceType": "first_party_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "记录多重结束触发造成突然感后，改成桌面可数的单一 Boss Djinn 进度，并保留 1–2 次收尾行动让计划可完成或资源可转分。",
+      "limitation": "商业项目的回顾日志，没有报告测试组、失败频率或替代方案比较；可见单一触发与收尾行动并非所有竞速游戏的默认答案。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "rogerson-player-elimination",
+      "title": "Understanding Player Elimination in Boardgames as a Form of Permadeath",
+      "creator": "Melissa J. Rogerson et al.",
+      "href": "https://dl.digra.org/index.php/dl/article/view/1003",
+      "type": "桌游玩家淘汰研究短文",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "把淘汰定义为游戏继续而玩家永久失去能动性，并指出同桌旁观、仍需保密或答疑，以及短轮淘汰后重新加入等实体桌游差异。",
+      "limitation": "DiGRA 2018 三页扩展摘要；虽称分析线上讨论，但没有足够样本与方法细节，不能估计接受度、伤害比例或证明淘汰应被禁止。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "alexandrovsky-game-disengagement",
+      "title": "Disengagement From Games: Characterizing the Experience and Process of Exiting Play Sessions",
+      "creator": "Dmitry Alexandrovsky et al.",
+      "href": "https://arxiv.org/abs/2406.00189",
+      "type": "结束游玩与退出体验研究",
+      "evidenceType": "academic_adjacent",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "以 16 次访谈和 111 份线上问卷把退出视为玩家、游戏与环境共同形成的过程，并连接能动性、自然收束、满意与社交阻力。",
+      "limitation": "研究对象是数字游戏，保存点、界面提示与远程社交不能直接等同实体桌游；自报样本也不提供桌游投降协议的效果证据。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "aquaria-game-length-review",
+      "title": "Aquaria Review",
+      "creator": "Anthony Ball / Silver Duck Reviews",
+      "href": "https://boardgamegeek.com/blog/8626/blogpost/180503/aquaria-review",
+      "type": "玩家局长与人数长评",
+      "evidenceType": "player_account",
+      "format": "review",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈",
+        "呈现与发布"
+      ],
+      "useful": "明确区分约每人 40 分钟、熟练后可能接近 30 分钟，并把四人局过长判断绑定到该玩家感受到的决定量和人数。",
+      "limitation": "单一评者、未公开每个配置的局次与计时区间；不能代表 Aquaria 总体玩家、证明每人分钟线性，或推出决策密度阈值。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "reddit-concession-social-contract",
+      "title": "Social Contract of Gaming — What to Do If Winners or Losers Are Known Far Ahead of the End?",
+      "creator": "r/boardgames participants",
+      "href": "https://www.reddit.com/r/boardgames/comments/cuhrp1",
+      "type": "多人投降与退出玩家讨论",
+      "evidenceType": "community_discussion",
+      "format": "discussion",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "呈现继续完成、全桌同意投降和单人退出之间的冲突，并具体指出多人退出会重写地图、资源、邻接和其他玩家的胜负机会。",
+      "limitation": "自选平台讨论，身份、经验、版本与代表性不明，赞同票也不是研究样本；只能发现协议问题与反例，不能决定正确礼仪。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "daniel-game-length",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "在早期原型中追问每一轮、阶段与目标是否仍增加新决定，并生成删减候选。",
+      "doNotUseFor": "不要把尽可能短、少一轮或 30 分钟当普遍质量标准、受众事实或发行规格。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "jaffee-game-end-dynamics",
+      "useModes": [
+        "learn",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "分别检查等回合、最后行动可知性、结束激励与先后手补偿，而不是只给终局结构命名。",
+      "doNotUseFor": "不要把作者分类当穷尽体系，或从某一案例直接推导其他游戏的公平补偿。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "drillers-game-duration-diary",
+      "useModes": [
+        "case_study",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "观察熟练度、风险激励、进度可见性、触发后的剩余回合和补偿怎样联动改变节奏。",
+      "doNotUseFor": "不要迁移回合数、轨道结构、额外牌或分数补偿；日志未给出充分测试样本与效果分布。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "djinn-game-end-diary",
+      "useModes": [
+        "case_study",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "比较多重触发、可见单一进度和有限收尾行动如何影响意外感与计划完成。",
+      "doNotUseFor": "不要默认单一触发、完全公开或 1–2 个收尾动作必然更满意或更公平。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "rogerson-player-elimination",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "partial",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "把淘汰后的失去能动性、同桌旁观、保密义务和重新加入时间列为独立观察。",
+      "doNotUseFor": "三页扩展摘要缺少充分方法细节；不要估计玩家比例、心理影响或宣称淘汰普遍不可接受。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "alexandrovsky-game-disengagement",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "把结束游玩视为能动性、自然收束、社交关系和环境共同构成的过程，帮助设计退出观察。",
+      "doNotUseFor": "数字游戏样本不能证明实体桌游投降、保存或暂停方案有效，也不能迁移其具体界面机制。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "aquaria-game-length-review",
+      "useModes": [
+        "diagnose",
+        "compare",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "partial",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "unknown",
+      "bestFor": "示范把局长主张绑定到人数、经验和感受到的决定量，并作为后续计时复核线索。",
+      "doNotUseFor": "不要从一个评者推出总体最佳人数、每人分钟公式、平均局长或市场偏好。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "reddit-concession-social-contract",
+      "useModes": [
+        "diagnose",
+        "compare",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "partial",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "unknown",
+      "bestFor": "发现多人投降会改变邻接、资源、地图与他人胜负机会，以及继续和退出之间的不同社交成本。",
+      "doNotUseFor": "不要把高赞意见当正确礼仪、代表性偏好或规则效果；每条案例仍需版本、人数与关系语境。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    }
+  ]
+}

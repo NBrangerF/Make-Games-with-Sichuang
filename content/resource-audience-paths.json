@@ -1,0 +1,48 @@
+{
+  "schemaVersion": 1,
+  "principle": "不要求读者判断自己的年龄、身份或能力等级，只按此刻最接近的处境，把人送到一组可以开始行动的资源。",
+  "paths": [
+    {
+      "id": "first-design",
+      "title": "我第一次设计桌游",
+      "situation": "有一个题材或点子，但还没有做出能玩的版本。",
+      "entryId": "first-prototype",
+      "why": "先完成一个低成本、能回答单个问题的版本。"
+    },
+    {
+      "id": "learn-from-play",
+      "title": "我玩过不少游戏，想学会分析",
+      "situation": "能说出喜欢或不喜欢，却不知道怎样转成设计判断。",
+      "entryId": "learn-by-playing",
+      "why": "把游玩体验拆成观察、系统关系与可验证的迁移假设。"
+    },
+    {
+      "id": "choose-study-path",
+      "title": "我想系统自学，但资料太多",
+      "situation": "面对书、课程、文章和视频，不知道先读哪一种。",
+      "entryId": "choose-learning-spine",
+      "why": "围绕当前任务选一条主线，读完留下可上桌的动作。"
+    },
+    {
+      "id": "playable-prototype",
+      "title": "我已经有一个能玩的版本",
+      "situation": "游戏能跑起来，但不知道怎样测试、记录和改下一版。",
+      "entryId": "first-playtest",
+      "why": "先确定一场测试只回答哪一个问题。"
+    },
+    {
+      "id": "teach-or-facilitate",
+      "title": "我要带课或组织工作坊",
+      "situation": "需要为不同经验的参与者安排学习顺序和实践活动。",
+      "entryId": "choose-learning-spine",
+      "why": "先建立会产生作品与观察证据的学习主线。"
+    },
+    {
+      "id": "prepare-release",
+      "title": "我在准备投稿、生产或发布",
+      "situation": "设计接近稳定，需要厘清规格、责任、预算或发布路线。",
+      "entryId": "production-and-publishing",
+      "why": "先冻结版本和责任范围，再核对外部要求。"
+    }
+  ]
+}

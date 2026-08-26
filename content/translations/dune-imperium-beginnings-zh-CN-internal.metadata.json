@@ -1,0 +1,94 @@
+{
+  "schemaVersion": 2,
+  "artifactId": "dune-imperium-beginnings-zh-CN-internal",
+  "resourceId": "dune-imperium-deck-worker-diary",
+  "contentMode": "original_case_synthesis",
+  "contentType": "designer_case",
+  "publicationScope": "internal",
+  "original": {
+    "title": "Dune: Imperium Designer Diary 1 – Beginnings",
+    "author": "Paul Dennen",
+    "publisher": "Dire Wolf Digital",
+    "url": "https://news.direwolfdigital.com/dune-imperium-designer-diary-1-beginnings/",
+    "publishedAt": "2020-09-23",
+    "retrievedAt": "2026-08-21",
+    "language": "en",
+    "sourceType": "official_designer_diary"
+  },
+  "supportingSources": [
+    {
+      "role": "mechanics_verification",
+      "title": "Dune: Imperium Rules",
+      "publisher": "Dire Wolf Digital",
+      "url": "https://d19y2ttatozxjp.cloudfront.net/pdfs/DUNE_IMPERIUM_Rules_2020_10_26.pdf"
+    },
+    {
+      "role": "product_identity_verification",
+      "title": "Dune: Imperium",
+      "publisher": "Dire Wolf Digital",
+      "url": "https://www.direwolfdigital.com/dune-imperium/"
+    }
+  ],
+  "rights": {
+    "copyrightStatus": "all-rights-reserved",
+    "copyrightNoticeObserved": "© 2026 Dire Wolf Digital, Inc. All Rights Reserved.",
+    "openLicenseVerified": false,
+    "translationPermission": {
+      "status": "not_obtained",
+      "verified": false
+    },
+    "publicRedistributionPermission": {
+      "status": "not_obtained",
+      "verified": false
+    },
+    "evidenceUrl": "https://news.direwolfdigital.com/dune-imperium-designer-diary-1-beginnings/",
+    "thirdPartyIp": {
+      "present": true,
+      "ownersOrSourcesNamedOnPage": [
+        "Frank Herbert / Dune novel quotation",
+        "Dune universe, characters and factions",
+        "film performer references and promotional imagery"
+      ],
+      "quotationIncludedInSynthesis": false,
+      "imagesIncludedInSynthesis": false,
+      "trademarkAssetsIncludedInSynthesis": false
+    }
+  },
+  "synthesis": {
+    "language": "zh-CN",
+    "version": "1.0.0-internal",
+    "creator": "Codex AI（落桌项目）",
+    "authority": "codex_ai_internal_learning_authoritative",
+    "humanReviewRequired": false,
+    "fullTranslationIncluded": false,
+    "sourceStructureMirrored": false,
+    "longSourcePassagesIncluded": false,
+    "directSourceQuotesIncluded": false,
+    "scope": "原创中文设计案例综合；覆盖项目语境、约束、被推翻版本、双用途卡连接、作者报告结果、本站推断、未知问题与迁移动作。",
+    "evidenceLayers": [
+      "author_report",
+      "site_inference",
+      "unknown",
+      "migration_action"
+    ],
+    "hanCharacterCount": 4015
+  },
+  "excludedComponents": [
+    "原文逐段或全文翻译",
+    "Frank Herbert 小说引文的原文与中文翻译",
+    "页面图片、卡牌图、电影剧照与商标素材",
+    "评论、导航、相关新闻、订阅组件和页脚",
+    "原文链接所指向的其他文章正文"
+  ],
+  "publication": {
+    "visibility": "internal",
+    "public": false,
+    "internalOnly": true,
+    "publicReleaseEnabled": false,
+    "requiresHumanReviewBeforeInternalUse": false,
+    "requiresExplicitRightsReviewBeforeRelease": true,
+    "legalApprovalClaimed": false
+  },
+  "verificationDocument": "docs/research/SOURCE_VERIFICATION_DUNE_IMPERIUM_BEGINNINGS_SYNTHESIS.md",
+  "file": "content/translations/dune-imperium-beginnings-zh-CN-internal.md"
+}

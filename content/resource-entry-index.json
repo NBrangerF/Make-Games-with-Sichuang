@@ -1,0 +1,142 @@
+{
+  "schemaVersion": 1,
+  "principle": "阅读入口只缩小当前选择，不给来源排名，也不替代逐条查看适用范围、阅读深度和限制。",
+  "entryPoints": [
+    {
+      "id": "first-prototype",
+      "title": "第一次把点子做上桌"
+    },
+    {
+      "id": "first-playtest",
+      "title": "准备第一次外部测试"
+    },
+    {
+      "id": "rules-and-teaching",
+      "title": "让陌生人学会并查得到"
+    },
+    {
+      "id": "production-and-publishing",
+      "title": "准备生产、投稿或发布"
+    },
+    {
+      "id": "player-symptom-diagnosis",
+      "title": "把玩家抱怨变成可测试问题"
+    },
+    {
+      "id": "learn-by-playing",
+      "title": "边玩边学设计"
+    },
+    {
+      "id": "choose-learning-spine",
+      "title": "选一条能产出行动的学习主线"
+    },
+    {
+      "id": "choose-design-aid",
+      "title": "卡住时，先选辅助工具的工作"
+    },
+    {
+      "id": "accessibility-task-path",
+      "title": "让更多玩家真正参与这一轮"
+    },
+    {
+      "id": "campaign-state-testing",
+      "title": "测试战役、Legacy 与永久变化"
+    },
+    {
+      "id": "solo-automa-design",
+      "title": "设计单人模式、Automa 与自动对手"
+    },
+    {
+      "id": "player-count-scaling",
+      "title": "设计不同玩家人数与配置"
+    },
+    {
+      "id": "game-length-and-endings",
+      "title": "诊断局长、节奏与终局拖尾"
+    },
+    {
+      "id": "randomness-and-uncertainty",
+      "title": "诊断随机性、运气与可控不确定性"
+    },
+    {
+      "id": "scoring-goals-incentives",
+      "title": "诊断计分、目标与激励错位"
+    },
+    {
+      "id": "turn-structure-action-economy",
+      "title": "诊断回合结构、行动经济与等待"
+    },
+    {
+      "id": "spatial-map-structure",
+      "title": "诊断空间、距离、邻接与地图结构"
+    },
+    {
+      "id": "negotiation-commitment-alliance",
+      "title": "诊断谈判、承诺、交易与联盟"
+    },
+    {
+      "id": "auction-value-discovery",
+      "title": "诊断竞价、拍卖与价值发现"
+    },
+    {
+      "id": "market-restock-price-feedback",
+      "title": "诊断市场补货、动态价格与供需反馈"
+    },
+    {
+      "id": "resource-production-chain",
+      "title": "诊断资源转换、生产链、维护与经济闭环"
+    },
+    {
+      "id": "hidden-information-hand-economy",
+      "title": "设计隐藏信息、手牌经济、线索与质疑"
+    },
+    {
+      "id": "deck-building-draw-cycle",
+      "title": "设计牌库构筑、抽牌概率与循环控制"
+    },
+    {
+      "id": "card-language-effect-resolution",
+      "title": "设计卡牌语言、关键词与效果结算"
+    },
+    {
+      "id": "card-pool-version-governance",
+      "title": "维护稀有度、扩展兼容、勘误与长期卡池"
+    },
+    {
+      "id": "prototype-scope-and-fidelity",
+      "title": "把完整游戏裁成这一轮可回答的原型"
+    },
+    {
+      "id": "issue-to-system-translation",
+      "title": "把社会、文化或教育议题变成可玩系统"
+    },
+    {
+      "id": "core-loop-handoff",
+      "title": "把体验意图接成可重复的核心循环"
+    },
+    {
+      "id": "single-question-playtest",
+      "title": "把原型范围变成一场单问题测试"
+    },
+    {
+      "id": "live-playtest-session",
+      "title": "把测试计划带到桌边，逐事件记下真实发生"
+    },
+    {
+      "id": "evidence-review-change-brief",
+      "title": "把一场测试变成有边界的发现与下一版简报"
+    },
+    {
+      "id": "cross-session-finding-evolution",
+      "title": "比较多轮测试，让发现随版本演化"
+    },
+    {
+      "id": "finding-lineage-successor-revision",
+      "title": "重开旧发现而不覆盖它，创建可解释的后继修订"
+    },
+    {
+      "id": "test-design-aid-before-release",
+      "title": "先测试设计辅助工具，再决定是否上线"
+    }
+  ]
+}

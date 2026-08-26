@@ -1,0 +1,29 @@
+{
+  "schemaVersion": 1,
+  "itemId": "systematic-unit-01-experience-intent-zh-CN",
+  "titleZh": "单元 1：玩家体验与设计意图",
+  "contentMode": "original_complete",
+  "language": "zh-CN",
+  "version": "1.0.0",
+  "authorship": {
+    "author": "落桌",
+    "production": "Codex 基于项目研究与列明来源完成原创综合",
+    "humanReviewRequired": false
+  },
+  "learningOutcome": "把体验词改写为玩家动作、困难条件、行为预测与适用边界。",
+  "sourceIds": [
+    "mda-framework",
+    "joe-slack-getting-to-core"
+  ],
+  "sourceUrls": [
+    "https://aaai.org/papers/ws04-04-001-mda-a-formal-approach-to-game-design-and-game-research/",
+    "https://boardgamedesigncourse.com/getting-to-the-core-of-your-game/"
+  ],
+  "publication": {
+    "visibility": "internal",
+    "status": "published-internal",
+    "rightsBasis": "本站原创综合；来源仅用于研究、归属与事实核验。"
+  },
+  "file": "content/learning-units/systematic-unit-01-experience-intent-zh-CN.md",
+  "updatedAt": "2026-08-21"
+}

@@ -1,0 +1,389 @@
+{
+  "meta": {
+    "schemaVersion": 1,
+    "productBrand": "落桌",
+    "brandDescriptor": "桌游设计馆",
+    "designSystemName": "当代桌游设计馆 Contemporary Tabletop Design Museum",
+    "extends": "TABLETOP_VISUAL_DESIGN_MANUAL_V4",
+    "version": "5.1.0-premium",
+    "date": "2026-08-23",
+    "status": "premium-implementation-authority",
+    "tokenValueSource": "this JSON file",
+    "runtimeSource": "generated CSS custom properties",
+    "distributionScope": "internal-learning-only"
+  },
+  "dials": {
+    "canonical": {
+      "designVariance": 7,
+      "motionIntensity": 4,
+      "visualDensity": 3
+    },
+    "productionCeiling": {
+      "designVariance": 7,
+      "motionIntensity": 4,
+      "visualDensity": 3
+    },
+    "templateBudgets": {
+      "home": { "designVariance": 7, "motionIntensity": 3, "visualDensity": 3 },
+      "entry": { "designVariance": 6, "motionIntensity": 3, "visualDensity": 3 },
+      "resourceCatalogue": { "designVariance": 6, "motionIntensity": 2, "visualDensity": 3 },
+      "topicDetail": { "designVariance": 6, "motionIntensity": 2, "visualDensity": 3 },
+      "completeReading": { "designVariance": 5, "motionIntensity": 1, "visualDensity": 2 },
+      "methods": { "designVariance": 7, "motionIntensity": 3, "visualDensity": 3 },
+      "guidedTool": { "designVariance": 6, "motionIntensity": 4, "visualDensity": 3 },
+      "system": { "designVariance": 4, "motionIntensity": 1, "visualDensity": 2 }
+    },
+    "viewportLimits": {
+      "primaryVisualFields": 1,
+      "editorialAccentFamilies": 1,
+      "additionalSemanticAccentFamilies": 1,
+      "prominentOutlineFamilies": 1,
+      "materialEffects": 1,
+      "primaryMotionPatterns": 1,
+      "primaryDecisions": 1
+    }
+  },
+  "color": {
+    "canvas": "#F7F8FA",
+    "canvasAlternate": "#F1F4F7",
+    "surface": "#FFFFFF",
+    "surfaceSubtle": "#F3F5F7",
+    "surfaceRaised": "#FFFFFF",
+    "surfaceInverse": "#031A2B",
+    "surfaceInverseSoft": "#10283A",
+    "ink": "#081D2D",
+    "inkInverse": "#FFFFFF",
+    "muted": "#526272",
+    "mutedInverse": "#DDE5EC",
+    "rule": "#D4DBE2",
+    "ruleStrong": "#98A6B3",
+    "primary": "#0B55C9",
+    "primaryHover": "#08449F",
+    "primaryPressed": "#063779",
+    "primarySoft": "#EAF2FF",
+    "link": "#0B55C9",
+    "linkVisited": "#334F8D",
+    "focus": "#075FCC",
+    "focusInverse": "#FFD34D",
+    "focusHalo": "#FFFFFF",
+    "danger": "#B73730",
+    "dangerHover": "#8F2924",
+    "dangerSoft": "#FBECEB",
+    "warning": "#E5B323",
+    "warningInk": "#081D2D",
+    "warningSoft": "#FFF6D8",
+    "success": "#176A47",
+    "successHover": "#105137",
+    "successSoft": "#E8F4EE",
+    "info": "#0B55C9",
+    "infoSoft": "#EAF2FF",
+    "contrastPairsVerified": {
+      "inkOnCanvas": 16.15,
+      "mutedOnCanvas": 5.9,
+      "inverseOnPrimary": 6.65,
+      "inverseOnPrimaryHover": 8.98,
+      "inverseOnDanger": 5.83,
+      "inkOnWarning": 8.83,
+      "inverseOnSuccess": 6.59,
+      "focusOnCanvas": 5.62,
+      "focusInverseOnHeader": 12.37
+    },
+    "semanticRestriction": {
+      "red": "danger-conflict-stop-only",
+      "yellow": "warning-preparation-attention-only",
+      "green": "success-complete-verified-only",
+      "categoryIdentityColor": "primary-or-neutral-only"
+    }
+  },
+  "typography": {
+    "families": {
+      "ui": "\"Noto Sans CJK SC\", \"Source Han Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+      "display": "\"Noto Sans CJK SC\", \"Source Han Sans SC\", \"PingFang SC\", \"Microsoft YaHei\", system-ui, sans-serif",
+      "editorial": "\"Noto Serif CJK SC\", \"Source Han Serif SC\", STSong, SimSun, serif",
+      "numeral": "\"Noto Serif\", \"Source Serif 4\", Georgia, serif"
+    },
+    "roles": {
+      "heroDisplay": {
+        "desktop": { "minPx": 64, "maxPx": 82 },
+        "mobile": { "minPx": 42, "maxPx": 54 },
+        "lineHeight": 1.04,
+        "weight": 800,
+        "family": "display"
+      },
+      "pageH1": {
+        "desktop": { "minPx": 44, "maxPx": 60 },
+        "mobile": { "minPx": 34, "maxPx": 43 },
+        "lineHeight": 1.1,
+        "weight": 800,
+        "family": "display"
+      },
+      "editorialH1": {
+        "desktop": { "minPx": 46, "maxPx": 64 },
+        "mobile": { "minPx": 35, "maxPx": 44 },
+        "lineHeight": 1.16,
+        "weight": 700,
+        "family": "editorial"
+      },
+      "h2": {
+        "desktop": { "minPx": 28, "maxPx": 36 },
+        "mobile": { "minPx": 26, "maxPx": 31 },
+        "lineHeight": 1.24,
+        "weight": 700,
+        "family": "display"
+      },
+      "h3": {
+        "desktop": { "minPx": 21, "maxPx": 26 },
+        "mobile": { "minPx": 20, "maxPx": 23 },
+        "lineHeight": 1.34,
+        "weight": 700,
+        "family": "ui"
+      },
+      "body": {
+        "desktop": { "minPx": 17, "preferredPx": 17 },
+        "mobile": { "minPx": 16, "preferredPx": 17 },
+        "lineHeight": 1.7,
+        "weight": 400,
+        "family": "ui"
+      },
+      "reading": {
+        "desktop": { "minPx": 18, "preferredPx": 18 },
+        "mobile": { "minPx": 17, "preferredPx": 17 },
+        "lineHeight": 1.86,
+        "weight": 400,
+        "family": "ui"
+      },
+      "label": {
+        "desktop": { "minPx": 16, "preferredPx": 16 },
+        "mobile": { "minPx": 15, "preferredPx": 16 },
+        "lineHeight": 1.45,
+        "weight": 600,
+        "family": "ui"
+      },
+      "caption": {
+        "desktop": { "minPx": 14, "preferredPx": 14 },
+        "mobile": { "minPx": 14, "preferredPx": 14 },
+        "lineHeight": 1.5,
+        "weight": 500,
+        "family": "ui"
+      },
+      "eyebrow": {
+        "desktop": { "minPx": 14, "preferredPx": 14 },
+        "mobile": { "minPx": 14, "preferredPx": 14 },
+        "lineHeight": 1.4,
+        "weight": 700,
+        "family": "ui"
+      },
+      "indexNumeral": {
+        "desktop": { "minPx": 24, "maxPx": 32 },
+        "mobile": { "minPx": 22, "maxPx": 28 },
+        "lineHeight": 1,
+        "weight": 500,
+        "family": "numeral"
+      }
+    },
+    "readingMeasure": {
+      "minimumChineseCharacters": 30,
+      "maximumChineseCharacters": 42,
+      "maximumPx": 720
+    }
+  },
+  "spacePx": {
+    "1": 4,
+    "2": 8,
+    "3": 12,
+    "4": 16,
+    "5": 20,
+    "6": 24,
+    "7": 28,
+    "8": 32,
+    "10": 40,
+    "12": 48,
+    "16": 64,
+    "20": 80,
+    "24": 96
+  },
+  "radius": {
+    "nonePx": 0,
+    "controlPx": 2,
+    "panelPx": 4,
+    "overlayPx": 8,
+    "circle": "50%",
+    "circleConstraint": "equal-width-and-height-elements-only",
+    "cutCornerAllowed": false
+  },
+  "border": {
+    "hairlinePx": 1,
+    "emphasisPx": 2,
+    "focusPx": 3,
+    "focusOffsetPx": 3,
+    "activeRailPx": 4,
+    "maximumDecorativeBorderPx": 1
+  },
+  "depth": {
+    "defaultLevel": 0,
+    "maximumPageLevel": 2,
+    "maximumRaisedRegionsPerViewport": 1,
+    "level0": "canvas-or-surface-no-shadow",
+    "level1": "one-pixel-border-or-alternate-surface",
+    "level2": "mounted-media-workbench-or-overlay-only"
+  },
+  "shadow": {
+    "default": "none",
+    "mounted": "0 1px 2px rgba(8, 29, 45, 0.08), 0 10px 28px rgba(8, 29, 45, 0.06)",
+    "workbench": "0 16px 40px rgba(8, 29, 45, 0.12)",
+    "overlay": "0 18px 48px rgba(8, 29, 45, 0.18)",
+    "hardShadowAllowed": false
+  },
+  "graphic": {
+    "brandMarkDesktopPx": 38,
+    "brandMarkMobilePx": 30,
+    "brandMarkHiddenBelowPx": 360,
+    "indexNumeralDesktopPx": 32,
+    "indexNumeralMobilePx": 28,
+    "activeRailPx": 4,
+    "semanticSpinePx": 8,
+    "routeNodePx": 8,
+    "routeNodeCurrentPx": 12,
+    "arrowOpticalPx": 22,
+    "arrowStrokePx": 1.5,
+    "opticalAlignmentTolerancePx": 1
+  },
+  "motionMs": {
+    "instant": 0,
+    "fast": 120,
+    "standard": 160,
+    "selection": 180,
+    "disclosure": 200,
+    "overlay": 240,
+    "maximumNonEssential": 240
+  },
+  "layout": {
+    "contentWidthPx": {
+      "home": 1400,
+      "resourceCatalogue": 1320,
+      "resourceDetail": 1120,
+      "readingShell": 1160,
+      "readingText": 720,
+      "methods": 1400,
+      "tool": 1360,
+      "system": 960
+    },
+    "pageGutterPx": {
+      "wide": 48,
+      "medium": 32,
+      "narrow": 20,
+      "minimum": 16
+    },
+    "headerPx": {
+      "desktopMinimumHeight": 72,
+      "mobileMinimumHeight": 108
+    },
+    "readingRailPx": {
+      "wide": 208,
+      "medium": 168,
+      "wideGap": 48,
+      "mediumGap": 32
+    },
+    "toolRailPx": {
+      "steps": 208,
+      "context": 300,
+      "gap": 32
+    },
+    "galleryPx": {
+      "desktopMinimumWidth": 560,
+      "desktopMaximumWidth": 680,
+      "columnGap": 24,
+      "rowGap": 24,
+      "mobileRowGap": 20
+    }
+  },
+  "breakpointPx": {
+    "wideWorkspace": 1280,
+    "wideReading": 1180,
+    "twoColumnCollapse": 960,
+    "singleColumn": 720,
+    "narrow": 480
+  },
+  "interaction": {
+    "minimumTargetPx": 44,
+    "preferredPrimaryTargetPx": 48,
+    "minimumTextContrast": 4.5,
+    "minimumLargeTextContrast": 3,
+    "minimumNonTextContrast": 3,
+    "maximumTranslationPx": 2,
+    "maximumScale": 1,
+    "hoverMayMoveLayout": false,
+    "colorMayBeOnlySignal": false,
+    "criticalContentMayRequireHover": false,
+    "maximumUngroupedChoices": 3
+  },
+  "texture": {
+    "paperOpacityMaximum": 0,
+    "halftoneOpacityMaximum": 0,
+    "registrationOffsetMaximumPx": 0,
+    "woodGrainAllowed": false,
+    "feltAllowed": false,
+    "tapeAllowed": false,
+    "decorativeGradientAllowed": false,
+    "imageScrimGradientAllowed": false
+  },
+  "photography": {
+    "homepageMaximumSpecimens": 4,
+    "articleViewportMaximumSpecimens": 1,
+    "framePx": 1,
+    "matDesktopPx": 12,
+    "matMobilePx": 8,
+    "captionGapPx": 8,
+    "captionMinimumPx": 14,
+    "maximumRotationDeg": 0,
+    "textOverlayAllowed": false,
+    "defaultFilter": "none",
+    "allowedAspectRatios": ["1 / 1", "4 / 5", "3 / 2"],
+    "mixedAspectRatiosWithinOneGrid": false
+  },
+  "assetPolicy": {
+    "approvalStates": [
+      "build-approved",
+      "internal-reference-only",
+      "original-derived-language"
+    ],
+    "publicReleaseRequiresReaudit": true,
+    "hotlinkAllowed": false,
+    "sourceRecordRequired": true,
+    "licenseRecordRequired": true,
+    "changesRecordRequired": true,
+    "altTextRequiredWhenInformative": true,
+    "thirdPartyAssetMayBeBrandMark": false,
+    "thirdPartyAssetMayBeControlSkin": false,
+    "conceptImageMayShip": false
+  },
+  "component": {
+    "indexedEntry": {
+      "minimumHeightPx": 88,
+      "borderPx": 1,
+      "activeRailPx": 4,
+      "maximumTranslationPx": 2
+    },
+    "resourceRow": {
+      "minimumHeightPx": 80,
+      "borderPx": 1,
+      "semanticSpinePx": 8,
+      "featuredImageMinimumPx": 80,
+      "featuredImageMaximumPx": 112
+    },
+    "stageIndex": {
+      "desktopMinimumHeightPx": 104,
+      "mobileMinimumHeightPx": 64,
+      "currentBorderPx": 2
+    },
+    "readingCallout": {
+      "borderPx": 1,
+      "semanticSpinePx": 6
+    },
+    "toolWorkspace": {
+      "borderPx": 1,
+      "maximumRaisedRegions": 1,
+      "minimumFieldHeightPx": 44
+    }
+  }
+}

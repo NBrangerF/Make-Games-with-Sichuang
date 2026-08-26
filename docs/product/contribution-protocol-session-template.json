@@ -1,0 +1,76 @@
+{
+  "schemaVersion": 1,
+  "method": "contribution-protocol-formative-session",
+  "noAggregateScore": true,
+  "notLegalOrEthicsValidation": true,
+  "session": {
+    "sessionId": "",
+    "date": "",
+    "protocolVersion": "contribution-package-v1",
+    "facilitatorAlias": "",
+    "consentRecorded": false,
+    "recordingMode": "anonymous_notes_only"
+  },
+  "participant": {
+    "participantAlias": "",
+    "perspective": "",
+    "preferredCommunicationMode": "",
+    "accessAdjustmentsChosenByParticipant": []
+  },
+  "tasks": [
+    {
+      "id": "C1",
+      "name": "separate_participation_storage_publication_and_license",
+      "participantExplanation": "",
+      "firstMisunderstanding": "",
+      "facilitatorPrompt": "",
+      "completedWithoutAnswerPrompt": null
+    },
+    {
+      "id": "C2",
+      "name": "find_and_review_final_public_copy",
+      "participantExplanation": "",
+      "firstMisunderstanding": "",
+      "facilitatorPrompt": "",
+      "completedWithoutAnswerPrompt": null
+    },
+    {
+      "id": "C3",
+      "name": "choose_identity_and_contributor_roles",
+      "participantExplanation": "",
+      "firstMisunderstanding": "",
+      "facilitatorPrompt": "",
+      "completedWithoutAnswerPrompt": null
+    },
+    {
+      "id": "C4",
+      "name": "explain_withdrawal_before_and_after_publication",
+      "participantExplanation": "",
+      "firstMisunderstanding": "",
+      "facilitatorPrompt": "",
+      "completedWithoutAnswerPrompt": null
+    },
+    {
+      "id": "C5",
+      "name": "reject_default_open_license_and_identify_irrevocability",
+      "participantExplanation": "",
+      "firstMisunderstanding": "",
+      "facilitatorPrompt": "",
+      "completedWithoutAnswerPrompt": null
+    }
+  ],
+  "safetyAndPrivacy": {
+    "participantStoppedOrSkipped": false,
+    "reasonIfVolunteered": "",
+    "sensitiveDetailsOmitted": true,
+    "deletionRequested": false,
+    "deletionCompleted": false
+  },
+  "revision": {
+    "firstUnsafeOrConfusingDefault": "",
+    "fieldsToSplit": [],
+    "fieldsToRemove": [],
+    "formatsOrSupportsRequested": [],
+    "nextProtocolChange": ""
+  }
+}

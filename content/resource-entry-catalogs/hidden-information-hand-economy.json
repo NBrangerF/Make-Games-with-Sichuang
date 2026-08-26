@@ -1,0 +1,382 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "hidden-information-hand-economy",
+    "title": "设计隐藏信息、手牌经济、线索与质疑",
+    "question": "首轮只能乱猜、玩家不知道能说什么、质疑没有理由、总靠完美记忆或辅助会泄密；我该改秘密数量、线索、手牌、沟通还是验证？",
+    "outcome": "先写谁在何时知道什么、信息何时过期以及收到后能做什么；再追踪一张牌的生命周期，补全线索、沟通、宣称、质疑、验证、记忆和辅助协议。",
+    "resourceIds": [
+      "hanabi-hidden-hand-rules",
+      "crew-limited-communication-rules",
+      "bohnanza-hand-order-rules",
+      "coup-claim-challenge-rules",
+      "daniel-information-overload",
+      "brian-bluffing-incentives",
+      "wiseman-social-deduction-data",
+      "hanabi-accessibility"
+    ],
+    "evidenceBoundary": "组合正式规则、设计师实践、相邻研究、无障碍长评和玩家症状；它们支持把信息和手牌写成带时点的生命周期、保留可区分的替代解释、补全沟通/质疑/验证、处理记忆与辅助泄密并用任务测试，不提供最佳手牌、秘密、线索、通信、质疑、撒谎或记忆参数。"
+  },
+  "resources": [
+    {
+      "id": "hanabi-hidden-hand-rules",
+      "title": "The Rules of Hanabi",
+      "creator": "Antoine Bauza / R&R Games leaflet transcription",
+      "href": "https://github.com/hanabi/hanabi.github.io/blob/main/misc/rules.md",
+      "type": "反向手牌、完整线索集合、线索成本、弃牌与补牌规则",
+      "evidenceType": "official_or_rules_reference",
+      "format": "web",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "规则与信息",
+        "测试与反馈"
+      ],
+      "useful": "逐步展示自己不能看牌、他人可见、线索必须指全同色/同值牌、线索标记支出与弃牌恢复。",
+      "limitation": "由社区仓库转录美国版官方说明；不同版本的沟通措辞可能不同，不能给最佳线索量。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "crew-limited-communication-rules",
+      "title": "The Crew: The Quest for Planet Nine Manual",
+      "creator": "Thomas Sing / Thames & Kosmos",
+      "href": "https://www.thamesandkosmos.com/manuals/full/691868_Crew_Manual.pdf",
+      "type": "限次通信、最高/唯一/最低信息、提醒牌与旧陈述正式规则",
+      "evidenceType": "official_or_rules_reference",
+      "format": "pdf",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "规则与信息",
+        "测试与反馈"
+      ],
+      "useful": "完整规定每任务一次、通信窗口、可公开牌、标记位置、不随状态更新和手牌提醒卡。",
+      "limitation": "完整商业游戏规则不能证明限制沟通普遍改善合作或给最佳次数。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "bohnanza-hand-order-rules",
+      "title": "Bohnanza Rule Booklet",
+      "creator": "Uwe Rosenberg / Lookout Games",
+      "href": "https://www.lookout-spiele.de/wp-content/uploads/fan-bohnanza-en.pdf",
+      "type": "固定手牌顺序、牌首强制、交易抽离、种植与终局残值规则",
+      "evidenceType": "official_or_rules_reference",
+      "format": "pdf",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "规则与信息",
+        "测试与反馈"
+      ],
+      "useful": "展示手牌位置怎样成为资源：不可重排、交易接受后才抽离、收到牌不入手并必须种植。",
+      "limitation": "旧版完整规则不能给通用手牌数、交易密度或顺序限制参数。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "coup-claim-challenge-rules",
+      "title": "Coup Rulebook",
+      "creator": "Rikki Tahta / rulebook mirror",
+      "href": "https://artofthegame.github.io/coup/rulebook.pdf",
+      "type": "秘密影响、公开声明、阻挡、挑战、证明、替换与永久揭示规则",
+      "evidenceType": "official_or_rules_reference",
+      "format": "pdf",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "规则与信息",
+        "测试与反馈"
+      ],
+      "useful": "把诈唬写成可执行的声明—阻挡—挑战—证明—替换/损失生命周期。",
+      "limitation": "单页规则镜像并非出版方当前权威版本，不能证明最佳挑战成本、角色数或淘汰结构。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "daniel-information-overload",
+      "title": "Information Overload",
+      "creator": "Daniel Thurot / daniel.games",
+      "href": "https://daniel.games/information-overload/",
+      "type": "手牌与公共信息量、渐进信息、分组和布局设计实践",
+      "evidenceType": "first_party_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "把一手多文字牌、合作中读取队友牌和公共地点过多拆成不同信息解析负担，并给个人修订案例。",
+      "limitation": "个人规范性建议没有对照实验、文字行数、图标数或信息阈值。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "brian-bluffing-incentives",
+      "title": "On Bluffing Games",
+      "creator": "Brian Hamrick",
+      "href": "https://brianhamrick.com/blog/bluffing-games",
+      "type": "信息累积、声明距离与诚实/说谎/挑战激励设计文章",
+      "evidenceType": "first_party_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "比较两个标准牌诈唬案例，说明规则微差和已知牌累积怎样让说谎从可行策略变成被迫或不可能。",
+      "limitation": "两个规则案例和作者评价不能代表所有诈唬游戏或给目标诈唬率。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "wiseman-social-deduction-data",
+      "title": "What Data do Players Rely on in Social Deduction Games?",
+      "creator": "Sarah Wiseman et al. / CHI PLAY 2019",
+      "href": "https://research.gold.ac.uk/27015/1/AxelRodChiPlayCameraReady.pdf",
+      "type": "社交推理信息使用研究",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "在四场、三十三名不同玩家的应用辅助社会困境游戏中，观察玩家更常依赖当下谈话与自己经历的历史，而非界面提供的客观事实。",
+      "limitation": "仅一个应用辅助迭代囚徒困境设置，且十一人重复参加；不能代表所有社交推理、说谎或实体桌游。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-17"
+    },
+    {
+      "id": "hanabi-accessibility",
+      "title": "Hanabi Accessibility Teardown",
+      "creator": "Michael Heron / Meeple Like Us",
+      "href": "https://www.meeplelikeus.co.uk/hanabi-2010-accessibility-teardown/",
+      "type": "反向手牌、远距读取、线索记忆、协助泄露与替补无障碍长评",
+      "evidenceType": "expert_review",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "规则与信息",
+        "测试与反馈",
+        "呈现与发布"
+      ],
+      "useful": "具体展示近看/传牌怎样泄露核心信息、线索记忆怎样不可恢复，以及中途替补为何困难。",
+      "limitation": "单一评者、版本和强烈个人判断不代表残障玩家总体，替代方案仍需共创验证。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "hanabi-hidden-hand-rules",
+      "useModes": [
+        "learn",
+        "compare",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "拆解不可见自己的手牌、完整指示、信息标记与弃牌恢复的联动。",
+      "doNotUseFor": "不能由单一成品规则推出普适的合作信息量或记忆负荷。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "crew-limited-communication-rules",
+      "useModes": [
+        "learn",
+        "compare",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "比较限次通信的窗口、合法内容、持久标记与状态过期。",
+      "doNotUseFor": "不能证明全程沉默更有趣，任务与版本仍会改变体验。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "bohnanza-hand-order-rules",
+      "useModes": [
+        "learn",
+        "compare",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "观察固定手牌顺序如何成为行动约束、交易压力与未来承诺。",
+      "doNotUseFor": "不能把固定顺序直接移植到所有手牌游戏。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "coup-claim-challenge-rules",
+      "useModes": [
+        "learn",
+        "compare",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "拆解私人身份、公开宣称、阻挡、质疑、验证与永久揭示。",
+      "doNotUseFor": "不能由规则文本推断玩家实际撒谎率或风险偏好。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "daniel-information-overload",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "诊断手牌分支过多、队友理解成本和信息分组、简化与颜色编码。",
+      "doNotUseFor": "个人设计评论不是认知负荷实验或固定阈值。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "brian-bluffing-incentives",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "比较已知信息、说谎空间、被迫说谎和质疑激励之间的关系。",
+      "doNotUseFor": "设计师比较不是受控研究，结论需在具体原型复现。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "wiseman-social-deduction-data",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "narrow",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "提醒社交推理测试同时记录当前谈话、亲历历史与界面事实被怎样使用。",
+      "doNotUseFor": "不要从一个应用辅助囚徒困境实验概括所有社交推理玩家。",
+      "reviewedAt": "2026-08-17",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "hanabi-accessibility",
+      "useModes": [
+        "diagnose",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "reusable_license_verified",
+      "commercialContext": "none_disclosed",
+      "bestFor": "检查记忆要求、近距离辨认、代操作和辅助过程是否泄露秘密信息。",
+      "doNotUseFor": "单一长评不能替代与目标玩家共同测试。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    }
+  ]
+}

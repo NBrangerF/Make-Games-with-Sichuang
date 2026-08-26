@@ -1,0 +1,384 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "randomness-and-uncertainty",
+    "title": "诊断随机性、运气与可控不确定性",
+    "question": "玩家说原型太看运气或没有控制；我该减少骰子、改成抽牌、加重掷、公开概率，还是保留这种张力？",
+    "outcome": "先画决定—随机—回应循环，再写风险暴露与缓解动作；把随机源对结果的贡献、决定是否改变和玩家如何归因分轨验证。",
+    "resourceIds": [
+      "daniel-randomness",
+      "shalev-random-loops",
+      "goodman-skill-stochasticity",
+      "zhang-input-output-randomness",
+      "ernest-volatility-game-design",
+      "with-smile-gun-randomness-diary",
+      "takeover-randomness-diary",
+      "spots-randomness-player-review"
+    ],
+    "evidenceBoundary": "组合桌游结果计算、小样本数字卡牌实验、相邻归因研究、设计师理论/讲义、商业项目日志与单一玩家长评；它们支持提出时点、暴露、回应、缓解和归因问题，不提供最佳随机度、输入优于输出、通用重掷次数、可接受失败率、策略深度或玩家偏好比例。"
+  },
+  "resources": [
+    {
+      "id": "daniel-randomness",
+      "title": "Randomness",
+      "creator": "Daniel Piechnick",
+      "href": "https://daniel.games/randomness/",
+      "type": "桌游随机性设计师实践",
+      "evidenceType": "designer_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "区分随机性与更广义不确定性、输入与输出时点，并用 Radlands 原型说明如何把严格失败改成退款与状态转换，使较弱结果仍产生后续决定。",
+      "limitation": "作者强烈偏好输入随机，例子来自个人设计判断且没有比较样本；不能证明输出随机普遍较差、随机源越少越好或失败补偿一定提升体验。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "shalev-random-loops",
+      "title": "Design Patterns: Random Loops",
+      "creator": "Isaac Shalev / Kind Fortress",
+      "href": "https://www.kindfortress.com/2018/10/03/design-patterns-random-loops/",
+      "type": "随机循环设计实践",
+      "evidenceType": "designer_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "把输入/输出随机改写成连续循环：上一次随机输出会成为下一次决定的输入，并用 Risk 与 Carcassonne 说明随机事件到玩家回应之间的距离会改变体验。",
+      "limitation": "属于设计师概念综合，没有真人实验或穷尽分类；顺时针、逆时针与 high noon 是作者提出的启发式术语，不能作为质量分或固定时长阈值。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "goodman-skill-stochasticity",
+      "title": "Seeding for Success: Skill and Stochasticity in Tabletop Games",
+      "creator": "James Goodman, Diego Perez-Liebana, Simon Lucas",
+      "href": "https://arxiv.org/abs/2503.02686",
+      "type": "桌游结果随机性计算研究",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "扩展 2024 IEEE 工作，以固定随机种子和不同 MCTS 预算比较 15 款桌游，拆分设置、牌库和骰子对代理胜率的贡献，并展示商业原型中的修订用途。",
+      "limitation": "只测已实现规则、同能力计算代理和选定结果指标；代理质量会改变结论，且论文不测实体操作、目标玩家的公平感、乐趣、理解或结果归因。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "zhang-input-output-randomness",
+      "title": "Effect of Input-output Randomness on Gameplay Satisfaction in Collectable Card Games",
+      "creator": "Yiwen Zhang et al.",
+      "href": "https://arxiv.org/abs/2107.08437",
+      "type": "输入输出随机体验实验",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "18 名大学生分四天体验自制数字卡牌的四种随机条件；额外未知输入牌降低总体满意度，而输出随机未显示显著主效应，提供分类并非质量裁决的实证反例。",
+      "limitation": "样本小、单一中国大学、线上数字原型、对手为 AI，且极端条件把‘输入随机’实现为构筑外 mystery cards；作者也承认研究可能功效不足，不能外推实体、多人与中间强度。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "ernest-volatility-game-design",
+      "title": "Volatility in Game Design: Lecture Notes from Gen Con 2012",
+      "creator": "James Ernest",
+      "href": "https://www.crabfragmentlabs.com/s/Volatility-in-Game-Design.pdf",
+      "type": "桌游波动性讲义",
+      "evidenceType": "designer_practice",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "把 aptitude、play 与 luck 分开，并提出让玩家在稳定路线与高波动路线间选择的 Crazy Train 框架，帮助检查暴露是否可选及随机是否压过行动。",
+      "limitation": "2012 年会议讲义，以作者分类、估算和案例为主；fair、biased、cosmetic 等术语不是统一标准，也不能推出家庭玩家或重度玩家的普遍偏好。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "with-smile-gun-randomness-diary",
+      "title": "Designer Diary #1: The Spark",
+      "creator": "Subsurface Games",
+      "href": "https://subsurfacegames.ca/2020/07/17/designer-diary-1-the-spark/",
+      "type": "共享骰池商业设计日志",
+      "evidenceType": "first_party_practice",
+      "format": "designer_diary",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "记录如何把随机骰值放入共享选择池，让选骰同时决定移动与阻断；行列访问和高骰代价又限制一次 hate draft 直接毁局。",
+      "limitation": "单一成功项目的回顾性叙述，没有公开对照版本、测试人数或失败率；不能证明共享骰池总能增加能动性或该保护结构适合多人游戏。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "takeover-randomness-diary",
+      "title": "Designer Diary: Takeover, or How I Stopped Hating Ladder Climbers",
+      "creator": "Ron Sierra / FinalFinal Games",
+      "href": "https://boardgamegeek.com/blog/1/blogpost/171928/designer-diary-takeover-or-how-i-stopped-hating-la",
+      "type": "随机效果修订商业设计日志",
+      "evidenceType": "first_party_practice",
+      "format": "designer_diary",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "记录开放结构叠加 RNG-heavy 行动让测试者觉得决定不重要，团队随后提高行动可靠性、固定每轮四组牌并恢复跟牌限制与单牌能力。",
+      "limitation": "回顾性商业日志没有样本、版本表或单变量对照，多个结构同时改变；不能把改善归因于减少 RNG，也不能证明传统爬梯约束普遍更好。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "spots-randomness-player-review",
+      "title": "Spots Review",
+      "creator": "Shelf Gamer",
+      "href": "https://shelfgamer.com/reviews/spots/",
+      "type": "玩家随机性与止损长评",
+      "evidenceType": "player_account",
+      "format": "review",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "具体区分储备 Treat、全体重掷、选择性重掷、掷后弃选与强制抽牌，并把惩罚阈值、前进—爆掉循环和终局疲惫连接到单一玩家体验。",
+      "limitation": "单一评者的主观长评，未公开局次、人数、版本和完整能力组合；不能代表 Spots 玩家、证明某种缓解无效或给出可接受爆掉概率。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "daniel-randomness",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "生成随机以外的不确定性方案，并检查较弱随机结果是否仍提供可用状态、退款或下一决定。",
+      "doNotUseFor": "不要把作者偏好变成输入优于输出的规则，也不要从 Radlands 单例推出通用补偿或随机源上限。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "shalev-random-loops",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "broad",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "把一次随机事件前后的决定连成循环，观察玩家有多远、多长和多少机会回应。",
+      "doNotUseFor": "不要把作者的顺/逆时针术语当标准分类、质量分或策略深度证明。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "goodman-skill-stochasticity",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare",
+        "lookup"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "用固定随机种子/序列比较代理结果并拆开多个随机源，定位哪一部分值得进一步真人复核。",
+      "doNotUseFor": "不要把代理胜率方差当玩家体验、质量或公平分；代理、指标、对局结构与设计目标都必须显式说明。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "zhang-input-output-randomness",
+      "useModes": [
+        "learn",
+        "compare",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "narrow",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "作为输入/输出分类不是质量裁决的实证反例，并学习报告样本、条件实现、效应与限制。",
+      "doNotUseFor": "不要把 18 人数字卡牌结果外推所有桌游，也不要忽略输入随机实际被操作成构筑外未知牌。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "ernest-volatility-game-design",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "分开玩家带来的能力、局内选择与不可控因素，并检查高波动路线是否真由玩家选择承担。",
+      "doNotUseFor": "不要把 fair/biased/cosmetic 当统一术语或把作者关于受众的判断当代表性研究。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "with-smile-gun-randomness-diary",
+      "useModes": [
+        "diagnose",
+        "compare",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "观察随机结果如何经公开选择、对手阻断和替代访问变成共享决定空间。",
+      "doNotUseFor": "不要从单一日志认定骰草拟必然比掷骰好，也不要移植行列保护而不验证其阻断成本。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "takeover-randomness-diary",
+      "useModes": [
+        "diagnose",
+        "compare",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "partial",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "示范当玩家报告决定不重要时，如何同时检查效果可靠性、轮结构、限制和信息可推断性。",
+      "doNotUseFor": "多个变量一起改变且没有对照；不要把结果改善单独归因于降低 RNG 或恢复传统规则。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "spots-randomness-player-review",
+      "useModes": [
+        "diagnose",
+        "compare",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "partial",
+      "actionability": "diagnostic",
+      "transferability": "narrow",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "unknown",
+      "bestFor": "发现重掷、择一、储备保险、强制抽取、爆掉阈值和重复失去进度可能造成的不同体验症状。",
+      "doNotUseFor": "单一评者不代表总体；不要把其‘不是真缓解’判断或接受阈值变成站点规则。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    }
+  ]
+}

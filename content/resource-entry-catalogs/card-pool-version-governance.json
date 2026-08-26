@@ -1,0 +1,368 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "card-pool-version-governance",
+    "title": "维护稀有度、扩展兼容、勘误与长期卡池",
+    "question": "我要增加扩展、第二版、勘误、禁限或轮替，但不知道怎样写兼容，哪份卡文算当前，旧版玩家需要做什么，以及组合太多时该测哪些。",
+    "outcome": "先给内容建立稳定护照和稀有度五字段，再画带证据状态的兼容矩阵；指定当前事实源和变更分类，排出生效/复查/回退时间线，并让旧版玩家完成一次配置回归与迁移任务。",
+    "resourceIds": [
+      "magic-new-world-order",
+      "magic-play-booster-skeleton",
+      "arkham-faq-v25",
+      "netrunner-current-rules-hub",
+      "netrunner-elevation-rotation",
+      "spirit-island-errata-pack",
+      "power-creep-conservative-metric",
+      "nist-combinatorial-testing"
+    ],
+    "evidenceBoundary": "组合持续卡牌游戏的官方设计与维护、实体升级包、同行评审研究和软件配置测试相邻方法；它们支持拆开稀有度字段、版本化兼容、当前文本事实源、变更分类、治理日期、风险回归和实体迁移劳动，不提供最佳稀有度、扩展数量、轮替周期、禁限阈值、测试样本、价格或兼容年限。"
+  },
+  "resources": [
+    {
+      "id": "magic-new-world-order",
+      "title": "New World Order",
+      "creator": "Mark Rosewater / Wizards of the Coast",
+      "href": "https://magic.wizards.com/en/news/making-magic/new-world-order-2011-12-05",
+      "type": "稀有度与复杂度预算的官方设计师长文",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "区分理解、桌面和战略复杂度，并观察稀有度怎样重新分配学习负担。",
+      "limitation": "面向万智牌补充包生态；不能推出高稀有度应更强或所有桌游都应隐藏复杂度。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "magic-play-booster-skeleton",
+      "title": "Nuts & Bolts #16: Play Boosters",
+      "creator": "Mark Rosewater / Wizards of the Coast",
+      "href": "https://magic.wizards.com/en/news/making-magic/nuts-and-bolts-16-play-boosters",
+      "type": "补充包槽位、as-fan 与套装骨架说明",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "把稀有度张数、每包出现频率、解牌与威胁密度连接到环境骨架。",
+      "limitation": "具体槽位和张数服务万智牌 Limited，不能直接移植到固定套装游戏。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "arkham-faq-v25",
+      "title": "Arkham Horror: The Card Game FAQ v2.5 — The Legacy Edition",
+      "creator": "Fantasy Flight Games",
+      "href": "https://images-cdn.fantasyflightgames.com/filer_public/c1/d0/c1d0fab6-7fa6-4ce2-af6a-16416381a19b/ahc_faq_v25_february_2026-web.pdf",
+      "type": "当前勘误、FAQ、Taboo 与游戏环境补充文件",
+      "evidenceType": "official_documentation",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "规则与信息",
+        "测试与反馈",
+        "呈现与发布"
+      ],
+      "useful": "比较勘误、澄清、可选平衡表及 Current/Legacy/Limited 卡池分流。",
+      "limitation": "30 页持续更新文件；引用必须绑定 v2.5，且可选 Taboo 不能写成强制规则。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "netrunner-current-rules-hub",
+      "title": "Netrunner Comprehensive Rules Hub",
+      "creator": "Null Signal Games Rules Team",
+      "href": "https://nullsignal.games/rules/comp-rules/",
+      "type": "当前规则、变更高亮、网页版本与历史归档中心",
+      "evidenceType": "official_documentation",
+      "format": "reference",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "设计当前规则、当前卡文、主要变化和历史版本的单一事实源链。",
+      "limitation": "入口会继续更新；引用具体规则时仍应保存版本号与访问日期。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "netrunner-elevation-rotation",
+      "title": "Everything You Need to Know About Elevation",
+      "creator": "Null Signal Games",
+      "href": "https://nullsignal.games/blog/everything-you-need-to-know-about-elevation/",
+      "type": "发布、可得性、赛事合法、轮替与重印合法性说明",
+      "evidenceType": "official_documentation",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "分开产品发布、竞技合法、地区/语言可得性和完整格式合法表。",
+      "limitation": "文章记录 2025 当时状态；合法卡池必须回到当前赛制页面核验。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "spirit-island-errata-pack",
+      "title": "Spirit Island: Errata Pack 1",
+      "creator": "Greater Than Games",
+      "href": "https://shop.greaterthangames.com/products/spirit-island-errata-pack-1",
+      "type": "限定印次与扩展的实体勘误包",
+      "evidenceType": "official_product_page",
+      "format": "tool",
+      "access": "paid",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "学习怎样写印次识别、覆盖范围、后续印次已修和未覆盖事项。",
+      "limitation": "商品库存与价格会变化；替换包只覆盖页面列明的印次和部分勘误。",
+      "status": "article_level",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "power-creep-conservative-metric",
+      "title": "A Conservative Metric of Power Creep",
+      "creator": "Daniel Sumner Magruder",
+      "href": "https://doi.org/10.1177/15554120211050812",
+      "type": "集换式卡牌力量膨胀的同行评审保守指标",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "把严格更优作为可计算下限，并审视格式、卡池与指标盲区。",
+      "limitation": "指标故意保守，不覆盖玩家感知、组合上限、禁牌、赛制与多种 upside。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "nist-combinatorial-testing",
+      "title": "Combinatorial Testing",
+      "creator": "D. Richard Kuhn, Raghu Kacker & Yu Lei / NIST",
+      "href": "https://www.nist.gov/publications/combinatorial-testing",
+      "type": "配置交互覆盖与 covering array 的软件工程参考",
+      "evidenceType": "adjacent_research",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "当扩展、人数和版本组合不可穷举时，借用组合覆盖安排回归样本。",
+      "limitation": "软件验证方法不能证明桌游体验缺陷遵循相同分布或两两覆盖已充分。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-20"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "magic-new-world-order",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "把稀有度、初学者接触概率与不同类型复杂度拆开审计。",
+      "doNotUseFor": "不能证明高稀有度应更强或复制万智牌稀有度结构。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "magic-play-booster-skeleton",
+      "useModes": [
+        "learn",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "建立套装骨架并检查槽位、稀有度与实际出现频率如何联动。",
+      "doNotUseFor": "不要移植具体张数、颜色结构或 Limited 答案密度。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "arkham-faq-v25",
+      "useModes": [
+        "lookup",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "比较版本化 FAQ、勘误、可选 Taboo 和三种卡池环境。",
+      "doNotUseFor": "不要省略 v2.5 或把可选 Taboo 写成强制规则。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "netrunner-current-rules-hub",
+      "useModes": [
+        "lookup",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "directory",
+      "transferability": "broad",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "设计当前规则、变更高亮、当前卡文和历史归档的事实源链。",
+      "doNotUseFor": "引用具体裁决时仍需保存规则版本和访问日期。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "netrunner-elevation-rotation",
+      "useModes": [
+        "lookup",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "把发售、获取、语言、竞技合法、轮替和重印合法性分开。",
+      "doNotUseFor": "历史文章中的合法表不能代替当前赛制页面。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "spirit-island-errata-pack",
+      "useModes": [
+        "lookup",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "写具体印次、所需扩展、已修后续印次和未覆盖事项。",
+      "doNotUseFor": "不要假定库存、价格、全球可得或覆盖全部勘误。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "power-creep-conservative-metric",
+      "useModes": [
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "narrow",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "把严格更优指标当力量膨胀下限，并保留格式与指标盲区。",
+      "doNotUseFor": "不要把论文数值当玩家感知、组合强度或其他游戏的阈值。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "nist-combinatorial-testing",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "为不可穷举的版本/扩展配置安排组合覆盖。",
+      "doNotUseFor": "两两覆盖不能证明桌游体验、平衡或可用性充分。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    }
+  ]
+}

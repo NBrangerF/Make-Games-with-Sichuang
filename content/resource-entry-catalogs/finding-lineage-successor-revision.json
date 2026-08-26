@@ -1,0 +1,367 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "finding-lineage-successor-revision",
+    "title": "重开旧发现而不覆盖它，创建可解释的后继修订",
+    "question": "我已经保存过一份跨轮发现，现在有了新证据或边界变化；怎样继续修改，又不把当时的判断抹掉？",
+    "outcome": "先只读重开旧记录，检查来源、边界、反例与当时决定；需要改变时创建新 ID 的后继，保留沿革 ID、父记录、修订号、改变理由和时间，并把项目写回保持为显式动作。",
+    "resourceIds": [
+      "w3c-prov-o",
+      "white-qualitative-audit-trail",
+      "gitlab-uxr-insights-repository",
+      "timo-bron-iteration-log",
+      "magic-playtesting-stages-2026",
+      "weirdwood-manor-designer-diary",
+      "govuk-analyse-research-session",
+      "govuk-informed-consent-research"
+    ],
+    "evidenceBoundary": "组合 W3C 来源标准、质性审计轨迹、软件研究仓库、数字关卡迭代日志、两份桌游/卡牌设计实践与公共服务分析/同意指南；它们支持不可覆盖记录、显式父子修订、何时/为何/改了什么、阶段化测试和撤回来源链，不证明最新修订更正确、不提供自动批准、证据强度、测试次数、完整 PROV-O 实现或站外删除保证。"
+  },
+  "resources": [
+    {
+      "id": "w3c-prov-o",
+      "title": "PROV-O: The PROV Ontology",
+      "creator": "W3C Provenance Working Group",
+      "href": "https://www.w3.org/TR/prov-o/",
+      "type": "来源链、派生、修订与失效的标准模型",
+      "evidenceType": "standard",
+      "format": "technical_standard",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "区分实体、活动、来源、派生、修订与失效，并明确内容变化会形成新的实体；可用来设计不可覆盖的发现修订与父子沿革。",
+      "limitation": "语义网来源标准不是桌游研究方法或前端存储规范；本站只迁移最小来源关系，不声称完整实现 PROV-O。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "white-qualitative-audit-trail",
+      "title": "Management of a Large Qualitative Data Set: Establishing Trustworthiness of the Data",
+      "creator": "Debbie Elizabeth White, Nelly D. Oelke & Steven Friesen",
+      "href": "https://journals.sagepub.com/doi/10.1177/160940691201100305",
+      "type": "质性分析变更理由与审计轨迹实践",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "说明资料、编码与主题结构演化时应持续记录何时、为何以及改变了什么，使后来的判断能够回查而不抹去早期分析。",
+      "limitation": "大型健康质性研究的资料管理经验，不能直接决定桌游发现的版本号、生命周期或证据强度。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "gitlab-uxr-insights-repository",
+      "title": "Why We Built a UX Research Insights Repository",
+      "creator": "Sarah O'Donnell / GitLab",
+      "href": "https://about.gitlab.com/blog/building-a-ux-research-insights-repository/",
+      "type": "可检索的原子发现与证据仓库实践",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "把每项发现作为独立记录并连接支持证据、研究背景与行动；旧报告中的发现可与新研究三角互证，而不要求立即变成任务。",
+      "limitation": "单一软件公司的仓库回顾且流程后来可能演变；它支持可追踪与延迟行动，不证明桌游发现正确或成熟。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "timo-bron-iteration-log",
+      "title": "Plateau of Leng: Iteration Log",
+      "creator": "Timo Bron",
+      "href": "https://timobron.com/document/document-plateau-of-leng-iteration-log/",
+      "type": "逐版本记录改动、截图与理由的设计日志",
+      "evidenceType": "first_party_practice",
+      "format": "iteration_log",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "七个版本逐次保存改动、画面与选择理由，并与测试日志配对，提供‘旧版保留、后继说明为什么改变’的具体范例。",
+      "limitation": "这是数字关卡而非桌游，且属于个人作品集中的精选记录；只能迁移版本日志结构，不能外推测试结论。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "magic-playtesting-stages-2026",
+      "title": "Playtesting",
+      "creator": "Mark Rosewater / Magic: The Gathering",
+      "href": "https://magic.wizards.com/en/news/making-magic/playtesting",
+      "type": "不同设计阶段使用不同粒度测试的一手实践",
+      "evidenceType": "first_party_practice",
+      "format": "designer_article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "把探索、愿景、成型与最终设计阶段的测试目的区分开，说明早期广泛取样、后期快速细化，且理论推演不能替代实际游玩。",
+      "limitation": "大型集换式卡牌团队在 2026 年的流程，资源、组织与产品结构不同；不能据此规定独立桌游的测试次数或发布门槛。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "weirdwood-manor-designer-diary",
+      "title": "Designer Diary: The Story of Weirdwood Manor",
+      "creator": "Kevin Wilson",
+      "href": "https://boardgamegeek.com/blog/1/blogpost/159260/designer-diary-the-story-of-weirdwood-manor",
+      "type": "测试目的与记录粒度随开发阶段变化的桌游日志",
+      "evidenceType": "first_party_practice",
+      "format": "design_diary",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "记录早期删减与简化、随后用大量表格测试系统指标，最后转向合作、策略、能力使用与规则疑问等较难量化体验，显示同一项目的证据需求会演化。",
+      "limitation": "单款复杂合作游戏的回顾性叙事，未公开完整数据和所有失败版本；测试数量不能成为其他项目的成熟度阈值。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "govuk-analyse-research-session",
+      "title": "Analyse a Research Session",
+      "creator": "UK Government Digital Service",
+      "href": "https://www.gov.uk/service-manual/user-research/analyse-a-research-session",
+      "type": "用户研究观察、发现与行动分层分析指南",
+      "evidenceType": "institutional_guidance",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "要求一条笔记只保留一个观察，再把相关观察分组；发现与后续行动另写，保持来源可回查。",
+      "limitation": "英国公共服务团队流程，不提供桌游版本决策公式，也不代替本地隐私、伦理或领域审查。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "govuk-informed-consent-research",
+      "title": "Getting Informed Consent for User Research",
+      "creator": "UK Government Digital Service",
+      "href": "https://www.gov.uk/service-manual/user-research/getting-users-consent-for-research",
+      "type": "用户研究知情同意、撤回与数据关联指南",
+      "evidenceType": "institutional_guidance",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈"
+      ],
+      "useful": "列出目的、活动、数据、观察/记录、使用分享、保留和随时停止/撤回等同意要素，并要求能把撤回映射到对应资料。",
+      "limitation": "英国政府内部指南不是本站法律意见；涉及儿童、弱势参与者、跨境数据或公开素材时必须按本地要求另行审查。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "w3c-prov-o",
+      "useModes": [
+        "learn",
+        "lookup",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "broad",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "区分来源、派生、修订与失效，并把每次实质变化保存成新实体。",
+      "doNotUseFor": "不要声称本站完整实现语义网标准，也不要让来源关系替代桌游研究判断。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "white-qualitative-audit-trail",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "为分析结构的改变保留何时、为何和改变了什么的审计轨迹。",
+      "doNotUseFor": "健康质性研究的可信性流程不能自动认证桌游发现、样本或版本决定。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "gitlab-uxr-insights-repository",
+      "useModes": [
+        "learn",
+        "case_study",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "把单项发现连接到支持证据、研究背景与行动，并允许尚未可行动的发现继续积累。",
+      "doNotUseFor": "单一软件公司 2019 年流程不证明桌游发现成熟，也不保证当前产品实现相同。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "timo-bron-iteration-log",
+      "useModes": [
+        "learn",
+        "case_study",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "参考逐版本保存改动、截图、理由并连接测试日志的轻量沿革格式。",
+      "doNotUseFor": "数字关卡作品集不能证明桌游改动有效，也不提供发现生命周期规则。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "magic-playtesting-stages-2026",
+      "useModes": [
+        "learn",
+        "case_study",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "让测试目的和迭代粒度随探索、成型与最终阶段变化，并坚持实际游玩。",
+      "doNotUseFor": "大型集换式卡牌团队流程不能规定个人桌游的团队角色、测试次数或发行门槛。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "weirdwood-manor-designer-diary",
+      "useModes": [
+        "learn",
+        "case_study",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "比较早期删减、系统指标测试与后期较难量化体验记录的阶段变化。",
+      "doNotUseFor": "单款游戏的一百多场测试不能成为其他项目的样本量、成熟度或质量标准。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "govuk-analyse-research-session",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "broad",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "把单条观察、归组、发现与后续行动拆成可追踪的不同层。",
+      "doNotUseFor": "公共服务团队方法不能决定桌游严重度、版本优先级或隐私合规。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "govuk-informed-consent-research",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "列出参与者在同意前需要理解的内容，并让撤回能映射到具体会话资料。",
+      "doNotUseFor": "勾选或模板不能代替本地法律、数据保护、监护人、机构和无障碍审查。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    }
+  ]
+}

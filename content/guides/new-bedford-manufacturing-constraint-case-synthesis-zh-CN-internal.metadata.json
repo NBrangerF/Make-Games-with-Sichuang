@@ -1,0 +1,89 @@
+{
+  "schemaVersion": 1,
+  "itemId": "new-bedford-manufacturing-constraint-case-synthesis-zh-CN-internal",
+  "resourceId": "oakleaf-manufacturing-design-tool",
+  "titleZh": "一张纸为什么会决定二十座建筑：《New Bedford》把生产限制带回机制",
+  "contentMode": "original_case_synthesis",
+  "documentType": "original_case_synthesis",
+  "language": "zh-CN",
+  "version": "1.0.0-internal",
+  "authorship": {
+    "author": "落桌",
+    "production": "Codex 基于公开设计师日志与项目资源评估完成原创案例综合",
+    "authority": "codex_ai_synthesis",
+    "humanReviewRequired": false,
+    "humanReviewStatus": "not_required",
+    "fullTranslationClaimed": false,
+    "sourceStructurePreserved": false,
+    "directQuoteWordCount": 0
+  },
+  "source": {
+    "title": "Manufacturing as a Design Tool",
+    "author": "Nat Levan / Oakleaf Games",
+    "primaryUrl": "https://oakleafgames.wordpress.com/2014/03/24/manufacturing-as-a-design-tool/",
+    "supportingUrls": [
+      "https://oakleafgames.wordpress.com/2013/10/13/notes-from-new-bedford-part-5-goods-and-money/",
+      "https://oakleafgames.wordpress.com/games/new-bedford/"
+    ],
+    "displayedPublishedAt": "2014-03-24",
+    "retrievedAt": "2026-08-22",
+    "sourceLanguage": "en",
+    "translationPermissionVerified": false,
+    "publicRedistributionPermissionVerified": false
+  },
+  "license": {
+    "kind": "none_verified",
+    "rightsStatus": "link_and_summarize",
+    "evidenceUrl": "https://oakleafgames.wordpress.com/2014/03/24/manufacturing-as-a-design-tool/",
+    "openLicenseObserved": false
+  },
+  "synthesis": {
+    "requiredCaseDimensions": [
+      "语境",
+      "问题",
+      "选项",
+      "决定",
+      "证据",
+      "结果",
+      "仍未知",
+      "迁移动作"
+    ],
+    "requiredCaseDimensionsCovered": 8,
+    "standaloneReadable": true,
+    "authorReportSeparatedFromSiteInference": true,
+    "sourceBodyTranslated": false,
+    "hanCharacterCount": 4616,
+    "hanCountMethod": "U+4E00-U+9FFF",
+    "learningStages": [
+      "核心系统",
+      "最小原型",
+      "呈现与发布"
+    ]
+  },
+  "excludedComponents": [
+    "作者日志中的图片",
+    "页面评论、头像、导航与页脚",
+    "链接页面中的宣传引语",
+    "原文逐段翻译与原文表达结构",
+    "把 2014 年数量或工艺当作当前生产规格"
+  ],
+  "publication": {
+    "visibility": "internal",
+    "status": "internal-ready",
+    "publicReleaseEnabled": false,
+    "internalLearningStatus": "authoritative",
+    "legalReviewStatus": "not_reviewed",
+    "legalApprovalClaimed": false,
+    "rightsBasis": "本站原创事实综合、分析与学习脚手架；不复制来源正文、结构、图片或评论。"
+  },
+  "completeness": {
+    "caseFramework": "complete",
+    "requiredDimensions": "8/8",
+    "sourceTextTreatment": "summarized_not_translated",
+    "fullSourceTranslation": "not_created",
+    "silentOmissionsWithinDeclaredCaseScope": 0
+  },
+  "verificationDocument": "docs/research/SOURCE_VERIFICATION_NEW_BEDFORD_MANUFACTURING_SYNTHESIS.md",
+  "file": "content/guides/new-bedford-manufacturing-constraint-case-synthesis-zh-CN-internal.md",
+  "updatedAt": "2026-08-22"
+}

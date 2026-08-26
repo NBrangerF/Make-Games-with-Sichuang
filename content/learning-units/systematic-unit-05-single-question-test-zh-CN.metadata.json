@@ -1,0 +1,46 @@
+{
+  "schemaVersion": 1,
+  "itemId": "systematic-unit-05-single-question-test-zh-CN",
+  "titleZh": "单元 5：单问题测试",
+  "contentMode": "original_complete",
+  "language": "zh-CN",
+  "version": "1.0.0",
+  "authorship": {
+    "author": "落桌",
+    "production": "Codex 基于项目研究与列明来源完成原创综合",
+    "humanReviewRequired": false
+  },
+  "learningOutcome": "把一个最小原型问题转换为包含行为预测、反驳信号、版本与参与范围、无引导任务、分层观察、停止、复盘和下一步移交的单问题测试，并明确一次测试不能构成证明。",
+  "sourceIds": [
+    "ttgda-playtesting",
+    "kathleen-mercury-winq",
+    "game-design-concepts",
+    "games-user-research-running-study",
+    "denisova-democratising-games-user-research",
+    "lim-prototype-anatomy",
+    "stanford-dschool-testing-guide"
+  ],
+  "sourceUrls": [
+    "https://www.ttgda.org/in-person-playtesting",
+    "https://www.kathleenmercury.com/providing-feedback-on-prototypes-the-winq.html",
+    "https://www.kathleenmercury.com/playtesting.html",
+    "https://gamedesignconcepts.wordpress.com/2009/07/02/level-2-game-design-iteration-and-rapid-prototyping/",
+    "https://gamesuserresearch.com/running-a-games-user-research-study/",
+    "https://eprints.whiterose.ac.uk/id/eprint/216480/",
+    "https://faculty.washington.edu/jtenenbg/publications/limAnatomyOfPrototypes-tochi2008.pdf",
+    "https://dschool.stanford.edu/s/dschool_testing.pdf"
+  ],
+  "publication": {
+    "visibility": "internal",
+    "status": "published-internal",
+    "rightsBasis": "本站原创综合；来源仅用于研究、归属与事实核验。"
+  },
+  "metrics": {
+    "hanCharacterCount": 12234,
+    "hanCharacterRange": "U+4E00–U+9FFF",
+    "countMethod": "Node.js: (text.match(/[\\u4E00-\\u9FFF]/g) || []).length",
+    "countedAt": "2026-08-22"
+  },
+  "file": "content/learning-units/systematic-unit-05-single-question-test-zh-CN.md",
+  "updatedAt": "2026-08-22"
+}

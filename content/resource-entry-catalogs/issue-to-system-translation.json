@@ -1,0 +1,382 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "issue-to-system-translation",
+    "title": "把社会、文化或教育议题变成可玩系统",
+    "question": "我想用桌游表达一个议题，但现在只有背景故事、知识题或立场口号；怎样让玩家真的在规则中遇到这个关系？",
+    "outcome": "先写可被质疑的系统命题与受影响者，再把关系转成角色、权限、资源、限制和反馈；建立省略台账，最后分层验证规则实现、玩家行动、领域准确性与社群影响。",
+    "resourceIds": [
+      "values-at-play-methodology",
+      "grow-a-game-values-tool",
+      "black-boxes-cardboard-algorithmic-literacy",
+      "learning-evaluate-analog-education",
+      "design-justice-network-principles",
+      "practical-social-issue-game-design",
+      "civic-education-playful-game-design",
+      "analog-orientalism-abstraction"
+    ],
+    "evidenceBoundary": "组合价值敏感设计方法、两个批判性桌游/教育案例、一个公民教育工作坊、早期数字倡议游戏经验、设计正义原则和历史抽象批评；它们支持发现—转译—验证、追踪省略、早期纳入受影响者与分层取证，不证明游戏会改变态度、不输出唯一正确立场，也不提供普遍学习、复玩、清晰度或社会影响阈值。"
+  },
+  "resources": [
+    {
+      "id": "values-at-play-methodology",
+      "title": "A Game Design Methodology to Incorporate Social Activist Themes",
+      "creator": "Mary Flanagan, Daniel C. Howe & Helen Nissenbaum",
+      "href": "https://tiltfactor.org/wp-content/uploads2/A-Game-Design-Methodology.pdf",
+      "type": "学术方法",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "用发现、转译、验证三类迭代活动，把抽象价值转成规则、功能与可检查的体验结果。",
+      "limitation": "2007 年数字教育游戏个案；是设计方法论与案例，不是桌游中某种价值已被实现的通用证明。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-17"
+    },
+    {
+      "id": "grow-a-game-values-tool",
+      "title": "Grow-A-Game: A Tool for Values Conscious Design and Analysis of Digital Games",
+      "creator": "Jonathan Belman, Helen Nissenbaum, Mary Flanagan, Jim Diamond",
+      "href": "https://tiltfactor.org/wp-content/uploads2/Digra2011-GrowAGameTool-BelmanNissenbaumFlanaganDiamond.pdf",
+      "type": "价值卡用于构思与分析的五个课堂案例",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统"
+      ],
+      "useful": "把价值作为设计约束进入发散练习，并比较价值、机制与游戏目标之间的组合，而不是只从题材词开始。",
+      "limitation": "五个课程案例主要面向数字游戏设计教育；不能证明卡片工具普遍提高作品质量，也不能替代利益相关者参与。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "black-boxes-cardboard-algorithmic-literacy",
+      "title": "Black Boxes out of Cardboard: Algorithmic Literacy through Critical Board Game Design",
+      "creator": "Adriaan Odendaal, Karla Zavala",
+      "href": "https://analoggamestudies.org/2018/12/black-boxes-out-of-cardboard-algorithmic-literacy-through-critical-board-game-design/",
+      "type": "用实体桌游表达算法社会影响的实践研究",
+      "evidenceType": "academic_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "展示抽象议题怎样进入规则、事件与材料，并诚实记录玩家没有自然把事件后果连接到自己选择的失败版本。",
+      "limitation": "作者内部测试的未完成单一原型，缺少外部参与者、学习成效与长期影响证据；算法议题不能代表所有社会议题。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "learning-evaluate-analog-education",
+      "title": "Learning to Evaluate Analog Games for Education",
+      "creator": "Gregory Trefry",
+      "href": "https://analoggamestudies.org/2015/05/evaluating-educational-goals-in-party-games/",
+      "type": "教育目标与现成派对游戏机制适配的批评性案例",
+      "evidenceType": "academic_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "识别知识题或教育属性是否只是附加任务，并比较角色、有限资源与谈判怎样让议题进入玩家决定。",
+      "limitation": "以少数派对／教育游戏作分析，没有对照实验；对主持复盘的判断不能直接外推到全部课堂和年龄。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "design-justice-network-principles",
+      "title": "Design Justice Network Principles",
+      "creator": "Design Justice Network",
+      "href": "https://designjustice.org/read-the-principles",
+      "type": "受影响者参与、问责与社群控制的设计原则",
+      "evidenceType": "community_principles",
+      "format": "principles",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈",
+        "呈现与发布"
+      ],
+      "useful": "提醒设计者把直接受影响者的声音、实际影响、协作过程与社群控制放在个人善意之前。",
+      "limitation": "这是持续演化的价值原则，不是桌游验证程序、法律同意流程或代表性社群抽样方法。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "practical-social-issue-game-design",
+      "title": "Designing Games to Effect Social Change",
+      "creator": "Chris Swain",
+      "href": "https://dl.digra.org/index.php/dl/article/download/334/334/331",
+      "type": "社会议题游戏的目标、领域专家、利益相关者与传播实践",
+      "evidenceType": "academic_practice",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈",
+        "呈现与发布"
+      ],
+      "useful": "要求在前期写预期结果和变革路径，让领域专家进入系统设计，并把复杂议题视为多方无法先验统一的问题。",
+      "limitation": "2000 年代数字倡议游戏的从业论文，包含较强效果与传播主张；不能证明游戏天然改变观点或产生社会影响。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "civic-education-playful-game-design",
+      "title": "From Consumers to Creators: Bridging Game Play and Playful Game Design for Impactful Civic Education",
+      "creator": "Joseph Dumit, Sabina Belc",
+      "href": "https://analoggamestudies.org/2024/06/from-consumers-to-creators-bridging-game-play-and-playful-game-design-for-impactful-civic-education/",
+      "type": "从游玩、视角切换到公民议题游戏创作的课堂案例",
+      "evidenceType": "teaching_curation",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型"
+      ],
+      "useful": "展示学生怎样从熟悉的社会处境、视角与机制重组出可玩的议题原型，为本地融合课提供相邻案例。",
+      "limitation": "单一课程回顾和作者解释，没有独立学习成效或迁移测量；具体活动不能直接当作通用课程顺序。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "analog-orientalism-abstraction",
+      "title": "Orientalism and Abstraction in Eurogames",
+      "creator": "Will Robinson",
+      "href": "https://analoggamestudies.org/2014/12/orientalism-and-abstraction-in-eurogames/",
+      "type": "学术评论",
+      "evidenceType": "academic",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "呈现与发布"
+      ],
+      "useful": "通过殖民题材欧式桌游案例，检查抽象、省略、资源化和不可玩角色如何构成政治表达。",
+      "limitation": "以《达·伽马》为主的批评性个案论证；不估计玩家影响频率，也不表示抽象本身错误。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-17"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "values-at-play-methodology",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "用发现—转译—验证把价值意图连到规则特征和测试问题。",
+      "doNotUseFor": "不要把数字教育游戏个案当成桌游伦理检查表或普适证明。",
+      "reviewedAt": "2026-08-17",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "grow-a-game-values-tool",
+      "useModes": [
+        "learn",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "exercise",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "用价值卡在发散时连接价值、机制和游戏目标，并保留学员对价值的分歧。",
+      "doNotUseFor": "五个课堂案例不证明卡牌提高作品质量或代表受影响社群。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "black-boxes-cardboard-algorithmic-literacy",
+      "useModes": [
+        "learn",
+        "case_study",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "看见一个批判性桌游原型如何将算法议题放进事件、选择与物质操作，以及连接失败怎样暴露。",
+      "doNotUseFor": "内部测试的未完成个案不能证明学习或社会影响。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "learning-evaluate-analog-education",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "检查知识题、教育标签或复盘是否与玩家主要决定脱节。",
+      "doNotUseFor": "少数派对游戏分析不提供一般教学成效或主持人参与阈值。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "design-justice-network-principles",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "broad",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "在定义议题、选择合作者和复核影响时，追问谁受直接影响、谁拥有决定权。",
+      "doNotUseFor": "价值原则不替代桌游用户测试、知情同意、儿童保护或法律流程。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "practical-social-issue-game-design",
+      "useModes": [
+        "learn",
+        "case_study",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "在项目前期分开预期结果、系统设计、领域审阅、利益相关者与传播责任。",
+      "doNotUseFor": "2007 年数字倡议游戏经验中的量化传播指标不能证明桌游会改变态度。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "civic-education-playful-game-design",
+      "useModes": [
+        "learn",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "比较游戏重混、视角切换与纸面原型在公民教育工作坊中如何连接。",
+      "doNotUseFor": "14 人训练工作坊的回顾不能证明长期学习成效或最佳课程顺序。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "analog-orientalism-abstraction",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "追踪一款历史桌游把谁变成资源、背景或不可玩对象。",
+      "doNotUseFor": "不要将一个批评性案例外推为所有抽象或欧式桌游的判决。",
+      "reviewedAt": "2026-08-17",
+      "status": "reviewed"
+    }
+  ]
+}

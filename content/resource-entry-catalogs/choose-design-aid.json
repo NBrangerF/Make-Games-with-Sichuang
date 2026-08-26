@@ -1,0 +1,384 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "choose-design-aid",
+    "title": "卡住时，先选辅助工具的工作",
+    "question": "我想用卡牌、组件盒或练习游戏推进设计，但不知道应该拿它来构思、诊断、做原型还是练习测试。",
+    "outcome": "先说清本轮要产生的东西，再选择参考词汇、随机约束、诊断问题、协作脚手架、闭环练习或通用组件；提示之后必须留下可测试产出。",
+    "resourceIds": [
+      "martha-game-mechanic-cards",
+      "deck-of-ideas",
+      "deck-of-lenses",
+      "polyu-game-kit-2",
+      "series-interesting-choices",
+      "panda-omnideck",
+      "gamespace-idea-generation-games",
+      "weapon-of-criticism-design-game"
+    ],
+    "evidenceBoundary": "商业产品页只能核验结构与权利边界，工作坊和小样本研究只能提示交互风险；该入口不是购买排名，也不宣称游戏化工具能提高最终设计质量。"
+  },
+  "resources": [
+    {
+      "id": "martha-game-mechanic-cards",
+      "title": "Game Mechanic Cards: A Workshop Inspiration Tool",
+      "creator": "Martha Henson",
+      "href": "https://marthasadie.wordpress.com/2015/08/16/game-mechanic-cards-a-workshop-inspiration-tool-for-generating-game-ideas/",
+      "type": "机制参考卡工作坊",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "展示如何给非设计师提供机制名称、简述和熟悉案例，再让团队选想法、做纸上原型、互玩并反馈。",
+      "limitation": "作者的一次博物馆工作坊叙述，没有学习成效比较；旧卡描述部分来自 Wikipedia，开放邀请不等于清晰的统一许可证。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "deck-of-ideas",
+      "title": "Deck of Ideas",
+      "creator": "Christian Giove / GateOnGames",
+      "href": "https://www.gateongames.com/en/deck-of-ideas/",
+      "type": "设计构思卡组",
+      "evidenceType": "first_party_practice",
+      "format": "tool",
+      "access": "restricted",
+      "language": [
+        "en",
+        "it"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "呈现与发布"
+      ],
+      "useful": "用元素、连接条件和提案提示三类牌降低空白页压力，并强迫设计者尝试约束组合。",
+      "limitation": "官方产品页是营销语境且明确保留复制权；本站未实测实体产品。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-14"
+    },
+    {
+      "id": "deck-of-lenses",
+      "title": "The Art of Game Design: Deck of Lenses",
+      "creator": "Jesse Schell / Schell Games",
+      "href": "https://schellgames.com/art-of-game-design",
+      "type": "设计诊断卡组",
+      "evidenceType": "first_party_practice",
+      "format": "tool",
+      "access": "restricted",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "把设计视角转成可抽取的问题卡，用于卡点诊断、团队讨论和切换观察角度。",
+      "limitation": "是跨媒介商业书籍/卡组，并非桌游专用；本站只链接与概述，不复制卡牌内容。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-14"
+    },
+    {
+      "id": "polyu-game-kit-2",
+      "title": "游戏套件 2.0（The Game Kit 2.0）",
+      "creator": "理大赛马会社会创新设计院",
+      "href": "https://soinnohub.polyujcsoinno.hk/zh-hant/tool/the-game-kit-2-0/",
+      "type": "教育游戏共创套件",
+      "evidenceType": "teaching_curation",
+      "format": "tool",
+      "access": "free",
+      "language": [
+        "zh-Hant",
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "用终局、每回合、关键动作和开局状态卡，引导 4–6 人团队完成最小版本、写规则、交换试玩和复盘。",
+      "limitation": "目标是教育者和学生制作教学游戏，网页流程不是桌游商业设计通则；投票和抽牌只是活动结构，不是成品质量证据。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "series-interesting-choices",
+      "title": "A Series of Interesting Choices",
+      "creator": "Erik Svedäng",
+      "href": "https://www.eriksvedang.com/aseriesofinterestingchoices/",
+      "type": "桌游设计练习游戏",
+      "evidenceType": "first_party_practice",
+      "format": "tool",
+      "access": "restricted",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "把概念牌、规则表、限时设计、交叉讲解、实际试玩和辨认约束串成一轮完整的设计练习。",
+      "limitation": "官方规则可免费阅读，但完整实体卡组付费；胜负、得分和惩罚会改变练习目标，本站不复制卡牌内容或照搬计分。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "panda-omnideck",
+      "title": "OMNIDECK",
+      "creator": "Panda Game Manufacturing",
+      "href": "https://pandagm.com/omnideck/",
+      "type": "通用原型组件",
+      "evidenceType": "first_party_practice",
+      "format": "tool",
+      "access": "restricted",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "在一副牌上叠加数值、花色、字母、骰子与资源标记，可快速替代多种组件并缩短原型制作。",
+      "limitation": "厂商产品页能核验组件与官方用途，不能证明它比普通卡牌、便签或散件更适合所有项目。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-14"
+    },
+    {
+      "id": "gamespace-idea-generation-games",
+      "title": "Designing ‘Game Idea Generation’ Games",
+      "creator": "Kultima, Niemelä, Paavilainen & Saarenpää",
+      "href": "https://loading.journals.publicknowledgeproject.org/index.php/loading/article/download/71/73",
+      "type": "游戏化构思工具研究",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统"
+      ],
+      "useful": "比较 VNA、GameSeekers 与 GameBoard 三种从简短词语联想、协作拼接到结构化计分的构思游戏，并公开其迭代问题。",
+      "limitation": "结论来自工作坊经验和四家芬兰游戏公司的初步试用，且对象以数字游戏为主；不能证明游戏化构思提高最终设计质量。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "weapon-of-criticism-design-game",
+      "title": "Gameplay-Supported Reflections on the Dialectics of Design Practice",
+      "creator": "László Sall Vesselényi / Chalmers University of Technology",
+      "href": "https://odr.chalmers.se/server/api/core/bitstreams/f55215f1-d7a2-4f50-a264-1ea247891135/content",
+      "type": "反思型设计游戏论文",
+      "evidenceType": "academic",
+      "format": "thesis",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "测试与反馈"
+      ],
+      "useful": "以 Weapon of Criticism 及多轮失败原型说明，如何用描述、解释、反思与追问支持设计者讨论项目和自身语境。",
+      "limitation": "单篇交互设计硕士论文、参与者主要为同一硕士项目学生；问题会触及身份与敏感经历，使用时需要同意、退出和复盘机制。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-18"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "martha-game-mechanic-cards",
+      "useModes": [
+        "learn",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "exercise",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "给缺少游戏词汇的参与者建立机制参考，再把选择带入纸上原型、互玩和反馈。",
+      "doNotUseFor": "不要把机制名称和熟悉案例当成设计答案；分享邀请与第三方描述来源并未形成可安全整体复制的清晰许可证。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "deck-of-ideas",
+      "useModes": [
+        "learn",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "exercise",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "用机制、附加条件和提案提示突破空白页，练习在约束中产生多个候选方向。",
+      "doNotUseFor": "不要把随机组合视为完成的设计；官方页面明确限制复制，本站未实测产品。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "deck-of-lenses",
+      "useModes": [
+        "diagnose",
+        "lookup"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "broad",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "在设计卡点中切换观察视角，形成更具体的诊断问题或团队讨论语言。",
+      "doNotUseFor": "不要把抽到的镜头当成答案，也不要复制商业卡牌内容；它也不是桌游专用流程。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "polyu-game-kit-2",
+      "useModes": [
+        "learn",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "参考一条中文可读、由终局和动作提示走向最小原型、规则、交换试玩与汇报的课堂脚手架。",
+      "doNotUseFor": "不要把教学游戏活动直接当商业桌游流程，也不要把最终投票当学习效果或设计质量评价。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "series-interesting-choices",
+      "useModes": [
+        "learn",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "exercise",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "研究一场怎样把提示、书面规则、交叉讲解、试玩与辨认约束连接成闭环练习。",
+      "doNotUseFor": "不要复制概念牌或把原作计分照搬进本站；获胜、被猜中和少拿错误标记未必等于更有价值的设计学习。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "panda-omnideck",
+      "useModes": [
+        "lookup",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "用一副带多种标记的通用牌快速替代骰子、资源、字母和普通卡牌，减少原型制作。",
+      "doNotUseFor": "不要把通用组件的便利当成设计诊断或平衡证据；普通卡牌和便签可能已经足够。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "gamespace-idea-generation-games",
+      "useModes": [
+        "learn",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "比较轻量联想、协作累加和结构化计分怎样影响构思速度、复杂度、参与和记录负担。",
+      "doNotUseFor": "不要把初步试用和参与者偏好当最终设计质量证据，也不要假设更多规则或分数一定改善创意。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "weapon-of-criticism-design-game",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "narrow",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "设计项目反思会，理解描述、解释、反思与同伴追问如何揭露设计者、过程和语境之间的关系。",
+      "doNotUseFor": "不要把问题卡当心理安全保证；需要知情同意、可跳过、可退出、匿名边界和活动后复盘。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    }
+  ]
+}

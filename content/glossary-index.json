@@ -1,0 +1,1150 @@
+[
+  {
+    "id": "experience-intent",
+    "term": "体验意图"
+  },
+  {
+    "id": "theme",
+    "term": "主题"
+  },
+  {
+    "id": "mechanic",
+    "term": "机制"
+  },
+  {
+    "id": "dynamics",
+    "term": "动态"
+  },
+  {
+    "id": "core-loop",
+    "term": "核心循环"
+  },
+  {
+    "id": "meaningful-choice",
+    "term": "有意义的选择"
+  },
+  {
+    "id": "agency",
+    "term": "玩家能动性"
+  },
+  {
+    "id": "information-structure",
+    "term": "信息结构"
+  },
+  {
+    "id": "resource",
+    "term": "资源"
+  },
+  {
+    "id": "constraint",
+    "term": "约束"
+  },
+  {
+    "id": "goal",
+    "term": "目标"
+  },
+  {
+    "id": "prototype",
+    "term": "原型"
+  },
+  {
+    "id": "prototype-fidelity",
+    "term": "原型精度"
+  },
+  {
+    "id": "hypothesis",
+    "term": "设计假设"
+  },
+  {
+    "id": "playtest-question",
+    "term": "测试问题"
+  },
+  {
+    "id": "playtest-type",
+    "term": "测试类型"
+  },
+  {
+    "id": "observation",
+    "term": "观察"
+  },
+  {
+    "id": "feedback",
+    "term": "反馈"
+  },
+  {
+    "id": "design-decision",
+    "term": "设计决定"
+  },
+  {
+    "id": "version",
+    "term": "版本"
+  },
+  {
+    "id": "rulebook",
+    "term": "规则书"
+  },
+  {
+    "id": "player-aid",
+    "term": "玩家辅助"
+  },
+  {
+    "id": "accessibility-task",
+    "term": "无障碍任务观察"
+  },
+  {
+    "id": "release-candidate",
+    "term": "发布候选"
+  },
+  {
+    "id": "balance-target",
+    "term": "平衡目标"
+  },
+  {
+    "id": "expected-value",
+    "term": "期望值"
+  },
+  {
+    "id": "feedback-loop",
+    "term": "反馈回路"
+  },
+  {
+    "id": "resource-flow",
+    "term": "资源流"
+  },
+  {
+    "id": "onboarding",
+    "term": "首局上手"
+  },
+  {
+    "id": "teaching-path",
+    "term": "教学路径"
+  },
+  {
+    "id": "lookup-path",
+    "term": "查询路径"
+  },
+  {
+    "id": "teach-back",
+    "term": "反向教学"
+  },
+  {
+    "id": "decision-space",
+    "term": "决定空间"
+  },
+  {
+    "id": "viable-option",
+    "term": "可行选项"
+  },
+  {
+    "id": "strategic-depth",
+    "term": "策略深度"
+  },
+  {
+    "id": "interaction-path",
+    "term": "互动作用路径"
+  },
+  {
+    "id": "replayability",
+    "term": "可重玩性"
+  },
+  {
+    "id": "variability",
+    "term": "变体性"
+  },
+  {
+    "id": "shared-decision",
+    "term": "共同决定"
+  },
+  {
+    "id": "decision-substitution",
+    "term": "决定代办"
+  },
+  {
+    "id": "decision-ownership",
+    "term": "决定归属"
+  },
+  {
+    "id": "information-asymmetry",
+    "term": "信息不对称"
+  },
+  {
+    "id": "communication-constraint",
+    "term": "沟通约束"
+  },
+  {
+    "id": "negotiation-leverage",
+    "term": "谈判杠杆"
+  },
+  {
+    "id": "theme-commitment",
+    "term": "主题承诺"
+  },
+  {
+    "id": "historical-abstraction",
+    "term": "历史抽象"
+  },
+  {
+    "id": "playable-perspective",
+    "term": "可玩视角"
+  },
+  {
+    "id": "cultural-collaboration",
+    "term": "文化协作"
+  },
+  {
+    "id": "content-note",
+    "term": "内容提示"
+  },
+  {
+    "id": "exposure-path",
+    "term": "暴露路径"
+  },
+  {
+    "id": "exit-repair-path",
+    "term": "退出与修复路径"
+  },
+  {
+    "id": "production-assumption",
+    "term": "生产假设"
+  },
+  {
+    "id": "bill-of-materials",
+    "term": "组件规格表"
+  },
+  {
+    "id": "quote-scope",
+    "term": "报价范围"
+  },
+  {
+    "id": "landed-cost",
+    "term": "落地成本"
+  },
+  {
+    "id": "evidence-state",
+    "term": "证据状态"
+  },
+  {
+    "id": "pre-production-copy",
+    "term": "产前样"
+  },
+  {
+    "id": "mass-production-copy",
+    "term": "量产样"
+  },
+  {
+    "id": "packout-task",
+    "term": "装盒与取用任务"
+  },
+  {
+    "id": "publishing-route",
+    "term": "发布路线"
+  },
+  {
+    "id": "route-responsibility",
+    "term": "路线责任"
+  },
+  {
+    "id": "submission-fit",
+    "term": "投稿匹配"
+  },
+  {
+    "id": "licensing-agreement",
+    "term": "出版授权关系"
+  },
+  {
+    "id": "public-commitment",
+    "term": "公开承诺"
+  },
+  {
+    "id": "reward-fulfillment",
+    "term": "回报履约"
+  },
+  {
+    "id": "inventory-exposure",
+    "term": "库存暴露"
+  },
+  {
+    "id": "platform-dependency",
+    "term": "平台依赖"
+  },
+  {
+    "id": "design-mode",
+    "term": "设计模式切换"
+  },
+  {
+    "id": "purposeful-play",
+    "term": "有目的地玩"
+  },
+  {
+    "id": "subtractive-test",
+    "term": "删减实验"
+  },
+  {
+    "id": "learning-budget",
+    "term": "学习预算"
+  },
+  {
+    "id": "embodied-action",
+    "term": "具身动作"
+  },
+  {
+    "id": "time-contract",
+    "term": "时间契约"
+  },
+  {
+    "id": "action-repair",
+    "term": "动作修复"
+  },
+  {
+    "id": "physical-skill-curve",
+    "term": "身体技能曲线"
+  },
+  {
+    "id": "design-frame",
+    "term": "问题框架"
+  },
+  {
+    "id": "learning-extraction",
+    "term": "学习提取"
+  },
+  {
+    "id": "transfer-test",
+    "term": "迁移测试"
+  },
+  {
+    "id": "practice-container",
+    "term": "练习容器"
+  },
+  {
+    "id": "returning-player-track",
+    "term": "回流玩家轨道"
+  },
+  {
+    "id": "group-history",
+    "term": "同组历史"
+  },
+  {
+    "id": "session-snippet",
+    "term": "局中片段"
+  },
+  {
+    "id": "actual-replay",
+    "term": "实际再玩"
+  },
+  {
+    "id": "campaign-state-passport",
+    "term": "战役状态护照"
+  },
+  {
+    "id": "revealed-content-scope",
+    "term": "已揭示内容范围"
+  },
+  {
+    "id": "campaign-migration",
+    "term": "战役状态迁移"
+  },
+  {
+    "id": "campaign-catchup-method",
+    "term": "战役接续方法"
+  },
+  {
+    "id": "state-custody",
+    "term": "状态保管"
+  },
+  {
+    "id": "solo-mode-promise",
+    "term": "单人模式承诺"
+  },
+  {
+    "id": "interaction-interface",
+    "term": "互动接口"
+  },
+  {
+    "id": "dummy-player",
+    "term": "dummy 玩家"
+  },
+  {
+    "id": "automated-opponent",
+    "term": "自动对手"
+  },
+  {
+    "id": "bot-upkeep",
+    "term": "bot 维护"
+  },
+  {
+    "id": "bot-information-model",
+    "term": "bot 信息模型"
+  },
+  {
+    "id": "player-count-configuration",
+    "term": "玩家人数配置"
+  },
+  {
+    "id": "primary-player-count",
+    "term": "主要人数配置"
+  },
+  {
+    "id": "interaction-topology",
+    "term": "互动拓扑"
+  },
+  {
+    "id": "scaling-dimension",
+    "term": "缩放维度"
+  },
+  {
+    "id": "functional-dummy",
+    "term": "功能性 dummy"
+  },
+  {
+    "id": "role-consolidation",
+    "term": "角色合并"
+  },
+  {
+    "id": "session-time-breakdown",
+    "term": "会话时间分解"
+  },
+  {
+    "id": "end-trigger",
+    "term": "结束触发"
+  },
+  {
+    "id": "final-round-policy",
+    "term": "最后一轮规则"
+  },
+  {
+    "id": "pace-shape",
+    "term": "节奏形状"
+  },
+  {
+    "id": "progress-legibility",
+    "term": "结束进度可读性"
+  },
+  {
+    "id": "tail-play",
+    "term": "终局拖尾"
+  },
+  {
+    "id": "concession-protocol",
+    "term": "投降与提前结束协议"
+  },
+  {
+    "id": "player-elimination",
+    "term": "玩家淘汰"
+  },
+  {
+    "id": "uncertainty-source",
+    "term": "不确定性来源"
+  },
+  {
+    "id": "randomness-loop",
+    "term": "随机循环"
+  },
+  {
+    "id": "random-exposure",
+    "term": "随机暴露"
+  },
+  {
+    "id": "response-window",
+    "term": "随机结果回应窗口"
+  },
+  {
+    "id": "mitigation-action",
+    "term": "随机缓解动作"
+  },
+  {
+    "id": "outcome-randomness",
+    "term": "结果随机性"
+  },
+  {
+    "id": "seeded-comparison",
+    "term": "固定种子比较"
+  },
+  {
+    "id": "outcome-attribution",
+    "term": "结果归因"
+  },
+  {
+    "id": "win-condition",
+    "term": "胜利条件"
+  },
+  {
+    "id": "scoring-function",
+    "term": "计分函数"
+  },
+  {
+    "id": "scoring-event",
+    "term": "得分事件"
+  },
+  {
+    "id": "scoring-path",
+    "term": "计分路径"
+  },
+  {
+    "id": "scoring-pace",
+    "term": "计分速度"
+  },
+  {
+    "id": "score-visibility",
+    "term": "分数可见性"
+  },
+  {
+    "id": "incentive-alignment",
+    "term": "激励对齐"
+  },
+  {
+    "id": "dominant-scoring-path",
+    "term": "支配计分路径"
+  },
+  {
+    "id": "scoring-legibility",
+    "term": "计分可读性"
+  },
+  {
+    "id": "turn-structure",
+    "term": "回合结构"
+  },
+  {
+    "id": "action-window",
+    "term": "行动窗口"
+  },
+  {
+    "id": "action-economy",
+    "term": "行动经济"
+  },
+  {
+    "id": "action-granularity",
+    "term": "行动粒度"
+  },
+  {
+    "id": "decision-latency",
+    "term": "决定延迟"
+  },
+  {
+    "id": "plan-survival",
+    "term": "预案存活"
+  },
+  {
+    "id": "mandatory-monitoring",
+    "term": "强制监看"
+  },
+  {
+    "id": "handoff-friction",
+    "term": "交接摩擦"
+  },
+  {
+    "id": "initiative-control",
+    "term": "主动权控制"
+  },
+  {
+    "id": "maintenance-function",
+    "term": "维护功能"
+  },
+  {
+    "id": "spatial-model",
+    "term": "空间模型"
+  },
+  {
+    "id": "adjacency-rule",
+    "term": "邻接规则"
+  },
+  {
+    "id": "movement-metric",
+    "term": "移动度量"
+  },
+  {
+    "id": "graph-degree",
+    "term": "节点度数"
+  },
+  {
+    "id": "path-distance",
+    "term": "路径距离"
+  },
+  {
+    "id": "bottleneck",
+    "term": "空间瓶颈"
+  },
+  {
+    "id": "spatial-density",
+    "term": "空间密度"
+  },
+  {
+    "id": "node-capacity",
+    "term": "地点容量"
+  },
+  {
+    "id": "modular-layout",
+    "term": "模块地图布局"
+  },
+  {
+    "id": "map-legibility",
+    "term": "地图可读性"
+  },
+  {
+    "id": "tabletop-territory",
+    "term": "桌面区域"
+  },
+  {
+    "id": "negotiation-object",
+    "term": "谈判对象"
+  },
+  {
+    "id": "outside-option",
+    "term": "外部选项"
+  },
+  {
+    "id": "deal-lifecycle",
+    "term": "交易生命周期"
+  },
+  {
+    "id": "binding-deal",
+    "term": "约束交易"
+  },
+  {
+    "id": "nonbinding-promise",
+    "term": "非约束承诺"
+  },
+  {
+    "id": "conditional-promise",
+    "term": "条件承诺"
+  },
+  {
+    "id": "settlement-timing",
+    "term": "交易结算时机"
+  },
+  {
+    "id": "breach-cost",
+    "term": "违约成本"
+  },
+  {
+    "id": "reputation-state",
+    "term": "局内信誉状态"
+  },
+  {
+    "id": "coalition",
+    "term": "联盟"
+  },
+  {
+    "id": "alliance-exit",
+    "term": "联盟退出"
+  },
+  {
+    "id": "negotiation-channel",
+    "term": "谈判渠道"
+  },
+  {
+    "id": "auction-lot",
+    "term": "拍卖标的"
+  },
+  {
+    "id": "private-value",
+    "term": "私人价值"
+  },
+  {
+    "id": "common-value",
+    "term": "共同价值"
+  },
+  {
+    "id": "interdependent-value",
+    "term": "相互依赖价值"
+  },
+  {
+    "id": "bid-protocol",
+    "term": "竞价协议"
+  },
+  {
+    "id": "allocation-rule",
+    "term": "拍卖分配规则"
+  },
+  {
+    "id": "payment-rule",
+    "term": "拍卖支付规则"
+  },
+  {
+    "id": "first-price-auction",
+    "term": "一价拍卖"
+  },
+  {
+    "id": "second-price-auction",
+    "term": "二价拍卖"
+  },
+  {
+    "id": "all-pay-auction",
+    "term": "全支付拍卖"
+  },
+  {
+    "id": "reserve-price",
+    "term": "储备价"
+  },
+  {
+    "id": "bid-increment",
+    "term": "最小加价"
+  },
+  {
+    "id": "winners-curse",
+    "term": "赢家诅咒"
+  },
+  {
+    "id": "bid-shading",
+    "term": "压价报价"
+  },
+  {
+    "id": "auction-feedback",
+    "term": "拍卖反馈"
+  },
+  {
+    "id": "market-state",
+    "term": "市场状态"
+  },
+  {
+    "id": "market-slot",
+    "term": "市场槽位"
+  },
+  {
+    "id": "restock-protocol",
+    "term": "补货协议"
+  },
+  {
+    "id": "restock-cadence",
+    "term": "补货节奏"
+  },
+  {
+    "id": "market-rotation",
+    "term": "市场轮换"
+  },
+  {
+    "id": "stale-market",
+    "term": "滞销市场"
+  },
+  {
+    "id": "demand-signal",
+    "term": "需求信号"
+  },
+  {
+    "id": "supply-signal",
+    "term": "供给信号"
+  },
+  {
+    "id": "price-movement",
+    "term": "价格移动"
+  },
+  {
+    "id": "price-timing",
+    "term": "价格时点"
+  },
+  {
+    "id": "stockout",
+    "term": "缺货"
+  },
+  {
+    "id": "oversupply",
+    "term": "供给过剩"
+  },
+  {
+    "id": "inventory-holding",
+    "term": "库存持有"
+  },
+  {
+    "id": "market-event-density",
+    "term": "市场事件密度"
+  },
+  {
+    "id": "feedback-delay",
+    "term": "反馈延迟"
+  },
+  {
+    "id": "resource-stock",
+    "term": "资源存量"
+  },
+  {
+    "id": "resource-rate",
+    "term": "资源变化率"
+  },
+  {
+    "id": "production-capacity",
+    "term": "生产容量"
+  },
+  {
+    "id": "resource-source",
+    "term": "资源来源"
+  },
+  {
+    "id": "resource-sink",
+    "term": "资源消耗口"
+  },
+  {
+    "id": "resource-pool",
+    "term": "资源池"
+  },
+  {
+    "id": "resource-converter",
+    "term": "资源转换器"
+  },
+  {
+    "id": "conversion-rate",
+    "term": "转换比率"
+  },
+  {
+    "id": "conversion-window",
+    "term": "转换窗口"
+  },
+  {
+    "id": "conversion-order",
+    "term": "转换顺序"
+  },
+  {
+    "id": "upkeep-cost",
+    "term": "维护成本"
+  },
+  {
+    "id": "carrying-cost",
+    "term": "持有成本"
+  },
+  {
+    "id": "resource-decay",
+    "term": "资源衰减"
+  },
+  {
+    "id": "payback-window",
+    "term": "回本窗口"
+  },
+  {
+    "id": "residual-value",
+    "term": "剩余价值"
+  },
+  {
+    "id": "debt-path",
+    "term": "债务路径"
+  },
+  {
+    "id": "information-state",
+    "term": "信息状态"
+  },
+  {
+    "id": "private-information",
+    "term": "私人信息"
+  },
+  {
+    "id": "public-information",
+    "term": "公开信息"
+  },
+  {
+    "id": "trackable-information",
+    "term": "可追踪信息"
+  },
+  {
+    "id": "information-owner",
+    "term": "信息拥有者"
+  },
+  {
+    "id": "information-source",
+    "term": "信息来源"
+  },
+  {
+    "id": "signal-reliability",
+    "term": "信号可靠度"
+  },
+  {
+    "id": "inference-path",
+    "term": "推断路径"
+  },
+  {
+    "id": "claim-challenge",
+    "term": "宣称—质疑"
+  },
+  {
+    "id": "verification-window",
+    "term": "验证窗口"
+  },
+  {
+    "id": "reveal-lifecycle",
+    "term": "揭示生命周期"
+  },
+  {
+    "id": "hand-capacity",
+    "term": "手牌容量"
+  },
+  {
+    "id": "hand-order",
+    "term": "手牌顺序"
+  },
+  {
+    "id": "card-lifecycle",
+    "term": "卡牌生命周期"
+  },
+  {
+    "id": "memory-interface",
+    "term": "记忆界面"
+  },
+  {
+    "id": "communication-channel",
+    "term": "沟通渠道"
+  },
+  {
+    "id": "information-expiry",
+    "term": "信息过期"
+  },
+  {
+    "id": "deck-composition",
+    "term": "牌库构成"
+  },
+  {
+    "id": "draw-pile",
+    "term": "抽牌堆"
+  },
+  {
+    "id": "discard-pile",
+    "term": "弃牌堆"
+  },
+  {
+    "id": "personal-deck",
+    "term": "个人牌库"
+  },
+  {
+    "id": "market-deck",
+    "term": "市场牌库"
+  },
+  {
+    "id": "deck-cycle",
+    "term": "牌库循环"
+  },
+  {
+    "id": "shuffle-boundary",
+    "term": "洗牌边界"
+  },
+  {
+    "id": "acquisition-latency",
+    "term": "获得延迟"
+  },
+  {
+    "id": "draw-density",
+    "term": "抽牌密度"
+  },
+  {
+    "id": "target-card",
+    "term": "目标牌"
+  },
+  {
+    "id": "hypergeometric-draw",
+    "term": "超几何抽牌模型"
+  },
+  {
+    "id": "deck-thinning",
+    "term": "牌库压缩"
+  },
+  {
+    "id": "deck-bloat",
+    "term": "牌库膨胀"
+  },
+  {
+    "id": "dead-draw",
+    "term": "无效抽牌"
+  },
+  {
+    "id": "combo-density",
+    "term": "组合密度"
+  },
+  {
+    "id": "topdeck",
+    "term": "置顶"
+  },
+  {
+    "id": "deck-pollution",
+    "term": "牌库污染"
+  },
+  {
+    "id": "shuffle-protocol",
+    "term": "洗牌协议"
+  },
+  {
+    "id": "ability-grammar",
+    "term": "能力语法"
+  },
+  {
+    "id": "timing-window",
+    "term": "时序窗口"
+  },
+  {
+    "id": "static-effect",
+    "term": "静态效果"
+  },
+  {
+    "id": "activated-ability",
+    "term": "启动能力"
+  },
+  {
+    "id": "triggered-effect",
+    "term": "触发效果"
+  },
+  {
+    "id": "replacement-effect",
+    "term": "替代效果"
+  },
+  {
+    "id": "delayed-effect",
+    "term": "延迟效果"
+  },
+  {
+    "id": "effect-queue",
+    "term": "效果队列"
+  },
+  {
+    "id": "priority",
+    "term": "优先权"
+  },
+  {
+    "id": "simultaneous-effect",
+    "term": "同时效果"
+  },
+  {
+    "id": "order-owner",
+    "term": "排序责任人"
+  },
+  {
+    "id": "controlled-vocabulary",
+    "term": "受控规则词表"
+  },
+  {
+    "id": "reminder-text",
+    "term": "提醒文字"
+  },
+  {
+    "id": "keyword-expansion",
+    "term": "关键词展开"
+  },
+  {
+    "id": "effect-trace",
+    "term": "效果轨迹"
+  },
+  {
+    "id": "repeated-state",
+    "term": "重复状态"
+  },
+  {
+    "id": "mandatory-loop",
+    "term": "强制循环"
+  },
+  {
+    "id": "optional-loop",
+    "term": "可选循环"
+  },
+  {
+    "id": "content-passport",
+    "term": "内容护照"
+  },
+  {
+    "id": "availability-path",
+    "term": "可得路径"
+  },
+  {
+    "id": "as-played-frequency",
+    "term": "实际出现频率"
+  },
+  {
+    "id": "rarity-role",
+    "term": "稀有度角色"
+  },
+  {
+    "id": "compatibility-matrix",
+    "term": "兼容矩阵"
+  },
+  {
+    "id": "compatibility-state",
+    "term": "兼容证据状态"
+  },
+  {
+    "id": "declared-support",
+    "term": "声明支持"
+  },
+  {
+    "id": "validated-configuration",
+    "term": "已验证配置"
+  },
+  {
+    "id": "current-rules-source",
+    "term": "当前规则源"
+  },
+  {
+    "id": "current-card-text",
+    "term": "当前卡文"
+  },
+  {
+    "id": "change-class",
+    "term": "变更分类"
+  },
+  {
+    "id": "errata-scope",
+    "term": "勘误范围"
+  },
+  {
+    "id": "governance-timeline",
+    "term": "治理时间线"
+  },
+  {
+    "id": "legality-date",
+    "term": "合法生效日"
+  },
+  {
+    "id": "review-window",
+    "term": "复查窗口"
+  },
+  {
+    "id": "rollback-gate",
+    "term": "回退门"
+  },
+  {
+    "id": "configuration-regression",
+    "term": "配置回归"
+  },
+  {
+    "id": "migration-labor",
+    "term": "版本迁移劳动"
+  },
+  {
+    "id": "prototype-filter",
+    "term": "原型过滤项"
+  },
+  {
+    "id": "prototype-manifestation",
+    "term": "原型表现维度"
+  },
+  {
+    "id": "prototype-scope",
+    "term": "原型范围"
+  },
+  {
+    "id": "fidelity-profile",
+    "term": "保真度配置"
+  },
+  {
+    "id": "proxy-operation",
+    "term": "代理运转"
+  },
+  {
+    "id": "prototype-stop-condition",
+    "term": "原型停止条件"
+  },
+  {
+    "id": "system-thesis",
+    "term": "系统命题"
+  },
+  {
+    "id": "values-translation",
+    "term": "价值转译"
+  },
+  {
+    "id": "omission-ledger",
+    "term": "省略台账"
+  },
+  {
+    "id": "affected-stakeholder",
+    "term": "直接受影响者"
+  },
+  {
+    "id": "values-verification",
+    "term": "价值验证"
+  },
+  {
+    "id": "debrief-dependency",
+    "term": "复盘依赖"
+  }
+]

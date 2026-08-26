@@ -1,0 +1,385 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "test-design-aid-before-release",
+    "title": "先测试设计辅助工具，再决定是否上线",
+    "question": "我已经做出卡牌、随机约束或练习原型，怎样发现它是否让新手选错模式、把提示当命令，或把自测误当玩家证据？",
+    "outcome": "把工具拆成任务选择、拒绝提示、可测试产物、诊断改写、证据状态和私有反思六个任务，记录第一次偏离、主持介入、修订与复测。",
+    "resourceIds": [
+      "roy-warren-card-design-tools-review",
+      "benton-examples-children-game-narrative",
+      "chan-example-interface-fixation",
+      "wang-fixation-defixation-review",
+      "vercher-strategy-game-redesign-steam",
+      "league-ideation-toolkit",
+      "gamespace-idea-generation-games",
+      "weapon-of-criticism-design-game"
+    ],
+    "evidenceBoundary": "这组资料混合综述、控制类比实验、儿童工作坊、课堂设计型研究和设计师工具案例；它们用于构造可反驳任务，不证明本站低保真原型有效，也不允许以完成数、好感或点子数替代产物质量与目标玩家测试。"
+  },
+  "resources": [
+    {
+      "id": "roy-warren-card-design-tools-review",
+      "title": "Card-based Design Tools: A Review and Analysis of 155 Card Decks for Designers and Designing",
+      "creator": "Robin Roy & James P. Warren",
+      "href": "https://oro.open.ac.uk/61472/",
+      "type": "155 套设计卡牌的分类与效果证据综述",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "分类 155 套设计卡牌，区分创意刺激、人本设计、领域方法等用途，并汇总卡牌如何承载信息、方法、共同词汇和实体协作动作。",
+      "limitation": "科学试验很少且常由工具开发者执行；增加点子或创新概念不等于可行性、成品质量或独立验证已经成立。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "benton-examples-children-game-narrative",
+      "title": "Leading by Example: Exploring the Influence of Design Examples on Children’s Creative Ideation",
+      "creator": "Laura Benton, George Varotsis & Asimina Vasalou",
+      "href": "https://discovery.ucl.ac.uk/id/eprint/10056359/",
+      "type": "游戏叙事工作坊中示例与固着的案例研究",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型"
+      ],
+      "useful": "两场、37 名儿童参与的游戏叙事设计工作坊显示：示例既会留下固着痕迹，也可能帮助维持叙事适切性、连贯性并支持重组。",
+      "limitation": "探索性儿童参与式设计案例，任务是游戏叙事而非完整桌游；不能外推成人设计师，也不能推出‘示例总是有害或有益’。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "chan-example-interface-fixation",
+      "title": "Formulating or Fixating: Effects of Examples on Problem Solving Vary as a Function of Example Presentation Interface Design",
+      "creator": "Joel Chan, Zijian Ding, Eesh Kamrah & Mark Fuge",
+      "href": "https://arxiv.org/abs/2401.11022",
+      "type": "示例呈现界面与问题空间形成的控制实验",
+      "evidenceType": "academic",
+      "format": "preprint",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型"
+      ],
+      "useful": "182 人的控制类比任务比较列表、下拉和问题空间情境化示例；结果提示同样的示例内容会因呈现方式不同而更易固着或帮助形成问题空间模型。",
+      "limitation": "预印本、控制类比创意任务且非桌游设计；不能把界面差异直接转成桌游设计工具效果或普遍因果。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "wang-fixation-defixation-review",
+      "title": "How to Effectively Overcome Fixation: A Systematic Review of Fixation and Defixation Studies on the Basis of Fixation Source and Problem Type",
+      "creator": "Shijun Wang, Takeshi Okada & Kikuko Takagi",
+      "href": "https://www.frontiersin.org/journals/education/articles/10.3389/feduc.2023.1183025/full",
+      "type": "固着来源、问题类型与去固着方法系统综述",
+      "evidenceType": "academic",
+      "format": "systematic_review",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "综合 53 项实验，把外部/内部固着来源与开放/封闭问题并排，提醒去固着效果取决于问题类型以及搜索是在既有框架内还是越出框架。",
+      "limitation": "跨领域教育心理综述，不专门研究桌游或设计卡牌；开放问题中解除固着并不必然提高表现，不能提供通用重抽公式。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "vercher-strategy-game-redesign-steam",
+      "title": "How Can Strategy Games Teach Design Thinking in Primary Education? A Design-based Study of Maker-oriented STEAM Learning Through Game Redesign",
+      "creator": "Elena Vercher Ribis & Josep Holgado García",
+      "href": "https://link.springer.com/article/10.1007/s11528-026-01183-4",
+      "type": "策略游戏重设计、制作与文档化课堂案例",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "五年级团队跨多个测试周期修改规则和组件，并把规则指南、视频、同伴教学和课外桌游社使用一起纳入设计证据，显示文档也是使作品可被他人使用的设计活动。",
+      "limitation": "单一学校语境的设计型研究，作者明确不主张普遍影响；时间、制作设备、语言学习和教师主持条件不能直接迁移到成人独立设计。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "league-ideation-toolkit",
+      "title": "LEAGUE Ideation Toolkit",
+      "creator": "Valente, Marchetti & Konstantinidis",
+      "href": "https://www.mdpi.com/2071-1050/12/20/8487",
+      "type": "严肃游戏协作构思工具研究",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型"
+      ],
+      "useful": "把理论框架转成四类卡、五种活动、共创画布和记录表，并报告七组参与者如何选择与误读提示。",
+      "limitation": "便利样本只有 34 名计算机相关学生和研究者，聚焦学习游戏构思；概念与使用感受不能推出长期学习或成品效果。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "gamespace-idea-generation-games",
+      "title": "Designing ‘Game Idea Generation’ Games",
+      "creator": "Kultima, Niemelä, Paavilainen & Saarenpää",
+      "href": "https://loading.journals.publicknowledgeproject.org/index.php/loading/article/download/71/73",
+      "type": "游戏化构思工具研究",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统"
+      ],
+      "useful": "比较 VNA、GameSeekers 与 GameBoard 三种从简短词语联想、协作拼接到结构化计分的构思游戏，并公开其迭代问题。",
+      "limitation": "结论来自工作坊经验和四家芬兰游戏公司的初步试用，且对象以数字游戏为主；不能证明游戏化构思提高最终设计质量。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "weapon-of-criticism-design-game",
+      "title": "Gameplay-Supported Reflections on the Dialectics of Design Practice",
+      "creator": "László Sall Vesselényi / Chalmers University of Technology",
+      "href": "https://odr.chalmers.se/server/api/core/bitstreams/f55215f1-d7a2-4f50-a264-1ea247891135/content",
+      "type": "反思型设计游戏论文",
+      "evidenceType": "academic",
+      "format": "thesis",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "测试与反馈"
+      ],
+      "useful": "以 Weapon of Criticism 及多轮失败原型说明，如何用描述、解释、反思与追问支持设计者讨论项目和自身语境。",
+      "limitation": "单篇交互设计硕士论文、参与者主要为同一硕士项目学生；问题会触及身份与敏感经历，使用时需要同意、退出和复盘机制。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-18"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "roy-warren-card-design-tools-review",
+      "useModes": [
+        "learn",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "broad",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "按设计任务、知识形态和协作动作比较卡牌工具，并在规划测试时看见开发者自测与独立验证的差距。",
+      "doNotUseFor": "不要从 155 套目录推导购买排名，也不要把点子数量或开发者反馈当作实际设计质量。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "benton-examples-children-game-narrative",
+      "useModes": [
+        "learn",
+        "case_study",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "检查示例是否同时提供适切性脚手架、重组材料和固着风险，而不是预设示例只会产生一种效果。",
+      "doNotUseFor": "不要把两场儿童叙事工作坊外推到成人完整桌游设计，也不要据此禁止一切范例。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "chan-example-interface-fixation",
+      "useModes": [
+        "learn",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "把‘提供哪些示例’和‘怎样让使用者接触示例’分开测试，并观察是否形成问题空间或复制表面特征。",
+      "doNotUseFor": "不要把预印本中的控制类比任务直接当成桌游工具界面的效果证明。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "wang-fixation-defixation-review",
+      "useModes": [
+        "learn",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "reusable_license_verified",
+      "commercialContext": "none_disclosed",
+      "bestFor": "先判断固着来自外部示例还是内部记忆、任务是开放还是封闭，再选择框架内探索或越框探索。",
+      "doNotUseFor": "不要宣称重抽、随机限制或反思提示是对所有开放设计问题都有效的去固着技术。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "vercher-strategy-game-redesign-steam",
+      "useModes": [
+        "learn",
+        "case_study",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "medium",
+      "rightsStatus": "reusable_license_verified",
+      "commercialContext": "none_disclosed",
+      "bestFor": "观察规则、组件、文档、同伴教学和课外使用怎样在多轮重设计中共同形成可回查的学习与设计材料。",
+      "doNotUseFor": "不要把一个五年级 maker 项目当成普遍学习效果或独立桌游生产流程。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "league-ideation-toolkit",
+      "useModes": [
+        "learn",
+        "compare",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "narrow",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "研究卡组、活动顺序、画布和团队角色如何共同形成协作构思脚手架，以及提示怎样被误当答案。",
+      "doNotUseFor": "不要把小型便利样本推广到所有桌游团队，也不要复制卡牌或从概念产出推断学习和成品效果。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "gamespace-idea-generation-games",
+      "useModes": [
+        "learn",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "比较轻量联想、协作累加和结构化计分怎样影响构思速度、复杂度、参与和记录负担。",
+      "doNotUseFor": "不要把初步试用和参与者偏好当最终设计质量证据，也不要假设更多规则或分数一定改善创意。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "weapon-of-criticism-design-game",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "narrow",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "设计项目反思会，理解描述、解释、反思与同伴追问如何揭露设计者、过程和语境之间的关系。",
+      "doNotUseFor": "不要把问题卡当心理安全保证；需要知情同意、可跳过、可退出、匿名边界和活动后复盘。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    }
+  ]
+}

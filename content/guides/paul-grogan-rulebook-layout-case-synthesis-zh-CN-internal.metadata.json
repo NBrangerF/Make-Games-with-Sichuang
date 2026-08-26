@@ -1,0 +1,87 @@
+{
+  "schemaVersion": 1,
+  "itemId": "paul-grogan-rulebook-layout-case-synthesis-zh-CN-internal",
+  "resourceId": "naylor-paul-grogan-rulebook",
+  "titleZh": "文字改完以后，为什么编辑还不能离场？Paul Grogan 的规则书交接判断",
+  "contentMode": "original_case_synthesis",
+  "documentType": "original_case_synthesis",
+  "language": "zh-CN",
+  "version": "1.0.0-internal",
+  "authorship": {
+    "author": "落桌",
+    "production": "Codex 基于公开一手访谈与项目资源评估完成原创案例综合",
+    "authority": "codex_ai_synthesis",
+    "humanReviewRequired": false,
+    "humanReviewStatus": "not_required",
+    "fullTranslationClaimed": false,
+    "sourceStructurePreserved": false,
+    "directQuoteWordCount": 0
+  },
+  "source": {
+    "title": "Producing Fun #4: Paul Grogan — Rulebook Editor & Content Creator",
+    "author": "James Naylor / Paul Grogan",
+    "primaryUrl": "https://naylorgames.com/blogs/blog/producing-fun-4-paul-grogan-rulebook-editor-content-creator",
+    "supportingUrls": [
+      "https://www.tricorngames.com/designer-blog/2017/7/4/ruling-the-roost"
+    ],
+    "displayedPublishedAt": "2021-04-20",
+    "retrievedAt": "2026-08-22",
+    "sourceLanguage": "en",
+    "translationPermissionVerified": false,
+    "publicRedistributionPermissionVerified": false
+  },
+  "license": {
+    "kind": "none_verified",
+    "rightsStatus": "link_and_summarize",
+    "evidenceUrl": "https://naylorgames.com/blogs/blog/producing-fun-4-paul-grogan-rulebook-editor-content-creator",
+    "openLicenseObserved": false
+  },
+  "synthesis": {
+    "requiredCaseDimensions": [
+      "语境",
+      "问题",
+      "选项",
+      "决定",
+      "证据",
+      "结果",
+      "仍未知",
+      "迁移动作"
+    ],
+    "requiredCaseDimensionsCovered": 8,
+    "standaloneReadable": true,
+    "authorReportSeparatedFromSiteInference": true,
+    "sourceBodyTranslated": false,
+    "hanCharacterCount": 4110,
+    "hanCountMethod": "U+4E00-U+9FFF",
+    "learningStages": [
+      "规则与信息",
+      "呈现与发布"
+    ]
+  },
+  "excludedComponents": [
+    "访谈音频",
+    "原页图片与播放器",
+    "完整逐字稿及其问答顺序",
+    "页面评论、导航、商店与页脚",
+    "原文逐段翻译与长段表达"
+  ],
+  "publication": {
+    "visibility": "internal",
+    "status": "internal-ready",
+    "publicReleaseEnabled": false,
+    "internalLearningStatus": "authoritative",
+    "legalReviewStatus": "not_reviewed",
+    "legalApprovalClaimed": false,
+    "rightsBasis": "本站原创事实综合、分析与学习脚手架；不复制来源正文、结构、音频、图片或评论。"
+  },
+  "completeness": {
+    "caseFramework": "complete",
+    "requiredDimensions": "8/8",
+    "sourceTextTreatment": "summarized_not_translated",
+    "fullSourceTranslation": "not_created",
+    "silentOmissionsWithinDeclaredCaseScope": 0
+  },
+  "verificationDocument": "docs/research/SOURCE_VERIFICATION_PAUL_GROGAN_RULEBOOK_LAYOUT_SYNTHESIS.md",
+  "file": "content/guides/paul-grogan-rulebook-layout-case-synthesis-zh-CN-internal.md",
+  "updatedAt": "2026-08-22"
+}

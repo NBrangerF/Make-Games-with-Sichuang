@@ -1,0 +1,67 @@
+import { readFile } from 'node:fs/promises'
+
+const files = Object.fromEntries(await Promise.all([
+  ['component', 'src/playtest-session-recorder.tsx'],
+  ['plan', 'src/single-question-test-plan.tsx'],
+  ['app', 'src/App.tsx'],
+  ['data', 'src/data.ts'],
+  ['storage', 'src/storage-keys.ts'],
+  ['styles', 'src/styles.css'],
+  ['guides', 'content/guides.json'],
+  ['claims', 'content/claims.json'],
+  ['entries', 'content/resource-entry-points.json'],
+  ['research', 'docs/research/LIVE_PLAYTEST_SESSION_RESEARCH_01.md'],
+  ['audit', 'docs/research/BEGINNER_LIVE_SESSION_HANDOFF_AUDIT_01.md'],
+  ['product', 'docs/product/LIVE_PLAYTEST_SESSION_RECORDER.md'],
+  ['usability', 'docs/product/USABILITY_TEST_LIVE_PLAYTEST_SESSION.md'],
+].map(async ([key, path]) => [key, await readFile(path, 'utf8')])))
+
+const guards = [
+  ['正式工具 ID 已进入类型系统', files.data.includes("'playtest-session'")],
+  ['记录器按打开意图延迟加载', files.app.includes("lazy(() => import('./playtest-session-recorder')")],
+  ['工具导航和活动面板均已接线', files.app.includes('>现场测试记录</button>') && files.app.includes("tool === 'playtest-session'")],
+  ['项目完整包收集 playtest_sessions', files.app.includes("id: 'playtest_sessions'") && files.app.includes('PLAYTEST_SESSION_STORAGE_KEY')],
+  ['存储键独立且版本化', files.storage.includes("tabletop-workshop-playtest-sessions-v1")],
+  ['计划提供显式主持交接', files.plan.includes('保存并开始主持') && files.plan.includes('onStartSession?.()')],
+  ['相同计划快照不会重复保存', files.plan.includes('function samePlan') && files.plan.includes('已复用刚保存的同一份计划快照')],
+  ['来源计划读取最近已保存记录', files.component.includes('function readLatestPlan') && files.component.includes('records[0]')],
+  ['会话保留来源 ID 时间与完整快照', ['sourcePlanId', 'sourcePlanCreatedAt', 'planSnapshot'].every(field => files.component.includes(field))],
+  ['没有来源时明确回到测试计划', files.component.includes('还没有可主持的测试计划') && files.component.includes('打开测试计划')],
+  ['四步现场流程存在', ['开场与同意', '局中事件', '结束与追问', '证据与下一版'].every(label => files.component.includes(`label: '${label}'`))],
+  ['开场记录别名而非真实姓名', files.component.includes('participantAliases') && files.component.includes('只记录别名') && files.component.includes('不要把姓名')],
+  ['实际配置媒介和记录角色齐全', ['actualConfiguration', 'actualMedium', 'observerRoles'].every(field => files.component.includes(field))],
+  ['捕捉方式和同意范围分开', files.component.includes('captureMode') && files.component.includes('consentScope')],
+  ['同意勾选明确不是认证', files.component.includes('consentConfirmed') && files.component.includes('此勾选不是法律或伦理认证')],
+  ['计时支持开始暂停继续停止', ['startSession', 'pauseOrResume', 'stopSession', 'runningSince', 'accumulatedSeconds'].every(text => files.component.includes(text))],
+  ['事件包含时间阶段和玩家别名', ['elapsedSeconds', 'phase', 'actorAlias'].every(field => files.component.includes(field))],
+  ['事件包含动作状态和随后结果', ['observation', 'visibleState', 'resolution'].every(field => files.component.includes(field))],
+  ['七类现场事件可选', ['行为观察', '玩家提问', '玩家原话', '系统结果', '主持介入', '障碍／协助', '停止／安全'].every(type => files.component.includes(type))],
+  ['事件与主问题关系有四态', ['支持', '反驳', '未定', '语境'].every(value => files.component.includes(value))],
+  ['主持介入必须记录影响', files.component.includes("eventDraft.type === '主持介入'") && files.component.includes('主持介入必须写清')],
+  ['事件修正留下 revisedAt', files.component.includes('revisedAt: new Date().toISOString()') && files.component.includes('已修正')],
+  ['局后回答与局中证据分开', files.component.includes('debriefAnswers') && files.component.includes('局后开放问题（与局中证据分开）')],
+  ['实际停止偏离和撤回提醒齐全', ['actualStopReason', 'unplannedDeviation', 'consentReminderConfirmed'].every(field => files.component.includes(field))],
+  ['证据分组不自动生成结论', files.component.includes('evidenceGroups') && files.component.includes('事件数量只帮助定位原始记录')],
+  ['决定包含结果和备择解释', files.component.includes('outcome') && files.component.includes('strongestObservation') && files.component.includes('alternativeExplanation')],
+  ['决定包含保持单改动下一问题', ['keepSame', 'changedAxis', 'nextQuestion'].every(field => files.component.includes(field))],
+  ['导出拒绝自动严重度和次数阈值', files.component.includes('no_automatic_severity: true') && files.component.includes('no_frequency_threshold: true')],
+  ['导出拒绝因果代表性和同意认证', ['no_causal_proof: true', 'no_sample_representativeness_claim: true', 'no_legal_consent_certification: true'].every(flag => files.component.includes(flag))],
+  ['导出拒绝静默修改来源计划', files.component.includes('no_silent_plan_mutation: true')],
+  ['新建草稿二次确认且保留历史', files.component.includes('确认新建空白会话') && files.component.includes('历史记录仍在当前浏览器')],
+  ['撤回二次确认并删除同会话记录', files.component.includes('确认撤回并清除本场') && files.component.includes('record.id !== draft.id')],
+  ['撤回提醒外部副本另行处理', files.component.includes('外部录音、照片或副本仍需在各自位置删除')],
+  ['桌面具有计划时间线事件三栏', files.styles.includes('grid-template-columns: minmax(230px, .72fr) minmax(410px, 1.65fr) minmax(300px, .88fr)')],
+  ['移动端改单列并允许步骤滚动', files.styles.includes('.session-steps { display: flex; overflow-x: auto; }') && files.styles.includes('.session-grid { grid-template-columns: 1fr; }')],
+  ['研究明确捕捉与分析分开', files.research.includes('现场捕捉与分析是两种工作')],
+  ['研究明确次数不是严重度', files.research.includes('次数能定位模式，不能生成严重度')],
+  ['研究明确同意边界不是法律意见', files.research.includes('不是法律或伦理认证')],
+  ['审计记录从计划到决定的闭环', files.audit.includes('原型范围') && files.audit.includes('项目完整包 playtest_sessions')],
+  ['产品规格登记两张概念稿哈希', files.product.includes('a4cec708e072c2d429787ff1789b98f93d4de9298d4b4eb26cab687b74a5b444') && files.product.includes('1260d8edc32f2bf75c4cfe862e4055a3116e2aefaed9f6b6115deb3542a4f3f2')],
+  ['可用性测试覆盖介入缺失门与撤回', files.usability.includes('先不填影响') && files.usability.includes('外部录音')],
+  ['指南、Claim 和问题入口均已连接', files.guides.includes('playtest-session') && files.claims.includes('claim-session-event-needs-context-and-resolution') && files.entries.includes('live-playtest-session')],
+]
+
+const failed = guards.filter(([, passed]) => !passed)
+for (const [label, passed] of guards) console.log(`${passed ? 'PASS' : 'FAIL'} ${label}`)
+console.log(`\n${guards.length - failed.length}/${guards.length} guards passed`)
+if (failed.length) process.exitCode = 1

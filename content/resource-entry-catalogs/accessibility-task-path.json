@@ -1,0 +1,382 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "accessibility-task-path",
+    "title": "让更多玩家真正参与这一轮",
+    "question": "我想检查游戏或活动是否可参与，但不想用诊断名称、清单分数或‘有人帮忙’替代真实任务。",
+    "outcome": "从抵达、设置、读取、操作、决定、沟通、查询到退出选一个任务，分开玩家策略、外部协助、决定权、关系代价和下一次复测。",
+    "resourceIds": [
+      "vocus-deaf-event-access",
+      "bennett-autistic-adults-boardgames",
+      "ran-blv-mobile-games-china",
+      "flyingv-braille-boardgame-playtests",
+      "tpwl-tactile-party-game",
+      "tainan-disabled-boardgame-session",
+      "dcard-wheelchair-boardgame-venue",
+      "mcd-heuristic-toolkit-paper"
+    ],
+    "evidenceBoundary": "混合桌游参与者研究、中文数字游戏相邻证据、商业测试日志、机构报道与朋友代问；它们用于提出任务、协助和关系问题，不是残障群体画像、合规认证、场地推荐或适配效果证明。"
+  },
+  "resources": [
+    {
+      "id": "vocus-deaf-event-access",
+      "title": "〖回憶之錄〗熱愛生活的冒險旅程",
+      "creator": "小猴",
+      "href": "https://vocus.cc/article/64e56e69fd89780001236414",
+      "type": "聋人组织者与玩家一手回顾",
+      "evidenceType": "community_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "zh"
+      ],
+      "stages": [
+        "测试与反馈",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "具体记录手语翻译、读唇视线、多人同时发言、主持节奏、分组讨论、文字备份与活动组织劳动怎样影响聋人玩家参与。",
+      "limitation": "单一组织者在特定群体和活动中的一手经历，且部分案例属于剧本活动；不能外推为所有聋人或听障玩家的统一方案。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "bennett-autistic-adults-boardgames",
+      "title": "“Life has more purpose now”: A Grounded Theory Investigation of the Impact of Table-top Board Games on Wellbeing and Functioning in Autistic Adults",
+      "creator": "Rebecca Bennett, Miriam Sturdee, Philip Kershaw & Ian C. Smith",
+      "href": "https://www.sciencedirect.com/science/article/pii/S3050656525001166",
+      "type": "自闭症成人桌游经验研究",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "用 10 名英国自闭症成人的访谈说明规则、轮流和共同兴趣怎样可能降低社交含混，也记录规则争议、认知负荷与错过社交线索等反例。",
+      "limitation": "志愿者都已持续玩桌游，样本小且仅英国、要求正式诊断；不能外推到不玩桌游者、中国玩家或把桌游当作治疗。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "ran-blv-mobile-games-china",
+      "title": "How Users Who are Blind or Low Vision Play Mobile Games: Perceptions, Challenges, and Strategies",
+      "creator": "Zihe Ran et al.",
+      "href": "https://arxiv.org/html/2502.09866",
+      "type": "中国视障玩家数字游戏经验研究",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "以 32 名中国盲人或低视力资深手游玩家的访谈，观察可进入、可操作、可玩性、额外认知劳动与主流社群参与之间的张力。",
+      "limitation": "研究对象是手机游戏而非实体桌游，只能提供关系性参与和辅助劳动的相邻证据，不能直接推出触觉组件或桌面布局方案。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "flyingv-braille-boardgame-playtests",
+      "title": "星際奇航｜為視障兒童打造的親子桌遊",
+      "creator": "星際奇航專案團隊",
+      "href": "https://www.flyingv.cc/projects/16547",
+      "type": "视障亲子桌游测试日志",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "zh-Hant"
+      ],
+      "stages": [
+        "最小原型",
+        "测试与反馈",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "保留八个月中不同地点测试后删去交易、继续简化规则与保留回合间协助的版本变化，适合研究适配假设怎样被具体失败修订。",
+      "limitation": "这是商业募资页，儿童声音主要由开发者转述，正向效果没有独立测量；只能用作版本与语境记录，不能证明产品有效。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "tpwl-tactile-party-game",
+      "title": "視障者都這樣玩桌遊～來場真心話不冒險吧",
+      "creator": "社團法人台灣公益聯盟",
+      "href": "https://www.tpwl.org/news/102/",
+      "type": "视障桌游适配案例",
+      "evidenceType": "community",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "zh-Hant"
+      ],
+      "stages": [
+        "最小原型",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "展示数字与符号加入凸点后，揭示答案等环节仍可能需要明眼协助，提醒组件触觉化不等于整条任务独立可用。",
+      "limitation": "由机构人员写作，只描述一款改编派对游戏，没有参与者分析、比较版本或成效资料。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "tainan-disabled-boardgame-session",
+      "title": "南市社會局社區學苑桌遊趣　身障者歡樂學習",
+      "creator": "臺南市政府社會局",
+      "href": "https://sab.tainan.gov.tw/News_Content.aspx?n=21215&s=4375649",
+      "type": "身障参与者桌游活动记录",
+      "evidenceType": "community",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "zh-Hant"
+      ],
+      "stages": [
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "记录视障、行动与智能障碍参与者及家属共同活动，并保留一名视障参与者对紧张、刺激与伴侣手部引导的直接描述。",
+      "limitation": "政府活动报道只有单次、单句参与者声音，未说明各任务由谁读取、决定或操作；不能外推满意度或独立参与。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "dcard-wheelchair-boardgame-venue",
+      "title": "請益：台北無障礙設施桌遊店",
+      "creator": "Dcard 桌遊板匿名用户",
+      "href": "https://www.dcard.tw/f/board_game/p/254363843",
+      "type": "行动障碍场地信息请求",
+      "evidenceType": "community",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "zh-Hant"
+      ],
+      "stages": [
+        "测试与反馈",
+        "呈现与发布"
+      ],
+      "useful": "具体提出轮椅使用者参加桌游聚会前需要核对入口与无障碍厕所，却难以找到双北场地资料，显示抵达前信息本身也是参与条件。",
+      "limitation": "由朋友代问的短帖，不是轮椅使用者本人的完整经历；店家状态会变化，也不能据回复形成长期推荐名单。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-19"
+    },
+    {
+      "id": "mcd-heuristic-toolkit-paper",
+      "title": "Meeple Centred Design: A Heuristic Toolkit for Evaluating the Accessibility of Tabletop Games",
+      "creator": "Michael James Heron, Pauline Belford & Hayley Reid",
+      "href": "https://doi.org/10.1007/s40869-018-0057-8",
+      "type": "桌游无障碍启发式研究",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "最小原型",
+        "测试与反馈",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "把视觉、操作、认知、沟通、情绪、社会经济与交叉障碍落到具体游戏任务，并提醒代理操作可能改变隐私和玩家能动性。",
+      "limitation": "作者把工具定位为残障玩家测试之前的初筛而非替代品；启发式仍属初步方案，不能据此给玩家或整款游戏下诊断。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-14"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "vocus-deaf-event-access",
+      "useModes": [
+        "case_study",
+        "diagnose",
+        "learn"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "把沟通无障碍拆成发言顺序、读唇视线、手语翻译、主持节奏、分组讨论、书面备份和组织劳动。",
+      "doNotUseFor": "不要把一位聋人组织者的经验转成所有聋人或听障玩家都应接受的固定流程，也不要忽略玩家本人选择。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "bennett-autistic-adults-boardgames",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "让自闭症成人的混合经验约束设计推断：同一规则结构既可能降低含混，也可能因争议与认知负荷制造新的社交成本。",
+      "doNotUseFor": "不要把已持续玩桌游的 10 名英国志愿者外推到所有自闭症成人，更不要据此承诺治疗或福祉效果。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "ran-blv-mobile-games-china",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "narrow",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "理解中国视障资深玩家怎样描述可进入、额外劳动、可玩性和主流社群参与的关系，再据此提出桌游待测问题。",
+      "doNotUseFor": "不要把手游界面、读屏和声音策略直接转成实体桌游组件规范；媒介差异必须重新测试。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "flyingv-braille-boardgame-playtests",
+      "useModes": [
+        "learn",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "partial",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "restricted",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "研究同一适配在不同地点与玩家群体中如何迫使团队删规则、降低复杂度并显式保留协助。",
+      "doNotUseFor": "不要把募资叙事、开发者转述的儿童反应或产品完成度当作独立效果评价，也不要复制商业素材。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "tpwl-tactile-party-game",
+      "useModes": [
+        "diagnose",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "partial",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "发现只改造牌面触觉后，揭示答案、维护隐藏信息或确认状态等下游任务仍可能依赖他人。",
+      "doNotUseFor": "不要把单一机构案例写成视障玩家通用玩法，也不要由完成游戏推断玩家保有全部信息与决定权。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "tainan-disabled-boardgame-session",
+      "useModes": [
+        "diagnose",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "partial",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "用一名参与者提到的紧张、刺激和伴侣手部引导，追问活动记录是否分开情绪、协助、操作与决定。",
+      "doNotUseFor": "不要把政府活动稿的欢乐框架或一句引语推广为所有参与者满意、学习成功或独立完成任务。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "dcard-wheelchair-boardgame-venue",
+      "useModes": [
+        "diagnose",
+        "lookup",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "high",
+      "rightsStatus": "restricted",
+      "commercialContext": "none_disclosed",
+      "bestFor": "把参加桌游活动前的场地问题拆成入口、路线、厕所和当前可查信息，而不是只写笼统的‘无障碍场地’。",
+      "doNotUseFor": "不要把朋友代问当轮椅使用者完整第一人称经验，也不要把旧回复当作当前店家推荐或设施核验。",
+      "reviewedAt": "2026-08-19",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "mcd-heuristic-toolkit-paper",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "建立跨视觉、身体、认知、沟通、情绪和经济任务的初筛问题，并检查适配之间的冲突。",
+      "doNotUseFor": "不要把启发式等级当医学判断、合规证明或残障玩家测试的替代品。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    }
+  ]
+}

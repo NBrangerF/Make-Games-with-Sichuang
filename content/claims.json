@@ -1,0 +1,2530 @@
+[
+  {
+    "id": "claim-prototype-fidelity-follows-question",
+    "statement": "原型精度应由本轮测试问题决定；核心系统未验证时，完整内容与装饰美术通常会提高迭代成本。",
+    "kind": "project_inference",
+    "sourceIds": ["daniel-games-prototyping", "sspai-mvp-prototype", "zhiyanjia-course-retro"],
+    "confidence": "high",
+    "counterexamples": ["如果触感、空间关系或信息层级就是测试对象，相应部分必须具有足够精度。"]
+  },
+  {
+    "id": "claim-feedback-needs-design-intent",
+    "statement": "没有目标玩家、体验目标、时长和复杂度边界，就无法判断一条反馈是在修正当前游戏，还是把它改成另一款游戏。",
+    "kind": "project_inference",
+    "sourceIds": ["james-ernest-blueprint", "gcores-light-medium-design", "bgdl-playtest-like-a-boss"],
+    "confidence": "high",
+    "counterexamples": ["反复出现的可用性障碍即使不符合作者预期，也不能仅以设计意图排除。"]
+  },
+  {
+    "id": "claim-observation-not-solution",
+    "statement": "测试者对经历、困惑和情绪的描述是证据；他们建议的具体改法仍是待验证的设计假设。",
+    "kind": "project_inference",
+    "sourceIds": ["bgdl-playtest-like-a-boss", "gcores-light-medium-design"],
+    "confidence": "high",
+    "counterexamples": ["具有相关设计或生活经验的测试者，其方案可能是高价值候选，但仍需回到目标与测试。"]
+  },
+  {
+    "id": "claim-rulebook-three-jobs",
+    "statement": "规则书至少承担介绍游戏、教会新玩家和提供查询裁决三项任务；单一线性说明很难同时优化三者。",
+    "kind": "author_opinion",
+    "sourceIds": ["rulebook-ruling-the-roost", "bgdl-playtest-like-a-boss"],
+    "confidence": "medium",
+    "counterexamples": ["极短游戏可能用一张卡或引导式首局合并这些任务。"]
+  },
+  {
+    "id": "claim-theme-mechanism-bidirectional",
+    "statement": "桌游可以从主题或机制任一侧开始；关键是验证行动、反馈和系统关系是否让主题直觉与目标体验互相支持。",
+    "kind": "project_inference",
+    "sourceIds": ["wingspan-interview", "undaunted-diary", "sspai-mvp-prototype", "gcores-light-medium-design"],
+    "confidence": "high",
+    "counterexamples": ["抽象游戏可以主动降低题材映射，但仍需清晰的体验意图。"]
+  },
+  {
+    "id": "claim-content-distribution-not-identity",
+    "statement": "仅统计某类卡牌或效果的比例不足以定义派系或系统性格，还要检查条件、范围、成本与相互作用。",
+    "kind": "author_opinion",
+    "sourceIds": ["oath-suit-spotlight"],
+    "confidence": "medium",
+    "counterexamples": ["在快速审计中，比例仍可作为发现异常的入口。"]
+  },
+  {
+    "id": "claim-community-feedback-needs-provenance",
+    "statement": "大量社区反馈若没有版本、来源语境和设计问题，会增加管理负担，并可能让过时意见继续影响决定。",
+    "kind": "project_inference",
+    "sourceIds": ["oath-keeping-the-oath", "show-your-cards"],
+    "confidence": "medium",
+    "counterexamples": ["即时投票和开放讨论仍适合发现候选问题，但不能自动成为优先级。"]
+  },
+  {
+    "id": "claim-coop-agency",
+    "statement": "合作游戏的重点不是机械地消灭所有交流，而是确保每名玩家拥有会改变共同结果、且无法被单人轻易代办的决定。",
+    "kind": "project_inference",
+    "sourceIds": ["quarterbacking-player-analysis", "vocus-spirit-island-player"],
+    "confidence": "medium",
+    "counterexamples": ["部分群体享受共同解题或由熟练者带领；四分卫问题也受玩家规范影响。"]
+  },
+  {
+    "id": "claim-accessibility-no-total-score",
+    "statement": "桌游无障碍应描述具体任务、障碍、所需协助及其代价，不应压缩成脱离玩家语境的总分。",
+    "kind": "project_inference",
+    "sourceIds": ["meeple-centred-design", "visual-cognitive-ergonomics"],
+    "confidence": "high",
+    "counterexamples": ["简化标签可用于初筛，但必须链接到细分理由。"]
+  },
+  {
+    "id": "claim-mechanics-can-carry-emotion",
+    "statement": "体验目标不应只放在题材文字里；设计者可以直接把触觉、限制、协作动作或信息结构作为情绪媒介。",
+    "kind": "author_opinion",
+    "sourceIds": ["palm-of-your-hand-diary", "quarterbacking-player-analysis"],
+    "confidence": "medium",
+    "counterexamples": ["同一机制产生的情绪会受玩家经历、群体与主题框架影响。"]
+  },
+  {
+    "id": "claim-parallel-projects-reduce-attachment",
+    "statement": "暂存或并行推进多个构思可以降低沉没成本依恋，让更有生命力的原型通过测试自然浮现。",
+    "kind": "author_opinion",
+    "sourceIds": ["knizia-parallel-projects"],
+    "confidence": "medium",
+    "counterexamples": ["新手项目过多也会稀释练习深度；这是一种工作策略而非产量指标。"]
+  },
+  {
+    "id": "claim-ai-feedback-is-hypothesis",
+    "statement": "AI 可以帮助结构化构思、发现规则疑点和生成待测假设，但模拟玩家反馈不能成为体验已经被验证的证据。",
+    "kind": "project_inference",
+    "sourceIds": ["autobg-2026", "show-your-cards", "oath-keeping-the-oath"],
+    "confidence": "medium",
+    "counterexamples": ["自动分析可高效发现形式规则冲突、概率异常和特定策略漏洞；这些结果仍需按工具覆盖范围解释。"]
+  },
+  {
+    "id": "claim-frameworks-answer-different-questions",
+    "statement": "MDA、5PM、TAG 与 Ludii 不是互相替代的总理论：它们分别更适合连接体验因果、拆解单项机制、执行现代桌游状态机，以及用可组合概念形式化传统策略规则。",
+    "kind": "project_inference",
+    "sourceIds": ["mda-framework", "five-part-model", "tag-framework", "ludii-system"],
+    "confidence": "high",
+    "counterexamples": ["同一项目可以在不同阶段组合使用多个框架，但每次仍应先明确要回答的问题。"]
+  },
+  {
+    "id": "claim-computational-play-is-system-evidence",
+    "statement": "自动对局适合产生关于状态空间、分支、长度、参数和策略漏洞的系统证据，但不能单独验证教学清晰度、触感、社交互动或玩家情绪。",
+    "kind": "project_inference",
+    "sourceIds": ["tag-framework", "ludii-system", "autobg-2026", "show-your-cards"],
+    "confidence": "high",
+    "counterexamples": ["当研究问题本身就是形式正确性或特定系统指标时，计算实验可以是主要证据。"]
+  },
+  {
+    "id": "claim-playtest-mode-follows-question",
+    "statement": "测试方式应由当前问题、系统稳定度、设计者是否在场以及所需玩家语境决定；自测、引导测试、外部测试和盲测会反复组合，而不是一次性升级。",
+    "kind": "project_inference",
+    "sourceIds": ["ttgda-playtesting", "break-my-game-code", "greg-blind-playtesting", "daniel-games-prototyping"],
+    "confidence": "high",
+    "counterexamples": ["团队可以用固定发布门禁管理流程，但门禁仍不能证明一种测试方式适合所有研究问题。"]
+  },
+  {
+    "id": "claim-blind-test-whole-delivery",
+    "statement": "规则盲测检验的是规则、设置、玩家辅助与组件信息共同构成的自主使用系统；记录第一次偏离、查找路径和实际误玩比只数提问次数更有诊断价值。",
+    "kind": "project_inference",
+    "sourceIds": ["bgdl-playtest-like-a-boss", "greg-blind-playtesting", "panda-p20-rulebook", "rulebook-ruling-the-roost"],
+    "confidence": "high",
+    "counterexamples": ["很早期可以只盲测设置、术语或查询任务，不必等待完整游戏稳定。"]
+  },
+  {
+    "id": "claim-design-aid-must-return-to-evidence",
+    "statement": "设计辅助卡组和随机约束适合突破空白页、切换视角与降低原型成本，但每次刺激都应回到行为预测和测试问题，不能把随机组合本身当成完成的设计。",
+    "kind": "project_inference",
+    "sourceIds": ["deck-of-lenses", "deck-of-ideas", "rapid-prototyping-game", "panda-omnideck", "series-interesting-choices", "polyu-game-kit-2"],
+    "confidence": "medium",
+    "counterexamples": ["在纯构思练习或课堂热身中，暂时不要求可测试产出也可能有学习价值。"]
+  },
+  {
+    "id": "claim-constraints-need-adjustable-strength",
+    "statement": "创意约束应是可拒绝、可替换且一次只固定少量变量的临时搜索边界；完全无边界与过强限制都可能妨碍探索。",
+    "kind": "project_inference",
+    "sourceIds": ["constraint-creativity-joyce", "mixed-reality-game-cards"],
+    "confidence": "medium",
+    "counterexamples": ["高度受限的设计挑战可以训练特定技能或模拟真实生产条件，但不能因此宣称它提高所有创意结果。"]
+  },
+  {
+    "id": "claim-ideation-cards-not-superior-by-default",
+    "statement": "结构化构思卡不能被默认描述为比自由脑暴更高效或更有创意；工具价值需要按任务、使用方式和可观察产出来判断。",
+    "kind": "research_finding",
+    "sourceIds": ["game-ideation-techniques-comparison", "smeft-decks"],
+    "confidence": "medium",
+    "counterexamples": ["特定领域的新手可能因卡牌提供共享语言或知识入口而受益，但这需要在该语境中单独验证。"]
+  },
+  {
+    "id": "claim-ideation-cards-encode-and-reflect",
+    "statement": "设计卡牌可以同时承担领域知识入口、讨论节奏和反思提示，但抽取结果仍需经过选择、阐释、原型化和测试。",
+    "kind": "project_inference",
+    "sourceIds": ["mixed-reality-game-cards", "smeft-decks", "rapid-prototyping-game"],
+    "confidence": "medium",
+    "counterexamples": ["个人快速构思时可能只需要一条文字提示，不需要完整牌组或协作规则。"]
+  },
+  {
+    "id": "claim-accessibility-observation-preserves-autonomy",
+    "statement": "无障碍观察不仅要记录任务是否完成，还要记录所需协助及其是否暴露私人信息、代替玩家决定、增加时间或改变目标体验；能完成不等于自主完成。",
+    "kind": "project_inference",
+    "sourceIds": ["meeple-centred-design", "blv-tabletop-experiences"],
+    "confidence": "high",
+    "counterexamples": ["玩家主动选择共同决策、代读或团队协助时，协助本身可能正是目标社交体验；仍需记录选择与代价，而不是预设它有害。"]
+  },
+  {
+    "id": "claim-rulebook-access-is-format-and-pace",
+    "statement": "可访问规则不仅是简化措辞，还包括可选择文本、正确阅读顺序、可分段暂停、按需例子与一致术语，使玩家能控制信息节奏。",
+    "kind": "research_finding",
+    "sourceIds": ["blv-tabletop-experiences", "blv-rulebook-voice-agent", "accessible-rulebook-best-practices"],
+    "confidence": "medium",
+    "counterexamples": ["触觉、现场演示或引导式首局可以承担部分教学，但仍不能自动解决查询、私人信息和辅助技术兼容。"]
+  },
+  {
+    "id": "claim-information-interface-needs-task-testing",
+    "statement": "规则、组件、图示和玩家辅助应按识别、设置、行动、更新状态、查询与结算等具体任务测试；静态章节完整或文字正确不能证明玩家在需要时找得到并执行得了。",
+    "kind": "project_inference",
+    "sourceIds": ["rulebook-design-curators", "intuitive-rules-evaluation", "resonym-writing-rulebooks", "blv-rulebook-voice-agent", "ptt-rulebook-lookup-friction", "ptt-mad-boardgame-shop-teach"],
+    "confidence": "high",
+    "counterexamples": ["早期规则备忘录只服务熟悉项目的团队时，可以先验证运行一致性，不需要立即覆盖所有独立学习任务。"]
+  },
+  {
+    "id": "claim-accessibility-is-intersectional-task",
+    "statement": "无障碍维度只能帮助检索问题，不能代表独立的玩家类别；同一适配可能在另一项任务中制造新的操作、沟通、认知、隐私或时间障碍。",
+    "kind": "project_inference",
+    "sourceIds": ["mcd-heuristic-toolkit-paper", "communication-challenges-social-board-games", "blv-tabletop-experiences"],
+    "confidence": "high",
+    "counterexamples": ["在早期审计中按维度分组仍能防止遗漏，但必须用跨维度复测检查冲突。"]
+  },
+  {
+    "id": "claim-communication-access-is-pace-position-power",
+    "statement": "社交桌游的沟通可访问性不只取决于音量，还受说话节奏、多人同时发言、座位与视线、说话者提示、主持方式和谁能控制讨论进程影响。",
+    "kind": "research_finding",
+    "sourceIds": ["communication-challenges-social-board-games", "abletop-communication", "vocus-deaf-event-access"],
+    "confidence": "medium",
+    "counterexamples": ["结构化轮次和文字沟通可能降低一部分障碍，但也会改变实时压力、隐瞒信息或表演性乐趣，需要按目标体验测试。"]
+  },
+  {
+    "id": "claim-physical-access-includes-setup-precision-time",
+    "statement": "身体操作任务应覆盖开盒、设置、收纳、够取、动作频率、精度与时间压力；让他人代为移动时还要检查是否泄露信息或代替决定。",
+    "kind": "project_inference",
+    "sourceIds": ["mcd-heuristic-toolkit-paper", "abletop-mobility", "ptt-wheelchair-venue-audit"],
+    "confidence": "high",
+    "counterexamples": ["玩家主动选择团队分工时，代为移动可以是目标社交体验；重点是记录选择权和功能代价。"]
+  },
+  {
+    "id": "claim-cognitive-access-needs-observation-codesign",
+    "statement": "口头表示“简单”或在支持下完成不能单独证明玩家能自主使用系统；认知相关适配应结合具体任务观察、玩家原话和共同设计的变体复测。",
+    "kind": "research_finding",
+    "sourceIds": ["games-inclusion-lab-neurodivergent", "abletop-cognitive", "special-needs-boardgame-adjustment"],
+    "confidence": "medium",
+    "counterexamples": ["玩家选择协作完成时，自主完成不是唯一成功标准；应先确认玩家希望怎样参与，再记录是否达到该目标。"]
+  },
+  {
+    "id": "claim-access-cost-is-part-of-access",
+    "statement": "如果参与需要购买专版、额外配件、打印加工、寻找帮手或持续适配劳动，这些价格、可获得性和时间负担本身就是无障碍记录的一部分。",
+    "kind": "project_inference",
+    "sourceIds": ["mcd-heuristic-toolkit-paper", "abletop-accessibility-cost", "blv-tabletop-experiences", "ptt-blind-game-discovery", "vocus-deaf-event-access"],
+    "confidence": "medium",
+    "counterexamples": ["免费可编辑文件能显著降低部分门槛，但设备、材料、技能和配送差异仍需记录。"]
+  },
+  {
+    "id": "claim-balance-needs-target",
+    "statement": "平衡不是一个统一数值；应先写清要保护的体验与要避免的失效模式，例如先手优势、唯一最优、过早失去竞争力、无效选项或随机结果遮蔽决定，再选择对应证据。",
+    "kind": "project_inference",
+    "sourceIds": ["game-balance-intro", "boardgame-balance-experience-study", "shake-that-city-diary"],
+    "confidence": "high",
+    "counterexamples": ["锦标赛、抽象双人或标准化竞技环境可以把座位胜率等单项指标设为明确门槛，但它仍只回答已定义的那个平衡问题。"]
+  },
+  {
+    "id": "claim-probability-is-not-experience-proof",
+    "statement": "期望值与结果分布能发现规则数学和设计预期的错配；短局波动、玩家感知与选择语境意味着“数学公平”不能单独证明体验公平或有意义。",
+    "kind": "project_inference",
+    "sourceIds": ["game-balance-probability", "game-balance-intro", "game-balance-metrics"],
+    "confidence": "high",
+    "counterexamples": ["当问题仅是骰面概率、牌库组成或支付是否满足既定数学关系时，形式计算可以给出确定答案。"]
+  },
+  {
+    "id": "claim-cost-curve-is-baseline",
+    "statement": "成本曲线适合给可比较选项建立第一版共同基线，但限制、适用情境、组合与玩家策略会改变实际价值；曲线需要随测试证据更新。",
+    "kind": "project_inference",
+    "sourceIds": ["game-balance-cost-curves", "game-balance-metrics", "oath-suit-spotlight"],
+    "confidence": "medium",
+    "counterexamples": ["在效果完全同质、关系稳定且没有组合互动的局部系统中，固定线性换算可能长期足够。"]
+  },
+  {
+    "id": "claim-feedback-loop-needs-purpose",
+    "statement": "正向反馈可制造成长与终局加速，负向反馈可保留竞争与追赶；评价它们时应检查领先差距、结束节奏、玩家能动性和受众预期，而不是把一类默认判为好或坏。",
+    "kind": "project_inference",
+    "sourceIds": ["game-balance-feedback-pacing", "underdog-catch-up-mechanisms"],
+    "confidence": "medium",
+    "counterexamples": ["极短淘汰赛可能有意让优势迅速转化为胜利；家庭向游戏也可能有意采用明显自动追赶以降低挫败。"]
+  },
+  {
+    "id": "claim-balance-data-needs-provenance",
+    "statement": "胜率、选项使用率、分差和局长只有连同版本、人数与座位、玩家经验、测试情境和样本量记录，才能用于判断当前平衡假设；指标本身不会解释原因。",
+    "kind": "project_inference",
+    "sourceIds": ["game-balance-metrics", "boardgame-balance-experience-study", "oath-keeping-the-oath"],
+    "confidence": "high",
+    "counterexamples": ["形式模型中的完整枚举可以不依赖玩家样本，但仍要说明规则版本、模型假设与它没有覆盖的体验维度。"]
+  },
+  {
+    "id": "claim-resource-flow-before-tuning",
+    "statement": "调整资源数值前，先画出每种资源的来源、保存、转换、交换、消耗和计分角色，更容易发现池化、断流、复利与同一物件承担多重功能造成的决策变化。",
+    "kind": "project_inference",
+    "sourceIds": ["lostgarden-value-chains", "league-game-elements-resources", "quarantine-economy-diary"],
+    "confidence": "medium",
+    "counterexamples": ["只有一次获得和一次支付的极简资源，可以直接用一行换算描述，不需要完整经济图。"]
+  },
+  {
+    "id": "claim-balance-pass-is-one-risk",
+    "statement": "核心决定尚未稳定时，全面表格平衡容易制造假精度；一次平衡迭代应优先选择一个具体风险、写基线与反驳信号，再用最短可玩版本取得证据。",
+    "kind": "project_inference",
+    "sourceIds": ["game-balance-intro", "game-balance-cost-curves", "game-balance-metrics", "daniel-games-prototyping"],
+    "confidence": "medium",
+    "counterexamples": ["涉及博彩、安全、付费或正式竞技规则时，核心模型与风险阈值可能必须在外部测试前完成更严格的分析与审查。"]
+  },
+  {
+    "id": "claim-teaching-and-reference-are-different-tasks",
+    "statement": "首局教学要按玩家即将执行的决定控制信息顺序，桌中查询要按玩家当下使用的术语和情境快速恢复；两种任务可以共用一份规则源，但需要不同入口与测试。",
+    "kind": "project_inference",
+    "sourceIds": ["bushner-hobbyist-rulebook-practices", "dvgiochi-standard-rulebook", "naylor-paul-grogan-rulebook", "rulepop-digital-rules"],
+    "confidence": "high",
+    "counterexamples": ["极短游戏可能用一张卡同时完成教学和查询，但仍应观察玩家第一次如何开始、之后如何找回答。"]
+  },
+  {
+    "id": "claim-onboarding-needs-action",
+    "statement": "把目标与当前必要规则解释后，立即安排一次低风险的实体动作或决定，能把上手从被动听完转成可观察的理解任务；未在桌面执行过的复述不能单独证明会玩。",
+    "kind": "project_inference",
+    "sourceIds": ["frontiers-two-part-onboarding", "dized-tutorial-creation", "dvgiochi-standard-rulebook", "bumbling-teach-board-game"],
+    "confidence": "medium",
+    "counterexamples": ["隐藏信息、推理和不可撤销选择可能不适合用正式局面练习，可以用公开示例、演示回合或重置场景替代。"]
+  },
+  {
+    "id": "claim-rule-medium-needs-task-context",
+    "statement": "纸质规则、数字检索、视频和交互教程的效果取决于游戏、任务、信息结构、玩家经验与使用环境；媒介名称本身不能证明理解更快、错误更少或更可访问。",
+    "kind": "synthesis",
+    "sourceIds": ["wanstrom-physical-digital-rulebook", "semester-baru-media-comparison", "rulepop-digital-rules", "dized-tutorial-creation"],
+    "confidence": "medium",
+    "counterexamples": ["在没有网络、电力或个人设备的场景，数字媒介即使结构更好也可能直接不可用；盒内可长期保存的入口仍必要。"]
+  },
+  {
+    "id": "claim-player-aid-needs-task-and-owner",
+    "statement": "玩家辅助应服务明确的高频动作、状态或查询，并在实际座位和使用时机测试谁能看到、谁需要传递、是否暴露信息以及能否找到下一步；压缩整本规则不是辅助。",
+    "kind": "project_inference",
+    "sourceIds": ["pratt-rulebook-editors-interview", "rulepop-digital-rules", "bumbling-great-rulebook", "blv-tabletop-experiences"],
+    "confidence": "high",
+    "counterexamples": ["规则极短且关键步骤已经稳定印在公共桌面时，额外个人辅助可能只增加组件和成本。"]
+  },
+  {
+    "id": "claim-examples-need-diagnostic-purpose",
+    "statement": "规则例子应对应一个容易误解的关系、时序、边界或真实分支，并清楚区分示例与规则；为覆盖所有疑问不断增加平凡例子也可能遮蔽核心。",
+    "kind": "synthesis",
+    "sourceIds": ["hollandspiele-rulebook-examples", "naylor-paul-grogan-rulebook", "dvgiochi-standard-rulebook", "resonym-writing-rulebooks"],
+    "confidence": "medium",
+    "counterexamples": ["空间、连锁结算和多阶段计分可能需要多个渐进图示；关键不是例子少，而是每个例子有明确任务。"]
+  },
+  {
+    "id": "claim-terminology-is-interface-contract",
+    "statement": "组件表、规则、图示、玩家辅助和数字入口应共享一套唯一、可查询的对象与动作名称；玩家实际使用的近义词还应作为索引或交叉入口，而不是悄悄替换正式术语。",
+    "kind": "synthesis",
+    "sourceIds": ["unfair-rulebook-glossary", "dvgiochi-standard-rulebook", "rulebook-writing-blog", "pratt-rulebook-editors-interview"],
+    "confidence": "high",
+    "counterexamples": ["叙事游戏可以让角色对同一对象使用不同称呼，但规则身份与机械后果仍需能被玩家明确对应。"]
+  },
+  {
+    "id": "claim-teachability-data-needs-provenance",
+    "statement": "教学可用性记录至少要保留规则版本、学习任务、玩家经验与语言、媒介顺序、第一次偏离、查询与恢复路径、主持人介入和复测改动；总体理解分无法定位信息断点。",
+    "kind": "project_inference",
+    "sourceIds": ["bushner-hobbyist-rulebook-practices", "wanstrom-physical-digital-rulebook", "greg-blind-playtesting", "pratt-rulebook-editors-interview"],
+    "confidence": "high",
+    "counterexamples": ["大样本标准化研究可能需要量表用于组间比较，但仍应保留任务设计和测量条件，且量表不能代替错误路径观察。"]
+  },
+  {
+    "id": "claim-option-count-is-not-choice-quality",
+    "statement": "表面可选动作的数量不能证明决定有意义；至少要检查玩家当时认为哪些选项可行、它们的机会成本与后果是否不同，以及是否存在显然答案或只因信息缺失而随机选择。",
+    "kind": "synthesis",
+    "sourceIds": ["rosewater-decisions-part-one", "hoffman-improving-player-choices", "king-meaningful-choice-2018"],
+    "confidence": "high",
+    "counterexamples": ["纯表达性选择可能不改变胜负路径，却能改变身份、关系或叙事意义；不能仅因没有数值后果就自动删除。"]
+  },
+  {
+    "id": "claim-novices-use-shallow-goal-search",
+    "statement": "面对陌生的双人策略棋盘游戏，人类新手能以浅层、目标导向的搜索快速评价和行动；首轮决定测试因此应检查一步可见的目标推进与阻挡线索，而不是假定玩家会展开深远计算。",
+    "kind": "finding",
+    "sourceIds": ["intuitive-gamer-nature-2026"],
+    "confidence": "high",
+    "counterexamples": ["该研究的 121 款游戏主要是可形式化双人抽象系统；谈判、合作、隐藏信息、身体操作和熟练玩家可能使用不同线索与更深规划。"]
+  },
+  {
+    "id": "claim-depth-is-sustained-learning-not-complexity",
+    "statement": "策略深度更接近一个系统在重复游玩中持续产生学习、反思和改进空间的能力，而不是规则数量、组件数量、状态空间大小或单回合选项数量。",
+    "kind": "synthesis",
+    "sourceIds": ["lantz-depth-strategic-games", "decision-space-depth-2026", "bumbling-depth-replayability"],
+    "confidence": "medium",
+    "counterexamples": ["社交、叙事、身体和主题层面的深度不完全由策略学习模型覆盖；有些作品也只追求有限局次的强体验。"]
+  },
+  {
+    "id": "claim-interaction-needs-effect-path",
+    "statement": "判断一项行动是否形成玩家互动，应记录它怎样改变他人的状态、可行选项、信息、价值判断或关系，以及他人能否感知并回应；共享同一随机输入不必然构成互动。",
+    "kind": "synthesis",
+    "sourceIds": ["gil-hova-interaction-slides", "faidutti-indirect-interaction", "oath-wehrle-interview"],
+    "confidence": "medium",
+    "counterexamples": ["即使没有改变形式状态，他人的公开进度、表情、承诺或速度也可能改变玩家判断；需要把社会信息列入作用路径。"]
+  },
+  {
+    "id": "claim-interaction-directness-is-not-value",
+    "statement": "直接攻击、共享空间、全局压力、相邻作用、交易、谈判或近乎零互动都可能服务不同体验；直接度是作用方式，不是互动质量、道德性或适合度的单一排序。",
+    "kind": "synthesis",
+    "sourceIds": ["gil-hova-interaction-slides", "faidutti-indirect-interaction", "wehrle-kingmaking-gdc", "skeleton-code-kingmaking"],
+    "confidence": "high",
+    "counterexamples": ["在明确受众与体验目标下，某种互动强度可能确实不合适；不排序不等于不用测试伤害、停局、权力和关系后果。"]
+  },
+  {
+    "id": "claim-objective-structure-shapes-tradeoffs",
+    "statement": "多个目标只有在当前局势中改变机会成本、协同效率或战略路径时才会丰富决定；单纯增加计分项或次要任务也可能分散注意并让可行选项更少。",
+    "kind": "synthesis",
+    "sourceIds": ["decision-space-objectives", "uw-secondary-objectives", "hoffman-improving-player-choices"],
+    "confidence": "medium",
+    "counterexamples": ["用于表达、探索或叙事的次要目标可能有意不强化胜利目标；其价值应由相应体验证据判断，而不是只看效率。"]
+  },
+  {
+    "id": "claim-replayability-is-not-variability",
+    "statement": "可变设置、更多卡牌或随机排列只有在迫使玩家重新评价可行策略与后果时才可能支持可重玩性；内容组合数量本身不能证明玩家愿意再玩或下一局会产生不同决定。",
+    "kind": "synthesis",
+    "sourceIds": ["daniel-games-replayability", "variable-replayability-player", "bumbling-depth-replayability", "uw-secondary-objectives"],
+    "confidence": "high",
+    "counterexamples": ["探索内容本身就是目标的叙事、谜题或收集型游戏，新的内容即使不产生策略深度，也可能合理地支持有限次数复玩。"]
+  },
+  {
+    "id": "claim-decision-trace-needs-player-model",
+    "statement": "决定诊断要保存玩家当时的目标、所见信息、认为可行的选项、预测、他人压力、实际行动与后果；只从设计者事后列出的完整选项树，无法解释玩家为何觉得没有选择或为何重复同一路线。",
+    "kind": "project_inference",
+    "sourceIds": ["intuitive-gamer-nature-2026", "hoffman-improving-player-choices", "decision-space-shapes", "oath-wehrle-interview"],
+    "confidence": "high",
+    "counterexamples": ["形式规则漏洞、必胜策略和完整信息零和系统可先由枚举或代理发现，但仍需真人证据判断玩家何时识别与怎样体验。"]
+  },
+  {
+    "id": "claim-shared-decision-needs-consent-context",
+    "statement": "合作局中的决定代办不能由发言次数、资历或建议行为单独判定；关键证据是玩家事先或当下希望怎样分配建议与决定权，以及实际提案、否决、执行是否违背这份同意。",
+    "kind": "synthesis",
+    "sourceIds": ["miller-quarterbacking-consent", "koster-trust-spectrum", "gideon-quarterbacking-player-problem", "quarterbacking-player-analysis"],
+    "confidence": "high",
+    "counterexamples": ["沉默不等于同意，观察者也不能从一次局面推断内心意愿；指导关系可能被主动请求，且同意会在局中改变。"]
+  },
+  {
+    "id": "claim-coop-contribution-needs-effect-path",
+    "statement": "角色名称、专属能力或独立组件只有在玩家能够掌握相关信息、作出或影响决定并承担可见后果时，才形成可观察的个人贡献路径；表面不对称不保证个人能动性。",
+    "kind": "synthesis",
+    "sourceIds": ["lauret-four-atoms-coop", "goldman-paint-roses-quarterbacking", "linderoth-anonymity-coop-board-games", "quarterbacking-player-analysis"],
+    "confidence": "medium",
+    "counterexamples": ["有些玩家会有意选择支持、记录或执行角色，并从集体结果获得满足；贡献不必等量，也不必表现为最终拍板。"]
+  },
+  {
+    "id": "claim-communication-limits-are-mechanics-not-default-fix",
+    "statement": "限词、禁言、匿名、计时或消息成本既可能构成核心合作谜题，也可能阻止一人取得完整解题视野；它们不是默认的反决定代办补丁，因为同样会改变可达性、学习、指导、节奏和关系。",
+    "kind": "synthesis",
+    "sourceIds": ["joint-focus-coop-communication-framework", "linderoth-anonymity-coop-board-games", "dude-limited-communication-games", "mantigeist-social-deduction-diary", "communication-challenges-social-board-games"],
+    "confidence": "high",
+    "counterexamples": ["目标体验就是不完整沟通时，额外摩擦可能是作品价值而非缺陷；仍需让目标受众能理解、表达并恢复。"]
+  },
+  {
+    "id": "claim-private-information-redistributes-power",
+    "statement": "私人或不对称信息会重新分配谁能提出、验证和执行方案，但效果取决于信息如何分配、能否共享、是否可追踪及其后果；隐藏信息本身既不自动创造合作，也不自动解决决定代办。",
+    "kind": "synthesis",
+    "sourceIds": ["reis-coop-information-asymmetry", "goldman-paint-roses-quarterbacking", "miller-quarterbacking-consent", "xinmao-hidden-information", "pingo-trackable-public-information"],
+    "confidence": "high",
+    "counterexamples": ["某些实时、记忆或儿童游戏只需简单隔离信息就能形成足够分工；这仍是具体版本和受众的测试结果，不是通则。"]
+  },
+  {
+    "id": "claim-negotiation-needs-leverage-and-bounds",
+    "statement": "允许桌谈并不会自动产生有意义的谈判；玩家需要可交换或可拒绝的真实后果、对承诺与执行的理解，以及能防止谈判无限扩张或拖垮终局的范围与节奏边界。",
+    "kind": "synthesis",
+    "sourceIds": ["wehrle-quid-for-quo", "koster-trust-spectrum", "ptt-im-the-boss-house-rules", "ptt-diplomacy-player-experience"],
+    "confidence": "medium",
+    "counterexamples": ["以表演、关系或荒诞对话为目标的派对游戏可以让谈判本身成为内容，即使交易不追求策略效率。"]
+  },
+  {
+    "id": "claim-social-deduction-uses-lived-social-data",
+    "statement": "一项三十三名不同玩家参与的应用辅助社会困境研究中，玩家更常使用当下谈话与自身经历的历史，而不是界面提供的客观事实；社交推理测试因此应同时记录规则信息和现场互动，但不能把这一结果外推到所有游戏。",
+    "kind": "source_summary",
+    "sourceIds": ["wiseman-social-deduction-data"],
+    "confidence": "medium",
+    "counterexamples": ["依赖日志、公开投票、逻辑排除或高熟练元数据的社交推理游戏，可能让结构化事实占更大比重。"]
+  },
+  {
+    "id": "claim-theme-is-system-commitment",
+    "statement": "主题不只存在于背景文字；玩家重复做什么、被奖励什么、谁可玩或被自动化，以及规则、组件和美术的关系，共同构成作品实际作出的主题承诺。",
+    "kind": "project_inference",
+    "sourceIds": ["values-at-play-methodology", "daniel-solis-theme-mechanics", "vidal-designing-narrative"],
+    "confidence": "high",
+    "counterexamples": ["纯抽象游戏可以弱化具体世界映射，但选择、奖励与玩家关系仍可表达价值。"]
+  },
+  {
+    "id": "claim-starting-order-does-not-prove-integration",
+    "statement": "‘主题先’或‘机制先’只描述起点，不能证明融合质量；应检查最终行动、因果反馈、角色与语言是否支持目标体验。",
+    "kind": "author_opinion",
+    "sourceIds": ["daniel-solis-theme-mechanics", "values-at-play-methodology"],
+    "confidence": "medium",
+    "counterexamples": ["起点会影响研究、原型和制作成本，因此工作流仍值得记录；它只不是成品质量证据。"]
+  },
+  {
+    "id": "claim-historical-abstraction-is-selective",
+    "statement": "历史桌游必然简化，但什么被做成可玩行动、资源、奖励、自动过程或被省略的背景，会选择性地构成玩家能见到的历史视角。",
+    "kind": "project_inference",
+    "sourceIds": ["analog-orientalism-abstraction", "rubio-history-50-years", "vidal-designing-narrative", "sdhist-gaming-unpleasant"],
+    "confidence": "high",
+    "counterexamples": ["省略可能是为聚焦特定研究问题、受众或游戏时长；重点是说明取舍与后果，而非要求模拟一切。"]
+  },
+  {
+    "id": "claim-representation-needs-early-participation",
+    "statement": "表达具体在世文化与社群时，协作越早进入受众、角色、机制和取舍，越可能改变系统；末期的准确性盖章不能替代双向协作。",
+    "kind": "project_inference",
+    "sourceIds": ["coyote-crow-consulting", "perez-gaming-with-past", "mit-games-colonialism"],
+    "confidence": "medium",
+    "counterexamples": ["设计者本身可能属于所表达社群，但仍需说明自己的具体位置；任何顾问都不代表整个社群。"]
+  },
+  {
+    "id": "claim-designer-intent-can-diverge-from-player-impact",
+    "statement": "设计者声称的叙事意图可能被规则、奖励、插画、组件和玩家现实经验强化、改写或抵消，因此意图不能替代受众语境中的测试与批评。",
+    "kind": "project_inference",
+    "sourceIds": ["vidal-designing-narrative", "beyond-solitaire-no-go-theme", "analog-orientalism-abstraction"],
+    "confidence": "high",
+    "counterexamples": ["单一玩家的影响描述也不能代表所有受众；要保留分歧、版本和游玩语境。"]
+  },
+  {
+    "id": "claim-content-notes-inform-not-guarantee",
+    "statement": "内容提示可以透明说明玩家会遇到什么并支持知情选择，但实验元分析不支持它能在平均上降低接触后痛苦或可靠地促进回避，因此不能当作安全保证。",
+    "kind": "research_finding",
+    "sourceIds": ["trigger-warning-meta-analysis", "ijrp-psychological-safety"],
+    "confidence": "high",
+    "counterexamples": ["原研究主要使用阅读与视听刺激，未直接测量桌游购买、组局选择或退出流程；告知义务也不只由情绪效果决定。"]
+  },
+  {
+    "id": "claim-safety-is-contextual-procedure",
+    "statement": "情绪安全不应被宣称为一种已达成状态；设计可以透明告知、提供选择/退出/修复路径并分配责任，但实际感受仍依赖个人、群体、媒介和当下语境。",
+    "kind": "project_inference",
+    "sourceIds": ["ijrp-psychological-safety", "trigger-warning-meta-analysis"],
+    "confidence": "medium",
+    "counterexamples": ["本项跨媒介转译主要来自 TTRPG、自由形式与 LARP 话语；封闭系统桌游的具体环节需单独验证。"]
+  },
+  {
+    "id": "claim-harm-review-needs-exposure-path",
+    "statement": "主题与伤害复核应追踪玩家被要求阅读、观察、选择、执行、扮演或对他人施加什么，以及告知、选择、退出与修复在哪里，而不是压成一个伦理分或安全分。",
+    "kind": "project_inference",
+    "sourceIds": ["values-at-play-methodology", "vidal-designing-narrative", "ijrp-psychological-safety", "trigger-warning-meta-analysis"],
+    "confidence": "medium",
+    "counterexamples": ["不是所有严肃、不愉快或高强度主题都应被删除；复核用于使意图、暴露方式和参与选择更清楚。"]
+  },
+  {
+    "id": "claim-production-specs-are-design-contract",
+    "statement": "生产方能报价和制作的是带数量、尺寸、材料、加工与装配要求的组件规格，而不是机制名称；设计团队还应为每个规格保留其玩家功能，避免生产替代在没有复测时改变游戏。",
+    "kind": "synthesis",
+    "sourceIds": ["panda-manufacturing-tools", "panda-component-guidebook", "entro-manufacturing-materials", "game-crafter-bulk-pricing"],
+    "confidence": "high",
+    "counterexamples": ["最早期原型不需要工业级规格；当本轮只测试核心循环时，功能明确的粗略替代物通常已经足够。"]
+  },
+  {
+    "id": "claim-quote-needs-versioned-scope",
+    "statement": "任何生产价格证据都应与明确版本、数量、币种、日期、组件规格、包含项和排除项一起保存；脱离这些条件的单价不能可靠比较，也不能继续描述改版后的产品。",
+    "kind": "project_inference",
+    "sourceIds": ["panda-manufacturing-process", "game-crafter-bulk-pricing", "kickstarter-fulfillment-2026", "jack-neal-plastic-case"],
+    "confidence": "high",
+    "counterexamples": ["早期可以用同一计算器的粗估比较两种方案方向，但仍需标明假设，不能把方向性估算包装成正式报价。"]
+  },
+  {
+    "id": "claim-factory-cost-is-not-delivered-cost",
+    "statement": "工厂生产范围、到仓的落地范围与包含开发、平台、履约、替换和售后的项目全成本是不同问题；制造完成并不等于产品已经交付给玩家。",
+    "kind": "synthesis",
+    "sourceIds": ["kickstarter-fulfillment-2026", "panda-manufacturing-process", "gcores-tabletop-production", "jack-neal-plastic-case"],
+    "confidence": "high",
+    "counterexamples": ["本地手工交付或出版授权可能没有完整国际链条，但仍应明确哪些成本和责任由其他人承担，而不是假定它们不存在。"]
+  },
+  {
+    "id": "claim-proof-gates-answer-different-risks",
+    "statement": "文件核验、组件样、产前样、量产样与入库检查只能分别证明其覆盖的尺寸/文件、材料/工艺、整盒配合、实际量产或运输接收风险；任何一次批准都不能自动扩张为整批无误或玩家体验通过。",
+    "kind": "synthesis",
+    "sourceIds": ["panda-manufacturing-process", "panda-graphic-design-guidebook", "gcores-tabletop-production"],
+    "confidence": "high",
+    "counterexamples": ["小批手工或 POD 流程可能合并若干门，但仍需要说明当前样品来自哪种工艺、验证了什么以及哪些风险尚未出现。"]
+  },
+  {
+    "id": "claim-final-material-needs-task-retest",
+    "statement": "最终图形、材质、尺寸和包装会改变可读性、辨识、抓取、设置与独立学习，因此低保真原型通过后，接近成品的实物仍需用相同玩家任务和陌生玩家重新测试。",
+    "kind": "synthesis",
+    "sourceIds": ["ttgda-final-graphic-test", "store-all-bits-insert", "panda-manufacturing-process"],
+    "confidence": "high",
+    "counterexamples": ["纯文字勘误或不影响物理/信息界面的微小改动可以缩小回归范围，但需要有理由说明哪些任务不受影响。"]
+  },
+  {
+    "id": "claim-packaging-is-player-and-logistics-interface",
+    "statement": "盒子与内衬同时承担保护、装配、仓储运输、开启、取出、设置、桌上取用和复原任务；所有组件能够塞入盒内只是尺寸条件，不足以证明包装可用。",
+    "kind": "synthesis",
+    "sourceIds": ["store-all-bits-insert", "jack-neal-plastic-case", "panda-graphic-design-guidebook", "kickstarter-fulfillment-2026"],
+    "confidence": "high",
+    "counterexamples": ["袋装、folio 或无内衬产品可以合理地让玩家自行分类，但这仍应是明确的渠道、体验和劳动取舍。"]
+  },
+  {
+    "id": "claim-component-reduction-needs-function-test",
+    "statement": "减少组件、改用标准件或缩小盒型可能降低工装、装配、重量与价格，但只有在替代后仍保留相关信息、操作、主题和可访问性功能时，才是有效的设计优化。",
+    "kind": "project_inference",
+    "sourceIds": ["oakleaf-manufacturing-design-tool", "entro-manufacturing-materials", "eric-martin-smaller-games-2026", "gamelab-board-game-lca"],
+    "confidence": "medium",
+    "counterexamples": ["某些收藏版、艺术版或奢华组件本就把物质表演作为核心体验；账本应说明价值和受众，而不是强制最小化。"]
+  },
+  {
+    "id": "claim-environmental-impact-needs-system-boundary",
+    "statement": "桌游的环境影响判断必须说明材料、重量、运输、耐用、使用与报废等系统边界；三个假设盒型的 LCA 能支持减少不必要重量的方向，不能给具体游戏生成环保总分或材料善恶排行。",
+    "kind": "source_summary",
+    "sourceIds": ["gamelab-board-game-lca"],
+    "confidence": "medium",
+    "counterexamples": ["若项目完成自身供应链与产品规格的合格 LCA，可以在其系统边界内比较方案；仍不应把结果无条件外推到其他产品。"]
+  },
+  {
+    "id": "claim-publisher-handoff-needs-responsibility",
+    "statement": "把游戏授权给出版方不会自动解决设计者参与、开发变更、最终文件复核和生产批准责任；希望保留的参与节点与时间应在合作早期明确。",
+    "kind": "synthesis",
+    "sourceIds": ["ttgda-development-review", "ttgda-final-graphic-test", "gcores-tabletop-production"],
+    "confidence": "medium",
+    "counterexamples": ["有些设计者会有意完全交由出版团队开发和生产；明确责任不要求设计者拥有最终控制权，而是避免双方假设不一致。"]
+  },
+  {
+    "id": "claim-publishing-route-is-responsibility-allocation",
+    "statement": "投出版社、PnP、POD、库存自出版与众筹不是同一条出版梯子的等级，而是把产品化、权利、资金、生产、营销、履约、客服和版本责任分配给不同主体。",
+    "kind": "synthesis",
+    "sourceIds": ["dark-imp-pitch-publish", "bgdl-get-published", "sspai-self-printing-practice", "tgc-crowd-sale-creator"],
+    "confidence": "high",
+    "counterexamples": ["一人小项目可能由同一人承担全部角色，但仍需分开责任，才能知道哪些工作已完成、哪些只是假设。"]
+  },
+  {
+    "id": "claim-no-universal-low-risk-publishing-route",
+    "statement": "不存在对所有项目都最低风险的发布路线：授权降低部分资金与履约暴露却引入匹配、等待和合同关系；POD 降低库存却保留成品、受众与平台依赖；自出版和众筹换取控制时也接管交付责任。",
+    "kind": "project_inference",
+    "sourceIds": ["ttgda-contract-basics", "dark-imp-pitch-publish", "tgc-crowd-sale-creator", "itch-physical-rewards", "kickstarter-creator-obligation"],
+    "confidence": "high",
+    "counterexamples": ["对于目标极窄且无商业承诺的朋友礼物或免费文件，责任链可以非常短，但权利、版本和交付仍存在。"]
+  },
+  {
+    "id": "claim-submission-needs-current-fit-evidence",
+    "statement": "投稿前应核对目标出版方或赛事当前是否开放、目录/受众匹配、第一份允许材料、请求样品顺序和提交条款；一份通用 sell sheet 不能替代当前匹配证据。",
+    "kind": "synthesis",
+    "sourceIds": ["ravensburger-inventor-days-2026", "piatnik-author-submissions", "chaosium-board-submissions", "wodc-v7-2026", "cardboard-edison-compendium"],
+    "confidence": "high",
+    "counterexamples": ["行业活动中的快速自由提案可能不要求预先表格，但设计者仍应知道对方当前目录和现场规则。"]
+  },
+  {
+    "id": "claim-submission-contract-publication-are-distinct",
+    "statement": "已投稿、被请求样品、评估中、收到合同、签约、开发中、文件批准、生产和履约是不同状态；任何一个状态都不能自动证明后续出版或交付。",
+    "kind": "synthesis",
+    "sourceIds": ["ttgda-contract-basics", "piatnik-author-submissions", "chaosium-board-submissions", "bgdl-get-published"],
+    "confidence": "high",
+    "counterexamples": ["小型合作团队可能非正式地合并若干状态，但越接近权利、付款和公开承诺，越需要书面区分。"]
+  },
+  {
+    "id": "claim-self-publishing-means-product-operations",
+    "statement": "自出版不仅是支付印刷费，而是接管或外包美术/图形、编辑、生产、营销、仓储、履约、客服、财务与项目管理，并对外包之间的规格和验收负责。",
+    "kind": "synthesis",
+    "sourceIds": ["dark-imp-pitch-publish", "sspai-art-self-publish", "sspai-self-printing-practice", "gcores-seagull-crowdfunding", "gcores-inventory-bed"],
+    "confidence": "high",
+    "counterexamples": ["POD 或全包服务可以减少若干运营工作，但需要回到服务范围，不能从“外包”推出责任已经消失。"]
+  },
+  {
+    "id": "claim-crowdfunding-converts-demand-to-obligation",
+    "statement": "众筹成功把项目假设转换成公开承诺：支持人数还需分解为回报档、add-on、SKU、地区、地址、生产与异常处理，发起者仍负责完成、沟通和履约。",
+    "kind": "synthesis",
+    "sourceIds": ["modian-project-guide", "kickstarter-fulfillment-dashboard", "kickstarter-creator-obligation"],
+    "confidence": "high",
+    "counterexamples": ["平台或合作方可能承担部分生产与履约，但其有限服务范围必须可核验，不能由发起者单方面假设。"]
+  },
+  {
+    "id": "claim-crowdfunding-budget-needs-whole-project",
+    "statement": "众筹目标不能只从工厂单价推导；至少应分开研发、原型、产品化、生产、包装、运输、劳动、平台、税务/合规协调、替换与误差，并标明每项证据状态。",
+    "kind": "synthesis",
+    "sourceIds": ["kickstarter-project-budget", "modian-project-guide", "kickstarter-fulfillment-2026", "sspai-art-self-publish"],
+    "confidence": "high",
+    "counterexamples": ["零资金的数字分享项目不需要制造预算，但仍有文件、权利、平台、维护和支持成本。"]
+  },
+  {
+    "id": "claim-pod-removes-inventory-not-demand-work",
+    "statement": "POD/按单生产可以降低预先库存和部分履约暴露，却不会自动验证成品、创造受众、完成推广或保证盈利；设计者仍需检查实物与平台责任边界。",
+    "kind": "synthesis",
+    "sourceIds": ["tgc-publishing-help", "tgc-crowd-sale-creator"],
+    "confidence": "high",
+    "counterexamples": ["已有稳定受众或平台推荐可能显著降低获客劳动，但这是另一个有来源和时点的证据，不是 POD 本身的属性。"]
+  },
+  {
+    "id": "claim-pnp-removes-physical-not-file-delivery",
+    "statement": "数字 PnP 移走工厂、库存和实体邮寄，只在不承诺实物时成立；设计者仍需负责文件权利、打印/制作说明、版本更新、下载入口、支持和玩家付出的材料劳动。",
+    "kind": "project_inference",
+    "sourceIds": ["itch-creator-page", "itch-physical-rewards"],
+    "confidence": "medium",
+    "counterexamples": ["极小的免费单页游戏可以只需一个稳定文件和许可说明，但仍应从目标玩家的真实打印任务验证。"]
+  },
+  {
+    "id": "claim-route-change-needs-commitment-audit",
+    "statement": "发布路线可以迭代，但改道前必须审计已签权利、共同创作者同意、比赛资格、已收款/回报承诺、平台条款、已购服务和现有库存；否则新路线可能与旧承诺冲突。",
+    "kind": "project_inference",
+    "sourceIds": ["ttgda-contract-basics", "wodc-v7-2026", "kickstarter-creator-obligation", "itch-physical-rewards", "gcores-inventory-bed"],
+    "confidence": "medium",
+    "counterexamples": ["完全私人、无外部权利/付款/库存的早期原型可以自由切换分享方式，但仍要保持版本来源清楚。"]
+  },
+  {
+    "id": "claim-design-diary-is-versioned-context-not-proof",
+    "statement": "设计日志最有价值的用途是保留当时的目标、约束、版本与决定链；成功项目的事后回顾可以提供候选方法，却不能证明被省略的失败版本、因果关系或普遍效果。",
+    "kind": "synthesis",
+    "sourceIds": ["gcores-appraisal-company-diary", "cowlevel-design-road-1", "cowlevel-design-road-2", "gcores-fusion-inspiration"],
+    "confidence": "high",
+    "counterexamples": ["同步记录且附有原型、版本差异和测试数据的日志可以成为较强的项目内部证据；仍不能无条件外推到其他游戏。"]
+  },
+  {
+    "id": "claim-public-playtest-record-needs-version-context",
+    "statement": "公开测试活动的照片和短评能建立项目时间线与社群记忆；若要支持设计决定，还需要对应版本、测试问题、玩家语境、观察与后续改动。",
+    "kind": "project_inference",
+    "sourceIds": ["tbd-playtest-86", "tbd-playtest-125", "oath-keeping-the-oath"],
+    "confidence": "high",
+    "counterexamples": ["活动记录的目标若只是招募、传播或保存历史，不必承担完整测试报告的字段；但用途必须明确。"]
+  },
+  {
+    "id": "claim-design-aid-product-generates-candidates",
+    "statement": "机制牌、配件牌或随机约束工具可以提供共享词汇、候选组合和更快的材料入口；它们生成的是待选择、待原型化的候选，不是创意质量或测试效果已经成立的证据。",
+    "kind": "synthesis",
+    "sourceIds": ["gcores-mechanism-component-cards", "deck-of-lenses", "deck-of-ideas", "rapid-prototyping-game", "panda-omnideck"],
+    "confidence": "high",
+    "counterexamples": ["课堂热身可以只以扩展词汇和参与讨论为目标；此时不必要求每个抽取结果都进入完整原型。"]
+  },
+  {
+    "id": "claim-structure-analysis-is-comparison-space",
+    "statement": "把配件、机制与流程分开再重组，可以显露同一设计的替代结构；分析产出的是可比较方案，不能仅凭结构描述宣布某个组合是体验最优。",
+    "kind": "project_inference",
+    "sourceIds": ["gcores-game-structure", "gcores-appraisal-company-diary", "five-part-model"],
+    "confidence": "medium",
+    "counterexamples": ["若目标是形式正确性或组件上限，部分方案可在真人测试前被明确排除；体验优先级仍需按目标验证。"]
+  },
+  {
+    "id": "claim-game-rules-and-product-interface-are-distinct",
+    "statement": "一款游戏可运行的规则与玩家拿到手后能否识别、记住和执行是两种完成状态；桌面提示、图形、组件、工艺、规则书与编辑分工共同把规则变成可用产品。",
+    "kind": "synthesis",
+    "sourceIds": ["gcores-tabletop-editor-role", "sspai-heavy-wargame-testing", "rulebook-design-curators", "ttgda-final-graphic-test"],
+    "confidence": "high",
+    "counterexamples": ["极简游戏可能只需少量组件和一张规则卡，但仍要由陌生玩家的真实任务证明可自主使用。"]
+  },
+  {
+    "id": "claim-chinese-industry-interviews-are-historical-context",
+    "statement": "中文行业访谈适合比较不同地区、组织和年份中的角色分工与路线选择；其中的市场额、费率、销量、渠道和玩家偏好必须按行动日期用当前一手资料重新核验。",
+    "kind": "project_inference",
+    "sourceIds": ["thepaper-chinese-designer-roles", "hkfyg-time2play-interview", "gcores-tabletop-editor-role", "gcores-inventory-bed"],
+    "confidence": "high",
+    "counterexamples": ["具有透明口径、样本、采集日期和可复核数据的行业调查可以支持对应范围的统计判断；仍需避免跨年份外推。"]
+  },
+  {
+    "id": "claim-player-symptom-needs-situation-chain",
+    "statement": "玩家长评只有在保留游戏与版本、人数与群体、当时任务或局面、可观察行为及后果时，才能较可靠地转成设计问题；单条好恶不能代表总体玩家偏好。",
+    "kind": "project_inference",
+    "sourceIds": ["ptt-dadaocheng-downtime", "ptt-parent-child-boardgame", "ptt-im-the-boss-house-rules", "ptt-rulebook-lookup-friction", "vocus-spirit-island-player"],
+    "confidence": "high",
+    "counterexamples": ["大量独立来源反复出现的短评可以用于发现候选主题，但仍需抽样回访或测试补足版本、群体和行为语境。"]
+  },
+  {
+    "id": "claim-downtime-includes-state-volatility",
+    "statement": "等待体验不只由单回合秒数决定；共享状态变化若让回合外预案频繁失效，会推迟玩家真正开始决定的时刻，因此应同时记录回合长度、预案存活与决定起点。",
+    "kind": "project_inference",
+    "sourceIds": ["ptt-dadaocheng-downtime", "decision-space-shapes", "game-balance-feedback-pacing"],
+    "confidence": "medium",
+    "counterexamples": ["玩家可能享受观察他人回合或即时应变，即使无法预先锁定行动；目标体验和回合外任务仍需由具体群体验证。"]
+  },
+  {
+    "id": "claim-teaching-order-follows-decision-dependency",
+    "statement": "教学顺序应由玩家作出下一项决定所需的目标、状态与因果前置决定；当早期阶段只有理解后续阶段才有意义时，可先示范结果或短局，再回到完整流程测试。",
+    "kind": "synthesis",
+    "sourceIds": ["ptt-mad-boardgame-shop-teach", "naylor-paul-grogan-rulebook", "rulebook-design-curators"],
+    "confidence": "medium",
+    "counterexamples": ["探索规则本身是目标体验时，延后解释可以保留发现感；但玩家仍需足够信息作出知情且可恢复的决定。"]
+  },
+  {
+    "id": "claim-access-includes-coordination-labor",
+    "statement": "参与桌游所需的翻译与主持安排、发言协议、书面备份、交通与场地核查、当前购买可得性和持续协助，都是无障碍成本；组件通过静态检查不代表玩家能抵达、取得并持续参与。",
+    "kind": "synthesis",
+    "sourceIds": ["vocus-deaf-event-access", "ptt-blind-game-discovery", "ptt-wheelchair-venue-audit", "special-needs-boardgame-adjustment", "dcard-wheelchair-boardgame-venue", "tainan-disabled-boardgame-session"],
+    "confidence": "high",
+    "counterexamples": ["纯线上或私人家庭活动会移除部分场地任务，但仍可能新增设备、平台、网络、账号、字幕或远程协助负担。"]
+  },
+  {
+    "id": "claim-house-rules-are-testable-hypotheses",
+    "statement": "家规可以揭示参与、节奏、筹码或规则歧义的症状，并产生候选修订；由于它同时改变系统，必须保留原始版本、修改文本和前后观察，不能把采用家规本身当成修复证据。",
+    "kind": "project_inference",
+    "sourceIds": ["ptt-im-the-boss-house-rules", "oath-keeping-the-oath"],
+    "confidence": "high",
+    "counterexamples": ["群体只为私人偏好定制玩法时，不必证明对大众更优；仍应让参与者知道采用的是哪个版本。"]
+  },
+  {
+    "id": "claim-child-fit-is-decision-specific",
+    "statement": "低文字、可爱题材、可见骰子或标称年龄不能单独证明儿童能参与；应观察孩子是否理解选择目的与后果、是否保有决定权，以及成人提示和输局怎样改变继续参与。",
+    "kind": "synthesis",
+    "sourceIds": ["ptt-parent-child-boardgame", "special-needs-boardgame-adjustment"],
+    "confidence": "medium",
+    "counterexamples": ["年龄标识和语言量可作为招募与安全初筛，但仍不能替代对具体儿童、关系和主持情境的观察。"]
+  },
+  {
+    "id": "claim-generative-and-evaluative-modes-need-transition",
+    "statement": "生成候选与评价候选是不同任务：发散阶段可以暂缓淘汰以扩大搜索空间，收束阶段则要回到体验意图、约束、可执行规则和反驳信号；明确切换比把每个灵感立即评分或永不筛选更可追踪。",
+    "kind": "project_inference",
+    "sourceIds": ["game-ideation-techniques-comparison", "mixed-reality-game-cards", "constraint-creativity-joyce", "smeft-decks"],
+    "confidence": "medium",
+    "counterexamples": ["安全、权利、生产上限或明确违背项目边界的候选可以在发散时立即排除；模式分离不要求停止基本判断。"]
+  },
+  {
+    "id": "claim-purposeful-play-separates-perspectives",
+    "statement": "以学习设计为目的游玩时，应分开记录自己的体验、桌面上可观察的行为、由规则和组件推断的系统关系，以及其他玩家或公共讨论的不同语境；个人好恶和单次拆解都不是作品效果的总体证明。",
+    "kind": "synthesis",
+    "sourceIds": ["game-developer-purposeful-play", "sellers-systems-analysis", "kathleen-mercury-resources", "ptt-dadaocheng-downtime"],
+    "confidence": "high",
+    "counterexamples": ["纯粹为了休息或社交而玩不需要填写分析记录；有目的游玩是一种学习任务，不应吞掉游玩的其他价值。"]
+  },
+  {
+    "id": "claim-removal-is-versioned-experiment",
+    "statement": "删除规则、阶段、组件或内容不是天然的优化；它应被记录成一个版本化实验，写清要暴露或保护的决定、移除后的行为预测，以及哪些信息、主题、互动或可访问性功能可能同时消失。",
+    "kind": "synthesis",
+    "sourceIds": ["palm-of-your-hand-diary", "quarantine-economy-diary", "gcores-appraisal-company-diary", "gcores-game-structure"],
+    "confidence": "high",
+    "counterexamples": ["明确重复、不可执行或越过安全与生产硬边界的内容可以直接删除；仍应保留版本记录，避免问题随旧资产或旧规则复活。"]
+  },
+  {
+    "id": "claim-innovation-needs-learning-budget",
+    "statement": "每个陌生术语、组件动作、状态表示和例外都会占用首局的学习与注意；创新应写清它服务的体验、可借用的熟悉约定和实际学习任务，而不是以新颖本身证明值得保留。",
+    "kind": "synthesis",
+    "sourceIds": ["kathleen-mercury-resources", "sellers-systems-analysis", "frontiers-two-part-onboarding", "intuitive-rules-evaluation"],
+    "confidence": "medium",
+    "counterexamples": ["熟悉约定也可能排除没有相关经验的玩家，或与主题、文化和无障碍任务冲突；学习预算不是要求永远沿用主流惯例。"]
+  },
+  {
+    "id": "claim-gamefulness-can-redirect-design-work",
+    "statement": "把构思或反思做成游戏会引入第二套目标；计分、竞争、随机性和规则负担可能让参与者优化获胜、堆叠内容或理解工具本身，而不是完成原先的设计任务。",
+    "kind": "project_inference",
+    "sourceIds": ["gamespace-idea-generation-games", "weapon-of-criticism-design-game", "league-ideation-toolkit", "series-interesting-choices"],
+    "confidence": "medium",
+    "counterexamples": ["轻量轮流、共同完成和清晰时间盒也可能降低主持成本、让更多人开口并帮助团队快速开始。"]
+  },
+  {
+    "id": "claim-access-distinguishes-entry-agency-belonging",
+    "statement": "无障碍记录应分开三件事：玩家能否进入并操作任务、是否保有信息和决定权、是否能在群体中被听见并承担想要的角色；完成任务本身可能掩盖依赖、旁观或被代办。",
+    "kind": "synthesis",
+    "sourceIds": ["ran-blv-mobile-games-china", "tpwl-tactile-party-game", "tainan-disabled-boardgame-session", "vocus-deaf-event-access", "blv-tabletop-experiences"],
+    "confidence": "high",
+    "counterexamples": ["玩家主动选择共同决策、代读或身体协助时，这可以是目标体验；重点是选择权、透明度和代价，而不是把独立操作设为唯一价值。"]
+  },
+  {
+    "id": "claim-assistance-is-a-system-role",
+    "statement": "外部协助应作为系统角色记录：协助者接触了什么信息、代替了哪些动作或决定、何时介入，以及时间、隐私、身体和关系代价；‘在帮助下完成’不等于障碍已经消失。",
+    "kind": "synthesis",
+    "sourceIds": ["tpwl-tactile-party-game", "tainan-disabled-boardgame-session", "flyingv-braille-boardgame-playtests", "blv-tabletop-experiences", "mcd-heuristic-toolkit-paper"],
+    "confidence": "high",
+    "counterexamples": ["协助可能是玩家偏好、亲密互动或安全安排的一部分；记录系统角色不是要求取消协助，而是避免它隐形。"]
+  },
+  {
+    "id": "claim-accessible-adaptation-is-versioned",
+    "statement": "无障碍适配是需要版本化复测的假设：同一改动在不同玩家、场地、规则版本和协助安排中可能产生不同结果，因此测试记录必须保留语境、失败、协助与下一版变化。",
+    "kind": "project_inference",
+    "sourceIds": ["flyingv-braille-boardgame-playtests", "wang-visually-impaired-tabletop-thesis", "tpwl-tactile-party-game", "games-inclusion-lab-neurodivergent"],
+    "confidence": "medium",
+    "counterexamples": ["明显的安全风险、缺失替代文本或无法触达等问题不必等待比较版本才修正；修正后仍需用真实任务验证。"]
+  },
+  {
+    "id": "claim-structure-can-reduce-or-shift-social-load",
+    "statement": "规则、轮流和共同兴趣可能为部分自闭症玩家降低社交含混与沟通负荷；同一结构也可能因规则争议、信息量和认知负荷把压力转移到冲突、遗漏线索或退出参与。",
+    "kind": "synthesis",
+    "sourceIds": ["bennett-autistic-adults-boardgames", "communication-challenges-social-board-games", "games-inclusion-lab-neurodivergent"],
+    "confidence": "medium",
+    "counterexamples": ["研究样本多为已愿意参加桌游的人，不能用正向经验解释不参加者，也不能把诊断名称当作统一设计偏好。"]
+  },
+  {
+    "id": "claim-venue-access-needs-current-path-data",
+    "statement": "线下桌游参与需要从交通、入口、通道、座位与桌面、厕所到退出的当前路径信息；笼统的‘无障碍’标签、朋友代问和多年以前的场地清单都不能替代当次核验。",
+    "kind": "synthesis",
+    "sourceIds": ["dcard-wheelchair-boardgame-venue", "ptt-wheelchair-venue-audit", "abletop-mobility", "vocus-deaf-event-access"],
+    "confidence": "high",
+    "counterexamples": ["线上活动会移除部分物理路径，但仍需核对账号、设备、平台、字幕、输入方式和退出路径。"]
+  },
+  {
+    "id": "claim-embodied-action-is-system-input",
+    "statement": "当摆放、悬停、堆叠、弹射、画线、手势或声音影响状态与他人判断时，身体动作就是系统输入和信息通道；规则与测试必须记录动作条件，而不只记录抽象决定和最终结果。",
+    "kind": "synthesis",
+    "sourceIds": ["dislocated-boardgames", "thinking-with-body-boardgames", "accessible-dexterity-computer-supported", "handwavey-game"],
+    "confidence": "medium",
+    "counterexamples": ["并非每个整理、停顿或小动作都具有游戏意义；是否被同桌人当作信息、能否影响状态，需要在具体规则和局面中观察。"]
+  },
+  {
+    "id": "claim-realtime-reallocates-attention-and-authority",
+    "statement": "实时与同时行动不只是缩短回合：它们会重新分配等待、监听、发言、确认、修复和拍板权限，因此必须按角色追踪同一时间窗里的信息与动作负担。",
+    "kind": "synthesis",
+    "sourceIds": ["captain-sonar-rules", "magic-maze-rules", "aesthetic-camaraderie-patterns", "captain-sonar-creator-note"],
+    "confidence": "medium",
+    "counterexamples": ["极简同时选择可能主要减少等待而没有复杂角色结构；仍需检查揭示顺序、抢先优势和玩家能否暂停。"]
+  },
+  {
+    "id": "claim-intensity-is-not-engagement-proof",
+    "statement": "高音量、快速动作、笑声、紧张与难忘失败不能单独证明沉浸、合作或参与；同样的外显强度也可能来自过载、信息遗漏、身体障碍或把失败归咎给某人。",
+    "kind": "project_inference",
+    "sourceIds": ["aesthetic-camaraderie-patterns", "geeky-gimp-accessibility-hacks", "full-body-game-guidelines-review"],
+    "confidence": "medium",
+    "counterexamples": ["玩家明确自述喜欢高压和混乱时，该体验是重要证据；仍需与任务完成、退出选择和关系后果分开记录。"]
+  },
+  {
+    "id": "claim-action-repair-is-gameplay-data",
+    "statement": "身体动作出错后的修复是玩法与社交事件：谁发现、谁触碰、谁说明、是否先征得同意、是否泄露信息或代替决定，都可能改变规则学习、能动性和关系。",
+    "kind": "synthesis",
+    "sourceIds": ["embodied-move-repair", "thinking-with-body-boardgames", "tpwl-tactile-party-game", "tainan-disabled-boardgame-session"],
+    "confidence": "medium",
+    "counterexamples": ["纯机械且无信息代价的状态复位可能只需快速处理；设计者仍应确认复位是否真的无损且玩家愿意接受。"]
+  },
+  {
+    "id": "claim-alternate-pace-is-version-not-equivalence",
+    "statement": "回合制、延长计时、暂停点、替代角色或替代输入应当作为带体验承诺的新版本测试；它们可能打开参与，也可能改变信息优势、触感、策略与设置劳动，不能自动宣称等价。",
+    "kind": "synthesis",
+    "sourceIds": ["captain-sonar-rules", "geeky-gimp-accessibility-hacks", "accessible-dexterity-computer-supported", "mcd-heuristic-toolkit-paper"],
+    "confidence": "high",
+    "counterexamples": ["某些替代输入对目标任务可能近乎无损；等价程度仍需由具体玩家在具体版本和场地中判断，而不是由设计者预设。"]
+  },
+  {
+    "id": "claim-physical-context-is-versioned",
+    "statement": "依赖身体动作的桌游结果由组件材料、摩擦、重量、桌面稳定与尺寸、座位、触达、光线和噪声共同产生；改变这些条件后应保存为新的测试语境或版本。",
+    "kind": "synthesis",
+    "sourceIds": ["accessible-dexterity-computer-supported", "dislocated-boardgames", "mcd-heuristic-toolkit-paper", "captain-sonar-rules"],
+    "confidence": "high",
+    "counterexamples": ["不依赖精度、触达或共同物理状态的动作对材料变化可能不敏感；仍要先说明为什么该条件不会改变任务。"]
+  },
+  {
+    "id": "claim-design-practice-needs-learning-extraction",
+    "statement": "完成项目、投入工时和制作更多版本只证明练习发生过；要主张设计判断有所增长，还需连接行动前判断、情境证据、修订边界和下一次使用，而不是让交付数量代替学习提取。",
+    "kind": "synthesis",
+    "sourceIds": ["cross-design-expertise-overview", "dorst-design-expertise-levels", "undergraduate-game-design-logs", "cosmic-colonies-long-diary"],
+    "confidence": "high",
+    "counterexamples": ["在截止日期、健康、安全或资源硬约束下，完成一个可交付版本本身可以是合理目标；它仍不等于已经证明长期能力增长。"]
+  },
+  {
+    "id": "claim-design-expertise-is-task-specific",
+    "statement": "设计专长应按具体任务、判断和语境观察，而不应压成贴在整个人身上的单一等级；同一设计师可在系统分析上熟练、在无障碍测试或生产约束上仍需要新手脚手架。",
+    "kind": "synthesis",
+    "sourceIds": ["cross-design-expertise-overview", "dorst-design-expertise-levels", "educational-board-game-jam"],
+    "confidence": "medium",
+    "counterexamples": ["课程仍可以按先备知识、任务复杂度和支持需求分组；这与给人固定能力身份不同。"]
+  },
+  {
+    "id": "claim-transfer-needs-changed-context",
+    "statement": "可迁移的设计能力需要在有所改变的新情境中检验：保留一个待验证判断，只改变玩家、类型、团队、材料或时长等关键变量，再记录原判断继续成立、需要适配还是失效。",
+    "kind": "project_inference",
+    "sourceIds": ["cross-design-expertise-overview", "dorst-design-expertise-levels", "ten-game-hacks-ten-weeks", "rebuilding-seattle-long-diary"],
+    "confidence": "medium",
+    "counterexamples": ["首次探索、纯休闲创作或当前项目尚未形成稳定判断时，不必立即启动跨项目迁移；先获得一个可说清的局部证据即可。"]
+  },
+  {
+    "id": "claim-expertise-balances-stability-and-change",
+    "statement": "设计学习不是持续推翻一切或固守第一套方法；更成熟的实践会区分需要维持的体验与责任锚点，以及可随证据重构的问题框架、机制假设和协作方式。",
+    "kind": "synthesis",
+    "sourceIds": ["game-design-conversations-professionals", "cross-design-expertise-overview", "cosmic-colonies-long-diary", "rebuilding-seattle-long-diary"],
+    "confidence": "medium",
+    "counterexamples": ["安全、权利、歧视或生产硬边界出现时，原有锚点也可能必须停止或重写；稳定不等于沉没成本。"]
+  },
+  {
+    "id": "claim-design-logs-need-decision-links",
+    "statement": "设计日志最有用的单位不是字数或连续打卡，而是能否把目标、行动、观察、版本和决定连接起来，并区分当场记录、测试后复盘与后来整理的作品叙事。",
+    "kind": "synthesis",
+    "sourceIds": ["undergraduate-game-design-logs", "cosmic-colonies-long-diary", "wannabe-designer-contest-diary", "educational-game-praxis-interviews"],
+    "confidence": "medium",
+    "counterexamples": ["自由书写、语音或图像日志可以帮助记忆和情绪整理；它们不必全部结构化，但若用于支撑设计结论，仍需能回到具体版本与证据。"]
+  },
+  {
+    "id": "claim-challenges-are-practice-containers",
+    "statement": "比赛、Game Jam 和限时挑战可以提供截止日期、约束、角色、材料、同伴与反馈，但它们只是练习容器；完成、数量和名次不能替代对安全、分工、反馈质量、学习提取和后续迁移的检查。",
+    "kind": "synthesis",
+    "sourceIds": ["game-jam-learning-systematic-review", "educational-board-game-jam", "wannabe-designer-contest-diary", "ten-game-hacks-ten-weeks", "wodc-judge-growth-reflection"],
+    "confidence": "high",
+    "counterexamples": ["以交付、评奖或团队凝聚为明确目标的活动可以用完成度和名次评价该目标；不要把这种评价偷换成长期设计能力。"]
+  },
+  {
+    "id": "claim-first-and-returning-play-need-separate-tracks",
+    "statement": "首次接触与回流游玩回答不同问题：新玩家适合检验设置、教学、查询和第一印象，回流玩家适合观察规则内化、策略发展、重复劳动与版本比较；同桌混合时必须记录角色与指导传播。",
+    "kind": "synthesis",
+    "sourceIds": ["inclusive-playtesting-cognitive-load", "games-user-research-returning-players", "first-take-invasion-returning-new", "starfront-forty-versions-diary"],
+    "confidence": "high",
+    "counterexamples": ["混合熟练与新手可能正是目标社交语境；此时不必拆开游玩，但分析仍要保留谁教谁、谁采用了谁的策略，以及新手是否保有决定权。"]
+  },
+  {
+    "id": "claim-repeated-sessions-are-nested-history",
+    "statement": "同一玩家或同一组的多次游玩带有共同历史，后续局会受前局学习、策略传播、关系惯例与记忆影响；因此不能把十局当成十名独立玩家，也不能把组内惯例直接归因于规则。",
+    "kind": "project_inference",
+    "sourceIds": ["gerken-longitudinal-hci", "fox-mmo-player-diary-study", "ribbens-player-experience-triangulation", "inclusive-playtesting-cognitive-load"],
+    "confidence": "medium",
+    "counterexamples": ["当研究问题只是在稳定脚本下发现稀有系统故障时，多次运行仍有价值；但人的经验与群体历史仍须和独立招募分开标记。"]
+  },
+  {
+    "id": "claim-session-snippets-need-later-expansion",
+    "statement": "跨局记录可在局中只捕捉少量时间点、关键词、照片或语音片段，局后再展开事件和解释；完整现场日记更容易打断游玩、增加负担并遗漏当时不便书写的事件。",
+    "kind": "synthesis",
+    "sourceIds": ["txt4l8r-diary-snippets", "ribbens-player-experience-triangulation", "designerly-gameplay-experience-sampling"],
+    "confidence": "medium",
+    "counterexamples": ["若研究对象正是短暂动作、身体风险或快速信息传递，仅靠局后回忆不足；应使用观察或录像，并取得适当同意。"]
+  },
+  {
+    "id": "claim-replay-intent-is-not-return-behavior",
+    "statement": "局末说愿意再玩是再玩意向，不是实际再玩；延迟回访应分开记录是否真的发生，以及时间、组局、拥有、设置、场地、规则遗忘和兴趣等阻碍。",
+    "kind": "synthesis",
+    "sourceIds": ["gameplay-extension-actual-return", "mekler-fez-completion-diary", "gerken-longitudinal-hci"],
+    "confidence": "high",
+    "counterexamples": ["付费测试、研究排程或设计者主动组局会让实际回来不再代表自发选择；仍需询问机会结构与参与动机。"]
+  },
+  {
+    "id": "claim-version-change-branches-longitudinal-sequence",
+    "statement": "跨局序列必须绑定规则、组件和测试语境；中途改变关键版本、玩家构成或场地时，应结束或分支原序列，并写清改变项，不能把前后结果画成同一条熟练趋势。",
+    "kind": "project_inference",
+    "sourceIds": ["gerken-longitudinal-hci", "games-user-research-returning-players", "starfront-forty-versions-diary", "designerly-gameplay-experience-sampling"],
+    "confidence": "high",
+    "counterexamples": ["研究问题可以专门比较版本改变前后；这时改变本身就是自变量，仍需保留版本边界和参与者历史。"]
+  },
+  {
+    "id": "claim-longitudinal-recording-can-change-play",
+    "statement": "重复记录并非透明窗口：日记可能增加负担、引发习惯化或敷衍回答，并让玩家更注意被提问的互动；漏记、退出和拒答应保留为不同状态，而不是删除后只分析最配合者。",
+    "kind": "synthesis",
+    "sourceIds": ["diary-reactivity-double-edged", "ribbens-player-experience-triangulation", "txt4l8r-diary-snippets", "gerken-longitudinal-hci"],
+    "confidence": "high",
+    "counterexamples": ["日记反应性并非所有变量都出现，主动反思也可能是学习目标；关键是提前说明干预性质，并避免把记录后的行为当未经影响的自然状态。"]
+  },
+  {
+    "id": "claim-campaign-state-has-four-histories",
+    "statement": "战役或 Legacy 的测试条件至少要分开规则、世界、角色与玩家四条历史；只记录规则版本和第几局，会把同版不同分支、角色换手与玩家剧透错误地合并。",
+    "kind": "synthesis",
+    "sourceIds": ["mosca-legacy-irreversibility", "pandemic-legacy-gdc-making", "seafall-playtester-experience", "charterstone-design-diary-attendance"],
+    "confidence": "high",
+    "counterexamples": ["没有剧情、成长、揭示或永久状态的普通重复游玩不必建立完整战役护照；仍应保留最少的版本与玩家历史。"]
+  },
+  {
+    "id": "claim-player-knowledge-cannot-be-reset",
+    "statement": "重置组件、补充贴纸或开启第二副本可以恢复部分物理状态，却不能抹去玩家已经知道的秘密、分支和风险；首次揭示、重试与知情复测必须分开标记。",
+    "kind": "synthesis",
+    "sourceIds": ["mosca-legacy-irreversibility", "pandemic-legacy-gdc-making", "leacock-pandemic-legacy-official"],
+    "confidence": "high",
+    "counterexamples": ["当研究问题与惊喜无关，只检查已知内容的规则执行或组件耐久时，知情玩家仍可提供合适证据。"]
+  },
+  {
+    "id": "claim-campaign-migration-is-design-event",
+    "statement": "进行中的战役遇到原型改版时，状态迁移本身就是设计事件：必须记录旧状态怎样映射、丢失或补偿，并决定继续旧分支、迁移、并行复制或由新组重开。",
+    "kind": "synthesis",
+    "sourceIds": ["seafall-playtester-experience", "gnome-stew-campaign-playtesting", "pretendo-playtesting-perils"],
+    "confidence": "medium",
+    "counterexamples": ["纯文案修正或不会触及既有世界、角色与策略的兼容改动可能无需复杂迁移；仍要说明兼容判断。"]
+  },
+  {
+    "id": "claim-campaign-catchup-is-functional-substitution",
+    "statement": "补偿、摘要、角色托管、自动玩家、跳过或暂停保存的是不同功能；接续协议应写明保留了哪些状态与决定权，而不能把任何一种方法称为缺席者完整参与的等价替代。",
+    "kind": "synthesis",
+    "sourceIds": ["charterstone-design-diary-attendance", "charterstone-faq-joining", "yuan-remote-tabletop-campaign-state"],
+    "confidence": "medium",
+    "counterexamples": ["有些群体只关心机械状态或主动授权他人托管；在该具体目标下可以认为功能足够，但不能替他们推断关系与体验等价。"]
+  },
+  {
+    "id": "claim-irreversible-setup-needs-recovery-path",
+    "statement": "会因洗乱、贴错、撕除、漏放或提前揭示而失去继续条件的系统，需要在动作发生前提供显眼预防，在发生后提供检测、求助、修复或停止路径。",
+    "kind": "synthesis",
+    "sourceIds": ["wired-betrayal-legacy-setup", "charterstone-faq-joining", "pandemic-legacy-gdc-making"],
+    "confidence": "medium",
+    "counterexamples": ["有意让不可逆错误成为作品表达的一部分是可能的；仍需让玩家事前理解风险并能选择是否参与。"]
+  },
+  {
+    "id": "claim-campaign-window-follows-mechanism",
+    "statement": "只有需要跨章节累积才能触发的机制才要求战役时间窗；数值、行动经济、单次教学或局部可用性问题应先隔离测试，完整战役不是更高级的默认方法。",
+    "kind": "synthesis",
+    "sourceIds": ["gnome-stew-campaign-playtesting", "pretendo-playtesting-perils", "seafall-playtester-experience"],
+    "confidence": "medium",
+    "counterexamples": ["局部改动可能与既有成长状态产生只在后期出现的交互；先隔离确认方向后，仍要回到相关战役状态复测。"]
+  },
+  {
+    "id": "claim-solo-promise-precedes-structure",
+    "statement": "单人模式应先声明服务哪种承诺——多人练习与迁移、独立挑战或沉浸、无人可约时的对手替代、还是座位填补——再选择计分、场景、dummy、自动对手或多手控制；“支持 1 人”本身不是体验目标。",
+    "kind": "synthesis",
+    "sourceIds": ["leorke-solo-player-motivations", "nougher-single-player-sociality", "mullins-solo-variant-elements", "automa-factory-approach"],
+    "confidence": "high",
+    "counterexamples": ["纯单人原创游戏不需要从多人版本出发，但仍要说明目标体验、完成条件与目标玩家，而不能用玩家人数代替承诺。"]
+  },
+  {
+    "id": "claim-solo-preserves-decisions-not-opponent-state",
+    "statement": "要保留的是目标玩家面对的互动、信号与有意义决定，不是机械复制真人对手的手牌、资源、版图和行动经济；不影响玩家判断的内部状态可以抽象或删除。",
+    "kind": "synthesis",
+    "sourceIds": ["automa-factory-approach", "wyrmspan-solo-design-diary", "imperium-solo-mode-design", "mullins-solo-variant-elements"],
+    "confidence": "high",
+    "counterexamples": ["若观察对手资源、引擎或位置本身就是玩家推理与反制的核心，那些状态就是互动接口，不能因简化而无条件删除。"]
+  },
+  {
+    "id": "claim-bot-upkeep-is-player-cost",
+    "statement": "翻牌、查表、选目标、判平手、移动、维护资源、记持续效果与恢复错误都是玩家承担的 bot 成本；更理性、更动态或更像真人若增加这些劳动，可能反而削弱玩家自己的回合。",
+    "kind": "synthesis",
+    "sourceIds": ["chola-sad-mode-automated-players", "stamp-swap-solo-design-diary", "automa-factory-approach", "boardgameshots-galactic-cruise-solo"],
+    "confidence": "medium",
+    "counterexamples": ["部分玩家会享受运行复杂对手或把它视为谜题；这仍应作为目标体验验证，而不能从规则熟练者的容忍推断全部玩家。"]
+  },
+  {
+    "id": "claim-bot-information-model-is-design-variable",
+    "statement": "自动对手的可见信息、稳定信号、随机扰动与目标规则会决定玩家是在推理、赌博还是执行脚本；透明度不是天然降低难度，随机性也不自动更像真人。",
+    "kind": "synthesis",
+    "sourceIds": ["origin-story-solo-information", "imperium-solo-mode-design", "automa-factory-approach"],
+    "confidence": "medium",
+    "counterexamples": ["某些单人模式的承诺就是高随机压力或完全信息谜题；它们无需模拟真人，只需诚实说明并验证相应体验。"]
+  },
+  {
+    "id": "claim-test-bot-is-not-solo-product",
+    "statement": "设计者用来跑系统、找卡死或检查牌组的内部 bot，不自动构成可发布的单人模式；正式模式仍需目标单人玩家检验独立设置、规则查询、策略、维护、错误恢复与回桌。",
+    "kind": "synthesis",
+    "sourceIds": ["imperium-solo-mode-design", "pedersen-automa-interview", "nougher-single-player-sociality"],
+    "confidence": "high",
+    "counterexamples": ["若作品明确只把自动脚本作为设计或调试工具，就不必满足玩家产品标准；但不应把它宣传为完整单人体验。"]
+  },
+  {
+    "id": "claim-solo-difficulty-needs-explicit-input",
+    "statement": "单人难度变化应记录具体改变的输入——资源、行动效率、信息、随机性、惩罚、时间、目标或规则例外——并同时检查决策空间、可理解性、利用路径和维护劳动，不能只凭终局胜负或难度名称判断。",
+    "kind": "synthesis",
+    "sourceIds": ["chola-sad-mode-automated-players", "imperium-solo-mode-design", "stamp-swap-solo-design-diary"],
+    "confidence": "medium",
+    "counterexamples": ["短小谜题可以把能否解出作为明确结果；即便如此，若要比较难度，仍需说明题面、信息和约束怎样改变。"]
+  },
+  {
+    "id": "claim-player-count-is-configuration-not-scalar",
+    "statement": "玩家人数应记录为包含人数、队伍、角色、模式、座位与版本的配置，而不是单一倍率；即使规则文本不变，直接对手、第三方受益、信息路径和落后恢复也可能改变。",
+    "kind": "synthesis",
+    "sourceIds": ["goodman-multiplayer-game-spaces", "root-hirelings-player-count-diary", "captain-sonar-rules"],
+    "confidence": "high",
+    "counterexamples": ["低互动、独立个人版图或固定公共时钟的游戏可能随人数变化很小；仍需用实际配置确认，而不是从类型名称预判。"]
+  },
+  {
+    "id": "claim-player-count-total-actions-can-be-nonlinear",
+    "statement": "人数缩放不能只比较每人行动数；局外触发、配对、邻接、投票、公共解析和同时行动中的串行冲突，会让整局机会与劳动按乘法或其他非线性方式变化。",
+    "kind": "synthesis",
+    "sourceIds": ["amritsar-player-count-diary", "popcorn-simultaneous-player-count-diary", "goodman-multiplayer-game-spaces"],
+    "confidence": "medium",
+    "counterexamples": ["所有玩家真正同时且互不影响、公共阶段固定的系统可能接近恒定局长；仍应把冲突解析、教学和查询单独计入。"]
+  },
+  {
+    "id": "claim-player-count-scaling-needs-function",
+    "statement": "地图、市场、牌库、候选、目标、轮数、角色或资源的每项人数缩放都应对应一个要保存的功能——如竞争密度、信息歧义、触发机会或角色覆盖——而不是因为人数增加就机械乘除。",
+    "kind": "synthesis",
+    "sourceIds": ["gamesprecipice-player-count-scalability", "amritsar-player-count-diary", "dixit-three-player-rules", "captain-sonar-rules"],
+    "confidence": "high",
+    "counterexamples": ["等额起始资源、每人一套组件等交付量通常可线性处理；线性公式仍需检查公共供给、结束速度和桌面空间。"]
+  },
+  {
+    "id": "claim-low-count-dummy-needs-one-function",
+    "statement": "低人数 dummy 应声明它只保存哪些公共消耗、阻塞、触发、目标、信息噪声或时钟功能，并记录玩家维护；它不因占一个颜色或席位就等价于第三名真人、单人 Automa 或测试 bot。",
+    "kind": "synthesis",
+    "sourceIds": ["amritsar-player-count-diary", "codenames-low-count-rules", "dixit-three-player-rules", "automa-factory-approach"],
+    "confidence": "high",
+    "counterexamples": ["某些多手玩法明确要求玩家完整操作多个角色；此时应称多手控制，并测试信息泄漏、切换和决定所有权。"]
+  },
+  {
+    "id": "claim-simultaneous-play-is-structural-refactor",
+    "statement": "把串行回合改成同时行动会重写锁定时机、冲突顺序、信息泄漏、组件提示和操作速度优势；它可能降低等待，但不是无需复测的局长补丁。",
+    "kind": "synthesis",
+    "sourceIds": ["popcorn-simultaneous-player-count-diary", "captain-sonar-rules", "palm-of-your-hand-diary"],
+    "confidence": "high",
+    "counterexamples": ["彼此独立的写选、绘图或秘密选择阶段可以很小成本地同步；仍需说明何时锁定和同时揭示。"]
+  },
+  {
+    "id": "claim-community-best-count-is-discovery-signal",
+    "statement": "社区建议人数投票可用来发现应优先复核的配置，但缺少版本、局次、熟练度、队伍、座位、教学方式与投票理由时，不能作为代表性偏好、设计效果或盒侧人数的自动裁决。",
+    "kind": "project_inference",
+    "sourceIds": ["bgg-xml-api-player-count-polls", "daniel-player-count"],
+    "confidence": "high",
+    "counterexamples": ["大量、稳定且附带充分语境的成组评价能提高发现价值；它仍不能替代当前版本与目标玩家的真实任务测试。"]
+  },
+  {
+    "id": "claim-player-count-configurations-need-separate-tests",
+    "statement": "主要、支持与实验人数配置应分别绑定版本、座位、团队、玩家经验、总行动、密度、局长、空间和配置特有故障；跨人数只比较仍有相同含义的指标，不要求体验完全等价。",
+    "kind": "project_inference",
+    "sourceIds": ["goodman-multiplayer-game-spaces", "amritsar-player-count-diary", "root-hirelings-player-count-diary", "daniel-player-count"],
+    "confidence": "high",
+    "counterexamples": ["极小规则变化且证据显示行为稳定的相邻配置可以共享部分测试；仍应保留配置标签，避免后来无法判断数据来自哪一桌。"]
+  },
+  {
+    "id": "claim-duration-needs-measured-interval",
+    "statement": "任何局长主张都应说明从哪里计到哪里，并绑定版本、人数配置、玩家经验、教学与可访问性支持；设置、教学、正式游玩、结算和错误恢复不能在未说明时混成一个可比较分钟数。",
+    "kind": "project_inference",
+    "sourceIds": ["aquaria-game-length-review", "drillers-game-duration-diary", "game-balance-metrics", "ptt-dadaocheng-downtime"],
+    "confidence": "high",
+    "counterexamples": ["出版目录只需提供粗略排期承诺时可以用范围而非完整分解；仍应在内部记录其口径和目标群体。"]
+  },
+  {
+    "id": "claim-ending-is-contract-not-trigger-alone",
+    "statement": "终局设计至少要同时写结束触发、进度与触发者的可见性、触发后剩余行动和结算规则；只命名资源耗尽、固定轮数或分数阈值，不能解释玩家最后几轮实际面对的时间与信息。",
+    "kind": "synthesis",
+    "sourceIds": ["jaffee-game-end-dynamics", "drillers-game-duration-diary", "djinn-game-end-diary", "gamesprecipice-end-conditions"],
+    "confidence": "high",
+    "counterexamples": ["立即获胜且主题、行动和判定同时结束的极短竞速可把多项合并为一句；仍要确认先后手和意外结束是否符合承诺。"]
+  },
+  {
+    "id": "claim-equal-turns-and-last-turn-certainty-differ",
+    "statement": "所有玩家行动次数相等，与玩家能否知道当前或下一次是最后行动，是两个不同变量；结束当前轮可能保证等回合，却仍让早行动者无法判断计划是否来得及。",
+    "kind": "synthesis",
+    "sourceIds": ["jaffee-game-end-dynamics", "drillers-game-duration-diary", "djinn-game-end-diary"],
+    "confidence": "high",
+    "counterexamples": ["每个微回合影响极小、计划不跨回合或结尾本来承诺突袭感时，回合相等和确定性可能都不重要。"]
+  },
+  {
+    "id": "claim-progress-visibility-changes-pacing-behavior",
+    "statement": "进度显示不只是界面便利：当玩家能否看见离结束多远会改变投资、冒险、转分、拖延或加速，它就是终局机制的一部分，并需和触发规则一起测试。",
+    "kind": "synthesis",
+    "sourceIds": ["drillers-game-duration-diary", "djinn-game-end-diary", "jaffee-game-end-dynamics"],
+    "confidence": "high",
+    "counterexamples": ["隐藏或不确定结尾可以有意制造风险与惊喜；此时仍应测试玩家获得了什么信号、意外是否可恢复。"]
+  },
+  {
+    "id": "claim-pace-is-shape-not-average",
+    "statement": "节奏应按开局建立、中盘转化、终局加速或停滞的形状记录；相同平均局长可能分别来自持续新增决定、重复执行、安全循环、等待或结算拖延，不能得到同一诊断。",
+    "kind": "project_inference",
+    "sourceIds": ["daniel-game-length", "drillers-game-duration-diary", "game-balance-feedback-pacing", "ptt-dadaocheng-downtime"],
+    "confidence": "high",
+    "counterexamples": ["极短单循环游戏可以只记录少量阶段；若没有明显分段，也应记录每次重复是否改变决定空间。"]
+  },
+  {
+    "id": "claim-tail-needs-two-observations",
+    "statement": "诊断拖尾时应分开记录玩家认为结果多大程度已确定，以及剩余行动是否仍产生目标体验中的决定、表达或收束；可预测胜负不自动等于余下过程无价值，无新决定也不必等到数学确定才成立。",
+    "kind": "project_inference",
+    "sourceIds": ["old-world-ending-diary", "reddit-concession-social-contract", "daniel-game-length", "alexandrovsky-game-disengagement"],
+    "confidence": "medium",
+    "counterexamples": ["竞技规则或计分排名可能要求完整执行以确定名次、积分或资格；应把这些剩余目标写进决定价值，而非直接删局。"]
+  },
+  {
+    "id": "claim-exit-and-elimination-need-protocol",
+    "statement": "投降、提前退出与玩家淘汰会改变能动性、信息、邻接、资源和其他人的胜负条件；若作品允许它们，应写同意方式、状态处理、保密与旁观义务、重新加入或整桌停止路径，而不是临场交给礼仪。",
+    "kind": "synthesis",
+    "sourceIds": ["rogerson-player-elimination", "alexandrovsky-game-disengagement", "reddit-concession-social-contract", "root-hirelings-player-count-diary"],
+    "confidence": "medium",
+    "counterexamples": ["两人零和游戏中双方同意认输通常不会留下第三方状态；仍要确认竞赛计分、学习目标和复盘需求。"]
+  },
+  {
+    "id": "claim-first-and-returning-duration-need-separate-tracks",
+    "statement": "首局与熟练局不仅分钟不同，可能连结束推进速度、风险承担、查询、错误恢复和可见进度的使用方式都不同；盒侧承诺与设计验证应保留两条记录，不能用设计师熟练局替代新玩家体验。",
+    "kind": "synthesis",
+    "sourceIds": ["drillers-game-duration-diary", "aquaria-game-length-review", "daniel-game-length", "ptt-dadaocheng-downtime"],
+    "confidence": "high",
+    "counterexamples": ["规则极短、状态完全可见且学习曲线很小的游戏两条记录可能接近；仍需由陌生玩家而非设计者自评确认。"]
+  },
+  {
+    "id": "claim-uncertainty-source-is-not-random-device",
+    "statement": "不确定性可能来自随机装置、隐藏信息、他人行动、系统复杂度、记忆或实体执行；测试必须先写来源与玩家可获得的信号，再写骰子、牌库或袋子如何实现，不能把‘有骰子’当成不确定性诊断。",
+    "kind": "synthesis",
+    "sourceIds": ["daniel-randomness", "goodman-skill-stochasticity", "uncertainty-in-games-book"],
+    "confidence": "high",
+    "counterexamples": ["纯机会或极简派对游戏中随机装置可能确实是主要甚至唯一不确定性；仍应说明它承担惊喜、平衡差距、叙事还是胜负。"]
+  },
+  {
+    "id": "claim-input-output-is-timing-not-quality",
+    "statement": "输入与输出随机描述随机事件相对某次决定的时点，不是质量标签；输出会成为下一次决定的输入，而一项小样本卡牌实验甚至观察到其特定输入随机条件降低满意度，因此必须按具体实现与目标玩家验证。",
+    "kind": "synthesis",
+    "sourceIds": ["shalev-random-loops", "zhang-input-output-randomness", "daniel-randomness", "przybylski-randomness-strategy"],
+    "confidence": "high",
+    "counterexamples": ["某个原型中输入随机可能稳定优于输出随机；这仍是该实现、回应时间、 stakes 与受众的测试结果，不是跨游戏定律。"]
+  },
+  {
+    "id": "claim-random-event-count-is-not-outcome-impact",
+    "statement": "随机事件的数量、方差与随机源对最终结果的贡献不是同一个量：一次事件可以决定胜负，许多独立事件也可能平均；结果影响还会随玩家或代理利用机会的能力与选定指标改变。",
+    "kind": "synthesis",
+    "sourceIds": ["goodman-skill-stochasticity", "ernest-volatility-game-design", "game-balance-probability"],
+    "confidence": "high",
+    "counterexamples": ["结果单调累积且不存在阈值、交互或策略利用时，事件数量可能与结果方差呈稳定关系；仍需用该系统的分布验证。"]
+  },
+  {
+    "id": "claim-random-agency-needs-exposure-and-response",
+    "statement": "随机环境中的能动性至少要记录谁选择承担风险、承担前知道什么、可能损失与收益、随机后多久和几次能回应；一个‘重掷’按钮或发生在决定前并不自动形成有意义控制。",
+    "kind": "project_inference",
+    "sourceIds": ["shalev-random-loops", "ernest-volatility-game-design", "with-smile-gun-randomness-diary", "spots-randomness-player-review"],
+    "confidence": "high",
+    "counterexamples": ["以惊吓、荒诞或共同庆祝为核心的轻量游戏可以有意让玩家无法回应；此时无控制是体验承诺，仍应确认 stakes 与局长匹配。"]
+  },
+  {
+    "id": "claim-mitigation-needs-operation-cost-owner",
+    "statement": "‘有运气缓解’必须拆成事前准备、选择暴露、改变分布、保留/选择结果、付费重试、结果转换、事后适应或止损，并写清谁拥有动作及支付什么；不同操作不能合并成缓解数量或单一强度。",
+    "kind": "project_inference",
+    "sourceIds": ["spots-randomness-player-review", "daniel-randomness", "with-smile-gun-randomness-diary", "takeover-randomness-diary"],
+    "confidence": "high",
+    "counterexamples": ["极简游戏只需一种明显的重掷资源即可完成承诺；仍应验证它改变了分布、决定还是只延迟同一次抽样。"]
+  },
+  {
+    "id": "claim-random-variety-is-not-decision-variety",
+    "statement": "不同洗牌、骰值或设置能制造状态差异，却不证明玩家会形成不同目标、候选行动或策略；随机多样性必须与实际决定变化、重复劳动和核心功能是否被锁死分开观察。",
+    "kind": "synthesis",
+    "sourceIds": ["daniel-randomness", "ernest-volatility-game-design", "takeover-randomness-diary", "with-smile-gun-randomness-diary"],
+    "confidence": "medium",
+    "counterexamples": ["短篇体验只承诺惊喜或故事变化时，状态多样性本身可能已经有价值；仍不应把它称为策略重玩性。"]
+  },
+  {
+    "id": "claim-randomness-simulation-and-experience-need-two-tracks",
+    "statement": "固定种子与计算代理可回答某随机源怎样改变所选结果指标，真人任务可回答玩家是否看见、理解、享受并能回应；两条证据必须共享版本与配置但分别报告，不能互相替代。",
+    "kind": "project_inference",
+    "sourceIds": ["goodman-skill-stochasticity", "zhang-input-output-randomness", "boardgame-balance-experience-study", "game-balance-probability"],
+    "confidence": "high",
+    "counterexamples": ["完全抽象、目标仅为验证数学性质的机制可先只做计算轨道；一旦提出乐趣、公平、理解或目标玩家主张，仍需真人证据。"]
+  },
+  {
+    "id": "claim-outcome-attribution-needs-event-context",
+    "statement": "玩家说‘我赢在技术’或‘我输在运气’不能单独证明真实因果；记录应同时包含随机源、事件前决定、结果效价、后续回应、玩家解释与确信，因为选择和正负反馈本身会改变主观控制与归因。",
+    "kind": "synthesis",
+    "sourceIds": ["okamoto-luck-skill-attribution", "wohl-luck-illusory-control", "spots-randomness-player-review", "goodman-skill-stochasticity"],
+    "confidence": "medium",
+    "counterexamples": ["透明的单次纯随机结算可能让实际来源非常清楚；玩家仍可能在是否承担该风险、如何准备和怎样回应上有真实责任。"]
+  },
+  {
+    "id": "claim-end-win-score-are-separate-rules",
+    "statement": "结束条件、胜利条件和计分函数应分别写明：何时停止、什么状态决定胜负、哪些行动或状态怎样换算；把三者压成‘先到某分获胜’会隐藏检查时点、回应窗口和额外约束。",
+    "kind": "synthesis",
+    "sourceIds": ["russell-victory-conditions", "daybreak-victory-diary", "daniel-winning-losing", "jaffee-game-end-dynamics"],
+    "confidence": "high",
+    "counterexamples": ["一步竞速、淘汰或立即达成的极短游戏可让触发与获胜重合；仍要写清平手、同时满足和行动顺序。"]
+  },
+  {
+    "id": "claim-scoring-function-is-behavioral-incentive",
+    "statement": "计分函数不仅结算表现，也选择设计者持续奖励的行动、持有、关系与结果；测试应把得分事件与其前置决定、即时非分数反馈、机会成本和主题承诺连在一起。",
+    "kind": "synthesis",
+    "sourceIds": ["daybreak-victory-diary", "sanctuary-scoring-review", "daniel-winning-losing", "values-at-play-methodology"],
+    "confidence": "high",
+    "counterexamples": ["纯记录、沙盒或表达性活动可让分数只承担回顾或个人挑战；此时不要从分数自动推断唯一正确行为。"]
+  },
+  {
+    "id": "claim-scoring-precision-needs-decision-value",
+    "statement": "倍率、小数、套装和额外比较只有在改变行动前的判断或支撑核心体验时才值得其计算、查询与教学成本；更精确的换算不能单独证明计分更公平或更深。",
+    "kind": "synthesis",
+    "sourceIds": ["with-smile-gun-scoring-diary", "daniel-winning-losing", "hegemony-scoring-diary"],
+    "confidence": "medium",
+    "counterexamples": ["经济模拟、拍卖或竞赛型作品可能把精确换算本身做成核心乐趣；仍需观察目标玩家能否执行、比较和恢复错误。"]
+  },
+  {
+    "id": "claim-scoring-pace-shapes-perceived-progress",
+    "statement": "前置、持续、阶段和终局计分会改变玩家感到领先、落后、仍可追赶或突然被反超的时点；非对称角色不必同速，但应让目标玩家读懂自己怎样积累和何时兑现。",
+    "kind": "synthesis",
+    "sourceIds": ["hegemony-scoring-diary", "pacts-scoring-diary", "old-world-ending-diary", "drillers-game-duration-diary"],
+    "confidence": "medium",
+    "counterexamples": ["隐藏身份、诈唬或惊喜揭晓可有意让真实进展模糊；仍要验证玩家拥有足以行动的信号，而非事后才知道整局无效。"]
+  },
+  {
+    "id": "claim-score-visibility-is-information-design",
+    "statement": "公开、私密、可推断、可追踪但隐藏与延迟计分会分别改变比较、阻断、围攻、谈判、记忆劳动和攻击目标；计分可见性是信息与互动设计，不是单一悬念强度。",
+    "kind": "synthesis",
+    "sourceIds": ["gajadhar-score-visibility", "reddit-hidden-scoring", "point-salad-scoring-review", "russell-victory-conditions"],
+    "confidence": "medium",
+    "counterexamples": ["没有直接负面互动的短篇个人拼图可让公开/隐藏主要影响自我进展；仍需检查计算负担与终局惊讶。"]
+  },
+  {
+    "id": "claim-scoring-sources-are-not-strategy-paths",
+    "statement": "多个得分来源只有在要求不同承诺、机会成本、切换成本、信息或互动表面时才构成不同策略路径；同一引擎同步抬高四个计分栏仍可能只有一条支配路线。",
+    "kind": "synthesis",
+    "sourceIds": ["decision-space-objectives", "uw-secondary-objectives", "sanctuary-scoring-review", "burgun-against-score-systems"],
+    "confidence": "medium",
+    "counterexamples": ["轻量游戏可只承诺战术组合与每局变化，不必提供多条长期策略；此时应诚实描述，而非把计分栏数量称为路径。"]
+  },
+  {
+    "id": "claim-hidden-score-needs-response-question",
+    "statement": "隐藏计分前应先写玩家在知道领先者或分值后本应能够做什么；若信息不能支持任何合法回应，公开可能只增加围攻，若互动需要目标选择，隐藏又可能让攻击与协商失去依据。",
+    "kind": "project_inference",
+    "sourceIds": ["reddit-hidden-scoring", "point-salad-scoring-review", "gajadhar-score-visibility", "russell-victory-conditions"],
+    "confidence": "medium",
+    "counterexamples": ["完全合作、独立拼图或纯揭晓游戏可以不需要对领先状态回应；仍要检查个人计划、记忆劳动和结果解释。"]
+  },
+  {
+    "id": "claim-scoring-evidence-needs-multiple-tracks",
+    "statement": "终局分差、路径贡献与胜率只能描述系统结果；玩家是否理解路径、感到进展、改变互动、体验能力或自主并怎样解释胜负，需要绑定同一版本与配置的独立行为和体验证据。",
+    "kind": "project_inference",
+    "sourceIds": ["szulawski-boggle-rewards", "gajadhar-score-visibility", "hegemony-scoring-diary", "boardgame-balance-experience-study"],
+    "confidence": "high",
+    "counterexamples": ["只验证算术或结算正确性的内部测试可先不测体验；一旦提出动机、乐趣、互动或目标玩家主张，就不能只看分数。"]
+  },
+  {
+    "id": "claim-turn-structure-allocates-authority-and-information",
+    "statement": "回合结构不只是行动时间表；每个轮、阶段、回合、行动与反应窗口都在分配谁能观察、决定、操作、打断、确认，以及何时锁定和公开信息。",
+    "kind": "synthesis",
+    "sourceIds": ["building-blocks-tabletop-book", "arcs-action-structure-diary", "captain-sonar-rules", "hofstetter-turn-transition"],
+    "confidence": "high",
+    "counterexamples": ["纯个人拼图的简单顺时针回合可能只需一句行动顺序；一旦存在共享资源、同时选择、反应或交接错误，仍要展开相关窗口。"]
+  },
+  {
+    "id": "claim-action-count-is-not-action-economy",
+    "statement": "行动经济至少包含行动槽、当下可用动作、顺序与组合、机会成本、免费或触发动作、反应储备、维护劳动和未来行动能力；相同的‘每回合两行动’可以形成完全不同的系统。",
+    "kind": "synthesis",
+    "sourceIds": ["pax-pamir-free-action-diary", "elden-ring-action-economy-diary", "brass-action-economy-review", "arcs-action-structure-diary"],
+    "confidence": "high",
+    "counterexamples": ["动作彼此独立、无触发也无跨回合资源的极简游戏可以暂以行动数描述预算；仍不能据数量单独推出深度、节奏或公平。"]
+  },
+  {
+    "id": "claim-action-granularity-is-design-variable",
+    "statement": "一次行动代表意图推进多远，也是行动经济变量；当动作粒度小到无法完成目标操作时，单纯增加行动数可能扩大组合、维护和追打，重定义一次行动的尺度是独立候选。",
+    "kind": "synthesis",
+    "sourceIds": ["oath-action-economy-diary", "daniel-turn-structure", "takeover-randomness-diary"],
+    "confidence": "medium",
+    "counterexamples": ["逐步移动、微操或多段组合本身是目标体验时，小粒度可以提供读取与反制；仍要验证每一步是否改变决定。"]
+  },
+  {
+    "id": "claim-shorter-turns-do-not-guarantee-less-waiting",
+    "statement": "缩短单个回合可能提高参与频率，也会增加开始、结束和上下文切换摩擦；若预案持续失效或玩家必须重新扫描状态，较短回合不保证较低的实际或感知等待。",
+    "kind": "synthesis",
+    "sourceIds": ["bishop-game-design-concepts", "ptt-dadaocheng-downtime", "hofstetter-turn-transition", "daniel-turn-structure"],
+    "confidence": "high",
+    "counterexamples": ["状态稳定、交接显然、每次行动独立的短交替常能直接降低连续等待；仍应记录完整轮转与交接，而非只看单次回合。"]
+  },
+  {
+    "id": "claim-waiting-needs-multiple-measures",
+    "statement": "等待至少应分开钟表等待、决定延迟、预案存活、强制监看、交接摩擦和错误恢复；看向桌面、聊天或在脑内规划都不能自动归为投入或脱离。",
+    "kind": "project_inference",
+    "sourceIds": ["xu-chores-social-play", "reddit-downtime-design", "ptt-dadaocheng-downtime", "bishop-game-design-concepts"],
+    "confidence": "high",
+    "counterexamples": ["只定位极端超长回合的早期测试可先记录计时与第一偏离；提出参与、无聊或认知负担主张时必须补行为和玩家解释。"]
+  },
+  {
+    "id": "claim-phase-needs-observable-function",
+    "statement": "新增或保留阶段应能指出它批处理了什么、建立了什么信息边界、改变了谁的权限或创造了哪种共同注意；只让流程看起来整齐不足以抵消转场、记忆和重复结算成本。",
+    "kind": "synthesis",
+    "sourceIds": ["daniel-turn-structure", "building-blocks-tabletop-book", "xu-chores-social-play", "popcorn-simultaneous-player-count-diary"],
+    "confidence": "high",
+    "counterexamples": ["教学原型可以暂用冗余阶段显式展示系统边界；稳定后仍应检查这些边界是否需要保留或改由组件表达。"]
+  },
+  {
+    "id": "claim-reaction-windows-create-monitoring-cost",
+    "statement": "反应窗口不仅给非主动玩家机会，也要求识别触发、检查资格、保留资源、声明通过并处理嵌套回应；即使多数窗口无人响应，全桌仍可能支付持续监看和优先交接成本。",
+    "kind": "synthesis",
+    "sourceIds": ["ducksauce-card-turn-loop", "captain-sonar-rules", "magic-maze-rules"],
+    "confidence": "medium",
+    "counterexamples": ["触发极少、图示明确且只有一名响应者的反应可用很低成本提供防守；仍要记录漏触发和通过流程。"]
+  },
+  {
+    "id": "claim-maintenance-has-cost-and-possible-function",
+    "statement": "维护、计分、移动物件与规则执行都消耗时间和注意，但有时也承担共同状态理解、错误发现、学习、表演或社交节奏；删减、批处理或自动化前应先写其功能。",
+    "kind": "synthesis",
+    "sourceIds": ["xu-chores-social-play", "daniel-turn-structure", "pape-tabletop-coordination-policies", "captain-sonar-creator-note"],
+    "confidence": "high",
+    "counterexamples": ["高频、无决定、无信息且不被任何人注意的 bookkeeping 可以直接成为删减候选；仍需复测状态是否可见和错误是否增加。"]
+  },
+  {
+    "id": "claim-initiative-advantage-has-multiple-surfaces",
+    "statement": "先手、后手与主动权可能分别改变稀缺机会、行动前信息、行动后响应、节奏控制和最后行动；胜率或等回合只能覆盖其中一部分，补偿也可能产生新的座位策略。",
+    "kind": "synthesis",
+    "sourceIds": ["daniel-who-goes-first", "arcs-action-structure-diary", "bishop-game-design-concepts", "jaffee-game-end-dynamics"],
+    "confidence": "high",
+    "counterexamples": ["大量极小回合、机会不稀缺且信息近似不变的游戏可让座位影响很小；仍应在主要配置检查而非假定为零。"]
+  },
+  {
+    "id": "claim-map-is-rule-bearing-spatial-model",
+    "statement": "游戏地图首先是把地点、连接、距离、容量、视野、所有权和状态变化做成可操作关系的空间模型；地理轮廓或美术相似不能单独说明玩家实际面对的空间。",
+    "kind": "synthesis",
+    "sourceIds": ["oath-map-remembers", "faidutti-map-territory", "insidegmt-cartography-game-board", "building-blocks-tabletop-book"],
+    "confidence": "high",
+    "counterexamples": ["地图只提供主题背景、章节选择或不调节任何行动时，可以主要承担叙事和定位；仍应明确它不具备哪些规则作用，避免玩家从图形误推。"]
+  },
+  {
+    "id": "claim-distance-is-rule-not-visual-scale",
+    "statement": "空间距离由合法路径、边权、行动成本、交通方式、阻断和时机共同定义，不等于纸面厘米或现实里程；视觉比例可以弯曲，但玩家必须能恢复当前规则距离。",
+    "kind": "synthesis",
+    "sourceIds": ["oath-map-remembers", "insidegmt-cartography-game-board", "ticket-to-ride-adjacency-analysis"],
+    "confidence": "high",
+    "counterexamples": ["尺量、弹射、摆放或真实比例模拟把物理距离直接纳入规则时，纸面厘米就是系统变量；仍要分开视觉尺度、测量容差和玩家可执行性。"]
+  },
+  {
+    "id": "claim-adjacency-needs-explicit-operation",
+    "statement": "邻接不是地图自然带来的事实；边接触、角接触、路径、河流、跨层连接和临时能力都可能定义不同关系，必须为移动、攻击、传播、支援和计分分别写清是否共用同一邻接。",
+    "kind": "synthesis",
+    "sourceIds": ["faidutti-map-territory", "spirit-island-thematic-map-rules", "kosa-us-territory-map-process", "root-hirelings-player-count-diary"],
+    "confidence": "high",
+    "counterexamples": ["极简方格游戏可以让所有作用都采用同一种正交邻接；即便如此也要说明角落是否相邻并验证图形不会诱发相反理解。"]
+  },
+  {
+    "id": "claim-topology-metrics-are-descriptions-not-quality",
+    "statement": "节点度数、半径、直径、最短路、连通度和瓶颈能描述地图结构并生成比较，但只有结合边权、规则、目标、人数、时机和玩家行为，才能解释它们对当前体验的作用。",
+    "kind": "synthesis",
+    "sourceIds": ["ticket-to-ride-adjacency-analysis", "kosa-us-territory-map-process", "reddit-board-map-design", "goodman-multiplayer-game-spaces"],
+    "confidence": "high",
+    "counterexamples": ["验证不可达、孤立节点或静态最短路等纯结构性质时，图指标本身足够回答窄问题；它仍不能推出乐趣、公平或策略深度。"]
+  },
+  {
+    "id": "claim-spatial-density-needs-incentive-and-count-context",
+    "statement": "地点数量、有效面积与单位密度只有结合玩家人数、行动范围、目标位置、占用时间和竞争激励才有意义；地图缩小可能增加接触，也可能只制造堵塞或随机碰撞。",
+    "kind": "synthesis",
+    "sourceIds": ["new-yorker-map-incentive-playtest", "daniel-scaling-map", "amritsar-player-count-diary", "root-hirelings-player-count-diary"],
+    "confidence": "high",
+    "counterexamples": ["固定棋盘且玩家主要在独立区域行动的游戏可让人数与公共空间密度弱相关；仍需检查共享市场、回合总行动和可读性。"]
+  },
+  {
+    "id": "claim-node-capacity-shapes-interaction",
+    "statement": "一个地点能容纳多少单位、卡牌、建筑或玩家，会改变拥挤、封锁、共存、信息密度和物理操作；容量是空间规则，不应只在组件放不下时才被发现。",
+    "kind": "synthesis",
+    "sourceIds": ["oath-map-remembers", "insidegmt-cartography-game-board", "scott-tabletop-territoriality", "store-all-bits-insert"],
+    "confidence": "medium",
+    "counterexamples": ["抽象占用标记可以让逻辑容量与实际堆叠分离；此时仍要验证玩家能否读取数量、所有权和溢出位置。"]
+  },
+  {
+    "id": "claim-modular-layout-changes-structure-not-just-variety",
+    "statement": "模块地图改变的不只是每局外观，也可能改变中心数量、边缘长度、邻接分布、支援范围、安全区、瓶颈和可读性；随机拼接前应定义必须保持和允许变化的结构属性。",
+    "kind": "synthesis",
+    "sourceIds": ["spirit-island-jagged-earth-map-diary", "spirit-island-thematic-map-rules", "faidutti-map-territory"],
+    "confidence": "high",
+    "counterexamples": ["只更换无规则效果的美术或故事标签时，模块可以不改变拓扑；若地形、入口或目标随模块移动，仍需重新检查结构。"]
+  },
+  {
+    "id": "claim-geographic-fidelity-and-play-fidelity-can-diverge",
+    "statement": "历史或现实地图越精确，不保证玩家越能执行规则或体验目标视角；地貌线索若暗示不存在的移动和边界会制造错误，而视觉失真有时能保留相对关系、放置空间或时代认知。",
+    "kind": "synthesis",
+    "sourceIds": ["insidegmt-cartography-game-board", "faidutti-map-territory", "rubio-history-50-years"],
+    "confidence": "high",
+    "counterexamples": ["教育、导航或测量任务可能把地理精确本身设为主要学习目标；这时仍需公开抽象、误差和玩家要完成的任务。"]
+  },
+  {
+    "id": "claim-tabletop-layout-is-access-interface",
+    "statement": "同一抽象地图放在真实桌上后，会因座位、观看方向、视距、触达、个人/群组/储存区和代理传递产生不同可用空间；实体布局属于信息与行动接口，不是发布阶段的包装余量。",
+    "kind": "synthesis",
+    "sourceIds": ["scott-tabletop-territoriality", "whalen-boardgame-tabletop-interface", "mcd-heuristic-toolkit-paper", "reddit-table-space-access"],
+    "confidence": "high",
+    "counterexamples": ["每人只操作近身个人组件且公共状态极少的游戏可弱化座位差异；仍要检查设置、共享补给、规则查询和结束结算。"]
+  },
+  {
+    "id": "claim-map-legibility-needs-seat-task-testing",
+    "statement": "地图可读性应以具体座位和任务验证：玩家能否识别位置、恢复邻接、比较距离、读取占用、找到合法目标并在状态变化后更新，而不是只检查设计稿放大图是否清楚。",
+    "kind": "project_inference",
+    "sourceIds": ["insidegmt-cartography-game-board", "reddit-table-space-access", "mcd-heuristic-toolkit-paper", "kosa-us-territory-map-process"],
+    "confidence": "high",
+    "counterexamples": ["早期纸面拓扑原型可以暂不测试最终字号和美术；一旦要解释真人错误、无障碍或生产尺寸，就必须回到实体座位任务。"]
+  },
+  {
+    "id": "claim-negotiation-space-needs-objects-and-outside-options",
+    "statement": "有多少项目允许交易并不等于谈判空间有多大；可用筹码、双方差异化价值、拒绝后的外部选项、替代对象、权限和时间压力共同决定一项报价是否值得提出。",
+    "kind": "synthesis",
+    "sourceIds": ["wehrle-quid-for-quo", "crescent-moon-negotiation-diary", "reddit-negotiation-hallmarks", "chinatown-accessibility-teardown"],
+    "confidence": "high",
+    "counterexamples": ["拍卖或固定报价游戏可以只让一种对象形成深谈判；关键仍是各方价值和替代方案，而不是对象必须多。"]
+  },
+  {
+    "id": "claim-deal-needs-explicit-lifecycle",
+    "statement": "一项交易至少需要报价、接受、记录、履行、到期、违约和修复的可识别时点；只写‘双方同意即可’会把锁定、条件判断、记忆与争议处理交给桌外协商。",
+    "kind": "synthesis",
+    "sourceIds": ["ti4-deals-rules", "kings-struggle-deals-rules", "diplomacy-official-rules", "wehrle-quid-for-quo"],
+    "confidence": "high",
+    "counterexamples": ["同一窗口里立即交换实体组件的极简交易可以把记录、到期和违约压缩为一次操作；仍需说明何时接受和何时不可撤回。"]
+  },
+  {
+    "id": "claim-bindingness-is-timing-design-variable",
+    "statement": "约束性不是整款游戏或整笔交易的二元道德标签；一项报价可以按立即可执行、未来行为、随机结果、条件满足和第三方判断拆成约束、非约束或部分约束条款。",
+    "kind": "synthesis",
+    "sourceIds": ["ti4-deals-rules", "kings-struggle-deals-rules", "noncooperative-preplay-negotiation"],
+    "confidence": "high",
+    "counterexamples": ["作品可以有意规定所有口头承诺都不受系统强制；仍应明确哪些组件交换会立即结算，以及玩家怎样识别未来承诺。"]
+  },
+  {
+    "id": "claim-promises-shape-expectations-without-enforcement",
+    "statement": "即使系统不强制履行，承诺仍可能通过提高对方预期改变信任、合作与违约后的惩罚；固定格式的裸承诺、自由消息和条件承诺链也不能假定产生相同效果。",
+    "kind": "synthesis",
+    "sourceIds": ["mischkowski-promises-expectations", "smith-promises-punishment", "charness-broken-promises-experiment", "broken-promises-hidden-partnerships"],
+    "confidence": "medium",
+    "counterexamples": ["激励完全一致、信息充分或玩家把发言视为纯表演时，承诺可能不改变行为；实验平均效应也不能预测某桌玩家。"]
+  },
+  {
+    "id": "claim-breach-costs-need-separate-tracks",
+    "statement": "违约后失分、失去未来报价、被本局报复与玩家真实失望属于不同证据轨；系统惩罚、局内信誉和情绪伤害不能用一个‘背叛很有戏剧性’合并解释。",
+    "kind": "project_inference",
+    "sourceIds": ["smith-promises-punishment", "mischkowski-promises-expectations", "chinatown-accessibility-teardown", "diplomacy-betrayal-language-study"],
+    "confidence": "high",
+    "counterexamples": ["短促派对游戏可以把夸张背叛作为已同意的喜剧表演；仍需确认目标群体、退出方式和桌外关系不被当作筹码。"]
+  },
+  {
+    "id": "claim-commitment-components-are-memory-interfaces",
+    "statement": "承诺牌、交易标记和公开合约不仅执行约束，也把对象、持有人、条件、到期、转让和兑现状态变成可见记忆；是否物化应由跨窗口长度、多方条件与转售需求决定。",
+    "kind": "synthesis",
+    "sourceIds": ["wehrle-quid-for-quo", "golden-blade-promise-diary", "ti4-deals-rules", "kings-struggle-deals-rules"],
+    "confidence": "medium",
+    "counterexamples": ["立即完成、双方清楚且不会跨窗口的口头交换可以不增加组件；物化也可能增加维护和公开信息，不是自动改进。"]
+  },
+  {
+    "id": "claim-coalitions-need-third-party-analysis",
+    "statement": "联盟不只改变成员收益，也会改变非成员的价格、路线、谈判对象、排斥风险和反联盟筹码；只评估盟友是否双赢会漏掉多人系统的主要外部效应。",
+    "kind": "synthesis",
+    "sourceIds": ["coalition-formation-dynamics-experiment", "online-coalition-game-tool", "crescent-moon-negotiation-diary", "oath-negotiation-risk-diary"],
+    "confidence": "high",
+    "counterexamples": ["团队从设置时固定、非成员收益与联盟无交叉的比赛可弱化动态第三方分析；仍需检查人数不均和提前失去竞争路径。"]
+  },
+  {
+    "id": "claim-alliance-needs-exit-and-expiry",
+    "statement": "持续联盟需要进入、维持、到期、单边退出、生效时点和共同资产处理；没有退出协议的互利关系容易由短期合作变成锁队、争议或终局突然背叛。",
+    "kind": "project_inference",
+    "sourceIds": ["crescent-moon-negotiation-diary", "coalition-formation-dynamics-experiment", "online-coalition-game-tool", "diplomacy-betrayal-language-study"],
+    "confidence": "high",
+    "counterexamples": ["整局固定团队不需要动态退出；此时应明确共同胜负、掉线/离桌处理和队内决定，而不是把它叫临时联盟。"]
+  },
+  {
+    "id": "claim-negotiation-channel-allocates-participation",
+    "statement": "公开或私下、顺序或同时、口头或书面、限时或不限时的谈判渠道，会分配谁能听见、反报价、记录、跟上节奏和得到发言机会；渠道本身就是互动与无障碍接口。",
+    "kind": "synthesis",
+    "sourceIds": ["diplomacy-official-rules", "chinatown-accessibility-teardown", "crabb-heron-communication-challenges", "president-social-engine-diary"],
+    "confidence": "high",
+    "counterexamples": ["熟悉小组的单笔顺序交易可能无需复杂发言协议；仍要检查沉默玩家是否有报价和拒绝的等价方式。"]
+  },
+  {
+    "id": "claim-negotiation-history-needs-action-trace",
+    "statement": "评价信誉、联盟稳定、背叛或终局 kingmaking 时，应把消息与可观察行动按时间对齐；最后一手脱离此前互惠、威胁、救援和违约历史，无法解释玩家为何把它视为合理或失效。",
+    "kind": "synthesis",
+    "sourceIds": ["diplomacy-negotiation-messages-study", "diplomacy-betrayal-language-study", "reddit-negotiation-hallmarks", "oath-negotiation-risk-diary"],
+    "confidence": "medium",
+    "counterexamples": ["明确禁止沟通、无持续关系且所有影响即时结算的多人抽象游戏可主要分析动作；仍要记录各玩家当时剩余目标和回应能力。"]
+  },
+  {
+    "id": "claim-auction-needs-complete-protocol",
+    "statement": "拍卖形式名称不能完整定义一次竞价；拍卖标的和价值、信息、竞价步骤、分配、支付、资金去向、退出与并列、结果反馈及其与整局的连接共同构成可执行协议。",
+    "kind": "synthesis",
+    "sourceIds": ["modern-art-official-rules", "high-society-official-rules", "estates-auction-rules", "qe-auction-rules"],
+    "confidence": "high",
+    "counterexamples": ["在受控原型中只比较两个竞价按钮时，可以冻结其余字段；但冻结的字段仍应被明确记录，避免把隐含差异误当形式效果。"]
+  },
+  {
+    "id": "claim-value-model-precedes-format",
+    "statement": "选择公开升价、暗标或固定价之前，应先判断拍品主要是私人价值、共同价值还是相互依赖价值，并列玩家能看到的信号；价值来源决定他人报价是竞争行为还是可用信息。",
+    "kind": "synthesis",
+    "sourceIds": ["yale-auction-lecture", "thaler-winners-curse", "modern-art-official-rules", "estates-auction-rules"],
+    "confidence": "high",
+    "counterexamples": ["拍品有固定公开收益时价值模型可以很短；玩家的阻断、预算、时机和组合价值仍可能使实际价值相互依赖。"]
+  },
+  {
+    "id": "claim-bid-is-not-direct-valuation",
+    "statement": "实际报价不是主观估值的直接读数；竞价格式、预算、压价、信息揭示、阻断、抬价和社会策略都可能使报价偏离玩家认为拍品最多值多少。",
+    "kind": "synthesis",
+    "sourceIds": ["yale-auction-lecture", "bidder-curse-cash-field", "reddit-auction-valuation"],
+    "confidence": "high",
+    "counterexamples": ["在独立私人价值、二价密封等强假设下，按真实价值报价可以是弱占优；桌游仍需确认这些假设和玩家理解是否成立。"]
+  },
+  {
+    "id": "claim-winners-curse-has-common-value-boundary",
+    "statement": "赢家诅咒主要描述共同或相关价值且估值含噪声时，最乐观估计者更易获胜所产生的条件选择偏差；私人价值拍卖中的高价或后悔不能自动归入这一概念。",
+    "kind": "synthesis",
+    "sourceIds": ["thaler-winners-curse", "yale-auction-lecture", "bidder-curse-cash-field", "winners-curse-natural-markets"],
+    "confidence": "high",
+    "counterexamples": ["许多桌游同时含私人套装价值与共同市场价值；这时可逐项分解，不必强行把整件拍品只归一类。"]
+  },
+  {
+    "id": "claim-payment-destination-reshapes-economy",
+    "statement": "相同成交价付给银行、卖家或另一名竞标者，会分别销毁、转移或补偿购买力，并改变后续轮次的预算与竞争结构；资金去向必须与支付数额分开设计。",
+    "kind": "synthesis",
+    "sourceIds": ["modern-art-official-rules", "estates-auction-rules", "high-society-official-rules"],
+    "confidence": "high",
+    "counterexamples": ["游戏最后一步的一次性拍卖可能没有后续预算反馈；支付对象仍会影响当下的相对胜负或主题解释。"]
+  },
+  {
+    "id": "claim-loser-cost-shapes-escalation",
+    "statement": "落败者是否收回出价、支付全部、支付部分或损失竞价工具，会改变虚张声势、恶意抬价、退出时机和未来参与能力；不能只记录赢家支付。",
+    "kind": "synthesis",
+    "sourceIds": ["high-society-official-rules", "high-society-accessibility-teardown", "reddit-auction-valuation"],
+    "confidence": "high",
+    "counterexamples": ["没有跨轮预算且所有人明确把投入当一次性表演的单轮竞价会弱化未来参与效应；情绪和当轮激励仍会改变。"]
+  },
+  {
+    "id": "claim-auction-boundary-states-are-strategic",
+    "statement": "储备未达、全员零报价、并列、流拍与非法报价的处理会反向改变正常报价、等待和串谋机会；这些是策略状态而不是测试后再补的边角条款。",
+    "kind": "synthesis",
+    "sourceIds": ["modern-art-official-rules", "high-society-official-rules", "qe-auction-rules", "reserve-price-collusion-experiment"],
+    "confidence": "high",
+    "counterexamples": ["若数学和组件约束能证明某状态不可能发生，可不写对应分支；必须保存证明和非法操作的恢复方式。"]
+  },
+  {
+    "id": "claim-bid-instruments-create-temporal-economy",
+    "statement": "固定面额牌、有限太阳圆盘、手牌竞价和容量上限不仅约束当前价格，也决定未来最小加价、可表达价格、威胁可信度与剩余参与次数，形成跨轮的竞价工具经济。",
+    "kind": "synthesis",
+    "sourceIds": ["high-society-official-rules", "ra-official-auction-rules", "trinket-trove-auction-diary", "medici-auction-interview"],
+    "confidence": "medium",
+    "counterexamples": ["可随时无损兑换、无限补充且同质的货币会削弱面额与库存的时间效应；预算总量仍可能约束未来。"]
+  },
+  {
+    "id": "claim-auction-feedback-shapes-learning",
+    "statement": "重复参加拍卖不保证玩家学会估值；是否看到成交价、他人报价、拍品实现价值，以及是亲身还是观察经验，会改变可学习内容和速度。",
+    "kind": "synthesis",
+    "sourceIds": ["foreman-learning-winners-curse", "common-value-auction-learning", "qe-auction-rules", "winners-curse-natural-markets"],
+    "confidence": "medium",
+    "counterexamples": ["经验玩家可能从既有类型知识或外部讨论建立模型；这不说明当前游戏的反馈接口对新手足够。"]
+  },
+  {
+    "id": "claim-auction-integration-needs-functional-link",
+    "statement": "当拍卖只是更大游戏的一部分时，应能说明它怎样改变库存、位置、行动顺序、市场、风险、结束或胜负；只因拍卖本身紧张而反复插入，可能使其吞掉周边系统。",
+    "kind": "synthesis",
+    "sourceIds": ["modern-art-official-rules", "for-sale-publisher-overview", "trinket-trove-auction-diary", "reddit-auction-design-takeover"],
+    "confidence": "medium",
+    "counterexamples": ["纯拍卖作品可以把价值发现本身作为核心系统；仍需检查重复场次怎样产生新的信息和资源状态。"]
+  },
+  {
+    "id": "claim-bidder-count-and-communication-affect-collusion",
+    "statement": "竞标人数、谁能旁观、玩家是否能沟通，以及退出是否可协调，会改变压价、默契轮流与显式合谋的机会；合谋检查必须绑定具体渠道和人数配置。",
+    "kind": "synthesis",
+    "sourceIds": ["reserve-price-collusion-experiment", "reddit-auction-design-takeover", "modern-art-official-rules"],
+    "confidence": "medium",
+    "counterexamples": ["匿名实验里的拍前贿赂不能直接预测朋友桌的玩笑、默契或礼让；桌游应记录行为而不是推断人格。"]
+  },
+  {
+    "id": "claim-bid-channel-allocates-access-burdens",
+    "statement": "公开或隐藏、顺序或同时、口头或书面的竞价渠道，会把算术、隐藏记忆、表达速度、精细动作、等待和社交压力分配给不同玩家；渠道是无障碍接口而不只是节奏选择。",
+    "kind": "synthesis",
+    "sourceIds": ["high-society-accessibility-teardown", "modern-art-accessibility-teardown", "trinket-trove-auction-diary"],
+    "confidence": "high",
+    "counterexamples": ["明确面向喜欢快速喊价和表演的目标群体可以保留这些压力；仍需确认同意边界，并提供不改变信息的等价操作。"]
+  },
+  {
+    "id": "claim-market-is-state-transition",
+    "statement": "动态市场不能只由价格轨描述；交易会读取并改变槽位、存量、资金、容量、价格、补货与下一位玩家的合法选择，因此应先写状态字段和事件顺序再调数字。",
+    "kind": "synthesis",
+    "sourceIds": ["power-grid-recharged-market-rules", "clans-caledonia-market-rules", "century-spice-road-market-rules"],
+    "confidence": "high",
+    "counterexamples": ["固定价、库存无限的一次性商店可以压缩状态；仍需写购买资格、支付和获得物。"]
+  },
+  {
+    "id": "claim-restock-quantity-and-timing-separate",
+    "statement": "补货量、补货时点、进入顺序、位置、淘汰和组件上限是不同变量；只写‘每轮补若干’不足以还原下一位玩家看到的市场。",
+    "kind": "synthesis",
+    "sourceIds": ["power-grid-recharged-market-rules", "century-spice-road-market-rules", "skeleton-dynamic-markets"],
+    "confidence": "high",
+    "counterexamples": ["单槽、同价、库存无限且每次立即补满的极简市场可合并部分字段，但应明确这些不变量。"]
+  },
+  {
+    "id": "claim-price-movement-timing-shapes-incentives",
+    "statement": "交易前、逐件、整批后或回合末移动价格，会改变大单、拆单、抢先、等待和价格操纵的价值；价格步幅相同不代表激励相同。",
+    "kind": "inference",
+    "sourceIds": ["clans-caledonia-market-rules", "mars-needs-mechanics-market-interview", "dynamic-pricing-capacity-experiment"],
+    "confidence": "medium",
+    "counterexamples": ["每位玩家每轮只能交易一件且无同回合再次交易时，部分时点差异可能没有策略影响；仍会影响信息和交接。"]
+  },
+  {
+    "id": "claim-batch-price-needs-explicit-basis",
+    "statement": "批量交易必须说明所有单位按交易开始价、逐件边际价还是统一出清价结算；否则同一句‘买三件后价格上涨’会产生不同总价。",
+    "kind": "synthesis",
+    "sourceIds": ["clans-caledonia-market-rules", "few-traders-market-experiment", "shubik-double-auction-teaching"],
+    "confidence": "high",
+    "counterexamples": ["单次交易量永远为一时不需批量规则，但仍需说明成交价如何确定。"]
+  },
+  {
+    "id": "claim-stale-market-needs-cause-diagnosis",
+    "statement": "滞销可能来自项目不想要、付不起、当前无关、刷新成本归属、信息负担或策略性等待；在区分原因前自动刷新、补贴或降价都可能改变错误的变量。",
+    "kind": "synthesis",
+    "sourceIds": ["stale-markets-design-discussion", "reddit-century-stale-market", "bgg-stale-row-disagreement", "through-ages-market-accessibility"],
+    "confidence": "high",
+    "counterexamples": ["明确以快速遍历牌库为目标的原型可先采用定时淘汰；仍应记录被淘汰内容和玩家为何不取。"]
+  },
+  {
+    "id": "claim-market-subsidy-not-equal-affordability",
+    "statement": "给滞销项目累积资源会提高取得后的净收益，但若资源不能在购买前用于支付，它不必然解决玩家当下买不起的问题。",
+    "kind": "synthesis",
+    "sourceIds": ["stale-markets-design-discussion", "century-spice-road-market-rules", "skeleton-dynamic-markets"],
+    "confidence": "high",
+    "counterexamples": ["项目免费或补贴可直接抵扣价格时，补贴可以同时改善可负担性；应明确支付顺序。"]
+  },
+  {
+    "id": "claim-player-paid-refresh-allocates-cost",
+    "statement": "由玩家付行动或资源刷新市场，会把清理成本交给当前行动者，而新状态可能主要由后续玩家利用；这是成本与受益者分配，不只是刷新频率。",
+    "kind": "synthesis",
+    "sourceIds": ["stale-markets-design-discussion", "reddit-century-stale-market"],
+    "confidence": "medium",
+    "counterexamples": ["若刷新者能立即购买、保留优先权或得到充分补偿，成本与收益可以重新对齐；需实测而非假定。"]
+  },
+  {
+    "id": "claim-inventory-capacity-shapes-scarcity",
+    "statement": "玩家库存容量和组件总量会决定供给能否被囤积、短缺能持续多久以及补货能否完成；它们是市场规则而非玩家板上的独立限制。",
+    "kind": "synthesis",
+    "sourceIds": ["power-grid-recharged-market-rules", "dynamic-pricing-capacity-experiment", "game-developer-economy-market"],
+    "confidence": "high",
+    "counterexamples": ["无限库存和无限组件的抽象市场可去掉实体短缺，但可能仍有行动、资金或时间容量。"]
+  },
+  {
+    "id": "claim-player-count-needs-market-event-density",
+    "statement": "玩家人数适配应检查一位玩家两次行动之间发生多少次购买、出售、移价、淘汰与补货；线性调整补货量不能保证相同的市场控制感或选项质量。",
+    "kind": "synthesis",
+    "sourceIds": ["power-grid-recharged-market-rules", "mars-needs-mechanics-market-interview", "through-ages-market-accessibility"],
+    "confidence": "high",
+    "counterexamples": ["市场完全不受玩家行动影响时，事件密度可能不随人数变化；仍需检查等待与读取负担。"]
+  },
+  {
+    "id": "claim-market-feedback-delay-can-oscillate",
+    "statement": "当行动结果延迟、玩家只见局部状态且库存或欠单继续累积时，回应可能过度并形成振荡；测试应记录反馈何时可见，而不是只看终局价格。",
+    "kind": "transfer",
+    "sourceIds": ["beer-game-outcome-feedback", "nonstationary-market-experiment", "transaction-cost-price-discovery"],
+    "confidence": "medium",
+    "counterexamples": ["振荡可以是目标体验或主题表达；相邻供应链研究也不能证明桌游中的波动由延迟单独造成。"]
+  },
+  {
+    "id": "claim-few-traders-can-create-market-power",
+    "statement": "少数活跃买卖方、不可分物品和不对称供给可能让交易顺序、价格方差与市场势力更显著；不能假定动态价格会自动收敛到公平或稳定区间。",
+    "kind": "transfer",
+    "sourceIds": ["few-traders-market-experiment", "double-auction-market-power-boundary", "classroom-double-auction-2000"],
+    "confidence": "medium",
+    "counterexamples": ["特定制度和重复学习可在少数交易者下接近竞争结果；实验效率目标也不等于桌游体验目标。"]
+  },
+  {
+    "id": "claim-open-market-not-automatically-readable",
+    "statement": "市场状态公开不等于玩家能从真实座位及时理解；高频轮换、远座小字、空间数值、相似组件和跨区域计算会把视觉、记忆与算术负担叠加。",
+    "kind": "synthesis",
+    "sourceIds": ["through-ages-market-accessibility", "reddit-century-skipped-cube-error", "power-grid-recharged-market-rules"],
+    "confidence": "high",
+    "counterexamples": ["低频、小规模、冗余编码的公开市场可以很易读；仍需以真实座位任务验证。"]
+  },
+  {
+    "id": "claim-stock-rate-income-must-separate",
+    "statement": "资源的当前存量、每阶段变化率与结算后收入不是同一个状态；若组件、术语或记录表混用，玩家可能在理解基本累积关系前就做错计划。",
+    "kind": "synthesis",
+    "sourceIds": ["terraforming-mars-production-rules", "jmu-stock-flow-guide", "stock-flow-failure-study", "reddit-terraforming-beginner-economy"],
+    "confidence": "high",
+    "counterexamples": ["一次性、无跨阶段累积的资源可不设独立变化率；仍须明确何时取得和何时可用。"]
+  },
+  {
+    "id": "claim-conversion-needs-complete-protocol",
+    "statement": "‘A 换 B’不是完整转换规则；资格、投入、产出、比率、批量、容量、窗口、顺序、舍入、过付、组件去向与失败状态都会改变实际可执行结果。",
+    "kind": "synthesis",
+    "sourceIds": ["agricola-resource-cycle-rules", "le-havre-production-chain-rules", "machinations-economy-nodes"],
+    "confidence": "high",
+    "counterexamples": ["无容量、无批量且只有一种即时固定交换的原型可省略不可能发生的字段，但应明确这些边界。"]
+  },
+  {
+    "id": "claim-conversion-order-can-change-output",
+    "statement": "多个转换能力在同一窗口触发时，先交易、再消费、能力可否交错以及中间产物能否立即再用，可能改变最终产出；规则和测试记录应保留顺序。",
+    "kind": "synthesis",
+    "sourceIds": ["race-galaxy-produce-consume-rules", "agricola-resource-cycle-rules", "reddit-rftg-consume-order"],
+    "confidence": "high",
+    "counterexamples": ["彼此独立、无共享投入且无中间状态的转换可以交换顺序；应以规则证明而非默认。"]
+  },
+  {
+    "id": "claim-capacity-and-decay-create-production-cost",
+    "statement": "生产的成本不只在投入端；存储容量、繁殖空间、阶段清理与腐坏会决定哪些产出能保留，因此必须追踪生产后到下一次使用前的状态。",
+    "kind": "synthesis",
+    "sourceIds": ["agricola-resource-cycle-rules", "food-chain-magnate-upkeep-rules", "le-havre-production-chain-rules"],
+    "confidence": "high",
+    "counterexamples": ["无限存储且资源永久保留的系统没有这类持有成本，但仍可能有行动、机会或组件限制。"]
+  },
+  {
+    "id": "claim-upkeep-needs-trigger-basis-failure",
+    "statement": "维护成本需要同时写触发时点、计费对象、计算基数、抵扣顺序、能否过付以及无法支付的失败路径；只写‘每轮付工资/食物’不足以执行。",
+    "kind": "synthesis",
+    "sourceIds": ["agricola-resource-cycle-rules", "le-havre-production-chain-rules", "food-chain-magnate-upkeep-rules"],
+    "confidence": "high",
+    "counterexamples": ["固定单额、永远可支付的维护可以更短，但仍需写时点和支付后去向。"]
+  },
+  {
+    "id": "claim-debt-path-needs-entry-carry-exit",
+    "statement": "债务不是一个负分数字，而是进入条件、即时所得、持有成本、追加规则、偿还窗口与终局残值组成的路径；这些字段共同决定它是救济、延迟成本还是策略杠杆。",
+    "kind": "synthesis",
+    "sourceIds": ["le-havre-production-chain-rules", "beer-game-history"],
+    "confidence": "medium",
+    "counterexamples": ["一次性自动垫付且立刻结清的系统可能无需长期持有字段；相邻供应链研究也不能给桌游债务参数。"]
+  },
+  {
+    "id": "claim-multiuse-resource-needs-distinct-opportunity-cost",
+    "statement": "同一资源有多个标签不等于有真实取舍；只有当用途互斥、时点或回报不同且玩家必须放弃另一条可行路径时，多用途才形成可读的机会成本。",
+    "kind": "synthesis",
+    "sourceIds": ["daniel-engines-resource-web", "race-galaxy-produce-consume-rules"],
+    "confidence": "medium",
+    "counterexamples": ["叙事身份或教学用途即使没有强机会成本也可能有价值；设计文章不给最佳用途数量。"]
+  },
+  {
+    "id": "claim-resource-network-needs-alternative-paths-not-count",
+    "statement": "资源经济的深度更适合检查同一目标是否存在不同来源、转换与消耗路径，而不是统计资源种类；连接过少会重复，连接过多也会增加解析负担。",
+    "kind": "synthesis",
+    "sourceIds": ["daniel-engines-resource-web", "machinations-economy-nodes", "reddit-resource-growth-repetition"],
+    "confidence": "medium",
+    "counterexamples": ["线性生产链可以服务明确、轻量或教学体验；社区症状和设计建议不提供连接数阈值。"]
+  },
+  {
+    "id": "claim-investment-source-needs-payback-window",
+    "statement": "会增加未来产出的投入应记录成本、首次回报时点、回本窗口和剩余可触发次数；否则早期投资可能通过重复来源形成复利式差距，却只在终局分数上被发现。",
+    "kind": "synthesis",
+    "sourceIds": ["lostgarden-value-chains", "fantastic-factories-runaway-diary", "terraforming-mars-production-rules"],
+    "confidence": "medium",
+    "counterexamples": ["领先动量或非对称爆发可以是目标体验；设计日志多变量且本轮仅摘要级核验。"]
+  },
+  {
+    "id": "claim-source-sink-equality-not-stability",
+    "statement": "全局平均产出等于平均消耗并不保证经济稳定；时点、容量、玩家分布、反馈延迟、局部短缺和欠单仍可产生振荡或不可逆领先。",
+    "kind": "transfer",
+    "sourceIds": ["jmu-stock-flow-guide", "beer-game-history", "beer-game-outcome-feedback", "lostgarden-value-chains"],
+    "confidence": "medium",
+    "counterexamples": ["无延迟、无限容量、完全共享且即时结算的简单系统可能接近静态平衡；相邻研究不等于娱乐桌游因果。"]
+  },
+  {
+    "id": "claim-resource-state-needs-physical-recoverability",
+    "statement": "当方块的面额或资源身份依赖大小、颜色、摆放区域和轨道位置时，轻微碰撞、远座读取或手部操作可能破坏存量与生产状态；关键经济状态应能被冗余识别和恢复。",
+    "kind": "synthesis",
+    "sourceIds": ["terraforming-mars-production-rules", "terraforming-mars-accessibility", "race-galaxy-accessibility"],
+    "confidence": "high",
+    "counterexamples": ["嵌槽板、独特形状、书面记录或数字辅助可降低风险；无障碍长评不能代表所有玩家。"]
+  },
+  {
+    "id": "claim-stock-flow-understanding-needs-task-test",
+    "statement": "公开展示来源、流量和存量仍不能证明玩家理解累积；应让新手预测下一结算点的数量、执行一次转换并在扰动后恢复状态，以任务结果验证。",
+    "kind": "transfer",
+    "sourceIds": ["stock-flow-failure-study", "jmu-stock-flow-guide", "terraforming-mars-accessibility", "reddit-terraforming-beginner-economy"],
+    "confidence": "high",
+    "counterexamples": ["极简一次性资源无需复杂预测；实验对象和桌游玩家情境不同，具体任务仍需本地验证。"]
+  },
+  {
+    "id": "claim-information-state-needs-role-and-time",
+    "statement": "‘公开’或‘隐藏’不足以描述可玩的信息结构；至少应记录谁拥有、谁能看见、何时获得、能否追踪或推断、何时过期，以及合法回应是什么。",
+    "kind": "project_inference",
+    "sourceIds": ["hanabi-hidden-hand-rules", "crew-limited-communication-rules", "coup-claim-challenge-rules", "pingo-trackable-public-information"],
+    "confidence": "high",
+    "counterexamples": ["完全公开且无状态变化的轻量游戏可以省略部分字段，但仍需说明可见者和行动时点。"]
+  },
+  {
+    "id": "claim-hand-is-state-chain-not-count",
+    "statement": "手牌不只是一项容量数值；抽取、持有、排序、展示、交换、支付、打出、弃置、移除、洗回与终局保留会共同决定行动权、节奏与未来承诺。",
+    "kind": "synthesis",
+    "sourceIds": ["bohnanza-hand-order-rules", "flamme-rouge-card-cycle-diary", "hanabi-hidden-hand-rules", "race-galaxy-produce-consume-rules"],
+    "confidence": "high",
+    "counterexamples": ["一次抽一张且立即结算的卡牌系统可能没有长期手牌状态；仍需写抽取与去向。"]
+  },
+  {
+    "id": "claim-hand-order-can-be-resource",
+    "statement": "当规则禁止重排且强制从特定位置处理卡牌时，顺序本身会成为稀缺资源：交易和行动不仅改变卡牌数量，也改变未来可执行时点。",
+    "kind": "source_summary",
+    "sourceIds": ["bohnanza-hand-order-rules", "reddit-bohnanza-hand-confusion"],
+    "confidence": "high",
+    "counterexamples": ["允许自由选择或频繁洗牌的系统中，顺序未必构成有意义的资源。"]
+  },
+  {
+    "id": "claim-bluff-needs-truth-lie-challenge-incentives",
+    "statement": "诈唬空间由真实宣称、虚假宣称、不宣称、质疑与不质疑各自的成本和收益共同形成；仅允许说谎不能保证玩家有理由说谎或质疑。",
+    "kind": "synthesis",
+    "sourceIds": ["coup-claim-challenge-rules", "brian-bluffing-incentives", "coup-player-psychology-study"],
+    "confidence": "high",
+    "counterexamples": ["自由谈判中的诈唬可能没有正式质疑动作，但仍存在信誉、交易或未来回合的非正式成本。"]
+  },
+  {
+    "id": "claim-claim-challenge-needs-verification-lifecycle",
+    "statement": "宣称—质疑机制必须写清谁能质疑、窗口何时关闭、证据如何验证、真伪双方付何代价，以及揭示的信息是替换、失效还是永久公开。",
+    "kind": "project_inference",
+    "sourceIds": ["coup-claim-challenge-rules", "brian-bluffing-incentives", "coup-accessibility"],
+    "confidence": "high",
+    "counterexamples": ["纯叙事判断可以故意不提供确定验证，但仍要定义裁决与后果。"]
+  },
+  {
+    "id": "claim-inference-needs-alternative-explanations",
+    "statement": "可推理的隐藏信息通常需要事件同时保留少量合理的替代解释：唯一解释会直接解题，无限解释则使证据难以收窄。",
+    "kind": "author_opinion",
+    "sourceIds": ["balangay-social-deduction-information", "decrypto-clue-interception-rules", "wiseman-social-deduction-data"],
+    "confidence": "medium",
+    "counterexamples": ["作者方法具有规范性；派对、表演或混乱导向游戏可能有意接受高噪声，具体范围需原型验证。"]
+  },
+  {
+    "id": "claim-social-cues-are-data-not-lie-detectors",
+    "statement": "当前发言、历史行为和观察到的互动可以成为社会推理数据，但不应被呈现为可靠测谎器；相邻欺骗研究和小样本桌游研究都不足以支持这种保证。",
+    "kind": "synthesis",
+    "sourceIds": ["wiseman-social-deduction-data", "deception-cue-baseline-study", "werewolf-persuasion-dataset", "coup-player-psychology-study"],
+    "confidence": "high",
+    "counterexamples": ["特定规则可产生逻辑确定的矛盾；这与从语气、视线或犹豫直接判断谎言不同。"]
+  },
+  {
+    "id": "claim-trackable-public-info-needs-query-rule",
+    "statement": "曾经公开但需要记忆的信息应明确是否可查询、由谁回答、查询是否暴露意图，以及组件是否提供持久记录；不能同时要求完美记忆又依赖随意桌谈补足。",
+    "kind": "transfer",
+    "sourceIds": ["crew-limited-communication-rules", "pingo-trackable-public-information", "coup-accessibility", "hanabi-accessibility"],
+    "confidence": "high",
+    "counterexamples": ["记忆本身是目标挑战时可以限制查询，但仍应声明并测试其可访问性和泄密风险。"]
+  },
+  {
+    "id": "claim-communication-constraint-needs-channel-protocol",
+    "statement": "限制沟通时应分别定义允许的渠道、内容、频次、时点、持久标记与越界处理；‘不能谈手牌’不等于玩家自然理解为全程沉默。",
+    "kind": "synthesis",
+    "sourceIds": ["crew-limited-communication-rules", "hanabi-hidden-hand-rules", "crabb-heron-communication-challenges", "reddit-crew-communication-rule"],
+    "confidence": "high",
+    "counterexamples": ["熟人群体可能靠惯例顺利运行，但未写明的惯例会降低可教性和跨群体一致性。"]
+  },
+  {
+    "id": "claim-hidden-information-assistance-can-leak",
+    "statement": "隐藏信息游戏中的代读、近距离辨认、代拿牌、询问与状态复述可能额外暴露身份、概率或意图；辅助协议应与秘密信息规则一起设计和测试。",
+    "kind": "synthesis",
+    "sourceIds": ["hanabi-accessibility", "coup-accessibility", "crabb-heron-communication-challenges"],
+    "confidence": "high",
+    "counterexamples": ["卡架、符号冗余、可信代理或数字界面可以降低泄露，但效果取决于具体桌面和玩家。"]
+  },
+  {
+    "id": "claim-reveal-can-expire-or-persist",
+    "statement": "一次揭示不是单一状态：它可能永久公开、只在当前窗口有效、随后被替换、因状态变化而过期，或留下不能自动更新的标记；规则和界面应说明生命周期。",
+    "kind": "synthesis",
+    "sourceIds": ["crew-limited-communication-rules", "coup-claim-challenge-rules", "hanabi-hidden-hand-rules"],
+    "confidence": "high",
+    "counterexamples": ["完全静态身份在揭示后可永久公开，不需要复杂过期处理。"]
+  },
+  {
+    "id": "claim-information-value-needs-legal-response",
+    "statement": "衡量一条信息的价值时，不只问它降低了多少不确定性，还要问接收者在剩余时点内是否拥有合法、可负担且有区别的回应。",
+    "kind": "project_inference",
+    "sourceIds": ["crew-limited-communication-rules", "decrypto-clue-interception-rules", "daybreak-victory-diary", "origin-story-solo-information"],
+    "confidence": "medium",
+    "counterexamples": ["氛围、叙事或终局解释型信息即使不改变行动，也可能有体验价值。"]
+  },
+  {
+    "id": "claim-deck-composition-needs-function-and-zone",
+    "statement": "描述一个牌库时只报总张数不够；至少应按功能和当前区域区分行动、支付、得分、污染、一次性、持续与终局牌，否则同样大小的牌库可能有完全不同的有效抽牌结构。",
+    "kind": "synthesis", "sourceIds": ["dominion-deck-cycle-rules", "star-realms-deck-cycle-rules", "vaccarino-dominion-decisions", "imperium-deck-cycle-overview"], "confidence": "high",
+    "counterexamples": ["纯同质牌堆或只用牌背作计时器时，功能分类可以很少。"]
+  },
+  {
+    "id": "claim-acquisition-value-needs-time-to-first-use",
+    "statement": "评估一张获得牌的价值时，应记录它进入哪个区域、预计何时首次可用以及终局前还有几次可能重抽；标价和文本强度不能说明它是否来得及产生价值。",
+    "kind": "synthesis", "sourceIds": ["dominion-deck-cycle-rules", "star-realms-deck-cycle-rules", "nealen-ascension-deckbuilding-analysis", "dominion-deep-rl-study"], "confidence": "high",
+    "counterexamples": ["立即结算、直接入手或购买本身推进终局的牌不依赖未来重抽。"]
+  },
+  {
+    "id": "claim-deck-cycle-needs-explicit-shuffle-boundary",
+    "statement": "牌库循环规则应明确何时触发洗牌或翻转、是否先完成当前抽取、弃牌堆中的新牌是否立即参与，以及牌堆方向如何保持；这些边界会改变可预测性和误玩风险。",
+    "kind": "synthesis", "sourceIds": ["dominion-deck-cycle-rules", "star-realms-deck-cycle-rules", "aeons-end-no-shuffle-rules", "reddit-aeons-end-discard-order"], "confidence": "high",
+    "counterexamples": ["固定公开队列或不会耗尽的牌库可以没有洗牌边界，但仍需写补充和耗尽规则。"]
+  },
+  {
+    "id": "claim-draw-probability-needs-sampling-assumptions",
+    "statement": "抽到目标牌的概率只有在写清总体大小、目标牌数、抽取张数、是否无放回和牌库是否随机洗匀后才可解释；搜索、保留、已知顶牌和中途洗回会使简单超几何模型失效或需分段。",
+    "kind": "synthesis", "sourceIds": ["psu-hypergeometric", "nist-hypergeometric", "riffle-repeated-cards-study", "aeons-end-no-shuffle-rules"], "confidence": "high",
+    "counterexamples": ["用于粗略比较两个同假设版本时，简化模型仍可作为基线，只要显式标注。"]
+  },
+  {
+    "id": "claim-known-order-breaks-simple-random-model",
+    "statement": "当玩家能控制或知道弃牌顺序、牌库顶、保留牌或搜索结果时，未来抽牌既是概率问题也是状态与记忆问题，不能继续把每次抽取当作独立随机事件。",
+    "kind": "synthesis", "sourceIds": ["aeons-end-no-shuffle-rules", "aeons-end-riley-interview", "reddit-aeons-end-discard-order", "mcd-heuristic-toolkit-paper"], "confidence": "high",
+    "counterexamples": ["控制信息很弱、循环很长或玩家不使用该信息时，随机近似可能仍足以做早期比较。"]
+  },
+  {
+    "id": "claim-thinning-changes-function-not-only-density",
+    "statement": "压缩牌库不只提高好牌比例；移除支付牌、得分牌、污染牌或多用途牌会改变可支付能力、终局价值、组合结构和玩家的后续选择，因此应记录被移除牌原本承担的功能。",
+    "kind": "synthesis", "sourceIds": ["dominion-deck-cycle-rules", "vaccarino-dominion-decisions", "imperium-deck-cycle-overview", "dale-merchants-stall-rules"], "confidence": "high",
+    "counterexamples": ["完全劣于其他牌且没有终局、支付或触发功能的牌，移除主要表现为密度提升。"]
+  },
+  {
+    "id": "claim-deck-bloat-needs-endgame-redraw-check",
+    "statement": "新增卡的测试不能止于购买是否划算；还应检查它首次出现的轮次、终局前可重抽次数以及新增卡是否降低关键功能密度，否则后期购买可能从未进入有效手牌。",
+    "kind": "synthesis", "sourceIds": ["nealen-ascension-deckbuilding-analysis", "dominion-deep-rl-study", "reddit-deckbuilder-improvements", "reddit-deckbuilding-problems"], "confidence": "medium",
+    "counterexamples": ["购买即得分、立即生效或直接触发终局的卡不需要再次抽到。"]
+  },
+  {
+    "id": "claim-combo-needs-codraw-permission-and-payoff",
+    "statement": "两张牌文字上互相增强并不等于形成可用组合；需要同时检查共抽概率、手牌/行动/资源是否允许同回合使用、失败抽法的代价，以及成功组合相对单卡路线的收益。",
+    "kind": "synthesis", "sourceIds": ["nealen-ascension-deckbuilding-analysis", "dune-imperium-deck-worker-diary", "dominion-deep-rl-study"], "confidence": "high",
+    "counterexamples": ["跨回合持续牌、公开牌列或搜索效果可以不依赖同一手牌共抽。"]
+  },
+  {
+    "id": "claim-market-randomness-and-personal-draw-must-separate",
+    "statement": "牌库构筑中的随机性至少应分开记录个人抽牌与公共市场补充；两者分别影响行动可用性和购买机会，混成一个‘随机性太大’指标会隐藏不同修复方向。",
+    "kind": "synthesis", "sourceIds": ["star-realms-deck-cycle-rules", "nealen-ascension-deckbuilding-analysis", "imperium-horizons-design-diary"], "confidence": "high",
+    "counterexamples": ["固定市场或预组牌库的游戏可能只有其中一类随机性。"]
+  },
+  {
+    "id": "claim-deck-cycle-can-be-game-clock",
+    "statement": "完成一次个人牌库循环可以触发发展、加入新牌、恶化状态或接近终局，因此循环次数既是能力成长指标，也可能是游戏时钟；加速抽牌会同时改变这两者。",
+    "kind": "synthesis", "sourceIds": ["imperium-deck-cycle-overview", "nealen-ascension-deckbuilding-analysis", "reddit-deckbuilder-improvements"], "confidence": "medium",
+    "counterexamples": ["终局完全由外部回合数或独立牌堆控制时，个人循环不必承担时钟功能。"]
+  },
+  {
+    "id": "claim-shuffling-is-repeated-access-cost",
+    "statement": "每次洗牌、整理、持牌和重新定位牌堆都是重复发生的操作与等待成本；循环越快，这些成本被放大的次数越多，所以洗牌频率应作为可访问性和节奏指标记录。",
+    "kind": "synthesis", "sourceIds": ["star-realms-accessibility", "dominion-accessibility-review", "geeky-gimp-accessibility-hacks", "mcd-heuristic-toolkit-paper"], "confidence": "high",
+    "counterexamples": ["自动洗牌器、数字实现、代洗协议或极易处理的小牌堆可以显著降低操作成本。"]
+  },
+  {
+    "id": "claim-deck-query-and-assistance-need-protocol",
+    "statement": "允许查看弃牌堆、计数牌库、代洗、代读或使用卡架时，应说明谁能做、何时做、信息是否公开、是否改变顺序以及怎样避免泄露意图；把辅助留给临场协商会制造额外状态。",
+    "kind": "project_inference", "sourceIds": ["dominion-deck-cycle-rules", "star-realms-deck-cycle-rules", "star-realms-accessibility", "geeky-gimp-accessibility-hacks"], "confidence": "medium",
+    "counterexamples": ["完全公开且顺序无意义的弃牌区可以允许自由查询，协议可非常简短。"]
+  },
+  {
+    "id": "claim-card-ability-needs-executable-grammar",
+    "statement": "卡牌能力在压缩成自然语言前，应能还原为窗口/触发、限制、费用、目标、动作、结果和持续/去向；省略的默认值必须由总规则定义。",
+    "kind": "project_inference",
+    "sourceIds": ["arkham-lcg-ability-timing-rules", "netrunner-comprehensive-ability-rules", "cardscript-unified-language-paper", "card-game-description-language"],
+    "confidence": "high",
+    "counterexamples": ["没有目标、费用或持续时间的简单能力可以省略对应卡面槽，但底层定义仍应明确为空。"]
+  },
+  {
+    "id": "claim-effect-types-need-one-timing-model",
+    "statement": "静态、启动、触发、替代、延迟和关键词效果应进入同一套时点与状态检查规则；依赖效果类型各自隐藏的优先级会提高查询和记忆成本。",
+    "kind": "project_inference",
+    "sourceIds": ["magic-comprehensive-rules-timing", "arkham-lcg-ability-timing-rules", "netrunner-comprehensive-ability-rules", "marvel-champions-timing-update"],
+    "confidence": "high",
+    "counterexamples": ["非常轻量的游戏可以让所有卡牌效果不可中断并立即结算，但这本身仍是一种统一模型。"]
+  },
+  {
+    "id": "claim-simultaneous-effects-need-order-owner",
+    "statement": "同一时点出现多个效果时，规则必须指定优先类别、排序责任人、选择公开时点和结算方向；只写“同时”不足以产生可重复终态。",
+    "kind": "project_inference",
+    "sourceIds": ["magic-comprehensive-rules-timing", "arkham-lcg-ability-timing-rules", "netrunner-comprehensive-ability-rules", "root-law-effect-precedence"],
+    "confidence": "high",
+    "counterexamples": ["若所有同时变化相互独立且顺序绝不影响合法性或结果，规则可以声明真正并行处理。"]
+  },
+  {
+    "id": "claim-logical-connectors-need-controlled-meaning",
+    "statement": "当、之后、若、然后、改为、可以、必须、不能、每次和至多等连接词应有项目级受控含义，并说明前件失败、部分完成或被替代时后件是否继续。",
+    "kind": "project_inference",
+    "sourceIds": ["arkham-lcg-ability-timing-rules", "magic-comprehensive-rules-timing", "root-law-effect-precedence", "paleo-wording-clarifications"],
+    "confidence": "high",
+    "counterexamples": ["一次性叙事段落可以使用自然语言，但涉及玩家选择和状态变化的句子仍需要可执行解释。"]
+  },
+  {
+    "id": "claim-keyword-needs-versioned-expansion",
+    "statement": "关键词不是孤立短词；它需要完整展开、提醒文字、正反例、版本和查询位置，且卡牌、图标、规则书与翻译必须指向同一语义。",
+    "kind": "project_inference",
+    "sourceIds": ["rosewater-keyword-wise", "rosewater-keyword-play", "rosewater-reminder-text", "unfair-rulebook-glossary", "marvel-champions-timing-update"],
+    "confidence": "high",
+    "counterexamples": ["只在一张牌出现且不复用的独特能力通常不值得建立关键词模块。"]
+  },
+  {
+    "id": "claim-icons-need-frequency-and-ambiguity-gate",
+    "statement": "效果成为图标前，应同时通过高频复用、微缩可辨、轮廓不混淆、组合语法稳定和文字查询可达五项门；低频或相近变体回到正文可能更清楚。",
+    "kind": "project_inference",
+    "sourceIds": ["daniel-games-card-icons", "daniel-solis-card-hierarchy", "race-galaxy-accessibility", "arnak-accessibility-teardown"],
+    "confidence": "medium",
+    "counterexamples": ["跨语言且语法简单的单一资源或行动图标即使频率不高，也可能因版面和本地化价值保留。"]
+  },
+  {
+    "id": "claim-combo-needs-event-state-trace",
+    "statement": "卡牌组合应以事件和状态轨迹验证，而不是只比较卡面句子；每一步都要记录来源、触发、控制者、目标、支付、状态前后和生成的新事件。",
+    "kind": "project_inference",
+    "sourceIds": ["cardscript-unified-language-paper", "magic-comprehensive-rules-timing", "netrunner-comprehensive-ability-rules", "spirit-island-action-tree-rules"],
+    "confidence": "high",
+    "counterexamples": ["无触发、无共享状态的纯数值加法可以用更短的计算表验证。"]
+  },
+  {
+    "id": "claim-loop-needs-category-and-exit-responsibility",
+    "statement": "检测到重复状态后，应区分有限资源自然终止、强制无限循环和可选无限循环，并为后两者写有限次数、终态或退出责任。",
+    "kind": "project_inference",
+    "sourceIds": ["magic-comprehensive-rules-timing", "netrunner-comprehensive-ability-rules", "spirit-island-action-tree-rules", "reddit-spirit-island-infinite-loop"],
+    "confidence": "high",
+    "counterexamples": ["有意把强制无限循环定义为立即平局也是明确终态，但必须与产品目标一致。"]
+  },
+  {
+    "id": "claim-open-card-pools-cannot-rely-on-complete-solver",
+    "statement": "对持续扩展且表达能力很强的卡池，组合安全不能只依赖一个声称穷尽所有状态的通用求解器；仍需作用域限制、规则不变量、回归案例与玩家报告。",
+    "kind": "project_inference",
+    "sourceIds": ["mtg-turing-complete", "magic-comprehensive-rules-timing", "cardscript-unified-language-paper"],
+    "confidence": "medium",
+    "counterexamples": ["有限、封闭且状态空间很小的原型可以被完整枚举，此时求解器可提供穷尽证据。"]
+  },
+  {
+    "id": "claim-card-readability-needs-real-seat-task",
+    "statement": "卡牌可读性应在真实尺寸、目标座位、常见光线、手持或桌面状态中测试费用、触发、目标、图标与查询，屏幕放大稿不能替代实体任务。",
+    "kind": "project_inference",
+    "sourceIds": ["daybreak-victory-diary", "sarah-reed-visual-card-accessibility", "arnak-accessibility-teardown", "colorblind-card-typography-interview"],
+    "confidence": "high",
+    "counterexamples": ["纯数字产品应在其真实设备、缩放、输入和辅助技术条件下测试，而不是模拟桌面座位。"]
+  },
+  {
+    "id": "claim-card-query-needs-return-point",
+    "statement": "关键词或时序查询不仅要找到答案，还要保存查询前的事件、窗口、待结算效果和状态，使玩家能返回原处而不重启整段结算。",
+    "kind": "project_inference",
+    "sourceIds": ["arkham-lcg-ability-timing-rules", "dvgiochi-standard-rulebook", "unfair-rulebook-glossary", "reddit-marvel-response-repeat"],
+    "confidence": "medium",
+    "counterexamples": ["没有嵌套效果的轻量游戏可能只需按字母索引定位术语，不必保存复杂调用栈。"]
+  },
+  {
+    "id": "claim-card-assistance-must-preserve-secrecy-and-decisions",
+    "statement": "放大、大字、卡架或代读支持必须同时说明可访问范围、秘密信息、谁作解释和选择，以及查询行为是否会泄露意图；能完成操作不等于保留了决定权。",
+    "kind": "project_inference",
+    "sourceIds": ["sarah-reed-visual-card-accessibility", "mcd-heuristic-toolkit-paper", "arnak-accessibility-teardown"],
+    "confidence": "medium",
+    "counterexamples": ["完全公开信息的合作游戏可以采用全桌共同朗读，但仍要避免一人替他人作策略决定。"]
+  },
+  {
+    "id": "claim-rarity-needs-separate-design-fields",
+    "statement": "稀有度不能同时代理强度、复杂度、出现频率、系统角色与获取方式；这些字段需要分开记录，才能判断一张牌对学习、环境和玩家成本的影响。",
+    "kind": "project_inference", "sourceIds": ["magic-new-world-order", "magic-play-booster-skeleton"], "confidence": "high",
+    "counterexamples": ["固定盒装游戏可以没有商业稀有度，但仍应记录教学出现顺序、牌堆频率和复杂度。"]
+  },
+  {
+    "id": "claim-as-played-frequency-shapes-environment",
+    "statement": "内容单元在实际配置或补充包中的出现频率会改变威胁、答案、主题与复杂度密度；只统计套装中各类卡的总数不足以描述玩家遇到的环境。",
+    "kind": "author_opinion", "sourceIds": ["magic-play-booster-skeleton", "magic-new-world-order"], "confidence": "medium",
+    "counterexamples": ["完全确定、每局使用全部组件的游戏，其套装数量和实际出现频率可以相同。"]
+  },
+  {
+    "id": "claim-compatibility-is-versioned-matrix",
+    "statement": "扩展兼容必须绑定基础版与印次、前置产品、规则、模式、人数、语言和组件关系；一个不带维度的兼容布尔值不能指导设置、测试或购买后的迁移。",
+    "kind": "project_inference", "sourceIds": ["spirit-island-errata-pack", "root-upgrade-kit", "euphoria-essential-update-pack", "wingspan-europe-expansion-compatibility"], "confidence": "high",
+    "counterexamples": ["只有单一数字版本且自动迁移的小型应用可能隐藏部分物理维度，但仍需模式和规则兼容范围。"]
+  },
+  {
+    "id": "claim-support-declaration-is-not-validation",
+    "statement": "‘设计上声明支持该组合’与‘该具体版本配置已测试’是不同证据状态；兼容矩阵必须保留未知与未验证，而不是把没有已知问题写成通过。",
+    "kind": "project_inference", "sourceIds": ["marvel-champions-game-environments", "software-product-line-testing-review", "wingspan-europe-expansion-compatibility"], "confidence": "high",
+    "counterexamples": ["形式系统可以证明某些接口或配置有效，但仍不能自动证明玩家体验和实体可用性。"]
+  },
+  {
+    "id": "claim-current-card-text-needs-authority-chain",
+    "statement": "长期维护游戏需要为当前规则与当前卡文指定单一事实源，同时保存印刷文字、变更高亮、历史版本和迁移材料，使玩家能解释手中组件为何不同。",
+    "kind": "project_inference", "sourceIds": ["netrunner-current-rules-hub", "arkham-faq-v25", "gmt-congress-vienna-living-rules", "lorcana-resource-hub"], "confidence": "high",
+    "counterexamples": ["从不更新且只有一个印次的封闭游戏可以让纸面规则本身成为唯一事实源。"]
+  },
+  {
+    "id": "claim-errata-needs-change-class",
+    "statement": "勘误应区分错字/排版、澄清、技术修复、平衡改动与功能重做；若把后两者隐藏在一般勘误中，玩家无法评估策略、收藏和替换成本。",
+    "kind": "project_inference", "sourceIds": ["arkham-faq-v25", "arkham-guided-unseen-faq-cadence", "root-upgrade-kit", "gmt-congress-vienna-living-rules"], "confidence": "high",
+    "counterexamples": ["极早期内部原型可以暂不维护公开分类，但冻结测试包后仍需记录功能变化。"]
+  },
+  {
+    "id": "claim-governance-needs-distinct-dates",
+    "statement": "预览、发售、可获得、休闲可用、赛事合法、变更生效、复查与归档是不同时间点；合并为一个发布日期会使玩家和组织者使用错误版本。",
+    "kind": "project_inference", "sourceIds": ["netrunner-elevation-rotation", "netrunner-banlist-cadence", "magic-banned-restricted-2026-08", "magic-pauper-trial-unban-2026"], "confidence": "high",
+    "counterexamples": ["没有组织赛且发布即全球可用的单次更新可能让多个日期重合，但字段仍可明确相同。"]
+  },
+  {
+    "id": "claim-ban-rotation-needs-review-and-rollback",
+    "statement": "禁限、解禁或轮替应公开目标格式、触发证据、预期环境变化、反事实风险、复查日与紧急回退门；无改动也应成为一次有日期的状态确认。",
+    "kind": "project_inference", "sourceIds": ["magic-banned-restricted-2026-08", "magic-pauper-trial-unban-2026", "netrunner-banlist-cadence", "arkham-guided-unseen-faq-cadence"], "confidence": "high",
+    "counterexamples": ["明显破坏安全、规则可执行性或赛事完整性的漏洞可以立即处理，再补充完整说明。"]
+  },
+  {
+    "id": "claim-card-power-is-card-pool-relative",
+    "statement": "单卡力量与力量膨胀必须放回格式、周围卡池、获取范围和可用组合中判断；严格更优指标只能提供下限，不能替代环境与玩家体验。",
+    "kind": "project_inference", "sourceIds": ["power-creep-conservative-metric", "netrunner-measured-response-development", "magic-banned-restricted-2026-08"], "confidence": "high",
+    "counterexamples": ["同成本、同条件且所有效果严格占优的组件可以形成清晰局部证据，但仍可能因合法格式不同而不可直接替换。"]
+  },
+  {
+    "id": "claim-configuration-regression-needs-constraints-and-risk",
+    "statement": "扩展组合无法穷举时，应先排除规则上无效配置，再覆盖核心路径、邻接组合和高风险多项交互；组合覆盖是测试编排工具，不是体验已经充分验证的证明。",
+    "kind": "project_inference", "sourceIds": ["nist-combinatorial-testing", "software-product-line-testing-review", "netrunner-measured-response-development"], "confidence": "medium",
+    "counterexamples": ["只有两个模块和极少状态的游戏可能可以穷举全部合法配置。"]
+  },
+  {
+    "id": "claim-physical-errata-needs-migration-path",
+    "statement": "实体修订必须提供印次识别、适用产品、替换清单、获取路径、无需处理者与仍未覆盖事项；发布一份 PDF 不能把打印、裁切和识别劳动归零。",
+    "kind": "project_inference", "sourceIds": ["spirit-island-errata-pack", "root-upgrade-kit", "dominion-second-edition-update-pack", "euphoria-essential-update-pack"], "confidence": "high",
+    "counterexamples": ["只改一处且不影响执行的错字可以用在线说明解决，但仍应可查询适用版本。"]
+  },
+  {
+    "id": "claim-expansion-cost-includes-maintenance-labor",
+    "statement": "扩展或版本变更的成本包含获取、设置、分拣、查询、学习、教学、收纳、本地化与无障碍适配劳动；新增内容量或售价不能单独代表玩家获得的价值。",
+    "kind": "project_inference", "sourceIds": ["netrunner-elevation-rotation", "wingspan-europe-expansion-compatibility", "lorcana-resource-hub", "reddit-expansion-burden", "reddit-expansion-quality-symptoms"], "confidence": "medium",
+    "counterexamples": ["无新增规则、可直接混入且有自动管理的数字内容可能显著降低部分维护劳动，但仍有获取与重新学习成本。"]
+  },
+  {
+    "id": "claim-prototype-needs-question-and-nongoals",
+    "statement": "原型范围应同时写本轮要回答的问题和明确不回答的问题；组件只有在能产生目标证据或使测试可运行时才进入这一版。",
+    "kind": "project_inference",
+    "sourceIds": ["games-to-experiment-prototype-questions", "mit-paper-prototyping", "ttgda-playtesting"],
+    "confidence": "high",
+    "counterexamples": ["探索性材料实验可以暂时没有单一结果假设，但仍应写清探索对象、时间盒和停止条件。"]
+  },
+  {
+    "id": "claim-prototype-fidelity-is-profile-not-score",
+    "statement": "原型保真度不是一条从低到高的总分，而是材料、分辨率、范围以及外观、数据、功能、互动和空间等维度的配置；每一维都应说明为何替代、近似或必须真实。",
+    "kind": "project_inference",
+    "sourceIds": ["lim-prototype-anatomy", "houde-hill-prototype-purpose", "show-your-cards"],
+    "confidence": "high",
+    "counterexamples": ["团队内部可以用粗略阶段名沟通，但阶段名不能代替对目标性质与媒介限制的说明。"]
+  },
+  {
+    "id": "claim-prototype-medium-changes-evidence",
+    "statement": "纸面、实体、主持人代运转与数字原型会让不同证据变得可见或被遮蔽；跨媒介结果必须记录代理关系，并在目标性质的真实条件下复核。",
+    "kind": "project_inference",
+    "sourceIds": ["lim-prototype-anatomy", "mit-paper-prototyping", "khoo-low-fidelity-case", "ttgda-playtesting"],
+    "confidence": "high",
+    "counterexamples": ["若本轮只验证完全形式化且与媒介无关的状态转移，媒介差异可能较小，但仍需检查操作错误与理解差异。"]
+  },
+  {
+    "id": "claim-prototype-functionality-needs-legible-operation",
+    "statement": "最低可运行不等于只保留规则：测试者仍需在真实任务中看清状态、完成必要操作并理解反馈；否则测到的可能是原型接口故障而非目标机制。",
+    "kind": "project_inference",
+    "sourceIds": ["ttgda-playtesting", "kathleen-mercury-prototyping", "lim-prototype-anatomy"],
+    "confidence": "high",
+    "counterexamples": ["设计者自测纯数学关系时可以接受临时记账和高主持负担，但该证据不能直接外推给陌生玩家。"]
+  },
+  {
+    "id": "claim-playable-slice-needs-repeat-and-stop",
+    "statement": "短原型切片需要足以重复目标决定、显露一次状态后果，并有明确停止触发；它不必产生完整胜负，但不能只演示一次没有可比较结果的动作。",
+    "kind": "project_inference",
+    "sourceIds": ["games-to-experiment-prototype-questions", "kathleen-mercury-prototyping", "mit-paper-prototyping"],
+    "confidence": "medium",
+    "counterexamples": ["一次性的惊喜、教学首次偏离或单次身体动作可以只观察一次，但必须承认无法估计重复性与学习效应。"]
+  },
+  {
+    "id": "claim-prototype-rebuild-when-proxy-dominates",
+    "statement": "当大部分测试时间花在主持人补规则、手工运算、查找状态或解释代理物，且这些负担遮蔽目标行为时，应重做原型表示或缩小问题，而不是继续堆内容。",
+    "kind": "project_inference",
+    "sourceIds": ["khoo-low-fidelity-case", "games-to-experiment-prototype-questions", "houde-hill-prototype-purpose"],
+    "confidence": "medium",
+    "counterexamples": ["若主持人代运转本来就是为隔离实现问题且没有改变玩家决定，短期高代理负担仍可能是合理选择。"]
+  },
+  {
+    "id": "claim-issue-needs-system-thesis",
+    "statement": "社会、文化或教育议题只有进入玩家角色、权限、资源、限制、反馈和胜负关系，才形成可玩的系统命题；背景文字或知识题本身不足以证明议题已进入游戏。",
+    "kind": "project_inference",
+    "sourceIds": ["values-at-play-methodology", "learning-evaluate-analog-education", "black-boxes-cardboard-algorithmic-literacy", "grow-a-game-values-tool"],
+    "confidence": "high",
+    "counterexamples": ["知识问答可以合法地以记忆与检索为目标；此时应诚实说明测量的是题目表现，而不是议题系统理解。"]
+  },
+  {
+    "id": "claim-abstraction-needs-omission-ledger",
+    "statement": "把现实议题缩成桌游模型时，设计者需记录被省略的行动者、权力、代价、历史与不确定性，并检查这些省略是否把一种立场包装成中性系统。",
+    "kind": "project_inference",
+    "sourceIds": ["analog-orientalism-abstraction", "black-boxes-cardboard-algorithmic-literacy", "design-justice-network-principles"],
+    "confidence": "high",
+    "counterexamples": ["抽象必然会省略，且不是每项现实关系都适合进入一轮原型；目标是追踪边界与后果，不是要求完整复制现实。"]
+  },
+  {
+    "id": "claim-values-verification-needs-layered-evidence",
+    "statement": "设计者的价值意图、规则是否实现该关系、玩家实际如何行动与解释、领域事实是否准确，以及受影响社群如何承担后果，是不同验证层，不能用一次好玩测试或专家盖章互相代替。",
+    "kind": "project_inference",
+    "sourceIds": ["values-at-play-methodology", "design-justice-network-principles", "practical-social-issue-game-design", "black-boxes-cardboard-algorithmic-literacy"],
+    "confidence": "high",
+    "counterexamples": ["早期原型可以只验证其中一层，但必须明确未验证的层级，不把局部证据写成整体影响。"]
+  },
+  {
+    "id": "claim-debrief-cannot-repair-system-disconnection",
+    "statement": "若玩家只能在主持人复盘后才把议题信息与自己的决定和后果连起来，复盘可以产生讨论，但不证明游戏系统已表达目标命题。",
+    "kind": "project_inference",
+    "sourceIds": ["black-boxes-cardboard-algorithmic-literacy", "learning-evaluate-analog-education"],
+    "confidence": "medium",
+    "counterexamples": ["有些引导式模拟本就把复盘设计为核心学习环节；此时应分开评估游戏中的证据与复盘中的证据。"]
+  },
+  {
+    "id": "claim-core-loop-output-becomes-input",
+    "statement": "核心循环不只是按顺序列行动；玩家读取当前信息并选择，系统按状态与规则处理，输出反馈，而这份反馈要改变下一次能看见、能选择或愿意承担的条件，循环才真正接回新的决定。",
+    "kind": "synthesis",
+    "sourceIds": ["loops-and-metagames", "mda-framework", "five-part-model", "zimmerman-core-mechanic"],
+    "confidence": "high",
+    "counterexamples": ["一次性终局、叙事揭示或不可逆事件可以不回到同类决定；此时应明确这是循环出口或换层，而不是强行画回箭头。"]
+  },
+  {
+    "id": "claim-core-is-not-feature-list",
+    "statement": "核心系统应描述玩家反复处理的中心挑战及其输入、选择、代价、状态与反馈；机制名称、组件数量或功能清单只有在支持这条作用链时才属于本轮核心。",
+    "kind": "synthesis",
+    "sourceIds": ["daniel-games-core", "joe-slack-getting-to-core", "rosewater-decisions-part-one", "zimmerman-core-mechanic"],
+    "confidence": "high",
+    "counterexamples": ["有些作品的核心来自多个系统互相牵制、谈判或身体协作，不能因为无法缩成单一机制就判定没有核心。"]
+  },
+  {
+    "id": "claim-loop-completeness-is-not-quality",
+    "statement": "画出闭合循环只能证明规则关系可被描述；它不能证明选项在真实状态下都有价值、反馈被玩家正确读取、实体任务可完成、社交后果可接受或目标体验已经出现。",
+    "kind": "project_inference",
+    "sourceIds": ["loops-and-metagames", "mda-framework", "show-your-cards", "rosewater-decisions-part-one"],
+    "confidence": "high",
+    "counterexamples": ["当问题只要求检查遗漏的输入、状态更新或中断条件时，结构完整性本身可以成为该轮的明确通过门。"]
+  },
+  {
+    "id": "claim-test-plan-needs-one-evidence-chain",
+    "statement": "一轮早期测试应把一个主问题连接到来源版本、可观察预测、反驳信号、目标事件和停止条件；额外好奇可以进入停车区，但不能与主问题共同冒充一条可解释结论。",
+    "kind": "project_inference",
+    "sourceIds": ["bgdl-playtest-like-a-boss", "stanford-dschool-testing-guide", "games-user-research-running-study", "games-to-experiment-prototype-questions"],
+    "confidence": "high",
+    "counterexamples": ["开放探索或首次全局冒烟测试可以记录多个意外，但仍应声明它没有隔离单一因果问题，也不能据此比较版本效果。"]
+  },
+  {
+    "id": "claim-play-observation-and-interview-are-different-evidence",
+    "statement": "局中发生的动作、停顿、查询和状态变化，与玩家局后对理解、感受和理由的陈述是不同证据；计划应分别记录，访谈可解释观察但不能覆盖没有发生的行为。",
+    "kind": "synthesis",
+    "sourceIds": ["games-user-research-running-study", "kulik-moderating-playtest", "kathleen-mercury-winq"],
+    "confidence": "high",
+    "counterexamples": ["在无法直接观察的远程异步测试中，自述可能是主要资料，但必须记录缺失的桌面、身体与社交证据。"]
+  },
+  {
+    "id": "claim-moderator-help-changes-playtest-evidence",
+    "statement": "主持人解释规则、提醒信息、确认完成或替玩家运转系统会改变玩家可用信息与决定条件；测试前需写介入边界，发生介入时标记时间和影响，不能把受助结果当成自主使用。",
+    "kind": "synthesis",
+    "sourceIds": ["games-user-research-running-study", "kulik-moderating-playtest", "stanford-dschool-testing-guide", "bgdl-playtest-like-a-boss"],
+    "confidence": "high",
+    "counterexamples": ["引导测试可以有计划地提供提示或代理运转，但这些帮助本身必须成为测试条件，而不是隐形修复。"]
+  },
+  {
+    "id": "claim-playtest-context-limits-generalisation",
+    "statement": "测试者经验、玩家配置、熟人关系、媒介、主持方式与可玩切片共同限定证据；一次便利样本能发现当前断点，却不能自动代表目标受众、完整游戏或其他人数与媒介。",
+    "kind": "synthesis",
+    "sourceIds": ["denisova-democratising-games-user-research", "games-user-research-running-study", "bushner-hobbyist-rulebook-practices", "ttgda-playtesting"],
+    "confidence": "high",
+    "counterexamples": ["当本轮问题只涉及确定性的规则状态转移时，参与者差异可能不是主要变量，但仍需记录测试配置和主持条件。"]
+  },
+  {
+    "id": "claim-session-event-needs-context-and-resolution",
+    "statement": "一条可回查的现场事件至少需要时间或阶段、玩家别名、可见动作或原话、当时信息/状态、随后怎样结束，以及主持是否介入；只写‘玩家困惑’会丢失诊断所需的局面与恢复路径。",
+    "kind": "synthesis",
+    "sourceIds": ["games-user-research-running-study", "tricorn-playtesting-with-purpose", "mc-allister-observation-template"],
+    "confidence": "high",
+    "counterexamples": ["极短的计数事件可使用预定义代码快速记录，但代码表仍需在会话层保留版本、参与者和事件含义。"]
+  },
+  {
+    "id": "claim-live-capture-and-analysis-are-separate-tasks",
+    "statement": "现场记录应优先捕捉发生的事件与后续结果，把是否重要、属于什么问题和如何修改留到分析阶段；主持与完整记录由同一人同时承担时更容易漏掉事件。",
+    "kind": "synthesis",
+    "sourceIds": ["games-user-research-running-study", "govuk-research-notes-recording", "pam-walls-playtesting-notes"],
+    "confidence": "high",
+    "counterexamples": ["资源极少的个人设计师可以边主持边记简短标记，再尽快扩写；此时应记录缺失和回忆延迟，不能假装是完整逐事件资料。"]
+  },
+  {
+    "id": "claim-event-count-is-not-severity",
+    "statement": "重复提问或事件计数能帮助定位模式与原始记录，但次数本身不能自动决定严重度、原因或改动优先级；同一症状可能来自座位、信息、规则、主持或玩家语境。",
+    "kind": "project_inference",
+    "sourceIds": ["tricorn-playtesting-with-purpose", "games-user-research-running-study", "diegetic-playtest-tracking-template"],
+    "confidence": "high",
+    "counterexamples": ["若预先定义的是确定性错误计数或安全停止门，次数可以触发既定动作，但仍不等于通用质量分。"]
+  },
+  {
+    "id": "claim-consent-scope-must-follow-session-data",
+    "statement": "笔记、录音、照片和观察者都应在会话开始前进入参与者能理解的同意范围；记录需能映射到对应会话，以便停止、撤回和清除，但工具勾选不能构成法律或伦理认证。",
+    "kind": "synthesis",
+    "sourceIds": ["govuk-informed-consent-research", "govuk-research-notes-recording", "break-my-game-code"],
+    "confidence": "high",
+    "counterexamples": ["纯个人自测没有外部参与者时不需要参与者同意流程，但若记录到旁人、场地或第三方资料，仍需重新判断边界。"]
+  },
+  {
+    "id": "claim-debrief-separates-findings-from-solutions",
+    "statement": "会话结束后应先保留版本、任务、局中证据与局后回答，再判断支持、反驳或未定；解决方案需要另行发散、比较约束并在下一版复测，不能由玩家建议或单条观察自动成为待办。",
+    "kind": "synthesis",
+    "sourceIds": ["games-user-research-debriefing", "tricorn-playtesting-with-purpose", "bgdl-playtest-like-a-boss"],
+    "confidence": "high",
+    "counterexamples": ["明显安全阻断、拼写错误或确定性规则矛盾可以立即修复，但仍应记录发生条件和改动版本。"]
+  },
+  {
+    "id": "claim-review-keeps-observation-finding-action-distinct",
+    "statement": "复盘时应让原始观察、跨观察形成的发现与下一步行动保持不同记录层，并让发现能回到具体会话与事件；否则团队很容易把解释或方案误记成发生过的事实。",
+    "kind": "synthesis",
+    "sourceIds": ["govuk-analyse-research-session", "govuk-research-notes-recording", "ixdf-affinity-diagram"],
+    "confidence": "high",
+    "counterexamples": ["确定性的拼写或组件缺件可以从观察直接进入修复，但仍需保留发生版本和改动记录。"]
+  },
+  {
+    "id": "claim-findings-need-source-evidence-and-boundaries",
+    "statement": "一项桌游测试发现应同时保留来源版本、玩家配置与媒介、支持或反驳它的原事件、适用条件、其他解释和仍缺的证据；它描述的是本轮资料中的模式，不自动代表所有玩家或完整游戏。",
+    "kind": "synthesis",
+    "sourceIds": ["games-user-research-analysis", "woodard-effective-playtest", "govuk-rainbow-spreadsheet"],
+    "confidence": "high",
+    "counterexamples": ["确定性的规则状态错误不依赖玩家偏好，但仍只能证明对应规则版本和触发条件存在矛盾。"]
+  },
+  {
+    "id": "claim-note-volume-is-not-priority",
+    "statement": "相似笔记、被选事件或出现人数能帮助回到资料，却不能单独决定严重度和改动优先级；影响、设计目标、受影响语境、替代解释与风险必须另行判断。",
+    "kind": "synthesis",
+    "sourceIds": ["games-user-research-analysis", "govuk-rainbow-spreadsheet", "measuringu-severity-ratings"],
+    "confidence": "high",
+    "counterexamples": ["若团队事前为确定性安全或无障碍阻断定义停止门，单次事件也可以触发最高优先处理，但理由不是多数票。"]
+  },
+  {
+    "id": "claim-solution-choice-needs-alternatives-and-retest",
+    "statement": "从发现进入改动时，至少需要把多个候选方案、保持不变的要素、暂不采用的方案、单一变化轴与回退信号写清；选中的方案仍是假设，必须在目标版本和下一问题下复测。",
+    "kind": "synthesis",
+    "sourceIds": ["games-user-research-debriefing", "tricorn-playtesting-with-purpose", "boardssey-review-results"],
+    "confidence": "high",
+    "counterexamples": ["低风险文案或确定性排版错误可以直接修复，但若改动触及信息时机、策略或社交互动，仍需版本化复测。"]
+  },
+  {
+    "id": "claim-withdrawal-must-reach-derived-review",
+    "statement": "当参与者撤回某场会话资料时，本地与该会话明确关联的派生复盘也应被清除或失效；已经导出的副本不受浏览器工具控制，因此导出前必须明确这一边界。",
+    "kind": "project_inference",
+    "sourceIds": ["govuk-informed-consent-research", "govuk-research-notes-recording", "diegetic-playtest-tracking-template"],
+    "confidence": "high",
+    "counterexamples": ["法律或机构政策可能要求保留最小审计记录；此时应由适用规则决定，并在同意范围内预先说明，不能由本站代替判断。"]
+  },
+  {
+    "id": "claim-cross-session-comparison-needs-explicit-boundary",
+    "statement": "把多轮桌游复盘放在一起前，应先写共同问题、保持足够接近的条件，以及版本、玩家经验、配置、媒介与主持的关键差异；否则相似措辞可能掩盖不同任务，版本变化也会被误称为重复验证。",
+    "kind": "synthesis",
+    "sourceIds": ["gale-framework-method", "calman-longitudinal-trajectory-analysis", "tricorn-playtesting-with-purpose"],
+    "confidence": "high",
+    "counterexamples": ["确定性规则矛盾可直接跨会话核对同一触发条件，但仍需确认引用的是同一规则版本与状态。"]
+  },
+  {
+    "id": "claim-time-ordered-matrix-preserves-evolution",
+    "statement": "时间顺序矩阵适合同时阅读单个发现怎样随版本变化，以及不同轮次之间的相似与差异；每个单元仍需能回到来源复盘和直接证据，矩阵密度只帮助导航，不代表显著性或优先级。",
+    "kind": "synthesis",
+    "sourceIds": ["gale-framework-method", "saltzman-longitudinal-matrix", "gitlab-uxr-insights-repository"],
+    "confidence": "high",
+    "counterexamples": ["只有两份短复盘时可以使用一页时间线而非完整矩阵，但仍需保留来源、差异与判断理由。"]
+  },
+  {
+    "id": "claim-negative-case-changes-finding-not-vote",
+    "statement": "与暂定发现矛盾的轮次应触发继续发现、收窄边界、拆分发现、标记被反驳或退役，而不是被更多支持材料投票覆盖；反例的价值取决于它揭示了什么条件或遗漏，不取决于它只出现一次。",
+    "kind": "synthesis",
+    "sourceIds": ["lane-negative-case-analysis", "mind-mgmt-designer-diary", "hegemony-designer-diary-playtime"],
+    "confidence": "high",
+    "counterexamples": ["来源错误、任务未执行或版本不匹配的材料可以标为不可比，但排除理由应显式保存。"]
+  },
+  {
+    "id": "claim-familiar-testers-are-not-fresh-replication",
+    "statement": "反复参与同一游戏的熟练测试者会学习规则、形成局部策略并适应复杂度；他们能回答深层策略问题，却不能替代新玩家的首次理解、教学负担与真实时长测试。",
+    "kind": "synthesis",
+    "sourceIds": ["mind-mgmt-designer-diary", "hegemony-designer-diary-playtime", "tricorn-playtesting-with-purpose"],
+    "confidence": "high",
+    "counterexamples": ["当问题明确是长期策略、高手平衡或重复游玩时，熟练组正是目标样本，但仍不应外推到首次局。"]
+  },
+  {
+    "id": "claim-version-change-has-multiple-effects",
+    "statement": "一次版本改动往往同时改变多个体验结果：减少信息、轮数或内容可能降低负担和时长，也可能损失预期、紧张、政策可见度或角色节奏；跨版本复盘需要同时记录保持项、收益、损失与竞争解释。",
+    "kind": "synthesis",
+    "sourceIds": ["daybreak-designer-diary-forecast", "hegemony-designer-diary-playtime", "tricorn-playtesting-with-purpose"],
+    "confidence": "high",
+    "counterexamples": ["拼写、缺件或确定性状态错误可能只需直接修复，但涉及信息时机、行动经济或内容删减时仍应检查连带影响。"]
+  },
+  {
+    "id": "claim-insight-lineage-separates-evidence-from-action",
+    "statement": "跨轮发现应有可回查的沿革：当前表述、适用边界、支持与反驳来源、为何保留/收窄/拆分/退役，以及下一轮问题；发现可以先保存而不立即变成项目任务，写回下一步必须另行确认。",
+    "kind": "project_inference",
+    "sourceIds": ["gitlab-uxr-insights-repository", "govuk-analyse-research-session", "gale-framework-method"],
+    "confidence": "high",
+    "counterexamples": ["明显安全阻断可立即触发停止与修复，但来源证据和处理理由仍应保留。"]
+  },
+  {
+    "id": "claim-completed-finding-revision-is-new-record",
+    "statement": "已完成的跨轮发现一旦被引用或用于决定，就应保持不可覆盖；后来的实质变化保存为有新 ID 的后继修订，并显式连接沿革、父记录、修订号、理由与时间，而不是把过去改写成现在的样子。",
+    "kind": "project_inference",
+    "sourceIds": ["w3c-prov-o", "white-qualitative-audit-trail", "gitlab-uxr-insights-repository"],
+    "confidence": "high",
+    "counterexamples": ["尚未完成且未被引用的浏览器草稿可以原地编辑；这与覆盖已保存记录不同。"]
+  },
+  {
+    "id": "claim-audit-trail-records-when-why-what",
+    "statement": "发现或分析结构发生改变时，审计轨迹至少应回答何时改变、为什么改变、改变了什么，并保留上一判断与新证据之间的路径；只有版本号而没有理由，仍无法解释演化。",
+    "kind": "synthesis",
+    "sourceIds": ["white-qualitative-audit-trail", "w3c-prov-o", "timo-bron-iteration-log"],
+    "confidence": "high",
+    "counterexamples": ["纯排版、错字或序列化格式修复可以使用简短理由，但若内容判断变化，就不应只标为技术修复。"]
+  },
+  {
+    "id": "claim-latest-revision-is-not-truth",
+    "statement": "沿革中的‘最新’只描述保存顺序，不自动代表更正确、更成熟或证据更强；用户仍需读取适用边界、反例、修订理由和来源，必要时从较早记录建立分支。",
+    "kind": "project_inference",
+    "sourceIds": ["w3c-prov-o", "lane-negative-case-analysis", "gitlab-uxr-insights-repository"],
+    "confidence": "high",
+    "counterexamples": ["团队可以在另有审核规则时标记一个获批准版本，但批准状态必须与时间顺序分开记录。"]
+  },
+  {
+    "id": "claim-playtest-purpose-changes-by-stage",
+    "statement": "桌游迭代早期更适合广泛探索结构与删减，系统成型后才适合更细的平衡、数值和边缘情况；同一项目后期也可能转向合作、策略、教学和规则疑问，因此每次修订要保存当时的测试目的，不能只累加场数。",
+    "kind": "synthesis",
+    "sourceIds": ["magic-playtesting-stages-2026", "weirdwood-manor-designer-diary", "timo-bron-iteration-log"],
+    "confidence": "medium",
+    "counterexamples": ["早期仍可能发现确定性数值错误，后期也可能因核心失效回到结构探索；阶段是选择测试粒度的提示，不是单向门禁。"]
+  },
+  {
+    "id": "claim-withdrawal-follows-descendant-lineage",
+    "statement": "若一份发现直接依赖已撤回的会话，或从这样的发现修订而来，本地撤回应沿父子派生关系清除后继，避免留下无法回查来源的孤立判断；站外导出副本仍需在各自位置处理。",
+    "kind": "project_inference",
+    "sourceIds": ["govuk-informed-consent-research", "w3c-prov-o", "white-qualitative-audit-trail"],
+    "confidence": "high",
+    "counterexamples": ["适用法律或机构规则可能要求保留最小撤回审计元数据；本站不能替代该判断，也不控制外部副本。"]
+  },
+  {
+    "id": "claim-design-cards-need-use-protocol",
+    "statement": "设计卡牌的内容、抽取方式、说明、主持和实际任务共同构成工具；只发布一叠提示而不说明选择、拒绝、产出与复测路径，无法判断它是在提供知识、刺激构思还是增加规则负担。",
+    "kind": "synthesis",
+    "sourceIds": ["roy-warren-card-design-tools-review", "league-ideation-toolkit", "polyu-game-kit-2", "weapon-of-criticism-design-game"],
+    "confidence": "high",
+    "counterexamples": ["熟练个人在明确的小任务中可能只需要单条提示；轻量并不等于必须补成完整主持协议。"]
+  },
+  {
+    "id": "claim-examples-can-scaffold-and-fixate",
+    "statement": "示例可能造成表面复制与固着，也可能帮助新手理解适切性、连贯性和问题空间并重组已有想法；需要把示例内容、呈现方式、使用者经验与产出分别观察。",
+    "kind": "research_finding",
+    "sourceIds": ["benton-examples-children-game-narrative", "chan-example-interface-fixation", "wang-fixation-defixation-review"],
+    "confidence": "high",
+    "counterexamples": ["当任务是复现标准格式、遵守安全步骤或学习固定记法时，贴近范例可能是目标而不是设计失败。"]
+  },
+  {
+    "id": "claim-ideation-output-count-is-not-artifact-quality",
+    "statement": "设计辅助工具的完成感、好感、点子数与互动次数不能替代产物是否可执行、是否符合约束、是否产生可反驳预测以及是否经独立测试；评价字段必须按研究问题分轨。",
+    "kind": "synthesis",
+    "sourceIds": ["roy-warren-card-design-tools-review", "league-ideation-toolkit", "game-ideation-techniques-comparison"],
+    "confidence": "high",
+    "counterexamples": ["若课堂目标明确只是扩充机制词汇或让每人发言，参与和产出数量可以成为对应目标的局部指标，但仍不能代表游戏质量。"]
+  },
+  {
+    "id": "claim-defixation-must-match-problem",
+    "statement": "去固着动作应先判断限制来自外部示例还是内部框架、问题是开放还是封闭，并区分继续在现有框架内探索与越出框架；没有一种重抽或随机约束能默认适合所有设计停滞。",
+    "kind": "research_finding",
+    "sourceIds": ["wang-fixation-defixation-review", "chan-example-interface-fixation", "constraint-creativity-joyce"],
+    "confidence": "high",
+    "counterexamples": ["短时热身不必做完整固着诊断，但也不应据此宣称练习普遍提高创意表现。"]
+  },
+  {
+    "id": "claim-redesign-learning-needs-artifact-trail",
+    "statement": "把游戏重设计描述为学习活动时，应保留规则与组件版本、测试观察、学生或设计者的解释、文档如何支持他人使用以及后续修订；一次成品展示不足以建立学习或设计变化链。",
+    "kind": "project_inference",
+    "sourceIds": ["vercher-strategy-game-redesign-steam", "kathleen-mercury-resources", "white-qualitative-audit-trail"],
+    "confidence": "medium",
+    "counterexamples": ["公开展览若目标只是分享作品，不必承担完整研究档案；但不能从展示成功反推学习机制或普遍效果。"]
+  }
+]

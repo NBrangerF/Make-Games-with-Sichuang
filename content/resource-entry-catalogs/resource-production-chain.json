@@ -1,0 +1,381 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "resource-production-chain",
+    "title": "诊断资源转换、生产链、维护与经济闭环",
+    "question": "经济循环重复、某资源总卡住、收入总算错、维护令人崩溃、引擎后期爆产或终局留下无用库存；我该改比率、来源、容量、衰减还是回本速度？",
+    "outcome": "先分开存量、变化率与结算点，追踪一件资源从来源经池和转换到消耗或残值；补全顺序、容量、维护、债务与衰减，再只改一个经济字段。",
+    "resourceIds": [
+      "agricola-resource-cycle-rules",
+      "le-havre-production-chain-rules",
+      "race-galaxy-produce-consume-rules",
+      "terraforming-mars-production-rules",
+      "daniel-engines-resource-web",
+      "machinations-economy-nodes",
+      "stock-flow-failure-study",
+      "terraforming-mars-accessibility"
+    ],
+    "evidenceBoundary": "组合正式规则、设计师方法、系统动力学与相邻研究、无障碍长评和玩家症状；它们支持分开存量/流量、写完整转换与维护协议、追踪容量/衰减/债务/残值/回本，并以真实任务验证状态恢复，不提供最佳资源数、比率、产能、维护、容量、腐坏、回本或偏好。"
+  },
+  "resources": [
+    {
+      "id": "agricola-resource-cycle-rules",
+      "title": "Agricola Rulebook",
+      "creator": "Uwe Rosenberg / Lookout Games",
+      "href": "https://www.lookout-spiele.de/upload/en_agricola.html_Rules_Agricola_EN.pdf",
+      "type": "收获、喂养、转换时机、繁殖与容量正式规则",
+      "evidenceType": "official_or_rules_reference",
+      "format": "pdf",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "规则与信息",
+        "测试与反馈"
+      ],
+      "useful": "把田地流出、家庭维护、不同转换窗口、繁殖和动物容量放在同一收获协议中。",
+      "limitation": "旧版完整商业规则是多变量系统，不能给通用喂养或转换参数。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "le-havre-production-chain-rules",
+      "title": "Le Havre Rulebook",
+      "creator": "Uwe Rosenberg / rulebook mirror",
+      "href": "https://cdn.1j1ju.com/medias/98/d1/2f-le-havre-rulebook.pdf",
+      "type": "公共累积、货物升级、喂养、过付、贷款与利息规则",
+      "evidenceType": "official_or_rules_reference",
+      "format": "pdf",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "规则与信息",
+        "测试与反馈"
+      ],
+      "useful": "逐步展示 Offer 存量、建筑转换、入场费、批量加工、喂养抵扣、过付损失与贷款失败路径。",
+      "limitation": "规则镜像且系统复杂，不能隔离任一维护或债务规则的效果。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "race-galaxy-produce-consume-rules",
+      "title": "Race for the Galaxy Second Edition Rules",
+      "creator": "Tom Lehmann / Rio Grande Games",
+      "href": "https://www.riograndegames.com/wp-content/uploads/2013/02/RFTG_2e_rules.pdf",
+      "type": "卡牌多用途、生产容量、强制消费与顺序正式规则",
+      "evidenceType": "official_or_rules_reference",
+      "format": "pdf",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "规则与信息",
+        "测试与反馈"
+      ],
+      "useful": "说明卡牌同时作为建造对象、支付货币和货物，消费能力的排序、强制、不可中断与生产世界容量。",
+      "limitation": "图标密集完整系统，不能证明多用途卡牌或强制消费普遍更好。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "terraforming-mars-production-rules",
+      "title": "Terraforming Mars Rulebook",
+      "creator": "Jacob Fryxelius / FryxGames",
+      "href": "https://fryxgames.se/wp-content/uploads/2023/04/TMRULESFINAL.pdf",
+      "type": "资源存量、生产参数、自动转换与面额位置规则",
+      "evidenceType": "official_or_rules_reference",
+      "format": "pdf",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "规则与信息",
+        "测试与反馈"
+      ],
+      "useful": "明确分开当前库存和生产参数，并规定能量转热、资源用途、负产量下限和方块面额。",
+      "limitation": "多变量规则不能隔离生产轨、自动转换或组件映射的体验效果。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "daniel-engines-resource-web",
+      "title": "Engines",
+      "creator": "Daniel Thurot / daniel.games",
+      "href": "https://daniel.games/engines/",
+      "type": "资源网络、多用途、多来源与循环长度设计文章",
+      "evidenceType": "first_party_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型"
+      ],
+      "useful": "提出让资源具有多个不相关用途和多个来源，并用更长循环减少重复，同时警告连接过多。",
+      "limitation": "个人规范性方法，没有对照实验、最佳用途数或复杂度阈值。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "machinations-economy-nodes",
+      "title": "Machinations: A New Way to Design Game Mechanics",
+      "creator": "Joris Dormans / Game Developer",
+      "href": "https://www.gamedeveloper.com/design/the-designer-s-notebook-machinations-a-new-way-to-design-game-mechanics",
+      "type": "source、pool、converter、drain、trader 与条件节点方法",
+      "evidenceType": "expert_review",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "提供区分创造、储存、转换、销毁、交易和门控条件的建模语言，并明确转换是消耗触发来源。",
+      "limitation": "数字建模方法和书摘不是桌游设计成效实验，也不自动捕捉实体操作。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "stock-flow-failure-study",
+      "title": "Why Don't Well-Educated Adults Understand Accumulation?",
+      "creator": "Matthew Cronin, Cleotilde Gonzalez & John Sterman",
+      "href": "https://web.mit.edu/jsterman/www/Why_Adults_Accumulation.html",
+      "type": "存量、流量与累积理解失败系列实验",
+      "evidenceType": "academic_adjacent",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "规则与信息",
+        "测试与反馈"
+      ],
+      "useful": "显示高度受教育参与者也会持续误判简单流入、流出与存量关系，为经济图示和理解任务提供边界。",
+      "limitation": "非桌游实验不能证明某种组件、图表或教学法必然改善理解。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "terraforming-mars-accessibility",
+      "title": "Terraforming Mars Accessibility Teardown",
+      "creator": "Michael Heron / Meeple Like Us",
+      "href": "https://www.meeplelikeus.co.uk/terraforming-mars-2016-accessibility-teardown/",
+      "type": "方块面额、位置身份、生产轨与 tableau 无障碍长评",
+      "evidenceType": "expert_review",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "规则与信息",
+        "测试与反馈",
+        "呈现与发布"
+      ],
+      "useful": "具体分析低摩擦方块移位怎样破坏库存/生产状态，以及位置决定资源身份和大 tableau 的读取负担。",
+      "limitation": "单一评者和版本不能给发生率；替代组件需真实参与者验证。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "agricola-resource-cycle-rules",
+      "useModes": [
+        "learn",
+        "compare",
+        "lookup"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "拆解收获、喂养、转换窗口、繁殖和容量的完整阶段协议。",
+      "doNotUseFor": "完整商业规则不能给通用喂养率、容量或惩罚。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "le-havre-production-chain-rules",
+      "useModes": [
+        "learn",
+        "compare",
+        "lookup"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "追踪公共供给、货物升级、喂养、过付、贷款与利息。",
+      "doNotUseFor": "规则镜像与多变量系统不能证明债务或维护规则的单独效果。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "race-galaxy-produce-consume-rules",
+      "useModes": [
+        "learn",
+        "compare",
+        "lookup"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "检查多用途卡牌、生产容量、强制消费和能力执行顺序。",
+      "doNotUseFor": "单一成品规则不能证明多用途资源或强制消费更优。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "terraforming-mars-production-rules",
+      "useModes": [
+        "learn",
+        "compare",
+        "lookup"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "区分资源存量与生产参数，并检查自动转换和空间编码。",
+      "doNotUseFor": "案例不能给生产曲线、负收入或组件面额的通用答案。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "daniel-engines-resource-web",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "用多用途、多来源和循环长度检查资源网络。",
+      "doNotUseFor": "个人方法不给最佳连接数、复杂度阈值或效果因果。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "machinations-economy-nodes",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "把创造、储存、转换、销毁、交易与门控画成可检查的节点。",
+      "doNotUseFor": "数字经济建模不会自动捕捉实体操作和玩家理解。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "stock-flow-failure-study",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "说明存量与流量理解不能只凭公开图表假定。",
+      "doNotUseFor": "非桌游实验不证明某种组件、图示或教程必然有效。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "terraforming-mars-accessibility",
+      "useModes": [
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "reusable_license_verified",
+      "commercialContext": "none_disclosed",
+      "bestFor": "生成资源面额、位置身份、生产轨扰动和 tableau 跟踪任务。",
+      "doNotUseFor": "单一长评不能给通用组件或玩家板方案。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    }
+  ]
+}

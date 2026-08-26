@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "scoring-goals-incentives",
+    "title": "诊断计分、目标与激励错位",
+    "question": "游戏能算出赢家，但玩家只追同一路线、看不懂自己是否前进，或终局才发现方向错了；我该改分值、公开分数、加目标还是重做胜利条件？",
+    "outcome": "分开结束、胜负与计分函数，追踪一次得分怎样选择行为；比较真实路径、计分速度和可见性，再分轨验证系统结果、理解、互动与体验。",
+    "resourceIds": [
+      "daniel-winning-losing",
+      "russell-victory-conditions",
+      "with-smile-gun-scoring-diary",
+      "hegemony-scoring-diary",
+      "szulawski-boggle-rewards",
+      "gajadhar-score-visibility",
+      "sanctuary-scoring-review",
+      "point-salad-scoring-review"
+    ],
+    "evidenceBoundary": "组合桌游设计师实践、商业项目日志、相邻奖励与分数可见性实验及两篇玩家长评；它们支持拆开规则、追踪激励、记录路径、速度与信息，不提供最佳计分制、分值尺度、公开比例、隐藏目标数量、策略路径数、追赶公式或玩家偏好比例。"
+  },
+  "resources": [
+    {
+      "id": "daniel-winning-losing",
+      "title": "Winning & Losing",
+      "creator": "Daniel Piechnick",
+      "href": "https://daniel.games/winning-and-losing/",
+      "type": "桌游胜负与计分实践",
+      "evidenceType": "designer_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "规则与信息"
+      ],
+      "useful": "把分数、淘汰、平手与最后一击拆开，并用复杂度、终局纯换算和胜利链检查计分规则是否服务前面的决定。",
+      "limitation": "个人设计偏好与短例，不是比较实验；‘平局即可’、沿胜利链设平手规则和隐藏最后一击都需按作品目标与玩家验证。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "russell-victory-conditions",
+      "title": "Victory Conditions",
+      "creator": "Tom Russell / Hollandspiele",
+      "href": "https://hollandspiele.com/blogs/hollandazed-thoughts-ideas-and-miscellany/victory-conditions-by-tom-russell",
+      "type": "战棋胜利条件实践",
+      "evidenceType": "designer_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "区分游戏结束与获胜，展示非对称阈值、胜利等级、在对手回合末检查，以及替代目标如何塑造主动行动和回应窗口。",
+      "limitation": "以历史战棋和作者个人作品为主；阈值、历史结果与主动性判断不能直接迁移合作、派对或抽象欧式游戏。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "with-smile-gun-scoring-diary",
+      "title": "Designer Diary #3: The Nuts and Bolts",
+      "creator": "Subsurface Games",
+      "href": "https://subsurfacegames.ca/2020/08/17/designer-diary-3-the-nuts-and-bolts/",
+      "type": "商业桌游计分迭代日志",
+      "evidenceType": "first_party_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "记录复杂计分如何挤占核心骰子草拟、拖慢结算，并改成多数快速判断与少数真正有张力的选择。",
+      "limitation": "单个二人区域多数游戏的事后日志，没有受控比较；具体分值、结算次数与复杂度分配不能外推。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "hegemony-scoring-diary",
+      "title": "Designer Diary: Hegemony: Lead Your Class to Victory",
+      "creator": "Vangelis Bagiartakis, Varnavas Timotheou",
+      "href": "https://boardgamegeek.com/blog/1/blogpost/145459/designer-diary-hegemony-lead-your-class-to-victory",
+      "type": "非对称计分速度设计日志",
+      "evidenceType": "first_party_practice",
+      "format": "blog",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "记录资本家早期几乎不计分、终局爆发造成的落后误读与突然翻盘感，并以 Wealth track 建立持久进展和可调计分速度。",
+      "limitation": "本轮通过搜索缓存取得文章级内容，直连受 403；同一项目同时经历多项发展改动，不能把体验变化归因于单一轨道。",
+      "status": "article_level",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "szulawski-boggle-rewards",
+      "title": "Is Self-determination Good for Your Effectiveness?",
+      "creator": "Michał Szulawski, Izabela Kaźmierczak, Monika Prusik",
+      "href": "https://doi.org/10.1371/journal.pone.0256558",
+      "type": "Boggle 奖励与需要支持实验",
+      "evidenceType": "academic_adjacent",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "测试与反馈"
+      ],
+      "useful": "第二项研究让 200 名年轻成人完成两次三分钟 Boggle，随机操纵外部奖励和心理需要支持；奖励主效应未显著提高表现，能力感中介部分关系。",
+      "limitation": "单人新手短任务，奖励为约 10 欧代金券且所有奖励组最终都获券；不是游戏内积分、长期游玩或同桌胜负，不能直接迁移。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "gajadhar-score-visibility",
+      "title": "Understanding Player Experience in Social Digital Games: The Role of Social Presence",
+      "creator": "B. J. Gajadhar",
+      "href": "https://doi.org/10.6100/IR731192",
+      "type": "分数可见性与社会体验实验",
+      "evidenceType": "academic_adjacent",
+      "format": "thesis",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "测试与反馈"
+      ],
+      "useful": "博士论文第六章以 126 名参与者操纵共同游戏和分数可见性；公开分数改变部分社会联结/卷入指标，但对享受与投入没有简单显著主效应。",
+      "limitation": "2012 年数字第一人称射击实验，分数由实验员每 30 秒更新且参与者为同性交叉条件；不能直接迁移实体桌游或隐藏计分。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "sanctuary-scoring-review",
+      "title": "Sanctuary Review",
+      "creator": "Christian Hoffer / GamesRadar+",
+      "href": "https://www.gamesradar.com/games/board-games/sanctuary-review/",
+      "type": "支配计分路径玩家长评",
+      "evidenceType": "player_account",
+      "format": "review",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "评者在多人数、多局体验中描述保育目标同时触发终局并高效得分，其他动物牌常成为诱饵的具体症状。",
+      "limitation": "单一评者、出版方供样且未提供逐局分数；不能证明客观失衡、所有替代策略无效或代表目标玩家。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "point-salad-scoring-review",
+      "title": "Point Salad Review: Quick Drafting and Constant Choices",
+      "creator": "Eric Yurko / What's Eric Playing?",
+      "href": "https://whatsericplaying.com/2019/07/22/point-salad/",
+      "type": "公开个人计分条件玩家长评",
+      "evidenceType": "player_account",
+      "format": "review",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "用五局体验说明公开的个人计分条件怎样让阻断、适应、翻面放弃与自利取舍可见，并记录人数增加后的市场波动。",
+      "limitation": "单一评者且为出版方供样；五局不足以证明长期平衡，阻断偏好、人数评价和策略建议都需重新验证。",
+      "status": "read",
+      "lastCheckedAt": "2026-08-20"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "daniel-winning-losing",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "用复杂度、终局纯换算、平手链和最后一击检查一份已有计分规则。",
+      "doNotUseFor": "不要把作者的个人偏好变成平手、淘汰或隐藏信息的通用标准，也不要照搬示例数值。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "russell-victory-conditions",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "把结束、获胜、阈值、检查时点与非对称主动目标拆开，并生成回应窗口候选。",
+      "doNotUseFor": "不要把历史战棋的胜利等级、目标地块或分数阈值当作其他类型的配方。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "with-smile-gun-scoring-diary",
+      "useModes": [
+        "case_study",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "检查计分阶段是否挤占核心行动，以及每项复杂结算是否真的改变玩家前面的决定。",
+      "doNotUseFor": "不要照搬其分值、区域数量或结算比例，也不能从事后日志证明简化单独改善体验。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "hegemony-scoring-diary",
+      "useModes": [
+        "case_study",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "观察非对称角色的计分速度、持久进展、早期误读与终局爆发怎样同时影响不同玩家。",
+      "doNotUseFor": "直连受 403；不要把搜索缓存当稳定全文，也不要假定所有角色必须同速或用 Wealth track。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "szulawski-boggle-rewards",
+      "useModes": [
+        "learn",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "narrow",
+      "currencyRisk": "low",
+      "rightsStatus": "reusable_license_verified",
+      "commercialContext": "none_disclosed",
+      "bestFor": "反驳‘更多奖励必然提高目标行为’，并把表现、能力感、内在动机和外部奖励分轨记录。",
+      "doNotUseFor": "两次三分钟单人 Boggle 与外部代金券不是游戏内 VP；不要直接推断桌游乐趣、策略或持续参与。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "gajadhar-score-visibility",
+      "useModes": [
+        "learn",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "narrow",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "提醒设计者把分数可见性视为社会信息变量，并分开互动、情绪、享受与投入指标。",
+      "doNotUseFor": "数字 FPS、30 秒人工更新和实验室参与者不是实体桌游；不要推出公开或隐藏的统一优劣。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "sanctuary-scoring-review",
+      "useModes": [
+        "case_study",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "识别同一目标同时高效得分并触发结束时，其他选择可能被体验为诱饵的症状。",
+      "doNotUseFor": "单一评者且出版方供样；不要据此判定客观失衡、最佳策略或总体玩家偏好。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "point-salad-scoring-review",
+      "useModes": [
+        "case_study",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "观察公开个人计分条件如何让自利、阻断、放弃和适应行动在桌面上可推断。",
+      "doNotUseFor": "评者只记录五局且为供样；不要外推多人阻断偏好、长期策略或平衡。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    }
+  ]
+}

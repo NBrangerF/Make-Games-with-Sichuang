@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "itemId": "systematic-unit-03-mechanisms-information-interaction-zh-CN",
+  "titleZh": "单元 3：机制、信息与互动",
+  "contentMode": "original_complete",
+  "language": "zh-CN",
+  "version": "1.0.0",
+  "authorship": {
+    "author": "落桌",
+    "production": "Codex 基于项目研究与列明来源完成原创综合",
+    "humanReviewRequired": false
+  },
+  "learningOutcome": "把一项规则写成由触发、行动权限、信息可见性、状态变化、他人回应与反馈组成的可测试因果关系。",
+  "sourceIds": [
+    "game-design-concepts",
+    "mda-framework",
+    "five-part-model",
+    "crew-limited-communication-rules",
+    "decrypto-clue-interception-rules",
+    "gil-hova-interaction-slides",
+    "faidutti-indirect-interaction",
+    "dune-imperium-deck-worker-diary",
+    "daniel-information-overload"
+  ],
+  "sourceUrls": [
+    "https://gamedesignconcepts.wordpress.com/2009/07/06/level-3-formal-elements-of-games/",
+    "https://aaai.org/papers/ws04-04-001-mda-a-formal-approach-to-game-design-and-game-research/",
+    "https://www.clei.org/cleiej/index.php/cleiej/article/view/473",
+    "https://www.thamesandkosmos.com/manuals/full/691868_Crew_Manual.pdf",
+    "https://www.scorpionmasque.com/sites/scorpionmasque.com/files/decrypto_en_rules_20sep2019_1.pdf",
+    "https://ubm-twvideo01.s3.amazonaws.com/o1/vault/gdc2019/presentations/Hova_Gil_Why_Indirect_Zero.pdf",
+    "https://faidutti.com/blog/blog/2022/04/27/indirect-interaction/",
+    "https://news.direwolfdigital.com/dune-imperium-designer-diary-1-beginnings/",
+    "https://daniel.games/information-overload/"
+  ],
+  "publication": {
+    "visibility": "internal",
+    "status": "published-internal",
+    "rightsBasis": "本站原创综合；来源仅用于研究、归属与事实核验。"
+  },
+  "file": "content/learning-units/systematic-unit-03-mechanisms-information-interaction-zh-CN.md",
+  "updatedAt": "2026-08-22"
+}

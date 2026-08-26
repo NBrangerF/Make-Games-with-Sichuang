@@ -1,0 +1,162 @@
+{
+  "schemaVersion": 1,
+  "method": "moderated-beginner-resource-site-usability",
+  "evidenceClass": "fictional_example",
+  "sessionStatus": "recorded",
+  "campaignRound": "pilot",
+  "productVersion": "fictional-build-do-not-count",
+  "participant": {
+    "alias": "FX01",
+    "track": "full",
+    "tabletopDesignExperience": "none",
+    "usedSiteVersionBefore": false,
+    "supportConfiguration": ["keyboard"]
+  },
+  "consent": {
+    "participation": false,
+    "deidentifiedNotes": false,
+    "withdrawalExplained": false,
+    "screenRecording": false,
+    "audioRecording": false
+  },
+  "privacy": {
+    "containsRealName": false,
+    "containsContactDetails": false,
+    "containsRawRecording": false,
+    "localOnly": true,
+    "deleteBy": ""
+  },
+  "environment": {
+    "baseUrl": "https://example.invalid/#path",
+    "buildId": "fictional-build-do-not-count",
+    "device": "fictional laptop",
+    "browser": "fictional browser",
+    "viewport": "1280x800",
+    "inputMode": "keyboard",
+    "routeAtStart": "#path",
+    "disposableProfileConfirmed": true
+  },
+  "tasks": [
+    {
+      "taskId": "N1",
+      "status": "completed",
+      "startedAt": "2026-08-21T09:00:00+08:00",
+      "endedAt": "2026-08-21T09:03:20+08:00",
+      "observedActions": ["从卡点进入最小原型指南"],
+      "participantWords": ["这一轮只问货物会不会被留下。"],
+      "firstDeviation": "",
+      "recovery": "",
+      "interventions": [],
+      "severity": "none",
+      "candidateCause": "",
+      "candidateRepair": "",
+      "retestRequired": false,
+      "taskData": {
+        "destinationHash": "#path",
+        "stageFound": true,
+        "nextStepExplained": true,
+        "elapsedSeconds": 200,
+        "taskHelpCount": 0,
+        "neutralPromptCount": 0,
+        "unassisted": true
+      }
+    },
+    {
+      "taskId": "R1",
+      "status": "partial",
+      "startedAt": "2026-08-21T09:03:20+08:00",
+      "endedAt": "2026-08-21T09:10:00+08:00",
+      "observedActions": ["选择第一次把点子做上桌", "把第一条资源称为最高排名"],
+      "participantWords": ["排在最前面，应该是网站最推荐的。"],
+      "firstDeviation": "把入口顺序当成质量排名",
+      "recovery": "主持人指向入口证据边界后能够说明用途限制",
+      "interventions": [
+        {
+          "kind": "task_help",
+          "at": "2026-08-21T09:08:40+08:00",
+          "detail": "请指出页面上哪里说明了这些资源的排序含义。"
+        }
+      ],
+      "severity": "serious",
+      "candidateCause": "入口说明与第一条结果的视觉邻近仍像推荐排序",
+      "candidateRepair": "在结果计数旁重复显示“入口不是排名”，不改变筛选逻辑",
+      "retestRequired": true,
+      "taskData": {
+        "entryPoint": "第一次把点子做上桌",
+        "resourceTitle": "Resources to Teach Strategy Game Design",
+        "fitExplained": true,
+        "boundaryExplained": true,
+        "rankingMisread": true,
+        "elapsedSeconds": 400,
+        "taskHelpCount": 1,
+        "unassisted": false
+      }
+    },
+    {
+      "taskId": "W1",
+      "status": "completed",
+      "startedAt": "2026-08-21T09:12:00+08:00",
+      "endedAt": "2026-08-21T09:38:00+08:00",
+      "observedActions": ["显式完成五次记录与交接", "把指定事件标为主持演练"],
+      "participantWords": ["导入只是复制来源，不是网站替我选机制。"],
+      "firstDeviation": "",
+      "recovery": "",
+      "interventions": [],
+      "severity": "none",
+      "candidateCause": "",
+      "candidateRepair": "",
+      "retestRequired": false,
+      "taskData": {
+        "experienceIntentRecordId": "fictional-intent-01",
+        "coreLoopRecordId": "fictional-loop-01",
+        "prototypeScopeRecordId": "fictional-scope-01",
+        "testPlanRecordId": "fictional-plan-01",
+        "playtestSessionRecordId": "fictional-session-01",
+        "mainQuestion": "玩家会为了下一港口需求保留货物吗？",
+        "observablePrediction": "至少一次放弃当前订单并保留匹配下一港口的货物。",
+        "counterSignal": "每次都立即出售可得分货物。",
+        "explicitHandoffs": true,
+        "scriptedEventLabeledAsDrill": true,
+        "elapsedSeconds": 1560,
+        "taskHelpCount": 0,
+        "unassisted": true
+      }
+    },
+    {
+      "taskId": "D1",
+      "status": "completed",
+      "startedAt": "2026-08-21T09:38:00+08:00",
+      "endedAt": "2026-08-21T09:44:00+08:00",
+      "observedActions": ["刷新工具深链", "导出完整项目包"],
+      "participantWords": ["这个文件没有我的纸面原型，也不代表游戏完成了。"],
+      "firstDeviation": "",
+      "recovery": "",
+      "interventions": [],
+      "severity": "none",
+      "candidateCause": "",
+      "candidateRepair": "",
+      "retestRequired": false,
+      "taskData": {
+        "routeRestored": true,
+        "recordsRestored": true,
+        "projectExportDownloaded": true,
+        "expectedCategories": ["experience_intent_records", "core_loop_records", "prototype_scope_records", "test_plans", "playtest_sessions"],
+        "localBoundaryExplained": true,
+        "recordCountMisreadAsQuality": false,
+        "elapsedSeconds": 360,
+        "taskHelpCount": 0,
+        "unassisted": true
+      }
+    }
+  ],
+  "sessionSummary": {
+    "workingCases": ["无需帮助找到最小原型下一步", "五类记录和项目包可追溯"],
+    "failureCases": ["把资源入口的第一条结果误读为质量排名"],
+    "criticalIssues": [],
+    "seriousIssues": ["R1-ranking-order-misread"],
+    "isolatedFactor": "入口边界只出现在入口说明上，结果列表首项仍触发排名暗示",
+    "repairBeforeRetest": ["仅增加结果区的非排名提示，然后复测 R1 与原先能正确理解的工作案例"],
+    "nextResearchStep": "repair_and_retest",
+    "rationale": "这是虚构示例，只展示怎样从失败案例形成单变量修订，不能计入参与者人数。"
+  }
+}

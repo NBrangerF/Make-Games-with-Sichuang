@@ -1,0 +1,383 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "player-symptom-diagnosis",
+    "title": "把玩家抱怨变成可测试问题",
+    "question": "玩家说拖、乱、没参与感或规则难找，我不知道应该改哪里。",
+    "outcome": "先保留版本、群体、局面、动作和后果，再把评价改写成一个可观察问题；不要从单条长评推断所有玩家。",
+    "resourceIds": [
+      "ptt-dadaocheng-downtime",
+      "vocus-spirit-island-player",
+      "ptt-parent-child-boardgame",
+      "ptt-im-the-boss-house-rules",
+      "ptt-rulebook-lookup-friction",
+      "ptt-mad-boardgame-shop-teach",
+      "vocus-deaf-event-access",
+      "special-needs-boardgame-adjustment"
+    ],
+    "evidenceBoundary": "这些玩家长评、家庭记录、一手无障碍经历与教学综述用于发现症状和设计候选，不代表总体偏好，也不能证明某项修订、适配或教学方法已经有效。"
+  },
+  "resources": [
+    {
+      "id": "ptt-dadaocheng-downtime",
+      "title": "Dadaocheng 翻轉大稻埕",
+      "creator": "PTT BoardGame 板使用者",
+      "href": "https://www.ptt.cc/bbs/BoardGame/M.1451048868.A.808.html",
+      "type": "繁中玩家长评",
+      "evidenceType": "community_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "zh"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "把共享盘面持续变化、无法提前规划、技巧差距与四人等待感连接起来，为测量决定开始时刻和预案失效提供案例。",
+      "limitation": "记录旧版本与少量局次，作者对最佳人数和等待的判断不能外推到当前版本、所有群体或一般轮抽游戏。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "vocus-spirit-island-player",
+      "title": "〖桌遊心得〗精靈島 Spirit Island",
+      "creator": "桌遊拌飯",
+      "href": "https://vocus.cc/article/5f38dd8ffd89780001d1d481",
+      "type": "繁中玩家长评",
+      "evidenceType": "community_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "zh"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "从玩家视角描述复杂度递进、元素记忆负担，以及 Alpha Player 如何替他人完成思考，并解释不完整信息为何可能促成请求和提议。",
+      "limitation": "一位熟悉玩家对一款高复杂度合作游戏的解释，不是防止四分卫或适合新手的效果研究；群体规范会改变体验。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "ptt-parent-child-boardgame",
+      "title": "教兒子玩桌遊～經驗分享 熊熊公園",
+      "creator": "PTT BoardGame 板使用者",
+      "href": "https://www.ptt.cc/bbs/BoardGame/M.1658477276.A.DBA.html",
+      "type": "繁中亲子玩家复盘",
+      "evidenceType": "community_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "zh"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "具体讨论孩子对目标、行动后果、输局和成人策略提示的反应，显示低文字、可爱主题或骰子可见不等于决定容易理解。",
+      "limitation": "单一家庭的长期观察不是儿童发展研究，成人主持方式、年龄和熟悉度共同影响结果；不可据此划定统一适龄。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "ptt-im-the-boss-house-rules",
+      "title": "Re: I'm the boss 我是大老闆遊戲心得",
+      "creator": "PTT BoardGame 板使用者",
+      "href": "https://www.ptt.cc/bbs/BoardGame/M.1527278624.A.34D.html",
+      "type": "繁中玩家复盘与家规记录",
+      "evidenceType": "community_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "zh"
+      ],
+      "stages": [
+        "核心系统",
+        "测试与反馈"
+      ],
+      "useful": "记录一组玩家用限制招募、保障角色参与和抑制囤牌等家规回应沉默、缺少筹码与等待，为家规版本记录提供实例。",
+      "limitation": "两次聚会和一组玩家的家规会改变经济与节奏；不能证明原规则普遍有缺陷，也不能证明修改已修复问题。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "ptt-rulebook-lookup-friction",
+      "title": "縱橫股海、牙馬加、捕蜂高手",
+      "creator": "PTT BoardGame 板使用者",
+      "href": "https://www.ptt.cc/bbs/BoardGame/M.1538905647.A.7F2.html",
+      "type": "繁中玩家多游戏心得",
+      "evidenceType": "community_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "zh"
+      ],
+      "stages": [
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "保留玩家在游玩中反复查规则、难以在大张规则纸定位信息的具体抱怨，也对比不同记忆与观察技能带来的体验。",
+      "limitation": "单一作者的少量体验没有正式计时或媒介对照；只能生成查询任务和技能差异假设，不能评价规则书整体质量。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "ptt-mad-boardgame-shop-teach",
+      "title": "瘋狂桌遊店教學流程／心得",
+      "creator": "PTT BoardGame 板使用者",
+      "href": "https://www.ptt.cc/bbs/BoardGame/M.1562511725.A.7A4.html",
+      "type": "繁中首次教学失败复盘",
+      "evidenceType": "community_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "zh"
+      ],
+      "stages": [
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "描述两个阶段高度依赖时，按表面流程教学怎样让前阶段选择失去意义，并尝试从后阶段目标反推教学顺序。",
+      "limitation": "一次教学后的自我复盘，作者也仍在试验；逆序说明与短版方案是候选做法，不是已验证教学协议。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "vocus-deaf-event-access",
+      "title": "〖回憶之錄〗熱愛生活的冒險旅程",
+      "creator": "小猴",
+      "href": "https://vocus.cc/article/64e56e69fd89780001236414",
+      "type": "聋人组织者与玩家一手回顾",
+      "evidenceType": "community_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "zh"
+      ],
+      "stages": [
+        "测试与反馈",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "具体记录手语翻译、读唇视线、多人同时发言、主持节奏、分组讨论、文字备份与活动组织劳动怎样影响聋人玩家参与。",
+      "limitation": "单一组织者在特定群体和活动中的一手经历，且部分案例属于剧本活动；不能外推为所有聋人或听障玩家的统一方案。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "special-needs-boardgame-adjustment",
+      "title": "應用桌上遊戲於特殊需求學生之調整方式",
+      "creator": "陳介宇、周曉蘭、許晴婷",
+      "href": "https://www.researchgate.net/publication/349519014_The_Adjustment_of_Using_Board_Games_in_Teaching_Students_With_Special_Needs_yingyongzhuoshangyouxiyuteshuxuqiuxueshengzhidiaozhengfangshi",
+      "type": "中文特教桌游调整综述",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "zh"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "按主题、规则、界面、胜利条件、组件、人数与时间整理候选调整，并提供流程卡、视觉提示、持牌器、固定位置、触觉和形状编码等例子。",
+      "limitation": "文章是教学与特教实践框架而非适配效果试验，学生经验主要经教育者表达；建议仍须由具体玩家共同选择和复测。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "ptt-dadaocheng-downtime",
+      "useModes": [
+        "case_study",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "把等待拆成回合秒数、决定何时开始、共享状态变化和预案失效，形成下一轮可计时观察。",
+      "doNotUseFor": "不要采用旧版本少量局次推断当前平衡、最佳人数或所有玩家对停机时间的容忍度。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "vocus-spirit-island-player",
+      "useModes": [
+        "case_study",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "从玩家原话讨论合作游戏中建议、代算、决定所有权、不完整信息和认知负担怎样相互影响。",
+      "doNotUseFor": "不要用单篇心得证明《精灵岛》消除了四分卫、适合所有群体，或隐藏信息普遍提高玩家能动性。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "ptt-parent-child-boardgame",
+      "useModes": [
+        "case_study",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "检查儿童是否理解选择目的和后果、成人提示是否替代决定，以及输局与继续参与之间的关系。",
+      "doNotUseFor": "不要从一个家庭划定统一年龄、推荐游戏或教养方法；低文字和可爱主题也不能替代目标儿童测试。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "ptt-im-the-boss-house-rules",
+      "useModes": [
+        "case_study",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "学习记录家规回应的原始症状、修改文本和参与后果，并把修订当成需要比较测试的版本。",
+      "doNotUseFor": "不要把一组玩家两次聚会的多条家规当成原作缺陷清单、平衡结论或已经证明有效的修复。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "ptt-rulebook-lookup-friction",
+      "useModes": [
+        "case_study",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "partial",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "把玩家的规则难查抱怨改写为目标、搜索词、首次查看位置、查找时间和恢复步骤的盲测任务。",
+      "doNotUseFor": "不要从一位作者的少量体验比较规则媒介优劣，或在没有观察查询行为时断言问题来自版式。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "ptt-mad-boardgame-shop-teach",
+      "useModes": [
+        "case_study",
+        "diagnose",
+        "learn"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "分析教学顺序是否满足玩家作出前阶段决定所需的后续目标和概念，并设计短版示范。",
+      "doNotUseFor": "不要把一次教学失败后的逆序讲解设想当成通用协议；需要观察陌生玩家是否真的能独立执行。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "vocus-deaf-event-access",
+      "useModes": [
+        "case_study",
+        "diagnose",
+        "learn"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "把沟通无障碍拆成发言顺序、读唇视线、手语翻译、主持节奏、分组讨论、书面备份和组织劳动。",
+      "doNotUseFor": "不要把一位聋人组织者的经验转成所有聋人或听障玩家都应接受的固定流程，也不要忽略玩家本人选择。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "special-needs-boardgame-adjustment",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "按主题、规则、界面、胜利条件、组件、人数和时间生成候选调整，再与具体学习者共同选择和复测。",
+      "doNotUseFor": "不要把教育者整理的调整例子当成适配效果已验证，也不要用诊断标签替代玩家的具体任务和偏好。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    }
+  ]
+}

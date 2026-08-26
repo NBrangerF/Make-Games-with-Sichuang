@@ -1,0 +1,127 @@
+{
+  "schemaVersion": 1,
+  "method": "moderated-design-aid-loop-usability",
+  "sessionStatus": "blank",
+  "prototypeVersion": "design-aid-loop-low-fi-v1",
+  "participantAlias": "",
+  "consent": {
+    "participation": false,
+    "notes": false,
+    "withdrawalExplained": false,
+    "screenRecording": false
+  },
+  "privacy": {
+    "containsRealName": false,
+    "containsContactDetails": false,
+    "containsRawRecording": false,
+    "localOnly": true,
+    "privateReflectionRecorded": false,
+    "privateReflectionExcludedFromShare": true,
+    "deleteBy": ""
+  },
+  "tasks": [
+    {
+      "taskId": "T1",
+      "status": "not_started",
+      "observedActions": [],
+      "participantWords": [],
+      "firstDeviation": "",
+      "facilitatorIntervention": "",
+      "severity": "none",
+      "candidateRepair": "",
+      "retestRequired": false,
+      "taskData": {
+        "desiredArtifact": "",
+        "chosenMode": "not_assessed",
+        "modeChangedAfterPreview": false
+      }
+    },
+    {
+      "taskId": "T2",
+      "status": "not_started",
+      "observedActions": [],
+      "participantWords": [],
+      "firstDeviation": "",
+      "facilitatorIntervention": "",
+      "severity": "none",
+      "candidateRepair": "",
+      "retestRequired": false,
+      "taskData": {
+        "promptAction": "not_assessed",
+        "refusalAvailable": false,
+        "authoredPromptUsed": false
+      }
+    },
+    {
+      "taskId": "T3",
+      "status": "not_started",
+      "observedActions": [],
+      "participantWords": [],
+      "firstDeviation": "",
+      "facilitatorIntervention": "",
+      "severity": "none",
+      "candidateRepair": "",
+      "retestRequired": false,
+      "taskData": {
+        "ruleArtifactProduced": false,
+        "supportingSignalWritten": false,
+        "counterSignalWritten": false
+      }
+    },
+    {
+      "taskId": "T4",
+      "status": "not_started",
+      "observedActions": [],
+      "participantWords": [],
+      "firstDeviation": "",
+      "facilitatorIntervention": "",
+      "severity": "none",
+      "candidateRepair": "",
+      "retestRequired": false,
+      "taskData": {
+        "symptomRewrittenAsSituation": false,
+        "observedActionWritten": false,
+        "counterSignalWritten": false
+      }
+    },
+    {
+      "taskId": "T5",
+      "status": "not_started",
+      "observedActions": [],
+      "participantWords": [],
+      "firstDeviation": "",
+      "facilitatorIntervention": "",
+      "severity": "none",
+      "candidateRepair": "",
+      "retestRequired": false,
+      "taskData": {
+        "evidenceState": "not_assessed",
+        "actualTargetParticipantsPresent": false,
+        "selfTestLabeledAsExternal": false
+      }
+    },
+    {
+      "taskId": "T6",
+      "status": "not_started",
+      "observedActions": [],
+      "participantWords": [],
+      "firstDeviation": "",
+      "facilitatorIntervention": "",
+      "severity": "none",
+      "candidateRepair": "",
+      "retestRequired": false,
+      "taskData": {
+        "sharePreviewOpened": false,
+        "privateReflectionIncluded": false,
+        "privateReflectionDeleted": false
+      }
+    }
+  ],
+  "sessionSummary": {
+    "criticalIssues": [],
+    "seriousIssues": [],
+    "repairsBeforeRetest": [],
+    "nextResearchStep": "hold",
+    "rationale": ""
+  }
+}

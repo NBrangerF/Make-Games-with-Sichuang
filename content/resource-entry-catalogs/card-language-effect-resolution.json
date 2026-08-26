@@ -1,0 +1,378 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "card-language-effect-resolution",
+    "title": "设计卡牌语言、关键词与效果结算",
+    "question": "同一句卡文每桌解释不同，多个触发不知道谁先，若/然后/改为失败后争议，或两张牌互相触发不停；我该改文字、关键词、时序还是组合？",
+    "outcome": "先把能力拆成七槽并选定结算窗口；固定逻辑词与关键词展开，用事件—状态轨迹验证组合和循环，再从真实座位完成读取、查询与恢复。",
+    "resourceIds": [
+      "magic-comprehensive-rules-timing",
+      "arkham-lcg-ability-timing-rules",
+      "netrunner-comprehensive-ability-rules",
+      "marvel-champions-timing-update",
+      "daniel-games-card-icons",
+      "challengers-timing-keyphrases-diary",
+      "cardscript-unified-language-paper",
+      "sarah-reed-visual-card-accessibility"
+    ],
+    "evidenceBoundary": "组合当前正式规则、设计师与编辑实践、形式研究、无障碍资料和玩家症状；它们支持建立能力语法、统一时点、明确同时/替代/回应/状态检查、验证组合与循环并测试关键词/图标/查询/代读，不提供最佳关键词数、图标比例、窗口数、栈深、组合长度、循环次数、卡文字数、字号或可读距离。"
+  },
+  "resources": [
+    {
+      "id": "magic-comprehensive-rules-timing",
+      "title": "Magic: The Gathering Comprehensive Rules (2026-08-07)",
+      "creator": "Wizards of the Coast",
+      "href": "https://media.wizards.com/2026/downloads/MagicCompRules%2020260807.pdf",
+      "type": "优先权、堆叠、状态动作、触发、替代与循环的完整规则",
+      "evidenceType": "official_rules",
+      "format": "pdf",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "规则与信息",
+        "测试与反馈"
+      ],
+      "useful": "比较完整响应系统中优先权、同时触发、逐项结算、状态检查、替代效果与循环终止怎样协作。",
+      "limitation": "高度复杂且面向持续扩展的竞技卡牌游戏，不能直接当作新手桌游的默认时序模型。",
+      "status": "full_text_reviewed",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "arkham-lcg-ability-timing-rules",
+      "title": "Arkham Horror: The Card Game Rules Reference",
+      "creator": "Fantasy Flight Games",
+      "href": "https://images-cdn.fantasyflightgames.com/filer_public/50/be/50bed4be-034c-4ed5-9ce6-8509ce8d3352/ahc60_rules_reference_eng-compressed.pdf",
+      "type": "能力类型、启动序列、when/after、then、替代与限制规则",
+      "evidenceType": "official_rules",
+      "format": "pdf",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "规则与信息",
+        "测试与反馈"
+      ],
+      "useful": "拆解启动、静态、强制、反应、揭示和关键词能力，并验证逻辑词、费用、限制与时点。",
+      "limitation": "是复杂 LCG 的查询参考，不是首局教学材料，也不证明其术语最适合其他受众。",
+      "status": "full_text_reviewed",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "netrunner-comprehensive-ability-rules",
+      "title": "Netrunner Comprehensive Rules v26.03",
+      "creator": "Null Signal Games",
+      "href": "https://rules.nullsignal.games/",
+      "type": "费用：效果、指令、打断、checkpoint、效果类型与循环规则",
+      "evidenceType": "official_rules",
+      "format": "reference",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "规则与信息",
+        "测试与反馈"
+      ],
+      "useful": "研究不依赖统一堆叠的事件—打断—检查点模型，以及强制/可选无限循环的退出责任。",
+      "limitation": "规则面向成熟竞技卡池；版本会更新，行动时必须重新核对。",
+      "status": "full_text_reviewed",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "marvel-champions-timing-update",
+      "title": "Mission Updates: Marvel Champions Rules Reference 1.8",
+      "creator": "Fantasy Flight Games rules team",
+      "href": "https://www.fantasyflightgames.com/en/news/2026/7/23/mission-updates/",
+      "type": "将关键词、状态与能力统一为同一游戏语言的官方更新说明",
+      "evidenceType": "official_update",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "观察持续运营游戏怎样减少特殊时序优先级，并解释改动理由与具体结算变化。",
+      "limitation": "多项规则与卡池同时变化，不能单独归因理解、速度或平衡改善。",
+      "status": "article_level",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "daniel-games-card-icons",
+      "title": "Icons",
+      "creator": "Daniel Piechnick",
+      "href": "https://daniel.games/icons/",
+      "type": "图标门槛、微缩、歧义与文字修饰的设计师实践",
+      "evidenceType": "designer_article",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "规则与信息",
+        "呈现与发布",
+        "测试与反馈"
+      ],
+      "useful": "用相似图标失败案例检查何时应保留正文，以及图标在真实尺寸是否仍可辨。",
+      "limitation": "强烈的设计师立场不是对照研究，图标也不必然比文字更可访问。",
+      "status": "article_level",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "challengers-timing-keyphrases-diary",
+      "title": "Designer Diary: Challengers!",
+      "creator": "Johannes Krenner and Markus Slawitscheck",
+      "href": "https://boardgamegeek.com/blog/1/blogpost/152306/designer-diary-challengers",
+      "type": "从玩家提问形成时点短语并删除混淆交互的设计日志",
+      "evidenceType": "designer_diary",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "规则与信息",
+        "测试与反馈"
+      ],
+      "useful": "观察关键词模板如何从反复出现的真实时点问题形成，以及何时应删除交互。",
+      "limitation": "创作者回顾未提供原始测试数据，不能把提问减少单独归因于关键词。",
+      "status": "article_level",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "cardscript-unified-language-paper",
+      "title": "Towards a Unified Language for Card Game Design",
+      "creator": "CWI researchers",
+      "href": "https://ir.cwi.nl/pub/32967/32967.pdf",
+      "type": "CardScript 卡牌设计统一语言与状态回放研究",
+      "evidenceType": "research_paper",
+      "format": "pdf",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "最小原型",
+        "规则与信息"
+      ],
+      "useful": "研究如何描述布局、牌堆、动作、条件、阶段、事件与状态，并支持记录、回放和 what-if。",
+      "limitation": "短篇早期研究，文本记法复杂度和新手界面仍未解决，不能视为成熟创作标准。",
+      "status": "full_text_reviewed",
+      "lastCheckedAt": "2026-08-20"
+    },
+    {
+      "id": "sarah-reed-visual-card-accessibility",
+      "title": "Interview with Sarah Reed: Visually Accessible Games",
+      "creator": "Weird Giraffe Games / Sarah Reed",
+      "href": "https://weirdgiraffegames.com/carla/2020/02/14/interview-with-sarah-reed-visually-accessible-games/",
+      "type": "隐藏牌代读、图标、对比、开放信息与远座阅读的一手访谈",
+      "evidenceType": "first_person_interview",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "规则与信息",
+        "呈现与发布",
+        "测试与反馈"
+      ],
+      "useful": "提出隐藏手牌代读、简单大图标、公开信息和对桌读取的具体测试任务。",
+      "limitation": "来自特定设计师家庭的经验，不能概括所有盲人或低视力玩家。",
+      "status": "full_text_reviewed",
+      "lastCheckedAt": "2026-08-20"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "magic-comprehensive-rules-timing",
+      "useModes": [
+        "lookup",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "directory",
+      "transferability": "conditional",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "核对完整优先权、同时触发、替代、状态动作和循环规则，并抽取可比较的时序字段。",
+      "doNotUseFor": "不要默认新手原型也需要同等复杂度，行动前应核对最新版本。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "arkham-lcg-ability-timing-rules",
+      "useModes": [
+        "lookup",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "directory",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "比较能力类型、启动序列、when/after、then、替代和次数限制。",
+      "doNotUseFor": "不要把规则参考当作首局教学或通用最佳术语。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "netrunner-comprehensive-ability-rules",
+      "useModes": [
+        "lookup",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "directory",
+      "transferability": "conditional",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "研究事件—打断—检查点结构、同时效果和强制/可选循环退出责任。",
+      "doNotUseFor": "不要直接复制竞技卡牌规则密度或假定版本长期不变。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "marvel-champions-timing-update",
+      "useModes": [
+        "learn",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "观察官方团队如何把关键词、状态与能力统一到同一触发语言并说明改动理由。",
+      "doNotUseFor": "不能把多项更新归因为单项理解、速度或平衡改善。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "daniel-games-card-icons",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "设置图标采用门槛、微缩检查和相似图标误读任务。",
+      "doNotUseFor": "不要据作者偏好推断图标普遍优于文字。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "challengers-timing-keyphrases-diary",
+      "useModes": [
+        "learn",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "从反复提问形成时点短语，并比较保留模板与删除交互。",
+      "doNotUseFor": "创作者回顾不能证明问题发生率或单项因果。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "cardscript-unified-language-paper",
+      "useModes": [
+        "learn",
+        "case_study",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "把布局、牌堆、条件、动作、事件和状态变成可记录、回放的描述。",
+      "doNotUseFor": "早期短篇研究不是成熟新手创作界面。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "sarah-reed-visual-card-accessibility",
+      "useModes": [
+        "learn",
+        "diagnose",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "建立隐藏牌代读、图标、对比、公开信息和远座阅读任务。",
+      "doNotUseFor": "个体与家庭经验不能代表所有视觉障碍玩家。",
+      "reviewedAt": "2026-08-20",
+      "status": "reviewed"
+    }
+  ]
+}

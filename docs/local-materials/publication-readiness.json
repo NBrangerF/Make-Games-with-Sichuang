@@ -1,0 +1,200 @@
+{
+  "schemaVersion": 1,
+  "reviewedAt": "2026-08-21",
+  "purpose": "Conservative internal publication gate for indexed local course materials; not a legal opinion or publication permission.",
+  "policy": {
+    "defaultDecision": "internal_reference_only",
+    "derivedUse": "original_summary_only",
+    "sourceFileDirectPublicationAllowed": false,
+    "publicCandidateRequiresAllGatesResolved": true,
+    "originalFilesCopiedToRepository": false,
+    "scoresOrAutomaticClearance": false
+  },
+  "allowedValues": {
+    "decision": [
+      "internal_reference_only",
+      "permission_review_required",
+      "public_copy_candidate",
+      "approved_for_publication",
+      "withdrawn"
+    ],
+    "gateState": [
+      "unresolved",
+      "documented",
+      "not_applicable"
+    ]
+  },
+  "requiredGates": [
+    "authorship",
+    "coCreatorRights",
+    "institutionalOrCommissioningRights",
+    "thirdPartyText",
+    "thirdPartyMedia",
+    "personalInformation",
+    "minorSafeguarding",
+    "publicationCopy",
+    "attribution",
+    "licenseOrPermission",
+    "withdrawalOwner"
+  ],
+  "profiles": [
+    {
+      "id": "camp-course-2023-review",
+      "collectionId": "camp-course-2023",
+      "decision": "internal_reference_only",
+      "derivedUse": "original_summary_only",
+      "gates": {
+        "authorship": "unresolved",
+        "coCreatorRights": "unresolved",
+        "institutionalOrCommissioningRights": "unresolved",
+        "thirdPartyText": "unresolved",
+        "thirdPartyMedia": "unresolved",
+        "personalInformation": "unresolved",
+        "minorSafeguarding": "unresolved",
+        "publicationCopy": "unresolved",
+        "attribution": "unresolved",
+        "licenseOrPermission": "unresolved",
+        "withdrawalOwner": "unresolved"
+      },
+      "openQuestions": [
+        "确认课件、工作表和棋盘模板的作者、共同作者及委托关系。",
+        "确认学校或营地名称、模板、课堂照片、商业游戏素材和第三方文字的使用范围。",
+        "任何学生信息或作品均另走未成年人和个人信息审查，不因已在课堂使用而自动可公开。"
+      ]
+    },
+    {
+      "id": "original-design-course-2019-2020-review",
+      "collectionId": "original-design-course-2019-2020",
+      "decision": "internal_reference_only",
+      "derivedUse": "original_summary_only",
+      "gates": {
+        "authorship": "unresolved",
+        "coCreatorRights": "unresolved",
+        "institutionalOrCommissioningRights": "unresolved",
+        "thirdPartyText": "unresolved",
+        "thirdPartyMedia": "unresolved",
+        "personalInformation": "unresolved",
+        "minorSafeguarding": "unresolved",
+        "publicationCopy": "unresolved",
+        "attribution": "unresolved",
+        "licenseOrPermission": "unresolved",
+        "withdrawalOwner": "unresolved"
+      },
+      "openQuestions": [
+        "确认课程是否由个人独立创作，或包含共同作者、学校、雇佣/委托安排。",
+        "逐项核对商业游戏图片、规则摘录、模板来源与可公开范围。",
+        "为网站另写不复制原文和版式的公开副本，并独立记录署名与撤回负责人。"
+      ]
+    },
+    {
+      "id": "hanzi-board-game-course-2022-review",
+      "collectionId": "hanzi-board-game-course-2022",
+      "decision": "internal_reference_only",
+      "derivedUse": "original_summary_only",
+      "gates": {
+        "authorship": "unresolved",
+        "coCreatorRights": "unresolved",
+        "institutionalOrCommissioningRights": "unresolved",
+        "thirdPartyText": "unresolved",
+        "thirdPartyMedia": "unresolved",
+        "personalInformation": "unresolved",
+        "minorSafeguarding": "unresolved",
+        "publicationCopy": "unresolved",
+        "attribution": "unresolved",
+        "licenseOrPermission": "unresolved",
+        "withdrawalOwner": "unresolved"
+      },
+      "openQuestions": [
+        "文件名中的署名线索和 DingTalk 元数据不是作者或授权证明。",
+        "确认学校、课程合作者、二年级/五年级参与者与模板权利边界。",
+        "Pages 文件当前只做元数据清单；未取得可靠正文和权利证据前不得据此生成公开表格。"
+      ]
+    },
+    {
+      "id": "social-science-board-game-course-2023-review",
+      "collectionId": "social-science-board-game-course-2023",
+      "decision": "internal_reference_only",
+      "derivedUse": "original_summary_only",
+      "gates": {
+        "authorship": "unresolved",
+        "coCreatorRights": "unresolved",
+        "institutionalOrCommissioningRights": "unresolved",
+        "thirdPartyText": "unresolved",
+        "thirdPartyMedia": "unresolved",
+        "personalInformation": "unresolved",
+        "minorSafeguarding": "unresolved",
+        "publicationCopy": "unresolved",
+        "attribution": "unresolved",
+        "licenseOrPermission": "unresolved",
+        "withdrawalOwner": "unresolved"
+      },
+      "openQuestions": [
+        "PDF 的 Keynote 生成元数据和课程标题不能证明作者、组织或许可范围。",
+        "确认课程介绍中的名称、图像、教学目标和第三方资料能否进入公开副本。",
+        "课程目标不得被改写为已实现的学习成效或社会影响。"
+      ]
+    }
+  ],
+  "materials": [
+    "camp-course-2023/第二课时/团队共识方法·秘籍.pdf",
+    "camp-course-2023/第二课时/桌游反馈表 get bit.pdf",
+    "camp-course-2023/第二课时/桌游设计第二课时.pptx",
+    "camp-course-2023/第二课时/get bit 秘籍纸.pdf",
+    "camp-course-2023/第三课时/试玩反馈单.pdf",
+    "camp-course-2023/第三课时/主题学习单.pdf",
+    "camp-course-2023/第三课时/桌游反馈表 走开，大坏蛋！.pdf",
+    "camp-course-2023/第三课时/桌游设计第三课时 .pptx",
+    "camp-course-2023/第四课时/游戏机制·秘籍.pdf",
+    "camp-course-2023/第四课时/主题学习单.pdf",
+    "camp-course-2023/第四课时/桌游反馈表 方程式D.pdf",
+    "camp-course-2023/第四课时/桌游设计第四课时.pptx",
+    "camp-course-2023/第五课时/反馈+修改 记录单.pdf",
+    "camp-course-2023/第五课时/讲解游戏·秘籍纸.pdf",
+    "camp-course-2023/第五课时/试玩反馈单.pdf",
+    "camp-course-2023/第五课时/桌游设计第五课时 .pptx",
+    "camp-course-2023/第一课时/飞行棋反馈表  .pdf",
+    "camp-course-2023/第一课时/游玩行为准则海报 光华营地.pdf",
+    "camp-course-2023/第一课时/桌游反馈表 1.pdf",
+    "camp-course-2023/第一课时/桌游设计第一课时.pptx",
+    "camp-course-2023/第一课时/sushi go 秘籍纸.pdf",
+    "camp-course-2023/空白棋盘模版/11x17_0.55_square_30x19 (1).doc",
+    "camp-course-2023/空白棋盘模版/11x17_0.82_square_13x20 (3).doc",
+    "camp-course-2023/空白棋盘模版/11x17_1.10_square_9x15 (3).doc",
+    "camp-course-2023/空白棋盘模版/11x17_16mm_hex_-_horiz_31x16.5.doc",
+    "camp-course-2023/空白棋盘模版/11x17_19mm_-_hex_-_horiz_26x13.5.doc",
+    "camp-course-2023/空白棋盘模版/11x17_26mm_hex_-_horiz_18x9.5.doc",
+    "camp-course-2023/空白棋盘模版/11x17_34mm_hex_-_horiz_14x7 (1).doc",
+    "camp-course-2023/空白棋盘模版/11x17_48mm_hex_-_horiz_10x5 (1).doc",
+    "camp-course-2023/空白棋盘模版/11x17_point68_square_15x24 (3).doc",
+    "hanzi-board-game-course-2022/创意生成表.pages",
+    "hanzi-board-game-course-2022/反馈及修改表格.pages",
+    "hanzi-board-game-course-2022/如何讲解游戏笔记.pages",
+    "hanzi-board-game-course-2022/云谷5年级融合课支持方案 by cheer21 初版.docx",
+    "hanzi-board-game-course-2022/桌面游戏设计成功标准.pages",
+    "hanzi-board-game-course-2022/桌游反馈表.pages",
+    "original-design-course-2019-2020/机制介绍.docx",
+    "original-design-course-2019-2020/如何讲解游戏笔记 2.pages",
+    "original-design-course-2019-2020/如何讲解游戏笔记.pages",
+    "original-design-course-2019-2020/什么是策略游戏.ppt",
+    "original-design-course-2019-2020/适合桌游设计的教室玩耍守则.pptx",
+    "original-design-course-2019-2020/原创桌游解构与设计课程 syllabus.pdf",
+    "original-design-course-2019-2020/原创桌游与设计 class 1.pages",
+    "original-design-course-2019-2020/原创桌游与设计 class 1.pdf",
+    "original-design-course-2019-2020/原创桌游与设计 class 2.pages",
+    "original-design-course-2019-2020/原创桌游与设计 class 2.pdf",
+    "original-design-course-2019-2020/原创桌游与设计 class 3.pages",
+    "original-design-course-2019-2020/原创桌游与设计 class 3.pdf",
+    "original-design-course-2019-2020/原创桌游与设计 class 4.pages",
+    "original-design-course-2019-2020/原创桌游与设计 class 4.pdf",
+    "original-design-course-2019-2020/原型.key",
+    "original-design-course-2019-2020/主题调查.docx",
+    "original-design-course-2019-2020/主题调查.pages",
+    "original-design-course-2019-2020/桌面游戏反馈表.docx",
+    "original-design-course-2019-2020/definition_of_a_game.pptx",
+    "original-design-course-2019-2020/Theme & Conflict.pptx",
+    "social-science-board-game-course-2023/桌游公司（桌游x社会科学） Course introduction课程介绍.pdf"
+  ],
+  "overrides": [],
+  "evidenceRegister": [],
+  "publicationCandidates": []
+}

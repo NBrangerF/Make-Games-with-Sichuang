@@ -1,0 +1,100 @@
+{
+  "schemaVersion": 1,
+  "principle": "不把不同用途、证据类型和语境的资源压成一个总分；评价用于决定怎么读、何时用和不能推出什么。",
+  "dimensions": [
+    {
+      "id": "useModes",
+      "label": "阅读方式",
+      "question": "这份资源最适合承担什么任务？",
+      "options": {
+        "learn": "从头学习",
+        "diagnose": "诊断问题",
+        "compare": "比较框架",
+        "lookup": "按需查找",
+        "case_study": "阅读案例"
+      }
+    },
+    {
+      "id": "audienceLevels",
+      "label": "适合阶段",
+      "question": "读者需要多少已有经验？",
+      "options": {
+        "beginner": "新手",
+        "intermediate": "已有原型经验",
+        "advanced": "研究或系统化分析"
+      }
+    },
+    {
+      "id": "reviewDepth",
+      "label": "本站审阅深度",
+      "question": "本站核验到了什么层级？",
+      "options": {
+        "full_text": "已读全文",
+        "article_level": "已核验文章或主要页面",
+        "metadata_only": "只核验元数据或摘要"
+      }
+    },
+    {
+      "id": "contextClarity",
+      "label": "语境清晰度",
+      "question": "作者是否说明对象、目标与使用条件？",
+      "options": {
+        "explicit": "语境明确",
+        "partial": "部分明确",
+        "weak": "语境较弱"
+      }
+    },
+    {
+      "id": "actionability",
+      "label": "可采取的动作",
+      "question": "读完后最直接能做什么？",
+      "options": {
+        "exercise": "完成练习",
+        "procedure": "执行流程",
+        "diagnostic": "使用诊断视角",
+        "example": "参照案例",
+        "directory": "继续查找资源"
+      }
+    },
+    {
+      "id": "transferability",
+      "label": "迁移范围",
+      "question": "结论能否移到别的游戏与团队？",
+      "options": {
+        "broad": "可广泛迁移",
+        "conditional": "满足条件时迁移",
+        "narrow": "主要限于原案例"
+      }
+    },
+    {
+      "id": "currencyRisk",
+      "label": "时效风险",
+      "question": "工具、链接或结论随时间失效的风险有多高？",
+      "options": {
+        "low": "低",
+        "medium": "中",
+        "high": "高"
+      }
+    },
+    {
+      "id": "rightsStatus",
+      "label": "引用与复用",
+      "question": "本站可以怎样使用这份内容？",
+      "options": {
+        "reusable_license_verified": "已核验可复用许可",
+        "link_and_summarize": "仅链接并自行概述",
+        "restricted": "受限，避免复述正文"
+      }
+    },
+    {
+      "id": "commercialContext",
+      "label": "商业语境",
+      "question": "作者是否在介绍自己的作品、服务或产品？",
+      "options": {
+        "none_disclosed": "未见直接商业推介语境",
+        "creator_or_product_context": "创作者或产品语境",
+        "unknown": "尚未确认"
+      }
+    }
+  ]
+}

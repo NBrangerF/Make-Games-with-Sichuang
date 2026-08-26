@@ -1,0 +1,737 @@
+[
+  {
+    "id": "guide-experience-intent",
+    "title": "把题材变成可测试的体验意图",
+    "stage": "体验意图",
+    "problem": "我有一个喜欢的题材或模糊感觉，却不知道第一版规则该验证什么。",
+    "outcome": "一段含玩家决定、压力、预期行为和边界的体验意图，以及一个可以被测试推翻的问题。",
+    "coreMinutes": 8,
+    "opening": "“一款海上贸易游戏”还不是设计目标。先把它改写成：玩家要在公开航线与有限货舱之间做取舍；我预计他们会为了长期位置优势放弃一次眼前得分。现在你才有东西可以拿到桌上验证。",
+    "steps": [
+      {
+        "label": "写玩家动作",
+        "prompt": "先用动词描述玩家反复做什么，不写世界观介绍。格式：玩家将反复在 A 与 B 之间选择。",
+        "example": "玩家反复在立刻交货得分，与把货物留给更远港口之间选择。"
+      },
+      {
+        "label": "写决定为何困难",
+        "prompt": "补上稀缺资源、信息不完整、时间压力或其他玩家带来的代价。没有代价的选项通常只是菜单。",
+        "example": "货舱只有三格，港口需求公开，但对手下一步航线未知。"
+      },
+      {
+        "label": "写可观察行为",
+        "prompt": "不要只写“紧张”“有策略”。写你预计在桌面上能看见什么，并允许结果与你相反。",
+        "example": "玩家会至少一次放弃当前得分，保留货物争夺下一港口。"
+      },
+      {
+        "label": "划定边界",
+        "prompt": "写目标玩家、时长、复杂度，以及本轮故意不追求的体验，避免每条反馈都把游戏拉向不同方向。",
+        "example": "面向熟悉轻中策的 3–4 人，60 分钟；本轮不验证历史模拟精度。"
+      },
+      {
+        "label": "变成一个测试问题",
+        "prompt": "把行为预测改写成能够被观察和否定的问题；不要问“好玩吗”。",
+        "example": "玩家会为了后续航线优势，主动放弃至少一次眼前得分吗？"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "只写“有趣、策略、沉浸”。",
+        "repair": "改写成玩家的决定、压力和可观察行为。"
+      },
+      {
+        "mistake": "把剧情设定当成玩家体验。",
+        "repair": "追问玩家每回合做什么，以及题材怎样改变他们对行动后果的理解。"
+      },
+      {
+        "mistake": "直接指定一长串机制。",
+        "repair": "先写机制要产生的行为，再把机制当作待测假设。"
+      },
+      {
+        "mistake": "假设所有玩家都应有同一种感受。",
+        "repair": "记录目标玩家和语境，并在测试中保留不同反应。"
+      }
+    ],
+    "whenToBreak": [
+      "主题先行、机制先行或从一种触感开始都可以；这里要求的是写清它们之间尚待验证的关系，不是强迫唯一入口。",
+      "抽象、安静或合作游戏不一定需要角色冲突；目标与阻力也可以来自信息、时间、空间或共同任务。"
+    ],
+    "exercise": {
+      "title": "四句体验意图",
+      "prompt": "依次写：玩家反复做的决定；决定为何困难；你预计看到的行为；这次只问的测试问题。",
+      "exampleOutput": "玩家在眼前得分与未来位置之间选择；货舱有限且对手航线未知；我预计玩家会保留一次高价值货物；测试时观察他们是否主动放弃即时得分。"
+    },
+    "evidenceBoundary": "这是一种把模糊意图变成测试假设的工作格式，不保证目标体验一定出现。真实玩家的行为、语言和群体语境仍决定假设是否成立。",
+    "resourceIds": [
+      "kathleen-mercury-resources",
+      "mda-framework",
+      "wingspan-interview",
+      "palm-of-your-hand-diary",
+      "james-ernest-blueprint"
+    ],
+    "claimIds": [
+      "claim-feedback-needs-design-intent",
+      "claim-theme-mechanism-bidirectional",
+      "claim-mechanics-can-carry-emotion"
+    ],
+    "conceptIds": [
+      "experience-intent",
+      "theme",
+      "dynamics",
+      "hypothesis",
+      "playtest-question",
+      "goal"
+    ],
+    "doneWhen": [
+      "句子里出现玩家动作，而不只有题材或情绪形容词。",
+      "写清至少一个让决定有代价的条件。",
+      "有一个能被实际行为反驳的预测。",
+      "知道这一轮明确不验证什么。"
+    ],
+    "backtracksTo": [],
+    "nextOptions": ["guide-core-system"],
+  "toolIds": ["experience-intent"],
+    "status": "review"
+  },
+  {
+    "id": "guide-core-system",
+    "title": "找到第一条值得反复测试的核心系统",
+    "stage": "核心系统",
+    "problem": "我列出了很多机制，却说不清玩家每回合为什么要做决定，以及一条规则改动会怎样传到体验。",
+    "outcome": "一条输入—选择—代价—状态变化—反馈的短循环，以及一项带行为预测的单变量改动。",
+    "coreMinutes": 10,
+    "opening": "“加入手牌管理”不是核心系统。把飞行棋的一次移动改成：玩家从两张移动牌中选一张，打出的牌暂时不能再用。输入是两张牌，选择是现在走多远，代价是失去之后的移动可能，棋盘位置随之变化。这个循环已经可以测试。",
+    "steps": [
+      {
+        "label": "圈出重复决定",
+        "prompt": "找到玩家一局中会多次遇到、且每次可能因状态不同而改变答案的决定。",
+        "example": "现在用高点数牌抢位置，还是保留它越过后面的危险格？"
+      },
+      {
+        "label": "画出短循环",
+        "prompt": "按输入 → 选择 → 代价/约束 → 状态变化 → 玩家得到的反馈写一行。缺少哪一段，就先补哪一段。",
+        "example": "抽到两张移动牌 → 选一张 → 另一张保留、用过的冷却 → 棋子位置变化 → 看见下一回合的风险。"
+      },
+      {
+        "label": "检查决定是否真的不同",
+        "prompt": "比较选项的条件、成本、范围和后果。两个名字不同但后果相同的按钮，不会自动产生有意义的选择。",
+        "example": "高点数更快但会错过安全格；低点数较慢却能获得补牌位置。"
+      },
+      {
+        "label": "只改一个轴",
+        "prompt": "写下本轮改变的是移动、信息、资源、互动、主题或胜利条件，并明确哪些核心不动。",
+        "example": "只改变移动决定；棋盘、轮流行动和先到终点获胜保持不变。"
+      },
+      {
+        "label": "预测系统行为",
+        "prompt": "从规则改动推到玩家行为，再写一个最短原型去证伪。不要先扩卡牌数量或做完整平衡。",
+        "example": "如果移动牌能保留，玩家应在关键位置前主动留下高点数牌；先做能玩三回合的牌组观察这一点。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把机制名称列表当作系统。",
+        "repair": "写出玩家在什么状态下，用什么信息做什么决定，之后什么改变。"
+      },
+      {
+        "mistake": "一次加入多项机制后再问哪里有问题。",
+        "repair": "保留大部分规则，只改变一个轴并预测影响。"
+      },
+      {
+        "mistake": "用更多卡牌和内容掩盖循环没有张力。",
+        "repair": "先用少量重复组件验证决定是否因状态改变。"
+      },
+      {
+        "mistake": "核心未成立就追求精细平衡。",
+        "repair": "先确认玩家确实看见、理解并使用这个决定，再调整数值。"
+      }
+    ],
+    "whenToBreak": [
+      "随机性不等于没有选择。关键是玩家能否在随机结果前后读取信息、承担风险或改变后续状态。",
+      "熟悉机制不是缺乏原创性；可迁移的规则块能降低学习成本，原创性可以来自它与目标、关系和反馈的组合。",
+      "5PM、MDA 等框架是不同视角，不是质量总分。只在它能回答当前问题时使用。"
+    ],
+    "exercise": {
+      "title": "熟悉游戏单变量改造",
+      "prompt": "选择一款简单游戏，写下保持不变的核心，只改变一个轴；再写规则、行为预测和一个测试问题。",
+      "exampleOutput": "飞行棋保留棋盘与胜利条件，只把骰子移动改为二选一移动牌；预计玩家会为关键位置保留高点数牌；测试三回合观察保留行为。"
+    },
+    "evidenceBoundary": "短循环能让问题更可见，但不会覆盖长局经济、叙事弧线、谈判关系或组件可用性。超过 1000 人、121 款双人抽象策略游戏的新手研究支持浅层目标导向模拟，但不能代表全部桌游互动；策略深度论文是研究模型而非现成评分器。原型范围必须跟着本轮问题变化。",
+    "resourceIds": [
+      "daniel-games-core",
+      "joe-slack-getting-to-core",
+      "loops-and-metagames",
+      "zimmerman-core-mechanic",
+      "kathleen-mercury-resources",
+      "five-part-model",
+      "mda-framework",
+      "oath-suit-spotlight",
+      "gcores-light-medium-design",
+      "game-ideation-techniques-comparison",
+      "mixed-reality-game-cards",
+      "game-balance-intro",
+      "game-balance-probability",
+      "league-game-elements-resources",
+      "intuitive-gamer-nature-2026",
+      "lantz-depth-strategic-games",
+      "rosewater-decisions-part-one",
+      "gil-hova-interaction-slides",
+      "faidutti-indirect-interaction",
+      "daniel-games-replayability",
+      "decision-space-depth-2026",
+      "uw-secondary-objectives"
+    ],
+    "claimIds": [
+      "claim-core-loop-output-becomes-input",
+      "claim-core-is-not-feature-list",
+      "claim-loop-completeness-is-not-quality",
+      "claim-theme-mechanism-bidirectional",
+      "claim-content-distribution-not-identity",
+      "claim-frameworks-answer-different-questions",
+      "claim-design-aid-must-return-to-evidence",
+      "claim-constraints-need-adjustable-strength",
+      "claim-ideation-cards-not-superior-by-default",
+      "claim-balance-needs-target",
+      "claim-probability-is-not-experience-proof",
+      "claim-resource-flow-before-tuning",
+      "claim-option-count-is-not-choice-quality",
+      "claim-novices-use-shallow-goal-search",
+      "claim-depth-is-sustained-learning-not-complexity",
+      "claim-interaction-needs-effect-path",
+      "claim-interaction-directness-is-not-value",
+      "claim-objective-structure-shapes-tradeoffs",
+      "claim-replayability-is-not-variability",
+      "claim-decision-trace-needs-player-model",
+      "claim-innovation-needs-learning-budget"
+    ],
+    "conceptIds": [
+      "mechanic",
+      "core-loop",
+      "meaningful-choice",
+      "agency",
+      "information-structure",
+      "resource",
+      "constraint",
+      "dynamics",
+      "decision-space",
+      "viable-option",
+      "strategic-depth",
+      "interaction-path",
+      "replayability",
+      "variability",
+      "learning-budget"
+    ],
+    "doneWhen": [
+      "能用一行描述输入、选择、代价、状态变化和反馈。",
+      "至少一个选项会因当前状态而改变价值。",
+      "本轮只改变一个轴，并写清保持不变的部分。",
+      "规则改动对应一个可观察、可被推翻的行为预测。"
+    ],
+    "backtracksTo": ["guide-experience-intent"],
+    "nextOptions": ["guide-minimum-prototype"],
+    "toolIds": ["core-loop", "decision-trace", "redesign", "constraint-deck", "balance-pass"],
+    "status": "review"
+  },
+  {
+    "id": "guide-minimum-prototype",
+    "title": "只做这一轮问题需要的原型",
+    "stage": "最小原型",
+    "problem": "我知道想验证什么，却仍在制作完整地图、全部卡牌和正式美术，迟迟没有真正上桌。",
+    "outcome": "一份以测试问题为起点的原型范围单：必须真实的功能、可以替代的组件、明确不做的内容和停止条件。",
+    "coreMinutes": 9,
+    "opening": "如果这一轮只问“玩家会不会为了未来航线放弃眼前得分”，你需要三座港口、几枚货物、一个有限货舱和能触发两次交货的短航线。你不需要完整世界地图、四十张事件卡或最终插画。原型不是缩小的成品，而是给一个问题搭的实验。",
+    "steps": [
+      {
+        "label": "先写测试问题",
+        "prompt": "把问题放在材料清单上方。每个组件都要说明它怎样帮助回答这个问题。",
+        "example": "问题：玩家会为下一港口主动保留货物吗？"
+      },
+      {
+        "label": "按功能列材料",
+        "prompt": "先写公开状态、私人信息、资源数量、空间关系、随机结果或计时等功能，再决定用什么物件表示。",
+        "example": "货舱容量用三个空格，港口需求用便签，货物用不同颜色方块。"
+      },
+      {
+        "label": "决定哪里必须真实",
+        "prompt": "若问题涉及触感、触达、可见度、图标或设置流程，相应部分必须有足够精度；其他部分保持可丢弃。",
+        "example": "本轮测试货舱取舍，地图美术可省略；若要测信息可见度，港口需求的字号与位置不能省略。"
+      },
+      {
+        "label": "裁成最短可玩片段",
+        "prompt": "只保留足以重复核心决定两三次的回合、玩家和内容；写下何时停止，不要求完整胜负。",
+        "example": "两名玩家、三座港口、玩三回合；第二次交货后停止并记录选择。"
+      },
+      {
+        "label": "写明确不做清单",
+        "prompt": "把美术、完整平衡、全部内容、自动化或发布组件中本轮不需要的部分写出来，防止它们悄悄回到范围。",
+        "example": "不做事件牌、最终计分、正式规则书、历史插画和四人平衡。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把原型理解为低配成品。",
+        "repair": "从测试问题反推必要功能，而不是按最终组件等比例缩小。"
+      },
+      {
+        "mistake": "把“越粗糙越好”当成定律。",
+        "repair": "只让与问题无关的部分粗糙；可见度、触感或空间若是问题，就必须真实。"
+      },
+      {
+        "mistake": "先做全部内容再开始平衡。",
+        "repair": "用最少重复内容确认核心决定存在，再扩内容分布。"
+      },
+      {
+        "mistake": "只在线上测实体体验。",
+        "repair": "记录线上媒介看不到的触达、设置、身体动作和社交线索，并安排实体复核。"
+      }
+    ],
+    "whenToBreak": [
+      "若本轮验证规则教学、图标、色彩、触感、拿取动作或桌面可见度，相关部分需要接近真实使用条件。",
+      "长局经济、背叛、谈判或叙事积累不能总被三回合切片代表；先用短片段排除局部问题，再安排完整局测试。",
+      "自动对局适合查形式规则、参数和策略漏洞，但不能代替真人对教学、情绪与社交互动的证据。"
+    ],
+    "exercise": {
+      "title": "原型范围裁剪单",
+      "prompt": "写一个测试问题；列出必须表现的功能；为每项选最便宜的替代物；限定玩家、回合和停止条件；最后写至少三项本轮不做。",
+      "exampleOutput": "问题：玩家会保留货物吗？功能：货舱/港口需求/航线；材料：方块/便签/纸条；2 人 3 回合；不做事件牌、终局计分和美术。"
+    },
+    "evidenceBoundary": "最小原型减少的是与当前问题无关的制作，不是把所有实体与信息设计都删除。HCI 的过滤/表现维度与数字游戏纸面原型只能作为相邻方法；短片段、小样本与不同媒介得到的证据只支持该版本、片段、参与者和测试语境。",
+    "resourceIds": [
+      "daniel-games-prototyping",
+      "sspai-mvp-prototype",
+      "show-your-cards",
+      "visual-cognitive-ergonomics",
+      "ttgda-playtesting",
+      "kathleen-mercury-prototyping",
+      "games-to-experiment-prototype-questions",
+      "lim-prototype-anatomy",
+      "mit-paper-prototyping",
+      "khoo-low-fidelity-case",
+      "stanford-dschool-testing-guide",
+      "games-user-research-running-study"
+    ],
+    "claimIds": [
+      "claim-prototype-fidelity-follows-question",
+      "claim-prototype-needs-question-and-nongoals",
+      "claim-prototype-fidelity-is-profile-not-score",
+      "claim-prototype-medium-changes-evidence",
+      "claim-prototype-functionality-needs-legible-operation",
+      "claim-playable-slice-needs-repeat-and-stop",
+      "claim-prototype-rebuild-when-proxy-dominates",
+      "claim-accessibility-no-total-score",
+      "claim-computational-play-is-system-evidence",
+      "claim-test-plan-needs-one-evidence-chain",
+      "claim-moderator-help-changes-playtest-evidence"
+    ],
+    "conceptIds": [
+      "prototype",
+      "prototype-fidelity",
+      "prototype-filter",
+      "prototype-manifestation",
+      "prototype-scope",
+      "fidelity-profile",
+      "proxy-operation",
+      "prototype-stop-condition",
+      "playtest-question",
+      "accessibility-task",
+      "version"
+    ],
+    "doneWhen": [
+      "每个组件都能指回本轮测试问题。",
+      "写清哪些功能必须真实、哪些可以替代。",
+      "原型有明确玩家数、回合数和停止条件。",
+      "至少三项诱人的非必要工作被放进“不做”清单。"
+    ],
+    "backtracksTo": ["guide-core-system", "guide-experience-intent"],
+    "nextOptions": ["guide-playtest-feedback"],
+    "toolIds": ["prototype-scope", "test-plan"],
+    "status": "review"
+  },
+  {
+    "id": "guide-playtest-feedback",
+    "title": "让一次测试只回答该回答的问题",
+    "stage": "测试与反馈",
+    "problem": "我收到了很多互相矛盾的意见，不知道哪些是观察、哪些是解决方案，也不知道这一版究竟证明了什么。",
+    "outcome": "一条从版本化测试计划、现场事件、单轮复盘到跨轮发现沿革的证据链；项目下一步只能由设计者显式写回。",
+    "coreMinutes": 11,
+    "opening": "测试者说：“每回合应该多抽两张牌。”先别改规则。你实际看见的是：他连续两轮没有可支付行动。前者是候选方案，后者才是这局留下的观察。下一步可能是检查收入、成本、手牌信息或教学，而不是自动增加抽牌。",
+    "steps": [
+      {
+        "label": "锁定版本与问题",
+        "prompt": "记录正在测试的版本，并只保留一个主问题；其他好奇进入停车区。不同版本的反馈不能混成同一票数。",
+        "example": "v0.3；问题：玩家是否看见保留货物的长期收益？"
+      },
+      {
+        "label": "选择能回答它的测试",
+        "prompt": "自测、快速测试、引导测试、极限测试与盲测提供不同证据。先写期望观察什么，再选参与者与主持方式。",
+        "example": "先用引导测试看选择，再在规则稳定后用盲测查陌生人第一次偏离。"
+      },
+      {
+        "label": "写媒介盲点",
+        "prompt": "线上、实体和混合测试看见的东西不同。提前记录本轮看不到的触感、空间、身体动作、表情或细微社交线索。",
+        "example": "线上能快速换牌，但不能证明实体货舱是否易读、方块是否难拿。"
+      },
+      {
+        "label": "先记事实，再追问经历",
+        "prompt": "记录时间点、行动、可见状态和第一次偏离；测试后再问玩家当时看见什么、想做什么、为什么。",
+        "example": "第 2 回合：玩家有 3 金，手里两张成本 4 的牌，停顿 18 秒后跳过。"
+      },
+      {
+        "label": "把决定留给下一轮",
+        "prompt": "先选择能支持或反驳判断的原事件，再写发现的适用条件、其他解释和缺失证据；最后比较候选方案，写保持项、单一变化轴、回退信号和下一问题。",
+        "example": "发现只适用于 v0.3 的双人实体局；保留市场可见性；v0.4 只改起始收入；若首轮选择变成自动动作则回退。"
+      },
+      {
+        "label": "跨轮先判断是否可比，再保存修订",
+        "prompt": "选择至少两份已完成复盘，先写共同问题、保持相近的条件和关键差异；再逐份标记关系。旧发现只读重开，需要改变时创建有理由的后继修订。",
+        "example": "v0.4 熟练组支持策略深度，v0.5 新手组反驳首次局可理解性；从原记录创建修订 2，把发现拆成重复局与首次局两个边界。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "只问“好玩吗”或让玩家给总分。",
+        "repair": "用与版本假设对应的问题和具体桌面事件收集证据。"
+      },
+      {
+        "mistake": "玩家一困惑就现场解释或改规则。",
+        "repair": "先记录第一次偏离和当前信息，再决定是否继续；解释会改变这次测试条件。"
+      },
+      {
+        "mistake": "把多人建议计票后直接排优先级。",
+        "repair": "保留版本、来源语境与反复症状；相同方案可能来自不同问题。"
+      },
+      {
+        "mistake": "让建议自动成为待办。",
+        "repair": "把建议还原为经历或症状，再由设计目标决定要验证的改动。"
+      }
+    ],
+    "whenToBreak": [
+      "明显的安全、歧视、隐私或可操作性阻断不必为了“纯测试”而让参与者继续承受；停止并记录条件。",
+      "有相关专业或生活经验的测试者可能提出高价值方案，但它仍是候选设计，需要说明语境并验证。",
+      "早期自测和替身测试适合排除明显断点；多人谈判、隐藏身份、合作权力和真实教学仍需要对应玩家群体。"
+    ],
+    "exercise": {
+      "title": "一条反馈的证据链",
+      "prompt": "选一句让你最想立刻改规则的反馈；保留原话，另写可观察事实、可能经历、待查问题、候选建议和你暂定的处理动作。",
+      "exampleOutput": "原话：多抽两张；观察：连续两轮无可支付行动；经历：觉得回合被浪费；待查：收入节奏；动作：形成假设，暂不直接增加抽牌。"
+    },
+    "evidenceBoundary": "一次测试描述一个版本在一组玩家与媒介中的表现，不能估计所有玩家的偏好。跨轮支持、反驳或重复症状只帮助判断下一步，不能自动生成严重度、频次优先级、跨版本复现、因果或唯一修法。沿革中的最新修订只表示保存顺序；旧记录、后继关系与修订理由支持审计，不证明新判断更正确。",
+    "resourceIds": [
+      "ttgda-playtesting",
+      "bgdl-playtest-like-a-boss",
+      "show-your-cards",
+      "oath-keeping-the-oath",
+      "meeple-centred-design",
+      "break-my-game-code",
+      "greg-blind-playtesting",
+      "kathleen-mercury-winq",
+      "games-user-research-running-study",
+      "denisova-democratising-games-user-research",
+      "kulik-moderating-playtest",
+      "stanford-dschool-testing-guide"
+      ,"diegetic-playtest-tracking-template"
+      ,"mc-allister-observation-template"
+      ,"tricorn-playtesting-with-purpose"
+      ,"pam-walls-playtesting-notes"
+      ,"govuk-research-notes-recording"
+      ,"govuk-informed-consent-research"
+      ,"games-user-research-debriefing"
+      ,"games-user-research-analysis"
+      ,"woodard-effective-playtest"
+      ,"govuk-analyse-research-session"
+      ,"govuk-rainbow-spreadsheet"
+      ,"ixdf-affinity-diagram"
+      ,"boardssey-review-results"
+      ,"measuringu-severity-ratings"
+      ,"gale-framework-method"
+      ,"saltzman-longitudinal-matrix"
+      ,"calman-longitudinal-trajectory-analysis"
+      ,"lane-negative-case-analysis"
+      ,"gitlab-uxr-insights-repository"
+      ,"mind-mgmt-designer-diary"
+      ,"daybreak-designer-diary-forecast"
+      ,"hegemony-designer-diary-playtime"
+      ,"w3c-prov-o"
+      ,"white-qualitative-audit-trail"
+      ,"magic-playtesting-stages-2026"
+      ,"timo-bron-iteration-log"
+      ,"weirdwood-manor-designer-diary"
+    ],
+    "claimIds": [
+      "claim-feedback-needs-design-intent",
+      "claim-observation-not-solution",
+      "claim-community-feedback-needs-provenance",
+      "claim-accessibility-no-total-score",
+      "claim-playtest-mode-follows-question",
+      "claim-test-plan-needs-one-evidence-chain",
+      "claim-play-observation-and-interview-are-different-evidence",
+      "claim-moderator-help-changes-playtest-evidence",
+      "claim-playtest-context-limits-generalisation"
+      ,"claim-session-event-needs-context-and-resolution"
+      ,"claim-live-capture-and-analysis-are-separate-tasks"
+      ,"claim-event-count-is-not-severity"
+      ,"claim-consent-scope-must-follow-session-data"
+      ,"claim-debrief-separates-findings-from-solutions"
+      ,"claim-review-keeps-observation-finding-action-distinct"
+      ,"claim-findings-need-source-evidence-and-boundaries"
+      ,"claim-note-volume-is-not-priority"
+      ,"claim-solution-choice-needs-alternatives-and-retest"
+      ,"claim-withdrawal-must-reach-derived-review"
+      ,"claim-cross-session-comparison-needs-explicit-boundary"
+      ,"claim-time-ordered-matrix-preserves-evolution"
+      ,"claim-negative-case-changes-finding-not-vote"
+      ,"claim-familiar-testers-are-not-fresh-replication"
+      ,"claim-version-change-has-multiple-effects"
+      ,"claim-insight-lineage-separates-evidence-from-action"
+      ,"claim-completed-finding-revision-is-new-record"
+      ,"claim-audit-trail-records-when-why-what"
+      ,"claim-latest-revision-is-not-truth"
+      ,"claim-playtest-purpose-changes-by-stage"
+      ,"claim-withdrawal-follows-descendant-lineage"
+    ],
+    "conceptIds": [
+      "playtest-type",
+      "observation",
+      "feedback",
+      "design-decision",
+      "hypothesis",
+      "version",
+      "playtest-question"
+    ],
+    "doneWhen": [
+      "测试记录包含版本和一个主问题；其他好奇进入停车区。",
+      "知道所选测试类型和媒介能看见什么、看不见什么。",
+      "至少记录一个带时间点或局面状态的观察。",
+      "原话、推断、建议与设计决定没有混在同一字段。",
+      "发现能回到来源会话和所选事件，并写清适用条件、反证与缺失证据。",
+      "变更简报写出保持项、候选方案、单一变化轴、回退信号和下一场唯一问题。"
+      ,"跨轮比较写明共同问题、关键差异、反例与不可比条件，并保留发现为何保留、收窄、拆分或退役。"
+      ,"已保存发现可以只读重开；内容变化创建有新 ID、父记录、修订号、理由与时间的后继，而不覆盖旧记录。"
+    ],
+    "backtracksTo": ["guide-minimum-prototype", "guide-experience-intent"],
+    "nextOptions": ["guide-rules-information"],
+    "toolIds": ["playtest-selector", "test-plan", "playtest-session", "feedback", "evidence-synthesis"],
+    "status": "review"
+  },
+  {
+    "id": "guide-rules-information",
+    "title": "让陌生人靠规则与组件完成第一局",
+    "stage": "规则与信息",
+    "problem": "我能亲自把游戏教会，但陌生人只看规则和组件时，会在设置、术语或例外处偏离。",
+    "outcome": "一套分别承担介绍、教学和查询的规则信息结构，以及一份记录首次偏离与查询失败的盲测计划。",
+    "coreMinutes": 10,
+    "opening": "规则写“每位玩家拿 3 个货物放进船舱”，陌生人却不知道从哪里拿、能否自选颜色、船舱是哪块板、三格容量是否已经满了。问题不是句子不够优美，而是执行这一步所需的信息没有在需要时出现。",
+    "steps": [
+      {
+        "label": "分开三种任务",
+        "prompt": "先分别写 30 秒介绍、第一次教学路径和游戏中查询结构，不强迫一段线性正文同时优化三者。",
+        "example": "介绍说明目标与承诺；教学按设置和回合推进；参考页按行动、图标与例外索引。"
+      },
+      {
+        "label": "把设置写成可执行清单",
+        "prompt": "使用组件上的真实名称，写数量、来源、朝向、公开/隐藏状态和最终检查；图片只辅助，不替代文字关系。",
+        "example": "每人从公共供应选择 3 个不同颜色货物，放入个人船板的三个货舱格，保持公开。"
+      },
+      {
+        "label": "沿回合中的决定教学",
+        "prompt": "先说玩家为什么行动，再按可用行动、支付、结算、反馈和轮到谁组织；把完整例外留在可查位置。",
+        "example": "航行前先看港口需求；选择交货或保留；支付航行成本；更新货舱与市场；交给左侧玩家。"
+      },
+      {
+        "label": "让组件承担信息",
+        "prompt": "统一术语，用位置、形状、文字与图标冗余表达关键状态；玩家辅助只放高频步骤和容易忘的限制。",
+        "example": "规则、船板和卡牌都使用“货舱”，不在别处改称仓库；容量同时用三格与数字 3 表示。"
+      },
+      {
+        "label": "做不插话的盲测",
+        "prompt": "让目标玩家自行设置和开始；记录第一次偏离、首次查询、找不到答案的位置和获得帮助的时刻。",
+        "example": "02:40 把私人订单公开；先记录他们依据哪句话，再在测试结束后追问理解。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "把口头教学逐字转录成最终规则。",
+        "repair": "保留口头顺序作为初稿，再分别重组教学路径与查询结构。"
+      },
+      {
+        "mistake": "用世界观名词替代操作定义。",
+        "repair": "首次出现时写玩家做什么、作用对象和状态变化，之后再使用简称。"
+      },
+      {
+        "mistake": "只改句子，不检查组件信息。",
+        "repair": "把规则、玩家辅助、图标、板块位置和组件名称当成同一接口一起盲测。"
+      },
+      {
+        "mistake": "盲测中不断解释并宣告成功。",
+        "repair": "先记录帮助发生前的首次偏离；任何解释都会改变独立完成证据。"
+      }
+    ],
+    "whenToBreak": [
+      "极短游戏可以用一张卡合并介绍、教学与查询，但三项任务仍应在版面上可识别。",
+      "教学场景、首局脚本或视频可以承担渐进教学，却不能消除游戏中快速查询和无障碍替代信息的需要。",
+      "系统仍高频重构时，先维护可运行的版本备忘录；正式文案润色不应阻止核心规则继续改变。"
+    ],
+    "exercise": {
+      "title": "第一次偏离记录",
+      "prompt": "请一组未听过你讲解的玩家，只用当前规则与组件完成设置和首回合；记录首次偏离、他们读到的依据、是否找到答案以及你何时提供帮助。",
+      "exampleOutput": "02:40 私人订单被公开；玩家依据设置图；索引没有“订单”；03:15 主持人解释。下一版统一隐藏信息标记并补查询项。"
+    },
+    "evidenceBoundary": "一次学习或盲测任务能发现该版本、该玩家语境和该媒介路径中的信息断点，不能证明所有人都会学会。20 人的大型游戏媒介研究没有发现任务时间或导航错误的显著差异，12 人三媒介研究也只覆盖一款教育游戏；不能据此给纸质、视频或数字教程排通用名次。规则、讲解、组件、玩家辅助和查询入口共同构成接口，必须回到实际动作与恢复路径测试。",
+    "resourceIds": [
+      "rulebook-ruling-the-roost",
+      "bgdl-playtest-like-a-boss",
+      "kathleen-mercury-resources",
+      "greg-blind-playtesting",
+      "panda-p20-rulebook",
+      "blv-rulebook-voice-agent",
+      "rulebook-design-curators",
+      "resonym-writing-rulebooks",
+      "bushner-hobbyist-rulebook-practices",
+      "wanstrom-physical-digital-rulebook",
+      "frontiers-two-part-onboarding",
+      "dvgiochi-standard-rulebook",
+      "naylor-paul-grogan-rulebook",
+      "pratt-rulebook-editors-interview",
+      "hollandspiele-rulebook-examples",
+      "unfair-rulebook-glossary",
+      "dized-tutorial-creation",
+      "rulepop-digital-rules"
+    ],
+    "claimIds": [
+      "claim-rulebook-three-jobs",
+      "claim-observation-not-solution",
+      "claim-accessibility-no-total-score",
+      "claim-blind-test-whole-delivery",
+      "claim-accessibility-observation-preserves-autonomy",
+      "claim-rulebook-access-is-format-and-pace",
+      "claim-information-interface-needs-task-testing",
+      "claim-teaching-and-reference-are-different-tasks",
+      "claim-onboarding-needs-action",
+      "claim-rule-medium-needs-task-context",
+      "claim-player-aid-needs-task-and-owner",
+      "claim-examples-need-diagnostic-purpose",
+      "claim-terminology-is-interface-contract",
+      "claim-teachability-data-needs-provenance",
+      "claim-innovation-needs-learning-budget"
+    ],
+    "conceptIds": [
+      "rulebook",
+      "player-aid",
+      "information-structure",
+      "accessibility-task",
+      "observation",
+      "playtest-type",
+      "onboarding",
+      "teaching-path",
+      "lookup-path",
+      "teach-back",
+      "learning-budget"
+    ],
+    "doneWhen": [
+      "介绍、第一次教学和查询各有明确入口。",
+      "设置步骤能在没有口头补充时执行。",
+      "同一对象在规则、组件和玩家辅助中使用同一术语。",
+      "完成至少一次记录首次偏离的盲测，而不只收集总体评价。"
+    ],
+    "backtracksTo": ["guide-playtest-feedback", "guide-core-system"],
+    "nextOptions": ["guide-presentation-release"],
+    "toolIds": ["teaching-path", "playtest-selector", "accessibility-observation", "test-plan"],
+    "status": "review"
+  },
+  {
+    "id": "guide-presentation-release",
+    "title": "把可玩的版本整理成可交付的发布包",
+    "stage": "呈现与发布",
+    "problem": "游戏已经能玩，但介绍页、规则、打印文件和测试记录属于不同版本，别人无法判断应该从哪里开始。",
+    "outcome": "一个面向明确接收者、版本一致、权利可追溯、能独立开始体验的发布候选包。",
+    "coreMinutes": 10,
+    "opening": "介绍页写 v0.7，规则书仍是 v0.6，打印文件来自 v0.5；三份文件单独都能打开，合在一起却不是一个可交付版本。发布不是把文件上传，而是让接收者知道这是什么、该用哪一版、怎样开始、发现问题后去哪里。",
+    "steps": [
+      {
+        "label": "先确定接收者与决定",
+        "prompt": "写清这是给公开试玩者、审阅设计师、出版方还是免费 PnP 玩家，以及希望对方完成什么决定或行动。",
+        "example": "给公开试玩者：下载、打印、独立完成一局并提交 v0.7 的盲测记录。"
+      },
+      {
+        "label": "锁定一个发布候选版本",
+        "prompt": "给规则、组件、玩家辅助和打印文件同一版本号与日期；列出文件清单、兼容关系和已知问题。",
+        "example": "RC 0.7：rules-0.7.pdf、cards-0.7.pdf、player-aid-0.7.pdf；不兼容旧港口板。"
+      },
+      {
+        "label": "组装最短进入路径",
+        "prompt": "提供一句体验承诺、玩家数/时长/复杂度、组件清单、打印与设置要求、规则入口和反馈渠道。",
+        "example": "3–4 人、60 分钟的航线取舍游戏；先读 2 页教学，再用单页参考完成后续回合。"
+      },
+      {
+        "label": "核对权利与署名",
+        "prompt": "为文本、图片、字体、模板、机制说明引用和第三方素材记录作者、来源、许可与可发布范围；免费访问不等于可复制。",
+        "example": "课程结构只用原创综合；第三方图标按许可署名；测试者引语已获同意并去除身份信息。"
+      },
+      {
+        "label": "用发布包再做一次盲测",
+        "prompt": "让接收者从下载或文件夹入口开始，不另发补充说明；记录失效链接、缺失文件、打印比例、设置偏离和反馈版本。",
+        "example": "测试者下载 RC 0.7，按 100% 打印；发现双面翻转说明缺失，记录为发布阻断而非口头补充。"
+      }
+    ],
+    "commonMistakes": [
+      {
+        "mistake": "用漂亮效果图替代可玩的交付物。",
+        "repair": "先保证规则、组件、版本和进入路径一致，再增加不承担功能的展示。"
+      },
+      {
+        "mistake": "让不同文件各自维护版本。",
+        "repair": "使用发布清单锁定同一候选版本，并标记兼容关系与已知问题。"
+      },
+      {
+        "mistake": "免费资源直接复制进发布包。",
+        "repair": "逐项核对许可；不确定时只链接并写原创摘要。"
+      },
+      {
+        "mistake": "把测试次数写成质量证明。",
+        "repair": "说明测过的版本、问题、参与者语境和仍未覆盖的风险。"
+      }
+    ],
+    "whenToBreak": [
+      "不同出版方、比赛、众筹平台和印厂的提交规范会变化；准备具体投递前必须查看对方当前官方要求。",
+      "面向朋友的一次私人测试可以只用共享文件夹，但版本、入口和隐私边界仍要清楚。",
+      "发布候选不是停止设计；严重规则、可访问性或安全问题出现时应撤回、标记并发布新版本。"
+    ],
+    "exercise": {
+      "title": "发布候选清单",
+      "prompt": "选择一个接收者，列出他从第一次看到链接到完成首局需要的全部文件、说明和权限；给它们统一版本，并标记每项权利状态与一个已知风险。",
+      "exampleOutput": "公开试玩 RC 0.7：入口页、规则、卡牌、玩家辅助、打印说明、反馈表；全部标 0.7；图标已署名；已知风险是双面打印方向。"
+    },
+    "evidenceBoundary": "本指南处理版本一致性、进入路径与权利记录，不提供会随地区、平台与商业模式变化的法律、制造或众筹结论。具体提交与许可应核对当前官方要求或专业意见。",
+    "resourceIds": [
+      "james-ernest-blueprint",
+      "wingspan-interview",
+      "undaunted-diary",
+      "rulebook-ruling-the-roost",
+      "oath-keeping-the-oath"
+    ],
+    "claimIds": [
+      "claim-feedback-needs-design-intent",
+      "claim-rulebook-three-jobs",
+      "claim-community-feedback-needs-provenance",
+      "claim-theme-mechanism-bidirectional"
+    ],
+    "conceptIds": [
+      "release-candidate",
+      "version",
+      "rulebook",
+      "player-aid",
+      "accessibility-task",
+      "playtest-type"
+    ],
+    "doneWhen": [
+      "接收者与希望对方完成的行动明确。",
+      "规则、组件、玩家辅助和打印文件使用同一候选版本。",
+      "第三方素材与引用有来源、许可和署名记录。",
+      "有人从发布入口独立完成下载、设置与首局测试。"
+    ],
+    "backtracksTo": ["guide-rules-information", "guide-playtest-feedback"],
+    "nextOptions": ["guide-experience-intent"],
+    "toolIds": ["test-plan"],
+    "status": "review"
+  }
+]

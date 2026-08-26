@@ -1,0 +1,134 @@
+{
+  "schemaVersion": 1,
+  "method": "moderated-design-aid-loop-usability",
+  "sessionStatus": "completed",
+  "prototypeVersion": "design-aid-loop-low-fi-v1",
+  "participantAlias": "P01",
+  "consent": {
+    "participation": true,
+    "notes": true,
+    "withdrawalExplained": true,
+    "screenRecording": false
+  },
+  "privacy": {
+    "containsRealName": false,
+    "containsContactDetails": false,
+    "containsRawRecording": false,
+    "localOnly": true,
+    "privateReflectionRecorded": true,
+    "privateReflectionExcludedFromShare": true,
+    "deleteBy": "2026-09-21"
+  },
+  "tasks": [
+    {
+      "taskId": "T1",
+      "status": "completed",
+      "observedActions": ["先选择想得到的规则产物，再打开生成路径"],
+      "participantWords": ["我先看最终要写出什么，不需要先懂工具名称。"],
+      "firstDeviation": "无",
+      "facilitatorIntervention": "无",
+      "severity": "none",
+      "candidateRepair": "",
+      "retestRequired": false,
+      "taskData": {
+        "desiredArtifact": "一条能运行的短规则",
+        "chosenMode": "generate",
+        "modeChangedAfterPreview": false
+      }
+    },
+    {
+      "taskId": "T2",
+      "status": "completed",
+      "observedActions": ["拒绝第一条提示并改写自己的限制"],
+      "participantWords": ["这张不适合，但我知道可以不用它。"],
+      "firstDeviation": "无",
+      "facilitatorIntervention": "无",
+      "severity": "none",
+      "candidateRepair": "",
+      "retestRequired": false,
+      "taskData": {
+        "promptAction": "self_write",
+        "refusalAvailable": true,
+        "authoredPromptUsed": true
+      }
+    },
+    {
+      "taskId": "T3",
+      "status": "completed",
+      "observedActions": ["写出玩家动作、直接后果和一正一反观察信号"],
+      "participantWords": ["机制名本身还不能拿去测。"],
+      "firstDeviation": "无",
+      "facilitatorIntervention": "无",
+      "severity": "none",
+      "candidateRepair": "",
+      "retestRequired": false,
+      "taskData": {
+        "ruleArtifactProduced": true,
+        "supportingSignalWritten": true,
+        "counterSignalWritten": true
+      }
+    },
+    {
+      "taskId": "T4",
+      "status": "completed",
+      "observedActions": ["把‘节奏很拖’改成具体局面、动作与反驳信号"],
+      "participantWords": ["我需要先说是哪一个回合发生了什么。"],
+      "firstDeviation": "最初只重复评价词",
+      "facilitatorIntervention": "提醒回到某个局面，不提供答案",
+      "severity": "serious",
+      "candidateRepair": "在评价输入旁加入‘哪一局面、谁做了什么’的就地例子",
+      "retestRequired": true,
+      "taskData": {
+        "symptomRewrittenAsSituation": true,
+        "observedActionWritten": true,
+        "counterSignalWritten": true
+      }
+    },
+    {
+      "taskId": "T5",
+      "status": "completed",
+      "observedActions": ["选择自测，并正确解释它只能暴露规则与流程问题"],
+      "participantWords": ["这还不是目标玩家的反馈。"],
+      "firstDeviation": "无",
+      "facilitatorIntervention": "无",
+      "severity": "none",
+      "candidateRepair": "",
+      "retestRequired": false,
+      "taskData": {
+        "evidenceState": "self_test",
+        "actualTargetParticipantsPresent": false,
+        "selfTestLabeledAsExternal": false
+      }
+    },
+    {
+      "taskId": "T6",
+      "status": "completed",
+      "observedActions": ["打开分享预览并确认私有反思未出现"],
+      "participantWords": ["我可以分享产物，但不分享为什么拒绝某张提示。"],
+      "firstDeviation": "无",
+      "facilitatorIntervention": "无",
+      "severity": "none",
+      "candidateRepair": "",
+      "retestRequired": false,
+      "taskData": {
+        "sharePreviewOpened": true,
+        "privateReflectionIncluded": false,
+        "privateReflectionDeleted": false
+      }
+    }
+  ],
+  "sessionSummary": {
+    "criticalIssues": [],
+    "seriousIssues": [
+      {
+        "taskId": "T4",
+        "issue": "参与者第一次把评价词当成诊断结果",
+        "repair": "加入局面—动作就地例子并保持不代写",
+        "status": "repair_planned"
+      }
+    ],
+    "repairsBeforeRetest": ["修订 T4 的就地例子后，以新参与者复测 T4"],
+    "nextResearchStep": "repair_and_retest",
+    "rationale": "这是一份虚构格式示例；它演示严重问题如何触发修订与复测，不是实际研究结果。"
+  }
+}

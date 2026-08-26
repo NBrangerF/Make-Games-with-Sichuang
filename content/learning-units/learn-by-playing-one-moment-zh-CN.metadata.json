@@ -1,0 +1,43 @@
+{
+  "schemaVersion": 1,
+  "itemId": "learn-by-playing-one-moment-zh-CN",
+  "titleZh": "边玩边学 01：只分析一局里的一个时刻",
+  "contentMode": "original_complete",
+  "language": "zh-CN",
+  "version": "1.0.0",
+  "authorship": {
+    "author": "落桌",
+    "production": "Codex 基于项目研究、官方规则与列明来源完成原创综合",
+    "humanReviewRequired": false
+  },
+  "learningOutcome": "把一次游玩中的具体时刻整理成可核验的行动记录、暂时系统推断、替代解释、未知项和下一次观察问题，并迁移到自己的设计。",
+  "sourceIds": [
+    "game-design-concepts",
+    "mda-framework",
+    "five-part-model",
+    "kingdomino-official-product",
+    "kingdomino-official-rules"
+  ],
+  "sourceUrls": [
+    "https://gamedesignconcepts.wordpress.com/2009/07/06/level-3-formal-elements-of-games/",
+    "https://gamedesignconcepts.wordpress.com/2009/08/31/level-19-game-criticism-and-analysis/",
+    "https://www.cs.northwestern.edu/~hunicke/MDA.pdf",
+    "https://www.clei.org/cleiej/index.php/cleiej/article/view/473",
+    "https://www.blueorangegames.com/games/king-domino",
+    "https://blueorangegames.com/webroot/img/games/rules/cfa0f38157341a002eab1100aab478ea-Kingdomino-Rules-US-2nd-Edition.pdf"
+  ],
+  "exampleBoundary": "《Kingdomino》段落是依据官方规则构造的虚构教学记录，不是一次真实观察，不代表设计师意图、玩家群体结论或效果验证。",
+  "publication": {
+    "visibility": "internal",
+    "status": "published-internal",
+    "rightsBasis": "本站原创综合；外部规则事实、框架与课程仅用于研究、归属和事实核验。"
+  },
+  "metrics": {
+    "hanCharacterCount": 6680,
+    "hanCharacterRange": "U+4E00–U+9FFF",
+    "countMethod": "Node.js: (text.match(/[\\u4E00-\\u9FFF]/g) || []).length",
+    "countedAt": "2026-08-22"
+  },
+  "file": "content/learning-units/learn-by-playing-one-moment-zh-CN.md",
+  "updatedAt": "2026-08-22"
+}

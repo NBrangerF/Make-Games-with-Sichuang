@@ -1,0 +1,397 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "choose-learning-spine",
+    "title": "选一条能产出行动的学习主线",
+    "question": "指南、课程和书单很多，我不知道哪一种能帮我完成当前的设计任务。",
+    "outcome": "先按当前设计问题选一条主线，再补一个反例或玩家语境；阅读结束时必须留下一个可上桌动作、行为预测和反驳信号。",
+    "resourceIds": [
+      "game-design-concepts",
+      "kathleen-mercury-resources",
+      "your-turn-tabletop-guide",
+      "white-box-game-design",
+      "kobold-guide-board-game-design-official",
+      "game-design-workshop-fifth",
+      "rules-of-play-book",
+      "building-blocks-tabletop-book"
+    ],
+    "evidenceBoundary": "入口按资源结构和当前任务导航，不是质量排名、购买建议或学习成效评测；多数付费书籍只核验官方目录与元数据。"
+  },
+  "resources": [
+    {
+      "id": "game-design-concepts",
+      "title": "Game Design Concepts",
+      "creator": "Ian Schreiber",
+      "href": "https://gamedesignconcepts.wordpress.com/",
+      "type": "免费课程",
+      "evidenceType": "teaching_curation",
+      "format": "course",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "测试与反馈"
+      ],
+      "useful": "自定进度、带练习的系统入门，明确采用 CC BY 3.0。",
+      "limitation": "课程年代较早；部分工具和行业信息需要更新。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-13"
+    },
+    {
+      "id": "kathleen-mercury-resources",
+      "title": "Resources to Teach Strategy Game Design",
+      "creator": "Kathleen Mercury",
+      "href": "https://www.kathleenmercury.com/",
+      "type": "教学策展",
+      "evidenceType": "teaching_curation",
+      "format": "course",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "从游玩、机制、主题到原型、WINQ 反馈和规则的完整课堂路径；首页也明确说明免费共享与回馈期待。",
+      "limitation": "以教师主持和青少年学期课程为语境；可用不等于可再出版，站点明确禁止将材料自行出版，单项第三方材料仍需核对权利。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "your-turn-tabletop-guide",
+      "title": "Your Turn!: The Guide to Great Tabletop Game Design",
+      "creator": "Scott A. Rogers",
+      "href": "https://uat.store.wiley.com/en-us/your-turn%21-the-guide-to-great-tabletop-game-design-p-9781119981596",
+      "type": "桌游原型练习主线",
+      "evidenceType": "commercial",
+      "format": "book",
+      "access": "paid",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "测试与反馈",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "出版社目录将全书组织为多种桌游原型练习，并覆盖规则、测试、投稿和众筹。",
+      "limitation": "本轮只核验 Wiley 书目、目录级说明和元数据；未审阅 464 页付费正文，也没有验证练习成效。",
+      "status": "metadata_only",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "white-box-game-design",
+      "title": "The White Box: A Game Design Workshop-in-a-Box",
+      "creator": "Jeremy Holcomb / Atlas Games / Gameplaywright",
+      "href": "https://atlas-games.com/product_tables/AG2903",
+      "type": "桌游设计工作坊盒",
+      "evidenceType": "commercial",
+      "format": "book",
+      "access": "paid",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "测试与反馈",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "把通用骰子、米宝、方块等原型件与 25 篇设计、测试、规则、生产和发布短文放在一个工作坊产品中。",
+      "limitation": "本轮只核验官方产品结构与短文目录，未审阅付费正文或实测组件；出版和众筹章节的时效性需另行复核。",
+      "status": "metadata_only",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "kobold-guide-board-game-design-official",
+      "title": "Kobold Guide to Board Game Design",
+      "creator": "Mike Selinker 编 / Kobold Press",
+      "href": "https://koboldpress.com/kpstore/product/kobold-guide-to-board-game-design/",
+      "type": "官方书目与购买入口",
+      "evidenceType": "commercial",
+      "format": "book",
+      "access": "paid",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "测试与反馈",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "核验完整英文版为 144 页、由 15 位贡献者讨论构思、设计、开发与呈现，并提供出版社当前的纸书与 PDF 入口。",
+      "limitation": "官方销售页不是内容评价；价格、库存和格式高时效。用户本地中文文件只有 55 页预读内容，本站未据官方简介补写缺失章节。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-21"
+    },
+    {
+      "id": "game-design-workshop-fifth",
+      "title": "Game Design Workshop: A Playcentric Approach to Creating Innovative Games (5th Edition)",
+      "creator": "Tracy Fullerton",
+      "href": "https://www.routledge.com/Game-Design-Workshop-A-Playcentric-Approach-to-Creating-Innovative-Games/Fullerton/p/book/9781032607009",
+      "type": "跨媒介练习驱动教材",
+      "evidenceType": "teaching_curation",
+      "format": "book",
+      "access": "paid",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "最小原型",
+        "测试与反馈",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "官方目录从形式、戏剧与系统元素推进到构思、原型、测试、平衡、无障碍、团队、沟通与行业。",
+      "limitation": "这是跨数字与实体媒介的游戏设计教材，不是桌游制造或出版专书；本轮只读官方目录与简介。",
+      "status": "metadata_only",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "rules-of-play-book",
+      "title": "Rules of Play: Game Design Fundamentals",
+      "creator": "Katie Salen Tekinbaş & Eric Zimmerman",
+      "href": "https://mitpress.mit.edu/9780262240451/rules-of-play/",
+      "type": "游戏设计理论与参考书",
+      "evidenceType": "academic",
+      "format": "book",
+      "access": "paid",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "体验意图",
+        "核心系统",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "MIT Press 将它定位为教科书、参考书和理论指南，用 18 个 schema 讨论系统、信息、社会游玩、叙事与文化。",
+      "limitation": "跨桌游、体育与数字游戏，且不是第一天快速原型手册；本轮未深读 688 页付费正文。",
+      "status": "metadata_only",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "building-blocks-tabletop-book",
+      "title": "Building Blocks of Tabletop Game Design: An Encyclopedia of Mechanisms (2nd Edition)",
+      "creator": "Geoffrey Engelstein & Isaac Shalev",
+      "href": "https://www.routledge.com/Building-Blocks-of-Tabletop-Game-Design-An-Encyclopedia-of-Mechanisms/Engelstein-Shalev/p/book/9781032015811",
+      "type": "桌游机制百科",
+      "evidenceType": "teaching_curation",
+      "format": "book",
+      "access": "paid",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "核心系统",
+        "规则与信息"
+      ],
+      "useful": "按游戏结构、回合顺序、行动、结算、胜利、随机、经济和拍卖等类别查找机制定义与实现注意事项。",
+      "limitation": "本轮只核验出版社书目信息；百科适合查找和比较，不会自动告诉设计者哪个机制符合目标体验。",
+      "status": "metadata_only",
+      "lastCheckedAt": "2026-08-14"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "game-design-concepts",
+      "useModes": [
+        "learn"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "exercise",
+      "transferability": "broad",
+      "currencyRisk": "medium",
+      "rightsStatus": "reusable_license_verified",
+      "commercialContext": "none_disclosed",
+      "bestFor": "按课程节奏学习核心概念，并通过练习把定义转成自己的设计产出。",
+      "doNotUseFor": "不要假定其中的工具与外部链接仍保持原有可用性；使用前需要复核。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "kathleen-mercury-resources",
+      "useModes": [
+        "learn",
+        "lookup"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "沿着教学单元建立桌游设计课程或自学路径，并按主题继续寻找活动与案例。",
+      "doNotUseFor": "不要把面向课堂的材料顺序直接视为所有成人自学者都适用的唯一流程，也不要因为免费使用就复制或再出版原材料。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "your-turn-tabletop-guide",
+      "useModes": [
+        "learn",
+        "lookup"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "metadata_only",
+      "contextClarity": "explicit",
+      "actionability": "exercise",
+      "transferability": "broad",
+      "currencyRisk": "high",
+      "rightsStatus": "restricted",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "希望按书中顺序完成多种桌游原型，并继续处理规则、测试和发布准备的学习者。",
+      "doNotUseFor": "不要把出版社简介当成已验证课程成效、内容细评或发行成功保证。",
+      "reviewedAt": "2026-08-18",
+      "status": "metadata_only"
+    },
+    {
+      "resourceId": "white-box-game-design",
+      "useModes": [
+        "learn",
+        "lookup"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "metadata_only",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "high",
+      "rightsStatus": "restricted",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "用一组通用实体件快速开始原型，并按构思、随机、规则、测试或出版问题查找短文。",
+      "doNotUseFor": "不要把产品简介当全文评价，也不要直接依赖旧版出版、众筹或合同建议采取当前行动。",
+      "reviewedAt": "2026-08-18",
+      "status": "metadata_only"
+    },
+    {
+      "resourceId": "kobold-guide-board-game-design-official",
+      "useModes": [
+        "lookup",
+        "learn"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "metadata_only",
+      "contextClarity": "explicit",
+      "actionability": "directory",
+      "transferability": "broad",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "核验完整英文版的篇幅、贡献者、主题范围与出版社入口，并与本地 55 页中文版预读文件区分。",
+      "doNotUseFor": "不要把销售简介当全书审阅、作者观点证据或购买建议；行动时重新核验价格、库存、格式和地区可得性。",
+      "reviewedAt": "2026-08-21",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "game-design-workshop-fifth",
+      "useModes": [
+        "learn",
+        "lookup",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "metadata_only",
+      "contextClarity": "explicit",
+      "actionability": "exercise",
+      "transferability": "broad",
+      "currencyRisk": "medium",
+      "rightsStatus": "restricted",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "用跨媒介、练习驱动教材系统学习玩家中心设计、原型、测试、修订和团队沟通。",
+      "doNotUseFor": "不要把它当桌游实体生产专书，或在未阅正文时声称其练习已被本站验证。",
+      "reviewedAt": "2026-08-18",
+      "status": "metadata_only"
+    },
+    {
+      "resourceId": "rules-of-play-book",
+      "useModes": [
+        "learn",
+        "lookup",
+        "compare",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "metadata_only",
+      "contextClarity": "explicit",
+      "actionability": "directory",
+      "transferability": "broad",
+      "currencyRisk": "low",
+      "rightsStatus": "restricted",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "建立关于交互、系统、信息、社会游玩、叙事与文化的理论词汇和后续深读路线。",
+      "doNotUseFor": "不要当作第一份快速原型指令集，或在未阅付费正文时引用章节论证。",
+      "reviewedAt": "2026-08-18",
+      "status": "metadata_only"
+    },
+    {
+      "resourceId": "building-blocks-tabletop-book",
+      "useModes": [
+        "learn",
+        "lookup",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "metadata_only",
+      "contextClarity": "partial",
+      "actionability": "directory",
+      "transferability": "broad",
+      "currencyRisk": "medium",
+      "rightsStatus": "restricted",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "按回合、行动、结算、胜利、不确定性与经济等类别查找机制词汇和比较入口。",
+      "doNotUseFor": "不要把机制百科当机制推荐器，或在未读条目时宣称某机制的实现注意事项。",
+      "reviewedAt": "2026-08-14",
+      "status": "metadata_only"
+    }
+  ]
+}

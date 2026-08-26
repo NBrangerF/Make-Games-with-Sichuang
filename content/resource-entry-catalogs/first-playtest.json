@@ -1,0 +1,374 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "first-playtest",
+    "title": "准备第一次外部测试",
+    "question": "游戏已经能动起来，但我不知道该找谁、问什么，以及何时停止。",
+    "outcome": "先选择本轮问题、测试者和最低成本方式，再把观察、体验、建议和设计决定分开。",
+    "resourceIds": [
+      "ttgda-playtesting",
+      "bgdl-playtest-like-a-boss",
+      "break-my-game-code",
+      "greg-blind-playtesting",
+      "protospiel-online",
+      "unpub-network",
+      "tbd-playtest-86",
+      "sspai-heavy-wargame-testing"
+    ],
+    "evidenceBoundary": "协会、设计师教学和测试社群提供的是流程与入口，不保证某次活动、样本或主持方式足以证明游戏已经可发行。"
+  },
+  "resources": [
+    {
+      "id": "ttgda-playtesting",
+      "title": "Playtesting Resources",
+      "creator": "Tabletop Game Designers Association",
+      "href": "https://www.ttgda.org/in-person-playtesting",
+      "type": "行业协会",
+      "evidenceType": "teaching_curation",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "最小原型",
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "区分自测、引导测试与更晚阶段的测试任务。",
+      "limitation": "具体活动与链接会随时间变化，需要查看核验日期。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-13"
+    },
+    {
+      "id": "bgdl-playtest-like-a-boss",
+      "title": "How to Playtest like a Boss",
+      "creator": "Gabe Barrett / Board Game Design Lab",
+      "href": "https://boardgamedesignlab.com/playtest-like-a-boss/",
+      "type": "实践指南",
+      "evidenceType": "teaching_curation",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "比较熟人、设计师、陌生人和盲测能提供的不同证据，并提醒观察身体语言后再追问。",
+      "limitation": "聚合了多位设计师格言；格言本身不能代替适用条件。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-13"
+    },
+    {
+      "id": "break-my-game-code",
+      "title": "Playtesting Code of Conduct",
+      "creator": "Break My Game",
+      "href": "https://www.breakmygame.com/codeofconduct",
+      "type": "测试社群规范",
+      "evidenceType": "community",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "把测试前说明、时间边界、互惠、反馈礼仪、无引导测试和录制同意写成可执行社群规则。",
+      "limitation": "这是特定社群的活动规范，不是研究协议；活动安排和主持规则可能变化。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-14"
+    },
+    {
+      "id": "greg-blind-playtesting",
+      "title": "The Importance of Blind Playtesting",
+      "creator": "Greg In Play",
+      "href": "https://greginplay.com/posts/blind-playtesting.html",
+      "type": "设计师博客",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "用玩家是否仍依赖设计者、能否形成局内目标和能否快速查询规则来判断盲测准备度。",
+      "limitation": "准备度清单来自个人经验，不是经验证的通用门槛；不同团队可以更早做局部盲测。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-14"
+    },
+    {
+      "id": "protospiel-online",
+      "title": "Protospiel Online",
+      "creator": "Protospiel Online",
+      "href": "https://protospiel.online/",
+      "type": "线上测试社群",
+      "evidenceType": "community",
+      "format": "tool",
+      "access": "restricted",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈",
+        "规则与信息"
+      ],
+      "useful": "展示远程外部测试所需的找桌、主持、虚拟桌面、互惠和无引导测试基础设施。",
+      "limitation": "活动日期、费用、支持平台和入场条件高度时效；本站未参加或评估社群体验。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-14"
+    },
+    {
+      "id": "unpub-network",
+      "title": "The Unpublished Games Network",
+      "creator": "Unpub",
+      "href": "https://www.unpub.org/",
+      "type": "线下测试与导师网络",
+      "evidenceType": "community",
+      "format": "tool",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "测试与反馈",
+        "呈现与发布"
+      ],
+      "useful": "为未出版桌游提供测试活动、导师与教育入口，可帮助设计者获得项目关系之外的反馈。",
+      "limitation": "活动地域、时间和参与成本会变化；官网定位不能证明单场测试质量。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-14"
+    },
+    {
+      "id": "tbd-playtest-86",
+      "title": "第 86 场 TBD 测试会回顾",
+      "creator": "smooxchen / Taiwan Boardgame Design",
+      "href": "https://www.tbd.com.tw/blogs/prototype/144877",
+      "type": "繁中公开测试记录",
+      "evidenceType": "community",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "zh"
+      ],
+      "stages": [
+        "最小原型",
+        "测试与反馈",
+        "呈现与发布"
+      ],
+      "useful": "展示台湾每周小型测试聚会怎样公开招募、记录多个原型，并为后续开发、出版和传播保留过程材料。",
+      "limitation": "主办方日志只记录一次聚会与现场观察；6–12 人规模、频率和项目评价不是测试效果研究或充分样本标准。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "sspai-heavy-wargame-testing",
+      "title": "桌游设计杂记（5）：用三个月，测试并编辑一个重度的战棋游戏",
+      "creator": "乔淼",
+      "href": "https://sspai.com/post/97061",
+      "type": "中文设计师测试复盘",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "zh-CN"
+      ],
+      "stages": [
+        "测试与反馈",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "记录重度战棋自测、外部试玩、TTS 更新、变更日志、多语言数据表、规则同步与实体打样的连续工作。",
+      "limitation": "单一重度战棋项目和作者分工不能成为最低测试局数、玩家义务或所有桌游编辑流程的标准。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "ttgda-playtesting",
+      "useModes": [
+        "learn",
+        "lookup"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "partial",
+      "actionability": "directory",
+      "transferability": "conditional",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "快速获得多种测试文章、社群和服务入口，再按当前测试问题选择下一步。",
+      "doNotUseFor": "不要假定目录中的每个外链仍可访问或经过同等审阅；打开前需逐项核验。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "bgdl-playtest-like-a-boss",
+      "useModes": [
+        "learn",
+        "lookup"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "partial",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "建立一场测试前、中、后的主持与记录清单，减少临场遗漏。",
+      "doNotUseFor": "不要把流程清单当成统一研究协议；儿童、线上或无障碍测试需要另行调整。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "break-my-game-code",
+      "useModes": [
+        "learn",
+        "lookup"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "准备社群测试前检查介绍、时间、录制同意、反馈礼仪和参与者退出边界。",
+      "doNotUseFor": "不要把某个社群的活动规则当成研究伦理审批或所有测试场景的统一协议。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "greg-blind-playtesting",
+      "useModes": [
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "none_disclosed",
+      "bestFor": "判断当前原型是否稳定到值得进行整局盲测，并识别仍在依赖设计者的信号。",
+      "doNotUseFor": "不要把个人准备度清单变成硬门槛；设置、查询等局部盲测可以更早进行。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "protospiel-online",
+      "useModes": [
+        "lookup",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "directory",
+      "transferability": "narrow",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "寻找远程外部测试活动，并理解找桌、互惠、主持和数字原型准备条件。",
+      "doNotUseFor": "不要把页面上的当前价格、日期或支持平台长期固化到自己的流程，也不能据此保证测试质量。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "unpub-network",
+      "useModes": [
+        "lookup"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "directory",
+      "transferability": "narrow",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "寻找北美线下测试活动、导师和教育项目，为未出版原型取得外部反馈。",
+      "doNotUseFor": "不要假定活动对所有地区可达，也不要从组织定位推断单场活动适合自己的目标受众。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "tbd-playtest-86",
+      "useModes": [
+        "case_study",
+        "lookup",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "观察公开测试社群怎样安排频率、开放参与并为多个项目留下可回看的开发材料。",
+      "doNotUseFor": "不要用某次人数、主办者短评或聚会持续年限证明一款游戏已测试充分或修改有效。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "sspai-heavy-wargame-testing",
+      "useModes": [
+        "case_study",
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "研究重度项目如何把内部测试、试玩、TTS 资产、规则、翻译表、更新日志和打样文件同步管理。",
+      "doNotUseFor": "不要把作者自测比例、局数或出版商转述的最低局数当成所有游戏的行业标准。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    }
+  ]
+}

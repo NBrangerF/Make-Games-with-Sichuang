@@ -1,0 +1,314 @@
+# 项目文档索引
+
+最后更新：2026-08-24
+
+## 从这里开始
+
+- [落桌 Vercel 首次部署交接](handovers/2026-08-24-vercel-deployment.md)：正式地址、首次部署自动进入 Production 的说明、内部学习与 noindex 边界、完整构建门禁、线上响应头/静态资源验收及后续 Preview/Production 操作边界。
+- [落桌品牌与首页横幅 V5.2](product/LUOZHUO_BRAND_AND_HOME_BANNER_V5_2.md)：品牌名“落桌”、解释性副标题“桌游设计馆”、Image 2 首页主视觉、资源优先的首页媒体层级与品牌一致性合同。
+- [落桌品牌与首页横幅 V5.2 交接](handovers/2026-08-24-luozhuo-brand-home-banner-v5-2.md)：实现文件、资产版本、品牌迁移范围、生产构建、浏览器证据与下一步边界。
+- [落桌品牌与首页横幅 V5.2 保真度账本](qa/LUOZHUO_BRAND_BANNER_V5_2_FIDELITY_LEDGER_2026-08-24.md)：概念与实装对照、首屏文案差异、原生视口数据、核心交互和最终签收。
+
+- [Playable Archive V5.1 高级化精修交接](handovers/2026-08-23-playable-archive-v5-1-premium-refinement.md)：当代设计博物馆与高级桌游出版物方向、全站实施、素材边界、生产构建和多视口证据。
+- [Playable Archive V5.1 当前进度快照](PROGRESS_SNAPSHOT_PLAYABLE_ARCHIVE_V5_1_2026-08-23.md)：当前预览、已完成视觉基线、保持不变的内容规模、已知边界与下一步真人测试。
+- [桌游设计资源站视觉设计手册 V5.1](product/TABLETOP_VISUAL_DESIGN_MANUAL_V5_1_PREMIUM.md)：冻结 `7 / 4 / 3` 旋钮、冷白/深墨/钴蓝系统、语义色纪律、页面模板、响应式、无障碍与素材政策。
+- [Playable Archive V5.1 高级化保真度账本](qa/PLAYABLE_ARCHIVE_V5_1_FIDELITY_LEDGER_2026-08-23.md)：五张接受概念、九个正式浏览器状态、首屏文案差异、实质修复、有意差异与最终签收。
+- [Playable Archive V5 全站视觉重构交接](handovers/2026-08-23-playable-archive-v5-ui-rebuild.md)：经典桌游网络摄影标本、“展览桌 / 资料抽屉 / 规则册 / 实验板”全站实施、权利边界、生产构建与多视口证据。
+- [Playable Archive V5 当前进度快照](PROGRESS_SNAPSHOT_PLAYABLE_ARCHIVE_V5_2026-08-23.md)：可直接预览的当前版本、不变内容基线、验证结果和下一步真人测试。
+- [桌游设计资源站视觉设计手册 V4](product/TABLETOP_VISUAL_DESIGN_MANUAL_V4.md)：可玩的桌游档案馆视觉系统、页面角色、三旋钮、设计 Token、组件、响应式、无障碍与素材政策实施权威。
+- [Playable Archive V5 视觉保真度账本](qa/PLAYABLE_ARCHIVE_V5_FIDELITY_LEDGER_2026-08-23.md)：五张概念图、正式截图、十个对照点、首屏文案差异、实质修正与有意偏差。
+- [经典桌游网络视觉素材审计 V5](research/CLASSIC_BOARD_GAME_WEB_ASSET_AUDIT_V5_2026-08-23.md)：可追溯图片、许可、二层权利风险、可迁移视觉语法与内部/公开使用边界。
+- [Open Table V4 全站 UI 与视觉重构交接](handovers/2026-08-23-open-table-v4-ui-rebuild.md)：设计手册正式应用到 React 站点后的页面映射、经典桌游抽象、原创素材、实现文件、生产构建、桌面/手机浏览器证据与下一阶段边界。
+- [Open Table V4 当前进度快照](PROGRESS_SNAPSHOT_OPEN_TABLE_V4_2026-08-23.md)：本轮已经完成、保持不变、验证结果、可直接预览入口和仍需真人验证的事项。
+- [桌游设计资源站视觉设计手册 V3](product/TABLETOP_VISUAL_DESIGN_MANUAL_V3.md)：冻结“开放桌面”视觉系统、跨年龄脚手架、七种页面模板、组件状态、令牌、响应式、无障碍、素材边界与 Phase 0 至 Phase 6 迁移合同。
+- [V3 视觉设计手册交接](handovers/2026-08-23-visual-design-manual-v3.md)：本阶段交付物、桌面/移动样板、五视口浏览器证据、双重复核、未完成项与下一阶段唯一目标。
+- [经典桌游视觉与信息设计参考](research/CLASSIC_BOARD_GAME_VISUAL_REFERENCE_2026-08-23.md)：11 个官方案例、六条可迁移原则、原创表达政策及版权、翻译、商标、专利与外观设计边界。
+- [资源网站 V2 当前进度快照：导航减法与工具入流](PROGRESS_SNAPSHOT_RESOURCE_V2_2026-08-22_NAV_TOOLS.md)：`resource-v2-05` 两项顶栏、“方法与概念”任务入口、34/16/5/4 语境工具映射、旧深链兼容、视觉对照与浏览器证据。
+- [资源网站 V2 导航减法与工具入流交接](handovers/2026-08-22-resource-v2-navigation-tool-integration.md)：实现触点、20 种工作单覆盖、精确返回行为、验收命令、已知历史脚本边界与下一原子工作包。
+- [资源网站 V2 当前执行进度快照：内容包 03](PROGRESS_SNAPSHOT_RESOURCE_V2_2026-08-22_CONTENT_03.md)：当前 `8 + 3 + 5` 内容基线、三个新增完整正文、减法 UI 对照、生产构建及桌面/移动浏览器 QA 证据。
+- [资源网站 V2 内容包 03 交接](handovers/2026-08-22-resource-v2-content-package-03.md)：当前文件、稳定深链、计划/示范/虚构记录边界、守卫、浏览器等待条件、已知性能提示与下一内容包原子任务。
+- [资源网站 V2 内容包 02 历史快照](PROGRESS_SNAPSHOT_RESOURCE_V2_2026-08-22.md)：保留 `5 + 3 + 5` 阶段基线、当时的视觉与浏览器证据，不替代当前快照。
+- [资源网站 V2 内容包 02 历史交接](handovers/2026-08-22-resource-v2-content-package-02.md)：记录单元 3、4、第三篇完整译文与第二批案例的落地边界。
+- [2026-08-21 资源网站 V2 历史快照](PROGRESS_SNAPSHOT_RESOURCE_V2_2026-08-21.md)：保留 `3 + 2 + 3` 内容基线、问题入口二段式、旧深链兼容与当时的浏览器证据，不替代当前快照。
+- [2026-08-21 阶段进度快照](PROGRESS_SNAPSHOT_2026-08-21.md)：暂停扩张后的统一状态、当前规模、验证证据、未完成项与下一阶段建议。
+- [桌游设计资源网站 V2 总方案](product/RESOURCE_SITE_V2_MASTER_PLAN.md)：三个资源主入口、第一入口四条学习方式、分析游戏入口、完整中文内容契约、UI 减法与分阶段执行门；当前为 `7` 个原创系统单元、`1` 个原创边玩边学脚手架、`3` 篇开放许可完整译文、`5` 篇原创设计师案例，共 `16` 个 `authoritativeItems`。本轮静态门、生产构建和浏览器 QA 已通过，首页与一级入口不扩张。
+- [资源入口 V2 视觉规格](product/RESOURCE_V2_VISUAL_SPEC.md)：冻结的减法 UI、响应式规则、概念图和桌面/移动浏览器保真证据。
+- [资源网站 V2 首批内容基础交接](handovers/2026-08-21-resource-v2-content-foundation.md)：保留的历史交接，记录首批 `3 + 2 + 3` 内容、二段式问题入口、每个主题 3 份起步内容、未授权外文不做全文翻译的边界，以及当时提出的单元 3/4、开放许可无障碍规则书和更多案例下一包。
+- [从设计师角度分析游戏的资源入口 01](research/GAME_ANALYSIS_FRAMEWORK_ENTRY_01.md)：按普通问题选择分析镜头、四步最短流程、框架分组、内容缺口与验收条件。
+- [核心 18 份资料中文全文权利审计 01](research/CORE_18_TRANSLATION_RIGHTS_AUDIT_01.md)：两项开放许可候选、十六项授权或原创替代路径、数据修正和全文发布字段。
+- [核心学习内容与权利数据契约 01](product/RESOURCE_LEARNING_CONTENT_CONTRACT_01.md)：六种内容模式、18 份核心资料真实基线、3 份已授权 Codex AI 完整译文、8 份本站原创完整正文和 5 份原创案例综合，共 16 个显式 `authoritativeItems`，以及人工/法律声明与内部/公开边界构建门。
+- [系统学习单元 3：机制、信息与互动](../content/learning-units/systematic-unit-03-mechanisms-information-interaction-zh-CN.md)：把机制、信息、权限与玩家互动连成一个可检查的系统关系；属于本轮新增 `original_complete` 正文。
+- [系统学习单元 4：最小原型](../content/learning-units/systematic-unit-04-minimum-prototype-zh-CN.md)：围绕一个问题选择最小规则、组件与保真度；属于本轮新增 `original_complete` 正文。
+- [系统学习单元 5：单问题测试](../content/learning-units/systematic-unit-05-single-question-test-zh-CN.md)：把一个原型问题写成含预测、反驳、参与范围、无引导任务、观察、停止与移交的测试计划；[来源审计](research/SYSTEMATIC_UNIT_05_SOURCE_AUDIT_2026-08-22.md)记录用途与边界。
+- [系统学习单元 6：从证据到下一版](../content/learning-units/systematic-unit-06-evidence-to-next-version-zh-CN.md)：把冻结版本、观察、原话、推断、备选原因与单项下一版改动连成简报；[来源审计](research/SYSTEMATIC_UNIT_06_SOURCE_AUDIT_2026-08-22.md)记录 `DEMO-01` 边界。
+- [边玩边学 01：只分析一局里的一个时刻](../content/learning-units/learn-by-playing-one-moment-zh-CN.md)：用明确标注为虚构的《Kingdomino》教学记录示范事实、行动、推断、替代解释与未知；[来源审计](research/LEARN_BY_PLAYING_ONE_MOMENT_SOURCE_AUDIT_2026-08-22.md)记录官方规则事实与构造记录边界。
+- [《怎样让规则书既无障碍又有趣？》完整中文译文](../content/translations/what-makes-a-rulebook-accessible-and-entertaining-zh-CN.md)：CC BY 4.0、Codex AI 全译、内部学习主版；[全文翻译与第三方素材审计](research/RULEBOOK_ACCESSIBILITY_TRANSLATION_AUDIT_2026-08-22.md)记录官方 PDF、15 页视觉核验、许可证据、三幅图文字替代和非人工/非法律审定边界。
+- [Paul Grogan 规则书交接案例综合](../content/guides/paul-grogan-rulebook-layout-case-synthesis-zh-CN-internal.md)：第二批原创设计师案例之一；[来源与综合边界核验](research/SOURCE_VERIFICATION_PAUL_GROGAN_RULEBOOK_LAYOUT_SYNTHESIS.md)分开受访者报告、本站推断与未获全文翻译许可的边界。
+- [《New Bedford》生产约束案例综合](../content/guides/new-bedford-manufacturing-constraint-case-synthesis-zh-CN-internal.md)：第二批原创设计师案例之一；[来源与综合边界核验](research/SOURCE_VERIFICATION_NEW_BEDFORD_MANUFACTURING_SYNTHESIS.md)记录制造限制、版本事实和不制作来源全译的边界。
+- **下一内容包建议**：优先单元 7“规则、教学与查询”、单元 8“呈现、生产与发布”，并为“从设计师角度分析一款游戏”补完整导论和第一份站内分析；沿用现有二级正文路径，不新增筛选器、账号、评分、顶栏工具入口、首页入口或一级学习入口。工作单只在相关资料、单元或分析问题之后出现。
+- [资源优先与中文站内阅读重构 01](product/RESOURCE_FIRST_REDESIGN_01.md)：阶段化资源入口、中文导读、站内阅读和全文译文的权利边界。
+- [资源受众入口与分层阅读 01](product/RESOURCE_AUDIENCE_ENTRY_01.md)：按当前处境而非年龄分流、资源阅读提示和真实测试问题。
+- [六阶段最短资源学习路线 01](product/RESOURCE_LEARNING_PATHS_01.md)：每阶段三份起步资料、中文学习标题、阅读重点和立即行动。
+- [项目章程](PROJECT_CHARTER.md)：为什么做、为谁做、做到什么程度。
+- [路线图](ROADMAP.md)：从研究到首版网站的阶段与验收标准。
+- [研究方法](research/METHODOLOGY.md)：如何搜索、评价与引用资料。
+- [研究问题地图](research/RESEARCH_QUESTIONS.md)：本轮研究覆盖范围。
+- [初步研究报告](research/INITIAL_LANDSCAPE.md)：第一轮网络资料综合。
+- [Kathleen Mercury 教学结构研究](research/KATHLEEN_MERCURY_STUDY.md)：从资源站提取可迁移的教学设计。
+- [实践文章样本 01](research/PRACTICE_SAMPLE_01.md)：原型、测试、改动与玩家分析中的共识和分歧。
+- [实践文章样本 02](research/PRACTICE_SAMPLE_02.md)：16 篇文章级设计决定、中文交叉样本与产品转译。
+- [研究全文笔记 01](research/ACADEMIC_NOTES_01.md)：创作工具、线上/实体测试与桌游无障碍。
+- [研究全文笔记 02](research/ACADEMIC_NOTES_02.md)：MDA、5PM、TAG、Ludii 与 AutoBG 的全文比较和产品转译。
+- [专项研究 01：测试类型、规则盲测与设计辅助桌游](research/PLAYTEST_AND_DESIGN_AIDS_01.md)：公开实践、实体辅助工具、证据边界与产品转译。
+- [测试证据综合与版本决定研究](research/PLAYTEST_EVIDENCE_SYNTHESIS_RESEARCH_01.md)：观察—发现—行动分层、频次边界、方案比较与撤回级联。
+- [新手证据复盘交接审计](research/BEGINNER_EVIDENCE_REVIEW_HANDOFF_AUDIT_01.md)：旧反馈收件箱的六个断点与新工作台完成门。
+- [专项研究 02：原创设计约束牌](research/DESIGN_CONSTRAINT_CARDS_01.md)：约束、结构化构思方法的反例、牌组结构与权利边界。
+- [专项研究 03：规则书与任务无障碍](research/RULEBOOK_ACCESSIBILITY_01.md)：玩家自主性、规则格式/节奏、任务观察字段与证据边界。
+- [专项研究 04：跨维度桌游无障碍](research/ACCESSIBILITY_BREADTH_02.md)：操作、沟通、认知、情绪、经济与交叉适配的证据边界。
+- [中文无障碍玩家声音第二轮](research/CHINESE_ACCESSIBILITY_VOICES_02.md)：区分桌游参与者研究、中文参与记录、数字游戏相邻证据与机构转述，并把协助建模为系统角色。
+- [玩家经验与设计案例贡献研究](research/CONTRIBUTION_ETHICS_01.md)：分开参与、保存、公开和公共许可，建立角色、补偿、儿童安全与撤回边界。
+- [专项研究 12：实时、灵巧动作与身体化桌面体验](research/EMBODIED_REALTIME_PLAY_01.md)：把实体动作、桌面条件、计时、权限与动作修复放进同一版本观察，并保留替代节奏的体验差异。
+- [专项研究 13：设计能力长期形成与跨项目迁移](research/DESIGN_EXPERTISE_LEARNING_01.md)：比较设计专长、日志、Jam、比赛与长期日记，把成长从数量指标改写为带边界的判断迁移。
+- [专项研究 14：跨局、跨周测试与回访](research/LONGITUDINAL_PLAYTESTING_01.md)：区分新玩家、回流玩家与同组轨道，用片段记录、局后展开和延迟回访观察实际变化。
+- [专项研究 15：战役、Legacy 与永久状态变化](research/PERSISTENT_CAMPAIGN_PLAY_01.md)：用规则、世界、角色、玩家四条历史建模内容消耗、剧透、永久组件、缺席补位、迁移与退出。
+- [专项研究 16：单人模式、Automa 与自动对手](research/SOLO_AUTOMA_DESIGN_01.md)：区分单人承诺、互动接口、dummy、自动对手、多手控制与设计自测，研究信息模型、维护、难度输入和证据边界。
+- [专项研究 17：玩家人数缩放与配置差异](research/PLAYER_COUNT_SCALING_01.md)：把人数、队伍、角色、模式与座位拆成配置，比较互动拓扑、总行动、密度、功能性 dummy、角色合并、同步行动和社区投票边界。
+- [专项研究 18：游戏时长、节奏、结束条件与拖尾](research/GAME_LENGTH_ENDINGS_01.md)：区分会话计时口径、节奏形状、结束触发与可见性、最后一轮、结果确信/剩余决定、投降和淘汰协议。
+- [专项研究 19：随机性、运气与可控不确定性](research/RANDOMNESS_UNCERTAINTY_01.md)：区分不确定性来源、随机事件时点、暴露选择、回应窗口、缓解动作、代理结果与玩家归因。
+- [专项研究 20：计分、目标、奖励与激励错位](research/SCORING_GOALS_INCENTIVES_01.md)：分开结束、胜负与计分函数，追踪得分事件、路径承诺、速度、可见性和多轨证据。
+- [专项研究 21：回合结构、行动经济与等待](research/TURN_STRUCTURE_ACTION_ECONOMY_01.md)：把回合视为权限与信息结构，展开行动经济、粒度、等待、反应监看、维护功能和主动权。
+- [专项研究 22：空间、距离、邻接与地图结构](research/SPATIAL_MAP_STRUCTURE_01.md)：把地图还原成地点、连接、规则距离、容量与激励，并从真实座位验证制图线索、触达和恢复。
+- [专项研究 23：谈判、承诺、交易与联盟](research/NEGOTIATION_COMMITMENT_ALLIANCE_01.md)：把自由桌谈还原成筹码、外部选项、交易生命周期、约束时机、联盟第三方/退出和沟通渠道。
+- [专项研究 05：平衡、概率、资源经济与反馈回路](research/BALANCE_PROBABILITY_01.md)：平衡目标、数学基线、资源流、追赶与单风险诊断的证据边界。
+- [中文桌游设计实践资料扩展 01](research/CHINESE_PRACTICE_01.md)：大陆、台湾与香港设计日志、公开测试、编辑角色和设计辅助产品的来源边界。
+- [专项研究 06：规则表达、首局教学与查询恢复](research/TEACHING_RULES_01.md)：教学/查询分工、行动式上手、玩家辅助、媒介证据与单任务路径。
+- [专项研究 07：决定空间、玩家互动与可重玩性](research/DECISION_SPACE_INTERACTION_01.md)：合法/实际决定空间、互动影响路径、策略深度与变化量边界。
+- [专项研究 08：合作、谈判、隐藏信息与共同决定](research/COOPERATION_SHARED_DECISION_01.md)：同意语境、信息/权限分布、沟通限制、谈判杠杆与共享决定观察。
+- [专项研究 09：主题承诺、历史表达、文化协作与情绪安全](research/THEME_REPRESENTATION_SAFETY_01.md)：主题与机制、选择性抽象、顾问/共创、内容提示和退出/修复的证据边界。
+- [专项研究 10：生产可行性、组件规格与真实成本边界](research/PRODUCTION_COMPONENTS_01.md)：生产假设、BOM、报价范围、PPC/MPC、装盒任务、履约与 LCA 的证据边界。
+- [专项研究 11：发布路线、投稿匹配与履约责任](research/PUBLISHING_ROUTES_01.md)：授权投稿、PnP/POD、库存自出版、众筹、平台要求与责任分配边界。
+- [桌游设计综合指南地图 01](research/COMPREHENSIVE_GUIDES_01.md)：区分原型主线、工作坊、从业者文集、理论教材与机制参考，按任务选择而不排名。
+- [从设计资源到上桌行动](research/READING_TO_ACTION_PATH_01.md)：把一条主线、审阅深度、异议语境、最小行动和上桌回写串成新手阅读路径。
+- [桌游设计辅助产品谱系 02](research/DESIGN_AID_PRODUCTS_02.md)：区分词汇、约束、诊断、协作、闭环练习与组件盒，并审计游戏化目标漂移和权利边界。
+- [设计辅助工具证据与真人测试就绪度 03](research/DESIGN_AID_EVIDENCE_AND_TEST_READINESS_03.md)：155 套卡牌综述、示例固着/脚手架、去固着边界、重设计文档链与 T1–T6 发布判断。
+- [新手路径完成度审计 01](research/BEGINNER_PATH_COMPLETION_AUDIT_01.md)：定位“模糊点子”到可测试假设的首段断点，并记录选择第 16 项工具的证据。
+- [核心循环交接研究 01](research/CORE_LOOP_HANDOFF_RESEARCH_01.md)：综合核心、循环、决定与反馈来源，形成输入—选择—代价—状态—反馈—下一输入模型。
+- [新手路径完成度审计 02](research/BEGINNER_CORE_LOOP_HANDOFF_AUDIT_01.md)：定位体验意图到核心系统和原型范围的第二段断点，并记录显式交接决策。
+- [单问题测试计划研究 01](research/SINGLE_QUESTION_PLAYTEST_RESEARCH_01.md)：把一个主问题连接到预测、反驳、局中观察、主持边界、参与语境与结论规则。
+- [新手路径完成度审计 03](research/BEGINNER_PLAYTEST_HANDOFF_AUDIT_01.md)：定位原型范围到真实测试计划的第三段断点，并记录测试计划 v2 决策。
+- [现场测试会话研究 01](research/LIVE_PLAYTEST_SESSION_RESEARCH_01.md)：综合桌游设计实践、游戏用户研究和同意指南，形成事件语境、介入、撤回与复盘协议。
+- [新手路径完成度审计 04](research/BEGINNER_LIVE_SESSION_HANDOFF_AUDIT_01.md)：定位测试计划到现场证据和下一版决定的第四段断点。
+- [来源台账](research/SOURCE_LEDGER.md)：已发现来源、证据类型和处理状态。
+- [资源维护与链接巡检](research/RESOURCE_MAINTENANCE.md)：人工内容核验、网络健康状态、运行方式和修复流程。
+- [本地资料索引](local-materials/INDEX.md)：用户课程资料和书籍的处理入口。
+- [本地课程综合 01](local-materials/COURSE_SYNTHESIS_01.md)：从带问题游玩到可测试改动的六步路径。
+- [本地课程综合 02](local-materials/COURSE_SYNTHESIS_02.md)：把汉字与社会科学课程转译成“议题到系统”的五步路径。
+- [本地资料机器清单](local-materials/manifest.json)：57 个候选文件的相对路径、哈希与公开边界，不含原件正文。
+- [本地课程资料发布权利与来源审计](local-materials/PUBLICATION_RIGHTS_AUDIT_01.md)：四个资料群、官方依据、元数据边界、11 道门与下一步取证。
+- [本地资料发布就绪数据](local-materials/publication-readiness.json)：57 个文件逐一覆盖、默认内部参考、0 个发布候选。
+- [本地课程内容发布门禁](product/LOCAL_CONTENT_PUBLICATION_GATE.md)：状态机、公开副本、证据分区与构建拒绝规则。
+- [内容与项目数据模型](product/CONTENT_DATA_MODEL.md)：资源、主张、指南、版本与测试的字段。
+- [概念词表与资源评价规范](product/GLOSSARY_AND_RESOURCE_EVALUATION.md)：规范词条、关系维护与不计算总分的九维资源阅读说明。
+- [MVP 产品规格](product/MVP_SPEC.md)：第一条可用闭环与验收场景。
+- [公开试用发布契约](product/PUBLIC_TRIAL_RELEASE.md)：托管平台比较、构建环境、隐私边界、Go/No-Go、烟测与回滚。
+- [键盘、语义与屏幕阅读器硬门](product/ACCESSIBILITY_HARD_GATE.md)：WCAG 2.2 依据、三层证据门、K1–K8、S1–S8 与发布阻断规则。
+- [本地项目护照与完整导出](product/PROJECT_WORKSPACE.md)：单一活动项目、版本节点、工具记录汇总、完整 JSON 导出与迁移边界。
+- [体验意图卡](product/EXPERIENCE_INTENT_CARD.md)：第 16 项正式工具的五步字段、编译假设、本地保存、导出、视觉与证据边界。
+- [新手可用性测试：体验意图卡](product/USABILITY_TEST_EXPERIENCE_INTENT_CARD.md)：三类模糊起点、T1–T6、支持条件、误读风险与形成性门。
+- [核心循环画布](product/CORE_LOOP_CANVAS.md)：第 17 项正式工具的五步字段、显式来源承接、循环图、保存导出与原型交接。
+- [新手可用性测试：核心循环交接](product/USABILITY_TEST_CORE_LOOP_HANDOFF.md)：体验意图—核心循环—原型范围的 T1–T7、误读风险与形成性门。
+- [单问题测试计划产品规格](product/SINGLE_QUESTION_TEST_PLAN.md)：四步字段、显式范围导入、schema v2、拒绝声明与视觉契约。
+- [新手可用性测试：单问题测试计划](product/USABILITY_TEST_SINGLE_QUESTION_PLAN.md)：承接、单问题、观察、主持、导出与误读的 T1–T5。
+- [现场测试记录器](product/LIVE_PLAYTEST_SESSION_RECORDER.md)：第 18 项正式工具的计划快照、开场同意、现场事件、撤回、导出和下一版决定。
+- [新手可用性测试：现场测试记录器](product/USABILITY_TEST_LIVE_PLAYTEST_SESSION.md)：计划交接、事件语境、主持介入、复盘与撤回的十项任务。
+- [内容版本治理工作台](product/VERSION_GOVERNANCE_WORKBENCH.md)：第 13 项正式工具的五步交互、版本化本地数据、导出契约、兼容证据与边界。
+- [新手可用性测试：内容版本治理工作台](product/USABILITY_TEST_VERSION_GOVERNANCE_WORKBENCH.md)：T1–T6、旧版持有者、支持条件、清空恢复与形成性通过门。
+- [原型范围裁剪器](product/PROTOTYPE_SCOPE_CUTTER.md)：第 14 项正式工具的问题、过滤、三维保真、代理、切片、保存与导出契约。
+- [新手可用性测试：原型范围裁剪器](product/USABILITY_TEST_PROTOTYPE_SCOPE_CUTTER.md)：三类简报、T1–T6、保真误读、媒介边界与形成性通过门。
+- [资源发现、筛选与策展入口](product/RESOURCE_DISCOVERY.md)：三十四条任务型阅读入口、多维筛选、结果说明与无排名边界。
+- [核心指南—精选资源交接契约](product/GUIDE_RESOURCE_HANDOFF.md)：六阶段映射、资源入口深链、目标分片加载与无效 ID 恢复。
+- [资源库按需加载与轻量来源索引](product/RESOURCE_LAZY_LOADING.md)：完整目录条件加载、意图预取、失败恢复、长列表渲染与产物大小证据。
+- [资源库入口级分片可行性](product/RESOURCE_ENTRY_SPLIT_FEASIBILITY.md)：34 个入口的唯一覆盖、重复率、单包体积分布、实施边界与不采用方案。
+- [主包与工具加载边界](product/MAIN_BUNDLE_BOUNDARIES.md)：生产假设账本意图加载、共享存储契约、12 项守卫与主包体积证据。
+- [方法页按需加载与轻量概念索引](product/METHOD_LAZY_LOADING.md)：框架、完整词表和专题指南已拆成三个标签级 chunk，含体积证据和浏览器待验边界。
+- [方法内容深链契约](product/METHOD_DEEP_LINKS.md)：四个分区、898 个条目、规范地址、无效 ID 恢复与原分片边界。
+- [概念—专题—工具双向交接契约](product/CONCEPT_ACTION_HANDOFF.md)：287 个概念、382 条真实专题引用、962 条工具关系、生成规则与非推荐边界。
+- [设计辅助练习闭环产品规格](product/DESIGN_AID_PRACTICE_LOOP.md)：把提示连接到规则产物、行为预测、实际测试和版本记录，不设置设计师分数。
+- [设计辅助练习闭环低保真测试原型](product/DESIGN_AID_LOOP_PROTOTYPE.md)：离线 8 步测试仪器、T1–T6 映射、结构守卫、隐私/证据边界与浏览器待验项。
+- [设计辅助闭环真人测试数据契约](product/DESIGN_AID_TEST_DATA_CONTRACT.md)：安全空白模板、虚构示例、T1–T6 条件语义、隐私边界与 15 项数据守卫。
+- [玩家经验与设计案例贡献包](product/CONTRIBUTION_PACKAGE.md)：默认私有的离线协议、五道发布门、撤回映射和机器守卫；不开放在线投稿。
+- [真实浏览器 QA 环境阻塞](product/BROWSER_QA_BLOCKER.md)：应用内虚拟地址超时、本地端口 `EPERM`、Chrome `SIGABRT`、不得声称通过及重试条件。
+- [贡献包机器模板](product/contribution-package-template.json)：未同意、未公开、未选择公共许可的安全默认数据。
+- [贡献协议测试记录模板](product/contribution-protocol-session-template.json)：C1–C5 走读任务、误解与协议修订记录。
+- [MVP 视觉系统](product/DESIGN_SYSTEM.md)：概念稿提取的实现约束。
+- [V3 视觉令牌机器契约](product/tabletop-visual-tokens-v3.json)：V3 色彩、排版、间距、图形、布局、断点与模板预算的数值真源。
+- [V3 视觉素材登记](product/VISUAL_ASSET_REGISTER_V3.md)：原创风格板与桌面、移动、窄屏 QA 截图的来源、哈希和使用范围。
+- [视觉与功能验收记录](product/FIDELITY_LEDGER.md)：概念稿对照、响应式检查和浏览器回归结果。
+- [公开试用发布就绪交接](handovers/2026-08-21-public-trial-release-readiness.md)：`#privacy`、部署配置、21 项守卫、外部状态边界与待验步骤。
+- [键盘、语义与屏幕阅读器硬门交接](handovers/2026-08-21-accessibility-hard-gate.md)：skip-link 阻断复现/修复、嵌套 main 修复、18 项守卫与 AT 待验项。
+- [设计资源阅读—行动路径交接](handovers/2026-08-21-reading-to-action-path.md)：《狗头人》页级复核、Kathleen 权利边界、第 32 篇专题指南与渲染待验项。
+- [方法页标签级分片交接](handovers/2026-08-21-method-section-streaming.md)：默认框架 chunk 降至 6.51 kB，词表/专题分别按意图加载，18 项守卫与渲染待验项。
+- [资源库入口级分片交接](handovers/2026-08-21-resource-entry-streaming.md)：默认资源动态载荷降至 18.95 kB，34 个入口包、23 项守卫与真实时序待验项。
+- [主包与生产假设账本分片交接](handovers/2026-08-21-main-bundle-production-ledger.md)：主 JS 降至 490.54 kB，新 16.66 kB 工具 chunk，项目汇总与浏览器待验边界。
+- [核心指南到精选资源交接](handovers/2026-08-21-guide-resource-handoff.md)：六阶段直达、资源入口深链、18 项专项/路由守卫与浏览器待验边界。
+- [方法分区与条目深链交接](handovers/2026-08-21-method-deep-links.md)：898 个条目往返、URL 受控选择、10 项守卫与构建/浏览器边界。
+- [概念—专题—工具双向交接](handovers/2026-08-21-concept-action-handoff.md)：生成索引、双向深链、12 项守卫、分片与待验边界。
+- [新手可用性测试 Round 01](product/USABILITY_TEST_ROUND_01.md)：四项任务、主持规则与退出标准。
+- [新手可用性测试：项目连续性](product/USABILITY_TEST_PROJECT_CONTINUITY.md)：项目护照、版本继承、记录数误读、完整导出与单项目边界任务。
+- [新手可用性测试：资源发现](product/USABILITY_TEST_RESOURCE_DISCOVERY.md)：入口选择、多维筛选、阅读深度、零结果恢复与移动端任务。
+- [新手可用性测试：指南到精选资源交接](product/USABILITY_TEST_GUIDE_RESOURCE_HANDOFF.md)：新手从当前阶段直达少量阅读、刷新/分享保持与无排名误读门槛。
+- [新手可用性测试：分享方法内容](product/USABILITY_TEST_METHOD_DEEP_LINKS.md)：专题、概念、资源审阅的分享/恢复、后退和隐私边界 M1–M5。
+- [新手可用性测试：从概念回到行动](product/USABILITY_TEST_CONCEPT_ACTION_HANDOFF.md)：概念→专题→返回、概念→工具、指南→定义与分享边界 C1–C5。
+- [新手可用性测试：有目的游玩](product/USABILITY_TEST_PURPOSEFUL_PLAY.md)：验证四层记录、迁移假设、删减实验、休闲边界与字段负担。
+- [新手可用性测试：跨项目学习轨迹](product/USABILITY_TEST_CROSS_PROJECT_LEARNING.md)：验证局部判断、锚点/解法、证据修订、单变量迁移与无等级出口。
+- [新手可用性测试：跨局测试与延迟回访](product/USABILITY_TEST_CROSS_SESSION_FOLLOWUP.md)：验证三轨道、片段负担、意向/行为分离、版本分支与缺失状态。
+- [新手可用性测试：战役状态护照](product/USABILITY_TEST_CAMPAIGN_STATE_PASSPORT.md)：验证四条历史、知识范围、缺席接续、迁移分支、状态保管与退出。
+- [新手可用性测试：单人模式契约](product/USABILITY_TEST_SOLO_MODE_CONTRACT.md)：验证单人承诺、互动接口、结构选择、bot 协议、维护记录与难度输入。
+- [新手可用性测试：玩家人数配置契约](product/USABILITY_TEST_PLAYER_COUNT_CONFIGURATION.md)：验证主要/支持/实验配置、互动拓扑、总行动、功能性 dummy、同步冲突与跨人数比较边界。
+- [新手可用性测试：结束契约](product/USABILITY_TEST_ENDING_CONTRACT.md)：验证计时口径、触发/剩余行动、等回合/最后行动确定性、拖尾二维观察与退出状态处理。
+- [新手可用性测试：随机性契约](product/USABILITY_TEST_RANDOMNESS_CONTRACT.md)：验证不确定性目的、连续随机循环、风险暴露、缓解操作与系统/体验/归因三轨道。
+- [新手可用性测试：计分契约](product/USABILITY_TEST_SCORING_CONTRACT.md)：验证三项规则、得分事件、路径承诺、速度/可见性与系统/理解/互动/体验分轨。
+- [新手可用性测试：回合结构与等待契约](product/USABILITY_TEST_TURN_STRUCTURE_CONTRACT.md)：验证窗口权限、行动经济、六类等待、维护功能与单改动反驳信号。
+- [新手可用性测试：空间关系契约](product/USABILITY_TEST_SPATIAL_RELATIONSHIP_CONTRACT.md)：验证地图功能、操作特定邻接、规则距离、容量、人数—激励密度与真实座位任务。
+- [新手可用性测试：谈判与承诺契约](product/USABILITY_TEST_NEGOTIATION_COMMITMENT_CONTRACT.md)：验证混合条款、交易生命周期、第三方、联盟退出与沟通渠道边界。
+- [新手可用性测试：资源生产链契约](product/USABILITY_TEST_RESOURCE_PRODUCTION_CHAIN.md)：验证存量预测、完整转换、维护/债务、状态恢复与单变量修订。
+- [新手可用性测试：设计辅助练习闭环](product/USABILITY_TEST_DESIGN_AID_LOOP.md)：验证模式选择、拒绝提示、规则产物、自测证据与反思隐私。
+- [有目的游玩测试记录模板](product/purposeful-play-session-template.json)：单场测试的任务、观察、误读与隐私字段，不计算总分。
+- [可用性测试记录模板](product/usability-session-template.json)：单场测试的结构化记录格式。
+- [核心指南模板](guides/GUIDE_TEMPLATE.md)：六个设计阶段共用的结构、字段与编辑检查。
+- [体验意图指南](guides/EXPERIENCE_INTENT.md)：把题材或模糊感受变成可测试假设。
+- [核心系统指南](guides/CORE_SYSTEM.md)：把机制列表变成可观察的短循环。
+- [最小原型指南](guides/MINIMUM_PROTOTYPE.md)：由测试问题决定原型范围与精度。
+- [测试与反馈指南](guides/PLAYTEST_FEEDBACK.md)：把版本、观察、反馈与设计决定分开。
+- [专项指南：这轮应该怎么测试](guides/TEST_TYPE_SELECTION.md)：从当前问题与稳定度选择最低成本的足够证据方式。
+- [专项指南：把盲测拆成四个任务](guides/BLIND_RULES_TEST.md)：分别测试设置、反向教学、查询与完整自主使用。
+- [专项指南：任务无障碍观察](guides/ACCESSIBILITY_TASK_OBSERVATION.md)：按具体任务分开记录实际动作、玩家策略、外部协助及其代价。
+- [专项指南：先定义这轮到底在平衡什么](guides/BALANCE_ONE_RISK.md)：一次只处理一种失效风险，把模型、证据、反驳信号和单一改动连起来。
+- [专项指南：让玩家先做对第一件事](guides/TEACHING_PATH.md)：把现在要知道、立即行动、查询恢复、第一次偏离与单一改动连成学习路径。
+- [专项指南：别数选项，追一轮真实决定](guides/DECISION_TRACE.md)：分开合法与实际考虑选项，追踪坍缩、预测、后果与模型更新。
+- [专项指南：别数谁说得多，追一次共同决定](guides/SHARED_DECISION_OBSERVATION.md)：比较参与约定与实际的信息、提案、拍板、执行、同意和可达条件。
+- [专项指南：别问主题够不够浓，追它让玩家做了什么](guides/THEME_COMMITMENT_HARM_REVIEW.md)：将承诺、可玩视角、行动/奖励/省略、文化协作、暴露与退出/修复并排复核。
+- [专项指南：别先问一盒多少钱，先冻结一份生产假设](guides/PRODUCTION_ASSUMPTION_LEDGER.md)：把带玩家功能的组件规格、报价范围、包装任务、样品门和下一条证据锁在同一版本。
+- [专项指南：先别问去哪出版，先画清谁要把游戏交到谁手里](guides/PUBLISHING_ROUTE_RESPONSIBILITY_MAP.md)：按八类工作核对责任人、当前证据、公开承诺、决策关卡与换路条件。
+- [专项指南：别急着评价，拆一局你不喜欢但有人喜欢的游戏](guides/PURPOSEFUL_PLAY.md)：分开自身体验、桌面行为、系统关系与他人语境，再写迁移假设和删减实验。
+- [专项指南：别只计秒，追一次身体—时间窗口](guides/EMBODIED_TIME_WINDOW.md)：冻结短动作窗口，记录身体/材料条件、注意—权限链、第一次偏离与单条件复测。
+- [专项指南：别数做了几个，追一个判断怎样迁移](guides/CROSS_PROJECT_LEARNING_TRACE.md)：连接旧判断、版本证据、修订边界与只改变一个变量的新情境测试，不生成设计师等级。
+- [专项指南：别只问还想不想玩，追下一局什么真的变了](guides/CROSS_SESSION_FOLLOWUP.md)：分开新玩家、回流玩家和同组历史，以低负担片段、延迟回访与版本分支追踪变化。
+- [专项指南：战役状态护照](guides/CAMPAIGN_STATE_PASSPORT.md)：分开规则、世界、角色与玩家知识，并在改版、缺席和退出时保留可追溯分支。
+- [专项指南：单人模式契约](guides/SOLO_MODE_CONTRACT.md)：先写单人承诺与不承诺项，再选择计分、场景、dummy、自动对手或多手控制。
+- [专项指南：玩家人数配置契约](guides/PLAYER_COUNT_CONFIGURATION.md)：为每个人数/队伍/角色组合写承诺、拓扑、总行动、密度、修补功能与分轨测试。
+- [专项指南：结束契约](guides/ENDING_CONTRACT.md)：分解会话时间与节奏形状，再写触发、可见性、剩余行动、拖尾、投降与淘汰路径。
+- [专项指南：随机性契约](guides/RANDOMNESS_CONTRACT.md)：先画决定—随机—回应循环，再写暴露、stakes、缓解操作与三条验证轨道。
+- [专项指南：计分契约](guides/SCORING_CONTRACT.md)：先写分数奖励的行为，再比较路径、速度、可见性与多轨证据。
+- [专项指南：回合结构与等待契约](guides/TURN_STRUCTURE_CONTRACT.md)：先画谁在什么时候决定，再检查行动粒度、监看、交接和维护功能。
+- [专项指南：空间关系契约](guides/SPATIAL_RELATIONSHIP_CONTRACT.md)：先画地点—连接—成本—容量，再叠加激励、人数、地理与真实桌面。
+- [专项指南：谈判与承诺契约](guides/NEGOTIATION_COMMITMENT_CONTRACT.md)：先列筹码与外部选项，再画报价到违约、联盟退出与沟通渠道。
+- [专项指南：市场状态转移契约](guides/MARKET_STATE_TRANSITION_CONTRACT.md)：先画槽位、存量、价格、容量与补货，再执行交易、异常状态与单变量复测。
+- [专项指南：资源生产链契约](guides/RESOURCE_PRODUCTION_CHAIN_CONTRACT.md)：先追一件资源从来源到消耗，再补全转换、维护、衰减、债务与残值。
+- [规则与信息指南](guides/RULES_INFORMATION.md)：把介绍、教学、查询和组件信息一起盲测。
+- [呈现与发布指南](guides/PRESENTATION_RELEASE.md)：建立版本一致、权利可追溯的发布候选包。
+- [《狗头人之桌游设计指南》笔记](local-materials/KOBOLD_GUIDE_NOTES.md)。
+- [《狗头人》K01–K11 产品映射](local-materials/KOBOLD_CROSSWALK.md)：逐项连接公开来源、Claim、概念、指南、入口与待验证动作。
+- [Phase 0 交接](handovers/2026-08-13-phase-0.md)：网络研究与研究基线。
+- [本地课程与改造工具交接](handovers/2026-08-13-local-course-tooling.md)：本轮范围、验证与下一工作包。
+- [Phase 1 首批核心指南交接](handovers/2026-08-14-core-guides.md)：内容模型、两篇指南、网站接入与验证证据。
+- [Phase 1 六阶段核心指南交接](handovers/2026-08-14-six-stage-guides.md)：六篇指南、工具闭环、权利边界与完整回归。
+- [Phase 1 概念词表与资源评价交接](handovers/2026-08-14-glossary-resource-evaluation.md)：24 个词条、26 份审阅记录、网站接入与验证边界。
+- [Phase 1 测试方式与设计辅助研究交接](handovers/2026-08-14-playtest-design-aids.md)：专项研究、两篇指南、35 条资源与测试方式选择器。
+- [Phase 1 专题指南与原创设计约束牌交接](handovers/2026-08-14-special-guides-constraint-deck.md)：两篇指南网站接入、39 条资源、22 张原创牌与浏览器验收。
+- [Phase 1 规则与任务无障碍观察交接](handovers/2026-08-14-rulebook-accessibility-tool.md)：规则/无障碍研究、第三篇专题指南、任务观察工具与验收边界。
+- [Phase 1 跨维度无障碍与资源维护交接](handovers/2026-08-14-accessibility-breadth-maintenance.md)：9 条新来源、5 条 Claim、字段 v2、链接巡检与本轮验收。
+- [Phase 1 中文无障碍玩家声音第二轮交接](handovers/2026-08-19-chinese-accessibility-voices.md)：8 条分层来源、5 条 Claim、第九阅读入口、指南更新与验证边界。
+- [Phase 1 跨局测试与延迟回访交接](handovers/2026-08-19-longitudinal-playtesting.md)：14 条新资源、6 条 Claim、4 个术语、第 14 篇专题指南、测试协议与静态验证证据。
+- [Phase 1 战役状态与永久变化交接](handovers/2026-08-19-persistent-campaign-state.md)：13 条新资源、6 条 Claim、5 个术语、第 15 篇专题指南、第 10 个阅读入口与验证边界。
+- [Phase 1 单人模式、Automa 与自动对手交接](handovers/2026-08-19-solo-automa-design.md)：12 条新资源、6 条 Claim、6 个术语、第 16 篇专题指南、第 11 个阅读入口与验证边界。
+- [Phase 1 玩家人数缩放与配置差异交接](handovers/2026-08-19-player-count-scaling.md)：9 条新资源、7 条 Claim、6 个术语、第 17 篇专题指南、第 12 个阅读入口与验证边界。
+- [Phase 1 游戏时长、节奏与结束契约交接](handovers/2026-08-20-game-length-endings.md)：10 条新资源、8 条 Claim、8 个术语、第 18 篇专题指南、第 13 个阅读入口与验证边界。
+- [Phase 1 随机性、运气与可控不确定性交接](handovers/2026-08-20-randomness-uncertainty.md)：11 条新资源、8 条 Claim、8 个术语、第 19 篇专题指南、第 14 个阅读入口与验证边界。
+- [Phase 1 计分、目标、奖励与激励错位交接](handovers/2026-08-20-scoring-goals-incentives.md)：12 条新资源、8 条 Claim、9 个术语、第 20 篇专题指南、第 15 个阅读入口与验证边界。
+- [Phase 1 回合结构、行动经济与等待交接](handovers/2026-08-20-turn-structure-action-economy.md)：14 条新资源、9 条 Claim、10 个术语、第 21 篇专题指南、第 16 个阅读入口与验证边界。
+- [Phase 1 空间、距离、邻接与地图结构交接](handovers/2026-08-20-spatial-map-structure.md)：16 条新资源、10 条 Claim、11 个术语、第 22 篇专题指南、第 17 个阅读入口与验证边界。
+- [Phase 1 谈判、承诺、交易与联盟交接](handovers/2026-08-20-negotiation-commitment-alliance.md)：20 条新资源、10 条 Claim、12 个术语、第 23 篇专题指南、第 18 个阅读入口与验证边界。
+- [竞价、拍卖、市场定价与价值发现研究](research/AUCTION_VALUE_DISCOVERY_01.md)：22 项来源矩阵、价值/报价/支付/兑现分轨、拍卖协议和证据边界。
+- [拍卖协议契约](guides/AUCTION_PROTOCOL_CONTRACT.md)：五步工作单、记录表、误修与完成信号。
+- [拍卖协议契约可用性测试](product/USABILITY_TEST_AUCTION_PROTOCOL_CONTRACT.md)：T1–T4、新手形成性门槛与反驳条件。
+- [Phase 1 竞价、拍卖与价值发现交接](handovers/2026-08-20-auction-value-discovery.md)：20 条新资源、12 条 Claim、15 个术语、第 24 篇专题指南、第 19 个阅读入口与验证边界。
+- [市场补货、动态定价与供需反馈研究](research/MARKET_RESTOCK_PRICE_FEEDBACK_01.md)：22 个分层来源、5 个研究问题、深读记录与市场状态转移框架。
+- [市场状态转移契约可用性测试](product/USABILITY_TEST_MARKET_STATE_TRANSITION_CONTRACT.md)：真实座位读取、批量结算、移价、补货与交接任务。
+- [Phase 1 市场补货、动态价格与供需反馈交接](handovers/2026-08-20-market-restock-price-feedback.md)：22 条新资源、12 条 Claim、15 个术语、第 25 篇专题指南、第 20 个阅读入口与验证边界。
+- [资源转换、生产链、维护成本与经济闭环研究](research/RESOURCE_PRODUCTION_CHAIN_01.md)：23 个分层来源、5 个研究问题、5 项深读记录与资源经济契约。
+- [Phase 1 资源转换、生产链、维护成本与经济闭环交接](handovers/2026-08-20-resource-production-chain.md)：19 条新资源、12 条 Claim、16 个术语、第 26 篇专题指南、第 21 个阅读入口与验证边界。
+- [隐藏信息、手牌经济与信息价值研究](research/HIDDEN_INFORMATION_HAND_ECONOMY_01.md)：26 个分层来源、5 个研究问题、6 项深读记录与来源矩阵。
+- [隐藏信息与手牌经济契约](guides/HIDDEN_INFORMATION_HAND_ECONOMY_CONTRACT.md)：信息状态、牌张生命周期、推断、沟通/质疑与辅助任务五步工作单。
+- [新手可用性测试：隐藏信息与手牌经济](product/USABILITY_TEST_HIDDEN_INFORMATION_HAND_ECONOMY.md)：T1–T5、支持条件、泄密观察与发布门槛。
+- [Phase 1 隐藏信息、手牌经济与信息价值交接](handovers/2026-08-20-hidden-information-hand-economy.md)：18 条新资源、12 条 Claim、17 个术语、第 27 篇专题指南、第 22 个阅读入口与验证边界。
+- [牌库构筑、抽牌概率与循环控制研究](research/DECK_BUILDING_DRAW_CYCLE_01.md)：26 个分层来源、5 个研究问题、5 项深读记录、抽牌公式与来源矩阵。
+- [牌库构筑与循环控制契约](guides/DECK_BUILDING_DRAW_CYCLE_CONTRACT.md)：牌库构成、获得延迟、洗牌边界、概率假设、压缩/膨胀和完整循环五步工作单。
+- [新手可用性测试：牌库构筑与循环控制](product/USABILITY_TEST_DECK_BUILDING_DRAW_CYCLE.md)：T1–T5、支持条件、洗牌辅助观察与发布门槛。
+- [Phase 1 牌库构筑、抽牌概率与循环控制交接](handovers/2026-08-20-deck-building-draw-cycle.md)：23 条新资源、12 条 Claim、18 个术语、第 28 篇专题指南、第 23 个阅读入口与验证边界。
+- [卡牌组合、关键词模板与效果结算顺序研究](research/CARD_LANGUAGE_KEYWORDS_RESOLUTION_01.md)：30 个分层来源、5 个研究问题、5 项深读记录、能力语法与来源矩阵。
+- [卡牌语言、关键词与效果结算契约](guides/CARD_LANGUAGE_EFFECT_RESOLUTION_CONTRACT.md)：七槽能力、时序窗口、受控词表、效果轨迹和真实座位查询五步工作单。
+- [新手可用性测试：卡牌语言与效果结算](product/USABILITY_TEST_CARD_LANGUAGE_EFFECT_RESOLUTION.md)：T1–T5、逻辑词、循环、代读支持与形成性发布门。
+- [Phase 1 卡牌语言、关键词与效果结算交接](handovers/2026-08-20-card-language-effect-resolution.md)：25 条新资源、12 条 Claim、18 个术语、第 29 篇专题指南、第 24 个阅读入口与验证边界。
+- [卡池稀有度、扩展兼容、勘误与长期内容治理研究](research/CARD_POOL_EXPANSION_VERSION_GOVERNANCE_01.md)：25 个新来源、5 个研究问题、关键来源深读、事实/推断分层与来源矩阵。
+- [卡池与版本治理契约](guides/CARD_POOL_VERSION_GOVERNANCE_CONTRACT.md)：内容护照、兼容矩阵、事实源、治理时间线、配置回归与实体迁移五步工作单。
+- [新手可用性测试：卡池、扩展与版本治理](product/USABILITY_TEST_CARD_POOL_VERSION_GOVERNANCE.md)：版本识别、当前文本、兼容证据、治理日期、迁移和访问支持任务。
+- [Phase 1 卡池稀有度、扩展兼容、勘误与长期内容治理交接](handovers/2026-08-20-card-pool-version-governance.md)：25 条新资源、12 条 Claim、18 个术语、第 30 篇专题指南、第 25 个阅读入口与验证边界。
+- [Phase 1 内容版本治理工作台交接](handovers/2026-08-21-version-governance-workbench.md)：第 13 项正式工具、指南直达、本地保存/导出、16 项结构守卫与浏览器待验项。
+- [原型范围与保真度研究](research/PROTOTYPE_SCOPE_FIDELITY_01.md)：问题/非目标、过滤/表现维度、媒介代理、可玩切片、停止与重做信号。
+- [原型范围裁剪器契约](guides/PROTOTYPE_SCOPE_CUTTER_CONTRACT.md)：核心最小原型指南到五步工具的字段与非目标映射。
+- [Phase 1 原型范围与保真度交接](handovers/2026-08-21-prototype-scope-cutter.md)：8 条来源、6 条 Claim、6 个术语、第 26 个入口、第 14 项工具与验证边界。
+- [议题到系统研究](research/ISSUE_TO_SYSTEM_TRANSLATION_01.md)：价值翻译、遗漏账本、三层证据与复盘边界。
+- [议题到系统专题指南契约](guides/ISSUE_TO_SYSTEM_TRANSLATION_CONTRACT.md)：五步字段、形成门、工具路由与非目标。
+- [新手可用性测试：议题到系统](product/USABILITY_TEST_ISSUE_TO_SYSTEM_TRANSLATION.md)：三类场景、任务、观察项与安全停止条件。
+- [Phase 1 议题到系统与本地专项课程交接](handovers/2026-08-21-issue-to-system-local-courses.md)：6 条新资源、4 条 Claim、6 个术语、第 31 篇专题指南、第 27 个入口与本地资料边界。
+- [议题到系统工作台](product/ISSUE_TO_SYSTEM_WORKBENCH.md)：第 15 项正式工具的五步形成门、本地数据、导出与响应式契约。
+- [Phase 1 议题到系统工作台交接](handovers/2026-08-21-issue-to-system-workbench.md)：指南直达、15 类项目汇总、18 项结构守卫与浏览器待验项。
+- [Phase 1 本地课程发布权利与来源门禁交接](handovers/2026-08-21-local-content-publication-rights.md)：57 个文件一一审计、11 道门、19 项守卫与后续取证任务。
+- [Phase 1 新手首段闭环与体验意图卡交接](handovers/2026-08-21-experience-intent-card.md)：路径审计、第 16 项工具、接受概念、20 项守卫与浏览器待验项。
+- [Phase 1 单问题测试计划交接](handovers/2026-08-21-single-question-test-plan.md)：范围到真实测试的交接修复、四步证据计划、概念稿与浏览器待验项。
+- [Phase 1 现场测试记录器交接](handovers/2026-08-21-live-playtest-session.md)：计划到桌边证据和下一版决定、42 条守卫与浏览器待验项。
+- [证据复盘与变更简报产品契约](product/EVIDENCE_REVIEW_CHANGE_BRIEF.md)：四步状态机、schema v2 迁移、非目标与概念图哈希。
+- [证据复盘可用性测试](product/USABILITY_TEST_EVIDENCE_REVIEW.md)：支持/反证选择、候选方案缺失门、显式项目写回和三种视口。
+- [Phase 1 证据复盘与变更简报交接](handovers/2026-08-21-evidence-review-change-brief.md)：7 条新资源、5 条 Claim、第 31 个入口、48 条守卫与浏览器待验项。
+- [跨轮发现演化研究](research/CROSS_SESSION_FINDING_EVOLUTION_RESEARCH_01.md)：可比边界、时间顺序矩阵、反例、熟练组与版本变化。
+- [发现沿革与后继修订研究](research/FINDING_LINEAGE_REVISION_RESEARCH_01.md)：不可覆盖记录、何时/为何/改了什么、阶段化迭代与撤回派生链。
+- [发现演化与版本证据产品契约](product/CROSS_SESSION_FINDING_EVOLUTION_CONTRACT.md)：schema v2、只读历史、父子修订、显式项目写回与不变量。
+- [发现沿革可用性测试](product/USABILITY_TEST_FINDING_LINEAGE.md)：只读预期、后继理由、旧修订分支、迁移、撤回与三视口错误门。
+- [发现沿革、只读重开与后继修订交接](handovers/2026-08-21-finding-lineage-successor-revisions.md)：5 条新资源、5 条 Claim、第 33 个入口、76 条守卫与浏览器待验项。
+- [设计辅助闭环证据与真人测试就绪交接](handovers/2026-08-21-design-aid-test-readiness.md)：5 条新研究资源、第 34 个入口、安全会话包、15 项守卫与仍关闭的产品发布门。
+- [可分享 URL 导航契约](product/SHAREABLE_URL_NAVIGATION.md)：四个主视图、十九项工具、刷新/历史/标题、跳过链接与非漂移计数。
+- [总目标完成度审计 01](product/GOAL_COMPLETION_AUDIT_01.md)：按章程逐项区分已实现、部分、外部依赖与下一优先级。
+- [可分享导航与总目标完成度审计交接](handovers/2026-08-21-shareable-navigation-completion-audit.md)：实现、浏览器烟测、系统 Chrome 阻塞与下一工作包。
+- [中文新手首轮可用性测试战役](product/BEGINNER_USABILITY_CAMPAIGN.md)：两轮主持、N1/R1/W1/D1、单变量诊断、隐私边界与章程 5/4 形成门。
+- [中文新手首轮可用性测试战役就绪交接](handovers/2026-08-21-beginner-usability-campaign-ready.md)：模板、schema、25 项守卫、真实会话为 0 与下一步外部依赖。
+- [Phase 1 玩家经验与设计案例贡献协议交接](handovers/2026-08-19-contribution-protocol.md)：离线五道门、默认拒绝模板、11 个发布守卫与公开投稿边界。
+- [Phase 1 平衡、概率与单风险诊断交接](handovers/2026-08-14-balance-probability-tool.md)：平衡研究、15 条新资源、7 条 Claim、专题指南、诊断工具与验收边界。
+- [Phase 1 规则教学与单任务学习路径交接](handovers/2026-08-17-teaching-path-tool.md)：15 条新来源、7 条 Claim、第五篇专题指南、新工具、构建证据与待补浏览器验收。
+- [Phase 1 决定空间与单轮决定轨迹交接](handovers/2026-08-17-decision-trace-tool.md)：17 条新来源、8 条 Claim、第六篇专题指南、新工具、构建证据与待补浏览器验收。
+- [Phase 1 合作与共享决定观察交接](handovers/2026-08-17-shared-decision-tool.md)：14 条新来源、6 条 Claim、第七篇专题指南、新工具、构建证据与待补浏览器验收。
+- [Phase 1 主题承诺、历史表达与伤害复核交接](handovers/2026-08-17-theme-representation-safety-tool.md)：12 条新来源、8 条 Claim、第八篇专题指南、无总分/无认证工具、构建证据与待补浏览器验收。
+- [Phase 1 生产可行性与生产假设账本交接](handovers/2026-08-17-production-assumption-ledger.md)：16 条新来源、9 条 Claim、第九篇专题指南、无价格预测工具、构建证据与待补浏览器验收。
+- [Phase 1 发布路线与责任图交接](handovers/2026-08-17-publishing-route-responsibility-map.md)：20 条新来源、10 条 Claim、第十篇专题指南、无路线排名工具、构建证据与待补浏览器验收。
+- [Phase 1 本地项目护照交接](handovers/2026-08-18-project-workspace.md)：单一活动项目、版本继承、12 类记录汇总、完整导出与待补浏览器验收。
+- [Phase 1 资源发现与策展入口交接](handovers/2026-08-18-resource-discovery.md)：四条任务型入口、六维筛选、逐条适用/误用说明与待补浏览器验收。
+- [Phase 1 中文实践资料扩展交接](handovers/2026-08-18-chinese-practice-expansion.md)：12 条大陆/台湾/香港来源、6 条 Claim、阅读入口更新与验证边界。
+- [中文玩家声音与反例研究](research/CHINESE_PLAYER_VOICES_01.md)：从等待、决定代办、家规、教学失败和无障碍经历提取可测试问题。
+- [Phase 1 中文玩家声音与反例交接](handovers/2026-08-18-chinese-player-voices.md)：11 条来源、6 条 Claim、第 5 个阅读入口与验证边界。
+- [Phase 1《狗头人》版本与权利复核交接](handovers/2026-08-18-kobold-guide-audit.md)：55 页中文预读版、144 页英文完整版、精确页码、哈希与资源入口。
+- [Phase 1《狗头人》K01–K11 产品映射交接](handovers/2026-08-18-kobold-product-crosswalk.md)：有目的游玩、设计模式切换、学习预算、删减实验及第 6 个阅读入口。
+- [Phase 1 桌游设计综合指南地图交接](handovers/2026-08-18-comprehensive-guides.md)：6 个官方书目缺口、十种资源结构比较与第 7 个阅读入口。
+- [Phase 1 设计辅助产品谱系与练习闭环交接](handovers/2026-08-18-design-aid-practice-loop.md)：六类辅助产品、8 条新资源、第 8 个阅读入口、无计分闭环规格与任务测试协议。
+- [Phase 1 资源库按需加载交接](handovers/2026-08-18-resource-lazy-loading.md)：轻量来源索引、条件资源 chunk、30.6% 主包缩减与待补浏览器验收。
+- [Phase 1 方法页按需加载交接](handovers/2026-08-19-method-lazy-loading.md)：轻量概念索引、条件方法 chunk、47.8% 累计主包缩减与待补浏览器验收。
+- [Phase 1 设计辅助闭环低保真原型交接](handovers/2026-08-19-design-aid-loop-prototype.md)：8 步离线测试仪器、T1–T6 结构守卫、浏览器阻塞与真实新手发布门。
+- [Phase 1 实时、灵巧动作与身体化桌面体验交接](handovers/2026-08-19-embodied-realtime-play.md)：12 条新来源、6 条 Claim、4 个概念、第 12 篇专题指南、静态验证与真实浏览器环境阻塞。
+- [Phase 1 跨项目设计学习与判断迁移交接](handovers/2026-08-19-design-expertise-learning.md)：12 条新来源、6 条 Claim、4 个概念、第 13 篇专题指南、静态验证与纵向证据缺口。
+
+## 文档状态约定
+
+- `draft`：结构或结论仍会明显变化。
+- `review`：可以用于下一阶段，但需要人工复核。
+- `stable`：当前阶段的基线；后续变更需记录原因。
+
+所有研究结论都应能回到来源台账；所有产品决策都应能回到研究结论或明确假设。

@@ -1,0 +1,152 @@
+{
+  "schemaVersion": 2,
+  "updatedAt": "2026-08-22",
+  "translationId": "what-makes-a-rulebook-accessible-and-entertaining-zh-CN",
+  "resourceId": "accessible-rulebook-best-practices",
+  "contentMode": "authorized_full_translation",
+  "contentType": "research_paper",
+  "publicationScope": "internal",
+  "original": {
+    "title": "What Makes a Rulebook Accessible and Entertaining? Recommendations of Best Practices",
+    "authors": [
+      "Cátia Casimiro",
+      "Michael James Heron",
+      "Carla Sousa"
+    ],
+    "affiliations": [
+      "CICANT, Lusófona University",
+      "Chalmers University of Technology"
+    ],
+    "journal": "Japanese Journal of Analog Role-Playing Game Studies",
+    "journalJapaneseTitle": "RPG学研究",
+    "volume": "6",
+    "pages": "20e-34e",
+    "publishedAt": "2025-11-22",
+    "receivedAt": "2025-03-31",
+    "acceptedAt": "2025-08-14",
+    "language": "en",
+    "sourceType": "official_institutional_repository_pdf",
+    "publisherArticleUrl": "https://jarps.net/journal/article/view/81/136",
+    "url": "https://repository.kulib.kyoto-u.ac.jp/handle/2433/298016",
+    "directPdfUrl": "https://repository.kulib.kyoto-u.ac.jp/server/api/core/bitstreams/ae4dce60-54b0-4453-a729-fa9b2eef66dd/content",
+    "doi": "https://doi.org/10.14989/jarps_6_20e",
+    "retrievedAt": "2026-08-22",
+    "wordCountApprox": 8926,
+    "repositoryItemUuid": "576c83b4-d13a-4989-b674-33bf0e902ffe",
+    "repositoryBitstreamUuid": "ae4dce60-54b0-4453-a729-fa9b2eef66dd",
+    "pdf": {
+      "fileName": "jarps_6_20e.pdf",
+      "pageCount": 15,
+      "pageSize": "A4",
+      "pdfVersion": "1.7",
+      "byteSize": 22054323,
+      "sha256": "6096274c1683201a911ce4ff3b3e786621eeaf846fed64981a545ef5a3589a14",
+      "tagged": false,
+      "encrypted": false,
+      "containsJavaScript": false
+    }
+  },
+  "license": {
+    "id": "CC-BY-4.0",
+    "name": "Creative Commons Attribution 4.0 International",
+    "url": "https://creativecommons.org/licenses/by/4.0/",
+    "evidenceUrl": "https://repository.kulib.kyoto-u.ac.jp/handle/2433/298016",
+    "evidenceApiUrl": "https://repository.kulib.kyoto-u.ac.jp/server/api/pid/find?id=2433/298016",
+    "evidenceCapturedAt": "2026-08-22",
+    "repositoryRightsFields": {
+      "dc.rights": "© Copyright: CASIMIRO, HERON, SOUSA. This article is distributed under the terms of the Creative Commons Attribution License, which permits unrestricted use and redistribution provided that the original author and source are credited.",
+      "dc.rights.uri": "https://creativecommons.org/licenses/by/4.0/"
+    },
+    "permitsTranslation": true,
+    "permitsRedistribution": true,
+    "attributionRequired": true,
+    "changesMustBeIndicated": true
+  },
+  "rights": {
+    "rightsStatus": "reusable_license_verified",
+    "separateThirdPartyExceptionNoticeObserved": false,
+    "legalReviewStatus": "not_reviewed",
+    "legalApprovalClaimed": false,
+    "editorialAssetPolicy": "No source image binaries or journal layout assets are embedded in the internal translation. Every figure is represented by Chinese text plus a translated caption.",
+    "thirdPartyAssetAudit": [
+      {
+        "asset": "Figure 1",
+        "sourceCredit": "Elaboration by the authors based on Sweller (2010)",
+        "articleLicenseAppliesOnFace": true,
+        "thirdPartyConcern": "The diagram expresses concepts attributed to Sweller (2010), but the page credits the drawing itself to the article authors and states no separate exception.",
+        "translationTreatment": "Chinese structural text alternative and translated original caption only; original binary not copied."
+      },
+      {
+        "asset": "Figure 2",
+        "sourceCredit": "Photo taken by the authors",
+        "articleLicenseAppliesOnFace": true,
+        "thirdPartyConcern": "The photograph depicts the Arkham Horror: The Card Game reference manual, including third-party product, trade-dress and trademark elements.",
+        "translationTreatment": "Chinese text alternative and translated original caption only; photograph not copied."
+      },
+      {
+        "asset": "Figure 3",
+        "sourceCredit": "Photo taken by the authors",
+        "articleLicenseAppliesOnFace": true,
+        "thirdPartyConcern": "The photograph depicts a Monopoly rulebook, including third-party product, trade-dress and trademark elements.",
+        "translationTreatment": "Chinese text alternative and translated original caption only; photograph not copied."
+      }
+    ],
+    "otherExcludedVisualAssets": [
+      "journal logo and page furniture",
+      "publisher layout and decorative icons",
+      "external image URLs from the HTML galley"
+    ]
+  },
+  "translation": {
+    "language": "zh-CN",
+    "version": "1.0.0-internal",
+    "translator": "Codex AI",
+    "translationAuthority": "codex_ai_complete",
+    "humanTranslatorClaimed": false,
+    "scope": "Complete Chinese translation of the title, author and publication information, English abstract, Japanese abstract, 66 numbered paragraphs, eight Easy Language bullets, six tables, three figure captions with text alternatives, acknowledgements, source note, 31 references and 17 ludography entries. Repository navigation and source page furniture are excluded.",
+    "completeness": "complete",
+    "sourceStructurePreserved": true,
+    "paragraphIdentifiersPreserved": true,
+    "tablesPreserved": true,
+    "figuresPreservedAsTextAlternatives": true,
+    "notesPreserved": true,
+    "referencesPreserved": true,
+    "ludographyPreserved": true,
+    "hanCharacterCount": 12746,
+    "humanReviewStatus": "not_required",
+    "internalLearningStatus": "authoritative",
+    "notices": [
+      "AI-produced full translation; not a human translation.",
+      "Not human-reviewed and not legally reviewed.",
+      "Table 2 contains a likely source typo ('no unambiguous phrasing'); the Chinese text follows the surrounding meaning and records the change in a translator note."
+    ]
+  },
+  "visualVerification": {
+    "renderedPageCount": 15,
+    "allPagesReviewedInContactSheet": true,
+    "individuallyReviewedPages": [
+      1,
+      5,
+      7,
+      8,
+      11,
+      12,
+      14,
+      15
+    ],
+    "result": "All 15 rendered pages were present and legible; no clipped page area or missing table, figure, note or bibliography page was observed."
+  },
+  "publication": {
+    "visibility": "internal-ready",
+    "publicUseBasis": "CC BY 4.0",
+    "internalOnly": true,
+    "publicReleaseEnabled": false,
+    "requiresHumanReviewBeforeInternalUse": false,
+    "requiresHumanReviewBeforeRelease": false,
+    "requiresExplicitPublicReleaseDecision": true,
+    "legalReviewStatus": "not_reviewed",
+    "legalApprovalClaimed": false
+  },
+  "verificationDocument": "docs/research/RULEBOOK_ACCESSIBILITY_TRANSLATION_AUDIT_2026-08-22.md",
+  "file": "content/translations/what-makes-a-rulebook-accessible-and-entertaining-zh-CN.md"
+}

@@ -1,0 +1,112 @@
+{
+  "schemaVersion": 1,
+  "method": "purposeful-play-formative-usability-session",
+  "noAggregateScore": true,
+  "notLearningEffectivenessEvidence": true,
+  "session": {
+    "sessionId": "",
+    "date": "",
+    "siteVersion": "",
+    "facilitatorAlias": "",
+    "consentRecorded": false,
+    "recordingMode": "anonymous_notes_only"
+  },
+  "participant": {
+    "participantAlias": "",
+    "tabletopExperienceRange": "",
+    "designExperienceRange": "",
+    "preferredWritingOrCommunicationMode": "",
+    "accessAdjustmentsChosenByParticipant": []
+  },
+  "gameContext": {
+    "gameTitle": "",
+    "editionOrVersionIfKnown": "",
+    "playerCount": null,
+    "groupContext": "",
+    "whenPlayed": "",
+    "learningQuestion": "",
+    "whyThisGame": ""
+  },
+  "tasks": [
+    {
+      "id": "P1",
+      "name": "choose_learning_question",
+      "completedWithoutAnswerPrompt": null,
+      "firstDivergence": "",
+      "facilitatorIntervention": "",
+      "participantWords": ""
+    },
+    {
+      "id": "P2",
+      "name": "record_specific_moment",
+      "completedWithoutAnswerPrompt": null,
+      "firstDivergence": "",
+      "facilitatorIntervention": "",
+      "participantWords": ""
+    },
+    {
+      "id": "P3",
+      "name": "separate_four_perspectives",
+      "completedWithoutAnswerPrompt": null,
+      "confusedLayers": [],
+      "firstDivergence": "",
+      "facilitatorIntervention": "",
+      "participantWords": ""
+    },
+    {
+      "id": "P4",
+      "name": "write_transfer_hypothesis",
+      "completedWithoutAnswerPrompt": null,
+      "firstDivergence": "",
+      "facilitatorIntervention": "",
+      "participantWords": ""
+    },
+    {
+      "id": "P5",
+      "name": "write_subtractive_test",
+      "completedWithoutAnswerPrompt": null,
+      "originalFunctionRecorded": null,
+      "riskRecorded": null,
+      "versionRecorded": null,
+      "firstDivergence": "",
+      "facilitatorIntervention": "",
+      "participantWords": ""
+    },
+    {
+      "id": "P6",
+      "name": "find_stop_and_leisure_boundary",
+      "completedWithoutAnswerPrompt": null,
+      "believedDislikedGameWasRequired": null,
+      "firstDivergence": "",
+      "facilitatorIntervention": "",
+      "participantWords": ""
+    }
+  ],
+  "fieldBurden": {
+    "firstFieldThatCausedPause": "",
+    "fieldsParticipantWantedMerged": [],
+    "fieldsParticipantWantedExplained": [],
+    "preferredProgressiveDisclosure": ""
+  },
+  "outcomeSignals": {
+    "specificMomentRecorded": null,
+    "perspectivesSeparatedInParticipantsOwnWords": null,
+    "transferIncludesRelationshipPredictionAndFalsifier": null,
+    "removalIncludesOriginalFunctionAndRisk": null,
+    "leisureAndStopBoundaryUnderstood": null,
+    "nextPlaytestObservationCanBeStated": null
+  },
+  "safetyAndPrivacy": {
+    "participantStoppedOrSkipped": false,
+    "reasonIfVolunteered": "",
+    "sensitiveDetailsOmitted": true,
+    "deletionRequested": false,
+    "deletionCompleted": false
+  },
+  "facilitatorSynthesis": {
+    "strongestObservedEvidence": "",
+    "firstRepairCandidate": "",
+    "reasonNotToBuildToolYet": "",
+    "nextSessionChange": ""
+  }
+}

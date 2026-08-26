@@ -1,0 +1,33 @@
+{
+  "schemaVersion": 1,
+  "itemId": "systematic-unit-02-decisions-core-loop-zh-CN",
+  "titleZh": "单元 2：决定与核心循环",
+  "contentMode": "original_complete",
+  "language": "zh-CN",
+  "version": "1.0.0",
+  "authorship": {
+    "author": "落桌",
+    "production": "Codex 基于项目研究与列明来源完成原创综合",
+    "humanReviewRequired": false
+  },
+  "learningOutcome": "画出输入、有效选项、代价、状态变化、反馈与下一次决定组成的核心循环。",
+  "sourceIds": [
+    "zimmerman-core-mechanic",
+    "daniel-games-core",
+    "joe-slack-getting-to-core",
+    "rosewater-decisions-part-one"
+  ],
+  "sourceUrls": [
+    "https://www.gamedesignworkshop.com/the-core-mechanic",
+    "https://daniel.games/the-core/",
+    "https://boardgamedesigncourse.com/getting-to-the-core-of-your-game/",
+    "https://magic.wizards.com/en/news/making-magic/decisions-decisions-part-i-2009-07-27"
+  ],
+  "publication": {
+    "visibility": "internal",
+    "status": "published-internal",
+    "rightsBasis": "本站原创综合；来源仅用于研究、归属与事实核验。"
+  },
+  "file": "content/learning-units/systematic-unit-02-decisions-core-loop-zh-CN.md",
+  "updatedAt": "2026-08-21"
+}

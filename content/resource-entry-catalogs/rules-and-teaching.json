@@ -1,0 +1,379 @@
+{
+  "schemaVersion": 1,
+  "entry": {
+    "id": "rules-and-teaching",
+    "title": "让陌生人学会并查得到",
+    "question": "熟人能玩，但陌生人会在设置、第一步或查询时偏离。",
+    "outcome": "把教学、桌面信息、查询恢复和完整盲测分开，记录玩家第一次偏离的动作。",
+    "resourceIds": [
+      "dvgiochi-standard-rulebook",
+      "accessible-rulebook-best-practices",
+      "naylor-paul-grogan-rulebook",
+      "pratt-rulebook-editors-interview",
+      "wanstrom-physical-digital-rulebook",
+      "rulepop-digital-rules",
+      "gcores-tabletop-editor-role",
+      "sspai-heavy-wargame-testing"
+    ],
+    "evidenceBoundary": "编辑经验、最佳实践、产品文档与小样本研究承担不同任务；媒介案例不能推出纸质、视频或数字教程的通用优先级。"
+  },
+  "resources": [
+    {
+      "id": "dvgiochi-standard-rulebook",
+      "title": "How to Write a Standard Game Rulebook",
+      "creator": "dV Giochi",
+      "href": "https://www.dvgiochi.com/net/dv/dV-How_to_write_a_rulebook.pdf",
+      "type": "出版社规则写作指南",
+      "evidenceType": "first_party_practice",
+      "format": "pdf",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "用两页说明目标、设置、流程、终局、例子与术语一致性，并把规则写作明确视为教学和查询问题。",
+      "limitation": "这是出版社启发式清单，不是比较实验；具体章节顺序、双栏版式和一次读懂目标不适用于所有游戏。",
+      "status": "full_text",
+      "lastCheckedAt": "2026-08-14"
+    },
+    {
+      "id": "accessible-rulebook-best-practices",
+      "title": "What Makes a Rulebook Accessible and Entertaining?",
+      "creator": "Casimiro, Heron & Sousa",
+      "href": "https://doi.org/10.14989/jarps_6_20e",
+      "type": "规则书无障碍研究",
+      "evidenceType": "academic",
+      "format": "paper",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "从认知负荷、Easy Language 和多维无障碍讨论规则书设计，并明确把学习失败归因于材料要求而非玩家不足。",
+      "limitation": "作者明确说明最佳实践仍是概念化建议，需要在多样玩家的真实环境中验证；本轮只完成文章级审阅。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-14"
+    },
+    {
+      "id": "naylor-paul-grogan-rulebook",
+      "title": "Producing Fun #4: Paul Grogan — Rulebook Editor & Content Creator",
+      "creator": "James Naylor / Paul Grogan",
+      "href": "https://naylorgames.com/blogs/blog/producing-fun-4-paul-grogan-rulebook-editor-content-creator",
+      "type": "规则编辑长访谈",
+      "evidenceType": "first_party_practice",
+      "format": "interview",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "约百本规则的编辑经验覆盖信息前置、例子、索引、教程式首局和编辑—游玩反复验证。",
+      "limitation": "职业经验与个人偏好不能成为统一规则；逐步教程是否合适仍取决于游戏、受众、工作量和查询需求。",
+      "status": "article_level",
+      "lastCheckedAt": "2026-08-14"
+    },
+    {
+      "id": "pratt-rulebook-editors-interview",
+      "title": "The Exception and the Rules: An Interview with Emanuela & Robert Pratt",
+      "creator": "Meeple Mountain / Emanuela & Robert Pratt",
+      "href": "https://www.meeplemountain.com/interviews/the-exception-and-the-rules-an-interview-with-emanuela-robert-pratt/",
+      "type": "规则编辑访谈",
+      "evidenceType": "first_party_practice",
+      "format": "interview",
+      "access": "free",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "规则与信息",
+        "测试与反馈",
+        "呈现与发布"
+      ],
+      "useful": "展示两位编辑分别学习、共同游玩和比较歧义的工作流，并讨论玩家辅助、术语、查询与首局手册的取舍。",
+      "limitation": "访谈反映特定编辑组合与中重策项目经验；他们反对独立首局手册是立场，不是普遍有效性证据。",
+      "status": "article_level",
+      "lastCheckedAt": "2026-08-14"
+    },
+    {
+      "id": "wanstrom-physical-digital-rulebook",
+      "title": "Technical Aids in Mega Games: A Comparative Study of Physical and Digital Rulebooks",
+      "creator": "Isak Wanström / Linköping University",
+      "href": "https://liu.diva-portal.org/smash/record.jsf?pid=diva2%3A1890838",
+      "type": "规则媒介比较本科研究",
+      "evidenceType": "academic",
+      "format": "thesis",
+      "access": "free",
+      "language": [
+        "sv",
+        "en"
+      ],
+      "stages": [
+        "规则与信息",
+        "测试与反馈"
+      ],
+      "useful": "20 名参与者分组完成五项大型游戏任务，比较实体与数字规则的完成时间、导航错误、认知负荷和体验。",
+      "limitation": "单款大型游戏、两组各 10 人；任务时间和导航错误无显著差异，不能据此宣称数字规则普遍更好。",
+      "status": "article_level",
+      "lastCheckedAt": "2026-08-14"
+    },
+    {
+      "id": "rulepop-digital-rules",
+      "title": "Rulepop: Game Rules Done Right",
+      "creator": "Rulepop LLC",
+      "href": "https://rulepop.com/",
+      "type": "数字规则与玩家辅助服务",
+      "evidenceType": "tool_documentation",
+      "format": "tool",
+      "access": "commercial",
+      "language": [
+        "en"
+      ],
+      "stages": [
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "把快速摘要、图标参考、完整规则、FAQ、勘误和深链接组合成可维护的桌边查询系统，适合研究数字规则信息架构。",
+      "limitation": "功能与优势由服务商自述，不能证明减少查询或提高理解；数字入口也不能替代盒内可长期使用的规则。",
+      "status": "article_level",
+      "lastCheckedAt": "2026-08-14"
+    },
+    {
+      "id": "gcores-tabletop-editor-role",
+      "title": "“桌游编辑”，桌游行业最缺的人才",
+      "creator": "新茂",
+      "href": "https://www.gcores.com/articles/162239",
+      "type": "中文产品编辑实践",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "zh-CN"
+      ],
+      "stages": [
+        "测试与反馈",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "把规则设计与选题、开发、美术、工艺、市场及桌面提示物等产品编辑任务分开讨论。",
+      "limitation": "“最缺人才”等行业判断是作者观点；案例、销量和市场观察来自 2023 年及更早项目，不能代表当前岗位或市场。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    },
+    {
+      "id": "sspai-heavy-wargame-testing",
+      "title": "桌游设计杂记（5）：用三个月，测试并编辑一个重度的战棋游戏",
+      "creator": "乔淼",
+      "href": "https://sspai.com/post/97061",
+      "type": "中文设计师测试复盘",
+      "evidenceType": "first_party_practice",
+      "format": "article",
+      "access": "free",
+      "language": [
+        "zh-CN"
+      ],
+      "stages": [
+        "测试与反馈",
+        "规则与信息",
+        "呈现与发布"
+      ],
+      "useful": "记录重度战棋自测、外部试玩、TTS 更新、变更日志、多语言数据表、规则同步与实体打样的连续工作。",
+      "limitation": "单一重度战棋项目和作者分工不能成为最低测试局数、玩家义务或所有桌游编辑流程的标准。",
+      "status": "verified",
+      "lastCheckedAt": "2026-08-18"
+    }
+  ],
+  "resourceAssessments": [
+    {
+      "resourceId": "dvgiochi-standard-rulebook",
+      "useModes": [
+        "learn",
+        "lookup"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "partial",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "快速建立规则初稿的常见章节和术语一致性检查，再用自己的游戏任务修订。",
+      "doNotUseFor": "不要把两页模板当成固定章节标准或保证玩家一次阅读即可学会。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "accessible-rulebook-best-practices",
+      "useModes": [
+        "learn",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "diagnostic",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "reusable_license_verified",
+      "commercialContext": "none_disclosed",
+      "bestFor": "建立规则书的视觉、认知、身体、沟通、学习与交叉无障碍问题地图。",
+      "doNotUseFor": "不要把尚未在多样玩家真实环境验证的概念性建议写成通过标准或效果承诺。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "naylor-paul-grogan-rulebook",
+      "useModes": [
+        "learn",
+        "case_study",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "观察职业编辑怎样权衡信息前置、索引、图示例子、首局教程与制作成本。",
+      "doNotUseFor": "不要把职业偏好变成所有规则书都必须有索引或教程的硬规则。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "pratt-rulebook-editors-interview",
+      "useModes": [
+        "learn",
+        "case_study",
+        "compare"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "low",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "学习独立阅读、完整游玩和双人解释差异怎样暴露动作名称、术语和玩家辅助问题。",
+      "doNotUseFor": "不要把两位编辑反对独立首局手册的意见视为首局脚本无效的证明。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "wanstrom-physical-digital-rulebook",
+      "useModes": [
+        "learn",
+        "compare",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "full_text",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "narrow",
+      "currencyRisk": "low",
+      "rightsStatus": "restricted",
+      "commercialContext": "none_disclosed",
+      "bestFor": "学习怎样用真实任务、完成时间、导航错误、观察和自陈量表比较两种规则媒介。",
+      "doNotUseFor": "不要把大型游戏 20 人样本的体验偏好外推成数字规则普遍优于纸质规则。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "rulepop-digital-rules",
+      "useModes": [
+        "lookup",
+        "compare",
+        "case_study"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "high",
+      "rightsStatus": "restricted",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "研究摘要、图标、完整规则、FAQ、勘误和深链接怎样构成桌边查询信息架构。",
+      "doNotUseFor": "不要把服务商列出的速度、理解和可访问性优势当作独立测量结果；仍需保留离线和盒内入口。",
+      "reviewedAt": "2026-08-14",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "gcores-tabletop-editor-role",
+      "useModes": [
+        "learn",
+        "case_study",
+        "compare"
+      ],
+      "audienceLevels": [
+        "beginner",
+        "intermediate"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "example",
+      "transferability": "conditional",
+      "currencyRisk": "high",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "区分游戏规则稿与被玩家实际拿到手的产品之间，编辑、图形、工艺和市场工作由谁承担。",
+      "doNotUseFor": "不要据单人观点判断中国岗位供需，也不要用旧销量、众筹或主题案例预测当前市场。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    },
+    {
+      "resourceId": "sspai-heavy-wargame-testing",
+      "useModes": [
+        "case_study",
+        "learn",
+        "diagnose"
+      ],
+      "audienceLevels": [
+        "intermediate",
+        "advanced"
+      ],
+      "reviewDepth": "article_level",
+      "contextClarity": "explicit",
+      "actionability": "procedure",
+      "transferability": "conditional",
+      "currencyRisk": "medium",
+      "rightsStatus": "link_and_summarize",
+      "commercialContext": "creator_or_product_context",
+      "bestFor": "研究重度项目如何把内部测试、试玩、TTS 资产、规则、翻译表、更新日志和打样文件同步管理。",
+      "doNotUseFor": "不要把作者自测比例、局数或出版商转述的最低局数当成所有游戏的行业标准。",
+      "reviewedAt": "2026-08-18",
+      "status": "reviewed"
+    }
+  ]
+}
