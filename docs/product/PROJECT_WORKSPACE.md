@@ -1,7 +1,7 @@
 # 本地项目护照与完整导出
 
-状态：review  
-日期：2026-08-21
+状态：implemented-v2
+日期：2026-08-26
 
 ## 要解决的问题
 
@@ -11,21 +11,30 @@
 
 ## 核心任务
 
-1. 写项目名和一句体验意图；
-2. 标记当前版本与六阶段之一；
-3. 每个版本只保留一个当前问题和一个下一步动作；
-4. 保存版本节点，记录这次具体改变了什么；
-5. 查看本机已有的工具记录数与版本节点数；
-6. 导出项目护照、全部版本节点和 18 类工具记录。
+1. 写项目名、目标玩家、人数、时长和一句体验意图；
+2. 固定本轮设计边界、玩家目标与结束、主要行动、回合结构和组件范围；
+3. 标记当前版本与六阶段之一；
+4. 每个版本只保留一个当前问题和一个下一步动作；
+5. 保存版本节点，记录这次具体改变了什么；
+6. 查看本机已有的工具记录数与版本节点数；
+7. 导出项目护照、全部版本节点和工具记录；
+8. 从本站项目包恢复项目护照，但不自动把外部工具记录写回本机。
 
 ## 数据契约
 
 ```yaml
 project_workspace:
-  schema_version: 1
+  schema_version: 2
   id: string
   title: string
+  audience: string
+  player_count: string
+  duration: string
   experience_intent: string
+  design_boundaries: string
+  goal_and_end: string
+  turn_structure: string
+  component_scope: string
   version: string
   stage: experience_intent|core_system|minimum_prototype|playtest_feedback|rules_information|presentation_release
   current_question: string
@@ -41,12 +50,12 @@ project_workspace:
   updated_at: datetime
 ```
 
-浏览器键：`tabletop-workshop-project-workspace-v1`。
+浏览器键：`tabletop-workshop-project-workspace-v2`。读取旧 `v1` 时保留已有项目、版本与检查点，并只用明确的 v2 默认字段补齐新结构；不会根据项目名或日期猜测缺失内容。
 
 完整导出固定包含：
 
 ```yaml
-schema_version: 1
+schema_version: 2
 method: local-project-workspace-export
 local_first: true
 single_active_project: true
@@ -82,6 +91,7 @@ exported_at: datetime
 - 保存版本节点不复制原型文件、图片、规则书或外部链接；这些仍需用户自行管理。
 - 本地优先不等于备份；清除浏览器数据会丢失记录，重要项目必须定期导出。
 - 完整导出不上传、发送或同步数据；文件由用户自行保管。
+- 导入只恢复项目护照和其中已有的版本节点，不把导出包里的工具记录自动写回浏览器；页面必须提示用户重新核对本机工具记录归属。
 - 内容版本治理记录固定声明不构成兼容认证或稀有度推荐；项目包汇总不会改变该证据边界。
 - 体验意图记录固定声明不生成乐趣分、玩家画像或最佳机制推荐；核心循环记录固定声明不生成循环质量分、最优机制、玩家体验结论或静默意图推断；原型范围记录固定声明不生成保真度总分或最少内容推荐；议题到系统记录固定声明不生成社会影响分、学习结论或代表性认证。
 - `test_plans` 保存单问题测试计划历史；它固定声明不生成乐趣分、样本代表性、因果证明、发行认证或静默范围推断。记录数和证据链齐全都不是测试通过。

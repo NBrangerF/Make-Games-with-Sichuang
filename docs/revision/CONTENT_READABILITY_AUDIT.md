@@ -1,9 +1,9 @@
-<!-- content-fingerprint: ed1f026ff810427eafa3259ac6717a3783748f14e9b5005fd65b65e05194761c -->
+<!-- content-fingerprint: d0eafaae7fcf3744f4a6213bcb7489570e98bfea171ffe45edb8a9a368990c60 -->
 # 全站资料文本可读性审计
 
 审计日期：2026-08-26  
-范围：`content/` 下全部 86 个 JSON 与 Markdown 文件，不抽样。  
-覆盖：15,044 个含中文的字段或段落，约 386,546 个汉字。
+范围：`content/` 下全部 87 个 JSON 与 Markdown 文件，不抽样。
+覆盖：15,339 个含中文的字段或段落，约 393,041 个汉字。
 
 ## 结论
 
@@ -27,6 +27,7 @@
 | `claims.json` | 644 | 32881 | 22 | 内部元数据：不作为新手首屏文案 |
 | `concept-action-index.json` | 65 | 721 | 0 | 内部元数据：不作为新手首屏文案 |
 | `design-constraints.json` | 37 | 830 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-materials.json` | 285 | 6179 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `frameworks.json` | 81 | 1504 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `glossary-index.json` | 258 | 1155 | 0 | 内部元数据：不作为新手首屏文案 |
 | `glossary.json` | 2150 | 34801 | 9 | 支持资料：通过节点或资料库按需进入 |
@@ -39,7 +40,7 @@
 | `guides/paul-grogan-rulebook-layout-case-synthesis-zh-CN-internal.metadata.json` | 11 | 138 | 0 | 案例正文：保留为按需案例 |
 | `guides/quid-for-your-quo-case-synthesis-zh-CN-internal.md` | 116 | 4189 | 2 | 案例正文：保留为按需案例 |
 | `guides/quid-for-your-quo-case-synthesis-zh-CN-internal.metadata.json` | 11 | 136 | 0 | 案例正文：保留为按需案例 |
-| `learning-nodes.json` | 190 | 4010 | 0 | 主线权威文案：已按短句规则修订 |
+| `learning-nodes.json` | 200 | 4326 | 0 | 主线权威文案：已按短句规则修订 |
 | `learning-units/learn-by-playing-one-moment-zh-CN.md` | 272 | 6675 | 5 | 完整课程：保留为深入阅读 |
 | `learning-units/learn-by-playing-one-moment-zh-CN.metadata.json` | 5 | 162 | 0 | 完整课程：保留为深入阅读 |
 | `learning-units/systematic-unit-00-question-first-zh-CN.md` | 94 | 2103 | 0 | 完整课程：保留为深入阅读 |

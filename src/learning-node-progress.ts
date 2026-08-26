@@ -1,34 +1,36 @@
 import { useEffect, useState } from 'react'
-import type { LearningModeId } from './learning-node-catalog'
+import type { LearningActionState, LearningModeId } from './learning-node-catalog'
 
-const STORAGE_KEY = 'tabletop-workshop-learning-node-progress-v1'
+const STORAGE_KEY = 'tabletop-workshop-learning-node-progress-v2'
+const LEGACY_STORAGE_KEY = 'tabletop-workshop-learning-node-progress-v1'
 
 export type LearningNodeProgress = Readonly<{
-  schemaVersion: 1
+  schemaVersion: 2
   mode: LearningModeId
   currentNodeId: string
-  completedNodeIds: string[]
+  nodeStates: Record<string, LearningActionState>
   drafts: Record<string, string>
 }>
 
 const initialState: LearningNodeProgress = {
-  schemaVersion: 1,
+  schemaVersion: 2,
   mode: 'independent',
-  currentNodeId: 'node-01',
-  completedNodeIds: [],
+  currentNodeId: 'node-06',
+  nodeStates: {},
   drafts: {},
 }
 
 function readProgress(): LearningNodeProgress {
   try {
     const stored = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? 'null') as Partial<LearningNodeProgress> | null
-    if (!stored || stored.schemaVersion !== 1) return initialState
-    return {
-      ...initialState,
-      ...stored,
-      completedNodeIds: Array.isArray(stored.completedNodeIds) ? [...new Set(stored.completedNodeIds)] : [],
-      drafts: stored.drafts && typeof stored.drafts === 'object' ? stored.drafts : {},
-    }
+    if (stored?.schemaVersion === 2) return { ...initialState, ...stored, nodeStates: stored.nodeStates && typeof stored.nodeStates === 'object' ? stored.nodeStates : {}, drafts: stored.drafts && typeof stored.drafts === 'object' ? stored.drafts : {} }
+
+    const legacy = JSON.parse(localStorage.getItem(LEGACY_STORAGE_KEY) ?? 'null') as { mode?: LearningModeId; currentNodeId?: string; completedNodeIds?: string[]; drafts?: Record<string, string> } | null
+    if (!legacy) return initialState
+    const nodeStates = Object.fromEntries((legacy.completedNodeIds ?? []).map(nodeId => [nodeId, 'drafted' as const]))
+    const migrated = { ...initialState, mode: legacy.mode ?? initialState.mode, currentNodeId: legacy.currentNodeId ?? initialState.currentNodeId, nodeStates, drafts: legacy.drafts ?? {} }
+    try { localStorage.setItem(STORAGE_KEY, JSON.stringify(migrated)) } catch { /* 当前会话仍可使用迁移结果 */ }
+    return migrated
   } catch {
     return initialState
   }
@@ -46,14 +48,14 @@ export function useLearningNodeProgress() {
   const setDraft = (nodeId: string, draft: string) => setProgress(current => ({
     ...current,
     drafts: { ...current.drafts, [nodeId]: draft },
+    nodeStates: draft.trim() && !current.nodeStates[nodeId]
+      ? { ...current.nodeStates, [nodeId]: 'drafted' }
+      : current.nodeStates,
   }))
-  const completeNode = (nodeId: string, nextNodeId: string) => setProgress(current => ({
+  const setActionState = (nodeId: string, actionState: LearningActionState) => setProgress(current => ({
     ...current,
-    currentNodeId: nextNodeId,
-    completedNodeIds: current.completedNodeIds.includes(nodeId)
-      ? current.completedNodeIds
-      : [...current.completedNodeIds, nodeId],
+    nodeStates: { ...current.nodeStates, [nodeId]: actionState },
   }))
 
-  return { progress, setMode, setCurrentNode, setDraft, completeNode }
+  return { progress, setMode, setCurrentNode, setDraft, setActionState }
 }

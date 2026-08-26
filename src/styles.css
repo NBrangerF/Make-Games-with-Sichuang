@@ -1398,3 +1398,15 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   .header nav { gap: 0; justify-content: space-between; }
   .nav-link { font-size: 14px; padding-left: 7px; padding-right: 7px; }
 }
+/* Keep native controls available to assistive technology while hiding them visually. */
+.visually-hidden {
+  position: absolute !important;
+  width: 1px !important;
+  height: 1px !important;
+  padding: 0 !important;
+  margin: -1px !important;
+  overflow: hidden !important;
+  clip: rect(0, 0, 0, 0) !important;
+  white-space: nowrap !important;
+  border: 0 !important;
+}

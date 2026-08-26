@@ -121,7 +121,7 @@ hypothesis:
   status: open|supported|not_supported|inconclusive
 ```
 
-当前浏览器实现先落地单一活动项目：`tabletop-workshop-project-workspace-v1` 保存项目、当前版本/阶段/问题/下一步和版本节点。完整导出使用 `method: local-project-workspace-export`、`local_first: true` 与 `single_active_project: true`，并收集 19 类本地工具记录。旧记录尚无 `project_id`，不得自动猜归属；多项目迁移契约见 [本地项目护照与完整导出](PROJECT_WORKSPACE.md)。
+当前浏览器实现先落地单一活动项目：`tabletop-workshop-project-workspace-v2` 保存玩家与使用语境、设计边界、游戏骨架、组件范围、当前版本/阶段/问题/下一步和版本节点。旧 v1 护照保守迁移。完整导出使用 `method: local-project-workspace-export`、`local_first: true` 与 `single_active_project: true`，并收集 19 类本地工具记录；导入只恢复护照，不自动写回工具记录。旧记录尚无 `project_id`，不得自动猜归属；多项目迁移契约见 [本地项目护照与完整导出](PROJECT_WORKSPACE.md)。
 
 ## 6. Playtest / Observation / Feedback / Decision
 

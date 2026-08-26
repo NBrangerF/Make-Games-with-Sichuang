@@ -32,7 +32,8 @@ export const routableToolIds = [
 const viewIds = new Set<PrimaryView>(['learn', 'path', 'resources', 'tools', 'method', 'privacy'])
 const toolIds = new Set<DesignToolId>(routableToolIds)
 const methodSections = new Set<MethodSection>(['frameworks', 'guides', 'glossary', 'resource-reading'])
-const isLearningNodeId = (value: string) => /^node-(0[1-9]|1[0-2])$/.test(value)
+const learningPageIds = new Set(['first-tabletop', 'workshop', 'observe', 'iteration', 'mechanics', 'themes'])
+const isLearningPageId = (value: string) => /^node-(0[1-9]|1[0-2])$/.test(value) || learningPageIds.has(value)
 
 export const DEFAULT_ROUTE: AppRoute = { view: 'learn', tool: 'redesign' }
 
@@ -52,7 +53,7 @@ export function parseRouteHash(hash: string): AppRoute {
     return DEFAULT_ROUTE
   }
   if (!viewIds.has(view as PrimaryView)) return DEFAULT_ROUTE
-  if (view === 'learn') return { view: 'learn', tool: DEFAULT_ROUTE.tool, ...(isLearningNodeId(tool) ? { learningNode: tool } : {}) }
+  if (view === 'learn') return { view: 'learn', tool: DEFAULT_ROUTE.tool, ...(isLearningPageId(tool) ? { learningNode: tool } : {}) }
   if (view === 'resources') return { view: 'resources', tool: DEFAULT_ROUTE.tool, ...(tool ? { resourceEntry: tool } : {}), ...(item ? { resourceId: item } : {}) }
   if (view === 'method') {
     if (!methodSections.has(tool as MethodSection)) return { view: 'method', tool: DEFAULT_ROUTE.tool }
@@ -74,7 +75,10 @@ export function serializeRoute(route: AppRoute): string {
 }
 
 export function routeTitle(route: AppRoute): string {
-  if (route.view === 'learn') return withBrand(route.learningNode ? `学习节点 ${route.learningNode.slice(-2)}` : '游戏设计学习地图')
+  if (route.view === 'learn') {
+    const learningTitles: Record<string, string> = { 'first-tabletop': '第一次落桌', workshop: '基础设计工作室', observe: '观察实验室', iteration: '原型迭代主线', mechanics: 'Mechanic 设计材料', themes: 'Theme 设计材料' }
+    return withBrand(route.learningNode ? (learningTitles[route.learningNode] ?? `学习节点 ${route.learningNode.slice(-2)}`) : '从哪里开始')
+  }
   if (route.view === 'tools') return withBrand(toolTitles[route.tool])
   if (route.view === 'resources') {
     if (route.resourceEntry === 'learn' && isLearningContentId(route.resourceId)) return withBrand(learningContentTitles[route.resourceId])
@@ -89,7 +93,7 @@ export function routeTitle(route: AppRoute): string {
     return withBrand(methodTitles[route.methodSection])
   }
   const titles: Record<Exclude<PrimaryView, 'tools'>, string> = {
-    learn: '游戏设计学习地图',
+    learn: '从哪里开始',
     path: '设计路径',
     resources: '资源库',
     method: '方法与概念',

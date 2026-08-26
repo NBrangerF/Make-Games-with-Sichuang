@@ -268,10 +268,17 @@ type ProjectCheckpoint = {
   createdAt: string
 }
 type ProjectWorkspace = {
-  schemaVersion: 1
+  schemaVersion: 2
   id: string
   title: string
+  audience: string
+  playerCount: string
+  duration: string
   experienceIntent: string
+  designBoundaries: string
+  goalAndEnd: string
+  turnStructure: string
+  componentScope: string
   version: string
   stage: Stage
   currentQuestion: string
@@ -280,7 +287,8 @@ type ProjectWorkspace = {
   updatedAt: string
 }
 
-const PROJECT_WORKSPACE_STORAGE_KEY = 'tabletop-workshop-project-workspace-v1'
+const PROJECT_WORKSPACE_STORAGE_KEY = 'tabletop-workshop-project-workspace-v2'
+const LEGACY_PROJECT_WORKSPACE_STORAGE_KEY = 'tabletop-workshop-project-workspace-v1'
 const REDESIGN_STORAGE_KEY = 'tabletop-workshop-redesign-v1'
 const CONSTRAINT_STORAGE_KEY = 'tabletop-workshop-constraint-experiments-v1'
 const BALANCE_STORAGE_KEY = 'tabletop-workshop-balance-passes-v1'
@@ -292,10 +300,17 @@ const TEACHING_PATH_STORAGE_KEY = 'tabletop-workshop-teaching-paths-v1'
 const ACCESSIBILITY_STORAGE_KEY = 'tabletop-workshop-accessibility-observations-v1'
 
 const DEFAULT_PROJECT_WORKSPACE: ProjectWorkspace = {
-  schemaVersion: 1,
+  schemaVersion: 2,
   id: 'local-project',
   title: '未命名的海上贸易游戏',
+  audience: '愿意讨论和比较长期计划的普通桌游玩家',
+  playerCount: '2—4 人',
+  duration: '30—45 分钟',
   experienceIntent: '玩家在眼前得分与长期航线之间做有后果的取舍。',
+  designBoundaries: '首轮只使用卡牌、标记和一张路线纸；不做正式美术与商业发布判断。',
+  goalAndEnd: '完成六轮交付后结束；比较已完成订单，同时保留航线承诺的后果。',
+  turnStructure: '查看港口需求 → 选择一次装货或交付 → 更新订单与航线 → 下一位玩家。',
+  componentScope: '18 张货物与订单卡、12 枚货物标记、4 个玩家标记、1 张路线纸。',
   version: 'v0.3',
   stage: '最小原型',
   currentQuestion: '玩家会为了长期收益放弃眼前得分吗？',
@@ -329,8 +344,12 @@ const PROJECT_ARTIFACT_SOURCES = [
 function readProjectWorkspace(): ProjectWorkspace {
   try {
     const stored = JSON.parse(localStorage.getItem(PROJECT_WORKSPACE_STORAGE_KEY) || 'null')
-    if (!stored || stored.schemaVersion !== 1) return DEFAULT_PROJECT_WORKSPACE
-    return { ...DEFAULT_PROJECT_WORKSPACE, ...stored, checkpoints: Array.isArray(stored.checkpoints) ? stored.checkpoints : [] }
+    if (stored?.schemaVersion === 2) return { ...DEFAULT_PROJECT_WORKSPACE, ...stored, checkpoints: Array.isArray(stored.checkpoints) ? stored.checkpoints : [] }
+    const legacy = JSON.parse(localStorage.getItem(LEGACY_PROJECT_WORKSPACE_STORAGE_KEY) || 'null')
+    if (!legacy || legacy.schemaVersion !== 1) return DEFAULT_PROJECT_WORKSPACE
+    const migrated = { ...DEFAULT_PROJECT_WORKSPACE, ...legacy, schemaVersion: 2 as const, checkpoints: Array.isArray(legacy.checkpoints) ? legacy.checkpoints : [] }
+    try { localStorage.setItem(PROJECT_WORKSPACE_STORAGE_KEY, JSON.stringify(migrated)) } catch { /* 当前会话仍可使用迁移结果 */ }
+    return migrated
   } catch { return DEFAULT_PROJECT_WORKSPACE }
 }
 
@@ -357,7 +376,7 @@ function ArrowIcon({ direction = 'right' }: { direction?: 'right' | 'down' }) {
 
 function Header({ route, onNavigate, onPreloadResources }: { route: AppRoute; onNavigate: (route: AppRoute) => void; onPreloadResources: () => void }) {
   const links: { id: string; label: string; target: AppRoute; isActive: boolean; preload?: () => void }[] = [
-    { id: 'learn', label: '开始学习', target: { view: 'learn', tool: route.tool }, isActive: route.view === 'learn' },
+    { id: 'learn', label: '从哪里开始', target: { view: 'learn', tool: route.tool }, isActive: route.view === 'learn' },
     { id: 'problems', label: '按问题找', target: { view: 'resources', tool: route.tool, resourceEntry: 'problems' }, isActive: route.view === 'resources' && route.resourceEntry === 'problems', preload: onPreloadResources },
     { id: 'library', label: '资料库', target: { view: 'resources', tool: route.tool, resourceEntry: 'all' }, isActive: route.view === 'resources' && route.resourceEntry !== 'problems', preload: onPreloadResources },
   ]
@@ -410,22 +429,23 @@ function ProjectPanel({ project, onSave, onOpenTest }: { project: ProjectWorkspa
   const [draft, setDraft] = useState(project)
   const [changeSummary, setChangeSummary] = useState('')
   const [status, setStatus] = useState('')
+  const importRef = useRef<HTMLInputElement>(null)
   const artifacts = PROJECT_ARTIFACT_SOURCES.map(source => ({ id: source.id, records: readArtifact(source) }))
   const artifactTotal = artifacts.reduce((sum, item) => sum + item.records.length, 0)
 
   useEffect(() => { setDraft(project) }, [project])
   const saveProject = (event: FormEvent<HTMLFormElement>) => {
     event.preventDefault()
-    const required = [draft.title, draft.version, draft.experienceIntent, draft.currentQuestion, draft.nextAction, changeSummary]
-    if (!required.every(value => value.trim())) return setStatus('请写完项目名、版本、体验意图、当前问题、下一步和本次版本变化。')
-    onSave({ ...draft, title: draft.title.trim(), version: draft.version.trim(), experienceIntent: draft.experienceIntent.trim(), currentQuestion: draft.currentQuestion.trim(), nextAction: draft.nextAction.trim() }, changeSummary.trim())
+    const required = [draft.title, draft.version, draft.audience, draft.playerCount, draft.duration, draft.experienceIntent, draft.designBoundaries, draft.goalAndEnd, draft.turnStructure, draft.componentScope, draft.currentQuestion, draft.nextAction, changeSummary]
+    if (!required.every(value => value.trim())) return setStatus('请写完项目简报、游戏骨架、当前问题、下一步和本次版本变化。')
+    onSave({ ...draft, title: draft.title.trim(), version: draft.version.trim(), audience: draft.audience.trim(), playerCount: draft.playerCount.trim(), duration: draft.duration.trim(), experienceIntent: draft.experienceIntent.trim(), designBoundaries: draft.designBoundaries.trim(), goalAndEnd: draft.goalAndEnd.trim(), turnStructure: draft.turnStructure.trim(), componentScope: draft.componentScope.trim(), currentQuestion: draft.currentQuestion.trim(), nextAction: draft.nextAction.trim() }, changeSummary.trim())
     setChangeSummary('')
     setStatus('项目护照和版本节点已保存到这台设备。')
     setEditing(false)
   }
   const exportProject = () => {
     const payload = {
-      schema_version: 1,
+      schema_version: 2,
       method: 'local-project-workspace-export',
       local_first: true,
       single_active_project: true,
@@ -435,18 +455,42 @@ function ProjectPanel({ project, onSave, onOpenTest }: { project: ProjectWorkspa
     }
     const blob = new Blob([JSON.stringify(payload, null, 2)], { type: 'application/json' }); const url = URL.createObjectURL(blob); const anchor = document.createElement('a'); anchor.href = url; anchor.download = `${project.title || '桌游项目'}-完整项目包.json`; anchor.click(); URL.revokeObjectURL(url)
   }
+  const importProject = async (file?: File) => {
+    if (!file) return
+    try {
+      const parsed = JSON.parse(await file.text()) as Record<string, unknown>
+      const candidate = ('project' in parsed ? parsed.project : parsed) as Partial<ProjectWorkspace> | undefined
+      if (!candidate) throw new Error('invalid')
+      if (!candidate.title || !candidate.version || !candidate.stage || !stages.includes(candidate.stage as Stage)) throw new Error('invalid')
+      const restored: ProjectWorkspace = { ...DEFAULT_PROJECT_WORKSPACE, ...candidate, schemaVersion: 2, stage: candidate.stage as Stage, checkpoints: Array.isArray(candidate.checkpoints) ? candidate.checkpoints : [] }
+      onSave(restored, '从导出的项目包恢复项目护照；请重新核对本机工具记录归属。')
+      setStatus('项目护照已从文件恢复。工具记录不会从文件自动写回本机；请先核对版本和记录归属。')
+      setEditing(false)
+    } catch {
+      setStatus('没有识别出可用的项目护照。请选择本站导出的完整项目包 JSON。')
+    } finally {
+      if (importRef.current) importRef.current.value = ''
+    }
+  }
   return <aside className="project-panel" aria-labelledby="project-panel-title">
     <div className="project-panel-heading"><h2 id="project-panel-title">当前项目</h2><button className="text-action" type="button" onClick={() => { setEditing(current => !current); setStatus('') }}>{editing ? '取消编辑' : '编辑项目护照'}</button></div>
     {editing ? <form className="project-editor" onSubmit={saveProject}>
       <label><span>项目名</span><input value={draft.title} onChange={event => setDraft(current => ({ ...current, title: event.target.value }))} /></label>
       <div className="project-editor-pair"><label><span>当前版本</span><input value={draft.version} onChange={event => setDraft(current => ({ ...current, version: event.target.value }))} /></label><label><span>当前阶段</span><select value={draft.stage} onChange={event => setDraft(current => ({ ...current, stage: event.target.value as Stage }))}>{stages.map(stage => <option key={stage}>{stage}</option>)}</select></label></div>
+      <label><span>为谁设计</span><input value={draft.audience} onChange={event => setDraft(current => ({ ...current, audience: event.target.value }))} /></label>
+      <div className="project-editor-pair"><label><span>玩家人数</span><input value={draft.playerCount} onChange={event => setDraft(current => ({ ...current, playerCount: event.target.value }))} /></label><label><span>目标时长</span><input value={draft.duration} onChange={event => setDraft(current => ({ ...current, duration: event.target.value }))} /></label></div>
       <label><span>体验意图</span><textarea value={draft.experienceIntent} onChange={event => setDraft(current => ({ ...current, experienceIntent: event.target.value }))} /></label>
+      <label><span>设计边界</span><textarea value={draft.designBoundaries} onChange={event => setDraft(current => ({ ...current, designBoundaries: event.target.value }))} /></label>
+      <label><span>玩家目标与结束条件</span><textarea value={draft.goalAndEnd} onChange={event => setDraft(current => ({ ...current, goalAndEnd: event.target.value }))} /></label>
+      <label><span>主要行动与回合结构</span><textarea value={draft.turnStructure} onChange={event => setDraft(current => ({ ...current, turnStructure: event.target.value }))} /></label>
+      <label><span>当前版本组件范围</span><textarea value={draft.componentScope} onChange={event => setDraft(current => ({ ...current, componentScope: event.target.value }))} /></label>
       <label><span>这一版只问什么</span><textarea value={draft.currentQuestion} onChange={event => setDraft(current => ({ ...current, currentQuestion: event.target.value }))} /></label>
       <label><span>下一步可执行动作</span><textarea value={draft.nextAction} onChange={event => setDraft(current => ({ ...current, nextAction: event.target.value }))} /></label>
       <label><span>本次版本变化</span><textarea value={changeSummary} onChange={event => setChangeSummary(event.target.value)} placeholder="例如：只把公开订单从 5 张减到 3 张；核心交付动作不变。" /></label>
       <button className="primary-button" type="submit">保存版本节点</button>
     </form> : <>
       <div className="project-title">{project.title}</div><div className="version">{project.version} · {project.stage}</div>
+      <p className="project-brief-line">{project.audience} · {project.playerCount} · {project.duration}</p>
       <div className="project-question"><span>当前问题</span><p>{project.currentQuestion}</p></div>
       <div className="project-next"><span>下一步</span><p>{project.nextAction}</p></div>
     </>}
@@ -454,6 +498,8 @@ function ProjectPanel({ project, onSave, onOpenTest }: { project: ProjectWorkspa
     <p className="project-boundary">首版只维护一个本地项目；导出前请确认这台设备上的记录都属于它。</p>
     <button className="primary-button" onClick={onOpenTest}>记录一次测试</button>
     <button className="text-action project-export" type="button" onClick={exportProject}>导出完整项目包 <ArrowIcon /></button>
+    <input ref={importRef} className="visually-hidden" type="file" accept="application/json,.json" onChange={event => void importProject(event.target.files?.[0])} />
+    <button className="text-action project-export" type="button" onClick={() => importRef.current?.click()}>从项目包恢复护照 <ArrowIcon /></button>
     <div className="form-status" aria-live="polite">{status}</div>
   </aside>
 }
@@ -1656,7 +1702,7 @@ export function App() {
   const navigateResourceStart = (destination: ResourceStartDestination) => navigateResourceEntry(destination)
   const navigateResourceSubpage = (resourceEntry: 'learn' | 'analyze' | 'problems', resourceId: string) => navigateResourcePreview(resourceEntry, resourceId)
   const navigateMethod = (methodSection: MethodSection, methodItem?: string, replace = false) => navigate({ view: 'method', tool: route.tool, methodSection, ...(methodItem ? { methodItem } : {}) }, replace)
-  useEffect(() => { localStorage.setItem(PROJECT_WORKSPACE_STORAGE_KEY, JSON.stringify(project)) }, [project])
+  useEffect(() => { try { localStorage.setItem(PROJECT_WORKSPACE_STORAGE_KEY, JSON.stringify(project)) } catch { /* 本地存储不可用时保留当前会话 */ } }, [project])
   useEffect(() => {
     const syncFromLocation = () => {
       const next = parseRouteHash(window.location.hash)
@@ -1711,12 +1757,12 @@ export function App() {
   const saveProject = (draft: ProjectWorkspace, changeSummary: string) => {
     const createdAt = new Date().toISOString()
     const checkpoint: ProjectCheckpoint = { id: crypto.randomUUID(), version: draft.version, stage: draft.stage, currentQuestion: draft.currentQuestion, nextAction: draft.nextAction, changeSummary, createdAt }
-    setProject({ ...draft, schemaVersion: 1, checkpoints: [checkpoint, ...draft.checkpoints], updatedAt: createdAt })
+    setProject({ ...draft, schemaVersion: 2, checkpoints: [checkpoint, ...draft.checkpoints], updatedAt: createdAt })
   }
   return <>
     <a className="skip-link" href={serializeRoute(route)} onClick={event => { event.preventDefault(); document.getElementById('main-content')?.focus() }}>跳到主要内容</a>
     <Header route={route} onNavigate={navigate} onPreloadResources={preloadResourceDiscovery} />
-    {route.view === 'learn' && <Suspense fallback={<main className="learning-map" id="main-content" tabIndex={-1}><p role="status">正在准备学习地图……</p></main>}><LearningNodesRoute nodeId={route.learningNode} onOpenMap={() => navigateLearningNode()} onOpenNode={navigateLearningNode} onOpenTool={openGuideTool} onOpenContent={contentId => navigateResourceSubpage('learn', contentId)} onOpenBranch={guideId => navigateMethod('guides', guideId)} onOpenResourceEntry={navigateResourceEntry} onOpenConcept={conceptId => navigateMethod('glossary', conceptId)} /></Suspense>}
+    {route.view === 'learn' && <Suspense fallback={<main className="learning-map" id="main-content" tabIndex={-1}><p role="status">正在准备学习入口……</p></main>}><LearningNodesRoute nodeId={route.learningNode} onOpenMap={() => navigateLearningNode()} onOpenNode={navigateLearningNode} onOpenTool={openGuideTool} onOpenContent={contentId => navigateResourceSubpage('learn', contentId)} onOpenBranch={guideId => navigateMethod('guides', guideId)} onOpenResourceEntry={navigateResourceEntry} onOpenConcept={conceptId => navigateMethod('glossary', conceptId)} onOpenProblems={() => navigateResourceEntry('problems')} onOpenProject={() => navigateView('path')} /></Suspense>}
     {route.view === 'path' && <PathView project={project} onSaveProject={saveProject} onOpenConcept={id => navigateMethod('glossary', id)} onOpenTest={() => setDrawer(true)} onOpenTool={openGuideTool} onOpenResource={id => navigateResourcePreview('all', id)} onOpenResourceEntry={navigateResourceEntry} />}
     {route.view === 'resources' && !route.resourceEntry && <ResourceStartHome onNavigate={navigateResourceStart} />}
     {route.view === 'resources' && route.resourceEntry === 'learn' && !route.resourceId && <ResourceLearningStart onBack={() => navigateView('resources')} onChooseLearningPath={id => navigateResourceSubpage('learn', id)} />}

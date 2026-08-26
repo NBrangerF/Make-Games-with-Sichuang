@@ -49,6 +49,7 @@ const newBedfordMetadata = JSON.parse(read('content/guides/new-bedford-manufactu
 const visualSpec = read('docs/product/RESOURCE_V2_VISUAL_SPEC.md')
 const resourceEntryIndex = JSON.parse(read('content/resource-entry-index.json'))
 const learningNodes = JSON.parse(read('content/learning-nodes.json'))
+const learningHome = read('src/learning-home.tsx')
 
 const requiredCaseDimensions = ['语境', '问题', '选项', '决定', '证据', '结果', '仍未知', '迁移动作']
 const newDesignerCases = [
@@ -112,14 +113,20 @@ const check = (pass, label) => checks.push([Boolean(pass), label])
 check((starts.match(/id: 'learn'|id: 'analyze'|id: 'problems'/g) ?? []).length === 3, '首页严格限制为三个主入口')
 check(
   (headerLinksBlock.match(/id:/g) ?? []).length === 3 &&
-  headerLinksBlock.includes("id: 'learn', label: '开始学习'") &&
+  headerLinksBlock.includes("id: 'learn', label: '从哪里开始'") &&
   headerLinksBlock.includes("id: 'problems', label: '按问题找'") &&
   headerLinksBlock.includes("id: 'library', label: '资料库'") &&
   !headerLinksBlock.includes("id: 'path'") &&
   !headerLinksBlock.includes("id: 'tools'"),
-  '顶栏以开始学习、按问题找与资料库组织新手入口',
+  '顶栏以从哪里开始、按问题找与资料库组织新手入口',
 )
-check(learningNodes.nodes?.length === 12 && app.includes("route.view === 'learn'") && app.includes('<LearningNodesRoute'), '十二节点学习地图成为默认主线')
+check(
+  learningNodes.nodes?.filter(node => node.track === 'observe').length === 5 &&
+  learningNodes.nodes?.filter(node => node.track === 'iteration').length === 7 &&
+  app.includes("route.view === 'learn'") && app.includes('<LearningNodesRoute') &&
+  ['first-tabletop', 'workshop', 'iteration'].every(id => learningHome.includes(`id: '${id}'`)) && learningHome.includes('onOpenProblems'),
+  '默认 Learn 按四种用户状态分流，观察与迭代节点不再混成统一主线',
+)
 check(app.includes("route.view === 'path'") && app.includes("route.view === 'tools'"), '隐藏入口不删除设计路径与工具旧深链')
 check(
   app.includes('className="resource-start-page method-start-page"') &&

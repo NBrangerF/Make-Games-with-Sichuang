@@ -17,6 +17,11 @@ const topLevelPageFiles = new Set([
   'resource-problems-v2.tsx',
   'learning-node-map.tsx',
   'learning-node-page.tsx',
+  'learning-home.tsx',
+  'learning-workshop-map.tsx',
+  'design-materials-library.tsx',
+  'first-tabletop-challenge.tsx',
+  'learning-nodes-route.tsx',
 ])
 
 const guards = []
