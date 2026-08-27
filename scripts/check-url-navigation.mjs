@@ -34,6 +34,9 @@ check('all primary views have canonical hashes', () => {
   assert.equal(serializeRoute(parseRouteHash('#method')), '#method')
   assert.equal(serializeRoute(parseRouteHash('#tools')), '#tools/redesign')
   assert.equal(serializeRoute(parseRouteHash('#privacy')), '#privacy')
+  assert.equal(serializeRoute(parseRouteHash('#course')), '#course')
+  assert.equal(serializeRoute(parseRouteHash('#workbench')), '#workbench')
+  assert.equal(serializeRoute(parseRouteHash('#projects')), '#projects')
 })
 
 check('resource entries round-trip through shareable hashes', () => {
@@ -67,7 +70,7 @@ check('unknown tool remains in toolbox without opening a false surface', () => {
 })
 
 check('titles identify the current shareable surface', () => {
-  assert.equal(routeTitle(parseRouteHash('#learn')), '游戏设计学习地图 · 落桌')
+  assert.equal(routeTitle(parseRouteHash('#learn')), '从哪里开始 · 落桌')
   assert.equal(routeTitle(parseRouteHash('#learn/node-03')), '学习节点 03 · 落桌')
   assert.equal(routeTitle(parseRouteHash('#path')), '设计路径 · 落桌')
   assert.equal(routeTitle(parseRouteHash('#resources')), PRODUCT_FULL_NAME)
@@ -83,16 +86,17 @@ check('application synchronizes URL, history, title, and primary navigation', ()
 })
 
 check('visible navigation leads with learning while preserving legacy routes', () => {
-  const headerLinks = appSource.match(/const links: \{ id: string;[\s\S]*?\}\[\] = \[([\s\S]*?)\n  \]/)?.[1] ?? ''
+  const headerLinks = appSource.match(/const twoTaskLinks:[^=]*= \[([\s\S]*?)\n  \]/)?.[1] ?? ''
   assert.equal((headerLinks.match(/id:/g) ?? []).length, 3)
-  assert.ok(headerLinks.includes("id: 'learn', label: '开始学习'"))
-  assert.ok(headerLinks.includes("id: 'problems', label: '按问题找'"))
-  assert.ok(headerLinks.includes("id: 'library', label: '资料库'"))
+  assert.ok(headerLinks.includes("id: 'course', label: '系统学习'"))
+  assert.ok(headerLinks.includes("id: 'workbench', label: '设计工作台'"))
+  assert.ok(headerLinks.includes("id: 'knowledge', label: '设计知识库'"))
   assert.equal(headerLinks.includes("id: 'path'"), false)
   assert.equal(headerLinks.includes("id: 'tools'"), false)
   assert.ok(appSource.includes("route.view === 'learn'"))
   assert.ok(appSource.includes("route.view === 'path'"))
   assert.ok(appSource.includes("route.view === 'tools'"))
+  assert.ok(appSource.includes('legacyLinks'))
 })
 
 check('keyboard users can bypass navigation to one active main landmark', () => {

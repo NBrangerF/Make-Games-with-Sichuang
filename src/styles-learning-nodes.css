@@ -456,6 +456,20 @@
 .first-tabletop-brief .learning-secondary-action { width: 100%; margin-top: 10px; }
 .first-tabletop-brief .learning-secondary-action { color: #fff; border-color: #fff; }
 
+.two-task-home { min-height: calc(100vh - var(--ot-header-height)); padding: 0; color: var(--learning-navy); background: var(--learning-paper); }
+.two-task-home__hero { padding: clamp(64px, 9vw, 120px) max(24px, calc((100vw - 1180px) / 2)) clamp(48px, 7vw, 88px); border-bottom: 1px solid var(--learning-rule); }
+.two-task-home__hero h1 { max-width: 1040px; margin: 22px 0 28px; font-family: var(--font-display); font-size: clamp(58px, 8vw, 112px); font-weight: 500; line-height: .91; letter-spacing: -.065em; }
+.two-task-home__hero > p:last-child { max-width: 680px; margin: 0; color: var(--ot-muted); font-size: 17px; line-height: 1.75; }
+.two-task-home__choices { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 1px; max-width: 1180px; margin: 0 auto; background: var(--learning-rule); border-right: 1px solid var(--learning-rule); border-left: 1px solid var(--learning-rule); }
+.two-task-home__choices article { display: flex; min-height: 560px; padding: clamp(28px, 5vw, 58px); flex-direction: column; background: #f9f5eb; }
+.two-task-home__choices article > span { color: var(--learning-red); font-family: ui-monospace, monospace; }
+.two-task-home__choices .learning-eyebrow { margin-top: auto; }
+.two-task-home__choices h2 { margin: 14px 0 22px; font-family: var(--font-display); font-size: clamp(44px, 5vw, 70px); font-weight: 500; line-height: .94; letter-spacing: -.05em; }
+.two-task-home__choices article > p:not(.learning-eyebrow) { min-height: 100px; color: var(--ot-muted); line-height: 1.7; }
+.two-task-home__choices small { min-height: 46px; margin: 16px 0; color: var(--learning-blue); line-height: 1.55; }
+.two-task-home__choices button { align-self: flex-start; min-height: 46px; padding: 0 18px; color: #fff; background: var(--learning-navy); border: 0; cursor: pointer; font-weight: 750; }
+.two-task-home__knowledge { display: block; margin: 50px auto 80px; padding: 10px 0; color: var(--learning-navy); background: transparent; border: 0; border-bottom: 1px solid currentColor; cursor: pointer; }
+
 @media (max-width: 900px) {
   .learning-map__hero { grid-template-columns: 1fr; }
   .learning-map__hero-copy { max-width: none; padding: 72px 32px; }
@@ -473,6 +487,7 @@
   .learning-home__observe .learning-secondary-action { grid-column: 1; }
   .first-tabletop-brief { position: static; }
   .learning-workshop__unit-grid { grid-template-columns: 1fr; }
+  .two-task-home__choices { grid-template-columns: 1fr; }
 }
 
 @media (max-width: 700px) {
@@ -516,6 +531,11 @@
   .design-materials-page__hero,
   .first-tabletop-page__hero { padding: 58px 20px 64px; }
   .learning-home__hero { min-height: 0; }
+  .two-task-home__hero { padding: 58px 20px 64px; }
+  .two-task-home__hero h1 { font-size: clamp(48px, 15vw, 68px); }
+  .two-task-home__choices { margin: 0 20px; }
+  .two-task-home__choices article { min-height: 440px; padding: 28px 24px; }
+  .two-task-home__choices article > p:not(.learning-eyebrow) { min-height: 0; }
   .learning-home__hero h1,
   .learning-workshop__hero h1,
   .design-materials-page__hero h1,

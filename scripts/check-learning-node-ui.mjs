@@ -21,7 +21,7 @@ const check = (label, action) => {
   catch (error) { checks.push([false, label, error.message]) }
 }
 
-check('默认路由进入四状态学习首页，节点与新活动都有稳定深链', () => {
+check('默认路由进入受控两任务首页，旧节点与活动仍有稳定深链', () => {
   assert.ok(urlState.includes("DEFAULT_ROUTE: AppRoute = { view: 'learn'"))
   assert.ok(urlState.includes("if (view === 'learn')"))
   for (const id of ['first-tabletop', 'workshop', 'observe', 'iteration', 'mechanics', 'themes']) assert.ok(urlState.includes(`'${id}'`), id)
@@ -29,6 +29,9 @@ check('默认路由进入四状态学习首页，节点与新活动都有稳定�
   assert.deepEqual(nodes.nodes.map(node => node.id), Array.from({ length: 12 }, (_, index) => `node-${String(index + 1).padStart(2, '0')}`))
   for (const id of ['first-tabletop', 'workshop', 'iteration']) assert.ok(home.includes(`id: '${id}'`), id)
   assert.ok(home.includes('onOpenProblems'))
+  assert.ok(home.includes('two-task-home__choices'))
+  assert.ok(home.includes('onOpenCourse'))
+  assert.ok(home.includes('onOpenWorkbench'))
 })
 
 check('学习界面及较重材料页通过分层懒加载进入独立包', () => {

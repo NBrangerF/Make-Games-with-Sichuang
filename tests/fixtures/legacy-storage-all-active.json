@@ -1,0 +1,162 @@
+{
+  "tabletop-workshop-project-workspace-v2": {
+    "schemaVersion": 2,
+    "id": "user-project",
+    "title": "群岛信号",
+    "audience": "第一次接触推理游戏的玩家",
+    "playerCount": "3–4 人",
+    "duration": "20 分钟",
+    "experienceIntent": "在信息不完整时做出可解释的判断",
+    "designBoundaries": "18 张卡和 12 枚标记",
+    "goalAndEnd": "第三轮后信号最完整的玩家获胜",
+    "turnStructure": "抽取、发送或干扰、公开一条信号",
+    "componentScope": "信号卡、岛屿卡、标记",
+    "version": "v0.2",
+    "currentQuestion": "玩家是否会为了保留信息而放弃得分？",
+    "nextAction": "完成一次外部测试",
+    "updatedAt": "2026-08-20T10:00:00.000Z",
+    "checkpoints": [
+      {
+        "id": "checkpoint-1",
+        "version": "v0.1",
+        "currentQuestion": "信号是否能被理解？",
+        "nextAction": "减少信号类型",
+        "changeSummary": "第一个可玩版本",
+        "createdAt": "2026-08-18T10:00:00.000Z"
+      }
+    ]
+  },
+  "tabletop-workshop-learning-node-progress-v2": {
+    "schemaVersion": 2,
+    "currentNodeId": "node-03",
+    "completedNodeIds": ["node-01", "node-02"],
+    "nodeStates": {
+      "node-01": "completed",
+      "node-02": "completed",
+      "node-03": "active"
+    },
+    "drafts": {
+      "node-01": "玩家在第二轮丢弃了一张稀有信号卡。",
+      "node-03": "玩家在保留稀有卡与立即得分之间选择。"
+    }
+  },
+  "tabletop-workshop-first-tabletop-v1": {
+    "title": "三张信号",
+    "mechanicId": "simultaneous-action-selection",
+    "themeId": "island-radio",
+    "duration": "10 分钟",
+    "components": ["9 张卡", "6 枚标记"],
+    "ruleSketch": "同时选卡，比较信号，移动标记。"
+  },
+  "tabletop-workshop-experience-intent-v1": {
+    "schemaVersion": 1,
+    "draft": {"experience": "紧张地判断他人意图"},
+    "records": [
+      {"id": "intent-1", "projectId": "user-project", "version": "v0.2", "experience": "紧张地判断他人意图", "updatedAt": "2026-08-20T10:10:00.000Z"}
+    ]
+  },
+  "tabletop-workshop-core-loop-v1": {
+    "schemaVersion": 1,
+    "draft": {"sourceIntentId": "intent-1", "loop": "收集信息→选择信号→改变局面→公开结果"},
+    "records": [
+      {"id": "loop-1", "projectId": "user-project", "version": "v0.2", "sourceIntentId": "intent-1", "loop": "收集信息→选择信号→改变局面→公开结果"}
+    ]
+  },
+  "tabletop-workshop-prototype-scope-v1": {
+    "schemaVersion": 1,
+    "draft": {"scope": "只保留三轮信号选择"},
+    "records": [
+      {"id": "scope-1", "projectId": "user-project", "version": "v0.2", "scope": "只保留三轮信号选择"}
+    ]
+  },
+  "tabletop-workshop-single-question-test-plan-draft-v1": {
+    "draft": {"projectId": "user-project", "version": "v0.2", "question": "玩家会为保留信息放弃得分吗？"}
+  },
+  "tabletop-workshop-project-v1": [
+    {"id": "plan-1", "projectId": "user-project", "version": "v0.2", "question": "玩家会为保留信息放弃得分吗？", "testType": "熟人带领测试", "createdAt": "2026-08-21T08:00:00.000Z"}
+  ],
+  "tabletop-workshop-playtest-sessions-v1": {
+    "schemaVersion": 1,
+    "draft": {"sourcePlanId": "plan-1", "state": "draft"},
+    "records": [
+      {
+        "id": "session-1",
+        "sourcePlanId": "plan-1",
+        "state": "completed",
+        "startedAt": "2026-08-21T09:00:00.000Z",
+        "endedAt": "2026-08-21T09:25:00.000Z",
+        "planSnapshot": {"testType": "熟人带领测试"},
+        "events": [
+          {"id": "event-1", "type": "玩家原话", "observation": "我知道这张卡很重要，但现在不得分太亏了。", "createdAt": "2026-08-21T09:12:00.000Z"},
+          {"id": "event-2", "type": "行为", "observation": "三名玩家中两人立即打出稀有卡。", "createdAt": "2026-08-21T09:14:00.000Z"}
+        ],
+        "debriefAnswers": [
+          {"id": "debrief-1", "response": "知道保留有好处，但好处太晚。"}
+        ]
+      }
+    ]
+  },
+  "tabletop-workshop-feedback-v1": {
+    "schemaVersion": 2,
+    "draft": {"sourceSessionId": "session-1", "observation": "多数玩家立即打出稀有卡"},
+    "records": [
+      {"id": "review-1", "sourceSessionId": "session-1", "selectedEvidenceIds": ["event-1", "event-2"], "observation": "多数玩家立即打出稀有卡", "interpretation": "延迟奖励不足"}
+    ]
+  },
+  "tabletop-workshop-evidence-syntheses-v1": {
+    "schemaVersion": 2,
+    "draft": {"selectedReviewIds": ["review-1"], "claim": "稀有信号的保留价值不可见"},
+    "records": [
+      {"id": "synthesis-1", "lineageId": "lineage-1", "revision": 1, "selectedReviewIds": ["review-1"], "claim": "稀有信号的保留价值不可见"}
+    ]
+  },
+  "tabletop-workshop-version-governance-v1": {
+    "schemaVersion": 1,
+    "draft": {"version": "v0.2", "frozen": false},
+    "records": [{"id": "governance-1", "projectId": "user-project", "version": "v0.2", "decision": "本轮不改变玩家人数"}]
+  },
+  "tabletop-workshop-issue-to-system-v1": {
+    "schemaVersion": 1,
+    "draft": {"issue": "玩家不保留卡"},
+    "records": [{"id": "issue-1", "projectId": "user-project", "version": "v0.2", "issue": "玩家不保留卡", "system": "延迟奖励"}]
+  },
+  "tabletop-workshop-redesign-v1": [
+    {"id": "redesign-1", "projectId": "user-project", "version": "v0.2", "change": "将保留奖励提前一轮"}
+  ],
+  "tabletop-workshop-constraint-experiments-v1": {
+    "schemaVersion": 1,
+    "experiments": [{"id": "constraint-1", "projectId": "user-project", "version": "v0.2", "constraint": "只使用 18 张卡"}]
+  },
+  "tabletop-workshop-balance-passes-v1": {
+    "schemaVersion": 1,
+    "passes": [{"id": "balance-1", "projectId": "user-project", "version": "v0.2", "axis": "保留奖励", "before": 1, "after": 2}]
+  },
+  "tabletop-workshop-decision-traces-v1": {
+    "schemaVersion": 1,
+    "traces": [{"id": "trace-1", "projectId": "user-project", "version": "v0.2", "decision": "保留稀有卡", "information": "对手已公开的岛屿"}]
+  },
+  "tabletop-workshop-shared-decisions-v1": {
+    "schemaVersion": 1,
+    "observations": [{"id": "shared-1", "projectId": "user-project", "version": "v0.2", "decision": "是否共享信号"}]
+  },
+  "tabletop-workshop-theme-reviews-v1": {
+    "schemaVersion": 1,
+    "reviews": [{"id": "theme-review-1", "projectId": "user-project", "version": "v0.2", "theme": "岛屿无线电", "systemFit": "信息有延迟和噪声"}]
+  },
+  "tabletop-workshop-production-ledgers-v1": {
+    "schemaVersion": 1,
+    "ledgers": [{"id": "ledger-1", "projectId": "user-project", "version": "v0.2", "component": "信号卡", "count": 18}]
+  },
+  "tabletop-workshop-publishing-route-maps-v1": {
+    "schemaVersion": 1,
+    "maps": [{"id": "route-1", "projectId": "user-project", "version": "v0.2", "route": "作品集案例"}]
+  },
+  "tabletop-workshop-teaching-paths-v1": {
+    "schemaVersion": 1,
+    "paths": [{"id": "teaching-1", "projectId": "user-project", "version": "v0.2", "firstAction": "同时选一张信号卡"}]
+  },
+  "tabletop-workshop-accessibility-observations-v1": {
+    "schemaVersion": 2,
+    "observations": [{"id": "a11y-1", "projectId": "user-project", "version": "v0.2", "channel": "颜色", "observation": "两类信号只靠颜色区分"}]
+  }
+}

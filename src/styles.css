@@ -10,6 +10,8 @@ button { color: inherit; }
 button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible { outline: 2px dashed var(--blue); outline-offset: 4px; }
 .skip-link { background: var(--blue); color: white; left: 16px; padding: 12px 16px; position: fixed; top: 10px; transform: translateY(-150%); transition: transform .15s ease; z-index: 100; }
 .skip-link:focus { transform: translateY(0); }
+.context-return-bar { display: flex; align-items: center; justify-content: space-between; gap: 16px; padding: 12px max(20px, calc((100vw - 1160px) / 2)); color: #f7f2e8; background: #2d2922; }
+.context-return-bar button { padding: 8px 12px; color: inherit; background: transparent; border: 1px solid currentColor; }
 .header { height: 72px; display: grid; grid-template-columns: 275px 1fr auto; align-items: stretch; border-bottom: 1px solid #aaa7a1; padding: 0 38px; background: rgba(251,250,247,.94); position: sticky; top: 0; z-index: 10; backdrop-filter: blur(10px); }
 .brand { align-items: center; background: none; color: inherit; display: flex; font-family: STSong, SimSun, "Songti SC", serif; font-size: 27px; letter-spacing: .08em; text-align: left; text-decoration: none; }
 .header nav { display: flex; gap: 26px; justify-content: center; }
@@ -1395,6 +1397,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   .site-footer div { align-items: flex-start; flex-direction: column; gap: 8px; }
 }
 @media (max-width: 480px) {
+  .context-return-bar { align-items: stretch; flex-direction: column; }
   .header nav { gap: 0; justify-content: space-between; }
   .nav-link { font-size: 14px; padding-left: 7px; padding-right: 7px; }
 }

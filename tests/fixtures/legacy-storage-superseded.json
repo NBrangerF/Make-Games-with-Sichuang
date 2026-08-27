@@ -1,0 +1,15 @@
+{
+  "tabletop-workshop-project-workspace-v1": {
+    "id": "legacy-project",
+    "title": "旧港口",
+    "version": "v0.1",
+    "currentQuestion": "旧版本是否能完成一轮？",
+    "nextAction": "补齐结束条件",
+    "updatedAt": "2025-01-01T00:00:00.000Z"
+  },
+  "tabletop-workshop-learning-node-progress-v1": {
+    "currentNodeId": "node-02",
+    "completedNodeIds": ["node-01"],
+    "drafts": {"node-01": "记录了一个可观察时刻。"}
+  }
+}

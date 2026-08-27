@@ -1,6 +1,12 @@
+import { COURSE_V3_ID, COURSE_V3_VERSION, getCourseUnit } from './course/course-catalog-v3'
+import { deploymentInfo } from './deployment'
+import { useWorkspaceRuntime } from './workspace-runtime'
+
 type LearningHomeProps = {
   onNavigate: (destination: string) => void
   onOpenProblems: () => void
+  onOpenCourse: () => void
+  onOpenWorkbench: () => void
 }
 
 const entryCards = [
@@ -33,7 +39,7 @@ const entryCards = [
   },
 ] as const
 
-export function LearningHome({ onNavigate, onOpenProblems }: LearningHomeProps) {
+function LegacyLearningHome({ onNavigate, onOpenProblems }: LearningHomeProps) {
   return <main className="learning-map learning-home" id="main-content" tabIndex={-1}>
     <section className="learning-home__hero" aria-labelledby="learning-home-title">
       <div>
@@ -90,4 +96,28 @@ export function LearningHome({ onNavigate, onOpenProblems }: LearningHomeProps) 
       <button className="learning-secondary-action" type="button" onClick={() => onNavigate('observe')}>进入观察实验室</button>
     </section>
   </main>
+}
+
+function TwoTaskLearningHome({ onOpenCourse, onOpenWorkbench, onOpenProblems }: LearningHomeProps) {
+  const { workspace } = useWorkspaceRuntime()
+  const enrollment = workspace.collections.courseEnrollments.find(item => item.courseId === COURSE_V3_ID && item.courseVersion === COURSE_V3_VERSION && item.status === 'active')
+  const currentUnit = getCourseUnit(enrollment?.currentUnitId)
+  const projectCount = workspace.collections.projects.filter(item => !item.archivedAt).length
+  return <main className="learning-map two-task-home" id="main-content" tabIndex={-1}>
+    <section className="two-task-home__hero" aria-labelledby="two-task-home-title">
+      <p className="learning-eyebrow">落桌 · 游戏设计学习与工作系统</p>
+      <h1 id="two-task-home-title">你现在只需要<br />选择一件事。</h1>
+      <p>一条路线帮你系统学习；另一条路线帮你把真实构想做成原型，或继续推进已有项目。</p>
+    </section>
+    <section className="two-task-home__choices" aria-label="两个主要任务">
+      <article><span>01</span><p className="learning-eyebrow">我想建立基本功</p><h2>系统学习<br />桌游设计</h2><p>从三款不需购买的微型游戏开始，通过案例、受限练习和一个完整项目继续。</p><small>{enrollment ? `当前：单元 ${currentUnit.number} · ${currentUnit.title}` : '从单元 1 开始，留下三款游戏的对比观察表'}</small><button type="button" onClick={onOpenCourse}>{enrollment ? `继续单元 ${Number(currentUnit.number)}` : '开始第 1 单元'}</button></article>
+      <article><span>02</span><p className="learning-eyebrow">我想做或推进一个游戏</p><h2>开始或继续<br />一个桌游</h2><p>从新构想展开三个方向，或选择已有项目，沿着不确定、问题、证据、测试和下一版继续。</p><small>{projectCount ? `当前有 ${projectCount} 个未归档项目` : '可以从一个空项目或一个新构想开始'}</small><button type="button" onClick={onOpenWorkbench}>{projectCount ? '选择项目继续' : '开始新构想'}</button></article>
+    </section>
+    <button className="two-task-home__knowledge" type="button" onClick={onOpenProblems}>只想查一个问题？打开设计知识库</button>
+  </main>
+}
+
+export function LearningHome(props: LearningHomeProps) {
+  const twoTaskHomeEnabled = import.meta.env.VITE_V3_HOME_ENABLED === 'true' || !deploymentInfo.publicTrial
+  return twoTaskHomeEnabled ? <TwoTaskLearningHome {...props} /> : <LegacyLearningHome {...props} />
 }

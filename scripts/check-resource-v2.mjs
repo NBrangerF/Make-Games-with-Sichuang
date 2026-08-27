@@ -105,7 +105,7 @@ const learningEntryToolIds = learningEntryTools.map(entry => entry.id)
 const allContextualMappings = [...resourceToolEntries, ...learningToolContents, ...analysisToolQuestions, ...learningEntryTools]
 const contextualToolIds = [...new Set(allContextualMappings.flatMap(entry => entry.toolIds))]
 const guideToolIds = [...(data.match(/export type GuideToolId = ([^\n]+)/)?.[1] ?? '').matchAll(/'([^']+)'/g)].map(match => match[1])
-const headerLinksBlock = app.match(/const links: \{ id: string;[\s\S]*?\}\[\] = \[([\s\S]*?)\n  \]/)?.[1] ?? ''
+const headerLinksBlock = app.match(/const twoTaskLinks:[^=]*= \[([\s\S]*?)\n  \]/)?.[1] ?? ''
 
 const checks = []
 const check = (pass, label) => checks.push([Boolean(pass), label])
@@ -113,19 +113,20 @@ const check = (pass, label) => checks.push([Boolean(pass), label])
 check((starts.match(/id: 'learn'|id: 'analyze'|id: 'problems'/g) ?? []).length === 3, '首页严格限制为三个主入口')
 check(
   (headerLinksBlock.match(/id:/g) ?? []).length === 3 &&
-  headerLinksBlock.includes("id: 'learn', label: '从哪里开始'") &&
-  headerLinksBlock.includes("id: 'problems', label: '按问题找'") &&
-  headerLinksBlock.includes("id: 'library', label: '资料库'") &&
+  headerLinksBlock.includes("id: 'course', label: '系统学习'") &&
+  headerLinksBlock.includes("id: 'workbench', label: '设计工作台'") &&
+  headerLinksBlock.includes("id: 'knowledge', label: '设计知识库'") &&
   !headerLinksBlock.includes("id: 'path'") &&
   !headerLinksBlock.includes("id: 'tools'"),
-  '顶栏以从哪里开始、按问题找与资料库组织新手入口',
+  '受控 V3 顶栏以系统学习、设计工作台与设计知识库组织任务',
 )
 check(
   learningNodes.nodes?.filter(node => node.track === 'observe').length === 5 &&
   learningNodes.nodes?.filter(node => node.track === 'iteration').length === 7 &&
-  app.includes("route.view === 'learn'") && app.includes('<LearningNodesRoute') &&
-  ['first-tabletop', 'workshop', 'iteration'].every(id => learningHome.includes(`id: '${id}'`)) && learningHome.includes('onOpenProblems'),
-  '默认 Learn 按四种用户状态分流，观察与迭代节点不再混成统一主线',
+  app.includes("route.view === 'learn'") && app.includes("route.view === 'course'") && app.includes("route.view === 'workbench'") &&
+  learningHome.includes('two-task-home__choices') && learningHome.includes('onOpenCourse') && learningHome.includes('onOpenWorkbench') && learningHome.includes('onOpenProblems') &&
+  learningHome.includes("VITE_V3_HOME_ENABLED === 'true'") && learningHome.includes('!deploymentInfo.publicTrial'),
+  '受控 V3 首页只给系统学习与设计工作台两个主任务，公开试用仍保留回退',
 )
 check(app.includes("route.view === 'path'") && app.includes("route.view === 'tools'"), '隐藏入口不删除设计路径与工具旧深链')
 check(

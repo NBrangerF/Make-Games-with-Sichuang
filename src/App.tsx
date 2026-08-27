@@ -14,6 +14,10 @@ import { ContextualToolLinks, resourceEntryToolLinks } from './contextual-tools'
 import { toolActionLabels, toolTitles } from './tool-catalog'
 import { loadProductionLedgerTool } from './tool-loaders'
 import { brandedDownloadName, PRODUCT_BRAND } from './brand'
+import { contextReturnRoute } from './navigation/work-context'
+import { attachResource } from './domain/commands-v3'
+import type { TypedRef } from './domain/schema-v3'
+import { useWorkspaceRuntime } from './workspace-runtime'
 
 const VersionGovernanceWorkbench = lazy(() => import('./version-governance-workbench').then(module => ({ default: module.VersionGovernanceWorkbench })))
 const PrototypeScopeCutter = lazy(() => import('./prototype-scope-cutter').then(module => ({ default: module.PrototypeScopeCutter })))
@@ -32,6 +36,8 @@ const EvidenceReviewWorkbench = lazy(() => import('./evidence-review-workbench')
 const EvidenceSynthesisWorkbench = lazy(() => import('./evidence-synthesis-workbench').then(module => ({ default: module.EvidenceSynthesisWorkbench })))
 const ProductionLedgerTool = lazy(() => loadProductionLedgerTool().then(module => ({ default: module.ProductionLedgerTool })))
 const LearningNodesRoute = lazy(() => import('./learning-nodes-route').then(module => ({ default: module.LearningNodesRoute })))
+const WorkbenchV3 = lazy(() => import('./workbench/workbench-v3').then(module => ({ default: module.WorkbenchV3 })))
+const CourseV3 = lazy(() => import('./course/course-v3').then(module => ({ default: module.CourseV3 })))
 
 const learningStartEntryIds = new Set<LearningStartEntryId>(['systematic', 'designer-thinking', 'learn-by-playing', 'small-exercise'])
 const analysisQuestionIds = new Set<AnalysisQuestionId>(['experience', 'decisions', 'interaction', 'state-and-feedback', 'learning-and-execution'])
@@ -375,11 +381,17 @@ function ArrowIcon({ direction = 'right' }: { direction?: 'right' | 'down' }) {
 }
 
 function Header({ route, onNavigate, onPreloadResources }: { route: AppRoute; onNavigate: (route: AppRoute) => void; onPreloadResources: () => void }) {
-  const links: { id: string; label: string; target: AppRoute; isActive: boolean; preload?: () => void }[] = [
+  const legacyLinks: { id: string; label: string; target: AppRoute; isActive: boolean; preload?: () => void }[] = [
     { id: 'learn', label: '从哪里开始', target: { view: 'learn', tool: route.tool }, isActive: route.view === 'learn' },
     { id: 'problems', label: '按问题找', target: { view: 'resources', tool: route.tool, resourceEntry: 'problems' }, isActive: route.view === 'resources' && route.resourceEntry === 'problems', preload: onPreloadResources },
     { id: 'library', label: '资料库', target: { view: 'resources', tool: route.tool, resourceEntry: 'all' }, isActive: route.view === 'resources' && route.resourceEntry !== 'problems', preload: onPreloadResources },
   ]
+  const twoTaskLinks: typeof legacyLinks = [
+    { id: 'course', label: '系统学习', target: { view: 'course', tool: route.tool }, isActive: route.view === 'course' },
+    { id: 'workbench', label: '设计工作台', target: { view: 'workbench', tool: route.tool }, isActive: route.view === 'workbench' || route.view === 'projects' },
+    { id: 'knowledge', label: '设计知识库', target: { view: 'resources', tool: route.tool, resourceEntry: 'problems' }, isActive: route.view === 'resources', preload: onPreloadResources },
+  ]
+  const links = import.meta.env.VITE_V3_HOME_ENABLED === 'true' || !deploymentInfo.publicTrial ? twoTaskLinks : legacyLinks
   return <header className="header">
     <a className="brand" href="#learn" aria-label={`${PRODUCT_BRAND}学习首页`} onClick={event => { event.preventDefault(); onNavigate({ view: 'learn', tool: route.tool }) }}><span className="brand-mark" aria-hidden="true"><i /></span><span>{PRODUCT_BRAND}</span></a>
     <nav aria-label="主导航">{links.map(link => {
@@ -1685,6 +1697,7 @@ function SiteFooter({ route, onView }: { route: AppRoute; onView: (view: Primary
 }
 
 export function App() {
+  const workspaceRuntime = useWorkspaceRuntime()
   const [route, setRoute] = useState<AppRoute>(() => parseRouteHash(window.location.hash))
   const [drawer, setDrawer] = useState(false)
   const [project, setProject] = useState<ProjectWorkspace>(readProjectWorkspace)
@@ -1696,12 +1709,25 @@ export function App() {
   }
   const navigateView = (view: PrimaryView) => navigate({ view, tool: route.tool })
   const navigateLearningNode = (learningNode?: string) => navigate({ view: 'learn', tool: route.tool, ...(learningNode ? { learningNode } : {}) })
-  const navigateTool = (tool: DesignToolId) => navigate({ view: 'tools', tool })
-  const navigateResourceEntry = (resourceEntry: string, replace = false) => navigate({ view: 'resources', tool: route.tool, resourceEntry }, replace)
-  const navigateResourcePreview = (resourceEntry: string, resourceId: string) => navigate({ view: 'resources', tool: route.tool, resourceEntry, resourceId })
+  const navigateTool = (tool: DesignToolId) => navigate({ view: 'tools', tool, ...(route.workContext ? { workContext: route.workContext } : {}) })
+  const navigateResourceEntry = (resourceEntry: string, replace = false) => navigate({ view: 'resources', tool: route.tool, resourceEntry, ...(route.workContext ? { workContext: route.workContext } : {}) }, replace)
+  const navigateResourcePreview = (resourceEntry: string, resourceId: string) => navigate({ view: 'resources', tool: route.tool, resourceEntry, resourceId, ...(route.workContext ? { workContext: route.workContext } : {}) })
+  const openContextualResource = (resourceEntry: string, resourceId: string) => {
+    const context = route.workContext
+    let contextRef: TypedRef | null = null
+    if (context?.iterationId) contextRef = { scope: 'workspace', kind: 'iteration_cycle', id: context.iterationId, relation: 'attached_to' }
+    else if (context?.versionId) contextRef = { scope: 'workspace', kind: 'project_version', id: context.versionId, relation: 'attached_to' }
+    else if (context?.projectId) contextRef = { scope: 'workspace', kind: 'project', id: context.projectId, relation: 'attached_to' }
+    else if (context?.enrollmentId && context.activityId) {
+      const attempt = workspaceRuntime.workspace.collections.activityAttempts.find(item => item.enrollmentId === context.enrollmentId && item.activityId === context.activityId)
+      if (attempt) contextRef = { scope: 'workspace', kind: 'activity_attempt', id: attempt.id, relation: 'attached_to' }
+    }
+    if (contextRef) workspaceRuntime.commit(draft => attachResource(draft, { resourceId, contextRef: contextRef!, reason: '从当前课程或迭代任务中选用。' }), '这份资料已附着到当前工作对象，返回后仍可追溯。')
+    navigateResourcePreview(resourceEntry, resourceId)
+  }
   const navigateResourceStart = (destination: ResourceStartDestination) => navigateResourceEntry(destination)
   const navigateResourceSubpage = (resourceEntry: 'learn' | 'analyze' | 'problems', resourceId: string) => navigateResourcePreview(resourceEntry, resourceId)
-  const navigateMethod = (methodSection: MethodSection, methodItem?: string, replace = false) => navigate({ view: 'method', tool: route.tool, methodSection, ...(methodItem ? { methodItem } : {}) }, replace)
+  const navigateMethod = (methodSection: MethodSection, methodItem?: string, replace = false) => navigate({ view: 'method', tool: route.tool, methodSection, ...(methodItem ? { methodItem } : {}), ...(route.workContext ? { workContext: route.workContext } : {}) }, replace)
   useEffect(() => { try { localStorage.setItem(PROJECT_WORKSPACE_STORAGE_KEY, JSON.stringify(project)) } catch { /* 本地存储不可用时保留当前会话 */ } }, [project])
   useEffect(() => {
     const syncFromLocation = () => {
@@ -1752,7 +1778,7 @@ export function App() {
   const openGuideTool = (toolId: GuideToolId) => {
     setToolReturnRoute(route)
     if (toolId === 'test-plan') return setDrawer(true)
-    navigateTool(toolId)
+    navigate({ view: 'tools', tool: toolId, workContext: { ...route.workContext, returnTo: serializeRoute(route) } })
   }
   const saveProject = (draft: ProjectWorkspace, changeSummary: string) => {
     const createdAt = new Date().toISOString()
@@ -1762,7 +1788,10 @@ export function App() {
   return <>
     <a className="skip-link" href={serializeRoute(route)} onClick={event => { event.preventDefault(); document.getElementById('main-content')?.focus() }}>跳到主要内容</a>
     <Header route={route} onNavigate={navigate} onPreloadResources={preloadResourceDiscovery} />
-    {route.view === 'learn' && <Suspense fallback={<main className="learning-map" id="main-content" tabIndex={-1}><p role="status">正在准备学习入口……</p></main>}><LearningNodesRoute nodeId={route.learningNode} onOpenMap={() => navigateLearningNode()} onOpenNode={navigateLearningNode} onOpenTool={openGuideTool} onOpenContent={contentId => navigateResourceSubpage('learn', contentId)} onOpenBranch={guideId => navigateMethod('guides', guideId)} onOpenResourceEntry={navigateResourceEntry} onOpenConcept={conceptId => navigateMethod('glossary', conceptId)} onOpenProblems={() => navigateResourceEntry('problems')} onOpenProject={() => navigateView('path')} /></Suspense>}
+    {route.view === 'resources' && contextReturnRoute(route) && <aside className="context-return-bar" aria-label="当前工作上下文"><span>资料库没有替换你的工作对象。</span><button type="button" onClick={() => { const returnHash = contextReturnRoute(route); if (returnHash) navigate(parseRouteHash(returnHash)) }}>返回当前任务</button></aside>}
+    {route.view === 'course' && <Suspense fallback={<main className="course-page" id="main-content" tabIndex={-1}><p role="status">正在准备系统课程……</p></main>}><CourseV3 route={route} onNavigate={navigate} onOpenProblems={() => navigate({ view: 'resources', tool: route.tool, resourceEntry: 'problems', workContext: { ...route.workContext, returnTo: serializeRoute(route) } })} onOpenWorkbench={returnTo => navigate({ view: 'workbench', tool: route.tool, workContext: { returnTo } })} /></Suspense>}
+    {(route.view === 'workbench' || route.view === 'projects') && <Suspense fallback={<main className="workbench-page" id="main-content" tabIndex={-1}><p role="status">正在准备设计工作台……</p></main>}><WorkbenchV3 route={route} onNavigate={navigate} onOpenKnowledge={() => navigate({ view: 'resources', tool: route.tool, resourceEntry: 'problems', workContext: { ...route.workContext, returnTo: serializeRoute(route) } })} /></Suspense>}
+    {route.view === 'learn' && <Suspense fallback={<main className="learning-map" id="main-content" tabIndex={-1}><p role="status">正在准备学习入口……</p></main>}><LearningNodesRoute nodeId={route.learningNode} onOpenMap={() => navigateLearningNode()} onOpenNode={navigateLearningNode} onOpenTool={openGuideTool} onOpenContent={contentId => navigateResourceSubpage('learn', contentId)} onOpenBranch={guideId => navigateMethod('guides', guideId)} onOpenResourceEntry={navigateResourceEntry} onOpenConcept={conceptId => navigateMethod('glossary', conceptId)} onOpenProblems={() => navigateResourceEntry('problems')} onOpenProject={() => navigateView('path')} onOpenCourse={() => navigate({ view: 'course', tool: route.tool })} onOpenWorkbench={() => navigate({ view: 'workbench', tool: route.tool })} /></Suspense>}
     {route.view === 'path' && <PathView project={project} onSaveProject={saveProject} onOpenConcept={id => navigateMethod('glossary', id)} onOpenTest={() => setDrawer(true)} onOpenTool={openGuideTool} onOpenResource={id => navigateResourcePreview('all', id)} onOpenResourceEntry={navigateResourceEntry} />}
     {route.view === 'resources' && !route.resourceEntry && <ResourceStartHome onNavigate={navigateResourceStart} />}
     {route.view === 'resources' && route.resourceEntry === 'learn' && !route.resourceId && <ResourceLearningStart onBack={() => navigateView('resources')} onChooseLearningPath={id => navigateResourceSubpage('learn', id)} />}
@@ -1772,9 +1801,9 @@ export function App() {
     {route.view === 'resources' && route.resourceEntry === 'analyze' && isAnalysisQuestionId(route.resourceId) && <Suspense fallback={<main className="resource-start-page" id="main-content" tabIndex={-1}><p role="status">正在准备分析步骤……</p></main>}><ResourceAnalysisDetail questionId={route.resourceId} onBack={() => navigateResourceEntry('analyze')} onChooseAnother={() => navigateResourceEntry('analyze')} onOpenTool={openGuideTool} /></Suspense>}
     {route.view === 'resources' && route.resourceEntry === 'analyze' && route.resourceId === 'advanced' && <Suspense fallback={<main className="resource-start-page" id="main-content" tabIndex={-1}><p role="status">正在准备进阶分析入口……</p></main>}><ResourceAdvancedAnalysis onBack={() => navigateResourceEntry('analyze')} /></Suspense>}
     {route.view === 'resources' && route.resourceEntry === 'problems' && <ResourceDiscoveryBoundary>{({ discovery }) => <ResourceProblemsStart entries={discovery.resourceEntryPoints} stageGroups={discovery.resourceStageGroups} stageId={isResourceProblemStageId(route.resourceId) ? route.resourceId : undefined} onBack={() => route.resourceId ? navigateResourceEntry('problems') : navigateView('resources')} onChooseStage={stageId => navigateResourceSubpage('problems', stageId)} onChooseEntry={navigateResourceEntry} />}</ResourceDiscoveryBoundary>}
-    {route.view === 'resources' && route.resourceEntry === 'all' && <ResourceDiscoveryBoundary>{({ discovery, entryCatalog, defaultEntryId }) => <ResourcePage discovery={discovery} initialEntryCatalog={entryCatalog} defaultEntryId={defaultEntryId} requestedEntryId="all" requestedResourceId={route.resourceId} onSelectEntry={navigateResourceEntry} onOpenResource={navigateResourcePreview} onReplaceInvalidEntry={entryId => navigateResourceEntry(entryId, true)} />}</ResourceDiscoveryBoundary>}
-    {route.view === 'resources' && route.resourceEntry && !['learn', 'analyze', 'problems', 'all'].includes(route.resourceEntry) && <ResourceDiscoveryBoundary requestedEntryId={route.resourceEntry}>{({ discovery, entryCatalog }) => <ResourceTopicRoute discovery={discovery} initialEntryCatalog={entryCatalog} requestedEntryId={route.resourceEntry!} requestedResourceId={route.resourceId} onBack={() => navigateResourceEntry('problems')} onOpenAll={() => navigateResourceEntry('all')} onOpenResource={navigateResourcePreview} onOpenTool={openGuideTool} onReplaceInvalidEntry={() => navigateResourceEntry('problems', true)} onReplaceInvalidResource={() => navigateResourceEntry(route.resourceEntry!, true)} />}</ResourceDiscoveryBoundary>}
-    {route.view === 'tools' && <ToolsView tool={route.tool} onTool={navigateTool} onBack={() => { navigate(toolReturnRoute ?? { view: 'learn', tool: route.tool }); setToolReturnRoute(null) }} backLabel={toolReturnRoute?.view === 'learn' ? '返回学习节点' : toolReturnRoute?.view === 'method' ? '返回方法与概念' : toolReturnRoute?.view === 'path' ? '返回设计路径' : toolReturnRoute?.resourceEntry === 'learn' ? '返回学习内容' : toolReturnRoute?.resourceEntry === 'analyze' ? '返回游戏分析' : toolReturnRoute?.view === 'resources' ? '返回这组资料' : '返回学习地图'} onOpenTest={() => setDrawer(true)} onCopyProjectNextAction={nextAction => setProject(current => ({ ...current, nextAction, updatedAt: new Date().toISOString() }))} />}
+    {route.view === 'resources' && route.resourceEntry === 'all' && <ResourceDiscoveryBoundary>{({ discovery, entryCatalog, defaultEntryId }) => <ResourcePage discovery={discovery} initialEntryCatalog={entryCatalog} defaultEntryId={defaultEntryId} requestedEntryId="all" requestedResourceId={route.resourceId} onSelectEntry={navigateResourceEntry} onOpenResource={openContextualResource} onReplaceInvalidEntry={entryId => navigateResourceEntry(entryId, true)} />}</ResourceDiscoveryBoundary>}
+    {route.view === 'resources' && route.resourceEntry && !['learn', 'analyze', 'problems', 'all'].includes(route.resourceEntry) && <ResourceDiscoveryBoundary requestedEntryId={route.resourceEntry}>{({ discovery, entryCatalog }) => <ResourceTopicRoute discovery={discovery} initialEntryCatalog={entryCatalog} requestedEntryId={route.resourceEntry!} requestedResourceId={route.resourceId} onBack={() => navigateResourceEntry('problems')} onOpenAll={() => navigateResourceEntry('all')} onOpenResource={openContextualResource} onOpenTool={openGuideTool} onReplaceInvalidEntry={() => navigateResourceEntry('problems', true)} onReplaceInvalidResource={() => navigateResourceEntry(route.resourceEntry!, true)} />}</ResourceDiscoveryBoundary>}
+    {route.view === 'tools' && <ToolsView tool={route.tool} onTool={navigateTool} onBack={() => { const returnHash = contextReturnRoute(route); navigate(returnHash ? parseRouteHash(returnHash) : toolReturnRoute ?? { view: 'learn', tool: route.tool }); setToolReturnRoute(null) }} backLabel={route.workContext?.returnTo ? '返回上一个任务' : toolReturnRoute?.view === 'learn' ? '返回学习节点' : toolReturnRoute?.view === 'method' ? '返回方法与概念' : toolReturnRoute?.view === 'path' ? '返回设计路径' : toolReturnRoute?.resourceEntry === 'learn' ? '返回学习内容' : toolReturnRoute?.resourceEntry === 'analyze' ? '返回游戏分析' : toolReturnRoute?.view === 'resources' ? '返回这组资料' : '返回学习地图'} onOpenTest={() => setDrawer(true)} onCopyProjectNextAction={nextAction => setProject(current => ({ ...current, nextAction, updatedAt: new Date().toISOString() }))} />}
     {route.view === 'method' && <MethodView section={route.methodSection} itemId={route.methodItem} onBack={() => navigateView('method')} onNavigate={navigateMethod} onOpenResource={id => navigateResourcePreview('all', id)} onOpenTool={openGuideTool} />}
     {route.view === 'privacy' && <PrivacyView onView={navigateView} />}
     <SiteFooter route={route} onView={navigateView} />

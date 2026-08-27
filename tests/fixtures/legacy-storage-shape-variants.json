@@ -1,0 +1,17 @@
+{
+  "tabletop-workshop-feedback-v1": [
+    {"id": "feedback-array-1", "sourceSessionId": "missing-session", "observation": "旧版裸数组记录"}
+  ],
+  "tabletop-workshop-evidence-syntheses-v1": {
+    "schemaVersion": 1,
+    "draft": {"claim": "旧版综合草稿"},
+    "records": [{"id": "synthesis-v1", "revision": 1, "claim": "旧版综合记录"}]
+  },
+  "tabletop-workshop-production-ledgers-v1": [
+    {"id": "production-array-1", "component": "卡牌", "count": 12}
+  ],
+  "tabletop-workshop-accessibility-observations-v1": {
+    "schemaVersion": 1,
+    "observations": [{"id": "a11y-v1", "observation": "只靠颜色区分"}]
+  }
+}

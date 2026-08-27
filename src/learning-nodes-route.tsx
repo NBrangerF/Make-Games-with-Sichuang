@@ -20,9 +20,11 @@ type LearningNodesRouteProps = {
   onOpenConcept: (conceptId: string) => void
   onOpenProblems: () => void
   onOpenProject: () => void
+  onOpenCourse: () => void
+  onOpenWorkbench: () => void
 }
 
-export function LearningNodesRoute({ nodeId, onOpenMap, onOpenNode, onOpenTool, onOpenContent, onOpenBranch, onOpenResourceEntry, onOpenConcept, onOpenProblems, onOpenProject }: LearningNodesRouteProps) {
+export function LearningNodesRoute({ nodeId, onOpenMap, onOpenNode, onOpenTool, onOpenContent, onOpenBranch, onOpenResourceEntry, onOpenConcept, onOpenProblems, onOpenProject, onOpenCourse, onOpenWorkbench }: LearningNodesRouteProps) {
   const { progress, setMode, setCurrentNode, setDraft, setActionState } = useLearningNodeProgress()
 
   const openNode = (id: string) => {
@@ -33,7 +35,7 @@ export function LearningNodesRoute({ nodeId, onOpenMap, onOpenNode, onOpenTool, 
   const chooseMode = (mode: LearningModeId) => setMode(mode)
   const node = nodeId ? learningNodeById.get(nodeId) : undefined
 
-  if (!nodeId) return <LearningHome onNavigate={openNode} onOpenProblems={onOpenProblems} />
+  if (!nodeId) return <LearningHome onNavigate={openNode} onOpenProblems={onOpenProblems} onOpenCourse={onOpenCourse} onOpenWorkbench={onOpenWorkbench} />
 
   if (nodeId === 'workshop') return <LearningWorkshopMap onBack={onOpenMap} onNavigate={openNode} onOpenTool={toolId => onOpenTool(toolId)} />
 
@@ -52,7 +54,7 @@ export function LearningNodesRoute({ nodeId, onOpenMap, onOpenNode, onOpenTool, 
 
   if (nodeId === 'first-tabletop') return <Suspense fallback={<main className="learning-map first-tabletop-page" id="main-content" tabIndex={-1}><p role="status">正在准备第一次落桌……</p></main>}><FirstTabletopChallenge onBack={onOpenMap} onOpenMaterials={kind => openNode(kind)} onContinueIteration={() => openNode('iteration')} onOpenProject={onOpenProject} /></Suspense>
 
-  if (!node) return <LearningHome onNavigate={openNode} onOpenProblems={onOpenProblems} />
+  if (!node) return <LearningHome onNavigate={openNode} onOpenProblems={onOpenProblems} onOpenCourse={onOpenCourse} onOpenWorkbench={onOpenWorkbench} />
 
   return <LearningNodePage
     node={node}

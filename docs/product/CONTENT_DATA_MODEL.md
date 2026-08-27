@@ -785,3 +785,25 @@ playtest_session:
 - `scripts/validate-content.mjs` 与贡献包守卫：在生产构建前验证必填字段、唯一 ID、阶段值、HTTPS 链接、跨内容外键、每资源唯一审阅记录、健康快照完整性、禁用总分、本地资料隐私边界、测试模板和贡献协议安全默认值。
 
 当前 JSON 采用上面模型的 TypeScript 友好命名；后续迁移到数据库或静态内容系统时需要保留稳定 `id`，不根据标题重新生成。
+
+## 16. Workspace V3 补充：课程、项目与证据对象
+
+V3 页面不把“能力”包装成分数。用户看到的是一种思维、一件工具、一次真实行动和它留下的对象。
+
+| 层 | 稳定对象 | 状态含义 |
+| --- | --- | --- |
+| 课程 | `CourseEnrollment`、`ActivityAttempt`、`Artifact` | 学过并提交了哪一份可检查产物 |
+| 项目 | `Project`、`ProjectVersion`、`Prototype`、`IterationCycle` | 当前游戏与版本处于哪里 |
+| 证据 | `PrototypeRun`、`TestPlan`、`PlaytestSession`、`EvidenceItem`、`EvidenceReview`、`ChangeBrief` | 桌面上真正发生过什么，以及为何形成下一版 |
+
+课程引用项目事实时，只创建 `entity_reference` Artifact。它不能把一段自述转换成 PrototypeRun、Session 或 ChangeBrief，也不能修改被引用对象。
+
+V3 真值边界：
+
+- 非空文本不是“已落桌”。
+- Prototype 草稿不是 PrototypeRun；测试计划不是 Session。
+- 玩家建议不是 EvidenceReview；Review 不是 ChangeBrief。
+- 一次 Iteration 只能产生一条 outgoing revision edge。
+- 课程进度和项目进度分别存储、分别展示。
+
+九单元中，Unit 1–3 与 Unit 8 形成结构化课程产物；Unit 4–7 与 Unit 9 必须引用真实的 PrototypeRun、TestPlan、Session、ChangeBrief 或完整项目链。情境资料最多显示三项，并写清“为什么相关、看什么、如何带回、类比边界”；打开具体资料后创建 `ResourceAttachment`，绑定当前 activity、project、version 或 iteration。

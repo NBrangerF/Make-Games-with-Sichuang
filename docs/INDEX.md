@@ -1,9 +1,15 @@
 # 项目文档索引
 
-最后更新：2026-08-24
+最后更新：2026-08-27
 
 ## 从这里开始
 
+- [落桌：系统学习 × 设计工作台 V3 迭代蓝图](../plans/luozhuo-learning-workbench-v3-blueprint.md)：基于 2026-08-27 产品反馈与当前代码审计形成的施工主计划；收敛为两个主任务，定义 9 单元课程、设计工作台、schema v3、真实产物门、上下文交接、12 个可回退步骤和 P2 Agent 边界。
+- [V3 内容与工作对象模型](product/CONTENT_DATA_MODEL.md)：课程、项目、证据三层对象、9 单元递进和不可伪造的真值边界。
+- [V3 导出、导入与分享合同](product/PROJECT_EXPORT_V3.md)：完整恢复包、默认脱敏项目包、ID 合并与冲突停止规则。
+- [V3 WorkContext 导航合同](product/WORK_CONTEXT_CONTRACT.md)：显式 URL 权威、关系校验、刷新/返回恢复与不静默替换规则。
+- [V3 存储迁移矩阵](product/STORAGE_MIGRATION_V3_MATRIX.md)：25 个旧 key 的只读盘点、保守映射与原始备份边界。
+- [V3 验收矩阵](qa/V3_ACCEPTANCE_MATRIX.md)：里程碑退出门与可重复验收证据。
 - [落桌 Vercel 首次部署交接](handovers/2026-08-24-vercel-deployment.md)：正式地址、首次部署自动进入 Production 的说明、内部学习与 noindex 边界、完整构建门禁、线上响应头/静态资源验收及后续 Preview/Production 操作边界。
 - [落桌品牌与首页横幅 V5.2](product/LUOZHUO_BRAND_AND_HOME_BANNER_V5_2.md)：品牌名“落桌”、解释性副标题“桌游设计馆”、Image 2 首页主视觉、资源优先的首页媒体层级与品牌一致性合同。
 - [落桌品牌与首页横幅 V5.2 交接](handovers/2026-08-24-luozhuo-brand-home-banner-v5-2.md)：实现文件、资产版本、品牌迁移范围、生产构建、浏览器证据与下一步边界。
