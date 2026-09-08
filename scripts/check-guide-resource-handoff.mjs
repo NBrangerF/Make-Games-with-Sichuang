@@ -51,7 +51,7 @@ check('core guides expose a real, preloadable resource link', () => {
 })
 
 check('resource selection is URL-controlled and invalid IDs recover', () => {
-  for (const fragment of ["route.resourceEntry && !['learn', 'analyze', 'problems', 'all'].includes(route.resourceEntry)", '<ResourceTopicRoute', 'requestedEntryId={route.resourceEntry!}', "onReplaceInvalidEntry={() => navigateResourceEntry('problems', true)}", 'requestedEntryId={route.resourceEntry}']) assert.ok(appSource.includes(fragment), `missing ${fragment}`)
+  for (const fragment of ["route.resourceEntry && !['learn', 'analyze', 'problems', 'all', 'read', 'cases'].includes(route.resourceEntry)", '<ResourceTopicRoute', 'requestedEntryId={route.resourceEntry!}', "onReplaceInvalidEntry={() => navigateResourceEntry('problems', true)}", 'requestedEntryId={route.resourceEntry}']) assert.ok(appSource.includes(fragment), `missing ${fragment}`)
 })
 
 check('deep links request their entry package instead of the default package first', () => {

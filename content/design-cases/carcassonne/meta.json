@@ -1,0 +1,35 @@
+{
+  "id": "carcassonne",
+  "category": "game",
+  "game": "Carcassonne",
+  "title": {
+    "zh-CN": "卡卡颂：拼好一座城，为什么也改变了下一回合？",
+    "en": "Carcassonne: why does finishing a city change your next turn?"
+  },
+  "summary": {
+    "zh-CN": "沿着一次城市摆放，比较即时得分、人手归还与新占地点的代价，理解共享地图怎样连接当前和后续决定。",
+    "en": "Follow one city placement to compare immediate points, returning meeples, and the cost of a new claim on a shared map."
+  },
+  "chapterIds": [
+    "reading-choices-and-agency",
+    "reading-resources-and-endings",
+    "reading-space-and-opportunity",
+    "reading-combine-mechanisms"
+  ],
+  "sources": [
+    {
+      "label": "Z-Man Games — Carcassonne English basic rules",
+      "url": "https://cdn.svc.asmodee.net/production-zman/uploads/2024/09/carcassonne_v3_rulesheet_en-1.pdf",
+      "edition": "Base game, English v3 file; copyright 2000, 2021",
+      "locator": "Printed pages 2–6; Contents & Setup, Gameplay, Cities, Multiple Meeple on the Same Feature, Game End and Final Scoring",
+      "checkedAt": "2026-09-08"
+    },
+    {
+      "label": "Z-Man Games — Carcassonne",
+      "url": "https://www.zmangames.com/game/carcassonne/",
+      "edition": "Base game",
+      "locator": "Game description, contents, Rules link",
+      "checkedAt": "2026-09-08"
+    }
+  ]
+}

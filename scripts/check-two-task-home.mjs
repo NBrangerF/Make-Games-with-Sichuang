@@ -1,27 +1,18 @@
 import assert from 'node:assert/strict'
 import { readFile } from 'node:fs/promises'
-
-const [home, app, styles, env] = await Promise.all([
-  readFile(new URL('../src/learning-home.tsx', import.meta.url), 'utf8'),
+// Retained command name for compatibility. The primary home is now reading driven.
+const [app, reader, practice] = await Promise.all([
   readFile(new URL('../src/App.tsx', import.meta.url), 'utf8'),
-  readFile(new URL('../src/styles-learning-nodes.css', import.meta.url), 'utf8'),
-  readFile(new URL('../.env.example', import.meta.url), 'utf8'),
+  readFile(new URL('../src/text-learning.tsx', import.meta.url), 'utf8'),
+  readFile(new URL('../src/course/course-v3.tsx', import.meta.url), 'utf8'),
 ])
-
-const v3Home = home.match(/function TwoTaskLearningHome[\s\S]*?\n}\n\nexport function LearningHome/)?.[0] ?? ''
-assert.ok(v3Home)
-assert.equal((v3Home.match(/<article>/g) ?? []).length, 2, 'V3 hero must contain exactly two primary task cards')
-for (const text of ['系统学习', '开始或继续', '打开设计知识库', 'onOpenCourse', 'onOpenWorkbench']) assert.ok(v3Home.includes(text), `missing ${text}`)
-assert.equal(v3Home.includes('mechanic 设计材料'), false)
-assert.equal(v3Home.includes('观察实验室'), false)
-assert.ok(home.includes("VITE_V3_HOME_ENABLED === 'true' || !deploymentInfo.publicTrial"))
-assert.ok(env.includes('VITE_V3_HOME_ENABLED=false'))
-
-const nav = app.match(/const twoTaskLinks:[^=]*= \[([\s\S]*?)\n  \]/)?.[1] ?? ''
-assert.equal((nav.match(/id:/g) ?? []).length, 3)
-for (const label of ['系统学习', '设计工作台', '设计知识库']) assert.ok(nav.includes(`label: '${label}'`))
-assert.ok(app.includes('legacyLinks'), 'public-trial rollback navigation must remain available')
-assert.ok(styles.includes('.two-task-home__choices'))
-assert.ok(styles.includes('@media (max-width: 700px)'))
-
-console.log('two-task home: PASS (two primary CTAs, one knowledge link, enrollment/project-aware copy and controlled public rollout)')
+assert.ok(app.includes("route.view === 'learn' && !route.learningNode"))
+assert.ok(app.includes("route.view === 'learn' && route.learningNode && <Suspense"), 'Legacy nodes only handle explicit deep links')
+assert.ok(app.includes('<TextLearning chapterId={route.readingChapter} language={interfaceLanguage}'))
+assert.ok(reader.includes('从第一章读起') && reader.includes('chapterList()'))
+assert.ok(!/useWorkspace|startCourseEnrollment/.test(reader))
+assert.ok(reader.includes('#course/practice'), 'Practice remains an optional secondary route')
+assert.ok(practice.includes('返回系统阅读'))
+for (const label of ['系统学习', '设计工作台', '按问题阅读']) assert.ok(app.includes(`: '${label}'`))
+assert.ok(app.includes("resourceEntry: 'read', resourceId: 'all', readingLanguage: language"), 'Primary browsing opens self-contained articles')
+console.log('Home: PASS (default reading path; direct chapter access; optional practice preserves existing records)')

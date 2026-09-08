@@ -1,0 +1,35 @@
+{
+  "id": "dominion",
+  "category": "mechanism",
+  "game": "Dominion",
+  "title": {
+    "zh-CN": "Dominion：多买一张免费牌，为什么还会有代价？",
+    "en": "Dominion: why can one more free card still have a cost?"
+  },
+  "summary": {
+    "zh-CN": "从一张银币与两轮开局推算，解释新牌何时可用、免费铜币怎样影响后续抽牌，以及牌库顺畅与最终得分的取舍。",
+    "en": "Track a Silver through two opening turns to understand when new cards become usable, how free Copper affects later draws, and why end scoring changes priorities."
+  },
+  "chapterIds": [
+    "reading-information-and-randomness",
+    "reading-design-an-economy",
+    "reading-goals-and-pacing",
+    "reading-combine-mechanisms"
+  ],
+  "sources": [
+    {
+      "label": "Rio Grande Games — Dominion English second-edition rules",
+      "url": "https://www.riograndegames.com/wp-content/uploads/2016/09/Dominion2E.pdf",
+      "edition": "Second edition; English PDF currently linked by the publisher",
+      "locator": "Printed pages 3–6: Setup, Game Overview, Action phase, Buy phase, Clean-up, Ending the Game and card types",
+      "checkedAt": "2026-09-08"
+    },
+    {
+      "label": "Rio Grande Games — Dominion",
+      "url": "https://www.riograndegames.com/games/dominion/",
+      "edition": "Second edition",
+      "locator": "Description, second-edition note, Rules link",
+      "checkedAt": "2026-09-08"
+    }
+  ]
+}

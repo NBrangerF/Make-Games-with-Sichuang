@@ -1413,3 +1413,7 @@ button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible
   white-space: nowrap !important;
   border: 0 !important;
 }
+
+@media (max-width: 720px) {
+  .header[lang="en"] .nav-link { white-space: normal; text-align: center; line-height: 1.4; }
+}

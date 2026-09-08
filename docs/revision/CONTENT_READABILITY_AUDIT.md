@@ -1,24 +1,24 @@
-<!-- content-fingerprint: d0eafaae7fcf3744f4a6213bcb7489570e98bfea171ffe45edb8a9a368990c60 -->
+<!-- content-fingerprint: 6fcad636e25cfde5e0644c5803d982c4bed7b571cd4dd456676a8ef66faab447 -->
 # 全站资料文本可读性审计
 
-审计日期：2026-08-26  
-范围：`content/` 下全部 87 个 JSON 与 Markdown 文件，不抽样。
-覆盖：15,339 个含中文的字段或段落，约 393,041 个汉字。
+审计日期：2026-09-08  
+范围：`content/` 下全部 191 个 JSON 与 Markdown 文件，不抽样。  
+覆盖：16,571 个含中文的字段或段落，约 463,649 个汉字。
 
 ## 结论
 
-- 新手主线不再直接暴露完整课程、术语库或资料索引，而是使用十二个短节点逐步进入。
-- 机器规则标出了 299 个可能需要分段或渐进披露的长句、长段与抽象词密集处。这是编辑优先级，不是内容质量评分。
-- 授权译文和来源正文只做入口层改写，不擅自改动正文；完整课程、案例和专题保留为按需支持。
-- 主线权威文本由 `content/learning-nodes.json` 承担，并受独立长度、断链与禁用“能力等级”校验。
+- 本报告审计文字长度与抽象词信号，不据此判断网站首页或学习路径是否有效。
+- 机器规则标出了 340 个可能需要分段或渐进披露的长句、长段与抽象词密集处。这是编辑优先级，不是内容质量评分。
+- 授权译文和来源正文保留原有使用范围；原创双语文章提供独立阅读入口，课程、案例与工具维持各自路径。
+- 汉字阈值只评估含中文的字段或段落。英文正文参与文件指纹与解析检查，但不能因此声称其可读性已被这些阈值验证。
 
-## 已执行的修订
+## 当前内容组织
 
-1. 用十二个节点替代“先读九个单元”的默认入口。
-2. 每节点只显示一种思维、一个例子、一个动作、一个轻量工具和一个完成结果。
-3. 把“证据边界”等方法语言改成“这一步还不能说明什么”。
-4. 将案例、专题、概念、完整长文和资料入口移到节点后的按需层。
-5. 保留所有旧正文和稳定深链，不让入口改写破坏来源、许可或既有项目记录。
+1. 原创双语文章位于 `content/original-articles/`；一个文章身份对应中文和英文，来源摘录与研究证据留在网站外的内部研究目录。
+2. 十二个观察与迭代节点保留独立长度、断链与禁用“能力等级”的校验，不将这份机器审计当作学习效果证据。
+3. 系统课程、设计工作台、案例、专题与资料目录分别提供已有入口；本文不把它们描述为同一条强制阅读流程。
+4. 原创文章的双语对应、出处和独立例子需要单独编辑复核，不能由下方长句统计替代。
+5. 新增阅读内容不改变已有项目记录或来源的使用权限。
 
 ## 全量文件台账
 
@@ -26,6 +26,24 @@
 | --- | ---: | ---: | ---: | --- |
 | `claims.json` | 644 | 32881 | 22 | 内部元数据：不作为新手首屏文案 |
 | `concept-action-index.json` | 65 | 721 | 0 | 内部元数据：不作为新手首屏文案 |
+| `design-cases/carcassonne/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/carcassonne/meta.json` | 2 | 62 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/carcassonne/zh-CN.md` | 23 | 1462 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/dominion/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/dominion/meta.json` | 2 | 61 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/dominion/zh-CN.md` | 22 | 1414 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/hanabi/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/hanabi/meta.json` | 2 | 50 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/hanabi/zh-CN.md` | 23 | 1492 | 1 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/pandemic/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/pandemic/meta.json` | 2 | 65 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/pandemic/zh-CN.md` | 21 | 1453 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/six-nimmt/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/six-nimmt/meta.json` | 2 | 44 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/six-nimmt/zh-CN.md` | 23 | 1263 | 2 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/wingspan/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/wingspan/meta.json` | 2 | 52 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/wingspan/zh-CN.md` | 22 | 1463 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-constraints.json` | 37 | 830 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-materials.json` | 285 | 6179 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `frameworks.json` | 81 | 1504 | 0 | 支持资料：通过节点或资料库按需进入 |
@@ -57,6 +75,92 @@
 | `learning-units/systematic-unit-05-single-question-test-zh-CN.metadata.json` | 4 | 111 | 0 | 完整课程：保留为深入阅读 |
 | `learning-units/systematic-unit-06-evidence-to-next-version-zh-CN.md` | 410 | 12604 | 14 | 完整课程：保留为深入阅读 |
 | `learning-units/systematic-unit-06-evidence-to-next-version-zh-CN.metadata.json` | 4 | 125 | 1 | 完整课程：保留为深入阅读 |
+| `original-articles/before-the-first-rule/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/before-the-first-rule/zh-CN.md` | 22 | 1350 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/between-your-turns/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/between-your-turns/zh-CN.md` | 22 | 1397 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/beyond-game-labels/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/beyond-game-labels/zh-CN.md` | 21 | 1259 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/catalog.json` | 82 | 1777 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/constraints-that-open-possibilities/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/constraints-that-open-possibilities/zh-CN.md` | 16 | 1096 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/emotion-through-action/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/emotion-through-action/zh-CN.md` | 21 | 1231 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/play-beyond-the-rules/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/play-beyond-the-rules/zh-CN.md` | 22 | 1362 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-access-and-participation/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-access-and-participation/zh-CN.md` | 22 | 1340 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-balance-and-player-count/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-balance-and-player-count/zh-CN.md` | 23 | 1747 | 5 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-choices-and-agency/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-choices-and-agency/zh-CN.md` | 22 | 1447 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-combine-mechanisms/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-combine-mechanisms/zh-CN.md` | 26 | 1640 | 2 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-cooperation-and-conflict/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-cooperation-and-conflict/zh-CN.md` | 22 | 1532 | 2 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-core-actions/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-core-actions/zh-CN.md` | 19 | 1144 | 2 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-design-an-economy/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-design-an-economy/zh-CN.md` | 23 | 1560 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-design-judgment/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-design-judgment/zh-CN.md` | 16 | 1153 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-diagnose-feedback/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-diagnose-feedback/zh-CN.md` | 25 | 1818 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-first-design-brief/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-first-design-brief/zh-CN.md` | 15 | 1058 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-goals-and-pacing/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-goals-and-pacing/zh-CN.md` | 21 | 1471 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-ideas-under-constraints/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-ideas-under-constraints/zh-CN.md` | 16 | 1102 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-independent-rules-test/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-independent-rules-test/zh-CN.md` | 18 | 1272 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-information-and-randomness/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-information-and-randomness/zh-CN.md` | 24 | 1494 | 2 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-observe-a-game/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-observe-a-game/zh-CN.md` | 16 | 1123 | 2 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-plan-a-playtest/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-plan-a-playtest/zh-CN.md` | 16 | 1113 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-players-and-context/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-players-and-context/zh-CN.md` | 19 | 1232 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-prototype-for-a-question/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-prototype-for-a-question/zh-CN.md` | 15 | 1113 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-prototypes-and-evidence/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-prototypes-and-evidence/zh-CN.md` | 19 | 1154 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-resources-and-endings/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-resources-and-endings/zh-CN.md` | 24 | 1607 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-rules-and-components/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-rules-and-components/zh-CN.md` | 22 | 1361 | 2 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-rules-and-play/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-rules-and-play/zh-CN.md` | 24 | 1536 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-share-a-playable-version/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-share-a-playable-version/zh-CN.md` | 19 | 1340 | 3 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-space-and-opportunity/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-space-and-opportunity/zh-CN.md` | 22 | 1262 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-state-and-resolution/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-state-and-resolution/zh-CN.md` | 17 | 1140 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-stories-and-models/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-stories-and-models/zh-CN.md` | 21 | 1330 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-theme-and-emotion/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-theme-and-emotion/zh-CN.md` | 19 | 1263 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-time-and-interaction/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-time-and-interaction/zh-CN.md` | 21 | 1381 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/rewards-and-reasons/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/rewards-and-reasons/zh-CN.md` | 22 | 1287 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/when-feedback-disagrees/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/when-feedback-disagrees/zh-CN.md` | 19 | 1159 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/when-options-matter/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/when-options-matter/zh-CN.md` | 21 | 1213 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/when-players-cannot-meet/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/when-players-cannot-meet/zh-CN.md` | 22 | 1295 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/when-players-run-the-system/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/when-players-run-the-system/zh-CN.md` | 22 | 1324 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/when-randomness-helps/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/when-randomness-helps/zh-CN.md` | 21 | 1233 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/where-resources-go/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/where-resources-go/zh-CN.md` | 22 | 1329 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `reading-examples.json` | 84 | 3289 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `reading-path.json` | 25 | 644 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `reading-support.json` | 56 | 1749 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `resource-assessments.json` | 1148 | 33197 | 0 | 内部元数据：不作为新手首屏文案 |
 | `resource-audience-paths.json` | 19 | 340 | 0 | 入口与支线：前台按需出现 |
 | `resource-entry-catalogs/accessibility-task-path.json` | 77 | 1866 | 1 | 支持资料：通过节点或资料库按需进入 |

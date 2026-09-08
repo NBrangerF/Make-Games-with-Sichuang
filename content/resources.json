@@ -754,7 +754,7 @@
   {
     "id": "communication-challenges-social-board-games",
     "title": "Communication Challenges in Social Board Games",
-    "creator": "Janet C. Read et al.",
+    "creator": "Michael Crabb & Michael Heron",
     "href": "https://doi.org/10.1177/10468781231183908",
     "type": "听障玩家沟通研究",
     "evidenceType": "academic",
@@ -3510,7 +3510,7 @@
     "href": "https://cs.uwaterloo.ca/~dtompkin/archive/dtlib/base/Captain%20Sonar.pdf",
     "type": "实时与回合制官方规则",
     "evidenceType": "first_party_practice",
-    "format": "book",
+    "format": "rulebook",
     "access": "free",
     "language": ["en"],
     "stages": ["核心系统", "最小原型", "测试与反馈", "规则与信息"],
@@ -3542,7 +3542,7 @@
     "href": "https://sitdown-games.com/wp-content/uploads/2018/09/MM_Rules_EN_HR_Sept2018_LD.pdf",
     "type": "同时行动与限沟通官方规则",
     "evidenceType": "first_party_practice",
-    "format": "book",
+    "format": "rulebook",
     "access": "free",
     "language": ["en"],
     "stages": ["核心系统", "最小原型", "测试与反馈", "规则与信息"],
@@ -6574,7 +6574,7 @@
     "stages": ["核心系统", "最小原型", "规则与信息"], "useful": "提供骰子作为工人、基础资源、工厂激活与同步生产的规则案例。", "limitation": "规则镜像，本轮未逐页深读，不能承担具体卡牌组合或效果因果。", "status": "article_level", "lastCheckedAt": "2026-08-20"
   },
   {
-    "id": "daniel-engines-resource-web", "title": "Engines", "creator": "Daniel Thurot / daniel.games", "href": "https://daniel.games/engines/",
+    "id": "daniel-engines-resource-web", "title": "Engines", "creator": "Daniel Piechnick", "href": "https://daniel.games/engines/",
     "type": "资源网络、多用途、多来源与循环长度设计文章", "evidenceType": "first_party_practice", "format": "blog", "access": "free", "language": ["en"],
     "stages": ["体验意图", "核心系统", "最小原型"], "useful": "提出让资源具有多个不相关用途和多个来源，并用更长循环减少重复，同时警告连接过多。", "limitation": "个人规范性方法，没有对照实验、最佳用途数或复杂度阈值。", "status": "read", "lastCheckedAt": "2026-08-20"
   },

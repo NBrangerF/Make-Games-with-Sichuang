@@ -1,0 +1,498 @@
+{
+  "schemaVersion": 1,
+  "publicationStatus": "local-candidate",
+  "articles": [
+    {
+      "id": "reading-rules-and-play",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "一局游戏，是怎样一步步发生的？",
+        "en": "How Does a Game Happen, One Move at a Time?"
+      },
+      "summary": {
+        "zh-CN": "跟着小兔与小刺猬走完四轮，理解谁行动、木板怎样变化，以及何时结束。",
+        "en": "Follow Rabbit and Hedgehog through four rounds to understand turns, changing supplies, and the end of a game."
+      }
+    },
+    {
+      "id": "reading-observe-a-game",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "看过一局以后，究竟看到了什么？",
+        "en": "What Have You Actually Seen After Watching a Game?"
+      },
+      "summary": {
+        "zh-CN": "从第一轮的位置与木板变化，分清可核对的事件、自己的感受和对原因的猜想。",
+        "en": "Use first-round changes to separate observable events, your own feelings, and possible explanations."
+      }
+    },
+    {
+      "id": "reading-players-and-context",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "这款游戏给谁，在什么时候玩？",
+        "en": "Who Will Play This Game, and When?"
+      },
+      "summary": {
+        "zh-CN": "情境、邀请和停止如何变成可调整的起点；不按年龄猜经验。",
+        "en": "Why must a first design name a setting as well as an audience?"
+      }
+    },
+    {
+      "id": "reading-first-design-brief",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "还没有规则时，先确定什么？",
+        "en": "What Can You Decide Before You Have Rules?"
+      },
+      "summary": {
+        "zh-CN": "用合作过河说明暂定简报怎样区分玩家处境、制作条件、体验方向和待检问题。",
+        "en": "Use the shared crossing to distinguish player context, practical conditions, intended experience, and open questions in a provisional brief."
+      }
+    },
+    {
+      "id": "reading-ideas-under-constraints",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "有了方向，怎样想出不止一种做法？",
+        "en": "How Can One Direction Lead to Several Ideas?"
+      },
+      "summary": {
+        "zh-CN": "从同一过河时刻想出几种行动，再按目标和需补的规则选一个可执行的候选。",
+        "en": "Generate several actions for one crossing moment, then compare their purpose and supporting rules before choosing a candidate."
+      }
+    },
+    {
+      "id": "reading-core-actions",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "“让动物过河”，要变成哪些动作？",
+        "en": "What Actions Turn “Help the Animals Cross” into a Game?"
+      },
+      "summary": {
+        "zh-CN": "把过河意图写成有条件、代价和后果的动作，并给出能直接运行的完整纸片基本版。",
+        "en": "Turn the crossing intention into actions with conditions, costs, and consequences, using a complete playable paper draft."
+      }
+    },
+    {
+      "id": "reading-state-and-resolution",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "一个动作结束以后，桌上应该变成什么样？",
+        "en": "What Should the Table Look Like After an Action?"
+      },
+      "summary": {
+        "zh-CN": "跟着一次动作检查资格、付款、移动、换人和结束，避免同一纸片局面产生不同结果。",
+        "en": "Follow an action through permission, payment, movement, turn changes, and ending checks."
+      }
+    },
+    {
+      "id": "reading-choices-and-agency",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "轮到我时，为什么要想一想？",
+        "en": "Why Pause to Think on My Turn?"
+      },
+      "summary": {
+        "zh-CN": "同一个回合里，前进和收集怎样改变以后；看懂后果与替别人作决定有什么不同。",
+        "en": "Follow how moving or collecting changes later possibilities, and distinguish understanding a consequence from having someone choose for you."
+      }
+    },
+    {
+      "id": "reading-information-and-randomness",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "早一点知道天气，我能改做什么？",
+        "en": "What Can I Change If I Know the Weather Earlier?"
+      },
+      "summary": {
+        "zh-CN": "同一张天气牌，早揭晓能否改变动作，要看还有什么能做；抽走牌也会改变下一次机会。",
+        "en": "Whether an earlier reveal changes an action depends on available responses; removing a card also changes the next draw."
+      }
+    },
+    {
+      "id": "reading-resources-and-endings",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "木板够了，为什么还是来不及？",
+        "en": "Why Can We Have Enough Planks but Still Run Out of Time?"
+      },
+      "summary": {
+        "zh-CN": "木板足够与行动来得及是两回事；共同的七件事还要分给各自有限的机会。",
+        "en": "Enough planks do not ensure enough turns; the team’s required actions must fit each animal’s own opportunities."
+      }
+    },
+    {
+      "id": "reading-space-and-opportunity",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "多一条路，选择会怎样变？",
+        "en": "How Does Another Route Change the Choice?"
+      },
+      "summary": {
+        "zh-CN": "短路用更多木板换一次行动；连接、费用与能否同处都要由规则说明。",
+        "en": "A shorter route trades more planks for a turn; connections, costs, and sharing a place need explicit rules."
+      }
+    },
+    {
+      "id": "reading-time-and-interaction",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "轮到别人时，我在等什么？",
+        "en": "What Am I Waiting For on Someone Else’s Turn?"
+      },
+      "summary": {
+        "zh-CN": "先做成一件事会改变后来人的判断；同时选择仍需要明确的执行次序。",
+        "en": "Completed actions inform later choices, while simultaneous selection still needs a clear resolution order."
+      }
+    },
+    {
+      "id": "reading-design-an-economy",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "木板从哪里来，又到哪里去？",
+        "en": "Where Do Planks Come From, and Where Do They Go?"
+      },
+      "summary": {
+        "zh-CN": "追踪木板的来源与使用，再看原料、加工能力和补给怎样改变准备。",
+        "en": "Follow plank acquisition and use, then examine how raw material, processing capacity, and supply rules change preparation."
+      }
+    },
+    {
+      "id": "reading-goals-and-pacing",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "目标和结束，怎样把一局连起来？",
+        "en": "How Do Goals and Endings Hold a Game Together?"
+      },
+      "summary": {
+        "zh-CN": "把争取的结果、计分、停下的条件与最后一次行动接在一起。",
+        "en": "Connect desired results, scoring, stopping conditions, and the final action."
+      }
+    },
+    {
+      "id": "reading-combine-mechanisms",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "两个好点子，放在一起还好吗？",
+        "en": "Do Two Good Ideas Still Work Well Together?"
+      },
+      "summary": {
+        "zh-CN": "共用锯台与取回标记放在一起，别人一次使用怎样替你省掉一次行动？",
+        "en": "Combine a shared sawing station with marker retrieval to see how another person’s use can save your turn."
+      }
+    },
+    {
+      "id": "reading-cooperation-and-conflict",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "一起获胜，为什么还要商量？",
+        "en": "Why Discuss a Plan When We Win Together?"
+      },
+      "summary": {
+        "zh-CN": "区分共同目标、个人权限、交流条件；核算互换收集者、强制开局与共同成功后个人名次的拉扯。",
+        "en": "What must people still decide when they share a goal?"
+      }
+    },
+    {
+      "id": "reading-balance-and-player-count",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "怎样判断一个办法太强了？",
+        "en": "How Can We Tell Whether an Option Is Too Strong?"
+      },
+      "summary": {
+        "zh-CN": "分别比较动作、能力、先后与人数，找出明显浪费以及供应改变后的可行计划。",
+        "en": "Compare actions, abilities, order, and player count separately to find wasted costs and workable plans under changed supplies."
+      }
+    },
+    {
+      "id": "reading-theme-and-emotion",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "同样到岸，为什么会有不同感受？",
+        "en": "Why Can the Same Crossing Feel Different?"
+      },
+      "summary": {
+        "zh-CN": "行动与帮助关系、个人/共同/过去参照、故事和计算争用注意；感受是有条件可能性。",
+        "en": "How do actions, reference points, and attention shape possible feelings?"
+      }
+    },
+    {
+      "id": "reading-stories-and-models",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "这条河讲了什么，又省略了什么？",
+        "en": "What Does This River Show, and What Does It Leave Out?"
+      },
+      "summary": {
+        "zh-CN": "模型不只省略，还选择因果连接；区分故事留白与执行条件缺失。",
+        "en": "What does a model connect, and which apparent truths come from its rules?"
+      }
+    },
+    {
+      "id": "reading-rules-and-components",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "怎样让朋友照着说明就能开始？",
+        "en": "How Can a Friend Begin from the Instructions?"
+      },
+      "summary": {
+        "zh-CN": "围绕一次误读连接一回合一动作、首轮示例、三处纸片、信息显著性与查阅；完整交接留后章。",
+        "en": "How can wording and components communicate the same executable rules?"
+      }
+    },
+    {
+      "id": "reading-access-and-participation",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "帮朋友时，怎样保留她的决定？",
+        "en": "How Can Help Preserve Her Decision?"
+      },
+      "summary": {
+        "zh-CN": "从看见、理解、操作、决策逐步分辨支持需要；材料喜好与功能分开；身体表达可有替代。",
+        "en": "How can assistance make an action possible while preserving its decision?"
+      }
+    },
+    {
+      "id": "reading-prototype-for-a-question",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "这一轮，原型要做得多准确？",
+        "en": "How Accurate Does This Prototype Need to Be?"
+      },
+      "summary": {
+        "zh-CN": "按本次问题决定哪些规则、材料和呈现要准确，并分清局部演示与整局能回答的事。",
+        "en": "Choose which rules, materials, and presentation details must be accurate, and distinguish partial checks from whole-game evidence."
+      }
+    },
+    {
+      "id": "reading-plan-a-playtest",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "请朋友试玩前，要先安排什么？",
+        "en": "What Should You Arrange Before Inviting Friends to Playtest?"
+      },
+      "summary": {
+        "zh-CN": "围绕收集来源的问题，安排参与者、版本材料、开场、帮助和停止，以及要留下的事件。",
+        "en": "Arrange participants, versioned materials, an introduction, help, stopping, and records around a question about collecting."
+      }
+    },
+    {
+      "id": "reading-prototypes-and-evidence",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "朋友停下来时，我们究竟知道了什么？",
+        "en": "What Do We Know When a Friend Stops to Ask?"
+      },
+      "summary": {
+        "zh-CN": "把一次假想的收集询问逐步拆开，区分事件、玩家解释和主持帮助后能支持的结论。",
+        "en": "Examine one invented question about collecting and distinguish events, the player’s account, and conclusions after help."
+      }
+    },
+    {
+      "id": "reading-diagnose-feedback",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "听到几种说法，先查哪件事？",
+        "en": "Several Comments, One Next Question"
+      },
+      "summary": {
+        "zh-CN": "把三桌假想试玩的抱怨放回局面，分清可算出的失败、仍未知的原因，以及下一次先查的问题。",
+        "en": "Put comments from three hypothetical sessions back into their situations, separate known limits from unknown causes, and choose what to investigate next."
+      }
+    },
+    {
+      "id": "reading-design-judgment",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "下一稿，先改哪里？",
+        "en": "What Should the Next Draft Change First?"
+      },
+      "summary": {
+        "zh-CN": "依据假想反馈和当前目标选择 v0.3 材料修订，把可算出的限制与仍需比较的玩法分开。",
+        "en": "Choose a v0.3 materials revision from hypothetical feedback and current goals, separating calculable limits from changes needing comparison."
+      }
+    },
+    {
+      "id": "reading-independent-rules-test",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "你不开口，材料能把一局讲清吗？",
+        "en": "Can the Materials Explain a Game Without You Speaking?"
+      },
+      "summary": {
+        "zh-CN": "先提供完整 v0.3 规则和材料，再观察独立准备与运行，并说明帮助会怎样改变结论。",
+        "en": "Provide complete v0.3 materials and rules before examining independent setup and play, including how help changes conclusions."
+      }
+    },
+    {
+      "id": "reading-share-a-playable-version",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "别人接手时，怎样拿到同一款游戏？",
+        "en": "How Can Someone Else Receive the Same Game You Intended?"
+      },
+      "summary": {
+        "zh-CN": "用完整基本版说明材料交接、版本差异与已查范围，让下一位合作者知道如何继续。",
+        "en": "Use a complete base version to explain a consistent handoff, changes between versions, and what has actually been checked."
+      }
+    },
+    {
+      "id": "before-the-first-rule",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "还没读规则，你已经猜到了什么？",
+        "en": "What Have You Already Guessed before Reading the Rules?"
+      },
+      "summary": {
+        "zh-CN": "改编选择准备/分派/回程片段；故事熟悉程度不应替另一人决定行动。",
+        "en": "How should an introduction answer expectations that arrive before the rules?"
+      }
+    },
+    {
+      "id": "between-your-turns",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "没动棋子的时候，也在玩吗？",
+        "en": "Are You Still Playing When You Do Not Move a Piece?"
+      },
+      "summary": {
+        "zh-CN": "主题吻合的内容仍争用注意；阅读时点与重返局面的支持分开。",
+        "en": "What can connect a waiting player to a change, and what competes for attention?"
+      }
+    },
+    {
+      "id": "beyond-game-labels",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "不互相攻击，就不会互相影响吗？",
+        "en": "Can We Affect Each Other Without Attacking?"
+      },
+      "summary": {
+        "zh-CN": "合法争位与同桌期待分开；允许建议不等于替新手决定。",
+        "en": "What concrete relationship does a genre label leave unexplained?"
+      }
+    },
+    {
+      "id": "constraints-that-open-possibilities",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "先少做一点，和让玩家少选一点",
+        "en": "Making Less and Allowing Fewer Moves Are Different Choices"
+      },
+      "summary": {
+        "zh-CN": "用四张节目卡分清缩小制作范围与限制玩家动作，再检查限制是否留下选择和可完成的目标。",
+        "en": "Use four program cards to separate a smaller production scope from player restrictions, then check choices and completion."
+      }
+    },
+    {
+      "id": "emotion-through-action",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "把东西递给朋友以后，他还能怎么选？",
+        "en": "After You Offer Something, What Can Your Friend Choose?"
+      },
+      "summary": {
+        "zh-CN": "物品交接的真实后果和拒绝去向；角色、玩家与朋友间评价可能重叠。",
+        "en": "What makes an offered opportunity meaningful while allowing refusal?"
+      }
+    },
+    {
+      "id": "play-beyond-the-rules",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "说明书没写的事，也在这一局里发生",
+        "en": "Things the Rulebook Never Wrote Still Happen"
+      },
+      "summary": {
+        "zh-CN": "木块可用方式与表达空间如何被组件布置支持；表达留白不让公共数量模糊。",
+        "en": "How can players add expression without silently changing a shared rule?"
+      }
+    },
+    {
+      "id": "rewards-and-reasons",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "加了分数，为什么玩法就变了？",
+        "en": "Why Does Adding a Score Change the Game?"
+      },
+      "summary": {
+        "zh-CN": "同分不同参照、进步与落后可同时成立；额外尝试的时间和私人价值。",
+        "en": "What are people pursuing when we add a score or change its reference?"
+      }
+    },
+    {
+      "id": "when-feedback-disagrees",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "一个人嫌慢，另一个嫌来不及",
+        "en": "One Friend Says “Too Slow,” Another Says “Too Rushed”"
+      },
+      "summary": {
+        "zh-CN": "一个人建议限时，另一个觉得被催时，怎样找到他们各自遇到的困难？",
+        "en": "When one person wants a timer and another feels rushed, how do we identify their different difficulties?"
+      }
+    },
+    {
+      "id": "when-options-matter",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "四个选项，真的比两个更值得想吗？",
+        "en": "Are Four Options More Worth Thinking About Than Two?"
+      },
+      "summary": {
+        "zh-CN": "同分卡、七枚石子和六枚石子分别说明选项数量、后果与选择用途。",
+        "en": "Equal-value cards and seven- and six-stone games distinguish option count, consequences, and the purpose of a choice."
+      }
+    },
+    {
+      "id": "when-players-cannot-meet",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "朋友明天才回来，这一回合能留下吗？",
+        "en": "Can a Turn Wait Until Your Friend Comes Back Tomorrow?"
+      },
+      "summary": {
+        "zh-CN": "回应之前材料仍可发生在错开时间；撤展日程与个人行动权需要重新协调。",
+        "en": "What must remain when the person whose turn comes next is absent?"
+      }
+    },
+    {
+      "id": "when-players-run-the-system",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "刚才付过了吗？让桌面替人记一件事",
+        "en": "Did We Pay Already? Let the Table Remember Something"
+      },
+      "summary": {
+        "zh-CN": "记录要回答丢失的事实；直接计交付片替代总分轨的表示变体与更新代价。",
+        "en": "Which fact should the table retain after a decision?"
+      }
+    },
+    {
+      "id": "when-randomness-helps",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "平均一样，为什么我还是想选这条路？",
+        "en": "Same Average, So Why Prefer One Route?"
+      },
+      "summary": {
+        "zh-CN": "平均都是三盏灯，完成三盏或五盏任务时却可能该选不同路线。",
+        "en": "Both routes average three lanterns, yet a three- or five-lantern task can favor different routes."
+      }
+    },
+    {
+      "id": "where-resources-go",
+      "contentVersion": "3.0.0",
+      "title": {
+        "zh-CN": "花掉一些水，为什么后来反而更多？",
+        "en": "How Can Spending Water Leave Me With More?"
+      },
+      "summary": {
+        "zh-CN": "一笔购买怎样改变后续生产，数量更多又怎样改变损失？",
+        "en": "Follow how one purchase changes later production and how a larger supply can cause greater losses."
+      }
+    }
+  ]
+}

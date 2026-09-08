@@ -1,0 +1,35 @@
+{
+  "id": "pandemic",
+  "category": "game",
+  "game": "Pandemic",
+  "title": {
+    "zh-CN": "瘟疫危机：先清掉方块，还是先把卡交到一起？",
+    "en": "Pandemic: clear the cubes first, or bring the cards together?"
+  },
+  "summary": {
+    "zh-CN": "用交牌、研发和治疗的两种顺序，解释合作如何改变一次行动的效果，以及共同目标为何还需要具体的贡献与取舍。",
+    "en": "Compare two orders of sharing, research, and treatment to see how cooperation changes an action’s effect and what helping costs."
+  },
+  "chapterIds": [
+    "reading-core-actions",
+    "reading-time-and-interaction",
+    "reading-combine-mechanisms",
+    "reading-cooperation-and-conflict"
+  ],
+  "sources": [
+    {
+      "label": "Z-Man Games — Pandemic English base-game rules",
+      "url": "https://cdn.svc.asmodee.net/production-zman/uploads/2024/09/Pandemic_Rulebook.pdf",
+      "edition": "Base game, English rulebook; copyright 2013",
+      "locator": "Printed pages 3–4, 6–8: Play, Actions, Epidemics, Game End, Roles; page 5: Chicago–Atlanta connection",
+      "checkedAt": "2026-09-08"
+    },
+    {
+      "label": "Z-Man Games — Pandemic",
+      "url": "https://www.zmangames.com/game/pandemic/",
+      "edition": "Base game",
+      "locator": "Game description, cooperative objective, roles, Rules link",
+      "checkedAt": "2026-09-08"
+    }
+  ]
+}

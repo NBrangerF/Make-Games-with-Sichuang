@@ -1,0 +1,35 @@
+{
+  "id": "hanabi",
+  "category": "theme",
+  "game": "Hanabi",
+  "title": {
+    "zh-CN": "Hanabi：大家看得见烟花，为什么我看不见自己的牌？",
+    "en": "Hanabi: Why Can Everyone See the Fireworks but Not Their Own Cards?"
+  },
+  "summary": {
+    "zh-CN": "从两次提示合成红3的信息，分析烟花共同目标、反向手牌与受限交流怎样连接。",
+    "en": "Combine two clues about a red 3 to examine the relationship between a shared fireworks display, outward-facing hands, and limited communication."
+  },
+  "chapterIds": [
+    "reading-information-and-randomness",
+    "reading-cooperation-and-conflict",
+    "reading-theme-and-emotion",
+    "reading-players-and-context"
+  ],
+  "sources": [
+    {
+      "label": "Cocktail Games — Hanabi French base rules",
+      "url": "https://www.cocktailgames.com/wp-content/uploads/2016/03/Hanabi_regles_0519_BD.pdf",
+      "edition": "2019 Cocktail Games / Les XII Singes, 50-card base game; file 0519",
+      "locator": "PDF pp. 1–6: objective, outward-facing hands, actions, sequences and ending; p. 8: Communiquer dans Hanabi; p. 3: complete clues and zero-card examples",
+      "checkedAt": "2026-09-08"
+    },
+    {
+      "label": "Cocktail Games — Hanabi official description",
+      "url": "https://www.cocktailgames.com/jeu/hanabi/",
+      "edition": "Publisher product page, accessed 2026-09-08",
+      "locator": "Opening description and Description: fireworks, outward-facing hands, information and memory",
+      "checkedAt": "2026-09-08"
+    }
+  ]
+}

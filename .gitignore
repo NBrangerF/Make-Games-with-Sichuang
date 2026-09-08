@@ -6,6 +6,8 @@ vite.config.d.ts
 .DS_Store
 .vercel
 tmp/
+materials/source-files/
+resources/
 design/qa/
 docs/qa/screenshots/
 .env*

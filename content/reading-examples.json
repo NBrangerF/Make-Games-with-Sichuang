@@ -1,0 +1,425 @@
+{
+  "schemaVersion": 1,
+  "chapters": [
+    {
+      "chapterId": "reading-rules-and-play",
+      "values": {
+        "zh-CN": [
+          "沿正文的成功路线，第4轮小兔已到岸，小刺猬在第二块石头；中央剩最后1块木板，轮到小雨。",
+          "小刺猬花掉这1块，前进到对岸；已用木板放到一旁，随后检查两只是否都已到岸。",
+          "两只都到岸，立即共同获胜，没有下次选择；中央变成0块并不把这次成功改成失败。"
+        ],
+        "en": [
+          "On the chapter’s successful route, it is Yu’s turn in round 4. Rabbit is across, Hedgehog is on the second stone, and one plank remains available.",
+          "Hedgehog spends that plank and moves to the far bank. Put the used plank aside, then check whether both animals have arrived.",
+          "Both have arrived, so the players win immediately and there is no next choice. Having zero planks left does not turn this success into failure."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-observe-a-game",
+      "values": {
+        "zh-CN": [
+          "正文假设：小林让小兔前进后，小雨停下来考虑，还没有完成她的动作。",
+          "小兔在第一块石头，小刺猬仍在起点，可用木板为3块；停顿本身没有改变这些状态。",
+          "她可能正在兴奋地计算计划，也可能不确定收集是否结束回合；我的着急不能说明她的感受，原因待询问。"
+        ],
+        "en": [
+          "In the chapter’s hypothetical scene, Lin moves Rabbit, then Yu pauses to think. She has not completed her action.",
+          "Rabbit is on the first stone, Hedgehog is still at the start, and three planks are available. The pause itself changes none of these states.",
+          "She may be excitedly working out a plan, or unsure whether collecting ends her turn. My impatience does not establish how she feels; her reason still needs to be asked."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-players-and-context",
+      "values": {
+        "zh-CN": [
+          "正文假设小林和小雨在活动室的小桌边相遇，小雨十分钟后上课；是否愿意参与、桌面是否放得下，都要先确认。",
+          "先邀请她看一轮，再决定是否继续；若继续，再比较自己先走还是留在起点为两只动物收集木板。",
+          "实际阅读、商量和收拾要花多久，待观察；上课时可以停止并记为中途停止，不能先保证十分钟够玩完。"
+        ],
+        "en": [
+          "The chapter imagines Lin and Yu meeting at a small activity-room table, with Yu due in class in ten minutes. Check her willingness to join and whether the materials fit.",
+          "Invite her to watch one round and decide whether to continue. If she joins, she can compare moving now with staying at the start to collect planks for both animals.",
+          "The time needed to read, discuss, and pack away has not yet been observed. Stop for class and record an interrupted game if needed; do not promise it will fit into ten minutes."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-first-design-brief",
+      "values": {
+        "zh-CN": [
+          "暂定给两个短暂空闲的人在小桌边玩；这次只能用纸和笔，实际一局所需时间还没有测量。",
+          "希望两人各自决定何时前进、何时留下准备，并商量怎样让双方都到岸；先只做一条路线。",
+          "拟观察两人是否都有机会提出并选择自己的行动，而不只是一人安排、另一人照做；目前这是方向，结果待观察。"
+        ],
+        "en": [
+          "The provisional brief is for two people with a short break at a small table, using only paper and pens. The actual duration has not been measured.",
+          "The intention is for each person to decide when to move or prepare, and discuss how both can arrive. Start with just one route.",
+          "Observe whether both people can propose and choose their own actions, rather than one planning everything. This is an intention; the outcome has not yet been observed."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-ideas-under-constraints",
+      "values": {
+        "zh-CN": [
+          "两个候选都想让玩家商量谁留下准备，帮助双方过河；下面比较设计办法，还不是同一局里的两个合法动作。",
+          "收集方案：留在起点取得2块共用木板，放弃这次前进；正文已写清新木板从哪里来、花过后放哪里。",
+          "操作桥方案：想让留下的人帮助同伴通过，但桥何时开关、谁能过、操作者能否离开尚未写清，代价还不能算定。"
+        ],
+        "en": [
+          "Both candidates aim to let players discuss who stays to prepare so both can cross. These are design alternatives, not two legal actions within one game.",
+          "Collecting: stay at the start and gain two shared planks, giving up a move this turn. The chapter specifies where new planks come from and where spent ones go.",
+          "Operating a bridge: the intention is for someone who stays to help the other cross. Opening, closing, access, and whether the operator can leave are still unspecified, so its cost cannot yet be calculated."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-core-actions",
+      "values": {
+        "zh-CN": [
+          "第一轮小兔已前进到第一块石头，可用木板3块、已用1块；轮到仍在起点的小刺猬，备用纸片可供收集。",
+          "小雨选择收集，从备用区取2块新木板放入可用区；可用变5块，小刺猬不动，这个回合结束。",
+          "接下来小林能用共用木板继续前进；小雨这次增加了两人的材料，也用掉了自己一次前进机会。"
+        ],
+        "en": [
+          "In round 1, Rabbit has moved to the first stone: three planks are available and one is used. Hedgehog is still at the start, with reserve pieces available to collect.",
+          "Yu chooses collect and transfers two new planks from the reserve to the available area. Five are now available; Hedgehog stays put and her turn ends.",
+          "Lin can use the shared planks to move next. Yu has added materials for both players, while using a turn she could have spent moving."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-state-and-resolution",
+      "values": {
+        "zh-CN": [
+          "沿成功路线到了第4轮：小兔已到岸，小刺猬在第二块石头，可用木板1块，回合提示指向小林。",
+          "小林只能等待；动物和木板不变，但他的回合结束，回合提示转向小雨，仍是第4轮。",
+          "小雨现在取得行动机会，可以花最后1块让小刺猬到岸；不能因桌上动物没动，就让小林继续行动。"
+        ],
+        "en": [
+          "In round 4 of the successful route, Rabbit is across and Hedgehog is on the second stone. One plank is available, and the turn marker points to Lin.",
+          "Lin can only wait. The animals and planks stay unchanged, but his turn ends and the marker passes to Yu; it is still round 4.",
+          "Yu now gets her action and can spend the last plank to bring Hedgehog across. Unchanged animal positions do not give Lin another turn."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-choices-and-agency",
+      "values": {
+        "zh-CN": [
+          "第一轮小兔已前进、中央剩3块，小刺猬仍在起点；小雨要让双方最终都到岸。",
+          "前进：小刺猬靠近对岸一步，中央减到2块；两只都离开起点，剩下四步却再也不能收集。",
+          "收集：中央增到5块，小刺猬仍在起点；放弃这次前进，但之后三轮仍够它走完三步。"
+        ],
+        "en": [
+          "In round 1, Rabbit has moved and three planks remain; Hedgehog is still at the start. Yu wants both animals to reach the far bank.",
+          "Move: Hedgehog gets one step closer, leaving two planks. Both animals are now away from the start, with four steps remaining and neither able to collect.",
+          "Collect: the supply rises to five while Hedgehog stays at the start. Yu gives up moving now, but the next three rounds still allow its three steps."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-information-and-randomness",
+      "values": {
+        "zh-CN": [
+          "在正文独立的天气片段里，小刺猬在起点、只有1块木板；小雨想让这个回合为过河留下进展。",
+          "先承诺前进再揭示雨天：前进要2块却只有1块，动作落空，木板仍为1块；不能改选，回合机会用掉。",
+          "先看见雨天再决定：可以改为收集，可用增到3块；仍留在起点并用掉本回合，但保留了后续材料。"
+        ],
+        "en": [
+          "In the chapter’s separate weather example, Hedgehog is at the start with only one plank available. Yu wants this turn to contribute to crossing.",
+          "Commit to moving before revealing rain: moving costs two planks, so the action fails and the one plank remains. Yu cannot switch actions and uses her turn.",
+          "See the rain before deciding: Yu can choose collect, raising the supply to three. Hedgehog stays at the start and uses the turn, but gains materials for later."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-resources-and-endings",
+      "values": {
+        "zh-CN": [
+          "基本版开局4块可用木板；正文另一条走法中，小刺猬在前两轮各收集2块新木板，共加入4块。",
+          "每只动物只能在自己的回合前进一步并花1块；小刺猬两次收集后仍在起点，只剩两次前进机会。",
+          "按这条走法到第4轮结束，仍余3块木板，小刺猬却只到第二块石头；材料有余也不能替它补一次行动。"
+        ],
+        "en": [
+          "The base game starts with four available planks. On the chapter’s alternative route, Hedgehog collects two new planks in each of the first two rounds, adding four.",
+          "Each animal can move only on its own turn, spending one plank per step. After collecting twice, Hedgehog is still at the start with only two moves left.",
+          "At the end of round 4 on this route, three planks remain but Hedgehog has reached only the second stone. Spare materials cannot supply its missing action."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-space-and-opportunity",
+      "values": {
+        "zh-CN": [
+          "在正文独立的双路线方案中，让两只动物都到岸；比较省下自己的行动，是否仍有足够共用木板。",
+          "原路：每只走3步、每步1块，共需3次行动和3块木板；比小岛路多走一步，但少花1块。",
+          "小岛路：每只走2步、每步2块，共需2次行动和4块；一只走小岛、一只走原路共需7块，开局4块加一次收集仍差1块。"
+        ],
+        "en": [
+          "In the chapter’s separate two-route design, the goal is to get both animals across. Compare saving one animal’s action with having enough shared planks.",
+          "Original route: three steps at one plank each require three actions and three planks per animal. It takes one more action than the island route but one fewer plank.",
+          "Island route: two steps at two planks each require two actions and four planks. Sending one animal each way costs seven; four initial planks plus one collection still leave a shortage of one."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-time-and-interaction",
+      "values": {
+        "zh-CN": [
+          "在正文同时选动作的独立片段里，小兔在第二块石头、小刺猬在第一块，可用木板1块；两人都已选前进。",
+          "一起揭示后仍按小林、小雨顺序执行：小兔花1块到岸，小刺猬无木板可付，前进改作等待。",
+          "可用变0块，小刺猬仍在第一块石头，且本次机会已用掉；同时作出选择没有保证两项前进都能兑现。"
+        ],
+        "en": [
+          "In the chapter’s separate simultaneous-choice example, Rabbit is on the second stone, Hedgehog on the first, and one plank is available. Both have chosen move.",
+          "They reveal together but resolve Lin before Yu. Rabbit spends the plank and arrives; Hedgehog cannot pay, so its move becomes a wait.",
+          "No planks remain, Hedgehog stays on the first stone, and its opportunity has been used. Choosing simultaneously did not guarantee that both moves could happen."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-design-an-economy",
+      "values": {
+        "zh-CN": [
+          "独立的河岸准备片段从0原木、0成品开始；比较每次收集2根与3根新原木，其他条件不变。",
+          "两轮共四次行动；每次锯木必须花2根原木，得到2块成品，锯木本身也占一次行动。",
+          "都按收集、锯木、收集、锯木完成：两案均得4块成品；多收方案剩2根原木，没有省去加工机会。"
+        ],
+        "en": [
+          "The separate riverbank preparation example starts with no logs or finished planks. Compare collecting two new logs with collecting three, leaving other conditions unchanged.",
+          "Two rounds provide four actions. Each sawing action requires two logs and produces two finished planks; processing itself uses an action.",
+          "Both follow collect, saw, collect, saw and produce four finished planks. Collecting more leaves two spare logs but saves no processing actions."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-goals-and-pacing",
+      "values": {
+        "zh-CN": [
+          "本章的独立计时方案开局只有9枚共同时间标记，取代四轮上限；没有补充时间的动作。",
+          "小林、小雨交替行动：前进与等待各花1枚，收集花2枚；时间不足不能选，木板仍另按原规则支付或取得。",
+          "沿原成功路线，最后一次前进恰好用完时间和木板，两只到岸先判成功；剩几枚不等于每人还剩几次机会。"
+        ],
+        "en": [
+          "The chapter’s separate timing design starts with nine shared time tokens, replacing the four-round limit. No action adds more time.",
+          "Lin and Yu alternate: moving and waiting each cost one token; collecting costs two. Unaffordable actions are unavailable, while planks follow their original rules.",
+          "On the original successful route, the final move uses the last time token and plank, and both arriving triggers success first. Remaining tokens do not equal remaining turns per player."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-combine-mechanisms",
+      "values": {
+        "zh-CN": [
+          "在锯台归还变体的第一轮，小林已锯木得2块，标记留在台上；轮到小雨，她的标记仍在手里。",
+          "小雨锯木时把小林标记免费送回，放上自己的并再做2块；中央变4块，小林没有为取回花行动。",
+          "第二轮小林可直接再次锯木并送回小雨标记；这样交替四次共得8块，原来那次亲自取回退出了生产顺序。"
+        ],
+        "en": [
+          "In round 1 of the saw-station return variant, Lin has made two planks and left his marker on the station. It is Yu’s turn, with her marker still in hand.",
+          "Yu saws, returning Lin’s marker for free, placing her own, and making two more planks. The total becomes four; Lin spends no action retrieving his marker.",
+          "In round 2, Lin can saw immediately and return Yu’s marker. Four alternating sawing actions produce eight planks, removing the separate retrieval action from this production sequence."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-cooperation-and-conflict",
+      "values": {
+        "zh-CN": [
+          "沿“小兔先走、小刺猬收集”的成功路线比较两个版本；共同目标始终是两只在四轮内到岸。",
+          "基本版：小雨收集会让双方获得木板，但她放弃当次前进；小兔第3轮到、小刺猬第4轮到，也只判共同成功。",
+          "个人名次变体：仍须先共同成功，再按到岸轮数排名，同轮并列；同次帮助还让小林获个人第一，小雨可能想交换安排，但这是假设。"
+        ],
+        "en": [
+          "Compare two versions along the successful route where Rabbit moves first and Hedgehog collects. Both still need to arrive within four rounds for a shared win.",
+          "Base version: Yu’s collection supplies both animals but costs her a move. Rabbit arrives in round 3 and Hedgehog in round 4; the only result is their shared success.",
+          "Ranking variant: shared success is still required, then earlier arrival rounds rank first, with same-round ties. That help also gives Lin first place; Yu might want to swap plans, but this is hypothetical."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-balance-and-player-count",
+      "values": {
+        "zh-CN": [
+          "正文三人版增加小松鼠，每只仍走3步；初始4块时至少要收集3次，改成5块时收集2次就够9步所需木板。",
+          "每只每轮只行动一次、共四轮；前进花1块，仍在起点才能收集2块，别人的行动不能替自己走。",
+          "4块开局要求三只首轮各收集一次；5块开局允许小兔先走、另两只收集，小兔第3轮到岸后可在第4轮等待。"
+        ],
+        "en": [
+          "The chapter’s three-player version adds Squirrel, with each animal still needing three steps. Starting with four planks requires at least three collections; starting with five requires only two to fund nine steps.",
+          "Each animal acts once per round for four rounds. Moving costs one plank; collecting two requires remaining at the start, and another player’s action cannot move your animal.",
+          "With four initial planks, all three must collect in round 1. With five, Rabbit can move while the other two collect, arriving in round 3 and waiting in round 4."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-theme-and-emotion",
+      "values": {
+        "zh-CN": [
+          "“两个小动物互相帮助过河”让人期待两只的处境都值得照顾；这是一种期待，不是已测得的感受。",
+          "木板共用、双方都到岸才成功；小刺猬留下收集，让同伴后续也有木板前进，帮助写在动作后果里。",
+          "正文假设每次收集后另读长故事，玩家却忙算轮数，可能略过心愿；文字增加不保证获得注意，实际感受待观察。"
+        ],
+        "en": [
+          "Two animals helping each other cross suggests that both animals’ needs matter. This is an expectation, not a measured feeling.",
+          "Planks are shared and both must arrive to win. Hedgehog staying to collect also supplies Rabbit’s later moves, giving help a consequence in the rules.",
+          "The chapter imagines a long story after each collection, while players are busy counting rounds and may skip the animals’ wishes. More text does not guarantee attention; actual feelings remain unobserved."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-stories-and-models",
+      "values": {
+        "zh-CN": [
+          "虚构的河边消息故事让人期待消息怎样从一户传到另一户；甲、乙、丙三户组成独立模型，不加入过河基本版。",
+          "花1枚通告片向一户宣读，该户及直接邻居立即知道且不再转传；向中间的乙宣读一次，就让三户都知道。",
+          "相邻必定听到、宣读必定有效都是模型假设，信任等关系被省略；这个结果不能证明现实中的中间住户最有影响力。"
+        ],
+        "en": [
+          "The fictional riverbank story invites interest in how a message reaches another household. Households A, B, and C form a separate model, outside the base crossing game.",
+          "Spend one announcement token at a household: it and its immediate neighbors learn the message, without relaying it further. Announcing at the middle household, B, informs all three at once.",
+          "Guaranteed hearing between neighbors and guaranteed delivery are model assumptions; relationships such as trust are omitted. This result does not prove that a real middle household is most influential."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-rules-and-components",
+      "values": {
+        "zh-CN": [
+          "第一轮小兔前进后，可用区3块、已用区1块、备用区16张；小刺猬仍在起点，轮到小雨。",
+          "收集：只从备用区取2张放进可用区，变为备用14张、可用5块、已用1块；小刺猬不动，这次行动结束。",
+          "下次前进能花可用区的5块；已用区不能回收，剩下的备用纸片也不能未经收集就拿来支付。"
+        ],
+        "en": [
+          "After Rabbit’s first-round move, the available area holds three planks, the used area one, and the reserve sixteen pieces. Hedgehog remains at the start and it is Yu’s turn.",
+          "Collect: transfer two pieces only from the reserve to the available area. That leaves fourteen reserve, five available, and one used; Hedgehog stays put and the action ends.",
+          "The five available planks can fund later moves. Used planks cannot return, and remaining reserve pieces cannot pay for moves before being collected."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-access-and-participation",
+      "values": {
+        "zh-CN": [
+          "沿正文的假设，小雨已决定让起点的小刺猬收集，需要从备用区把2张纸片移到可用区。",
+          "假设她难以拿起薄纸片；困难在抓取，不等于她不能辨认木板、判断局面或决定收集。",
+          "拟比较由小林按她的口头选择代拿纸片，规则不变；记录决定是否仍由小雨作出，而不是替她安排动作，结果待观察。"
+        ],
+        "en": [
+          "Following the chapter’s hypothetical scene, Yu has chosen collect for Hedgehog at the start. She needs to transfer two pieces from the reserve to the available area.",
+          "Suppose she has difficulty picking up thin pieces. A handling difficulty does not establish difficulty identifying planks, understanding the situation, or choosing collect.",
+          "Compare help from Lin moving pieces as Yu directs, without changing the rules. Record whether Yu still makes the decision rather than being assigned an action; the outcome remains unobserved."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-prototype-for-a-question",
+      "values": {
+        "zh-CN": [
+          "这一局部草稿是否写清一次前进、一次收集的木板去向？暂不据此判断整局难度或是否愿意再玩。",
+          "两只动物摆在起点，中央放4块，备好备用与已用区及操作说明；只跟过一次前进和一次收集。",
+          "检查木板从哪取、花到哪，有无漏写新木板；使用者是否需要提示，待观察，不预写整局体验结论。"
+        ],
+        "en": [
+          "Does this local draft specify where planks go during one move and one collection? Do not use it to judge whole-game difficulty or willingness to replay.",
+          "Place both animals at the start with four central planks, reserve and used areas, and action instructions. Follow only one move and one collection.",
+          "Check the source and destination of planks, including whether new planks are specified. Whether users need help remains unobserved; do not prewrite conclusions about the whole experience."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-plan-a-playtest",
+      "values": {
+        "zh-CN": [
+          "本次拟检查：第一次看到基本版材料的人，能否靠材料分清三处木板区并开始行动？不同时拿它检验懂规则后的商量。",
+          "给同版规则、地图、两动物、20张木板及轮次和回合提示，让参与者自行准备阅读；先说明可以求助或停止，不先讲木板答案。",
+          "记录实际摆放、查阅位置、求助原话和主持何时补充；能否独立开始尚待观察，得到帮助后的操作另作标记。"
+        ],
+        "en": [
+          "The proposed question is whether someone new to the base materials can distinguish the three plank areas and begin. Do not also use this to assess discussion after learning the rules.",
+          "Provide matching rules, map, two animals, twenty plank pieces, and round and turn markers for participants to set up and read. Explain that help and stopping are available, without first giving the plank answer.",
+          "Record setup, places consulted, exact requests for help, and when the host intervenes. Independent starting has not yet been observed; mark actions completed after help separately."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-prototypes-and-evidence",
+      "values": {
+        "zh-CN": [
+          "正文假想片段中，小雨拿起已用木板，询问收集是否拿回它；主持随后解释要从备用区取2块新木板。",
+          "听过解释后，她从备用取2块，可用从3变5，小刺猬留在起点并结束回合；正确操作发生在帮助之后。",
+          "最初的疑问可能来自未看懂文字，也可能来自纸片分区或先前经验；不能由帮助后的正确操作证明原材料已独立讲清。"
+        ],
+        "en": [
+          "In the chapter’s hypothetical scene, Yu picks up a used plank and asks whether collecting returns it. The host then explains that two new planks come from the reserve.",
+          "After the explanation, she takes two reserve planks, raising the available supply from three to five. Hedgehog stays at the start and her turn ends; correct action follows help.",
+          "The initial question may stem from unclear reading, the layout of the pieces, or prior experience. Correct action after help cannot establish that the original materials explained the action independently."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-diagnose-feedback",
+      "values": {
+        "zh-CN": [
+          "正文假设又有一份五轮版记录，不能直接与四轮版混算；参与经验、初始局面和主持帮助仍需逐份核对。",
+          "不同结果可能与期限有关，也可能与玩家已玩过几次或获得提示有关；缺少条件记录时，不能选定原因。",
+          "拟只比较四轮与五轮的期限差异，核对其他规则、经验和主持帮助；分开记录两版，实际结果待观察。"
+        ],
+        "en": [
+          "The chapter imagines an additional five-round record, which cannot simply be pooled with four-round records. Check experience, starting state, and host assistance for each.",
+          "Different outcomes may relate to the deadline, or to prior plays and hints. Without records of those conditions, the cause cannot be selected.",
+          "Compare only the four- versus five-round deadline difference, checking other rules, experience, and host assistance. Keep the versions’ records separate; actual results remain unobserved."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-design-judgment",
+      "values": {
+        "zh-CN": [
+          "正文的假想困难包括两只过早离岸，或同一只连续收集两次；已有规则推演，没有真人试玩结果。",
+          "卡住可能在材料，也可能在自身行动次数；加到6块让收集不再必要，多一轮则给连续收集者多一步。",
+          "针对第二种局面，拟只把四轮改成五轮，仍从4块木板开始；多一步的机会可核算，等待与规划感受待观察。"
+        ],
+        "en": [
+          "The chapter’s hypothetical difficulties include both animals leaving too early, or one collecting twice in succession. There is rule-based reasoning, but no real playtest result.",
+          "A blockage can come from materials or from an animal’s own action count. Starting with six planks removes the need to collect; an extra round gives the animal that collected twice one more step.",
+          "For the second situation, compare changing only four rounds to five, still starting with four planks. The extra move can be calculated; feelings about waiting and planning remain unobserved."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-independent-rules-test",
+      "values": {
+        "zh-CN": [
+          "拟检查接手者能否靠完整材料把20张纸片分成开局可用、备用和已用三处，而不是靠主持先分好。",
+          "给基本版全套规则与材料，让参与者自己摆放阅读；先说明能求助、暂停或停止，不先分三堆或提醒只能拿备用。",
+          "记录摆放、查阅、提问及每次帮助；若把20张全放中央，先问依据哪句话，不预写这种误读必发生或修改已有效。"
+        ],
+        "en": [
+          "Check whether a recipient can use the complete materials to allocate the twenty pieces among the initial available, reserve, and used areas, without the host sorting them first.",
+          "Provide the complete base rules and materials for participants to set up and read. Offer help, pausing, and stopping, without pre-sorting piles or warning them to take only reserve pieces.",
+          "Record setup, reading, questions, and each intervention. If all twenty go in the center, ask which wording led there; do not predict that this must happen or that a revision already works."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-share-a-playable-version",
+      "values": {
+        "zh-CN": [
+          "正文版本示例把v0.2改为v0.3，澄清三个木板区及收集来源；数量推演已做，真人独立使用这些材料的结果仍待观察。",
+          "假如接手者仍困惑，可能是说明本身不清，也可能是新地图和旧动作提示混用；只说“新版看不懂”还不能区分。",
+          "以统一木板区名称为一次表达改动，同步替换地图、规则和动作提示并标明版本；玩法不变，接手者能否读懂待观察。"
+        ],
+        "en": [
+          "The chapter’s version example revises v0.2 to v0.3, clarifying the three plank areas and collection source. Quantities have been checked through the rules; real independent use remains unobserved.",
+          "If a recipient is still confused, the cause could be unclear instructions or a new map mixed with old action reminders. Saying “the new version is confusing” does not distinguish them.",
+          "Treat consistent plank-area names as one presentation change, replacing the map, rules, and action reminders together with version labels. Gameplay stays the same; recipient understanding remains unobserved."
+        ]
+      }
+    }
+  ]
+}

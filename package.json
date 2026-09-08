@@ -9,7 +9,7 @@
     "qa:visual-tokens": "node scripts/generate-visual-tokens.mjs --check",
     "qa:classic-assets": "node scripts/check-classic-visual-assets.mjs",
     "qa:visual-v5-1": "node scripts/capture-playable-archive-v5-1.mjs",
-    "content:check": "node scripts/validate-content.mjs && pnpm qa:workspace-v3-foundation && pnpm qa:work-context && pnpm qa:project-workspace-v3 && pnpm qa:course-v3 && pnpm qa:two-task-home && pnpm qa:workspace-support-v3 && pnpm qa:design-materials && pnpm qa:learning-nodes && pnpm qa:learning-node-ui && pnpm qa:project-workspace && pnpm qa:copy-readability && pnpm local-publication:check && pnpm contribution:check && pnpm qa:beginner-campaign && pnpm qa:reading-to-action && pnpm qa:release && pnpm qa:a11y-contract && pnpm qa:method-sections && pnpm qa:resource-entries && pnpm qa:resource-audience-paths && pnpm qa:resource-learning-paths && pnpm qa:resource-learning-content && pnpm qa:resource-v2 && pnpm qa:main-boundaries && pnpm qa:guide-resource-handoff && pnpm qa:method-deep-links && pnpm qa:concept-actions",
+    "content:check": "node scripts/validate-content.mjs && pnpm qa:workspace-v3-foundation && pnpm qa:work-context && pnpm qa:project-workspace-v3 && pnpm qa:course-v3 && pnpm qa:two-task-home && pnpm qa:workspace-support-v3 && pnpm qa:design-materials && pnpm qa:learning-nodes && pnpm qa:learning-node-ui && pnpm qa:project-workspace && pnpm qa:copy-readability && pnpm local-publication:check && pnpm contribution:check && pnpm qa:beginner-campaign && pnpm qa:reading-to-action && pnpm qa:release && pnpm qa:a11y-contract && pnpm qa:method-sections && pnpm qa:resource-entries && pnpm qa:resource-audience-paths && pnpm qa:resource-learning-paths && pnpm qa:resource-learning-content && pnpm qa:resource-v2 && pnpm qa:main-boundaries && pnpm qa:guide-resource-handoff && pnpm qa:method-deep-links && pnpm qa:concept-actions && pnpm qa:original-reading && pnpm qa:text-learning && pnpm qa:reading-navigation && pnpm qa:reading-support",
     "contribution:check": "node scripts/validate-contribution-package.mjs",
     "content:indexes": "pnpm resources:index && pnpm glossary:index",
     "resources:index": "node scripts/generate-resource-index.mjs",
@@ -58,6 +58,7 @@
     "qa:resource-audience-paths": "node scripts/check-resource-audience-paths.mjs",
     "qa:resource-learning-paths": "node scripts/check-resource-learning-paths.mjs",
     "qa:resource-learning-content": "node scripts/check-resource-learning-content.mjs",
+    "qa:original-reading": "node scripts/check-original-reading.mjs",
     "qa:resource-v2": "node scripts/check-resource-v2.mjs",
     "qa:resource-v2:browser": "node scripts/qa-resource-v2.cjs",
     "qa:main-boundaries": "node scripts/check-main-bundle-boundaries.mjs",
@@ -74,7 +75,10 @@
     "qa:evidence-synthesis": "node scripts/check-evidence-synthesis-workbench.mjs",
     "qa:issue-to-system": "node scripts/check-issue-to-system-workbench.mjs",
     "qa:experience-intent": "node scripts/check-experience-intent-card.mjs",
-    "qa:core-loop": "node scripts/check-core-loop-canvas.mjs"
+    "qa:core-loop": "node scripts/check-core-loop-canvas.mjs",
+    "qa:text-learning": "node --experimental-strip-types scripts/check-text-learning.mjs",
+    "qa:reading-navigation": "node --experimental-strip-types scripts/check-reading-navigation.mjs",
+    "qa:reading-support": "node --experimental-strip-types scripts/check-reading-support.mjs"
   },
   "dependencies": {
     "@vitejs/plugin-react": "latest",

@@ -70,7 +70,7 @@ check('unknown tool remains in toolbox without opening a false surface', () => {
 })
 
 check('titles identify the current shareable surface', () => {
-  assert.equal(routeTitle(parseRouteHash('#learn')), '从哪里开始 · 落桌')
+  assert.equal(routeTitle(parseRouteHash('#learn')), '系统阅读 · 落桌')
   assert.equal(routeTitle(parseRouteHash('#learn/node-03')), '学习节点 03 · 落桌')
   assert.equal(routeTitle(parseRouteHash('#path')), '设计路径 · 落桌')
   assert.equal(routeTitle(parseRouteHash('#resources')), PRODUCT_FULL_NAME)
@@ -88,15 +88,15 @@ check('application synchronizes URL, history, title, and primary navigation', ()
 check('visible navigation leads with learning while preserving legacy routes', () => {
   const headerLinks = appSource.match(/const twoTaskLinks:[^=]*= \[([\s\S]*?)\n  \]/)?.[1] ?? ''
   assert.equal((headerLinks.match(/id:/g) ?? []).length, 3)
-  assert.ok(headerLinks.includes("id: 'course', label: '系统学习'"))
-  assert.ok(headerLinks.includes("id: 'workbench', label: '设计工作台'"))
-  assert.ok(headerLinks.includes("id: 'knowledge', label: '设计知识库'"))
+  assert.ok(headerLinks.includes("id: 'course', label: english ? 'Learn design' : '系统学习'"))
+  assert.ok(headerLinks.includes("id: 'workbench', label: english ? 'Workbench (Chinese)' : '设计工作台'"))
+  assert.ok(headerLinks.includes("id: 'reading', label: english ? 'Browse by question' : '按问题阅读'"))
   assert.equal(headerLinks.includes("id: 'path'"), false)
   assert.equal(headerLinks.includes("id: 'tools'"), false)
   assert.ok(appSource.includes("route.view === 'learn'"))
   assert.ok(appSource.includes("route.view === 'path'"))
   assert.ok(appSource.includes("route.view === 'tools'"))
-  assert.ok(appSource.includes('legacyLinks'))
+  assert.ok(appSource.includes('LearningNodesRoute') && appSource.includes('ResourceTopicRoute'))
 })
 
 check('keyboard users can bypass navigation to one active main landmark', () => {

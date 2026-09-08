@@ -26,7 +26,7 @@ const checks = [
   [runtime.includes('return Promise.all(['), '入口索引与默认包并行加载'],
   [app.includes('function ResourceDiscoveryBoundary'), '策展入口有独立加载边界'],
   [app.includes('function ResourceEntryCatalogBoundary'), '单个入口包有独立加载边界'],
-  [app.includes('onPreloadResources={preloadResourceDiscovery}'), '资源库主导航只预取策展入口'],
+  [app.includes("resourceEntry: 'read', resourceId: 'all', readingLanguage: language") && !app.includes('onPreloadResources={preloadResourceDiscovery}'), '原创阅读主导航不预取旧外部资料目录'],
   [app.includes('onMouseEnter={onPreloadEntry ? () => onPreloadEntry(entry.id) : undefined}') && app.includes('onFocus={onPreloadEntry ? () => onPreloadEntry(entry.id) : undefined}'), '入口鼠标与键盘意图预取对等'],
   [app.includes("onRequestAll={() => onSelectEntry('all')}"), '完整目录通过明确的 all 路由升级'],
   [app.includes('if (isFullCatalog) return <ResourceCatalogBoundary surface="page">'), '完整目录仅在 all 路由分支消费'],

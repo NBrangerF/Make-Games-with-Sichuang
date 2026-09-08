@@ -2180,3 +2180,8 @@ textarea:hover {
     transform: none !important;
   }
 }
+
+/* Keep the bypass link offscreen until focused, including reduced motion. */
+@media (prefers-reduced-motion: reduce) {
+  .skip-link:not(:focus) { transform: translateY(-150%) !important; }
+}

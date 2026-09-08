@@ -1,0 +1,42 @@
+{
+  "id": "wingspan",
+  "category": "theme",
+  "game": "Wingspan",
+  "title": {
+    "zh-CN": "Wingspan：栖息地怎样把鸟牌组织成一条引擎？",
+    "en": "Wingspan: How Does a Habitat Organize Birds into an Engine?"
+  },
+  "summary": {
+    "zh-CN": "用两张真实森林鸟的一次取食，解释栖息地怎样组织重复收益，以及生态主题的表达边界。",
+    "en": "Use one food action with two real forest birds to examine how habitats organize repeated benefits and where ecological interpretation needs limits."
+  },
+  "chapterIds": [
+    "reading-space-and-opportunity",
+    "reading-design-an-economy",
+    "reading-combine-mechanisms",
+    "reading-theme-and-emotion"
+  ],
+  "sources": [
+    {
+      "label": "Stonemaier Games — Wingspan overview",
+      "url": "https://stonemaiergames.com/games/wingspan/",
+      "edition": "Publisher product page, accessed 2026-09-08",
+      "locator": "Opening game description: wildlife preserves, habitats, combinations, food, eggs, cards and four rounds",
+      "checkedAt": "2026-09-08"
+    },
+    {
+      "label": "Stonemaier Games — official English base rulebook, Tabletopia copy",
+      "url": "https://c.tabletopia.com/games/wingspan/rules/ws-rulebook-r10-lr/en",
+      "edition": "English core rulebook, file ws-rulebook-r10-lr; original player mat; no expansions",
+      "locator": "PDF pp. 3 and 7: Yellow-Bellied Sapsucker / Blue-Gray Gnatcatcher card images; p. 4: original mat and action order; pp. 5–9: rounds, costs, food, eggs and cards",
+      "checkedAt": "2026-09-08"
+    },
+    {
+      "label": "Stonemaier Games — Wingspan Rules & FAQ",
+      "url": "https://stonemaiergames.com/games/wingspan/rules/",
+      "edition": "Publisher rules entry page, accessed 2026-09-08",
+      "locator": "Opening rulebook downloads and Rulepop links; expansion-specific rulebook links",
+      "checkedAt": "2026-09-08"
+    }
+  ]
+}

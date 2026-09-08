@@ -1,0 +1,35 @@
+{
+  "id": "six-nimmt",
+  "category": "mechanism",
+  "game": "6 nimmt!",
+  "title": {
+    "zh-CN": "6 nimmt!：选牌时的空位，为什么轮到你就没了？",
+    "en": "6 nimmt!: Why Did Your Safe Space Disappear?"
+  },
+  "summary": {
+    "zh-CN": "用48遇到46和10的两条局部分支，看同时选择、依次结算如何改变落点与罚分。",
+    "en": "Follow two constructed branches involving 48, 46, and 10 to see how simultaneous choices and sequential resolution change destinations and penalties."
+  },
+  "chapterIds": [
+    "reading-state-and-resolution",
+    "reading-choices-and-agency",
+    "reading-information-and-randomness",
+    "reading-time-and-interaction"
+  ],
+  "sources": [
+    {
+      "label": "AMIGO — 6 nimmt! English base rules",
+      "url": "https://blog.amigo-spiele.de/content/ap/rule/04910-GB-AmigoRule.pdf",
+      "edition": "Version 2.10; copyright 1994, 2011; ordinary base game",
+      "locator": "PDF pp. 1–2: Playing cards; Rules 1–4; Bullheads = negative points",
+      "checkedAt": "2026-09-08"
+    },
+    {
+      "label": "AMIGO — 6 nimmt! official overview",
+      "url": "https://www.amigo-spiele.de/6-nimmt_4910_1124",
+      "edition": "Publisher product page, accessed 2026-09-08",
+      "locator": "Opening description and seven numbered gameplay steps",
+      "checkedAt": "2026-09-08"
+    }
+  ]
+}

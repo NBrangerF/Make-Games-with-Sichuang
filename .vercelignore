@@ -5,6 +5,8 @@ dist/
 tmp/
 design/qa/
 docs/qa/screenshots/
+materials/source-files/
+resources/
 *.tsbuildinfo
 .DS_Store
 .env*

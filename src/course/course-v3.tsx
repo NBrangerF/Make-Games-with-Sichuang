@@ -18,7 +18,7 @@ function CourseRuntimeNotice() {
 }
 
 function courseRoute(enrollmentId: string, unitId?: string, activityId?: string): AppRoute {
-  return { view: 'course', tool: 'redesign', workContext: { courseId: COURSE_V3_ID, enrollmentId, ...(unitId ? { unitId } : {}), ...(activityId ? { activityId } : {}) } }
+  return { view: 'course', courseMode: 'practice', tool: 'redesign', workContext: { courseId: COURSE_V3_ID, enrollmentId, ...(unitId ? { unitId } : {}), ...(activityId ? { activityId } : {}) } }
 }
 
 function CourseDashboard({ onNavigate, onOpenProblems }: Pick<CourseProps, 'onNavigate' | 'onOpenProblems'>) {
@@ -27,12 +27,12 @@ function CourseDashboard({ onNavigate, onOpenProblems }: Pick<CourseProps, 'onNa
   const unit = getCourseUnit(enrollment?.currentUnitId)
   const start = () => {
     let enrollmentId = ''
-    const saved = runtime.commit(draft => { enrollmentId = startCourseEnrollment(draft, { courseId: COURSE_V3_ID, courseVersion: COURSE_V3_VERSION, firstUnitId: courseUnitsV3[0].id }) }, '系统课程已建立本地学习记录。')
+    const saved = runtime.commit(draft => { enrollmentId = startCourseEnrollment(draft, { courseId: COURSE_V3_ID, courseVersion: COURSE_V3_VERSION, firstUnitId: courseUnitsV3[0].id }) }, '设计实践已建立本地记录。')
     if (saved) onNavigate(courseRoute(enrollmentId, unit.id, unit.activityId))
   }
   return <main className="course-page" id="main-content" tabIndex={-1}>
     <CourseRuntimeNotice />
-    <header className="course-hero"><div><p className="course-kicker">系统学习桌游设计</p><h1>先学会看，<br />再做很多小东西。</h1></div><p>这不是从灵感直到出版的九步法。每个单元只练一种思维、使用一件工具，留下一份可检查的产物。</p></header>
+    <p><a href="#course">返回系统阅读</a></p><header className="course-hero"><div><p className="course-kicker">可选设计实践</p><h1>先学会看，<br />再做很多小东西。</h1></div><p>这不是从灵感直到出版的九步法。每个单元只练一种思维、使用一件工具，留下一份可检查的产物。</p></header>
     <section className="course-current" aria-labelledby="course-current-title"><p className="course-kicker">{enrollment ? '继续学习' : '从这里开始'}</p><span>{unit.number}</span><div><h2 id="course-current-title">{unit.title}</h2><p>{unit.question}</p><small>本单元留下：{unit.output}</small></div><button className="primary-button" type="button" onClick={enrollment ? () => onNavigate(courseRoute(enrollment.id, unit.id, unit.activityId)) : start}>{enrollment ? `继续第 ${Number(unit.number)} 单元` : '开始第 1 单元'}</button></section>
     <details className="course-syllabus"><summary>查看 9 个单元的完整路线</summary><ol>{courseUnitsV3.map(item => <li key={item.id}><span>{item.number}</span><div><strong>{item.title}</strong><p>{item.output}</p></div><small>{item.status === 'available' ? '可完成' : '正在接入活动运行时'}</small></li>)}</ol></details>
     <button className="course-problem-link" type="button" onClick={onOpenProblems}>现在只被一个具体问题卡住？打开设计知识库</button>

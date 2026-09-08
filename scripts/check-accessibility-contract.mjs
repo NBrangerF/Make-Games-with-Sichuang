@@ -12,6 +12,9 @@ const contract = read('docs/product/ACCESSIBILITY_HARD_GATE.md')
 const packageJson = JSON.parse(read('package.json'))
 const topLevelPageFiles = new Set([
   'complete-translation-page.tsx',
+  'original-reading.tsx',
+  'text-learning.tsx',
+  'design-cases.tsx',
   'resource-start-v2.tsx',
   'resource-v2-detail.tsx',
   'resource-problems-v2.tsx',
@@ -40,14 +43,14 @@ guard('skip link preserves the active hash route and focuses current main', app.
 guard('skip link is visually revealed on focus', styles.includes('.skip-link:focus { transform: translateY(0); }'))
 guard('all common interactive elements receive visible focus', styles.includes('button:focus-visible, a:focus-visible, input:focus-visible, select:focus-visible, textarea:focus-visible'))
 guard('reduced motion preference disables motion', styles.includes('@media (prefers-reduced-motion: reduce)'))
-guard('primary navigation exposes label and current page', app.includes('<nav aria-label="主导航">') && app.includes("aria-current={link.isActive ? 'page' : undefined}"))
+guard('primary navigation exposes label and current page', app.includes("<nav aria-label={english ? 'Main navigation' : '主导航'}>") && app.includes("aria-current={link.isActive ? 'page' : undefined}"))
 guard('step and tab controls expose pressed state', (app.match(/aria-pressed=/g) || []).length >= 10)
 guard('dialogs expose role, modality, and name', allSource.includes('role="dialog"') && allSource.includes('aria-modal="true"') && (allSource.includes('aria-label=') || allSource.includes('aria-labelledby=')))
 guard('dynamic feedback includes live status and explicit alerts', allSource.includes('aria-live="polite"') && allSource.includes('role="alert"'))
-guard('decorative SVGs are hidden from assistive technology', [...allSource.matchAll(/<svg\b[^>]*>/g)].every(match => match[0].includes('aria-hidden="true"')))
+guard('SVGs are decorative or explicitly named informative diagrams', [...allSource.matchAll(/<svg\b[^>]*>/g)].every(match => match[0].includes('aria-hidden="true"') || (match[0].includes('role="img"') && match[0].includes('aria-labelledby='))) && sources['case-diagrams.tsx'].includes('<title id='))
 guard('no positive tabindex changes source order', !/tabIndex=\{?[1-9]/.test(allSource))
 guard('no static div/span is promoted to an unnamed click control', !/<(?:div|span)\b[^>]*\bonClick=/.test(allSource) && !/role="button"/.test(allSource))
-guard('mobile primary navigation is a three-target row while local work rails remain scrollable', styles.includes('.header nav { gap: 0; grid-column: 1 / -1; grid-row: 2; overflow: visible; }') && sources['styles-learning-nodes.css'].includes('.header .nav-link { flex-basis: 33.333%;') && styles.includes('.method-tabs { display: flex; overflow-x: auto;') && !styles.includes('.tool-tabs'))
+guard('mobile reading navigation supports four destinations while local work rails remain scrollable', sources['styles-reading-studio.css'].includes('grid-template-columns: repeat(4,minmax(0,1fr))') && styles.includes('.method-tabs { display: flex; overflow-x: auto;') && !styles.includes('.tool-tabs'))
 guard('hard-gate document cites primary WCAG criteria', ['WCAG22/Understanding/bypass-blocks', 'WCAG22/Understanding/keyboard', 'WCAG22/Understanding/focus-order', 'WCAG22/Understanding/name-role-value'].every(token => contract.includes(token)))
 guard('hard-gate separates automation, keyboard, and screen-reader evidence', ['机器门', '键盘门', '屏幕阅读器门', '不能证明'].every(token => contract.includes(token)))
 guard('accessibility checker is part of content validation', packageJson.scripts?.['qa:a11y-contract'] === 'node scripts/check-accessibility-contract.mjs' && packageJson.scripts?.['content:check']?.includes('qa:a11y-contract'))

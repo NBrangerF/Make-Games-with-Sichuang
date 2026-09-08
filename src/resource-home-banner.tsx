@@ -7,7 +7,7 @@ export function ResourceHomeBanner() {
           <span>从问题出发，</span>
           <span>找到现在这一步。</span>
         </h2>
-        <p>按设计阶段、分析方法和眼下问题整理中文资料；读完后，把配套工作单带回你的设计桌。</p>
+        <p>先读懂一局游戏，再沿着选择、规则和试玩的问题找到资料。原创文章有中文和英文，也有可以继续查阅的来源。</p>
       </div>
       <picture className="resource-purpose-banner__media">
         <source

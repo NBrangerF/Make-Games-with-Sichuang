@@ -1,0 +1,512 @@
+{
+  "schemaVersion": 1,
+  "contentVersion": "3.0.0",
+  "parts": [
+    {
+      "id": "starting",
+      "title": {
+        "zh-CN": "从一局游戏，找到设计的起点",
+        "en": "Find a starting point in one game"
+      },
+      "introduction": {
+        "zh-CN": "从一份完整规则看见动作与局面，再观察谁会来玩、他们在什么场合玩。带着这些条件，为自己的第一份草稿写下暂定方向。",
+        "en": "Start with a complete game and observe its actions and situations. Consider who might play and where, then use those conditions to choose a provisional direction for your own draft."
+      }
+    },
+    {
+      "id": "actions",
+      "title": {
+        "zh-CN": "让想法变成能做的动作",
+        "en": "Turn an idea into actions"
+      },
+      "introduction": {
+        "zh-CN": "把一个宽泛的点子展开成几种办法，选出能执行的动作。用纸片跟过一次结算，再看这些动作为什么值得选择。",
+        "en": "Explore several ways to realize an idea, then turn one into actions. Follow their resolution with paper pieces and examine why the choices might matter."
+      }
+    },
+    {
+      "id": "decisions",
+      "title": {
+        "zh-CN": "看清规则怎样改变决定",
+        "en": "See how rules change decisions"
+      },
+      "introduction": {
+        "zh-CN": "回到熟悉的河岸，分别改变消息、木板、路线和行动时间。每次走完一个具体比较，看清局面和可做的事怎样一起变化。",
+        "en": "Return to the river and vary information, planks, paths, and timing. Work through each comparison to see how a situation changes what players can do."
+      }
+    },
+    {
+      "id": "systems",
+      "title": {
+        "zh-CN": "让各部分一起工作",
+        "en": "Make the parts work together"
+      },
+      "introduction": {
+        "zh-CN": "已经看过单条规则，现在让它们一起工作：资源从哪里来，目标怎样推动结束，两条机制怎样配合，以及一起赢时谁在作决定。",
+        "en": "Connect the rules: where resources come from, how goals lead toward an ending, how mechanisms work together, and who makes decisions when players share a win."
+      }
+    },
+    {
+      "id": "meaning",
+      "title": {
+        "zh-CN": "看见不同玩家的游戏",
+        "en": "See the game from different players’ perspectives"
+      },
+      "introduction": {
+        "zh-CN": "从比较一个办法的优势，走到玩家怎样理解自己的行动。再检查故事表达了什么，以及怎样把这些关系写成别人能用的说明。",
+        "en": "Compare advantages under clear conditions, then examine how players interpret their actions. Consider what the story expresses and how to communicate these relationships in usable instructions."
+      }
+    },
+    {
+      "id": "testing",
+      "title": {
+        "zh-CN": "把问题摆到桌上",
+        "en": "Put a question on the table"
+      },
+      "introduction": {
+        "zh-CN": "先看具体参与者怎样读、拿和决定，再按本轮问题选择原型的精度。安排一次试玩，并跟着一个假想过程，分清发生的事与可能原因。",
+        "en": "Consider how particular people read, handle pieces, and decide. Choose the accuracy a prototype needs for the question, plan a playtest, and follow a hypothetical session to separate events from explanations."
+      }
+    },
+    {
+      "id": "revising",
+      "title": {
+        "zh-CN": "改好一版，交给下一位玩家",
+        "en": "Revise a version and hand it over"
+      },
+      "introduction": {
+        "zh-CN": "把几份反馈放回各自局面，决定下一稿先改哪里。给出完整材料，检验它能否独立使用，再整理一个别人可以接续的版本。",
+        "en": "Return several comments to their situations and choose a revision. Provide a complete set of materials, check independent use, and prepare a version others can continue developing."
+      }
+    }
+  ],
+  "chapters": [
+    {
+      "id": "reading-rules-and-play",
+      "number": 1,
+      "part": "starting",
+      "prerequisites": [],
+      "related": [
+        "play-beyond-the-rules"
+      ],
+      "relatedPurpose": {
+        "zh-CN": "看看玩家怎样用同一组物件赋予新的意思。",
+        "en": "See how players give the same pieces another meaning."
+      }
+    },
+    {
+      "id": "reading-observe-a-game",
+      "number": 2,
+      "part": "starting",
+      "prerequisites": [
+        "reading-rules-and-play"
+      ],
+      "related": [],
+      "relatedPurpose": {
+        "zh-CN": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "reading-players-and-context",
+      "number": 3,
+      "part": "starting",
+      "prerequisites": [
+        "reading-rules-and-play",
+        "reading-observe-a-game"
+      ],
+      "related": [
+        "before-the-first-rule"
+      ],
+      "relatedPurpose": {
+        "zh-CN": "图画和邀请怎样让人在开始前形成期待？",
+        "en": "How do pictures and invitations shape expectations before play?"
+      }
+    },
+    {
+      "id": "reading-first-design-brief",
+      "number": 4,
+      "part": "starting",
+      "prerequisites": [
+        "reading-players-and-context"
+      ],
+      "related": [],
+      "relatedPurpose": {
+        "zh-CN": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "reading-ideas-under-constraints",
+      "number": 5,
+      "part": "actions",
+      "prerequisites": [
+        "reading-first-design-brief"
+      ],
+      "related": [
+        "constraints-that-open-possibilities"
+      ],
+      "relatedPurpose": {
+        "zh-CN": "少用一些材料，什么时候帮助思考，什么时候又会堵住任务？",
+        "en": "When do fewer materials help thinking, and when do they block a task?"
+      }
+    },
+    {
+      "id": "reading-core-actions",
+      "number": 6,
+      "part": "actions",
+      "prerequisites": [
+        "reading-rules-and-play",
+        "reading-ideas-under-constraints"
+      ],
+      "related": [],
+      "relatedPurpose": {
+        "zh-CN": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "reading-state-and-resolution",
+      "number": 7,
+      "part": "actions",
+      "prerequisites": [
+        "reading-core-actions"
+      ],
+      "related": [],
+      "relatedPurpose": {
+        "zh-CN": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "reading-choices-and-agency",
+      "number": 8,
+      "part": "actions",
+      "prerequisites": [
+        "reading-rules-and-play",
+        "reading-core-actions",
+        "reading-state-and-resolution"
+      ],
+      "related": [
+        "when-options-matter"
+      ],
+      "relatedPurpose": {
+        "zh-CN": "换一个小场景，比较选项数量与真正要考虑的事。",
+        "en": "Use another small setting to compare the number of options with what there is to consider."
+      }
+    },
+    {
+      "id": "reading-information-and-randomness",
+      "number": 9,
+      "part": "decisions",
+      "prerequisites": [
+        "reading-choices-and-agency",
+        "reading-state-and-resolution"
+      ],
+      "related": [
+        "when-randomness-helps"
+      ],
+      "relatedPurpose": {
+        "zh-CN": "平均结果相同，为什么不同局面仍需要不同选择？",
+        "en": "Why can choices with the same average result matter differently in different situations?"
+      }
+    },
+    {
+      "id": "reading-resources-and-endings",
+      "number": 10,
+      "part": "decisions",
+      "prerequisites": [
+        "reading-state-and-resolution",
+        "reading-choices-and-agency"
+      ],
+      "related": [],
+      "relatedPurpose": {
+        "zh-CN": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "reading-space-and-opportunity",
+      "number": 11,
+      "part": "decisions",
+      "prerequisites": [
+        "reading-resources-and-endings"
+      ],
+      "related": [
+        "beyond-game-labels"
+      ],
+      "relatedPurpose": {
+        "zh-CN": "从具体动作出发，看看游戏类型名称能告诉我们多少。",
+        "en": "Start from specific actions and consider how much a genre name can tell us."
+      }
+    },
+    {
+      "id": "reading-time-and-interaction",
+      "number": 12,
+      "part": "decisions",
+      "prerequisites": [
+        "reading-information-and-randomness",
+        "reading-space-and-opportunity"
+      ],
+      "related": [
+        "between-your-turns",
+        "when-players-cannot-meet"
+      ],
+      "relatedPurpose": {
+        "zh-CN": "继续看同桌等待，以及无法同时到场时怎样接着玩。",
+        "en": "Explore waiting at one table and continuing when people cannot meet at the same time."
+      }
+    },
+    {
+      "id": "reading-design-an-economy",
+      "number": 13,
+      "part": "systems",
+      "prerequisites": [
+        "reading-state-and-resolution",
+        "reading-resources-and-endings",
+        "reading-space-and-opportunity",
+        "reading-time-and-interaction"
+      ],
+      "related": [
+        "where-resources-go"
+      ],
+      "relatedPurpose": {
+        "zh-CN": "换成收水的小例子，比较投资、固定损耗与随存量改变的损耗。",
+        "en": "Use water collection to compare investment, fixed losses, and losses that change with stored quantities."
+      }
+    },
+    {
+      "id": "reading-goals-and-pacing",
+      "number": 14,
+      "part": "systems",
+      "prerequisites": [
+        "reading-choices-and-agency",
+        "reading-resources-and-endings",
+        "reading-design-an-economy"
+      ],
+      "related": [],
+      "relatedPurpose": {
+        "zh-CN": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "reading-combine-mechanisms",
+      "number": 15,
+      "part": "systems",
+      "prerequisites": [
+        "reading-state-and-resolution",
+        "reading-time-and-interaction",
+        "reading-design-an-economy",
+        "reading-goals-and-pacing"
+      ],
+      "related": [],
+      "relatedPurpose": {
+        "zh-CN": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "reading-cooperation-and-conflict",
+      "number": 16,
+      "part": "systems",
+      "prerequisites": [
+        "reading-players-and-context",
+        "reading-time-and-interaction",
+        "reading-combine-mechanisms"
+      ],
+      "related": [],
+      "relatedPurpose": {
+        "zh-CN": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "reading-balance-and-player-count",
+      "number": 17,
+      "part": "meaning",
+      "prerequisites": [
+        "reading-resources-and-endings",
+        "reading-design-an-economy",
+        "reading-goals-and-pacing",
+        "reading-cooperation-and-conflict"
+      ],
+      "related": [],
+      "relatedPurpose": {
+        "zh-CN": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "reading-theme-and-emotion",
+      "number": 18,
+      "part": "meaning",
+      "prerequisites": [
+        "reading-first-design-brief",
+        "reading-cooperation-and-conflict",
+        "reading-players-and-context",
+        "reading-core-actions",
+        "reading-choices-and-agency"
+      ],
+      "related": [
+        "emotion-through-action",
+        "rewards-and-reasons"
+      ],
+      "relatedPurpose": {
+        "zh-CN": "分别追踪帮助的动作和后来加入的奖励，看看它们改变了什么。",
+        "en": "Follow a helping action and an added reward to see what each changes."
+      }
+    },
+    {
+      "id": "reading-stories-and-models",
+      "number": 19,
+      "part": "meaning",
+      "prerequisites": [
+        "reading-theme-and-emotion",
+        "reading-players-and-context",
+        "reading-first-design-brief"
+      ],
+      "related": [],
+      "relatedPurpose": {
+        "zh-CN": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "reading-rules-and-components",
+      "number": 20,
+      "part": "meaning",
+      "prerequisites": [
+        "reading-state-and-resolution",
+        "reading-time-and-interaction",
+        "reading-theme-and-emotion"
+      ],
+      "related": [
+        "when-players-run-the-system"
+      ],
+      "relatedPurpose": {
+        "zh-CN": "记数与移动物件，也会占用玩家的注意。",
+        "en": "Keeping counts and moving pieces also use players’ attention."
+      }
+    },
+    {
+      "id": "reading-access-and-participation",
+      "number": 21,
+      "part": "testing",
+      "prerequisites": [
+        "reading-players-and-context",
+        "reading-rules-and-components",
+        "reading-cooperation-and-conflict"
+      ],
+      "related": [],
+      "relatedPurpose": {
+        "zh-CN": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "reading-prototype-for-a-question",
+      "number": 22,
+      "part": "testing",
+      "prerequisites": [
+        "reading-core-actions",
+        "reading-information-and-randomness",
+        "reading-rules-and-components",
+        "reading-access-and-participation"
+      ],
+      "related": [],
+      "relatedPurpose": {
+        "zh-CN": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "reading-plan-a-playtest",
+      "number": 23,
+      "part": "testing",
+      "prerequisites": [
+        "reading-players-and-context",
+        "reading-prototype-for-a-question"
+      ],
+      "related": [],
+      "relatedPurpose": {
+        "zh-CN": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "reading-prototypes-and-evidence",
+      "number": 24,
+      "part": "testing",
+      "prerequisites": [
+        "reading-state-and-resolution",
+        "reading-plan-a-playtest"
+      ],
+      "related": [],
+      "relatedPurpose": {
+        "zh-CN": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "reading-diagnose-feedback",
+      "number": 25,
+      "part": "revising",
+      "prerequisites": [
+        "reading-plan-a-playtest",
+        "reading-prototypes-and-evidence"
+      ],
+      "related": [
+        "when-feedback-disagrees"
+      ],
+      "relatedPurpose": {
+        "zh-CN": "两个人给出相反建议时，怎样找回他们各自遇到的时刻？",
+        "en": "How can we find the moments behind two opposing suggestions?"
+      }
+    },
+    {
+      "id": "reading-design-judgment",
+      "number": 26,
+      "part": "revising",
+      "prerequisites": [
+        "reading-first-design-brief",
+        "reading-combine-mechanisms",
+        "reading-diagnose-feedback"
+      ],
+      "related": [],
+      "relatedPurpose": {
+        "zh-CN": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "reading-independent-rules-test",
+      "number": 27,
+      "part": "revising",
+      "prerequisites": [
+        "reading-rules-and-components",
+        "reading-plan-a-playtest",
+        "reading-design-judgment"
+      ],
+      "related": [],
+      "relatedPurpose": {
+        "zh-CN": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "reading-share-a-playable-version",
+      "number": 28,
+      "part": "revising",
+      "prerequisites": [
+        "reading-design-judgment",
+        "reading-independent-rules-test"
+      ],
+      "related": [],
+      "relatedPurpose": {
+        "zh-CN": "",
+        "en": ""
+      }
+    }
+  ]
+}

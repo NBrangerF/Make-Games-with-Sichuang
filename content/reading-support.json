@@ -1,0 +1,463 @@
+{
+  "schemaVersion": 1,
+  "chapters": [
+    {
+      "chapterId": "reading-rules-and-play",
+      "afterSection": 3,
+      "worksheetId": "loop",
+      "toolId": "core-loop",
+      "title": {
+        "zh-CN": "最后一块木板用掉以后",
+        "en": "After the last plank is spent"
+      },
+      "reason": {
+        "zh-CN": "写下最后一次前进前的局面、动作和结束判定，分清“资源耗尽”与“目标已经完成”。循环画布还可以保留这一段怎样结束。",
+        "en": "Describe the position, final move, and ending check to distinguish running out of a resource from completing the goal. The loop canvas can also record where this sequence ends."
+      },
+      "caseIds": [
+        "carcassonne"
+      ]
+    },
+    {
+      "chapterId": "reading-observe-a-game",
+      "afterSection": 2,
+      "worksheetId": "observe",
+      "toolId": "decision-trace",
+      "title": {
+        "zh-CN": "把停顿和你的解释分开",
+        "en": "Separate a pause from your explanation"
+      },
+      "reason": {
+        "zh-CN": "用文中的假设停顿，分别记录动作、局面和两种可能原因。这样不会把你的着急直接当成小雨的感受。",
+        "en": "Use the imagined pause to separate the action, position, and two possible explanations. Your impatience then stays distinct from what Yu may have felt."
+      },
+      "caseIds": [
+        "six-nimmt"
+      ]
+    },
+    {
+      "chapterId": "reading-players-and-context",
+      "afterSection": 2,
+      "worksheetId": "intent",
+      "toolId": "experience-intent",
+      "title": {
+        "zh-CN": "给这次相遇写下具体条件",
+        "en": "Describe this particular meeting"
+      },
+      "reason": {
+        "zh-CN": "把谁来、桌面和可用时间连到一个希望出现的选择，再写下仍需确认的事。这样能分开游戏的暂定方向与这次见面的安排。",
+        "en": "Connect the people, table, and available time to a choice you hope they can make, then note what needs checking. This separates a provisional design direction from the arrangements for this meeting."
+      },
+      "caseIds": []
+    },
+    {
+      "chapterId": "reading-first-design-brief",
+      "afterSection": 2,
+      "worksheetId": "intent",
+      "toolId": "experience-intent",
+      "title": {
+        "zh-CN": "给第一稿留一句暂定方向",
+        "en": "Give the first draft a provisional direction"
+      },
+      "reason": {
+        "zh-CN": "把希望玩家比较什么、现有条件和判断方向的方法放在一起。新点子出现时，就能看出它改变的是材料限制还是共同过河的目标。",
+        "en": "Connect the choice you want players to face, the current conditions, and a way to judge the direction. A new idea can then be checked for changes to the materials or to the shared crossing goal."
+      },
+      "caseIds": []
+    },
+    {
+      "chapterId": "reading-ideas-under-constraints",
+      "afterSection": 2,
+      "worksheetId": "choices",
+      "toolId": "constraint-deck",
+      "title": {
+        "zh-CN": "比较两种“留下准备”的办法",
+        "en": "Compare two ways to stay and prepare"
+      },
+      "reason": {
+        "zh-CN": "把收集木板与操作桥两个候选放在同一个玩家目标下，分别写收益、代价和未知条件。这样能看出新增的选择与尚未补齐的规则。",
+        "en": "Compare collecting planks and operating a bridge under the same player goal, noting benefits, costs, and unknown conditions. This distinguishes a new choice from rules that still need to be specified."
+      },
+      "caseIds": []
+    },
+    {
+      "chapterId": "reading-core-actions",
+      "afterSection": 2,
+      "worksheetId": "loop",
+      "toolId": "core-loop",
+      "title": {
+        "zh-CN": "让收集成为一条能执行的动作",
+        "en": "Make collect an executable action"
+      },
+      "reason": {
+        "zh-CN": "记录收集前的位置和木板、这次怎样拿取，以及行动后同伴能做什么。这样可以检查动作名称有没有漏掉条件、去向或后果。",
+        "en": "Record the position and planks before collecting, how the pieces move, and what the partner can do afterward. This reveals conditions, destinations, or consequences missing from an action name."
+      },
+      "caseIds": [
+        "carcassonne"
+      ]
+    },
+    {
+      "chapterId": "reading-state-and-resolution",
+      "afterSection": 2,
+      "worksheetId": "loop",
+      "toolId": "core-loop",
+      "title": {
+        "zh-CN": "动物没动，轮到谁却变了",
+        "en": "Nothing moves, but the turn changes"
+      },
+      "reason": {
+        "zh-CN": "跟过一次等待，把没有变化的动物和木板，与必须更新的回合提示分开。这样能检查下一位玩家是否真的取得行动机会。",
+        "en": "Follow a wait, separating unchanged animals and planks from the turn reminder that must change. Check whether the next player actually receives the opportunity to act."
+      },
+      "caseIds": [
+        "dominion"
+      ]
+    },
+    {
+      "chapterId": "reading-choices-and-agency",
+      "afterSection": 2,
+      "worksheetId": "choices",
+      "toolId": "decision-trace",
+      "title": {
+        "zh-CN": "这次收集，放弃了哪一步？",
+        "en": "Which move does collecting give up?"
+      },
+      "reason": {
+        "zh-CN": "固定小兔已经前进、中央三块木板、小刺猬仍在起点的局面，再比较收集与前进。把每种做法的所得和放弃的机会一起写，才看得到这次的代价。",
+        "en": "Keep Rabbit ahead, three planks available, and Hedgehog at the start while comparing collect and move. Recording both the gain and the opportunity forgone makes the cost of this choice visible."
+      },
+      "caseIds": [
+        "six-nimmt"
+      ]
+    },
+    {
+      "chapterId": "reading-information-and-randomness",
+      "afterSection": 3,
+      "worksheetId": "choices",
+      "toolId": "decision-trace",
+      "title": {
+        "zh-CN": "同一个雨天，换个知道的时点",
+        "en": "The same rain, revealed at a different time"
+      },
+      "reason": {
+        "zh-CN": "把先承诺和先揭示放在同一个局面比较，写出还能够改选的动作与结果。这样能找到消息变得有用所需的行动机会。",
+        "en": "Compare committing first and revealing first in the same position, including which actions remain available and their results. This identifies the opportunity needed for information to become useful."
+      },
+      "caseIds": [
+        "hanabi",
+        "six-nimmt"
+      ]
+    },
+    {
+      "chapterId": "reading-resources-and-endings",
+      "afterSection": 2,
+      "worksheetId": "resources",
+      "toolId": "balance-pass",
+      "title": {
+        "zh-CN": "木板够了，谁还来得及用？",
+        "en": "Enough planks—but who has time to use them?"
+      },
+      "reason": {
+        "zh-CN": "把收集所得、木板花费和必须由各自动物完成的动作放在一起。这样能分辨材料短缺，与有材料却来不及使用。",
+        "en": "Connect collected planks, spending, and the actions each animal must perform itself. This distinguishes a material shortage from having material without enough time to use it."
+      },
+      "caseIds": [
+        "wingspan"
+      ]
+    },
+    {
+      "chapterId": "reading-space-and-opportunity",
+      "afterSection": 2,
+      "worksheetId": "choices",
+      "toolId": "decision-trace",
+      "title": {
+        "zh-CN": "把近路的省时和花费一起算",
+        "en": "Count both the shortcut’s saving and its cost"
+      },
+      "reason": {
+        "zh-CN": "分别记录原路与小岛路需要的行动和木板，再看全队还缺什么。省下某只动物的一步，未必同时补足共用材料。",
+        "en": "Record the actions and planks required by the original route and the island, then check what the team still lacks. Saving one animal a move does not also supply missing shared material."
+      },
+      "caseIds": [
+        "carcassonne"
+      ]
+    },
+    {
+      "chapterId": "reading-time-and-interaction",
+      "afterSection": 3,
+      "worksheetId": "loop",
+      "toolId": "shared-decision",
+      "title": {
+        "zh-CN": "两人都选前进，最后谁真的走了？",
+        "en": "Both choose to move—who actually moves?"
+      },
+      "reason": {
+        "zh-CN": "从揭示两项选择写到按顺序执行，再记录木板不够时的结果。这样能分开“同时选择”与“同时兑现”。",
+        "en": "Follow the revealed choices through ordered resolution and record what happens when the planks are insufficient. This separates choosing together from having both choices carried out."
+      },
+      "caseIds": [
+        "six-nimmt"
+      ]
+    },
+    {
+      "chapterId": "reading-design-an-economy",
+      "afterSection": 2,
+      "worksheetId": "resources",
+      "toolId": "balance-pass",
+      "title": {
+        "zh-CN": "多一根原木，为什么没多一块成品？",
+        "en": "Why does another log not produce another plank?"
+      },
+      "reason": {
+        "zh-CN": "分开记录原木进入、锯木消耗和成品留下。这样能看出限制来自材料不够，还是加工机会不够。",
+        "en": "Record incoming logs, what sawing consumes, and the finished planks separately. This shows whether the limit comes from scarce material or insufficient processing opportunities."
+      },
+      "caseIds": [
+        "wingspan",
+        "dominion"
+      ]
+    },
+    {
+      "chapterId": "reading-goals-and-pacing",
+      "afterSection": 3,
+      "worksheetId": "resources",
+      "toolId": "balance-pass",
+      "title": {
+        "zh-CN": "九枚时间还能换来几次行动？",
+        "en": "How many actions can nine time markers support?"
+      },
+      "reason": {
+        "zh-CN": "分别记录收集、前进和等待怎样花掉共同时间，再检查用完时谁已到岸。剩余时间标记就不会被直接误读成每人的剩余回合。",
+        "en": "Record how collecting, moving, and waiting spend shared time, then check who has arrived when it runs out. Remaining markers cannot then be mistaken for remaining turns per player."
+      },
+      "caseIds": [
+        "dominion"
+      ]
+    },
+    {
+      "chapterId": "reading-combine-mechanisms",
+      "afterSection": 3,
+      "worksheetId": "loop",
+      "toolId": "core-loop",
+      "title": {
+        "zh-CN": "标记回来了，哪次付费不见了？",
+        "en": "The marker returns—which cost disappears?"
+      },
+      "reason": {
+        "zh-CN": "追踪一次锯木怎样同时产板并归还同伴标记，再写同伴下一步能做什么。这样能看出实际计划是否还需要支付那次取回行动。",
+        "en": "Trace how sawing both produces planks and returns the partner’s marker, then identify the partner’s next option. This reveals whether the actual plan still pays for a retrieval action."
+      },
+      "caseIds": [
+        "dominion",
+        "wingspan"
+      ]
+    },
+    {
+      "chapterId": "reading-cooperation-and-conflict",
+      "afterSection": 4,
+      "worksheetId": "choices",
+      "toolId": "shared-decision",
+      "title": {
+        "zh-CN": "同一次帮助，谁多得了一项结果？",
+        "en": "The same help—who gains an extra result?"
+      },
+      "reason": {
+        "zh-CN": "用同一条成功路线对照基本版和个人名次变体，把共同结果与个人收益分开。可能出现的分歧仍是假设，不是已经发生的试玩结果。",
+        "en": "Compare the same successful route in the basic game and the individual-ranking variation, separating the shared result from the personal gain. Any possible disagreement remains hypothetical, not a playtest finding."
+      },
+      "caseIds": [
+        "pandemic",
+        "hanabi"
+      ]
+    },
+    {
+      "chapterId": "reading-balance-and-player-count",
+      "afterSection": 3,
+      "worksheetId": "resources",
+      "toolId": "balance-pass",
+      "title": {
+        "zh-CN": "第三只动物来了，机会怎样变？",
+        "en": "What changes when a third animal joins?"
+      },
+      "reason": {
+        "zh-CN": "比较三人版的四块与五块初始木板，把总路程和每只动物的行动次数一起记录。这样能看见多一块材料为何会重新打开一种安排。",
+        "en": "Compare the three-player version with four and five starting planks, recording both the total journey and each animal’s turns. This shows why one more plank can reopen a workable arrangement."
+      },
+      "caseIds": [
+        "six-nimmt"
+      ]
+    },
+    {
+      "chapterId": "reading-theme-and-emotion",
+      "afterSection": 3,
+      "worksheetId": "theme",
+      "toolId": "experience-intent",
+      "title": {
+        "zh-CN": "帮助写在动作里，还是只写在旁白里？",
+        "en": "Is helping in the action, or only in the narration?"
+      },
+      "reason": {
+        "zh-CN": "把“互相帮助”的期待连到共用木板和实际收集，再检查画面或文字把注意带到哪里。这样能分开规则支持的关系与仍待了解的感受。",
+        "en": "Connect the expectation of helping to shared planks and collecting, then examine where pictures or words direct attention. This separates a relationship supported by rules from feelings we still need to learn about."
+      },
+      "caseIds": [
+        "wingspan"
+      ]
+    },
+    {
+      "chapterId": "reading-stories-and-models",
+      "afterSection": 2,
+      "worksheetId": "theme",
+      "toolId": "issue-to-system",
+      "title": {
+        "zh-CN": "河边消息为什么能传到这里？",
+        "en": "Why does the message reach this household?"
+      },
+      "reason": {
+        "zh-CN": "给虚构消息模型中的一条连接写下规则、假设和省略的关系。这样能分清按规则算出的结果，与尚未查证的现实因果。",
+        "en": "Describe the rule, assumption, and omitted relationships behind one connection in the fictional message model. This separates a result derived from rules from real-world causes that have not been checked."
+      },
+      "caseIds": [
+        "pandemic"
+      ]
+    },
+    {
+      "chapterId": "reading-rules-and-components",
+      "afterSection": 3,
+      "worksheetId": "loop",
+      "toolId": "teaching-path",
+      "title": {
+        "zh-CN": "把收集写成别人能照做的一步",
+        "en": "Write collect as a step someone can follow"
+      },
+      "reason": {
+        "zh-CN": "从三处纸片的摆法写到一次收集后的局面，明确从哪堆拿、放到哪堆、何时结束行动。这样能检查说明与桌面是否在讲同一件事。",
+        "en": "Go from the three paper-piece areas to the position after collecting: where pieces come from, where they go, and when the turn ends. Check whether the instructions and table communicate the same action."
+      },
+      "caseIds": [
+        "carcassonne"
+      ]
+    },
+    {
+      "chapterId": "reading-access-and-participation",
+      "afterSection": 3,
+      "worksheetId": "access",
+      "toolId": "accessibility-observation",
+      "title": {
+        "zh-CN": "帮她拿，还是替她选？",
+        "en": "Helping her move pieces, or choosing for her?"
+      },
+      "reason": {
+        "zh-CN": "选择一个具体操作困难，写出可能的支持和仍由玩家作出的决定。这样能分辨让动作做得到，与把行动权交给别人。",
+        "en": "Choose a specific handling difficulty and describe possible support alongside the decision the player keeps. This distinguishes making an action possible from transferring the choice to someone else."
+      },
+      "caseIds": []
+    },
+    {
+      "chapterId": "reading-prototype-for-a-question",
+      "afterSection": 2,
+      "worksheetId": "test",
+      "toolId": "prototype-scope",
+      "title": {
+        "zh-CN": "这一张草稿，能回答多大的问题？",
+        "en": "How much can this draft answer?"
+      },
+      "reason": {
+        "zh-CN": "把一次操作能检查的问题，与需要从开局看到结束的问题分开，再选材料和任务。这样能避免用一个短片段替整局作结论。",
+        "en": "Separate questions answerable by one action from those needing a journey from setup to ending, then choose materials and a task. A short fragment will not stand in for evidence about the whole game."
+      },
+      "caseIds": []
+    },
+    {
+      "chapterId": "reading-plan-a-playtest",
+      "afterSection": 2,
+      "worksheetId": "test",
+      "toolId": "playtest-selector",
+      "title": {
+        "zh-CN": "这次试玩，先看他们怎样开始",
+        "en": "Plan how this playtest will begin"
+      },
+      "reason": {
+        "zh-CN": "先选“材料能否讲清”或“懂规则后怎样商量”中的一个问题，再写材料和主持方式。这样能看出何时讲解会帮助这次检查，何时会遮住要观察的事。",
+        "en": "Choose either whether the materials explain themselves or how informed players discuss a plan, then specify materials and hosting. This shows when an explanation helps the question and when it hides what you need to observe."
+      },
+      "caseIds": []
+    },
+    {
+      "chapterId": "reading-prototypes-and-evidence",
+      "afterSection": 3,
+      "worksheetId": "observe",
+      "toolId": "playtest-session",
+      "title": {
+        "zh-CN": "把提醒发生的那一刻留下来",
+        "en": "Keep the moment when a reminder was given"
+      },
+      "reason": {
+        "zh-CN": "在文中的假想片段里，分别记提醒前的动作、主持补充和提醒后的结果。这样不会把得到帮助后的正确操作当成材料独立讲清的证据。",
+        "en": "In the imagined sequence, record the action before help, the host’s addition, and the result afterward. A correct action after assistance will not become evidence that the materials explained themselves."
+      },
+      "caseIds": []
+    },
+    {
+      "chapterId": "reading-diagnose-feedback",
+      "afterSection": 3,
+      "worksheetId": "review",
+      "toolId": "decision-trace",
+      "title": {
+        "zh-CN": "这几份反馈，说的是同一个局面吗？",
+        "en": "Do these comments concern the same situation?"
+      },
+      "reason": {
+        "zh-CN": "把一条反馈放回它的版本、初始局面、玩家经验和主持帮助，再保留不同解释。这样能分辨可以比较的记录，与条件已经变化的记录。",
+        "en": "Return one comment to its version, starting position, player experience, and any help, while preserving alternative explanations. This separates comparable records from records whose conditions have changed."
+      },
+      "caseIds": []
+    },
+    {
+      "chapterId": "reading-design-judgment",
+      "afterSection": 2,
+      "worksheetId": "review",
+      "toolId": "feedback",
+      "title": {
+        "zh-CN": "多给木板，还是多给一次机会？",
+        "en": "More planks, or another opportunity?"
+      },
+      "reason": {
+        "zh-CN": "先把建议对准它要解决的局面，再写候选改法会改变什么、下一次只比较什么。若已有已完成的现场会话，可以继续在复盘工作台整理这次决定。",
+        "en": "Connect a suggestion to the situation it addresses, then describe what candidate changes affect and what to compare next. If you have a completed playtest session, the review workbench can develop this decision further."
+      },
+      "caseIds": []
+    },
+    {
+      "chapterId": "reading-independent-rules-test",
+      "afterSection": 2,
+      "worksheetId": "test",
+      "toolId": "playtest-selector",
+      "title": {
+        "zh-CN": "不先替他们分好三堆，会看到什么？",
+        "en": "What can we learn without sorting the piles first?"
+      },
+      "reason": {
+        "zh-CN": "写下参与者要靠材料完成的准备任务、可以求助的安排和要记录的时刻。这样能区别材料独立支持的步骤，与主持先替大家完成的步骤。",
+        "en": "Describe the setup task participants should perform from the materials, how they can ask for help, and what to record. This separates steps supported by the materials from steps already performed by the host."
+      },
+      "caseIds": []
+    },
+    {
+      "chapterId": "reading-share-a-playable-version",
+      "afterSection": 2,
+      "worksheetId": "review",
+      "toolId": "version-governance",
+      "title": {
+        "zh-CN": "下一位玩家该换掉哪一份？",
+        "en": "Which materials should the next player replace?"
+      },
+      "reason": {
+        "zh-CN": "把旧版的问题、这次改动和仍需确认的事放在一起，指出规则、地图和提示中哪些应当一起更换。这样一条反馈才能找到它真正对应的版本。",
+        "en": "Connect the earlier problem, current change, and remaining questions, identifying which rules, map, and reminders must be replaced together. A comment can then point to the version it actually concerns."
+      },
+      "caseIds": []
+    }
+  ]
+}

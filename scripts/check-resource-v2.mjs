@@ -112,13 +112,14 @@ const check = (pass, label) => checks.push([Boolean(pass), label])
 
 check((starts.match(/id: 'learn'|id: 'analyze'|id: 'problems'/g) ?? []).length === 3, '首页严格限制为三个主入口')
 check(
-  (headerLinksBlock.match(/id:/g) ?? []).length === 3 &&
-  headerLinksBlock.includes("id: 'course', label: '系统学习'") &&
-  headerLinksBlock.includes("id: 'workbench', label: '设计工作台'") &&
-  headerLinksBlock.includes("id: 'knowledge', label: '设计知识库'") &&
+  (headerLinksBlock.match(/id:/g) ?? []).length === 4 &&
+  headerLinksBlock.includes("id: 'course'") && headerLinksBlock.includes("'系统学习'") &&
+  headerLinksBlock.includes("id: 'workbench'") && headerLinksBlock.includes("'设计工作台'") &&
+  headerLinksBlock.includes("id: 'reading'") && headerLinksBlock.includes("resourceEntry: 'read'") &&
+  headerLinksBlock.includes("id: 'cases'") && headerLinksBlock.includes("resourceEntry: 'cases'") &&
   !headerLinksBlock.includes("id: 'path'") &&
   !headerLinksBlock.includes("id: 'tools'"),
-  '受控 V3 顶栏以系统学习、设计工作台与设计知识库组织任务',
+  '顶栏以系统学习、案例研究、原创问题阅读与设计工作台组织任务',
 )
 check(
   learningNodes.nodes?.filter(node => node.track === 'observe').length === 5 &&
@@ -140,7 +141,7 @@ check(
 check(['systematic', 'designer-thinking', 'learn-by-playing', 'small-exercise'].every(id => starts.includes(`id: '${id}'`)), '学习入口覆盖四种起步方式')
 check(['experience', 'decisions', 'interaction', 'state-and-feedback', 'learning-and-execution'].every(id => starts.includes(`id: '${id}'`)), '分析入口覆盖五个普通问题')
 check(starts.includes('从一个问题开始') && starts.includes('搜索全部资料'), '首页保留一个眉题和一个次级搜索入口')
-check(app.includes("route.view === 'resources' && !route.resourceEntry") && app.includes('<ResourceStartHome'), '旧资源首页深链继续可用')
+check(app.includes("route.view === 'resources' && !route.resourceEntry") && app.includes('<OriginalReading language={interfaceLanguage}'), '旧资源首页地址进入自足原创文章，资料详情深链另行保留')
 check(app.includes("route.resourceEntry === 'learn'") && app.includes("route.resourceEntry === 'analyze'"), '学习与分析使用独立深链')
 check(app.includes("route.resourceEntry === 'problems'") && app.includes('<ResourceProblemsStart') && app.includes('<ResourceTopicRoute'), '具体设计问题复用既有六阶段与任务入口')
 check(details.includes('四步完成一次分析') && details.includes('分开观察与推断'), '分析正文提供四步脚手架')
@@ -241,10 +242,11 @@ check(
   !/<img\b/i.test(rulebookAccessibilityTranslation) &&
   rulebookAccessibilityTextAlternativeCount === 3 &&
   !markdownReading.includes('<img') &&
-  !markdownReading.includes('<a ') &&
+  markdownReading.includes('allowSourceLinks = false') &&
+  !reading.includes('allowSourceLinks') &&
   markdownReading.includes('<span className="reading-source-reference"') &&
   markdownReading.includes('<span className="reading-image-reference"'),
-  '第三篇译文不嵌入图片二进制，阅读组件不生成外链或外部图片',
+  '第三篇译文不嵌入图片二进制，默认阅读仍不生成外链或外部图片',
 )
 check(!reading.includes('等待双语人工复核') && reading.includes('本版本不再等待人工双语复核'), '站内内容状态不再设置人工双语复核前置门')
 check(monsoonCase.length > 2000 && monsoonMetadata.contentMode === 'original_case_synthesis' && monsoonMetadata.authorship?.fullTranslationClaimed === false, '未开放许可的设计师文章使用完整原创案例综合')

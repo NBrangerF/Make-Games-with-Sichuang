@@ -11,6 +11,7 @@ import './styles-v5-2-brand.css'
 import './styles-learning-nodes.css'
 import './styles-workbench-v3.css'
 import './styles-course-v3.css'
+import './styles-reading-studio.css'
 
 createRoot(document.getElementById('root')!).render(
   <StrictMode><WorkspaceRuntimeProvider><App /></WorkspaceRuntimeProvider></StrictMode>,

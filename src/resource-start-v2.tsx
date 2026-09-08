@@ -3,7 +3,7 @@ import { PRODUCT_BRAND, PRODUCT_DESCRIPTOR } from './brand'
 import { ResourceHomeBanner } from './resource-home-banner'
 
 export type ResourceStartEntryId = 'learn' | 'analyze' | 'problems'
-export type ResourceStartDestination = ResourceStartEntryId | 'all'
+export type ResourceStartDestination = ResourceStartEntryId | 'all' | 'read'
 
 export type LearningStartEntryId =
   | 'systematic'
@@ -46,7 +46,7 @@ export const LEARNING_START_ENTRIES = [
   {
     id: 'systematic',
     title: '系统性学习',
-    result: '从设计意图到发布，按完整中文学习单元逐步建立整体路径。',
+    result: '从规则、系统与共同体验，沿十二章双语正文理解桌游设计。',
   },
   {
     id: 'designer-thinking',
@@ -134,7 +134,9 @@ export function ResourceStartHome({ onNavigate }: ResourceStartHomeProps) {
         <section className="resource-home-copy" aria-labelledby="resource-home-title">
           <p className="resource-start-kicker">{PRODUCT_DESCRIPTOR}</p>
           <h1 className="resource-start-title" id="resource-home-title">{PRODUCT_BRAND}</h1>
-          <p className="resource-start-lede">把桌游设计的知识，变成下一步能做的事。核心内容可直接在站内阅读中文版本。</p>
+          <p className="resource-start-lede">先跟着两只小动物过一条河，再看清规则为什么这样写。主线文章前后相连，每章都能找到继续阅读的原资料。</p>
+          <a className="resource-start-secondary" href="#course/reading/all/zh-CN">从小动物过河开始读 →</a>
+          <button className="resource-start-secondary" type="button" onClick={() => onNavigate('read')}>阅读中英文原创文章 →</button>
           <h2 className="resource-home-choice-title">从一个问题开始</h2>
           <ResourceChoiceList
             items={RESOURCE_START_ENTRIES}

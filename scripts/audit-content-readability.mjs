@@ -16,6 +16,7 @@ const hanCount = text => (text.match(/[\u3400-\u9fff]/g) ?? []).length
 const jargon = ['证据边界', '参与者语境', '运行证据', '迁移假设', '验证配置', '行动窗口', '信息结构', '治理时间线', '作用路径', '设计命题']
 
 function policyFor(path) {
+  if (path.startsWith('original-articles/')) return '原创双语阅读：直接打开，不以项目或练习提交为前提'
   if (path.startsWith('translations/')) return '授权或来源正文：保留，不做自动改写'
   if (path === 'learning-nodes.json') return '主线权威文案：已按短句规则修订'
   if (['resource-entry-points.json', 'resource-learning-paths.json', 'resource-audience-paths.json', 'guides.json', 'special-guides.json'].includes(path)) return '入口与支线：前台按需出现'
@@ -94,24 +95,24 @@ const excerpt = text => escapeCell(text.replace(/\s+/g, ' ').slice(0, 120) + (te
 const report = `<!-- content-fingerprint: ${fingerprint} -->
 # 全站资料文本可读性审计
 
-审计日期：2026-08-26  
+审计日期：${new Date().toISOString().slice(0, 10)}  
 范围：\`content/\` 下全部 ${files.length} 个 JSON 与 Markdown 文件，不抽样。  
 覆盖：${totalItems.toLocaleString('zh-CN')} 个含中文的字段或段落，约 ${totalHan.toLocaleString('zh-CN')} 个汉字。
 
 ## 结论
 
-- 新手主线不再直接暴露完整课程、术语库或资料索引，而是使用十二个短节点逐步进入。
+- 本报告审计文字长度与抽象词信号，不据此判断网站首页或学习路径是否有效。
 - 机器规则标出了 ${totalFlagged.toLocaleString('zh-CN')} 个可能需要分段或渐进披露的长句、长段与抽象词密集处。这是编辑优先级，不是内容质量评分。
-- 授权译文和来源正文只做入口层改写，不擅自改动正文；完整课程、案例和专题保留为按需支持。
-- 主线权威文本由 \`content/learning-nodes.json\` 承担，并受独立长度、断链与禁用“能力等级”校验。
+- 授权译文和来源正文保留原有使用范围；原创双语文章提供独立阅读入口，课程、案例与工具维持各自路径。
+- 汉字阈值只评估含中文的字段或段落。英文正文参与文件指纹与解析检查，但不能因此声称其可读性已被这些阈值验证。
 
-## 已执行的修订
+## 当前内容组织
 
-1. 用十二个节点替代“先读九个单元”的默认入口。
-2. 每节点只显示一种思维、一个例子、一个动作、一个轻量工具和一个完成结果。
-3. 把“证据边界”等方法语言改成“这一步还不能说明什么”。
-4. 将案例、专题、概念、完整长文和资料入口移到节点后的按需层。
-5. 保留所有旧正文和稳定深链，不让入口改写破坏来源、许可或既有项目记录。
+1. 原创双语文章位于 \`content/original-articles/\`；一个文章身份对应中文和英文，来源摘录与研究证据留在网站外的内部研究目录。
+2. 十二个观察与迭代节点保留独立长度、断链与禁用“能力等级”的校验，不将这份机器审计当作学习效果证据。
+3. 系统课程、设计工作台、案例、专题与资料目录分别提供已有入口；本文不把它们描述为同一条强制阅读流程。
+4. 原创文章的双语对应、出处和独立例子需要单独编辑复核，不能由下方长句统计替代。
+5. 新增阅读内容不改变已有项目记录或来源的使用权限。
 
 ## 全量文件台账
 
