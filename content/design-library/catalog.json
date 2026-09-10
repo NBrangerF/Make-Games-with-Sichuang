@@ -166,7 +166,12 @@
       "caseIds": [
         "six-nimmt"
       ],
-      "relations": [],
+      "relations": [
+        {
+          "targetId": "comparison-reveal-order",
+          "type": "see-also"
+        }
+      ],
       "bggReferences": [
         {
           "id": 2020,
@@ -321,6 +326,10 @@
       "relations": [
         {
           "targetId": "area-control",
+          "type": "see-also"
+        },
+        {
+          "targetId": "comparison-area-network",
           "type": "see-also"
         }
       ],
@@ -663,6 +672,10 @@
         {
           "type": "see-also",
           "targetId": "simultaneous-choice"
+        },
+        {
+          "targetId": "communication-limits",
+          "type": "see-also"
         }
       ],
       "bggReferences": [],
@@ -1373,6 +1386,10 @@
         {
           "targetId": "route-building",
           "type": "see-also"
+        },
+        {
+          "targetId": "comparison-area-network",
+          "type": "see-also"
         }
       ],
       "bggReferences": []
@@ -1431,6 +1448,10 @@
         },
         {
           "targetId": "transportation",
+          "type": "see-also"
+        },
+        {
+          "targetId": "comparison-area-network",
           "type": "see-also"
         }
       ],
@@ -1566,6 +1587,238 @@
           "relation": "related"
         }
       ]
+    },
+    {
+      "id": "hidden-information",
+      "kind": "overview",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "隐藏信息：花钱看见以后，谁还来得及行动？",
+        "en": "Hidden information: after paying to look, who can still act?"
+      },
+      "summary": {
+        "zh-CN": "用三张订单比较不看、付费私看与付费公开，追踪信息受众、承诺时点及剩余的钱。",
+        "en": "Compare blind choices, paid private inspection, and paid public information using three orders, tracking commitment and retained coins."
+      },
+      "aliases": {
+        "zh-CN": [
+          "隐藏信息",
+          "未知信息",
+          "私人信息"
+        ],
+        "en": [
+          "hidden information",
+          "unknown information",
+          "private information"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "信息成本",
+          "知情者",
+          "承诺时点",
+          "期望值"
+        ],
+        "en": [
+          "information cost",
+          "audience",
+          "commitment",
+          "expected value"
+        ]
+      },
+      "question": "uncertainty",
+      "chapterIds": [
+        "reading-information-and-randomness",
+        "reading-choices-and-agency"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "communication-limits",
+          "type": "see-also"
+        },
+        {
+          "targetId": "comparison-reveal-order",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "communication-limits",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "交流限制：只能问一次，“不是这里”究竟告诉了你什么？",
+        "en": "Communication limits: with one question, what does “not here” tell you?"
+      },
+      "summary": {
+        "zh-CN": "跟踪三处目的地的一次问答，再只增加提问上限，区分已经排除、仍须猜测与真正确定。",
+        "en": "Follow one question about three destinations, then raise only the question limit to distinguish elimination, guessing, and certainty."
+      },
+      "aliases": {
+        "zh-CN": [
+          "交流限制",
+          "沟通限制",
+          "有限提示"
+        ],
+        "en": [
+          "communication limits",
+          "restricted communication",
+          "limited clues"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "是非问题",
+          "信息传递",
+          "候选地点",
+          "合作分工"
+        ],
+        "en": [
+          "yes-no questions",
+          "information transfer",
+          "remaining possibilities",
+          "cooperative roles"
+        ]
+      },
+      "question": "uncertainty",
+      "chapterIds": [
+        "reading-information-and-randomness",
+        "reading-cooperation-and-conflict"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "hidden-information",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-compare-two-games",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2893,
+          "name": "Communication Limits",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2893/communication-limits",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "comparison-area-network",
+      "kind": "comparison",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "同样占了三个地点：看区域多数，还是看是否连成一片？",
+        "en": "Owning three locations: count an area majority, or a connected group?"
+      },
+      "summary": {
+        "zh-CN": "固定五个地点和两次放置，只改多数与最大连通部分计分，说明拥有数量与连接关系的差异。",
+        "en": "Hold five locations and two placements fixed, changing only majority versus largest-component scoring to compare ownership counts and connectivity."
+      },
+      "aliases": {
+        "zh-CN": [
+          "区域与网络",
+          "争多数与建网络"
+        ],
+        "en": [
+          "area and network",
+          "majority versus connectivity"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "区域多数",
+          "连通部分",
+          "区域边界",
+          "空间计分"
+        ],
+        "en": [
+          "area majority",
+          "connected component",
+          "district boundaries",
+          "spatial scoring"
+        ]
+      },
+      "question": "space",
+      "chapterIds": [
+        "reading-space-and-opportunity",
+        "reading-combine-mechanisms"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "area-majority",
+          "type": "see-also"
+        },
+        {
+          "targetId": "area-control",
+          "type": "see-also"
+        },
+        {
+          "targetId": "route-building",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "comparison-reveal-order",
+      "kind": "comparison",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "先揭示，还是先承诺：后结算的人就能后决定吗？",
+        "en": "Reveal first or commit first: does resolving later mean choosing later?"
+      },
+      "summary": {
+        "zh-CN": "用两场地的四组选择分开承诺、揭示和结算，比较提前知情与颠倒处理顺序各改变什么。",
+        "en": "Use four venue-choice pairs to separate commitment, revelation, and resolution, comparing earlier information with reversed processing order."
+      },
+      "aliases": {
+        "zh-CN": [
+          "决定与揭示",
+          "同时决定与依次处理"
+        ],
+        "en": [
+          "decision and reveal",
+          "simultaneous choice and ordered resolution"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "承诺",
+          "提前揭示",
+          "后手",
+          "冲突取消"
+        ],
+        "en": [
+          "commitment",
+          "early reveal",
+          "second player",
+          "double booking"
+        ]
+      },
+      "question": "uncertainty",
+      "chapterIds": [
+        "reading-time-and-interaction",
+        "reading-information-and-randomness",
+        "reading-state-and-resolution"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "simultaneous-choice",
+          "type": "see-also"
+        },
+        {
+          "targetId": "hidden-information",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
     }
   ]
 }
