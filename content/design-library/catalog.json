@@ -35,6 +35,10 @@
         {
           "targetId": "comparison-occupy-price",
           "type": "see-also"
+        },
+        {
+          "targetId": "dice-allocation",
+          "type": "see-also"
         }
       ],
       "bggReferences": [
@@ -314,7 +318,12 @@
         "reading-space-and-opportunity"
       ],
       "caseIds": [],
-      "relations": [],
+      "relations": [
+        {
+          "targetId": "area-control",
+          "type": "see-also"
+        }
+      ],
       "bggReferences": [
         {
           "id": 2080,
@@ -791,6 +800,10 @@
         {
           "targetId": "lesson-theme-promises",
           "type": "see-also"
+        },
+        {
+          "targetId": "route-building",
+          "type": "see-also"
         }
       ],
       "bggReferences": [
@@ -1187,6 +1200,10 @@
         {
           "targetId": "lesson-build-a-combination",
           "type": "see-also"
+        },
+        {
+          "targetId": "tile-placement",
+          "type": "see-also"
         }
       ],
       "bggReferences": [
@@ -1305,6 +1322,250 @@
         }
       ],
       "bggReferences": []
+    },
+    {
+      "id": "area-control",
+      "kind": "overview",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "区域控制：人离开以后，这里还算谁的？",
+        "en": "Area control: who owns a place after the piece leaves?"
+      },
+      "summary": {
+        "zh-CN": "比较保留所属标记与必须驻留，分开人物位置、控制权和结束收益。",
+        "en": "Compare retained ownership with required presence, separating piece locations, control, and final rewards."
+      },
+      "aliases": {
+        "zh-CN": [
+          "区域控制",
+          "区域占领"
+        ],
+        "en": [
+          "area control",
+          "territory control"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "所属标记",
+          "驻留",
+          "移动许可",
+          "控制收益"
+        ],
+        "en": [
+          "ownership markers",
+          "presence",
+          "movement permission",
+          "control benefits"
+        ]
+      },
+      "question": "space",
+      "chapterIds": [
+        "reading-space-and-opportunity",
+        "reading-state-and-resolution"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "area-majority",
+          "type": "see-also"
+        },
+        {
+          "targetId": "route-building",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "route-building",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "路线建造：为什么一段连接能服务多个目标？",
+        "en": "Route building: why can one connection serve several goals?"
+      },
+      "summary": {
+        "zh-CN": "用三次建设比较分支与延伸，再只改目标能否共享连接，核算同一网络的不同收益。",
+        "en": "Compare branching and extending over three construction actions, then change whether goals may share links."
+      },
+      "aliases": {
+        "zh-CN": [
+          "路线建造",
+          "路线构建",
+          "网络建造"
+        ],
+        "en": [
+          "route building",
+          "network building"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "节点",
+          "连通",
+          "共享连接",
+          "建设预算"
+        ],
+        "en": [
+          "nodes",
+          "connectivity",
+          "shared links",
+          "construction budget"
+        ]
+      },
+      "question": "space",
+      "chapterIds": [
+        "reading-space-and-opportunity",
+        "reading-combine-mechanisms"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "tile-placement",
+          "type": "see-also"
+        },
+        {
+          "targetId": "area-control",
+          "type": "see-also"
+        },
+        {
+          "targetId": "transportation",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2081,
+          "name": "Network and Route Building",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2081/network-and-route-building",
+          "relation": "same-scope"
+        }
+      ]
+    },
+    {
+      "id": "tile-placement",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "板块放置：这一块接得上，下一块还放得下吗？",
+        "en": "Tile placement: this tile fits, but what about the next one?"
+      },
+      "summary": {
+        "zh-CN": "用两块道路区分合法相邻与连续连接，再改变终点开口，检查现有材料是否足够。",
+        "en": "Use two road tiles to separate legal adjacency from connectivity, then change the destination opening to test the tile supply."
+      },
+      "aliases": {
+        "zh-CN": [
+          "板块放置",
+          "板块铺设",
+          "拼板"
+        ],
+        "en": [
+          "tile placement",
+          "tile laying"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "道路开口",
+          "旋转",
+          "边缘匹配",
+          "空间约束"
+        ],
+        "en": [
+          "road openings",
+          "rotation",
+          "edge matching",
+          "spatial constraints"
+        ]
+      },
+      "question": "space",
+      "chapterIds": [
+        "reading-space-and-opportunity",
+        "reading-rules-and-components"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "route-building",
+          "type": "see-also"
+        },
+        {
+          "targetId": "set-collection",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2002,
+          "name": "Tile Placement",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2002/tile-placement",
+          "relation": "same-scope"
+        }
+      ]
+    },
+    {
+      "id": "dice-allocation",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "骰子分配：最大的点数该单独用，还是留给组合？",
+        "en": "Dice allocation: use the highest value alone, or save it for a combination?"
+      },
+      "summary": {
+        "zh-CN": "分配已知的1、3、5，比较单枚收益与组合条件，再改变所需总和，检查余骰用途。",
+        "en": "Allocate known results of 1, 3, and 5, comparing individual rewards with combination requirements and the uses of leftover dice."
+      },
+      "aliases": {
+        "zh-CN": [
+          "骰子分配",
+          "骰子工作者"
+        ],
+        "en": [
+          "dice allocation",
+          "dice workers"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "点数组合",
+          "准入条件",
+          "余骰",
+          "不可重复使用"
+        ],
+        "en": [
+          "value combinations",
+          "eligibility",
+          "leftover dice",
+          "single use"
+        ]
+      },
+      "question": "actions",
+      "chapterIds": [
+        "reading-core-actions",
+        "reading-information-and-randomness",
+        "reading-choices-and-agency"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "worker-placement",
+          "type": "see-also"
+        },
+        {
+          "targetId": "action-selection",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2935,
+          "name": "Worker Placement with Dice Workers",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2935/worker-placement-with-dice-workers",
+          "relation": "related"
+        }
+      ]
     }
   ]
 }
