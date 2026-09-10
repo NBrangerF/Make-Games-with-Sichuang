@@ -374,6 +374,10 @@
         {
           "targetId": "zone-control",
           "type": "contrast-with"
+        },
+        {
+          "targetId": "comparison-control-majority",
+          "type": "see-also"
         }
       ],
       "bggReferences": [
@@ -554,6 +558,14 @@
         },
         {
           "targetId": "set-collection",
+          "type": "see-also"
+        },
+        {
+          "targetId": "combo-building",
+          "type": "see-also"
+        },
+        {
+          "targetId": "comparison-collection-combo",
           "type": "see-also"
         }
       ],
@@ -1307,6 +1319,14 @@
         {
           "targetId": "tile-placement",
           "type": "see-also"
+        },
+        {
+          "targetId": "combo-building",
+          "type": "contrast-with"
+        },
+        {
+          "targetId": "comparison-collection-combo",
+          "type": "see-also"
         }
       ],
       "bggReferences": [
@@ -1488,6 +1508,10 @@
         {
           "targetId": "zone-control",
           "type": "contrast-with"
+        },
+        {
+          "targetId": "comparison-control-majority",
+          "type": "see-also"
         }
       ],
       "bggReferences": []
@@ -1763,6 +1787,10 @@
         },
         {
           "targetId": "comparison-hidden-deduction",
+          "type": "see-also"
+        },
+        {
+          "targetId": "public-private-scoring",
           "type": "see-also"
         }
       ],
@@ -2139,6 +2167,10 @@
         },
         {
           "targetId": "comparison-income-loan",
+          "type": "see-also"
+        },
+        {
+          "targetId": "catch-up-system",
           "type": "see-also"
         }
       ],
@@ -4375,6 +4407,10 @@
         {
           "targetId": "action-selection",
           "type": "see-also"
+        },
+        {
+          "targetId": "race-end-trigger",
+          "type": "contrast-with"
         }
       ],
       "bggReferences": [
@@ -4639,6 +4675,10 @@
         {
           "targetId": "movement-points",
           "type": "combines-with"
+        },
+        {
+          "targetId": "comparison-control-majority",
+          "type": "see-also"
         }
       ],
       "bggReferences": [
@@ -4916,6 +4956,10 @@
         },
         {
           "targetId": "comparison-income-loan",
+          "type": "see-also"
+        },
+        {
+          "targetId": "race-end-trigger",
           "type": "see-also"
         }
       ],
@@ -5371,6 +5415,398 @@
         {
           "targetId": "loans",
           "type": "contrast-with"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "combo-building",
+      "kind": "pattern",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "组合构筑：资源怎样接着触发下一台设备？",
+        "en": "Combo building: how does one resource trigger the next device?"
+      },
+      "summary": {
+        "zh-CN": "用三次工位行动比较安装顺序，再只改变响应次数，逐步核算费用、事件与资源去向。",
+        "en": "Compare installation order across three workshop actions, then change only the response limit while tracking payments, events, and resources."
+      },
+      "aliases": {
+        "zh-CN": [
+          "组合构筑",
+          "能力组合",
+          "连锁效果"
+        ],
+        "en": [
+          "combo building",
+          "ability combinations",
+          "effect chains"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "触发顺序",
+          "先付费用",
+          "响应次数",
+          "循环控制",
+          "设备安装"
+        ],
+        "en": [
+          "trigger order",
+          "pay before effect",
+          "response limit",
+          "loop control",
+          "device installation"
+        ]
+      },
+      "question": "actions",
+      "chapterIds": [
+        "reading-state-and-resolution",
+        "reading-combine-mechanisms"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "set-collection",
+          "type": "contrast-with"
+        },
+        {
+          "targetId": "lesson-build-a-combination",
+          "type": "see-also"
+        },
+        {
+          "targetId": "comparison-collection-combo",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2956,
+          "name": "Chaining",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2956/chaining",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "public-private-scoring",
+      "kind": "overview",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "公共与个人计分：谁知道目标，谁有资格得分？",
+        "en": "Public and personal scoring: who knows the goal, and who can score it?"
+      },
+      "summary": {
+        "zh-CN": "区分公共抢先奖、人人可得奖励和个人目标，再只提前公开私卡，比较实际分数与可知结果。",
+        "en": "Distinguish first-only public awards, rewards available to everyone, and personal goals; reveal a private card earlier to compare scores and known outcomes."
+      },
+      "aliases": {
+        "zh-CN": [
+          "公共目标",
+          "个人目标",
+          "公开与隐藏计分"
+        ],
+        "en": [
+          "public goals",
+          "personal goals",
+          "visible and hidden scoring"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "目标归属",
+          "信息可见性",
+          "领取资格",
+          "计分时点",
+          "隐藏目标"
+        ],
+        "en": [
+          "goal ownership",
+          "visibility",
+          "eligibility",
+          "scoring time",
+          "hidden goals"
+        ]
+      },
+      "question": "uncertainty",
+      "chapterIds": [
+        "reading-information-and-randomness",
+        "reading-resources-and-endings"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "hidden-information",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2875,
+          "name": "End Game Bonuses",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2875/end-game-bonuses",
+          "relation": "related"
+        },
+        {
+          "id": 2987,
+          "name": "Hidden Victory Points",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2987/hidden-victory-points",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "race-end-trigger",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "竞速与结束触发：先到终点的人，最后一定赢吗？",
+        "en": "Races and end triggers: does reaching the target first mean winning?"
+      },
+      "summary": {
+        "zh-CN": "分开进度与胜利分，比较先冲刺、先积累，以及只改触发后是否补齐当前轮的结果。",
+        "en": "Separate progress from victory points and compare sprinting, building up first, and ending immediately instead of finishing the round."
+      },
+      "aliases": {
+        "zh-CN": [
+          "竞速与结束触发",
+          "达标结束",
+          "终局触发"
+        ],
+        "en": [
+          "race end trigger",
+          "target-triggered ending",
+          "end trigger"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "补齐回合",
+          "立即结束",
+          "先到终点",
+          "并列",
+          "结束时点"
+        ],
+        "en": [
+          "finish the round",
+          "immediate ending",
+          "first to finish",
+          "tied victory",
+          "end timing"
+        ]
+      },
+      "question": "actions",
+      "chapterIds": [
+        "reading-resources-and-endings",
+        "reading-goals-and-pacing",
+        "reading-state-and-resolution"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "time-track",
+          "type": "contrast-with"
+        },
+        {
+          "targetId": "investment",
+          "type": "see-also"
+        },
+        {
+          "targetId": "catch-up-system",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2876,
+          "name": "Race",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2876/race",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "catch-up-system",
+      "kind": "pattern",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "追赶系统：补助落后者，会不会鼓励暂时少得分？",
+        "en": "Catch-up systems: can helping a trailing player reward scoring less for now?"
+      },
+      "summary": {
+        "zh-CN": "只在轮初按分数补助落后者，比较立即得分和暂时跳过，再提高补助检查故意落后的收益。",
+        "en": "Pay the trailing scorer only at round starts, compare scoring with passing, then increase assistance to examine the reward for holding back."
+      },
+      "aliases": {
+        "zh-CN": [
+          "追赶系统",
+          "追赶机制",
+          "落后补助"
+        ],
+        "en": [
+          "catch-up system",
+          "catch the leader",
+          "trailing-player assistance"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "故意落后",
+          "补助资格",
+          "轮初检查",
+          "资源门槛",
+          "滚雪球"
+        ],
+        "en": [
+          "sandbagging",
+          "subsidy eligibility",
+          "round-start check",
+          "affordability threshold",
+          "snowballing"
+        ]
+      },
+      "question": "interaction",
+      "chapterIds": [
+        "reading-cooperation-and-conflict",
+        "reading-design-an-economy",
+        "reading-goals-and-pacing"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "income-production",
+          "type": "see-also"
+        },
+        {
+          "targetId": "race-end-trigger",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2887,
+          "name": "Catch the Leader",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2887/catch-the-leader",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "comparison-collection-combo",
+      "kind": "comparison",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "凑齐一套之后：得分和效果怎样接在一起",
+        "en": "After completing a set: connecting points and effects"
+      },
+      "summary": {
+        "zh-CN": "固定邮票套组的4分，只加首次完成时拿票券的效果，区分估值、自动触发与后续动作。",
+        "en": "Keep a stamp set worth 4 points and add only a ticket on first completion, separating valuation, automatic triggers, and later actions."
+      },
+      "aliases": {
+        "zh-CN": [
+          "组合计分与效果触发",
+          "集合与组合"
+        ],
+        "en": [
+          "set scoring and triggered effects",
+          "collection and combos"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "套组",
+          "触发次数",
+          "费用门槛",
+          "送件",
+          "效果链"
+        ],
+        "en": [
+          "set valuation",
+          "trigger limits",
+          "cost threshold",
+          "delivery",
+          "effect chain"
+        ]
+      },
+      "question": "process",
+      "chapterIds": [
+        "reading-state-and-resolution",
+        "reading-combine-mechanisms"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "set-collection",
+          "type": "see-also"
+        },
+        {
+          "targetId": "combo-building",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-build-a-combination",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "comparison-control-majority",
+      "kind": "comparison",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "区域里有人，就知道谁控制了吗？",
+        "en": "Does presence tell you who controls an area?"
+      },
+      "summary": {
+        "zh-CN": "同一棋盘只改记名与人数的收益规则，再独立比较邻格停步，分清归属、共存、收益和控制区。",
+        "en": "Change only registration versus piece-count rewards on the same board, then separately compare stopping beside a guard."
+      },
+      "aliases": {
+        "zh-CN": [
+          "占有、多数与控制区",
+          "归属与收益"
+        ],
+        "en": [
+          "control, majority, and zones of control",
+          "ownership and rewards"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "记名标记",
+          "相对多数",
+          "共存",
+          "平手",
+          "邻格停步"
+        ],
+        "en": [
+          "registration marker",
+          "plurality",
+          "coexistence",
+          "ties",
+          "adjacent stop"
+        ]
+      },
+      "question": "space",
+      "chapterIds": [
+        "reading-space-and-opportunity",
+        "reading-state-and-resolution"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "area-control",
+          "type": "see-also"
+        },
+        {
+          "targetId": "area-majority",
+          "type": "see-also"
+        },
+        {
+          "targetId": "zone-control",
+          "type": "see-also"
         }
       ],
       "bggReferences": []

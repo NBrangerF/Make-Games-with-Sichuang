@@ -1,14 +1,14 @@
-<!-- content-fingerprint: bb3751326104b95077f3ea10b1cfb82c784c6c203c4e40e430ad0d725d49e2d5 -->
+<!-- content-fingerprint: f8f93707cb6d91149f4c52512ca477a880f71557c2aa2237e105760fe8892ec9 -->
 # 全站资料文本可读性审计
 
 审计日期：2026-09-10
-范围：`content/` 下全部 395 个 JSON 与 Markdown 文件，不抽样。
-覆盖：20,187 个含中文的字段或段落，约 618,288 个汉字。
+范围：`content/` 下全部 407 个 JSON 与 Markdown 文件，不抽样。
+覆盖：20,442 个含中文的字段或段落，约 629,546 个汉字。
 
 ## 结论
 
 - 本报告审计文字长度与抽象词信号，不据此判断网站首页或学习路径是否有效。
-- 机器规则标出了 564 个可能需要分段或渐进披露的长句、长段与抽象词密集处。这是编辑优先级，不是内容质量评分。
+- 机器规则标出了 592 个可能需要分段或渐进披露的长句、长段与抽象词密集处。这是编辑优先级，不是内容质量评分。
 - 授权译文和来源正文保留原有使用范围；原创双语文章提供独立阅读入口，课程、案例与工具维持各自路径。
 - 汉字阈值只评估含中文的字段或段落。英文正文参与文件指纹与解析检查，但不能因此声称其可读性已被这些阈值验证。
 
@@ -105,11 +105,15 @@
 | `design-library/bag-building/zh-CN.md` | 33 | 1736 | 4 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/care-schedule/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/care-schedule/zh-CN.md` | 23 | 1017 | 3 | 支持资料：通过节点或资料库按需进入 |
-| `design-library/catalog.json` | 475 | 5410 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/catalog.json` | 526 | 5899 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/catch-up-system/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/catch-up-system/zh-CN.md` | 36 | 1830 | 4 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/city-building/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/city-building/zh-CN.md` | 26 | 1095 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/city-planning/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/city-planning/zh-CN.md` | 23 | 983 | 2 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/combo-building/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/combo-building/zh-CN.md` | 35 | 1787 | 4 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/communication-limits/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/communication-limits/zh-CN.md` | 26 | 1264 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/community-kitchen/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
@@ -118,6 +122,10 @@
 | `design-library/comparison-area-network/zh-CN.md` | 29 | 1234 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/comparison-bid-payment/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/comparison-bid-payment/zh-CN.md` | 24 | 999 | 1 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/comparison-collection-combo/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/comparison-collection-combo/zh-CN.md` | 35 | 1805 | 1 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/comparison-control-majority/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/comparison-control-majority/zh-CN.md` | 36 | 1866 | 6 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/comparison-deck-bag/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/comparison-deck-bag/zh-CN.md` | 35 | 1528 | 3 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/comparison-hidden-deduction/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
@@ -206,8 +214,12 @@
 | `design-library/mystery/zh-CN.md` | 28 | 1063 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/negotiation-commitments/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/negotiation-commitments/zh-CN.md` | 31 | 1800 | 3 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/public-private-scoring/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/public-private-scoring/zh-CN.md` | 33 | 1823 | 6 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/push-your-luck/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/push-your-luck/zh-CN.md` | 35 | 1542 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/race-end-trigger/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/race-end-trigger/zh-CN.md` | 29 | 1658 | 7 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/repair-cafe/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/repair-cafe/zh-CN.md` | 23 | 946 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/reroll-locking/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
