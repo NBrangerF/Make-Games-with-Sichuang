@@ -4,7 +4,7 @@
 
 ## 当前状态
 
-- 当前扩展：96 篇机制/主题/教学/比较文章与 18 款多角度案例已发布；最终内容与来源验收进行中。
+- 当前扩展：96 篇机制/主题/教学/比较文章与 18 款多角度案例已完成；[内容与实现验收](docs/handovers/2026-09-11-library-acceptance.md)已收口。
 - 阅读主线：28 章与 13 篇选读，一个内容版本、中文和英文。
 - 正式网站：[落桌](https://luozhuo-tabletop-design.vercel.app/)
 - 长期目标：形成可学习、可操作、可持续维护的桌游设计资源网站
@@ -36,7 +36,7 @@ pnpm dev
 
 章程所需的两轮中文新手形成性测试现有统一主持包、空白会话、虚构示例、schema 与 25 项守卫，可运行 `pnpm qa:beginner-campaign`。它要求 Round A 先找阻断并单变量修订，Round B 再用至少 5 名新手验证定位、其中至少 4 名完成意图到测试记录与导出闭环。当前真实参与者会话仍为 0；机器生成的合格样本只测试校验器，不计入章程证据。
 
-公开试用现有平台无关发布包：`#privacy` 数据说明、二次本地清理、显式 Vite base、试用期 `noindex`、静态主机/Vercel 安全响应头、缓存规则、Go/No-Go、烟测与回滚契约。`pnpm qa:release` 检查仓库准备度；真实部署还必须提供托管方、隐私联系人和构建 ID，并通过 `pnpm qa:release:strict`。Vercel 正式站已部署；部署边界见[公开试用发布契约](docs/product/PUBLIC_TRIAL_RELEASE.md)，当前发布核查方法见[内容维护指南](docs/handovers/2026-09-11-library-maintenance.md)。
+公开试用现有平台无关发布包：`#privacy` 数据说明、二次本地清理、显式 Vite base、试用期 `noindex`、静态主机/Vercel 安全响应头、缓存规则、Go/No-Go、烟测与回滚契约。`pnpm qa:release` 检查仓库准备度；用于公开招募的试用部署还必须提供托管方、隐私联系人和构建 ID，并通过 `pnpm qa:release:strict`。Vercel 现有部署保持内部学习模式，本轮内容扩展未开启公开招募。部署边界见[公开试用发布契约](docs/product/PUBLIC_TRIAL_RELEASE.md)，当前发布核查方法见[内容维护指南](docs/handovers/2026-09-11-library-maintenance.md)。
 
 键盘与语义硬门现有 WCAG 2.2 一手依据、K1–K8 键盘任务、S1–S8 屏幕阅读器任务和 18 项构建守卫。首轮 Browser/IAB 发现并修复 skip-link 与 hash 路由冲突，同时移除工具内四个嵌套主地标；`pnpm qa:a11y-contract` 已进入内容门。修后焦点、抽屉焦点圈定、VoiceOver/NVDA 和真实残障玩家任务仍未完成，因此不能声称 WCAG 合规或“无障碍通过”。
 

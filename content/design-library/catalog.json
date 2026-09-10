@@ -403,12 +403,10 @@
       },
       "aliases": {
         "zh-CN": [
-          "机制",
-          "轮抽"
+          "机制"
         ],
         "en": [
-          "mechanism",
-          "drafting"
+          "mechanism"
         ]
       },
       "searchTerms": {
@@ -457,12 +455,10 @@
       },
       "aliases": {
         "zh-CN": [
-          "选机制",
-          "拍卖"
+          "选机制"
         ],
         "en": [
-          "choose mechanisms",
-          "auction"
+          "choose mechanisms"
         ]
       },
       "searchTerms": {
@@ -517,12 +513,10 @@
       },
       "aliases": {
         "zh-CN": [
-          "机制组合",
-          "轮抽"
+          "机制组合"
         ],
         "en": [
-          "mechanism combinations",
-          "drafting"
+          "mechanism combinations"
         ]
       },
       "searchTerms": {
@@ -585,14 +579,10 @@
       },
       "aliases": {
         "zh-CN": [
-          "主题转规则",
-          "题材关系",
-          "动作前提"
+          "主题转规则"
         ],
         "en": [
-          "theme to rules",
-          "prerequisites",
-          "action scope"
+          "theme to rules"
         ]
       },
       "searchTerms": {
@@ -650,14 +640,10 @@
       },
       "aliases": {
         "zh-CN": [
-          "主题预期",
-          "状态呈现",
-          "名称与效果"
+          "主题预期"
         ],
         "en": [
-          "theme expectations",
-          "state presentation",
-          "names and effects"
+          "theme expectations"
         ]
       },
       "searchTerms": {
@@ -706,12 +692,10 @@
       "aliases": {
         "zh-CN": [
           "跨游戏比较",
-          "比较两款游戏",
-          "决定前的信息"
+          "比较两款游戏"
         ],
         "en": [
           "compare two games",
-          "decision-time information",
           "cross-game comparison"
         ]
       },
@@ -745,7 +729,8 @@
           "提示",
           "同时选择",
           "信息",
-          "比较"
+          "比较",
+          "决定前的信息"
         ],
         "en": [
           "6 nimmt",
@@ -753,7 +738,8 @@
           "clues",
           "simultaneous choice",
           "information",
-          "comparison"
+          "comparison",
+          "decision-time information"
         ]
       }
     },
@@ -771,14 +757,10 @@
       },
       "aliases": {
         "zh-CN": [
-          "动物",
-          "动物观察",
-          "玩家视角"
+          "动物"
         ],
         "en": [
-          "animals",
-          "animal observation",
-          "player perspective"
+          "animals"
         ]
       },
       "searchTerms": {
@@ -836,13 +818,10 @@
       "aliases": {
         "zh-CN": [
           "运输",
-          "交通",
-          "配送调度"
+          "交通"
         ],
         "en": [
-          "transportation",
-          "delivery",
-          "dispatching"
+          "transportation"
         ]
       },
       "searchTerms": {
@@ -903,13 +882,10 @@
       },
       "aliases": {
         "zh-CN": [
-          "行动选择",
-          "行动提供",
-          "行动资格"
+          "行动选择"
         ],
         "en": [
-          "action selection",
-          "action availability"
+          "action selection"
         ]
       },
       "searchTerms": {
@@ -917,13 +893,16 @@
           "行动卡",
           "收回",
           "行动池",
-          "前置条件"
+          "前置条件",
+          "行动提供",
+          "行动资格"
         ],
         "en": [
           "action cards",
           "retrieval",
           "shared action pool",
-          "prerequisites"
+          "prerequisites",
+          "action availability"
         ]
       },
       "question": "actions",
@@ -1056,14 +1035,10 @@
       },
       "aliases": {
         "zh-CN": [
-          "手牌管理",
-          "留牌",
-          "补牌"
+          "手牌管理"
         ],
         "en": [
-          "hand management",
-          "card retention",
-          "hand replenishment"
+          "hand management"
         ]
       },
       "searchTerms": {
@@ -1072,14 +1047,18 @@
           "万能牌",
           "补牌时点",
           "弃牌",
-          "专用牌"
+          "专用牌",
+          "留牌",
+          "补牌"
         ],
         "en": [
           "hand limit",
           "flexible cards",
           "replenishment timing",
           "discard",
-          "specialist cards"
+          "specialist cards",
+          "card retention",
+          "hand replenishment"
         ]
       },
       "question": "cards",
@@ -1137,15 +1116,10 @@
       "aliases": {
         "zh-CN": [
           "轮抽",
-          "轮选",
-          "公开轮抽",
-          "选后传递"
+          "轮选"
         ],
         "en": [
-          "drafting",
-          "open drafting",
-          "pick and pass",
-          "snake draft"
+          "drafting"
         ]
       },
       "searchTerms": {
@@ -1154,14 +1128,19 @@
           "机会传递",
           "取选顺序",
           "蛇形顺序",
-          "传递手牌"
+          "传递手牌",
+          "公开轮抽",
+          "选后传递"
         ],
         "en": [
           "shared pool",
           "selection order",
           "snake order",
           "passed hands",
-          "denial"
+          "denial",
+          "open drafting",
+          "pick and pass",
+          "snake draft"
         ]
       },
       "question": "cards",
@@ -1217,12 +1196,10 @@
       "aliases": {
         "zh-CN": [
           "袋中构成",
-          "袋子构筑",
-          "抽取池成长"
+          "袋子构筑"
         ],
         "en": [
-          "bag building",
-          "pool building"
+          "bag building"
         ]
       },
       "searchTerms": {
@@ -1231,14 +1208,16 @@
           "回袋",
           "永久移出",
           "条件概率",
-          "组合人手"
+          "组合人手",
+          "抽取池成长"
         ],
         "en": [
           "without replacement",
           "return timing",
           "permanent removal",
           "conditional probability",
-          "crew combinations"
+          "crew combinations",
+          "pool building"
         ]
       },
       "question": "cards",
@@ -1414,12 +1393,10 @@
       },
       "aliases": {
         "zh-CN": [
-          "牌库与袋",
-          "放回"
+          "牌库与袋"
         ],
         "en": [
-          "deck and bag",
-          "replacement"
+          "deck and bag"
         ]
       },
       "searchTerms": {
@@ -1679,12 +1656,10 @@
       },
       "aliases": {
         "zh-CN": [
-          "骰子分配",
-          "骰子工作者"
+          "骰子分配"
         ],
         "en": [
-          "dice allocation",
-          "dice workers"
+          "dice allocation"
         ]
       },
       "searchTerms": {
@@ -1692,13 +1667,15 @@
           "点数组合",
           "准入条件",
           "余骰",
-          "不可重复使用"
+          "不可重复使用",
+          "骰子工作者"
         ],
         "en": [
           "value combinations",
           "eligibility",
           "leftover dice",
-          "single use"
+          "single use",
+          "dice workers"
         ]
       },
       "question": "actions",
@@ -1745,14 +1722,10 @@
       },
       "aliases": {
         "zh-CN": [
-          "隐藏信息",
-          "未知信息",
-          "私人信息"
+          "隐藏信息"
         ],
         "en": [
-          "hidden information",
-          "unknown information",
-          "private information"
+          "hidden information"
         ]
       },
       "searchTerms": {
@@ -1760,13 +1733,17 @@
           "信息成本",
           "知情者",
           "承诺时点",
-          "期望值"
+          "期望值",
+          "未知信息",
+          "私人信息"
         ],
         "en": [
           "information cost",
           "audience",
           "commitment",
-          "expected value"
+          "expected value",
+          "unknown information",
+          "private information"
         ]
       },
       "question": "uncertainty",
@@ -1839,13 +1816,11 @@
       "aliases": {
         "zh-CN": [
           "交流限制",
-          "沟通限制",
-          "有限提示"
+          "沟通限制"
         ],
         "en": [
           "communication limits",
-          "restricted communication",
-          "limited clues"
+          "restricted communication"
         ]
       },
       "searchTerms": {
@@ -1853,13 +1828,15 @@
           "是非问题",
           "信息传递",
           "候选地点",
-          "合作分工"
+          "合作分工",
+          "有限提示"
         ],
         "en": [
           "yes-no questions",
           "information transfer",
           "remaining possibilities",
-          "cooperative roles"
+          "cooperative roles",
+          "limited clues"
         ]
       },
       "question": "uncertainty",
@@ -2437,12 +2414,8 @@
         "en": "Combine risky collection with known-result allocation, changing only failure losses and comparing outcomes and means."
       },
       "aliases": {
-        "zh-CN": [
-          "继续冒险"
-        ],
-        "en": [
-          "push your luck"
-        ]
+        "zh-CN": [],
+        "en": []
       },
       "searchTerms": {
         "zh-CN": [
@@ -2888,15 +2861,11 @@
       "aliases": {
         "zh-CN": [
           "环境",
-          "生态",
-          "再生",
-          "共同资源"
+          "生态"
         ],
         "en": [
           "environment",
-          "ecology",
-          "recovery",
-          "shared resources"
+          "ecology"
         ]
       },
       "searchTerms": {
@@ -2957,17 +2926,10 @@
       "aliases": {
         "zh-CN": [
           "农业",
-          "农场",
-          "播种",
-          "收获",
-          "成熟"
+          "农场"
         ],
         "en": [
-          "farming",
-          "crops",
-          "sowing",
-          "harvest",
-          "maturity"
+          "farming"
         ]
       },
       "searchTerms": {
@@ -3028,16 +2990,10 @@
       },
       "aliases": {
         "zh-CN": [
-          "城市建设",
-          "城市",
-          "邻接",
-          "公共服务"
+          "城市建设"
         ],
         "en": [
-          "city building",
-          "city",
-          "adjacency",
-          "services"
+          "city building"
         ]
       },
       "searchTerms": {
@@ -3095,17 +3051,11 @@
       "aliases": {
         "zh-CN": [
           "工业",
-          "制造",
-          "生产链",
-          "改装",
-          "能源"
+          "制造"
         ],
         "en": [
           "industry",
-          "manufacturing",
-          "production chain",
-          "upgrade",
-          "energy"
+          "manufacturing"
         ]
       },
       "searchTerms": {
@@ -3165,17 +3115,11 @@
       "aliases": {
         "zh-CN": [
           "探索",
-          "考察",
-          "发现",
-          "准备",
-          "未知地点"
+          "考察"
         ],
         "en": [
           "exploration",
-          "survey",
-          "discovery",
-          "preparation",
-          "unknown locations"
+          "survey"
         ]
       },
       "searchTerms": {
@@ -3234,16 +3178,10 @@
       },
       "aliases": {
         "zh-CN": [
-          "奇幻",
-          "魔法",
-          "瞬移",
-          "能力限制"
+          "奇幻"
         ],
         "en": [
-          "fantasy",
-          "magic",
-          "teleport",
-          "ability constraints"
+          "fantasy"
         ]
       },
       "searchTerms": {
@@ -3303,18 +3241,10 @@
       },
       "aliases": {
         "zh-CN": [
-          "科幻",
-          "遥控",
-          "延迟",
-          "指令",
-          "探测器"
+          "科幻"
         ],
         "en": [
-          "science fiction",
-          "remote control",
-          "latency",
-          "commands",
-          "probe"
+          "science fiction"
         ]
       },
       "searchTerms": {
@@ -3375,18 +3305,10 @@
       },
       "aliases": {
         "zh-CN": [
-          "中世纪",
-          "集市",
-          "身份",
-          "准入",
-          "权限"
+          "中世纪"
         ],
         "en": [
-          "medieval",
-          "market",
-          "status",
-          "access",
-          "permission"
+          "medieval"
         ]
       },
       "searchTerms": {
@@ -3448,17 +3370,11 @@
       "aliases": {
         "zh-CN": [
           "医疗",
-          "公共健康",
-          "咨询",
-          "翻译支持",
-          "服务可达性"
+          "公共健康"
         ],
         "en": [
           "medical",
-          "public health",
-          "consultation",
-          "interpretation",
-          "service access"
+          "public health"
         ]
       },
       "searchTerms": {
@@ -3518,18 +3434,10 @@
       "aliases": {
         "zh-CN": [
           "悬疑",
-          "谜案",
-          "推理",
-          "线索",
-          "排除",
-          "钥匙"
+          "谜案"
         ],
         "en": [
-          "mystery",
-          "deduction",
-          "clues",
-          "elimination",
-          "key"
+          "mystery"
         ]
       },
       "searchTerms": {
@@ -3589,16 +3497,10 @@
       },
       "aliases": {
         "zh-CN": [
-          "考察",
-          "队友信息",
-          "回程",
-          "补给"
+          "考察"
         ],
         "en": [
-          "expedition",
-          "teammate information",
-          "return trip",
-          "supplies"
+          "expedition"
         ]
       },
       "searchTerms": {
@@ -3648,18 +3550,10 @@
       },
       "aliases": {
         "zh-CN": [
-          "社区厨房",
-          "备料",
-          "烹饪",
-          "分发",
-          "分工"
+          "社区厨房"
         ],
         "en": [
-          "community kitchen",
-          "preparation",
-          "cooking",
-          "distribution",
-          "labor"
+          "community kitchen"
         ]
       },
       "searchTerms": {
@@ -3711,18 +3605,10 @@
       },
       "aliases": {
         "zh-CN": [
-          "档案馆",
-          "保存",
-          "资料关联",
-          "证据链",
-          "查询"
+          "档案馆"
         ],
         "en": [
-          "archive",
-          "preservation",
-          "record links",
-          "evidence chain",
-          "queries"
+          "archive"
         ]
       },
       "searchTerms": {
@@ -3774,15 +3660,11 @@
       "aliases": {
         "zh-CN": [
           "共同水域",
-          "生态变化",
-          "延迟反馈",
-          "待结算负荷"
+          "生态变化"
         ],
         "en": [
           "shared waters",
-          "ecosystem",
-          "delayed feedback",
-          "pending effects"
+          "ecosystem"
         ]
       },
       "searchTerms": {
@@ -3833,17 +3715,11 @@
       "aliases": {
         "zh-CN": [
           "老屋",
-          "修复",
-          "施工",
-          "持续可用",
-          "工序"
+          "修复"
         ],
         "en": [
           "restoration",
-          "occupied building",
-          "construction",
-          "availability",
-          "work stages"
+          "occupied building"
         ]
       },
       "searchTerms": {
@@ -3896,17 +3772,11 @@
       "aliases": {
         "zh-CN": [
           "街区节日",
-          "庆典",
-          "宣传",
-          "公共劳动",
-          "收尾"
+          "庆典"
         ],
         "en": [
           "festival",
-          "community event",
-          "promotion",
-          "shared labor",
-          "wrap-up"
+          "community event"
         ]
       },
       "searchTerms": {
@@ -3958,18 +3828,10 @@
       },
       "aliases": {
         "zh-CN": [
-          "救援网络",
-          "节点",
-          "交接",
-          "通信",
-          "物资"
+          "救援网络"
         ],
         "en": [
-          "rescue network",
-          "nodes",
-          "handoff",
-          "communication",
-          "supplies"
+          "rescue network"
         ]
       },
       "searchTerms": {
@@ -4022,17 +3884,11 @@
       "aliases": {
         "zh-CN": [
           "学徒",
-          "工坊",
-          "示范",
-          "技能",
-          "本人实践"
+          "工坊"
         ],
         "en": [
           "apprenticeship",
-          "workshop",
-          "demonstration",
-          "skills",
-          "personal practice"
+          "workshop"
         ]
       },
       "searchTerms": {
@@ -4085,17 +3941,11 @@
       "aliases": {
         "zh-CN": [
           "城市空间",
-          "规划",
-          "路径",
-          "休息",
-          "多方需求"
+          "规划"
         ],
         "en": [
           "urban space",
-          "planning",
-          "paths",
-          "rest",
-          "multiple needs"
+          "planning"
         ]
       },
       "searchTerms": {
@@ -4148,19 +3998,10 @@
       "aliases": {
         "zh-CN": [
           "共同用水",
-          "上游",
-          "下游",
-          "配额",
-          "治理",
-          "承诺"
+          "治理"
         ],
         "en": [
-          "water governance",
-          "upstream",
-          "downstream",
-          "allocation",
-          "caps",
-          "promises"
+          "water governance"
         ]
       },
       "searchTerms": {
@@ -4218,18 +4059,10 @@
       },
       "aliases": {
         "zh-CN": [
-          "照应安排",
-          "时间",
-          "同意",
-          "接手",
-          "负担分配"
+          "照应安排"
         ],
         "en": [
-          "care schedule",
-          "availability",
-          "consent",
-          "handoff",
-          "workload"
+          "care schedule"
         ]
       },
       "searchTerms": {
@@ -4281,18 +4114,10 @@
       },
       "aliases": {
         "zh-CN": [
-          "社区修理",
-          "诊断",
-          "症状",
-          "失败反馈",
-          "材料"
+          "社区修理"
         ],
         "en": [
-          "repair café",
-          "diagnosis",
-          "symptoms",
-          "failure feedback",
-          "materials"
+          "repair café"
         ]
       },
       "searchTerms": {
@@ -4487,8 +4312,7 @@
         ],
         "en": [
           "multi-use cards",
-          "multipurpose cards",
-          "cards as money"
+          "multipurpose cards"
         ]
       },
       "searchTerms": {
@@ -4504,7 +4328,8 @@
           "funding",
           "construction",
           "opportunity cost",
-          "discard"
+          "discard",
+          "cards as money"
         ]
       },
       "chapterIds": [
@@ -4550,13 +4375,11 @@
       "aliases": {
         "zh-CN": [
           "吃墩",
-          "墩牌",
-          "跟色限制"
+          "墩牌"
         ],
         "en": [
           "trick-taking",
-          "trick taking",
-          "follow suit"
+          "trick taking"
         ]
       },
       "searchTerms": {
@@ -4565,14 +4388,16 @@
           "王牌",
           "扣分",
           "胜墩",
-          "并列获胜"
+          "并列获胜",
+          "跟色限制"
         ],
         "en": [
           "lead",
           "trump",
           "penalties",
           "trick winner",
-          "shared victory"
+          "shared victory",
+          "follow suit"
         ]
       },
       "chapterIds": [
@@ -4679,8 +4504,7 @@
       "aliases": {
         "zh-CN": [
           "控制区",
-          "ZOC",
-          "邻近影响"
+          "ZOC"
         ],
         "en": [
           "zone of control",
@@ -4692,7 +4516,8 @@
           "强制停止",
           "软控制区",
           "邻接",
-          "通行代价"
+          "通行代价",
+          "邻近影响"
         ],
         "en": [
           "forced stop",
@@ -4957,12 +4782,10 @@
       "aliases": {
         "zh-CN": [
           "投资",
-          "延迟回报",
           "先投入后回报"
         ],
         "en": [
           "investment pattern",
-          "delayed return",
           "up-front commitment"
         ]
       },
@@ -4972,14 +4795,16 @@
           "兑付",
           "结束时点",
           "等待",
-          "回报条件"
+          "回报条件",
+          "延迟回报"
         ],
         "en": [
           "opportunity cost",
           "redemption",
           "ending time",
           "waiting",
-          "return conditions"
+          "return conditions",
+          "delayed return"
         ]
       },
       "question": "economy",
@@ -5218,13 +5043,11 @@
       "aliases": {
         "zh-CN": [
           "递增竞价",
-          "递增拍卖",
-          "轮流加价"
+          "递增拍卖"
         ],
         "en": [
           "ascending auction",
-          "ascending bidding",
-          "turn-order bidding"
+          "ascending bidding"
         ]
       },
       "searchTerms": {
@@ -5234,7 +5057,8 @@
           "跳价",
           "永久退出",
           "报价顺序",
-          "最终付款"
+          "最终付款",
+          "轮流加价"
         ],
         "en": [
           "public bids",
@@ -5242,7 +5066,8 @@
           "jump bid",
           "permanent withdrawal",
           "bid order",
-          "final payment"
+          "final payment",
+          "turn-order bidding"
         ]
       },
       "question": "economy",
@@ -5289,8 +5114,7 @@
         ],
         "en": [
           "second-price auction",
-          "second-bid auction",
-          "Vickrey auction"
+          "second-bid auction"
         ]
       },
       "searchTerms": {
@@ -5306,7 +5130,8 @@
           "tied highest bids",
           "activation cost",
           "valuation",
-          "budget"
+          "budget",
+          "Vickrey auction"
         ]
       },
       "question": "economy",
@@ -5350,13 +5175,10 @@
       "aliases": {
         "zh-CN": [
           "协商与承诺",
-          "谈判承诺",
-          "担保范围"
+          "谈判承诺"
         ],
         "en": [
-          "negotiation and commitments",
-          "action promises",
-          "bond scope"
+          "negotiation and commitments"
         ]
       },
       "searchTerms": {
@@ -5366,7 +5188,8 @@
           "违约",
           "押金",
           "担保",
-          "声誉"
+          "声誉",
+          "担保范围"
         ],
         "en": [
           "three-party agreement",
@@ -5374,7 +5197,9 @@
           "breach",
           "deposit",
           "security",
-          "reputation"
+          "reputation",
+          "action promises",
+          "bond scope"
         ]
       },
       "question": "interaction",
@@ -5421,12 +5246,10 @@
       },
       "aliases": {
         "zh-CN": [
-          "现货交换与未来承诺",
-          "交付时点"
+          "现货交换与未来承诺"
         ],
         "en": [
-          "immediate trade and future promises",
-          "delivery timing"
+          "immediate trade and future promises"
         ]
       },
       "searchTerms": {
@@ -5435,14 +5258,16 @@
           "预留材料",
           "缺货",
           "交付失败",
-          "协商"
+          "协商",
+          "交付时点"
         ],
         "en": [
           "fulfillment",
           "reserved goods",
           "shortfall",
           "non-delivery",
-          "negotiation"
+          "negotiation",
+          "delivery timing"
         ]
       },
       "question": "economy",
@@ -5550,13 +5375,9 @@
       },
       "aliases": {
         "zh-CN": [
-          "公共目标",
-          "个人目标",
           "公开与隐藏计分"
         ],
         "en": [
-          "public goals",
-          "personal goals",
           "visible and hidden scoring"
         ]
       },
@@ -5566,14 +5387,18 @@
           "信息可见性",
           "领取资格",
           "计分时点",
-          "隐藏目标"
+          "隐藏目标",
+          "公共目标",
+          "个人目标"
         ],
         "en": [
           "goal ownership",
           "visibility",
           "eligibility",
           "scoring time",
-          "hidden goals"
+          "hidden goals",
+          "public goals",
+          "personal goals"
         ]
       },
       "question": "uncertainty",
@@ -5696,13 +5521,10 @@
       "aliases": {
         "zh-CN": [
           "追赶系统",
-          "追赶机制",
-          "落后补助"
+          "追赶机制"
         ],
         "en": [
-          "catch-up system",
-          "catch the leader",
-          "trailing-player assistance"
+          "catch-up system"
         ]
       },
       "searchTerms": {
@@ -5711,14 +5533,17 @@
           "补助资格",
           "轮初检查",
           "资源门槛",
-          "滚雪球"
+          "滚雪球",
+          "落后补助"
         ],
         "en": [
           "sandbagging",
           "subsidy eligibility",
           "round-start check",
           "affordability threshold",
-          "snowballing"
+          "snowballing",
+          "catch the leader",
+          "trailing-player assistance"
         ]
       },
       "question": "interaction",
@@ -5882,12 +5707,10 @@
       "aliases": {
         "zh-CN": [
           "玩家淘汰",
-          "退出参与",
           "出局"
         ],
         "en": [
           "player elimination",
-          "leaving play",
           "elimination"
         ]
       },
@@ -5897,14 +5720,16 @@
           "参赛资格",
           "旁观等待",
           "复归",
-          "最后名额"
+          "最后名额",
+          "退出参与"
         ],
         "en": [
           "piece removal",
           "eligibility",
           "waiting",
           "return to play",
-          "last action slot"
+          "last action slot",
+          "leaving play"
         ]
       },
       "question": "interaction",
@@ -5943,12 +5768,10 @@
       "aliases": {
         "zh-CN": [
           "非对称能力",
-          "玩家能力",
           "专属能力"
         ],
         "en": [
           "asymmetric powers",
-          "player powers",
           "exclusive abilities"
         ]
       },
@@ -5958,14 +5781,16 @@
           "初始资源",
           "角色差异",
           "费用减免",
-          "次数限制"
+          "次数限制",
+          "玩家能力"
         ],
         "en": [
           "action exceptions",
           "starting resources",
           "role differences",
           "fee waiver",
-          "use limit"
+          "use limit",
+          "player powers"
         ]
       },
       "question": "actions",
@@ -6227,15 +6052,11 @@
       "aliases": {
         "zh-CN": [
           "场景",
-          "战役",
-          "跨局状态",
-          "任务结构"
+          "战役"
         ],
         "en": [
           "scenarios",
-          "campaigns",
-          "state across games",
-          "mission structure"
+          "campaigns"
         ]
       },
       "searchTerms": {
@@ -6245,7 +6066,9 @@
           "失败推进",
           "跨局资源",
           "重开",
-          "传承制区别"
+          "传承制区别",
+          "跨局状态",
+          "任务结构"
         ],
         "en": [
           "two-site repairs",
@@ -6253,7 +6076,9 @@
           "failure advancement",
           "resources across games",
           "restart",
-          "legacy distinction"
+          "legacy distinction",
+          "state across games",
+          "mission structure"
         ]
       },
       "question": "process",

@@ -1,9 +1,9 @@
-<!-- content-fingerprint: c614ef22c41be3c2119fe9fca1defdfdb784c75145b95ddb915e6e6bc172f5f8 -->
+<!-- content-fingerprint: cb1b7e2e787e3226411e81b6fe457ac31a777b1c6a07258c665222696a82b055 -->
 # 全站资料文本可读性审计
 
 审计日期：2026-09-10
 范围：`content/` 下全部 425 个 JSON 与 Markdown 文件，不抽样。
-覆盖：25,496 个含中文的字段或段落，约 879,062 个汉字。
+覆盖：25,472 个含中文的字段或段落，约 878,963 个汉字。
 
 ## 结论
 
@@ -108,7 +108,7 @@
 | `design-library/bag-building/zh-CN.md` | 33 | 1736 | 4 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/care-schedule/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/care-schedule/zh-CN.md` | 23 | 1017 | 3 | 支持资料：通过节点或资料库按需进入 |
-| `design-library/catalog.json` | 585 | 6479 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/catalog.json` | 561 | 6380 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/catch-up-system/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/catch-up-system/zh-CN.md` | 36 | 1830 | 4 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/city-building/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
