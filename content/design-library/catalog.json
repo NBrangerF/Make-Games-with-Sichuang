@@ -232,7 +232,12 @@
         "cant-stop",
         "quacks"
       ],
-      "relations": [],
+      "relations": [
+        {
+          "targetId": "reroll-locking",
+          "type": "see-also"
+        }
+      ],
       "bggReferences": [
         {
           "id": 2661,
@@ -1662,6 +1667,10 @@
         {
           "targetId": "action-selection",
           "type": "see-also"
+        },
+        {
+          "targetId": "reroll-locking",
+          "type": "contrast-with"
         }
       ],
       "bggReferences": [
@@ -1729,6 +1738,14 @@
         },
         {
           "targetId": "comparison-reveal-order",
+          "type": "see-also"
+        },
+        {
+          "targetId": "deduction",
+          "type": "contrast-with"
+        },
+        {
+          "targetId": "comparison-hidden-deduction",
           "type": "see-also"
         }
       ],
@@ -1909,6 +1926,10 @@
         {
           "targetId": "hidden-information",
           "type": "see-also"
+        },
+        {
+          "targetId": "comparison-hidden-deduction",
+          "type": "see-also"
         }
       ],
       "bggReferences": []
@@ -2031,6 +2052,10 @@
         {
           "targetId": "multi-use-cards",
           "type": "combines-with"
+        },
+        {
+          "targetId": "investment",
+          "type": "see-also"
         }
       ],
       "bggReferences": []
@@ -2085,6 +2110,18 @@
         },
         {
           "targetId": "shared-resource",
+          "type": "see-also"
+        },
+        {
+          "targetId": "loans",
+          "type": "see-also"
+        },
+        {
+          "targetId": "investment",
+          "type": "see-also"
+        },
+        {
+          "targetId": "comparison-income-loan",
           "type": "see-also"
         }
       ],
@@ -4583,6 +4620,396 @@
           "relation": "related"
         }
       ]
+    },
+    {
+      "id": "deduction",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "演绎推理：这条线索究竟排除了谁？",
+        "en": "Deduction: which possibilities does this clue rule out?"
+      },
+      "summary": {
+        "zh-CN": "三段广播有六种顺序，两次先后问询可留下一个或两个候选；改变回复可靠性后重新检查排除依据。",
+        "en": "Six broadcast orders, two precedence questions: compare one or two remaining candidates, then reassess elimination when one reply may be reversed."
+      },
+      "aliases": {
+        "zh-CN": [
+          "演绎推理",
+          "推理排除"
+        ],
+        "en": [
+          "deduction",
+          "deductive elimination"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "候选空间",
+          "线索",
+          "先后关系",
+          "真话",
+          "误导",
+          "排除"
+        ],
+        "en": [
+          "candidate space",
+          "clues",
+          "precedence",
+          "truthful replies",
+          "misleading replies",
+          "elimination"
+        ]
+      },
+      "question": "uncertainty",
+      "chapterIds": [
+        "reading-information-and-randomness",
+        "reading-choices-and-agency"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "hidden-information",
+          "type": "contrast-with"
+        },
+        {
+          "targetId": "comparison-hidden-deduction",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 3002,
+          "name": "Deduction",
+          "url": "https://boardgamegeek.com/boardgamemechanic/3002/deduction",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "reroll-locking",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "重掷与锁定：留下的结果，还能再动吗？",
+        "en": "Rerolling and locking: can a result you kept still change?"
+      },
+      "summary": {
+        "zh-CN": "在已知4、2、1与两枚代币下，区分暂留和锁定，逐步算清实际重掷与固定办法的条件概率。",
+        "en": "Starting from 4, 2, 1 and two tokens, distinguish keeping from locking and calculate actual rerolls and conditional probabilities for one specified policy."
+      },
+      "aliases": {
+        "zh-CN": [
+          "重掷与锁定",
+          "重掷锁定"
+        ],
+        "en": [
+          "rerolling and locking",
+          "re-rolling and locking"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "骰子",
+          "保留",
+          "重掷次数",
+          "公平独立",
+          "条件概率",
+          "期望得分"
+        ],
+        "en": [
+          "dice",
+          "keeping",
+          "reroll limit",
+          "fair independent dice",
+          "conditional probability",
+          "expected score"
+        ]
+      },
+      "question": "uncertainty",
+      "chapterIds": [
+        "reading-information-and-randomness",
+        "reading-choices-and-agency"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "dice-allocation",
+          "type": "contrast-with"
+        },
+        {
+          "targetId": "push-your-luck",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2870,
+          "name": "Re-rolling and Locking",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2870/re-rolling-and-locking",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "loans",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "借款：手上有钱，为什么还可能还不起？",
+        "en": "Loans: Why Can You Have Money Yet Still Be Unable to Repay?"
+      },
+      "summary": {
+        "zh-CN": "比较同笔借款的两条项目路线，核对本金、费用、偿还与不足罚分，再观察提前到期怎样改变终局与合法行动。",
+        "en": "Compare two project routes using the same loan, track principal, fees, repayment, and shortfall penalties, then move maturity earlier."
+      },
+      "aliases": {
+        "zh-CN": [
+          "借款",
+          "贷款",
+          "借贷"
+        ],
+        "en": [
+          "loans",
+          "borrowing",
+          "debt"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "本金",
+          "固定费用",
+          "到期",
+          "还款",
+          "现金不足"
+        ],
+        "en": [
+          "principal",
+          "fixed fee",
+          "maturity",
+          "repayment",
+          "cash shortfall"
+        ]
+      },
+      "question": "economy",
+      "chapterIds": [
+        "reading-design-an-economy",
+        "reading-resources-and-endings",
+        "reading-state-and-resolution"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "income-production",
+          "type": "see-also"
+        },
+        {
+          "targetId": "investment",
+          "type": "combines-with"
+        },
+        {
+          "targetId": "comparison-income-loan",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2904,
+          "name": "Loans",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2904/loans",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "investment",
+      "kind": "pattern",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "投资：未来多拿4币，为什么只比短工多2币？",
+        "en": "Investment: Why Does a Four-Coin Gain Beat Short Jobs by Only Two?"
+      },
+      "summary": {
+        "zh-CN": "用一次投入与连续短工比较现金、行动机会和延迟兑付，再提前结束，检查未来回报何时真正进入终局。",
+        "en": "Compare a one-time commitment with repeated short jobs, counting cash, action opportunities, and delayed payment, then bring the ending forward."
+      },
+      "aliases": {
+        "zh-CN": [
+          "投资",
+          "延迟回报",
+          "先投入后回报"
+        ],
+        "en": [
+          "investment pattern",
+          "delayed return",
+          "up-front commitment"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "机会成本",
+          "兑付",
+          "结束时点",
+          "等待",
+          "回报条件"
+        ],
+        "en": [
+          "opportunity cost",
+          "redemption",
+          "ending time",
+          "waiting",
+          "return conditions"
+        ]
+      },
+      "question": "economy",
+      "chapterIds": [
+        "reading-design-an-economy",
+        "reading-choices-and-agency",
+        "reading-goals-and-pacing"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "loans",
+          "type": "see-also"
+        },
+        {
+          "targetId": "income-production",
+          "type": "see-also"
+        },
+        {
+          "targetId": "resource-conversion",
+          "type": "see-also"
+        },
+        {
+          "targetId": "comparison-income-loan",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2910,
+          "name": "Investment",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2910/investment",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "comparison-hidden-deduction",
+      "kind": "comparison",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "同样盖着四个箱子：看见标记，就有推理依据吗？",
+        "en": "Four covered boxes: does seeing a marker give you grounds for deduction?"
+      },
+      "summary": {
+        "zh-CN": "固定四个候选、一次选择和奖励，只改标记是否可靠，比较不能排除与能排除但尚未确定的过程。",
+        "en": "Hold four candidates, one choice, and the reward fixed. Change marker reliability to compare no elimination with partial deduction."
+      },
+      "aliases": {
+        "zh-CN": [
+          "隐藏与推理",
+          "未知与排除"
+        ],
+        "en": [
+          "hidden information versus deduction",
+          "uncertainty and elimination"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "可靠线索",
+          "候选集合",
+          "独立标记",
+          "概率"
+        ],
+        "en": [
+          "reliable clue",
+          "candidate set",
+          "independent marker",
+          "probability"
+        ]
+      },
+      "question": "uncertainty",
+      "chapterIds": [
+        "reading-information-and-randomness",
+        "reading-choices-and-agency"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "hidden-information",
+          "type": "see-also"
+        },
+        {
+          "targetId": "deduction",
+          "type": "see-also"
+        },
+        {
+          "targetId": "comparison-reveal-order",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "comparison-income-loan",
+      "kind": "comparison",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "同样先拿到3枚钱：收入和贷款会留下相同结果吗？",
+        "en": "Receiving three coins now: do income and a loan leave the same result?"
+      },
+      "summary": {
+        "zh-CN": "固定到账3钱和两个项目，只给资金附上还款义务，追踪现金、短缺处理与最终分数。",
+        "en": "Keep three coins of funding and two projects fixed. Add a repayment obligation and track cash, shortfalls, and final scores."
+      },
+      "aliases": {
+        "zh-CN": [
+          "收入与贷款",
+          "定时收入与偿还"
+        ],
+        "en": [
+          "income versus loans",
+          "scheduled income and repayment"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "现金",
+          "本金",
+          "到期",
+          "短缺罚分"
+        ],
+        "en": [
+          "cash",
+          "principal",
+          "due date",
+          "shortfall penalty"
+        ]
+      },
+      "question": "economy",
+      "chapterIds": [
+        "reading-design-an-economy",
+        "reading-resources-and-endings"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "income-production",
+          "type": "see-also"
+        },
+        {
+          "targetId": "loans",
+          "type": "see-also"
+        },
+        {
+          "targetId": "investment",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
     }
   ]
 }

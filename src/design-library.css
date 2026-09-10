@@ -9,6 +9,7 @@
 .library-connections h2 { font-size: 1.1rem; }
 .library-connections h3 { margin-top: 26px; font-size: 1rem; }
 .library-connections p { line-height: 1.65; }
+.design-library .original-reading__list h2 a { display: block; }
 @media (max-width: 700px) {
   .library-question-filter { align-items: stretch; flex-direction: column; }
   .library-other-reading { flex-direction: column; }
