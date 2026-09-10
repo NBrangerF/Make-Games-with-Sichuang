@@ -1,0 +1,310 @@
+{
+  "schemaVersion": 1,
+  "entries": [
+    {
+      "id": "worker-placement",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "工人放置与位置占用",
+        "en": "Worker placement and occupied spaces"
+      },
+      "summary": {
+        "zh-CN": "走完两次放置，再只改位置容量：看清合法选项、先后顺序和资源结果的关系。",
+        "en": "Resolve two placements, then change only space capacity to examine legal options, turn order, and resource outcomes."
+      },
+      "aliases": {
+        "zh-CN": [
+          "工放",
+          "工人放置"
+        ],
+        "en": [
+          "worker placement"
+        ]
+      },
+      "question": "actions",
+      "chapterIds": [
+        "reading-time-and-interaction"
+      ],
+      "caseIds": [],
+      "relations": [],
+      "bggReferences": [
+        {
+          "id": 2082,
+          "name": "Worker Placement",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2082/worker-placement",
+          "relation": "same-scope"
+        }
+      ],
+      "searchTerms": {
+        "zh-CN": [
+          "工放",
+          "位置占用",
+          "工人放置",
+          "行动阻挡"
+        ],
+        "en": [
+          "worker placement",
+          "action spaces",
+          "blocking",
+          "capacity"
+        ]
+      }
+    },
+    {
+      "id": "deck-building",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "牌库构筑与循环",
+        "en": "Deck building and card cycles"
+      },
+      "summary": {
+        "zh-CN": "跟踪一张新牌进入手牌、弃牌堆和下一次重洗的时点，比较获得位置怎样改变三轮产出。",
+        "en": "Track a new card through hands, discards, and reshuffles, then compare how its destination changes three rounds of output."
+      },
+      "aliases": {
+        "zh-CN": [
+          "牌库构筑",
+          "牌组构筑"
+        ],
+        "en": [
+          "deck building"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "抽牌",
+          "重洗",
+          "弃牌",
+          "概率"
+        ],
+        "en": [
+          "draw",
+          "reshuffle",
+          "discard",
+          "probability"
+        ]
+      },
+      "question": "cards",
+      "chapterIds": [
+        "reading-design-an-economy"
+      ],
+      "caseIds": [
+        "dominion"
+      ],
+      "relations": [],
+      "bggReferences": [
+        {
+          "id": 2664,
+          "name": "Deck, Bag, and Pool Building",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2664/deck-bag-and-pool-building",
+          "relation": "local-narrower"
+        }
+      ]
+    },
+    {
+      "id": "simultaneous-choice",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "同时选择与依次结算",
+        "en": "Simultaneous choices, sequential resolution"
+      },
+      "summary": {
+        "zh-CN": "三名信使先选去向，再依次领取有限包裹：分开决定、揭示和结算，比较承诺时点。",
+        "en": "Three couriers choose destinations before collecting limited packages in order. Compare choosing, revealing, and resolving."
+      },
+      "aliases": {
+        "zh-CN": [
+          "同时行动选择",
+          "同时选择"
+        ],
+        "en": [
+          "simultaneous action selection"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "同时出牌",
+          "揭示",
+          "结算",
+          "隐藏选择"
+        ],
+        "en": [
+          "reveal",
+          "resolution",
+          "hidden choices"
+        ]
+      },
+      "question": "actions",
+      "chapterIds": [
+        "reading-time-and-interaction"
+      ],
+      "caseIds": [
+        "six-nimmt"
+      ],
+      "relations": [],
+      "bggReferences": [
+        {
+          "id": 2020,
+          "name": "Simultaneous Action Selection",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2020/simultaneous-action-selection",
+          "relation": "same-scope"
+        }
+      ]
+    },
+    {
+      "id": "push-your-luck",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "继续冒险，还是现在收手",
+        "en": "Push your luck, or stop now"
+      },
+      "summary": {
+        "zh-CN": "用六片不放回的抽取袋，比较停手、失败清空与较小损失，说明概率和期望值的前提。",
+        "en": "Use a six-token bag without replacement to compare stopping, losing everything, and taking a smaller loss, with explicit probability assumptions."
+      },
+      "aliases": {
+        "zh-CN": [
+          "押运气",
+          "继续冒险"
+        ],
+        "en": [
+          "push your luck"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "风险",
+          "停手",
+          "期望值",
+          "随机"
+        ],
+        "en": [
+          "risk",
+          "stop",
+          "expected value",
+          "randomness"
+        ]
+      },
+      "question": "uncertainty",
+      "chapterIds": [
+        "reading-information-and-randomness"
+      ],
+      "caseIds": [],
+      "relations": [],
+      "bggReferences": [
+        {
+          "id": 2661,
+          "name": "Push Your Luck",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2661/push-your-luck",
+          "relation": "same-scope"
+        }
+      ]
+    },
+    {
+      "id": "auction",
+      "kind": "overview",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "拍卖：报价、获胜与付款",
+        "en": "Auctions: bids, winners, and payments"
+      },
+      "summary": {
+        "zh-CN": "用同一组报价比较两种付款规则，追踪剩余预算，并处理平手与全员不参加。",
+        "en": "Compare two payment rules with fixed bids, track remaining budgets, and resolve ties and all-pass outcomes."
+      },
+      "aliases": {
+        "zh-CN": [
+          "拍卖",
+          "竞价"
+        ],
+        "en": [
+          "auction",
+          "bidding"
+        ]
+      },
+      "question": "economy",
+      "chapterIds": [
+        "reading-choices-and-agency"
+      ],
+      "caseIds": [],
+      "relations": [],
+      "bggReferences": [
+        {
+          "id": 2012,
+          "name": "Auction / Bidding",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2012/auction-bidding",
+          "relation": "same-scope"
+        }
+      ],
+      "searchTerms": {
+        "zh-CN": [
+          "拍卖",
+          "竞价",
+          "密封出价",
+          "次高价"
+        ],
+        "en": [
+          "auction",
+          "bidding",
+          "sealed bid",
+          "second price"
+        ]
+      }
+    },
+    {
+      "id": "area-majority",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "区域多数与计分时点",
+        "en": "Area majority and scoring time"
+      },
+      "summary": {
+        "zh-CN": "走完两处花园的最后三次放置，再只改平手规则，区分最多、排他控制和最终收益。",
+        "en": "Resolve three final placements in two gardens, then change only ties to distinguish influence, exclusive control, and rewards."
+      },
+      "aliases": {
+        "zh-CN": [
+          "区域多数",
+          "区域影响力"
+        ],
+        "en": [
+          "area majority",
+          "area influence"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "平手",
+          "计分",
+          "控制",
+          "空间"
+        ],
+        "en": [
+          "ties",
+          "scoring",
+          "control",
+          "space"
+        ]
+      },
+      "question": "space",
+      "chapterIds": [
+        "reading-space-and-opportunity"
+      ],
+      "caseIds": [],
+      "relations": [],
+      "bggReferences": [
+        {
+          "id": 2080,
+          "name": "Area Majority / Influence",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2080/area-majority-influence",
+          "relation": "same-scope"
+        }
+      ]
+    }
+  ]
+}

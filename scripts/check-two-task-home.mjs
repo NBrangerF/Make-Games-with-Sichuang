@@ -13,6 +13,6 @@ assert.ok(reader.includes('从第一章读起') && reader.includes('chapterList(
 assert.ok(!/useWorkspace|startCourseEnrollment/.test(reader))
 assert.ok(reader.includes('#course/practice'), 'Practice remains an optional secondary route')
 assert.ok(practice.includes('返回系统阅读'))
-for (const label of ['系统学习', '设计工作台', '按问题阅读']) assert.ok(app.includes(`: '${label}'`))
-assert.ok(app.includes("resourceEntry: 'read', resourceId: 'all', readingLanguage: language"), 'Primary browsing opens self-contained articles')
+for (const label of ['系统学习', '设计工作台', '机制与主题']) assert.ok(app.includes(`: '${label}'`))
+assert.ok(app.includes("resourceEntry: 'library', resourceId: 'all', readingLanguage: language"), 'Primary browsing opens the concrete design library')
 console.log('Home: PASS (default reading path; direct chapter access; optional practice preserves existing records)')

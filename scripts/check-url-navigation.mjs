@@ -87,10 +87,11 @@ check('application synchronizes URL, history, title, and primary navigation', ()
 
 check('visible navigation leads with learning while preserving legacy routes', () => {
   const headerLinks = appSource.match(/const twoTaskLinks:[^=]*= \[([\s\S]*?)\n  \]/)?.[1] ?? ''
-  assert.equal((headerLinks.match(/id:/g) ?? []).length, 3)
+  assert.equal((headerLinks.match(/id:/g) ?? []).length, 4)
   assert.ok(headerLinks.includes("id: 'course', label: english ? 'Learn design' : '系统学习'"))
   assert.ok(headerLinks.includes("id: 'workbench', label: english ? 'Workbench (Chinese)' : '设计工作台'"))
-  assert.ok(headerLinks.includes("id: 'reading', label: english ? 'Browse by question' : '按问题阅读'"))
+  assert.ok(headerLinks.includes("id: 'library', label: english ? 'Mechanisms & themes' : '机制与主题'"))
+  assert.ok(headerLinks.includes("id: 'cases', label: english ? 'Case studies' : '案例研究'"))
   assert.equal(headerLinks.includes("id: 'path'"), false)
   assert.equal(headerLinks.includes("id: 'tools'"), false)
   assert.ok(appSource.includes("route.view === 'learn'"))

@@ -125,7 +125,7 @@ export function parseRouteHash(hash: string): AppRoute {
 
   const context = readContext(search)
   if (view === 'learn') return routeWithContext({ view: 'learn', tool: DEFAULT_ROUTE.tool, ...(isLearningPageId(first) ? { learningNode: first } : {}) }, context)
-  if (view === 'resources') return routeWithContext({ view: 'resources', tool: DEFAULT_ROUTE.tool, ...(first ? { resourceEntry: first } : {}), ...(second ? { resourceId: second } : {}), ...(['read', 'cases'].includes(first) ? { readingLanguage: third === 'en' ? 'en' : 'zh-CN', ...readReadingLocation(search) } : {}) }, context)
+  if (view === 'resources') return routeWithContext({ view: 'resources', tool: DEFAULT_ROUTE.tool, ...(first ? { resourceEntry: first } : {}), ...(second ? { resourceId: second } : {}), ...(['read', 'cases', 'library'].includes(first) ? { readingLanguage: third === 'en' ? 'en' : 'zh-CN', ...readReadingLocation(search) } : {}) }, context)
   if (view === 'privacy') return { view: 'privacy', tool: DEFAULT_ROUTE.tool, readingLanguage: first === 'en' ? 'en' : 'zh-CN' }
   if (view === 'method') {
     if (!methodSections.has(first as MethodSection)) return routeWithContext({ view: 'method', tool: DEFAULT_ROUTE.tool }, context)
@@ -181,7 +181,7 @@ export function serializeRoute(route: AppRoute): string {
   let path: string
   if (route.view === 'learn') path = route.learningNode ? `#learn/${encodeURIComponent(route.learningNode)}` : '#learn'
   else if (route.view === 'tools') path = `#tools/${route.tool}`
-  else if (route.view === 'resources' && (route.resourceEntry === 'read' || route.resourceEntry === 'cases')) path = appendReadingLocation(`#resources/${route.resourceEntry}/${encodeURIComponent(route.resourceId || 'all')}/${route.readingLanguage === 'en' ? 'en' : 'zh-CN'}`, route)
+  else if (route.view === 'resources' && (route.resourceEntry === 'read' || route.resourceEntry === 'cases' || route.resourceEntry === 'library')) path = appendReadingLocation(`#resources/${route.resourceEntry}/${encodeURIComponent(route.resourceId || 'all')}/${route.readingLanguage === 'en' ? 'en' : 'zh-CN'}`, route)
   else if (route.view === 'privacy' && route.readingLanguage === 'en') path = '#privacy/en'
   else if (route.view === 'resources' && route.resourceEntry) path = `#resources/${encodeURIComponent(route.resourceEntry)}${route.resourceId ? `/${encodeURIComponent(route.resourceId)}` : ''}`
   else if (route.view === 'method' && route.methodSection) path = `#method/${route.methodSection}${route.methodItem ? `/${encodeURIComponent(route.methodItem)}` : ''}`
@@ -200,6 +200,7 @@ export function routeTitle(route: AppRoute): string {
   }
   if (route.view === 'tools') return withBrand(toolTitles[route.tool])
   if (route.view === 'resources') {
+    if (route.resourceEntry === 'library') return withBrand(route.readingLanguage === 'en' ? 'Mechanisms & themes' : '机制与主题')
     if (route.resourceEntry === 'cases') return withBrand(route.readingLanguage === 'en' ? 'Case studies' : '案例研究')
     if (route.resourceEntry === 'read') return withBrand(route.readingLanguage === 'en' ? 'Bilingual reading' : '双语阅读')
     if (route.resourceEntry === 'learn' && isLearningContentId(route.resourceId)) return withBrand(learningContentTitles[route.resourceId])

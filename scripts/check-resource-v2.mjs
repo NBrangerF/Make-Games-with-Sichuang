@@ -115,11 +115,11 @@ check(
   (headerLinksBlock.match(/id:/g) ?? []).length === 4 &&
   headerLinksBlock.includes("id: 'course'") && headerLinksBlock.includes("'系统学习'") &&
   headerLinksBlock.includes("id: 'workbench'") && headerLinksBlock.includes("'设计工作台'") &&
-  headerLinksBlock.includes("id: 'reading'") && headerLinksBlock.includes("resourceEntry: 'read'") &&
+  headerLinksBlock.includes("id: 'library'") && headerLinksBlock.includes("resourceEntry: 'library'") &&
   headerLinksBlock.includes("id: 'cases'") && headerLinksBlock.includes("resourceEntry: 'cases'") &&
   !headerLinksBlock.includes("id: 'path'") &&
   !headerLinksBlock.includes("id: 'tools'"),
-  '顶栏以系统学习、案例研究、原创问题阅读与设计工作台组织任务',
+  '顶栏以系统学习、案例研究、机制主题库与设计工作台组织任务',
 )
 check(
   learningNodes.nodes?.filter(node => node.track === 'observe').length === 5 &&

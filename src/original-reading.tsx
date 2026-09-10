@@ -16,7 +16,7 @@ const copy = {
   en: { title: 'Understand tabletop design, one good question at a time', intro: 'Original articles about choices, rules, players, and shared experiences. Read freely in Chinese or English.', collection: 'Bilingual reading', back: 'Back to articles', loading: 'Opening the article…', error: 'The article could not be opened.', retry: 'Try again', missing: 'Article not found', empty: 'Articles are being prepared.', search: 'Search articles', noMatch: 'No matching articles. Try “choices”, “rules”, or “playtest”.', clear: 'Clear search', all: 'All articles', language: 'Reading language', edition: 'One article · Two languages', return: 'Course contents' },
 }
 
-export function ArticleBody({ article, language, afterSection, companion, withOutline = false }: { article: Article; language: Language; afterSection?: { number: number; node: ReactNode }; companion?: ReactNode; withOutline?: boolean }) {
+export function ArticleBody({ article, language, afterSection, companion, withOutline = false, bodyLoader, allowSourceLinks = false }: { article: Article; language: Language; afterSection?: { number: number; node: ReactNode }; companion?: ReactNode; withOutline?: boolean; bodyLoader?: () => Promise<string>; allowSourceLinks?: boolean }) {
   const [body, setBody] = useState<string | null>(null)
   const [failed, setFailed] = useState(false)
   const [attempt, setAttempt] = useState(0)
@@ -31,14 +31,14 @@ export function ArticleBody({ article, language, afterSection, companion, withOu
     let active = true
     setFailed(false)
     setBody(null)
-    const load = texts[`../content/original-articles/${article.id}/${language}.md`]
+    const load = bodyLoader || texts[`../content/original-articles/${article.id}/${language}.md`]
     if (!load) { setFailed(true); return }
     load().then(text => { if (active) setBody(text) }).catch(() => { if (active) setFailed(true) })
     return () => { active = false }
-  }, [article.id, language, attempt])
+  }, [article.id, language, attempt, bodyLoader])
   if (failed) return <div role="alert"><h1>{article.title[language]}</h1><p>{copy[language].error}</p><button onClick={() => setAttempt(value => value + 1)}>{copy[language].retry}</button></div>
   if (body === null) return <p role="status">{copy[language].loading}</p>
-  const reading = <article className="original-reading__body"><MarkdownReading source={body} language={language} afterSection={afterSection} /></article>
+  const reading = <article className="original-reading__body"><MarkdownReading source={body} language={language} afterSection={afterSection} allowSourceLinks={allowSourceLinks} /></article>
   if (!withOutline) return reading
   const outline = extractMarkdownOutline(body).filter(item => item.level === 2)
   return <div className="reading-chapter-layout"><aside className="reading-chapter-outline"><details open={wide}><summary>{language === 'en' ? 'In this chapter' : '这一章'}</summary><nav aria-label={language === 'en' ? 'Chapter sections' : '本章小节'}>{outline.map((item, i) => <button key={item.id} onClick={() => { const target = document.getElementById(item.id); target?.scrollIntoView({ behavior: 'auto', block: 'start' }); target?.setAttribute('tabindex', '-1'); target?.focus({ preventScroll: true }) }}><span>{String(i + 1).padStart(2, '0')}</span>{item.label}</button>)}</nav></details></aside>{reading}{companion && <aside className="reading-chapter-companion"><details open={wide}><summary>{language === 'en' ? 'Exercises, tools & real games' : '本章练习、工具与真实案例'}</summary>{companion}</details></aside>}</div>
@@ -48,7 +48,7 @@ export function OriginalReading({ articleId, language = 'zh-CN', query = '', sco
   const filters = { readingQuery: query, readingScope: scope }
   const collectionHref = hrefFor(undefined, language, filters)
   const backHref = returnTo || collectionHref
-  const backLabel = returnTo?.startsWith('#course/reading/') ? (language === 'en' ? 'Back to the chapter' : '返回刚才的章节') : cLabel(language)
+  const backLabel = returnTo?.startsWith('#resources/library/') ? (language === 'en' ? 'Back to the library' : '返回资料库') : returnTo?.startsWith('#course/reading/') ? (language === 'en' ? 'Back to the chapter' : '返回刚才的章节') : cLabel(language)
   const location = { ...filters, readingReturnTo: returnTo }
   const c = copy[language]
   const isCollection = !articleId || articleId === 'all'

@@ -15,6 +15,7 @@ const topLevelPageFiles = new Set([
   'original-reading.tsx',
   'text-learning.tsx',
   'design-cases.tsx',
+  'design-library.tsx',
   'resource-start-v2.tsx',
   'resource-v2-detail.tsx',
   'resource-problems-v2.tsx',

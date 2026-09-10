@@ -1,14 +1,14 @@
-<!-- content-fingerprint: 6fcad636e25cfde5e0644c5803d982c4bed7b571cd4dd456676a8ef66faab447 -->
+<!-- content-fingerprint: 039ee575d7e7f05d93f41cae161b89ad116450a8613d1aa5114eec6720eac3a3 -->
 # 全站资料文本可读性审计
 
-审计日期：2026-09-08  
-范围：`content/` 下全部 191 个 JSON 与 Markdown 文件，不抽样。  
-覆盖：16,571 个含中文的字段或段落，约 463,649 个汉字。
+审计日期：2026-09-10  
+范围：`content/` 下全部 204 个 JSON 与 Markdown 文件，不抽样。  
+覆盖：16,787 个含中文的字段或段落，约 473,117 个汉字。
 
 ## 结论
 
 - 本报告审计文字长度与抽象词信号，不据此判断网站首页或学习路径是否有效。
-- 机器规则标出了 340 个可能需要分段或渐进披露的长句、长段与抽象词密集处。这是编辑优先级，不是内容质量评分。
+- 机器规则标出了 351 个可能需要分段或渐进披露的长句、长段与抽象词密集处。这是编辑优先级，不是内容质量评分。
 - 授权译文和来源正文保留原有使用范围；原创双语文章提供独立阅读入口，课程、案例与工具维持各自路径。
 - 汉字阈值只评估含中文的字段或段落。英文正文参与文件指纹与解析检查，但不能因此声称其可读性已被这些阈值验证。
 
@@ -45,6 +45,19 @@
 | `design-cases/wingspan/meta.json` | 2 | 52 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/wingspan/zh-CN.md` | 22 | 1463 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-constraints.json` | 37 | 830 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/area-majority/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/area-majority/zh-CN.md` | 30 | 1436 | 4 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/auction/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/auction/zh-CN.md` | 33 | 1559 | 1 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/catalog.json` | 26 | 309 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/deck-building/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/deck-building/zh-CN.md` | 29 | 1514 | 2 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/push-your-luck/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/push-your-luck/zh-CN.md` | 35 | 1542 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/simultaneous-choice/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/simultaneous-choice/zh-CN.md` | 30 | 1459 | 2 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/worker-placement/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/worker-placement/zh-CN.md` | 33 | 1649 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-materials.json` | 285 | 6179 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `frameworks.json` | 81 | 1504 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `glossary-index.json` | 258 | 1155 | 0 | 内部元数据：不作为新手首屏文案 |

@@ -1,16 +1,22 @@
 export type ReadingLanguage = 'zh-CN' | 'en'
 export type ReadingScope = 'all' | 'course' | 'essays'
+export const libraryKinds = ['mechanisms', 'themes', 'lessons', 'comparisons'] as const
+export const libraryQuestions = ['actions', 'cards', 'uncertainty', 'space', 'economy', 'interaction', 'theme', 'process'] as const
+export type LibraryKind = typeof libraryKinds[number]
+export type LibraryQuestion = typeof libraryQuestions[number]
 export type ReadingLocation = {
   readingQuery?: string
   readingScope?: ReadingScope
   readingReturnTo?: string
   caseCategory?: 'game' | 'mechanism' | 'theme'
+  libraryKind?: LibraryKind
+  libraryQuestion?: LibraryQuestion
 }
 
 // Reading return links stay inside the course, articles, and case-study surfaces. Nested returns are
 // removed so following related essays cannot grow an unbounded URL chain.
 export function readingReturn(value: string | null): string | undefined {
-  if (!value || value.length > 2400 || !/^#(?:course\/reading|resources\/(?:read|cases))\/[a-zA-Z0-9_-]+\/(?:zh-CN|en)(?:\?[^#]*)?$/.test(value)) return
+  if (!value || value.length > 2400 || !/^#(?:course\/reading|resources\/(?:read|cases|library))\/[a-zA-Z0-9_-]+\/(?:zh-CN|en)(?:\?[^#]*)?$/.test(value)) return
   const [path, query = ''] = value.split('?')
   const filters = readReadingLocation(query, false)
   return appendReadingLocation(path, filters)
@@ -21,12 +27,16 @@ export function readReadingLocation(search: string, withReturn = true): ReadingL
   const query = (params.get('q') || '').slice(0, 200)
   const scope = params.get('scope')
   const category = params.get('type')
+  const kind = params.get('kind') as LibraryKind
+  const question = params.get('group') as LibraryQuestion
   const from = withReturn ? readingReturn(params.get('from')) : undefined
   return {
     ...(query ? { readingQuery: query } : {}),
     ...(scope === 'course' || scope === 'essays' ? { readingScope: scope } : {}),
     ...(from ? { readingReturnTo: from } : {}),
     ...(category === 'game' || category === 'mechanism' || category === 'theme' ? { caseCategory: category } : {}),
+    ...(libraryKinds.includes(kind) ? { libraryKind: kind } : {}),
+    ...(libraryQuestions.includes(question) ? { libraryQuestion: question } : {}),
   }
 }
 
@@ -35,13 +45,15 @@ export function appendReadingLocation(path: string, location: ReadingLocation): 
   if (location.readingQuery) params.set('q', location.readingQuery.slice(0, 200))
   if (location.readingScope && location.readingScope !== 'all') params.set('scope', location.readingScope)
   if (location.caseCategory) params.set('type', location.caseCategory)
+  if (location.libraryKind && libraryKinds.includes(location.libraryKind)) params.set('kind', location.libraryKind)
+  if (location.libraryQuestion && libraryQuestions.includes(location.libraryQuestion)) params.set('group', location.libraryQuestion)
   const from = readingReturn(location.readingReturnTo || null)
   if (from) params.set('from', from)
   return `${path}${params.size ? `?${params}` : ''}`
 }
 
-export function readingHref(kind: 'course' | 'articles' | 'cases', id: string | undefined, language: ReadingLanguage, location: ReadingLocation = {}) {
-  return appendReadingLocation(`#${kind === 'course' ? 'course/reading' : kind === 'cases' ? 'resources/cases' : 'resources/read'}/${encodeURIComponent(id || 'all')}/${language}`, location)
+export function readingHref(kind: 'course' | 'articles' | 'cases' | 'library', id: string | undefined, language: ReadingLanguage, location: ReadingLocation = {}) {
+  return appendReadingLocation(`#${kind === 'course' ? 'course/reading' : kind === 'cases' ? 'resources/cases' : kind === 'library' ? 'resources/library' : 'resources/read'}/${encodeURIComponent(id || 'all')}/${language}`, location)
 }
 
 export function readingReturnLanguage(from: string | undefined, language: ReadingLanguage) {
