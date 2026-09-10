@@ -1,0 +1,43 @@
+{
+  "id": "the-crew",
+  "category": "mechanism",
+  "game": "The Crew: The Quest for Planet Nine",
+  "title": {
+    "zh-CN": "The Crew：为什么赢下一墩，反而会让全队失败？",
+    "en": "The Crew: Why Can Winning a Trick Make the Whole Team Lose?"
+  },
+  "summary": {
+    "zh-CN": "用三组完整四人发牌，检验目标接收者、沟通信号与任务先后如何改变合作；逐墩复算成功路线与失败分支。",
+    "en": "Replay three complete four-player deals to examine task recipients, communication signals, and completion order, with successful routes and explicit failure branches."
+  },
+  "chapterIds": [
+    "reading-cooperation-and-conflict",
+    "reading-information-and-randomness",
+    "reading-goals-and-pacing",
+    "reading-rules-and-components",
+    "reading-combine-mechanisms"
+  ],
+  "sources": [
+    {
+      "label": "Thames & Kosmos — The Crew English base rules",
+      "url": "https://www.thamesandkosmos.com/manuals/full/691868_Crew_Manual.pdf",
+      "edition": "The Quest for Planet Nine, product 691868; document code 691868-02-060320; 22 PDF pages; four-player base rules, no distress signal",
+      "locator": "PDF/printed p.2 components; pp.3–4 following suit and rockets; pp.5–7 communication; pp.8–10 task draft, lead and resolution; pp.14–16 order tokens; p.22 imprint",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "label": "The Crew — English base logbook, 1jour-1jeu-hosted mirror",
+      "url": "https://cdn.1j1ju.com/medias/dd/5a/3a-the-crew-the-quest-for-planet-nine-log-book.pdf",
+      "edition": "English Quest for Planet Nine base logbook mirror, 12 PDF pages with spreads; printing unspecified, not claimed to share the rulebook's print run",
+      "locator": "PDF p.2 / printed pp.2–3: icon key; PDF p.3 / printed pp.4–5: missions 1–6; mission 2 has two unnumbered tasks, mission 3 has two tasks with number tokens 1 and 2, both on printed p.4",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "label": "IELLO — Thomas Sing nous parle de The Crew !",
+      "url": "https://iello.fr/thomas-sing-nous-parle-de-the-crew/",
+      "edition": "Publisher interview posted 2021-03-01, republishing a summer 2020 Philimag interview with Thomas Sing",
+      "locator": "Acte 1 : de l’idée au prototype — predetermined recipients, next-day first test, communication rule the following week, later space theme",
+      "checkedAt": "2026-09-10"
+    }
+  ]
+}

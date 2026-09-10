@@ -1,0 +1,37 @@
+{
+  "id": "azul",
+  "category": "game",
+  "game": "Azul",
+  "title": {
+    "zh-CN": "Azul：拿到的砖，为什么不等于这轮得到的分？",
+    "en": "Azul: Why Do Tiles Taken Not Equal Points Earned This Round?"
+  },
+  "summary": {
+    "zh-CN": "走完公共取砖、顺序铺墙与提前结束的三组比较，再回看设计者如何修改余砖去向。",
+    "en": "Compare shared drafting, sequential wall scoring and ending timing, alongside the designer’s account of changing where leftover tiles go."
+  },
+  "chapterIds": ["reading-choices-and-agency", "reading-time-and-interaction", "reading-state-and-resolution", "reading-goals-and-pacing", "reading-rules-and-components"],
+  "sources": [
+    {
+      "label": "Next Move Games — Azul",
+      "url": "https://www.nextmove-games.com/en/azul/azul-game/",
+      "edition": "Official original Azul product page; accessed 2026-09-10",
+      "locator": "Base product, components and English rules link",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "label": "Next Move — Azul English base rules",
+      "url": "https://cdn.svc.asmodee.net/production-nextmove/uploads/sites/4/2024/06/EN-Azul-Rules-Next-Move-web.pdf",
+      "edition": "Six-page English rules, ©2018 Plan B Games; two players, colored wall; no expansions or gray-wall variant",
+      "locator": "PDF/printed p.2 board and setup; pp.3–4 drafting and pattern lines; pp.4–5 wall order, scoring, floor and refill; p.6 ending and bonuses",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "label": "Brettspielbox — Michael Kiesling interview",
+      "url": "https://brettspielbox.de/brettspielbox-interview-michael-kiesling/",
+      "edition": "First-person interview, 2018-07-31, German; accessed 2026-09-10",
+      "locator": "Answer comparing solo/team development: publisher feedback and change from clockwise passing to the center",
+      "checkedAt": "2026-09-10"
+    }
+  ]
+}

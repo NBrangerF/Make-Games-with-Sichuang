@@ -1,0 +1,30 @@
+{
+  "id": "modern-art",
+  "category": "mechanism",
+  "game": "Modern Art",
+  "title": {
+    "zh-CN": "Modern Art：一幅画的成交价，为什么不是它的价值？",
+    "en": "Modern Art: Why Is a Painting’s Price Not Its Value?"
+  },
+  "summary": {
+    "zh-CN": "用三组收支与排名比较，拆开成交价、付款去向、结束时机和历史价值的兑现资格。",
+    "en": "Separate price, payment destination, ending timing and eligibility for historical value through three original cash-flow and ranking comparisons."
+  },
+  "chapterIds": ["reading-choices-and-agency", "reading-design-an-economy", "reading-state-and-resolution", "reading-theme-and-emotion"],
+  "sources": [
+    {
+      "label": "CMON — Modern Art",
+      "url": "https://www.cmon.com/products/modern-art/",
+      "edition": "Current official base product page; accessed 2026-09-10",
+      "locator": "Designer, components and Rules & More",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "label": "CMON — Modern Art English Rulebook / Artbook, v18 file",
+      "url": "https://www.cmon.com/wp-content/uploads/2023/06/MA_Rulebbok_Artbook_v18-low.pdf",
+      "edition": "28-page English file; rule section PDF pp.1–5, four-player base game; no Mystery Player; printing year not established",
+      "locator": "PDF p.2 setup and components; p.3 payments/fixed price; p.4 ending, ties, clearing and cumulative value; p.5 board order and winning",
+      "checkedAt": "2026-09-10"
+    }
+  ]
+}

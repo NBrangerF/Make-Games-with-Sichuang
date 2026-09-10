@@ -265,7 +265,8 @@
         "reading-choices-and-agency"
       ],
       "caseIds": [
-        "for-sale"
+        "for-sale",
+        "modern-art"
       ],
       "relations": [],
       "bggReferences": [
@@ -1088,7 +1089,9 @@
         "reading-time-and-interaction",
         "reading-information-and-randomness"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "azul"
+      ],
       "relations": [
         {
           "targetId": "hand-management",
@@ -1228,7 +1231,9 @@
         "reading-resources-and-endings",
         "reading-goals-and-pacing"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "azul"
+      ],
       "relations": [
         {
           "targetId": "drafting",
@@ -1536,7 +1541,8 @@
         "reading-rules-and-components"
       ],
       "caseIds": [
-        "carcassonne"
+        "carcassonne",
+        "azul"
       ],
       "relations": [
         {
@@ -1665,7 +1671,8 @@
       "caseIds": [
         "six-nimmt",
         "hanabi",
-        "el-grande"
+        "el-grande",
+        "the-crew"
       ],
       "relations": [
         {
@@ -1723,7 +1730,8 @@
         "reading-cooperation-and-conflict"
       ],
       "caseIds": [
-        "hanabi"
+        "hanabi",
+        "the-crew"
       ],
       "relations": [
         {
@@ -1952,7 +1960,8 @@
       ],
       "caseIds": [
         "wingspan",
-        "quacks"
+        "quacks",
+        "modern-art"
       ],
       "relations": [
         {
@@ -2071,7 +2080,9 @@
         "reading-design-an-economy",
         "reading-state-and-resolution"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "modern-art"
+      ],
       "relations": [
         {
           "targetId": "resource-conversion",
@@ -2192,7 +2203,8 @@
       ],
       "caseIds": [
         "pandemic",
-        "hanabi"
+        "hanabi",
+        "the-crew"
       ],
       "relations": [
         {
@@ -2308,7 +2320,9 @@
         "reading-design-an-economy",
         "reading-state-and-resolution"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "modern-art"
+      ],
       "relations": [
         {
           "targetId": "auction",
@@ -3122,7 +3136,9 @@
         "reading-stories-and-models",
         "reading-state-and-resolution"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "the-crew"
+      ],
       "relations": [
         {
           "targetId": "action-selection",

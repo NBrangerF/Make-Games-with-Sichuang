@@ -18,6 +18,9 @@ export function CaseDiagram({ id, language = 'zh-CN', compact = false }: { id: s
     'el-grande': t('部署与国王移动的顺序，改变骑士能进入的地区', 'Deployment and King movement change each other’s legal targets'),
     quacks: t('白色总值为6，剩余五枚中只有白色3会使本次抽取爆锅', 'At a white total of six, only the white three among these five remaining chips causes a burst'),
     'ticket-to-ride': t('一条双线已被占用时，剩余线路的可用性取决于人数', 'Player count determines whether the other half of a double route remains available'),
+    'modern-art': t('多收8元成交款，两幅已有画作合计少结算20元，净差为负12', 'Eight more in sale proceeds, twenty less from earlier paintings: a net difference of minus twelve'),
+    'the-crew': t('同一张目标绿3，必须由任务持有人乙赢得，丁赢走会失败', 'The target green three must reach its task owner B; D winning it fails the mission'),
+    azul: t('补上一块黑砖，产生4分、后续多2分并少扣1分，共差7分', 'One black tile scores four, adds two to a later placement and avoids one penalty: seven points apart'),
   }
   const box = (x: number, y: number, label: string, fill = '#f6f3eb', w = 62) => <g key={`${x}-${y}`}><rect x={x} y={y} width={w} height={72} rx="5" fill={fill} stroke="#697c70" strokeWidth="1.3"/><text x={x + w / 2} y={y + 45} textAnchor="middle" fontSize="25" fill="#183b41">{label}</text></g>
   return <figure className={`case-diagram case-diagram--${id}${compact ? ' case-diagram--compact' : ''}`}>
@@ -88,6 +91,37 @@ export function CaseDiagram({ id, language = 'zh-CN', compact = false }: { id: s
         <circle cx="75" cy="123" r="19" fill="#214b50"/><circle cx="445" cy="123" r="19" fill="#214b50"/>
         <text x="260" y="206" textAnchor="middle" fontSize="17">{t('上方已占：2—3人时，余线也关闭', 'One claimed: at 2–3 players, both are closed')}</text>
         <text x="260" y="249" textAnchor="middle" fontSize="17">{t('4—5人时，另一位玩家可占余线', 'At 4–5 players, another player may use the other')}</text>
+      </g>}
+      {id === 'modern-art' && <g>
+        <text x="260" y="42" textAnchor="middle" fontSize="20">{t('多一笔成交，未必多一笔利润', 'Another sale can reduce the return')}</text>
+        <rect x="28" y="78" width="212" height="102" rx="5" fill="#c5d0b0"/>
+        <rect x="280" y="78" width="212" height="102" rx="5" fill="#e6d8bb"/>
+        <text x="134" y="117" textAnchor="middle" fontSize="18">{t('新成交款', 'New sale proceeds')}</text>
+        <text x="134" y="159" textAnchor="middle" fontSize="30">+8</text>
+        <text x="386" y="117" textAnchor="middle" fontSize="18">{t('已有两幅画的变化', 'Two earlier paintings')}</text>
+        <text x="386" y="159" textAnchor="middle" fontSize="30">−20</text>
+        <text x="260" y="228" textAnchor="middle" fontSize="27">8 − 20 = −12</text>
+        <text x="260" y="274" textAnchor="middle" fontSize="16">{t('只比较正文中的第一轮快照', 'The first-round snapshot in this article')}</text>
+      </g>}
+      {id === 'the-crew' && <g>
+        <text x="260" y="41" textAnchor="middle" fontSize="20">{t('目标绿3：需要乙收下', 'Target green 3: B must capture it')}</text>
+        <rect x="35" y="73" width="450" height="77" rx="5" fill="#c5d0b0"/>
+        <text x="260" y="104" textAnchor="middle" fontSize="18">{t('甲2 → 乙7 → 丙3 → 丁1', 'A2 → B7 → C3 → D1')}</text>
+        <text x="260" y="134" textAnchor="middle" fontSize="17">{t('乙赢墩，完成自己的目标', 'B wins and completes B’s task')}</text>
+        <rect x="35" y="168" width="450" height="77" rx="5" fill="#e6d8bb"/>
+        <text x="260" y="199" textAnchor="middle" fontSize="18">{t('甲2 → 乙7 → 丙3 → 丁9', 'A2 → B7 → C3 → D9')}</text>
+        <text x="260" y="229" textAnchor="middle" fontSize="17">{t('丁赢墩，任务尝试失败', 'D wins and the attempt fails')}</text>
+        <text x="260" y="281" textAnchor="middle" fontSize="16">{t('这四张都是绿牌，只改丁的选择', 'All four cards are green; only D’s play changes')}</text>
+      </g>}
+      {id === 'azul' && <g>
+        <text x="260" y="42" textAnchor="middle" fontSize="20">{t('一块黑砖，三个分数变化', 'One black tile, three score changes')}</text>
+        {[[96,'4',t('黑砖得分','Black scores')],[260,'2',t('红砖多得','More for red')],[424,'1',t('少扣地板','Penalty avoided')]].map(([x,value,label]) => <g key={x}>
+          <rect x={Number(x)-65} y="78" width="130" height="103" rx="5" fill="#e6d8bb" stroke="#697c70"/>
+          <text x={x} y="128" textAnchor="middle" fontSize="30">{value}</text>
+          <text x={x} y="164" textAnchor="middle" fontSize="16">{label}</text>
+        </g>)}
+        <text x="260" y="237" textAnchor="middle" fontSize="27">4 + 2 + 1 = 7</text>
+        <text x="260" y="279" textAnchor="middle" fontSize="16">{t('正文指定墙面：16分与9分', 'For the specified wall: 16 points versus 9')}</text>
       </g>}
     </svg>
     {!compact && <figcaption>{t('为解释关系绘制的示意图，不还原实际组件与完整局面。', 'A diagram of relationships, not a reproduction of components or a complete game state.')}</figcaption>}
