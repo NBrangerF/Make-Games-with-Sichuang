@@ -1,3 +1,4 @@
+import { matchesSearch, type ReadingSearchIndex } from './reading-search'
 import catalog from '../content/design-library/catalog.json'
 import type { LibraryKind, LibraryQuestion, ReadingLanguage } from './reading-navigation'
 
@@ -36,10 +37,9 @@ export const questionLabels: Record<LibraryQuestion, LibraryText> = {
   process: { 'zh-CN': '怎样做原型并修订', en: 'Prototype and revise' },
 }
 
-export function searchLibrary(entries: LibraryEntry[], query: string, kind?: LibraryKind, question?: LibraryQuestion) {
-  const terms = query.trim().toLocaleLowerCase().split(/\s+/).filter(Boolean)
+export function searchLibrary(entries: LibraryEntry[], query: string, kind?: LibraryKind, question?: LibraryQuestion, index?: ReadingSearchIndex) {
   return entries.filter(entry => {
     const haystack = [entry.title['zh-CN'], entry.title.en, entry.summary['zh-CN'], entry.summary.en, ...entry.aliases['zh-CN'], ...entry.aliases.en, ...entry.searchTerms['zh-CN'], ...entry.searchTerms.en, ...Object.values(questionLabels[entry.question]), ...entry.bggReferences.map(ref => ref.name)].join(' ').toLocaleLowerCase()
-    return (!kind || libraryGroup(entry.kind) === kind) && (!question || entry.question === question) && terms.every(term => haystack.includes(term))
+    return (!kind || libraryGroup(entry.kind) === kind) && (!question || entry.question === question) && matchesSearch(haystack, query, index?.get(entry.id))
   })
 }

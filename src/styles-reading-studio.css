@@ -118,7 +118,7 @@ body[data-reading-studio="true"] .original-reading__body .reading-worksheet__sta
 .case-library-intro h1 { font-size: clamp(33px,4vw,57px); line-height: 1.3; letter-spacing: -.03em; margin: 0 0 18px; }
 .case-library-intro p { font-size: 19px; line-height: 1.8; margin: 0; }
 .case-library-search { display: flex; align-items: center; gap: 16px; border: 1px solid #96a092; border-radius: 5px; padding: 5px 16px; max-width: 750px; margin: 10px 0 20px; }
-.case-library-search label { font-size: 14px; white-space: nowrap; font-weight: 500; }
+.case-library-search label { font-size: 14px; white-space: normal; font-weight: 500; }
 .case-library-search input { min-width: 100px; flex: 1; border: 0; background: transparent; color: #183b41; padding: 10px; font: inherit; }
 .case-library-search button, .case-library-empty button { font: inherit; min-height: 44px; background: transparent; border: 1px solid #96a092; padding: 8px; cursor: pointer; }
 .case-library-filters { display: flex; flex-wrap: wrap; gap: 28px; border-bottom: 1px solid #cdd0c3; }

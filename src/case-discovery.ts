@@ -1,3 +1,4 @@
+import { matchesSearch, type ReadingSearchIndex } from './reading-search.ts'
 import type { CaseCategory, DesignCase } from './case-catalog'
 import type { CasePerspective, ReadingLanguage } from './reading-navigation'
 
@@ -17,7 +18,7 @@ const normalize = (value: string) => value.normalize('NFKC').toLocaleLowerCase()
 export const caseSectionTarget = (id: string) => `case-section-${id}`
 export const caseSectionLabel = (title: string) => title.replace(/^(?:角度[一二三]：|Angle (?:one|two|three):\s*)/, '')
 
-export function searchCases(entries: DesignCase[], { query, category, perspective, authorOnly }: CaseFilters) {
+export function searchCases(entries: DesignCase[], { query, category, perspective, authorOnly }: CaseFilters, index?: ReadingSearchIndex) {
   const tokens = normalize(query).trim().split(/\s+/).filter(Boolean)
   return entries.flatMap(entry => {
     if ((category && entry.category !== category) || (authorOnly && !entry.designerAccount)) return []
@@ -26,10 +27,12 @@ export function searchCases(entries: DesignCase[], { query, category, perspectiv
     const base = normalize([entry.id, entry.game, entry.designerAccount?.author || ''].join(' '))
     const sections = candidates.filter(section => {
       const text = `${base} ${normalize([section.title.en, section.title['zh-CN'], ...section.topics.flatMap(topic => Object.values(casePerspectiveLabels[topic]))].join(' '))}`
-      return tokens.every(token => text.includes(token))
+      return matchesSearch(text, query, index?.get(entry.id), [section.id])
     })
     if (sections.length) return [{ entry, sections }]
     const description = `${base} ${normalize([entry.title.en, entry.title['zh-CN'], entry.summary.en, entry.summary['zh-CN']].join(' '))}`
-    return tokens.every(token => description.includes(token)) ? [{ entry, sections: candidates }] : []
+    if (tokens.every(token => description.includes(token))) return [{ entry, sections: candidates }]
+    // Cross-section and introduction matches belong to the article, not an invented angle.
+    return matchesSearch(description, query, index?.get(entry.id), perspective ? candidates.map(s => s.id) : undefined) ? [{ entry, sections: [] }] : []
   })
 }
