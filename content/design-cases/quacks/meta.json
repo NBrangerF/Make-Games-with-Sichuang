@@ -1,0 +1,43 @@
+{
+  "id": "quacks",
+  "category": "mechanism",
+  "game": "The Quacks of Quedlinburg",
+  "title": {
+    "zh-CN": "Quacks：抽到安全筹码，为什么下一抽反而更危险？",
+    "en": "Quacks: Why Can a Safe Chip Make the Next Draw More Dangerous?"
+  },
+  "summary": {
+    "zh-CN": "逐枚核算剩余袋子、爆锅后的取舍，以及蓝筹与黄筹改变的不同环节，区分随机结果、选择机会和已保留的进展。",
+    "en": "Count the remaining bag and separate explosion losses, blue-chip choices, and yellow-chip returns to see how chance, decisions, and retained progress interact."
+  },
+  "chapterIds": [
+    "reading-choices-and-agency",
+    "reading-information-and-randomness",
+    "reading-resources-and-endings",
+    "reading-design-an-economy",
+    "reading-combine-mechanisms"
+  ],
+  "sources": [
+    {
+      "label": "Schmidt — The Quacks of Quedlinburg, product 88220",
+      "url": "https://www.schmidtspiele.de/detail/product/the-quacks-of-quedlinburg.html",
+      "edition": "Schmidt base product 88220; official page accessed 2026-09-10",
+      "locator": "Designer Wolfgang Warsch, article number 88220, link to 88220_Quack_rules_english_2024.pdf",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "label": "Schmidt — English base rules, file named 2024",
+      "url": "https://www.schmidtspiele.de/files/Retail/72dpi_PNG/88220_Quack_rules_english_2024.pdf",
+      "edition": "88220 official English basic rules, eight pages; basic pot without test tubes; Set 1, no expansions or final-round conversion in examples",
+      "locator": "p.3: initial chips and rat tails; pp.4–5: placement, explosion and flask; pp.5–7: evaluation, buying and cleanup; p.5 enlarged scoring-space figure:13 coins,2 points,ruby; p.7:yellow availability",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "label": "Schmidt — English Almanac of Ingredients, Tabletopia-hosted publisher document",
+      "url": "https://c.tabletopia.com/games/the-quacks-of-quedlinburg/rules/88220-quacksalber-quacks-almanac-gb/en",
+      "edition": "Schmidt-authored base-game ingredient appendix; undated printing, four PDF pages; no claim of a 2024 co-publication; only Set 1 applied",
+      "locator": "PDF p.1:Crow skull Set1 and prices; p.2:Mandrake Set1; p.3:Garden spider Set1; p.4:publisher imprint",
+      "checkedAt": "2026-09-10"
+    }
+  ]
+}

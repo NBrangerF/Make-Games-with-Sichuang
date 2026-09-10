@@ -10,7 +10,7 @@ import { toolTitles } from './tool-catalog'
 import { libraryEntries } from './design-library-catalog'
 
 const texts = import.meta.glob<string>('../content/design-cases/*/*.md', { query: '?raw', import: 'default' })
-const caseTools: Record<string, GuideToolId> = { carcassonne: 'decision-trace', pandemic: 'shared-decision', dominion: 'balance-pass', 'six-nimmt': 'decision-trace', hanabi: 'shared-decision', wingspan: 'theme-review', agricola: 'decision-trace', 'cant-stop': 'decision-trace', 'for-sale': 'decision-trace' }
+const caseTools: Record<string, GuideToolId> = { carcassonne: 'decision-trace', pandemic: 'shared-decision', dominion: 'balance-pass', 'six-nimmt': 'decision-trace', hanabi: 'shared-decision', wingspan: 'theme-review', agricola: 'decision-trace', 'cant-stop': 'decision-trace', 'for-sale': 'decision-trace', 'el-grande': 'decision-trace', quacks: 'balance-pass', 'ticket-to-ride': 'decision-trace' }
 
 function RelatedLibrary({ caseId, language, from }: { caseId: string; language: ReadingLanguage; from: string }) {
   const related = libraryEntries.filter(item => item.caseIds.includes(caseId))

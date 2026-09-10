@@ -15,6 +15,9 @@ export function CaseDiagram({ id, language = 'zh-CN', compact = false }: { id: s
     agricola: t('新增成员本轮需要食物，下一轮才增加行动', 'A newborn needs food this harvest and adds an action next round'),
     'cant-stop': t('本轮临时进度与停手后保留的进度分开记录', 'Temporary progress is separate from progress secured by stopping'),
     'for-sale': t('竞价获得房屋，再用房屋换取支票', 'Bid for properties, then exchange properties for checks'),
+    'el-grande': t('部署与国王移动的顺序，改变骑士能进入的地区', 'Deployment and King movement change each other’s legal targets'),
+    quacks: t('白色总值为6，剩余五枚中只有白色3会使本次抽取爆锅', 'At a white total of six, only the white three among these five remaining chips causes a burst'),
+    'ticket-to-ride': t('一条双线已被占用时，剩余线路的可用性取决于人数', 'Player count determines whether the other half of a double route remains available'),
   }
   const box = (x: number, y: number, label: string, fill = '#f6f3eb', w = 62) => <g key={`${x}-${y}`}><rect x={x} y={y} width={w} height={72} rx="5" fill={fill} stroke="#697c70" strokeWidth="1.3"/><text x={x + w / 2} y={y + 45} textAnchor="middle" fontSize="25" fill="#183b41">{label}</text></g>
   return <figure className={`case-diagram case-diagram--${id}${compact ? ' case-diagram--compact' : ''}`}>
@@ -56,6 +59,35 @@ export function CaseDiagram({ id, language = 'zh-CN', compact = false }: { id: s
         <text x="260" y="51" textAnchor="middle" fontSize="19">{t('两次比较，使用不同资源', 'Two contests, different resources')}</text>
         <text x="260" y="218" textAnchor="middle" fontSize="17">{t('先竞价购买，再同时选牌出售', 'First bid to buy, then choose together to sell')}</text>
         <text x="260" y="258" textAnchor="middle" fontSize="17">{t('余款也留到终局', 'Unspent cash remains at the end')}</text>
+      </g>}
+      {id === 'el-grande' && <g>
+        <text x="260" y="36" textAnchor="middle" fontSize="19">{t('同样部署5人，交换两个动作的顺序', 'Five placements, two different orders')}</text>
+        <rect x="25" y="64" width="470" height="84" rx="5" fill="#c5d0b0"/>
+        <text x="260" y="95" textAnchor="middle" fontSize="18">{t('先部署 → 再移动国王', 'Deploy → move the King')}</text>
+        <text x="260" y="129" textAnchor="middle" fontSize="19">Galicia: 7 · Castilla: 0</text>
+        <rect x="25" y="169" width="470" height="84" rx="5" fill="#e6d8bb"/>
+        <text x="260" y="200" textAnchor="middle" fontSize="18">{t('先移动国王 → 再部署', 'Move the King → deploy')}</text>
+        <text x="260" y="234" textAnchor="middle" fontSize="19">Galicia: 2 · Castilla: 5</text>
+        <text x="260" y="284" textAnchor="middle" fontSize="16">{t('两边最终都是国王在Galicia，Court剩2人', 'Both end: King in Galicia, two in Court')}</text>
+      </g>}
+      {id === 'quacks' && <g>
+        <text x="260" y="45" textAnchor="middle" fontSize="20">{t('已入锅的白色总值：6', 'White total already in the pot: 6')}</text>
+        {[['3','#f6f3eb'],['1','#f6f3eb'],['1','#f6f3eb'],['1','#e6b574'],['1','#b5c6a5']].map(([value,fill],i) => <g key={i}>
+          <circle cx={80+i*90} cy="125" r="30" fill={fill} stroke={i === 0 ? '#b84628' : '#697c70'} strokeWidth={i === 0 ? 3 : 1.5}/>
+          <text x={80+i*90} y="134" textAnchor="middle" fontSize="27">{value}</text>
+        </g>)}
+        <text x="260" y="193" textAnchor="middle" fontSize="18">{t('剩余：白3、白1、白1、橙1、绿1', 'Remaining: W3, W1, W1, orange1, green1')}</text>
+        <text x="260" y="249" textAnchor="middle" fontSize="21">{t('均匀抽取：1/5会爆锅', 'Uniform next draw: 1/5 causes a burst')}</text>
+      </g>}
+      {id === 'ticket-to-ride' && <g>
+        <text x="95" y="48" textAnchor="middle" fontSize="20">Dallas</text>
+        <text x="425" y="48" textAnchor="middle" fontSize="20">Houston</text>
+        <line x1="95" y1="96" x2="425" y2="96" stroke="#b84628" strokeWidth="9"/>
+        <rect x="232" y="82" width="56" height="28" rx="4" fill="#b84628" stroke="#f6f3eb" strokeWidth="2"/>
+        <line x1="95" y1="151" x2="425" y2="151" stroke="#697c70" strokeWidth="5" strokeDasharray="9 6"/>
+        <circle cx="75" cy="123" r="19" fill="#214b50"/><circle cx="445" cy="123" r="19" fill="#214b50"/>
+        <text x="260" y="206" textAnchor="middle" fontSize="17">{t('上方已占：2—3人时，余线也关闭', 'One claimed: at 2–3 players, both are closed')}</text>
+        <text x="260" y="249" textAnchor="middle" fontSize="17">{t('4—5人时，另一位玩家可占余线', 'At 4–5 players, another player may use the other')}</text>
       </g>}
     </svg>
     {!compact && <figcaption>{t('为解释关系绘制的示意图，不还原实际组件与完整局面。', 'A diagram of relationships, not a reproduction of components or a complete game state.')}</figcaption>}

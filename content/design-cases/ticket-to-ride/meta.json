@@ -1,0 +1,43 @@
+{
+  "id": "ticket-to-ride",
+  "category": "game",
+  "game": "Ticket to Ride",
+  "title": {
+    "zh-CN": "Ticket to Ride：牌凑齐了，为什么路还不一定修得成？",
+    "en": "Ticket to Ride: Why Can a Complete Hand Still Leave You Without a Route?"
+  },
+  "summary": {
+    "zh-CN": "用真实地图上的三组局面，拆开双线容量、万能牌的取得方式，以及最后一回合中线路分与车票负分的关系；对照作者的开发回忆。",
+    "en": "Three worked positions on the original map separate double-route capacity, locomotive acquisition, and final-turn route and ticket scoring, alongside the designer’s development account."
+  },
+  "chapterIds": [
+    "reading-choices-and-agency",
+    "reading-time-and-interaction",
+    "reading-information-and-randomness",
+    "reading-state-and-resolution",
+    "reading-theme-and-emotion"
+  ],
+  "sources": [
+    {
+      "label": "Days of Wonder — Ticket to Ride 2015 English rules",
+      "url": "https://ncdn0.daysofwonder.com/tickettoride/en/img/tt_rules_2015_en.pdf",
+      "edition": "Original USA base game, 2015 English reprint; 30 tickets, initial deal three/keep at least two; all expansion and 2025 V2 rules excluded",
+      "locator": "PDF/printed p.2 components (Chicago–New Orleans 7 illustration), setup and one action per turn; pp.2–3 original map; p.3 drawing, locomotives, claiming and double-route restrictions; p.4 route scoring, ticket scoring, end trigger and longest path",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "label": "Days of Wonder — Ticket to Ride official product page",
+      "url": "https://www.daysofwonder.com/game/ticket-to-ride/",
+      "edition": "Current official product page accessed 2026-09-10; used for author identity and old/new rule links only",
+      "locator": "Author(s): Alan R. Moon; The Rules and Old Rules downloads. Current 33-ticket components and 2025 V2 initial four-ticket deal are not imported into this case.",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "label": "Alan R. Moon & Mark Kaufmann — The History of Ticket To Ride",
+      "url": "https://d1vzi28wh99zvq.cloudfront.net/pdf_previews/147192-sample.pdf",
+      "edition": "Game Trade Magazine, April 2014, publicly accessible sample; original-game development retrospective accompanying anniversary promotion",
+      "locator": "Sample PDF pp.5–6, printed pp.6–7: author byline, Alan’s Story (outline/map, self-test, friend testing, later route/rule/ticket changes); Kaufmann’s separately attributed setting/title account. Anniversary advertisement is not rules evidence.",
+      "checkedAt": "2026-09-10"
+    }
+  ]
+}

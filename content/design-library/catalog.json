@@ -167,7 +167,8 @@
       ],
       "caseIds": [
         "six-nimmt",
-        "for-sale"
+        "for-sale",
+        "el-grande"
       ],
       "relations": [
         {
@@ -224,7 +225,8 @@
         "reading-information-and-randomness"
       ],
       "caseIds": [
-        "cant-stop"
+        "cant-stop",
+        "quacks"
       ],
       "relations": [],
       "bggReferences": [
@@ -330,7 +332,8 @@
         "reading-space-and-opportunity"
       ],
       "caseIds": [
-        "carcassonne"
+        "carcassonne",
+        "el-grande"
       ],
       "relations": [
         {
@@ -815,7 +818,9 @@
         "reading-resources-and-endings",
         "reading-goals-and-pacing"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "ticket-to-ride"
+      ],
       "relations": [
         {
           "targetId": "lesson-theme-to-rule",
@@ -881,7 +886,9 @@
         "reading-core-actions",
         "reading-choices-and-agency"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "el-grande"
+      ],
       "relations": [
         {
           "targetId": "worker-placement",
@@ -1011,7 +1018,8 @@
       ],
       "caseIds": [
         "dominion",
-        "for-sale"
+        "for-sale",
+        "ticket-to-ride"
       ],
       "relations": [
         {
@@ -1154,7 +1162,9 @@
         "reading-information-and-randomness",
         "reading-combine-mechanisms"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "quacks"
+      ],
       "relations": [
         {
           "targetId": "deck-building",
@@ -1392,7 +1402,8 @@
         "reading-state-and-resolution"
       ],
       "caseIds": [
-        "carcassonne"
+        "carcassonne",
+        "el-grande"
       ],
       "relations": [
         {
@@ -1452,7 +1463,9 @@
         "reading-space-and-opportunity",
         "reading-combine-mechanisms"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "ticket-to-ride"
+      ],
       "relations": [
         {
           "targetId": "tile-placement",
@@ -1651,7 +1664,8 @@
       ],
       "caseIds": [
         "six-nimmt",
-        "hanabi"
+        "hanabi",
+        "el-grande"
       ],
       "relations": [
         {
@@ -1937,7 +1951,8 @@
         "reading-core-actions"
       ],
       "caseIds": [
-        "wingspan"
+        "wingspan",
+        "quacks"
       ],
       "relations": [
         {
@@ -3035,7 +3050,9 @@
         "reading-stories-and-models",
         "reading-core-actions"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "quacks"
+      ],
       "relations": [
         {
           "targetId": "action-points",
@@ -3175,7 +3192,9 @@
         "reading-stories-and-models",
         "reading-choices-and-agency"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "el-grande"
+      ],
       "relations": [
         {
           "targetId": "trading",

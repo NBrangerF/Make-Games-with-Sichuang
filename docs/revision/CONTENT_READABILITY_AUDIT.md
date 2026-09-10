@@ -1,14 +1,14 @@
-<!-- content-fingerprint: 29df56c099119fffff6b37da53a3db53d377e6fc414e951f2a2f6c653d5d3264 -->
+<!-- content-fingerprint: c4138f9accc9a327f2485527f3573f5aec3128dbe9064527ddfdad31a9b16f08 -->
 # 全站资料文本可读性审计
 
 审计日期：2026-09-10
-范围：`content/` 下全部 334 个 JSON 与 Markdown 文件，不抽样。
-覆盖：19,012 个含中文的字段或段落，约 563,059 个汉字。
+范围：`content/` 下全部 343 个 JSON 与 Markdown 文件，不抽样。
+覆盖：19,147 个含中文的字段或段落，约 571,301 个汉字。
 
 ## 结论
 
 - 本报告审计文字长度与抽象词信号，不据此判断网站首页或学习路径是否有效。
-- 机器规则标出了 460 个可能需要分段或渐进披露的长句、长段与抽象词密集处。这是编辑优先级，不是内容质量评分。
+- 机器规则标出了 480 个可能需要分段或渐进披露的长句、长段与抽象词密集处。这是编辑优先级，不是内容质量评分。
 - 授权译文和来源正文保留原有使用范围；原创双语文章提供独立阅读入口，课程、案例与工具维持各自路径。
 - 汉字阈值只评估含中文的字段或段落。英文正文参与文件指纹与解析检查，但不能因此声称其可读性已被这些阈值验证。
 
@@ -38,6 +38,9 @@
 | `design-cases/dominion/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/dominion/meta.json` | 2 | 59 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/dominion/zh-CN.md` | 38 | 2468 | 1 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/el-grande/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/el-grande/meta.json` | 2 | 62 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/el-grande/zh-CN.md` | 44 | 2582 | 6 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/for-sale/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/for-sale/meta.json` | 2 | 66 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/for-sale/zh-CN.md` | 43 | 2239 | 6 | 支持资料：通过节点或资料库按需进入 |
@@ -47,9 +50,15 @@
 | `design-cases/pandemic/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/pandemic/meta.json` | 2 | 55 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/pandemic/zh-CN.md` | 35 | 2306 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/quacks/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/quacks/meta.json` | 2 | 62 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/quacks/zh-CN.md` | 37 | 2549 | 8 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/six-nimmt/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/six-nimmt/meta.json` | 2 | 51 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/six-nimmt/zh-CN.md` | 38 | 2047 | 2 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/ticket-to-ride/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/ticket-to-ride/meta.json` | 2 | 68 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/ticket-to-ride/zh-CN.md` | 48 | 2919 | 6 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/wingspan/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/wingspan/meta.json` | 2 | 52 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/wingspan/zh-CN.md` | 41 | 2672 | 4 | 支持资料：通过节点或资料库按需进入 |

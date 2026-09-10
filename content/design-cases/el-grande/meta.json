@@ -1,0 +1,43 @@
+{
+  "id": "el-grande",
+  "category": "game",
+  "game": "El Grande",
+  "title": {
+    "zh-CN": "El Grande：人数没变，为什么先后和去向会改变影响力？",
+    "en": "El Grande: Why Do Order and Destination Change the Value of the Same People?"
+  },
+  "summary": {
+    "zh-CN": "比较先选权与补给、国王移动前后的部署，以及城堡迁入如何改变多人计分；结合Kramer关于更换主题的开发回顾。",
+    "en": "Compare access and supply, the order of deployment and King movement, and castle destinations that change multiplayer scoring, alongside Kramer’s account of finding a new theme."
+  },
+  "chapterIds": [
+    "reading-choices-and-agency",
+    "reading-space-and-opportunity",
+    "reading-information-and-randomness",
+    "reading-state-and-resolution",
+    "reading-theme-and-emotion"
+  ],
+  "sources": [
+    {
+      "label": "Hans im Glück — El Grande",
+      "url": "https://www.hans-im-glueck.de/en/game/el-grande-2/",
+      "edition": "Official publisher product page; 2023 rulebook linked; accessed 2026-09-10",
+      "locator": "Designer credits and English rules download",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "label": "Hans im Glück — El Grande 2023 English rules",
+      "url": "https://www.hans-im-glueck.de/wp-content/uploads/2023/07/ElGrande_2023_rule_EN_20-07-23-komprimiert.pdf",
+      "edition": "2023, four-player base game, four-to-five-player board; no expansions or alternative cards",
+      "locator": "PDF/printed pp.2–3: setup and map; pp.4–6: Power cards, Court/deployment, King and Castillo; pp.7–8: general scoring, ties and bonuses; p.12: Your Majesty; pp.9–10: excluded variants",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "label": "Brettspielbox — Interview mit Wolfgang Kramer Teil 2",
+      "url": "https://brettspielbox.de/interview-mit-wolfgang-kramer-teil-2/",
+      "edition": "First-person interview, April 2, 2015, German; accessed 2026-09-10",
+      "locator": "Trojan Horse anecdote and questions “Wie haben Sie reagiert…” and “Was macht El Grande…”",
+      "checkedAt": "2026-09-10"
+    }
+  ]
+}
