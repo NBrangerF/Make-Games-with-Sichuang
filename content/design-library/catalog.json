@@ -1023,6 +1023,14 @@
         {
           "targetId": "movement-points",
           "type": "see-also"
+        },
+        {
+          "targetId": "asymmetric-powers",
+          "type": "see-also"
+        },
+        {
+          "targetId": "scenario-campaign",
+          "type": "see-also"
         }
       ],
       "bggReferences": [
@@ -1792,6 +1800,26 @@
         {
           "targetId": "public-private-scoring",
           "type": "see-also"
+        },
+        {
+          "targetId": "asymmetric-powers",
+          "type": "contrast-with"
+        },
+        {
+          "targetId": "team-structure",
+          "type": "see-also"
+        },
+        {
+          "targetId": "traitor-structure",
+          "type": "see-also"
+        },
+        {
+          "targetId": "solo-opponent",
+          "type": "see-also"
+        },
+        {
+          "targetId": "comparison-shared-team",
+          "type": "see-also"
         }
       ],
       "bggReferences": []
@@ -2368,6 +2396,22 @@
         },
         {
           "targetId": "trading",
+          "type": "see-also"
+        },
+        {
+          "targetId": "team-structure",
+          "type": "contrast-with"
+        },
+        {
+          "targetId": "traitor-structure",
+          "type": "contrast-with"
+        },
+        {
+          "targetId": "solo-opponent",
+          "type": "see-also"
+        },
+        {
+          "targetId": "comparison-shared-team",
           "type": "see-also"
         }
       ],
@@ -4744,6 +4788,10 @@
         {
           "targetId": "comparison-hidden-deduction",
           "type": "see-also"
+        },
+        {
+          "targetId": "traitor-structure",
+          "type": "see-also"
         }
       ],
       "bggReferences": [
@@ -5538,6 +5586,10 @@
         {
           "targetId": "hidden-information",
           "type": "see-also"
+        },
+        {
+          "targetId": "player-elimination",
+          "type": "see-also"
         }
       ],
       "bggReferences": [
@@ -5613,6 +5665,10 @@
         },
         {
           "targetId": "catch-up-system",
+          "type": "see-also"
+        },
+        {
+          "targetId": "scenario-campaign",
           "type": "see-also"
         }
       ],
@@ -5806,6 +5862,490 @@
         },
         {
           "targetId": "zone-control",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "player-elimination",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "玩家淘汰：少了一枚棋子，还是少了一位参与者？",
+        "en": "Player elimination: one fewer piece, or one fewer participant?"
+      },
+      "summary": {
+        "zh-CN": "区分台站移除与退出参与，比较首轮淘汰、继续行动和首次复归，核算等待名额与终局资格。",
+        "en": "Separate station removal from leaving play, comparing early elimination, continued actions, and one return while tracking missed slots and final eligibility."
+      },
+      "aliases": {
+        "zh-CN": [
+          "玩家淘汰",
+          "退出参与",
+          "出局"
+        ],
+        "en": [
+          "player elimination",
+          "leaving play",
+          "elimination"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "棋子移除",
+          "参赛资格",
+          "旁观等待",
+          "复归",
+          "最后名额"
+        ],
+        "en": [
+          "piece removal",
+          "eligibility",
+          "waiting",
+          "return to play",
+          "last action slot"
+        ]
+      },
+      "question": "interaction",
+      "chapterIds": [
+        "reading-players-and-context",
+        "reading-resources-and-endings"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "public-private-scoring",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2685,
+          "name": "Player Elimination",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2685/player-elimination",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "asymmetric-powers",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "非对称能力：相同资源，哪些行动规则不同？",
+        "en": "Asymmetric powers: with equal resources, which action rules differ?"
+      },
+      "summary": {
+        "zh-CN": "在同一送件路线中比较跨步与免交付费，再只提高跨步费用，追踪权限、次数、付款与剩余包裹。",
+        "en": "Compare a long stride and a delivery-fee waiver on one route, then raise only the stride cost to track permissions, uses, payment, and retained parcels."
+      },
+      "aliases": {
+        "zh-CN": [
+          "非对称能力",
+          "玩家能力",
+          "专属能力"
+        ],
+        "en": [
+          "asymmetric powers",
+          "player powers",
+          "exclusive abilities"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "行动例外",
+          "初始资源",
+          "角色差异",
+          "费用减免",
+          "次数限制"
+        ],
+        "en": [
+          "action exceptions",
+          "starting resources",
+          "role differences",
+          "fee waiver",
+          "use limit"
+        ]
+      },
+      "question": "actions",
+      "chapterIds": [
+        "reading-core-actions",
+        "reading-choices-and-agency"
+      ],
+      "caseIds": [
+        "root"
+      ],
+      "relations": [
+        {
+          "targetId": "action-points",
+          "type": "see-also"
+        },
+        {
+          "targetId": "hidden-information",
+          "type": "contrast-with"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2015,
+          "name": "Variable Player Powers",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2015/variable-player-powers",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "team-structure",
+      "kind": "structure",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "团队结构：一起赢，分别决定什么",
+        "en": "Team structure: winning together, deciding separately"
+      },
+      "summary": {
+        "zh-CN": "两支运输队分别锁定路线与装具，比较配合与失配，再只改变队内信息披露，分清共同胜负、决定权与资源权限。",
+        "en": "Two transport teams lock routes and kits separately. Compare matching and mismatched choices, then change only disclosure within each team to separate shared outcomes from authority."
+      },
+      "aliases": {
+        "zh-CN": [
+          "团队结构",
+          "团队对抗"
+        ],
+        "en": [
+          "team structure",
+          "team-based games"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "共同胜负",
+          "角色分工",
+          "队内交流",
+          "决定权",
+          "队伍计分"
+        ],
+        "en": [
+          "shared outcome",
+          "distinct roles",
+          "team communication",
+          "decision authority",
+          "team scoring"
+        ]
+      },
+      "question": "interaction",
+      "chapterIds": [
+        "reading-cooperation-and-conflict",
+        "reading-choices-and-agency",
+        "reading-information-and-randomness"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "cooperative-structure",
+          "type": "contrast-with"
+        },
+        {
+          "targetId": "traitor-structure",
+          "type": "see-also"
+        },
+        {
+          "targetId": "hidden-information",
+          "type": "see-also"
+        },
+        {
+          "targetId": "comparison-shared-team",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2019,
+          "name": "Team-Based Game",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2019/team-based-game",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "traitor-structure",
+      "kind": "structure",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "叛徒结构：目标不一致，证据却不完整",
+        "en": "Traitor structure: conflicting objectives, incomplete evidence"
+      },
+      "summary": {
+        "zh-CN": "试运失败可能来自阻挠或风阻；比较后续选人与具名行动披露，分清阵营目标、身份可能性与完成任务。",
+        "en": "A trial can fail through sabotage or weather. Compare crew selection and named action disclosure to distinguish faction objectives, possible identities, and task completion."
+      },
+      "aliases": {
+        "zh-CN": [
+          "叛徒结构",
+          "隐藏叛徒"
+        ],
+        "en": [
+          "traitor structure",
+          "hidden traitor"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "阵营目标",
+          "身份推断",
+          "具名证据",
+          "误判",
+          "任务失败"
+        ],
+        "en": [
+          "faction objectives",
+          "identity inference",
+          "named evidence",
+          "misidentification",
+          "task failure"
+        ]
+      },
+      "question": "interaction",
+      "chapterIds": [
+        "reading-cooperation-and-conflict",
+        "reading-information-and-randomness",
+        "reading-choices-and-agency"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "team-structure",
+          "type": "see-also"
+        },
+        {
+          "targetId": "hidden-information",
+          "type": "see-also"
+        },
+        {
+          "targetId": "deduction",
+          "type": "see-also"
+        },
+        {
+          "targetId": "cooperative-structure",
+          "type": "contrast-with"
+        },
+        {
+          "targetId": "comparison-shared-team",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2814,
+          "name": "Traitor Game",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2814/traitor-game",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "solo-opponent",
+      "kind": "structure",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "单人模式与自动对手：系统怎样与你争一件东西",
+        "en": "Solo play and automated opponents: how the system competes for something"
+      },
+      "summary": {
+        "zh-CN": "让自动对手按两张优先卡取件，只改公开时点，追踪可预测压力、隐藏顺序和操作负担。",
+        "en": "Let two priority cards drive an automated rival, then change reveal timing to track predictable pressure, hidden order, and administration."
+      },
+      "aliases": {
+        "zh-CN": [
+          "单人模式",
+          "自动对手",
+          "单人游戏"
+        ],
+        "en": [
+          "solo play",
+          "automated opponents",
+          "solitaire games"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "优先卡",
+          "单人压力",
+          "自动取件",
+          "后备规则",
+          "操作者负担"
+        ],
+        "en": [
+          "priority card",
+          "solo pressure",
+          "automated collection",
+          "fallback rule",
+          "operator burden"
+        ]
+      },
+      "question": "interaction",
+      "chapterIds": [
+        "reading-balance-and-player-count",
+        "reading-information-and-randomness"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "cooperative-structure",
+          "type": "see-also"
+        },
+        {
+          "targetId": "hidden-information",
+          "type": "see-also"
+        },
+        {
+          "targetId": "scenario-campaign",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2819,
+          "name": "Solo / Solitaire Game",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2819/solo-solitaire-game",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "scenario-campaign",
+      "kind": "structure",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "场景与跨局状态：上一局究竟留下了什么",
+        "en": "Scenarios and state across games: what does the previous game leave behind?"
+      },
+      "summary": {
+        "zh-CN": "用六枚零件完成两站维修，对照转场保留与调整手中数量，说明失败推进、重开及传承制边界。",
+        "en": "Use six parts across two repairs, compare carrying and adjusting the hand, and specify failure advancement, restarting, and the legacy boundary."
+      },
+      "aliases": {
+        "zh-CN": [
+          "场景",
+          "战役",
+          "跨局状态",
+          "任务结构"
+        ],
+        "en": [
+          "scenarios",
+          "campaigns",
+          "state across games",
+          "mission structure"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "两站维修",
+          "存档状态",
+          "失败推进",
+          "跨局资源",
+          "重开",
+          "传承制区别"
+        ],
+        "en": [
+          "two-site repairs",
+          "save state",
+          "failure advancement",
+          "resources across games",
+          "restart",
+          "legacy distinction"
+        ]
+      },
+      "question": "process",
+      "chapterIds": [
+        "reading-stories-and-models",
+        "reading-state-and-resolution"
+      ],
+      "caseIds": [
+        "the-crew"
+      ],
+      "relations": [
+        {
+          "targetId": "solo-opponent",
+          "type": "see-also"
+        },
+        {
+          "targetId": "action-points",
+          "type": "see-also"
+        },
+        {
+          "targetId": "race-end-trigger",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2822,
+          "name": "Scenario / Mission / Campaign Game",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2822/scenario-mission-campaign-game",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "comparison-shared-team",
+      "kind": "comparison",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "同一座信号台：合作、团队与叛徒改变了什么？",
+        "en": "One signal station: what changes between cooperation, teams, and a traitor?"
+      },
+      "summary": {
+        "zh-CN": "固定八次行动，先只改一人的胜负条件，再只改阵营信息，分清权限、目标与身份线索。",
+        "en": "Fix eight actions, change one victory condition, then change team visibility to separate permissions, goals, and identity evidence."
+      },
+      "aliases": {
+        "zh-CN": [
+          "合作、团队与叛徒",
+          "共同胜负与秘密阵营"
+        ],
+        "en": [
+          "cooperation, teams, and traitors",
+          "shared victory and secret teams"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "信号台",
+          "三对一",
+          "共同失败",
+          "身份相容性",
+          "结束时点"
+        ],
+        "en": [
+          "signal station",
+          "three against one",
+          "shared loss",
+          "identity compatibility",
+          "end timing"
+        ]
+      },
+      "question": "interaction",
+      "chapterIds": [
+        "reading-cooperation-and-conflict",
+        "reading-information-and-randomness"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "cooperative-structure",
+          "type": "see-also"
+        },
+        {
+          "targetId": "team-structure",
+          "type": "see-also"
+        },
+        {
+          "targetId": "traitor-structure",
+          "type": "see-also"
+        },
+        {
+          "targetId": "hidden-information",
           "type": "see-also"
         }
       ],
