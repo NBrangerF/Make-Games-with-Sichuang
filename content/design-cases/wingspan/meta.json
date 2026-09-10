@@ -7,8 +7,8 @@
     "en": "Wingspan: How Does a Habitat Organize Birds into an Engine?"
   },
   "summary": {
-    "zh-CN": "用两张真实森林鸟的一次取食，解释栖息地怎样组织重复收益，以及生态主题的表达边界。",
-    "en": "Use one food action with two real forest birds to examine how habitats organize repeated benefits and where ecological interpretation needs limits."
+    "zh-CN": "比较栖息地连锁、可用与储藏食物、目标板两面的得分关系，并对照 Hargrave 的能力与牌库开发取舍。",
+    "en": "Compare habitat chains, spendable versus cached food, and the two goal-board scoring relationships, with Hargrave’s development tradeoffs."
   },
   "chapterIds": [
     "reading-space-and-opportunity",
@@ -28,8 +28,8 @@
       "label": "Stonemaier Games — official English base rulebook, Tabletopia copy",
       "url": "https://c.tabletopia.com/games/wingspan/rules/ws-rulebook-r10-lr/en",
       "edition": "English core rulebook, file ws-rulebook-r10-lr; original player mat; no expansions",
-      "locator": "PDF pp. 3 and 7: Yellow-Bellied Sapsucker / Blue-Gray Gnatcatcher card images; p. 4: original mat and action order; pp. 5–9: rounds, costs, food, eggs and cards",
-      "checkedAt": "2026-09-08"
+      "locator": "PDF/printed pp. 1, 3, 7: bird card images; pp. 4–10: mat, actions, food, eggs, powers and scoring; pp. 2 and 11: goal board setup and both scoring methods",
+      "checkedAt": "2026-09-10"
     },
     {
       "label": "Stonemaier Games — Wingspan Rules & FAQ",
@@ -37,6 +37,13 @@
       "edition": "Publisher rules entry page, accessed 2026-09-08",
       "locator": "Opening rulebook downloads and Rulepop links; expansion-specific rulebook links",
       "checkedAt": "2026-09-08"
+    },
+    {
+      "label": "GamingTrend — Elizabeth Hargrave interview",
+      "url": "https://gamingtrend.com/interviews/crazy-eights-elizabeth-hargrave-on-wingspan/",
+      "edition": "Interview by Mike Dunn, 11 March 2019",
+      "locator": "Answers to ruleset influences and distilling species into mechanics: Deus, later row activation, smaller deck and distributions",
+      "checkedAt": "2026-09-10"
     }
   ]
 }
