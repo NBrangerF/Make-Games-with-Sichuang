@@ -3,6 +3,7 @@ import { readFileSync, readdirSync } from 'node:fs'
 import { validateLibrary } from './design-library-contract.mjs'
 import { parseRouteHash, serializeRoute } from '../src/url-state.ts'
 import { readingHref, readingReturn } from '../src/reading-navigation.ts'
+import { readingSourceHref } from '../src/reading-links.ts'
 
 const root = new URL('../', import.meta.url)
 const read = path => readFileSync(new URL(path, root), 'utf8')
@@ -13,6 +14,23 @@ for (const item of catalog.entries) for (const lang of ['zh-CN', 'en']) {
 }
 const context = { bodies, chapterIds: new Set(JSON.parse(read('content/reading-path.json')).chapters.map(item => item.id)), caseIds: new Set(readdirSync(new URL('content/design-cases/', root)).filter(id => !id.startsWith('.'))) }
 assert.deepEqual(validateLibrary(catalog, context), [])
+for (const lang of ['zh-CN', 'en']) {
+  const path = `/print-and-play/book-cart/${lang}.pdf`
+  assert.equal(readingSourceHref(path, '/', true), path)
+  assert.equal(readingSourceHref(path, '/preview/', true), `/preview${path}`)
+  assert.equal(readingSourceHref(path, '/preview', true), `/preview${path}`)
+  assert.equal(readingSourceHref(path, '/', false), null)
+  assert.equal(readFileSync(new URL(`public${path}`, root)).subarray(0, 5).toString(), '%PDF-')
+}
+for (const href of ['javascript:alert(1)', '//example.com/file.pdf', '/Users/private/book.pdf', '/print-and-play/book-cart/../en.pdf', '/print-and-play/book-cart/%65n.pdf', '/print-and-play/book-cart/en.pdf?redirect=1', '/print-and-play/unknown/en.pdf']) {
+  assert.equal(readingSourceHref(href, '/', true), null)
+}
+assert.equal(readingSourceHref('https://example.com/source', '/', true), 'https://example.com/source')
+assert.equal(readingSourceHref('https://example.com/source', '/', false), null)
+for (const body of bodies.values()) for (const match of body.matchAll(/\]\((\/print-and-play\/[^)]+)\)/g)) {
+  assert.ok(readingSourceHref(match[1], '/', true), `Unsupported printable link: ${match[1]}`)
+  assert.equal(readFileSync(new URL(`public${match[1]}`, root)).subarray(0, 5).toString(), '%PDF-')
+}
 assert.ok(catalog.entries.length > 0, 'No empty public catalog')
 for (const [name, corrupt] of [
   ['missing language', c => { delete c.entries[0].title.en }],

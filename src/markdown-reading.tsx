@@ -1,4 +1,5 @@
 import { Fragment, type ReactNode } from 'react'
+import { readingSourceHref } from './reading-links'
 
 type MarkdownReadingProps = {
   source: string
@@ -27,8 +28,9 @@ function renderInline(source: string, keyPrefix: string, allowSourceLinks = fals
     if (match[2] !== undefined && match[3]) {
       nodes.push(<span className="reading-image-reference" role="note" title={`原图地址：${match[3]}`} key={key}>图示：{match[2] || '原文配图'}（本页不加载外部图片）</span>)
     } else if (match[4] && match[5]) {
-      nodes.push(allowSourceLinks && /^https?:\/\//i.test(match[5])
-        ? <a className="reading-source-reference" href={match[5]} rel="noreferrer" key={key}>{match[4]}</a>
+      const href = readingSourceHref(match[5], import.meta.env.BASE_URL, allowSourceLinks)
+      nodes.push(href
+        ? <a className="reading-source-reference" href={href} rel="noreferrer" key={key}>{match[4]}</a>
         : <span className="reading-source-reference" title={`原链接：${match[5]}`} key={key}>{match[4]}</span>)
     } else if (match[6]) {
       nodes.push(<strong key={key}>{match[6]}</strong>)

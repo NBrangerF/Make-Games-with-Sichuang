@@ -1,0 +1,246 @@
+{
+  "schemaVersion": 1,
+  "id": "book-cart",
+  "contentVersion": "1.0.0",
+  "players": 2,
+  "books": 2,
+  "capacity": 2,
+  "actionLimit": 6,
+  "route": [
+    0,
+    1,
+    2
+  ],
+  "languages": {
+    "zh-CN": {
+      "title": "小车送书",
+      "subtitle": "双人合作教学小游戏 · 共用6次行动 · v1.0",
+      "goalTitle": "目标与结果",
+      "goal": "在最多6次行动内，把2本书都卸到阅读角。每次行动后先检查：已送完就立即共同成功；否则，用完第6次行动就共同失败。没有个人分数。",
+      "setupTitle": "准备",
+      "setup": [
+        "使用第2页的路线、1枚车标记、2枚书标记和1枚行动计数标记。也可自己画图，用硬币或纸片代替。",
+        "车放仓库0；2本书放仓库待装区；载物格与送达区空着；行动标记放0。车最多载2本，所有信息公开。",
+        "甲为A、乙为B。甲先行动，两人交替控制同一辆车。可以讨论，但当前玩家最终决定；需要帮助摆放时，由他确认所选动作。"
+      ],
+      "actionsTitle": "每次只做一个合法动作",
+      "actionHeaders": [
+        "动作",
+        "条件与效果"
+      ],
+      "actions": [
+        [
+          "装1本",
+          "车在仓库0，仓库还有书且车未满：移1本到车上。"
+        ],
+        [
+          "移1格",
+          "把车移到相邻地点：0与1相邻，1与2相邻；可以往返。"
+        ],
+        [
+          "卸1本",
+          "车在阅读角2且有书：移恰好1本到送达区。"
+        ],
+        [
+          "等1次",
+          "不改变车或书的位置，仍用掉1次行动。"
+        ]
+      ],
+      "turnTitle": "执行、计数、检查",
+      "turn": "完成动作后，把行动标记前进1格，再按上面的顺序检查成功或失败；未结束才交给另一位玩家。不能执行的动作须改选，不扣行动。移动不会自动装卸；书只能在仓库装、在阅读角卸，送达后不能再取回。没有随机、借贷或额外行动。",
+      "note": "本游戏独立于主线过河案例，用来比较规则与观察方法。它有很窄的安排问题；可运行不等于已经证明耐玩或适合所有读者。",
+      "boardTitle": "棋盘、标记与记录",
+      "boardIntro": "黑白打印即可。剪下底部4枚标记，或用自备物件代替。书1与书2规则相同。若缩放打印，组件尺寸也会改变。",
+      "places": [
+        "仓库 0",
+        "门口 1",
+        "阅读角 2"
+      ],
+      "areas": [
+        "待装书",
+        "车上：最多2本",
+        "已送达"
+      ],
+      "trackTitle": "已用行动：开始放0，每做一次动作前进一格",
+      "start": "开始",
+      "recordTitle": "可选记录：只写实际发生的动作与状态",
+      "recordHeaders": [
+        "次数",
+        "动作",
+        "车的位置",
+        "车载书",
+        "已送达"
+      ],
+      "tokens": [
+        "车",
+        "书1",
+        "书2",
+        "行动"
+      ],
+      "cut": "沿框剪下；两本书分别占一个载物格。",
+      "compareTitle": "只改一条：一次卸完",
+      "variant": "重新从开局开始，只把“卸1本”改成“车在阅读角且有书时，用1次行动卸下车上全部书”。其他准备、装书、移动、等待、载量、6次期限与结束顺序完全相同。",
+      "compareHeaders": [
+        "次数",
+        "基本版：一次卸1本",
+        "改版：一次卸完"
+      ],
+      "compareRows": [
+        [
+          "1",
+          "装1本：车载1",
+          "装1本：车载1"
+        ],
+        [
+          "2",
+          "再装1本：车载2",
+          "再装1本：车载2"
+        ],
+        [
+          "3",
+          "到门口1：车载2",
+          "到门口1：车载2"
+        ],
+        [
+          "4",
+          "到阅读角2：车载2",
+          "到阅读角2：车载2"
+        ],
+        [
+          "5",
+          "卸1本：已送1，车载1",
+          "卸2本：已送2，立即成功"
+        ],
+        [
+          "6",
+          "卸1本：已送2，立即成功",
+          "游戏已结束，不再行动"
+        ]
+      ],
+      "explainTitle": "从结果能说什么？",
+      "explain": [
+        "基本版至少需要2次装、2次移动、2次卸，共6次；改版至少需要2次装、2次移动、1次卸，共5次。上表分别达到这些下限。",
+        "改版少一次卸书，也少了乙原本第6次的行动。更快结束不自动意味着更好玩或每个人更有参与感；这里没有真人测试结果。"
+      ],
+      "checkTitle": "自查与答案",
+      "check": "基本版第6次刚好卸完第二本，成功还是失败？成功：先检查是否送完，再对未成功的局面检查期限。移动到阅读角算送达吗？不算，还需要卸书动作。",
+      "footer": "落桌原创教学材料 · 可配合网站六个方法单元阅读",
+      "link": "luozhuo-tabletop-design.vercel.app"
+    },
+    "en": {
+      "title": "Book Cart",
+      "subtitle": "A two-player cooperative teaching game · Six shared actions · v1.0",
+      "goalTitle": "Goal and result",
+      "goal": "Unload both books at the reading corner within six actions. After each action, first check delivery: if both books are delivered, both players immediately win. Otherwise, both lose after action six. There are no individual points.",
+      "setupTitle": "Setup",
+      "setup": [
+        "Use the route on page 2, one cart marker, two book markers, and one action counter. Drawing the board and using coins or paper pieces also works.",
+        "Put the cart at Depot 0, both books in the depot holding area, and the counter at 0. Cargo and delivered areas start empty. Capacity is two books. All information is public.",
+        "A acts first; A and B alternate controlling the same cart. Discussion is allowed, but the active player decides. If someone helps move pieces, the active player confirms the chosen action."
+      ],
+      "actionsTitle": "Choose one legal action each turn",
+      "actionHeaders": [
+        "Action",
+        "Requirement and effect"
+      ],
+      "actions": [
+        [
+          "Load 1 book",
+          "At Depot 0, with a book waiting and spare capacity: put one book aboard."
+        ],
+        [
+          "Move 1 space",
+          "Move the cart to an adjacent location. 0 connects to 1; 1 connects to 2. Travel works both ways."
+        ],
+        [
+          "Unload 1 book",
+          "At Reading Corner 2, with a book aboard: move exactly one to the delivered area."
+        ],
+        [
+          "Wait 1 action",
+          "Leave all pieces where they are, but still spend one action."
+        ]
+      ],
+      "turnTitle": "Act, count, check",
+      "turn": "After the action, advance the counter one space and check win then loss as above. Pass control only if the game continues. Reselect an unavailable action without spending an action. Movement never loads or unloads automatically. Load only at the depot and unload only at the corner; delivered books cannot be collected again. There are no random events, loans, or extra actions.",
+      "note": "This game is separate from the main river-crossing example. Its narrow scheduling puzzle supports rule comparisons and observation; being runnable does not establish replayability or suitability for every reader.",
+      "boardTitle": "Board, markers, and record",
+      "boardIntro": "Monochrome printing is sufficient. Cut out the four markers below or use your own pieces. Books 1 and 2 have identical rules. Scaling the print changes component sizes.",
+      "places": [
+        "Depot 0",
+        "Door 1",
+        "Reading Corner 2"
+      ],
+      "areas": [
+        "Books at depot",
+        "Cargo: maximum 2",
+        "Delivered"
+      ],
+      "trackTitle": "Actions used: start at 0; advance once after every action",
+      "start": "Start",
+      "recordTitle": "Optional record: write the actions and states that occurred",
+      "recordHeaders": [
+        "Action",
+        "Choice",
+        "Cart at",
+        "Cargo",
+        "Delivered"
+      ],
+      "tokens": [
+        "Cart",
+        "Book 1",
+        "Book 2",
+        "Counter"
+      ],
+      "cut": "Cut along the boxes. Each book occupies one cargo space.",
+      "compareTitle": "Change one rule: unload all",
+      "variant": "Reset to the starting position. Replace only “Unload 1 book” with “At the reading corner, with cargo aboard, spend one action to unload all books aboard.” Keep setup, loading, movement, waiting, capacity, the six-action deadline, and ending order unchanged.",
+      "compareHeaders": [
+        "Action",
+        "Base: unload one",
+        "Variant: unload all"
+      ],
+      "compareRows": [
+        [
+          "1",
+          "Load one; cargo 1",
+          "Load one; cargo 1"
+        ],
+        [
+          "2",
+          "Load another; cargo 2",
+          "Load another; cargo 2"
+        ],
+        [
+          "3",
+          "Move to Door 1; cargo 2",
+          "Move to Door 1; cargo 2"
+        ],
+        [
+          "4",
+          "Move to Corner 2; cargo 2",
+          "Move to Corner 2; cargo 2"
+        ],
+        [
+          "5",
+          "Unload one; delivered 1, cargo 1",
+          "Unload both; delivered 2, win now"
+        ],
+        [
+          "6",
+          "Unload one; delivered 2, win now",
+          "Game already ended; no action"
+        ]
+      ],
+      "explainTitle": "What does this result establish?",
+      "explain": [
+        "The base needs at least two loads, two moves, and two unloads: six actions. The variant needs two loads, two moves, and one unload: five. The traces attain both lower bounds.",
+        "The variant removes one unload and B's former sixth action. Faster completion does not automatically mean more enjoyment or participation. No human playtest result is claimed."
+      ],
+      "checkTitle": "Check, with answers",
+      "check": "The second book is unloaded on action six in the base game. Win or lose? Win: check completed delivery before applying the deadline to an incomplete position. Does arriving at the corner deliver a book? No; unloading still requires an action.",
+      "footer": "Original Luozhuo teaching material · Companion to the six method lessons",
+      "link": "luozhuo-tabletop-design.vercel.app"
+    }
+  }
+}

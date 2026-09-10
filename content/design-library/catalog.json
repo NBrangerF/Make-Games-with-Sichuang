@@ -2276,6 +2276,339 @@
         }
       ],
       "bggReferences": []
+    },
+    {
+      "id": "lesson-observe-a-turn",
+      "kind": "lesson",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "观察一次行动：先记发生了什么，再解释为什么",
+        "en": "Observe a turn: record the event before explaining why it happened"
+      },
+      "summary": {
+        "zh-CN": "用两条送书路线区分事件记录、规则后果和玩家意图，并核算一次提前出发是否还能补救。",
+        "en": "Compare two delivery traces to separate events, rule consequences, and player intent, calculating whether an early departure can be recovered."
+      },
+      "aliases": {
+        "zh-CN": [
+          "观察行动"
+        ],
+        "en": [
+          "observe a turn"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "观察行动",
+          "记录与解释",
+          "小车送书"
+        ],
+        "en": [
+          "observe a turn",
+          "event and interpretation",
+          "Book Cart"
+        ]
+      },
+      "question": "process",
+      "chapterIds": [
+        "reading-observe-a-game",
+        "reading-prototypes-and-evidence"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "lesson-test-rules",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-use-feedback",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-prototype-a-question",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "lesson-test-rules",
+      "kind": "lesson",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "独立读规则：一句“卸书”，还缺哪个决定？",
+        "en": "Read rules independently: what is missing from “unload books”?"
+      },
+      "summary": {
+        "zh-CN": "用车载两本书的局面揭示动作数量缺失，比较口头补充与可独立使用的规则修订。",
+        "en": "Use two books aboard to expose a missing action quantity, comparing oral clarification with a revision readers can use independently."
+      },
+      "aliases": {
+        "zh-CN": [
+          "独立读规则"
+        ],
+        "en": [
+          "independent rules test"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "独立读规则",
+          "规则缺口",
+          "盲测",
+          "小车送书"
+        ],
+        "en": [
+          "independent rules test",
+          "rule gap",
+          "blind playtest",
+          "Book Cart"
+        ]
+      },
+      "question": "process",
+      "chapterIds": [
+        "reading-independent-rules-test",
+        "reading-rules-and-components"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "lesson-observe-a-turn",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-prototype-a-question",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "lesson-change-one-risk",
+      "kind": "lesson",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "改一条规则：多给一次行动，究竟容许哪种失误？",
+        "en": "Change one rule: which mistake does one extra action forgive?"
+      },
+      "summary": {
+        "zh-CN": "固定送书路线，只把期限从6次改为7次，区别等待余量与绕路成本，并检查最后决定权。",
+        "en": "Change only the deadline from six to seven actions, distinguishing a spare wait from detour costs and checking who gets the final turn."
+      },
+      "aliases": {
+        "zh-CN": [
+          "改一条规则"
+        ],
+        "en": [
+          "change one rule"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "改一条规则",
+          "期限风险",
+          "行动余量",
+          "小车送书"
+        ],
+        "en": [
+          "change one rule",
+          "deadline risk",
+          "spare actions",
+          "Book Cart"
+        ]
+      },
+      "question": "process",
+      "chapterIds": [
+        "reading-balance-and-player-count",
+        "reading-design-judgment"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "lesson-prototype-a-question",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-use-feedback",
+          "type": "see-also"
+        },
+        {
+          "targetId": "action-points",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "lesson-design-for-participation",
+      "kind": "lesson",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "为参与而设计：看得出选项，还要能表达自己的决定",
+        "en": "Design for participation: recognizing options is only part of making a decision"
+      },
+      "summary": {
+        "zh-CN": "把颜色提示、动作条件和代摆决定权分开，比较哪些信息保留下来，哪些参与问题仍需实测。",
+        "en": "Separate color prompts, action conditions, and assisted-placement authority, identifying preserved information and remaining questions for observation."
+      },
+      "aliases": {
+        "zh-CN": [
+          "参与方式"
+        ],
+        "en": [
+          "participation"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "参与方式",
+          "动作提示",
+          "黑白打印",
+          "代摆",
+          "小车送书"
+        ],
+        "en": [
+          "participation",
+          "action prompts",
+          "monochrome printing",
+          "assisted placement",
+          "Book Cart"
+        ]
+      },
+      "question": "interaction",
+      "chapterIds": [
+        "reading-access-and-participation",
+        "reading-rules-and-components"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "lesson-prototype-a-question",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-observe-a-turn",
+          "type": "see-also"
+        },
+        {
+          "targetId": "cooperative-structure",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "lesson-prototype-a-question",
+      "kind": "lesson",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "按问题做原型：这次需要保留哪些细节？",
+        "en": "Prototype for a question: which details must remain this time?"
+      },
+      "summary": {
+        "zh-CN": "用完整可打印的小车游戏比较6步与5步，再检查删掉中间地点为什么会改变所测问题。",
+        "en": "Use a complete printable cart game to compare six and five actions, then examine why removing an intermediate location changes the question."
+      },
+      "aliases": {
+        "zh-CN": [
+          "按问题做原型"
+        ],
+        "en": [
+          "prototype for a question"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "按问题做原型",
+          "可打印游戏",
+          "小车送书",
+          "原型精度"
+        ],
+        "en": [
+          "prototype for a question",
+          "print-and-play",
+          "Book Cart",
+          "prototype fidelity"
+        ]
+      },
+      "question": "process",
+      "chapterIds": [
+        "reading-prototype-for-a-question",
+        "reading-share-a-playable-version"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "lesson-test-rules",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-design-for-participation",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-change-one-risk",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "lesson-use-feedback",
+      "kind": "lesson",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "使用反馈：一句“加本书”，还不是修订结论",
+        "en": "Use feedback: “add a book” is not yet a revision decision"
+      },
+      "summary": {
+        "zh-CN": "从虚构反馈中分开体验与建议，核算加一本书和一次卸完的代价，再决定下一次查什么。",
+        "en": "Separate reaction from suggestion in a fictional feedback scenario, calculate adding a book versus unloading all, and choose the next question."
+      },
+      "aliases": {
+        "zh-CN": [
+          "使用反馈"
+        ],
+        "en": [
+          "use feedback"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "使用反馈",
+          "反馈与建议",
+          "修订判断",
+          "小车送书"
+        ],
+        "en": [
+          "use feedback",
+          "feedback and suggestions",
+          "revision judgment",
+          "Book Cart"
+        ]
+      },
+      "question": "process",
+      "chapterIds": [
+        "reading-diagnose-feedback",
+        "reading-design-judgment",
+        "reading-plan-a-playtest"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "lesson-observe-a-turn",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-change-one-risk",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-prototype-a-question",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
     }
   ]
 }
