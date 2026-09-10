@@ -7,8 +7,8 @@
     "en": "Dominion: why can one more free card still have a cost?"
   },
   "summary": {
-    "zh-CN": "从一张银币与两轮开局推算，解释新牌何时可用、免费铜币怎样影响后续抽牌，以及牌库顺畅与最终得分的取舍。",
-    "en": "Track a Silver through two opening turns to understand when new cards become usable, how free Copper affects later draws, and why end scoring changes priorities."
+    "zh-CN": "从抽取机会、行动牌的出牌能力与终局价值三个角度，逐步核算牌库取舍，并对照设计者的整套牌构成思路。",
+    "en": "Compare draw chances, Action-play capacity, and endgame value through worked states and the designer’s approach to set composition."
   },
   "chapterIds": [
     "reading-information-and-randomness",
@@ -20,9 +20,9 @@
     {
       "label": "Rio Grande Games — Dominion English second-edition rules",
       "url": "https://www.riograndegames.com/wp-content/uploads/2016/09/Dominion2E.pdf",
-      "edition": "Second edition; English PDF currently linked by the publisher",
+      "edition": "Second edition; publisher-linked PDF with ©2021 cards and 17 August 2023 layout timestamp",
       "locator": "Printed pages 3–6: Setup, Game Overview, Action phase, Buy phase, Clean-up, Ending the Game and card types",
-      "checkedAt": "2026-09-08"
+      "checkedAt": "2026-09-10"
     },
     {
       "label": "Rio Grande Games — Dominion",
@@ -30,6 +30,13 @@
       "edition": "Second edition",
       "locator": "Description, second-edition note, Rules link",
       "checkedAt": "2026-09-08"
+    },
+    {
+      "label": "Donald X. Vaccarino — The Secret History of the Dominion 2nd Editions",
+      "url": "https://boardgamegeek.com/thread/1648227/the-secret-history-of-the-dominion-2nd-editions",
+      "edition": "Designer retrospective and replies, 3 October 2016",
+      "locator": "Opening revision reasons; Donald X. @donaldx reply to Walt about desired functions and changing set composition",
+      "checkedAt": "2026-09-10"
     }
   ]
 }

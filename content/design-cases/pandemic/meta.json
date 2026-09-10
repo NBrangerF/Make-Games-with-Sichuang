@@ -7,8 +7,8 @@
     "en": "Pandemic: clear the cubes first, or bring the cards together?"
   },
   "summary": {
-    "zh-CN": "用交牌、研发和治疗的两种顺序，解释合作如何改变一次行动的效果，以及共同目标为何还需要具体的贡献与取舍。",
-    "en": "Compare two orders of sharing, research, and treatment to see how cooperation changes an action’s effect and what helping costs."
+    "zh-CN": "从行动顺序、合作代价与决定权、感染牌的重复压力三个角度，配合完整算例和 Leacock 的原型回顾。",
+    "en": "Examine action order, contribution and decision rights, and recurring infection pressure, with worked comparisons and Leacock’s prototype account."
   },
   "chapterIds": [
     "reading-core-actions",
@@ -22,7 +22,7 @@
       "url": "https://cdn.svc.asmodee.net/production-zman/uploads/2024/09/Pandemic_Rulebook.pdf",
       "edition": "Base game, English rulebook; copyright 2013",
       "locator": "Printed pages 3–4, 6–8: Play, Actions, Epidemics, Game End, Roles; page 5: Chicago–Atlanta connection",
-      "checkedAt": "2026-09-08"
+      "checkedAt": "2026-09-10"
     },
     {
       "label": "Z-Man Games — Pandemic",
@@ -30,6 +30,13 @@
       "edition": "Base game",
       "locator": "Game description, cooperative objective, roles, Rules link",
       "checkedAt": "2026-09-08"
+    },
+    {
+      "label": "Matt Leacock — A Word from the Designer",
+      "url": "https://desktopgames.com.ua/games/4495/pandemic_10th_anniversary_rulebook_eng.pdf",
+      "edition": "2018 tenth-anniversary rulebook, publisher document hosted by retailer; design history only",
+      "locator": "Printed/PDF page 3, signed Matt Leacock, 2018; right column: first prototype, discard experiment and subsequent testing",
+      "checkedAt": "2026-09-10"
     }
   ]
 }

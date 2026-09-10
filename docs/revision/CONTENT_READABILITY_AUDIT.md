@@ -1,14 +1,14 @@
-<!-- content-fingerprint: 5e35cee995f62e91d3d9a5ab3f5becb704919acc46ea21e662454d94b78c12cc -->
+<!-- content-fingerprint: d4c37c6f1302c51706e8c0ea24aaad031b12ea7b9328580dadad3f83e0c1a99a -->
 # 全站资料文本可读性审计
 
 审计日期：2026-09-10
 范围：`content/` 下全部 325 个 JSON 与 Markdown 文件，不抽样。
-覆盖：18,793 个含中文的字段或段落，约 550,127 个汉字。
+覆盖：18,838 个含中文的字段或段落，约 552,938 个汉字。
 
 ## 结论
 
 - 本报告审计文字长度与抽象词信号，不据此判断网站首页或学习路径是否有效。
-- 机器规则标出了 440 个可能需要分段或渐进披露的长句、长段与抽象词密集处。这是编辑优先级，不是内容质量评分。
+- 机器规则标出了 442 个可能需要分段或渐进披露的长句、长段与抽象词密集处。这是编辑优先级，不是内容质量评分。
 - 授权译文和来源正文保留原有使用范围；原创双语文章提供独立阅读入口，课程、案例与工具维持各自路径。
 - 汉字阈值只评估含中文的字段或段落。英文正文参与文件指纹与解析检查，但不能因此声称其可读性已被这些阈值验证。
 
@@ -27,17 +27,17 @@
 | `claims.json` | 644 | 32881 | 22 | 内部元数据：不作为新手首屏文案 |
 | `concept-action-index.json` | 65 | 721 | 0 | 内部元数据：不作为新手首屏文案 |
 | `design-cases/carcassonne/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-cases/carcassonne/meta.json` | 2 | 62 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-cases/carcassonne/zh-CN.md` | 23 | 1462 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/carcassonne/meta.json` | 2 | 60 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/carcassonne/zh-CN.md` | 38 | 2380 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/dominion/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-cases/dominion/meta.json` | 2 | 61 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-cases/dominion/zh-CN.md` | 22 | 1414 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/dominion/meta.json` | 2 | 59 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/dominion/zh-CN.md` | 38 | 2468 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/hanabi/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/hanabi/meta.json` | 2 | 50 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/hanabi/zh-CN.md` | 23 | 1492 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/pandemic/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-cases/pandemic/meta.json` | 2 | 65 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-cases/pandemic/zh-CN.md` | 21 | 1453 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/pandemic/meta.json` | 2 | 55 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/pandemic/zh-CN.md` | 35 | 2306 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/six-nimmt/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/six-nimmt/meta.json` | 2 | 44 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/six-nimmt/zh-CN.md` | 23 | 1263 | 2 | 支持资料：通过节点或资料库按需进入 |

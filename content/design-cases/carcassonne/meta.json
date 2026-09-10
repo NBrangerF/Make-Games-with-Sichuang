@@ -7,8 +7,8 @@
     "en": "Carcassonne: why does finishing a city change your next turn?"
   },
   "summary": {
-    "zh-CN": "沿着一次城市摆放，比较即时得分、人手归还与新占地点的代价，理解共享地图怎样连接当前和后续决定。",
-    "en": "Follow one city placement to compare immediate points, returning meeples, and the cost of a new claim on a shared map."
+    "zh-CN": "从人手回收、共同计分和灵活派遣三个角度，比较局部结果，并对照 Wrede 对职业限制与规则复杂度的取舍。",
+    "en": "Compare returning meeples, shared scoring, and flexible assignments, alongside Wrede’s stated tradeoffs about roles and complexity."
   },
   "chapterIds": [
     "reading-choices-and-agency",
@@ -22,7 +22,7 @@
       "url": "https://cdn.svc.asmodee.net/production-zman/uploads/2024/09/carcassonne_v3_rulesheet_en-1.pdf",
       "edition": "Base game, English v3 file; copyright 2000, 2021",
       "locator": "Printed pages 2–6; Contents & Setup, Gameplay, Cities, Multiple Meeple on the Same Feature, Game End and Final Scoring",
-      "checkedAt": "2026-09-08"
+      "checkedAt": "2026-09-10"
     },
     {
       "label": "Z-Man Games — Carcassonne",
@@ -30,6 +30,13 @@
       "edition": "Base game",
       "locator": "Game description, contents, Rules link",
       "checkedAt": "2026-09-08"
+    },
+    {
+      "label": "Klaus-Jürgen Wrede — interview, Board game components",
+      "url": "https://boardgamecomponents.wordpress.com/2017/03/19/interview-with-klaus-jurgen-wrede/",
+      "edition": "Interview published 19 March 2017; designer answers distinguished from interviewer narration",
+      "locator": "Components and game mechanics: predefined roles and adjacent monasteries",
+      "checkedAt": "2026-09-10"
     }
   ]
 }
