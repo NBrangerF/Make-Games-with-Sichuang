@@ -571,7 +571,9 @@
         "reading-state-and-resolution",
         "reading-theme-and-emotion"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "spirit-island"
+      ],
       "relations": [
         {
           "targetId": "lesson-build-a-combination",
@@ -888,7 +890,10 @@
         "reading-choices-and-agency"
       ],
       "caseIds": [
-        "el-grande"
+        "el-grande",
+        "root",
+        "radlands",
+        "spirit-island"
       ],
       "relations": [
         {
@@ -1020,7 +1025,9 @@
       "caseIds": [
         "dominion",
         "for-sale",
-        "ticket-to-ride"
+        "ticket-to-ride",
+        "root",
+        "radlands"
       ],
       "relations": [
         {
@@ -1408,7 +1415,8 @@
       ],
       "caseIds": [
         "carcassonne",
-        "el-grande"
+        "el-grande",
+        "root"
       ],
       "relations": [
         {
@@ -2204,7 +2212,8 @@
       "caseIds": [
         "pandemic",
         "hanabi",
-        "the-crew"
+        "the-crew",
+        "spirit-island"
       ],
       "relations": [
         {
@@ -2484,7 +2493,9 @@
         "reading-balance-and-player-count",
         "reading-design-judgment"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "radlands"
+      ],
       "relations": [
         {
           "targetId": "lesson-prototype-a-question",
@@ -2719,7 +2730,8 @@
         "reading-resources-and-endings"
       ],
       "caseIds": [
-        "wingspan"
+        "wingspan",
+        "spirit-island"
       ],
       "relations": [
         {
@@ -3065,7 +3077,8 @@
         "reading-core-actions"
       ],
       "caseIds": [
-        "quacks"
+        "quacks",
+        "root"
       ],
       "relations": [
         {

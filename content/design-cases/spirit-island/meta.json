@@ -1,0 +1,64 @@
+{
+  "id": "spirit-island",
+  "category": "mechanism",
+  "game": "Spirit Island",
+  "title": {
+    "zh-CN": "Spirit Island：没有消灭敌人，为什么局面已经变好了？",
+    "en": "Spirit Island: Why Can the Position Improve Without Destroying an Enemy?"
+  },
+  "summary": {
+    "zh-CN": "沿着建造、防御与恐惧结算三个独立局面，区分阻止生产、保留反击，以及改变胜利条件；附真实卡牌费用与逐步核算。",
+    "en": "Resolve three independent situations to distinguish preventing construction, preserving a counterattack, and changing victory conditions, with actual card costs and explicit calculations."
+  },
+  "chapterIds": [
+    "reading-time-and-interaction",
+    "reading-state-and-resolution",
+    "reading-goals-and-pacing",
+    "reading-cooperation-and-conflict",
+    "reading-theme-and-emotion"
+  ],
+  "sources": [
+    {
+      "label": "Greater Than Games — Spirit Island product page",
+      "url": "https://shop.greaterthangames.com/products/spirit-island",
+      "edition": "Publisher base-game product page, checked 2026-09-11",
+      "locator": "Product info: R. Eric Reuss; Rules questions?: Download here links to the selected Dropbox CORE Rulebook; publisher links to Spirit Island Wiki",
+      "checkedAt": "2026-09-11"
+    },
+    {
+      "label": "Greater Than Games — English CORE Rulebook",
+      "url": "https://www.dropbox.com/scl/fi/5wzghwnbsi39msyy6vvox/Spirit-Island-CORE-Rulebook.pdf?dl=0&rlkey=86i7aofqbzhulezjr7z0ssyff&st=iqv6wpml",
+      "edition": "Publisher-linked English base rulebook, 32 PDF pages; copyright 2016–2018 on p.28, no explicit printing; applied with Living FAQ starting-Blight correction; no expansions, Adversary, Scenario, thematic map or Blight Card",
+      "locator": "PDF/printed p.6 setup; pp.8–10 timing/Ravage/Build; p.12 Fear and victory; pp.13–19 Presence, targeting, damage, defense and Push; p.16 original Sap the Strength of Multitudes card; p.29 signed Design Notes; PDF p.32 unnumbered reference back cover",
+      "checkedAt": "2026-09-11"
+    },
+    {
+      "label": "Official Spirit Island Living FAQ — Setup",
+      "url": "https://querki.net/raw/darker/spirit-island-faq/Setup",
+      "edition": "Living FAQ Core game erratum, accessed 2026-09-11",
+      "locator": "Erratum for setting up the Healthy Island Card: exactly one additional starting Blight overall, including 5 per player +1 without a Blight Card; not applied on later flips; starting Island Blight from box",
+      "checkedAt": "2026-09-11"
+    },
+    {
+      "label": "Wash Away — original base-card image on publisher-linked Wiki",
+      "url": "https://spiritislandwiki.com/index.php?title=Wash_Away",
+      "edition": "River Surges in Sunlight base Unique Power; original component image mirrored on Wiki, accessed 2026-09-11",
+      "locator": "Original card image: cost 1, Slow, Range 1 from Presence, any land, Push up to 3 Explorers/Towns; Water and Earth",
+      "checkedAt": "2026-09-11"
+    },
+    {
+      "label": "Lightning's Boon — original base-card image on publisher-linked Wiki",
+      "url": "https://spiritislandwiki.com/index.php?title=Lightning%27s_Boon",
+      "edition": "Lightning's Swift Strike base Unique Power; original component image mirrored on Wiki, accessed 2026-09-11",
+      "locator": "Original card image: cost 1, Fast, any Spirit/no Range, up to 2 Slow Powers may act as Fast this turn; Fire and Air",
+      "checkedAt": "2026-09-11"
+    },
+    {
+      "label": "Flash Floods — original base-card image on publisher-linked Wiki",
+      "url": "https://spiritislandwiki.com/index.php?title=Flash_Floods",
+      "edition": "River Surges in Sunlight base Unique Power; original component image mirrored on Wiki, accessed 2026-09-11",
+      "locator": "Original card image: cost 2, Fast, Range 1, any land; 1 Damage plus 1 if Coastal; Sun and Water",
+      "checkedAt": "2026-09-11"
+    }
+  ]
+}

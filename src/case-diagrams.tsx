@@ -21,6 +21,9 @@ export function CaseDiagram({ id, language = 'zh-CN', compact = false }: { id: s
     'modern-art': t('多收8元成交款，两幅已有画作合计少结算20元，净差为负12', 'Eight more in sale proceeds, twenty less from earlier paintings: a net difference of minus twelve'),
     'the-crew': t('同一张目标绿3，必须由任务持有人乙赢得，丁赢走会失败', 'The target green three must reach its task owner B; D winning it fails the mission'),
     azul: t('补上一块黑砖，产生4分、后续多2分并少扣1分，共差7分', 'One black tile scores four, adds two to a later placement and avoids one penalty: seven points apart'),
+    root: t('中间空地从二比二变成三比二，猫族取得控制，三木才可用于远端建造', 'Changing the middle clearing from two against two to three against two lets the Marquise use three wood at the far building site'),
+    radlands: t('本回合花一水保存水塔，下回合三水加水塔兑换的一水，才能支付四水事件', 'Spend one water on a Water Silo now, then add its one water to next turn’s three to pay for a four-water event'),
+    'spirit-island': t('入侵者六点伤害减去五点防御，剩一点；两名达汉存活，反击共四点', 'Six Invader damage minus five Defend leaves one; two Dahan survive and counterattack for four'),
   }
   const box = (x: number, y: number, label: string, fill = '#f6f3eb', w = 62) => <g key={`${x}-${y}`}><rect x={x} y={y} width={w} height={72} rx="5" fill={fill} stroke="#697c70" strokeWidth="1.3"/><text x={x + w / 2} y={y + 45} textAnchor="middle" fontSize="25" fill="#183b41">{label}</text></g>
   return <figure className={`case-diagram case-diagram--${id}${compact ? ' case-diagram--compact' : ''}`}>
@@ -122,6 +125,38 @@ export function CaseDiagram({ id, language = 'zh-CN', compact = false }: { id: s
         </g>)}
         <text x="260" y="237" textAnchor="middle" fontSize="27">4 + 2 + 1 = 7</text>
         <text x="260" y="279" textAnchor="middle" fontSize="16">{t('正文指定墙面：16分与9分', 'For the specified wall: 16 points versus 9')}</text>
+      </g>}
+      {id === 'root' && <g>
+        <text x="260" y="40" textAnchor="middle" fontSize="20">{t('总木材没变，可用木材变了', 'Same wood, different access')}</text>
+        <path d="M 107 114 H 409" stroke="#697c70" strokeWidth="3"/>
+        {[['A',90],['B',260],['C',430]].map(([label,x]) => <g key={label}>
+          <circle cx={x} cy="114" r="31" fill="#f6f3eb" stroke="#214b50" strokeWidth="2"/>
+          <text x={x} y="122" textAnchor="middle" fontSize="25">{label}</text>
+        </g>)}
+        <text x="90" y="174" textAnchor="middle" fontSize="18">{t('3木', '3 wood')}</text>
+        <text x="260" y="174" textAnchor="middle" fontSize="18">2 : 2 → 3 : 2</text>
+        <text x="430" y="174" textAnchor="middle" fontSize="18">{t('建造处', 'Build here')}</text>
+        <text x="260" y="230" textAnchor="middle" fontSize="18">{t('取得B控制权：0可用木 → 3可用木', 'Rule B: 0 usable wood → 3 usable wood')}</text>
+        <text x="260" y="274" textAnchor="middle" fontSize="16">{t('只表示正文指定的道路关系', 'Only the path relationships specified below')}</text>
+      </g>}
+      {id === 'radlands' && <g>
+        <text x="260" y="40" textAnchor="middle" fontSize="20">{t('把支付能力带到下一回合', 'Move spending power to the next turn')}</text>
+        <rect x="35" y="77" width="205" height="106" rx="5" fill="#e6d8bb"/>
+        <rect x="280" y="77" width="205" height="106" rx="5" fill="#c5d0b0"/>
+        <text x="137" y="112" textAnchor="middle" fontSize="18">{t('现在付1', 'Pay 1 now')}</text>
+        <text x="137" y="155" textAnchor="middle" fontSize="18">{t('水塔留手', 'Keep Water Silo')}</text>
+        <text x="382" y="112" textAnchor="middle" fontSize="18">{t('下回合兑换', 'Redeem next turn')}</text>
+        <text x="382" y="155" textAnchor="middle" fontSize="27">3 + 1 = 4</text>
+        <text x="260" y="239" textAnchor="middle" fontSize="19">{t('现买现弃：3 − 1 + 1 = 3', 'Buy and junk now: 3 − 1 + 1 = 3')}</text>
+        <text x="260" y="278" textAnchor="middle" fontSize="16">{t('储存改变时点，不凭空增加水', 'Storage changes timing, not total water')}</text>
+      </g>}
+      {id === 'spirit-island' && <g>
+        <text x="260" y="42" textAnchor="middle" fontSize="20">{t('防御也改变谁能留下反击', 'Defend changes who can counterattack')}</text>
+        <text x="260" y="119" textAnchor="middle" fontSize="36">6 − 5 = 1</text>
+        <text x="260" y="159" textAnchor="middle" fontSize="18">{t('入侵伤害 − 防御 = 剩余伤害', 'Invader damage − Defend = remaining damage')}</text>
+        {[218,302].map(x => <circle key={x} cx={x} cy="207" r="18" fill="#214b50"/>)}
+        <text x="260" y="256" textAnchor="middle" fontSize="20">{t('两名达汉存活：2 + 2 = 4反击', 'Two Dahan survive: 2 + 2 = 4 back')}</text>
+        <text x="260" y="285" textAnchor="middle" fontSize="14">{t('正文第二个局部快照', 'The second local snapshot in this article')}</text>
       </g>}
     </svg>
     {!compact && <figcaption>{t('为解释关系绘制的示意图，不还原实际组件与完整局面。', 'A diagram of relationships, not a reproduction of components or a complete game state.')}</figcaption>}

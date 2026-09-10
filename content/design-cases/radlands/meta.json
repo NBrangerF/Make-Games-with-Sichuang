@@ -1,0 +1,36 @@
+{
+  "id": "radlands",
+  "category": "mechanism",
+  "game": "Radlands",
+  "title": {
+    "zh-CN": "Radlands：同样一点水，为什么早一回合就不同？",
+    "en": "Radlands: Why Does One Water Matter More a Turn Earlier?"
+  },
+  "summary": {
+    "zh-CN": "用水塔支付、前后排受伤与事件加速的三组局部对照，观察资源何时可用、谁失去能力，以及对手还有没有修复机会。",
+    "en": "Compare Water Silo payments, front and back damage, and event acceleration to examine resource timing, lost abilities, and opportunities to repair."
+  },
+  "chapterIds": [
+    "reading-design-an-economy",
+    "reading-space-and-opportunity",
+    "reading-time-and-interaction",
+    "reading-state-and-resolution",
+    "reading-rules-and-components"
+  ],
+  "sources": [
+    {
+      "label": "Roxley — Radlands Complete",
+      "url": "https://roxley.com/products/radlands-complete",
+      "edition": "Current official Complete product page, including Cult of Chrome; accessed 2026-09-11; article excludes the expansion",
+      "locator": "Game Design, Components, Media & Downloads; download entry labeled 2024.11.13 redirects to the V2.1 file",
+      "checkedAt": "2026-09-11"
+    },
+    {
+      "label": "Roxley — Radlands Rules of Play V2.1",
+      "url": "https://cdn.shopify.com/s/files/1/0246/2190/8043/files/Radlands_Rulebook_Booklet_2.1.pdf?v=1784906929",
+      "edition": "Official 16-page English V2.1 PDF; version on p.3, ©2026 on PDF p.16; base game with original 34 camps, excluding Cult of Chrome",
+      "locator": "PDF/printed p.5 Garage and Railgun cards; p.6 Repair Bot; p.7 Bombardment and protection; p.8 Magnus Karv junk icon, damage and restore; pp.9–11 turn order, water, placement, readiness and immediate victory; pp.14–15 base clarifications",
+      "checkedAt": "2026-09-11"
+    }
+  ]
+}

@@ -1,0 +1,44 @@
+{
+  "id": "root",
+  "category": "game",
+  "game": "Root",
+  "title": {
+    "zh-CN": "Root：同一张地图，为什么是三种不同的压力？",
+    "en": "Root: Why Does One Map Create Three Different Pressures?"
+  },
+  "summary": {
+    "zh-CN": "用木材通路、政令兑现和同情标记三组局部对照，理解非对称阵营如何改变资源、承诺与冲突的意义。",
+    "en": "Trace wood access, Decree obligations and sympathy through three local comparisons of asymmetric resources, commitments and conflict."
+  },
+  "chapterIds": ["reading-choices-and-agency", "reading-design-an-economy", "reading-state-and-resolution", "reading-theme-and-emotion"],
+  "sources": [
+    {
+      "label": "Leder Games — Root",
+      "url": "https://ledergames.com/products/root-a-game-of-woodland-might-and-right",
+      "edition": "Official base product page, accessed 2026-09-11",
+      "locator": "Credits and Resources",
+      "checkedAt": "2026-09-11"
+    },
+    {
+      "label": "Leder Games — The Law of Root",
+      "url": "https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Base_Law_Oct_2025.pdf?v=1774903756",
+      "edition": "October 13, 2025; four-player base-faction setting; expansion content excluded",
+      "locator": "PDF/printed pp.2–7: 2.5, 4.2–4.3, 6.5, 7.2, 7.4–7.8, 8.2.2 and 8.2.6",
+      "checkedAt": "2026-09-11"
+    },
+    {
+      "label": "Leder Games — Root Learning to Play",
+      "url": "https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Base_Learn_to_Play_web_Oct_15_2020.pdf?v=1603389572",
+      "edition": "Official October 15, 2020 filename; track graphics only, with 2025 Law for resolution",
+      "locator": "PDF/printed pp.11–12 sawmill cost/points and roost track",
+      "checkedAt": "2026-09-11"
+    },
+    {
+      "label": "Leder Games — Hard Cuts: The Continued Development of Root",
+      "url": "https://ledergames.com/blogs/news/root-hard-cuts-the-continued-development-of-root",
+      "edition": "January 22, 2018 development diary; describes prepublication revisions",
+      "locator": "You Say You Want a Revolution?; The New Alliance",
+      "checkedAt": "2026-09-11"
+    }
+  ]
+}
