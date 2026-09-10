@@ -1,14 +1,14 @@
-<!-- content-fingerprint: be78061d9e8f9680b6bcebf6fa5fa6a2b4c855387165ffd5ed7ecb1ffa412875 -->
+<!-- content-fingerprint: a718d852adad28e6d51b28d807137d7f31fade35fe6d818bcc538b5a86206d76 -->
 # 全站资料文本可读性审计
 
 审计日期：2026-09-10
-范围：`content/` 下全部 220 个 JSON 与 Markdown 文件，不抽样。
-覆盖：17,087 个含中文的字段或段落，约 485,799 个汉字。
+范围：`content/` 下全部 236 个 JSON 与 Markdown 文件，不抽样。
+覆盖：17,403 个含中文的字段或段落，约 499,122 个汉字。
 
 ## 结论
 
 - 本报告审计文字长度与抽象词信号，不据此判断网站首页或学习路径是否有效。
-- 机器规则标出了 362 个可能需要分段或渐进披露的长句、长段与抽象词密集处。这是编辑优先级，不是内容质量评分。
+- 机器规则标出了 386 个可能需要分段或渐进披露的长句、长段与抽象词密集处。这是编辑优先级，不是内容质量评分。
 - 授权译文和来源正文保留原有使用范围；原创双语文章提供独立阅读入口，课程、案例与工具维持各自路径。
 - 汉字阈值只评估含中文的字段或段落。英文正文参与文件指纹与解析检查，但不能因此声称其可读性已被这些阈值验证。
 
@@ -45,15 +45,29 @@
 | `design-cases/wingspan/meta.json` | 2 | 52 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/wingspan/zh-CN.md` | 22 | 1463 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-constraints.json` | 37 | 830 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/action-points/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/action-points/zh-CN.md` | 31 | 1823 | 6 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/action-selection/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/action-selection/zh-CN.md` | 36 | 1749 | 6 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/animals/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/animals/zh-CN.md` | 35 | 1596 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/area-majority/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/area-majority/zh-CN.md` | 30 | 1436 | 4 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/auction/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/auction/zh-CN.md` | 33 | 1559 | 1 | 支持资料：通过节点或资料库按需进入 |
-| `design-library/catalog.json` | 72 | 827 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/bag-building/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/bag-building/zh-CN.md` | 33 | 1736 | 4 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/catalog.json` | 124 | 1382 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/comparison-deck-bag/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/comparison-deck-bag/zh-CN.md` | 35 | 1528 | 3 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/comparison-occupy-price/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/comparison-occupy-price/zh-CN.md` | 35 | 1400 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/deck-building/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/deck-building/zh-CN.md` | 29 | 1514 | 2 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/drafting/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/drafting/zh-CN.md` | 31 | 1496 | 2 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/hand-management/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/hand-management/zh-CN.md` | 31 | 1514 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/lesson-build-a-combination/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/lesson-build-a-combination/zh-CN.md` | 29 | 1386 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/lesson-choose-a-mechanism/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
@@ -68,6 +82,8 @@
 | `design-library/lesson-theme-to-rule/zh-CN.md` | 35 | 1481 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/push-your-luck/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/push-your-luck/zh-CN.md` | 35 | 1542 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/set-collection/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/set-collection/zh-CN.md` | 32 | 1522 | 3 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/simultaneous-choice/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/simultaneous-choice/zh-CN.md` | 30 | 1459 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/transportation/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
@@ -302,6 +318,7 @@
 | `special-guides.json` $[25].evidenceBoundary | 单段 217 个汉字；并列项较多（19） | 本指南综合六份规则案例、五项设计师或从业方法、三项系统动力学与相邻研究、两篇无障碍长评和四项非代表性玩家症状，并复用价值链与 Beer Game 资料。证据支持分开存量和变化率、把经济写成来源/池/转换/消耗节点、补全转换与维护时序、记录容… |
 | `translations/what-makes-a-rulebook-accessible-and-entertaining-zh-CN.md` line 285 | 单段 241 个汉字 | **[9.6]** 关于怎样制作既无障碍又有趣的规则书，仍有一些问题没有答案。我们还没有把技术写作的最佳实践整合到教学材料这个特定框架中；没有考察其他教学形式，例如“学习游玩”视频——这个主题本身就值得深入拆解；也没有提到当代桌游设计已经改… |
 | `translations/what-makes-a-rulebook-accessible-and-entertaining-zh-CN.md` line 64 | 单段 223 个汉字；并列项较多（12） | **[1.1]** 玩桌游或角色扮演游戏时，玩家会体验到一种很特别的参与程度，而电子游戏无法产生完全相同的体验。主要原因在于，玩家必须亲自“启动”游戏里的各种组件（Sousa et al. 2022）。这种启动要求给玩家加上了某种期待，而它… |
+| `design-library/action-selection/zh-CN.md` line 11 | 单句 106 个汉字 | ｜ 行动点预算 ｜ 剩余点数能否支付费用，其他条件是否满足 ｜ 剩余预算改变，某些动作可能付不起 ｜ ｜ 有限的公共行动池 ｜ 需要的行动机会是否还在 ｜ 取走的机会不再供其他人选择 ｜ ｜ 个人行动卡与收回 ｜ 卡是否可用，执行条件是否满… |
 | `learning-units/systematic-unit-05-single-question-test-zh-CN.md` line 312 | 单段 228 个汉字；并列项较多（9） | ｜ 00:18，第一轮松鼠行动前 ｜ 松鼠看自己的木板，再看水獭面前的绳索；手指停在两张卡之间 ｜ “你的才是我过急流要的。” ｜ 无 ｜ 工具需求与归属在第一次行动前被看见 ｜ ｜ 00:31，第一轮讨论 ｜ 水獭指向水位轨；两人轮流指河… |
 | `special-guides.json` $[14].evidenceBoundary | 单句 74 个汉字；单段 201 个汉字；并列项较多（20） | 本指南综合 Legacy 不可逆性理论、一项 Legacy 创作硕士研究、Pandemic Legacy 一手设计演讲与官方 FAQ、Charterstone 官方设计日志和 FAQ、SeaFall 长期测试者记录、两篇战役测试实践复盘、B… |
 | `special-guides.json` $[7].evidenceBoundary | 单段 224 个汉字；并列项较多（10） | Values at Play 是数字教育游戏方法论和案例；主题/机制双向流程为设计师个人实践。殖民叙事研究包含三款游戏的文档比较、单一批评案例和基于 BGG 的 8786 款语料分析：能支持‘省略也是选择’，不能给单款游戏算伦理分。文化协作… |
@@ -310,7 +327,6 @@
 | `learning-units/learn-by-playing-one-moment-zh-CN.md` line 51 | 单句 102 个汉字 | ｜ 人 ｜ 谁正在做决定或回应 ｜ 玩家 A 正在选择一张骨牌，B、C、D 已经等待 ｜ ｜ 开始 ｜ 从哪个可见信号开始 ｜ 四张新骨牌翻开，轮到 A 选择 ｜ ｜ 结束 ｜ 到哪个可见结果停止 ｜ A 把国王放上选择的骨牌，下一位开始行… |
 | `learning-units/systematic-unit-05-single-question-test-zh-CN.md` line 179 | 单句 103 个汉字 | ｜ 触发以前 ｜ 任一只动物被障碍挡住以前 ｜ ｜ 第一件可见事 ｜ 至少一人查看、拿起或指向同伴的工具 ｜ ｜ 第二件可见事 ｜ 两人用自己的话比较前进与交接 ｜ ｜ 可能的行动 ｜ 发起交接，或明确说出暂不交接的理由 ｜ ｜ 不预测什么… |
 | `learning-units/systematic-unit-06-evidence-to-next-version-zh-CN.md` line 553 | 单句 102 个汉字 | > 如果玩家能正确指出双方工具归属与交接权限，却仍然到障碍前都不比较交接时机，那么“没有看见工具关系”作为主要原因会变弱，下一步应检查他们是否认为提前交换没有收益、机会代价怎样进入判断，以及到障碍前再换是否本来就是合理路径。 |
-| `learning-units/systematic-unit-06-evidence-to-next-version-zh-CN.md` line 579 | 单句 98 个汉字；并列项较多（9） | 本轮决定：修复并检验工具归属与可交接性的可见表达 唯一主要改动：固定持有框加统一的“同列时可交接”工具提示 必要同步：两张工具卡、两个持有框、设置图 明确保持不变：两人、河道、障碍、初始工具、工具作用、同列限制、行动代价、水位与停止 |
 
 ## 持续规则
 

@@ -27,7 +27,16 @@
         "reading-time-and-interaction"
       ],
       "caseIds": [],
-      "relations": [],
+      "relations": [
+        {
+          "targetId": "action-selection",
+          "type": "see-also"
+        },
+        {
+          "targetId": "comparison-occupy-price",
+          "type": "see-also"
+        }
+      ],
       "bggReferences": [
         {
           "id": 2082,
@@ -93,7 +102,16 @@
       "caseIds": [
         "dominion"
       ],
-      "relations": [],
+      "relations": [
+        {
+          "targetId": "bag-building",
+          "type": "see-also"
+        },
+        {
+          "targetId": "comparison-deck-bag",
+          "type": "see-also"
+        }
+      ],
       "bggReferences": [
         {
           "id": 2664,
@@ -352,6 +370,10 @@
         {
           "targetId": "lesson-choose-a-mechanism",
           "type": "see-also"
+        },
+        {
+          "targetId": "drafting",
+          "type": "see-also"
         }
       ],
       "bggReferences": []
@@ -467,6 +489,10 @@
         },
         {
           "targetId": "lesson-theme-to-rule",
+          "type": "see-also"
+        },
+        {
+          "targetId": "set-collection",
           "type": "see-also"
         }
       ],
@@ -775,6 +801,510 @@
           "relation": "related"
         }
       ]
+    },
+    {
+      "id": "action-selection",
+      "kind": "overview",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "行动选择：一个动作为什么现在能选、等会儿却不能？",
+        "en": "Action selection: why is an action available now but unavailable later?"
+      },
+      "summary": {
+        "zh-CN": "用四次电台行动区分素材费用与卡片资格，比较收回、连续使用和起始素材的影响。",
+        "en": "Use four radio actions to separate material costs from card access, comparing retrieval, repeat use, and starting material."
+      },
+      "aliases": {
+        "zh-CN": [
+          "行动选择",
+          "行动提供",
+          "行动资格"
+        ],
+        "en": [
+          "action selection",
+          "action availability"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "行动卡",
+          "收回",
+          "行动池",
+          "前置条件"
+        ],
+        "en": [
+          "action cards",
+          "retrieval",
+          "shared action pool",
+          "prerequisites"
+        ]
+      },
+      "question": "actions",
+      "chapterIds": [
+        "reading-core-actions",
+        "reading-choices-and-agency"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "worker-placement",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-see-a-mechanism",
+          "type": "see-also"
+        },
+        {
+          "targetId": "action-points",
+          "type": "see-also"
+        },
+        {
+          "targetId": "comparison-occupy-price",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "action-points",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "行动点：预算够不够，还要看先后顺序",
+        "en": "Action points: a sufficient budget still needs the right order"
+      },
+      "summary": {
+        "zh-CN": "用两回合观测路线核算行动预算，比较未用点是否保留，并分清可行路线与最高分。",
+        "en": "Budget two observatory turns, compare point carryover, and distinguish feasible routes from the highest score."
+      },
+      "aliases": {
+        "zh-CN": [
+          "行动点",
+          "行动点预算"
+        ],
+        "en": [
+          "action points",
+          "action-point budget"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "行动费用",
+          "点数保留",
+          "顺序",
+          "预算"
+        ],
+        "en": [
+          "action costs",
+          "carryover",
+          "sequence",
+          "budget"
+        ]
+      },
+      "question": "actions",
+      "chapterIds": [
+        "reading-time-and-interaction",
+        "reading-resources-and-endings"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "action-selection",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-build-a-combination",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2001,
+          "name": "Action Points",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2001/action-points",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "hand-management",
+      "kind": "overview",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "手牌管理：这张牌现在用，下一轮还剩什么？",
+        "en": "Hand Management: What Will Be Left After You Play This Card?"
+      },
+      "summary": {
+        "zh-CN": "用三轮工具卡工作比较用牌、留牌与补牌时点，分清手里有牌和此刻能做什么。",
+        "en": "Compare using, keeping, and replenishing three tool cards across three jobs to distinguish holding cards from having usable options."
+      },
+      "aliases": {
+        "zh-CN": [
+          "手牌管理",
+          "留牌",
+          "补牌"
+        ],
+        "en": [
+          "hand management",
+          "card retention",
+          "hand replenishment"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "手牌上限",
+          "万能牌",
+          "补牌时点",
+          "弃牌",
+          "专用牌"
+        ],
+        "en": [
+          "hand limit",
+          "flexible cards",
+          "replenishment timing",
+          "discard",
+          "specialist cards"
+        ]
+      },
+      "question": "cards",
+      "chapterIds": [
+        "reading-choices-and-agency",
+        "reading-information-and-randomness",
+        "reading-resources-and-endings"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "deck-building",
+          "type": "see-also"
+        },
+        {
+          "targetId": "drafting",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2040,
+          "name": "Hand Management",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2040/hand-management",
+          "relation": "same-scope"
+        }
+      ]
+    },
+    {
+      "id": "drafting",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "轮抽：我拿走这一张，谁的选择变了？",
+        "en": "Drafting: Whose Options Change When I Take This Card?"
+      },
+      "summary": {
+        "zh-CN": "三人按不同需要分六张牌，只改第二轮顺序，追踪剩余机会、分数与截走他人所需的代价。",
+        "en": "Three players with different needs divide six cards. Reverse only the second-round order to trace availability, scores, and the cost of denial."
+      },
+      "aliases": {
+        "zh-CN": [
+          "轮抽",
+          "轮选",
+          "公开轮抽",
+          "选后传递"
+        ],
+        "en": [
+          "drafting",
+          "open drafting",
+          "pick and pass",
+          "snake draft"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "公共供应",
+          "机会传递",
+          "取选顺序",
+          "蛇形顺序",
+          "传递手牌"
+        ],
+        "en": [
+          "shared pool",
+          "selection order",
+          "snake order",
+          "passed hands",
+          "denial"
+        ]
+      },
+      "question": "cards",
+      "chapterIds": [
+        "reading-choices-and-agency",
+        "reading-time-and-interaction",
+        "reading-information-and-randomness"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "hand-management",
+          "type": "see-also"
+        },
+        {
+          "targetId": "set-collection",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-see-a-mechanism",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2041,
+          "name": "Open Drafting",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2041/open-drafting",
+          "relation": "local-broader"
+        },
+        {
+          "id": 2984,
+          "name": "Closed Drafting",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2984/closed-drafting",
+          "relation": "local-broader"
+        }
+      ]
+    },
+    {
+      "id": "bag-building",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "袋构筑：添进一种人手，下一轮就更顺吗？",
+        "en": "Bag Building: Does Adding a Specialist Make the Next Round Better?"
+      },
+      "summary": {
+        "zh-CN": "用两轮工坊看添人、回袋与永久移出怎样改变组合机会，并区分已经抽到两枚后的概率和整轮概率。",
+        "en": "Follow a two-round workshop to see how adding, returning and permanently removing crew changes combinations, and why conditional chances differ from whole-round chances."
+      },
+      "aliases": {
+        "zh-CN": [
+          "袋中构成",
+          "袋子构筑",
+          "抽取池成长"
+        ],
+        "en": [
+          "bag building",
+          "pool building"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "不放回",
+          "回袋",
+          "永久移出",
+          "条件概率",
+          "组合人手"
+        ],
+        "en": [
+          "without replacement",
+          "return timing",
+          "permanent removal",
+          "conditional probability",
+          "crew combinations"
+        ]
+      },
+      "question": "cards",
+      "chapterIds": [
+        "reading-information-and-randomness",
+        "reading-combine-mechanisms"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "deck-building",
+          "type": "see-also"
+        },
+        {
+          "targetId": "comparison-deck-bag",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2664,
+          "name": "Deck, Bag, and Pool Building",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2664/deck-bag-and-pool-building",
+          "relation": "local-narrower"
+        }
+      ]
+    },
+    {
+      "id": "set-collection",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "集合收集：同一枚图案，为什么会突然更值钱？",
+        "en": "Set Collection: Why Can the Same Motif Suddenly Be Worth More?"
+      },
+      "summary": {
+        "zh-CN": "比较最后一枚月亮和叶子，分别核算同类计分、齐全奖励与提交消耗怎样改变价值。",
+        "en": "Compare a final Moon or Leaf, calculating how matching groups, completion bonuses, and submission costs change their value."
+      },
+      "aliases": {
+        "zh-CN": [
+          "集合收集",
+          "集合计分",
+          "套组收集"
+        ],
+        "en": [
+          "set collection",
+          "set valuation"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "同类",
+          "多样性",
+          "齐全奖励",
+          "提交",
+          "计分时点"
+        ],
+        "en": [
+          "matching types",
+          "diversity",
+          "completion bonus",
+          "submission",
+          "scoring time"
+        ]
+      },
+      "question": "economy",
+      "chapterIds": [
+        "reading-resources-and-endings",
+        "reading-goals-and-pacing"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "drafting",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-build-a-combination",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2004,
+          "name": "Set Collection",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2004/set-collection",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "comparison-occupy-price",
+      "kind": "comparison",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "独占还是付费共用：后手还剩哪些选择？",
+        "en": "Exclusive or shared for a fee: what can the next player still choose?"
+      },
+      "summary": {
+        "zh-CN": "比较印刷台独占与付费共用，逐项核对进入资格、付款去向和最终净分数。",
+        "en": "Compare exclusive and paid access to a printing bench, checking eligibility, payment recipients, and net points."
+      },
+      "aliases": {
+        "zh-CN": [
+          "独占位置",
+          "付费共用"
+        ],
+        "en": [
+          "exclusive spaces",
+          "paid sharing"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "独占位置",
+          "付费共用",
+          "软阻挡",
+          "进入费用"
+        ],
+        "en": [
+          "exclusive spaces",
+          "paid sharing",
+          "soft blocking",
+          "entry fees"
+        ]
+      },
+      "question": "actions",
+      "chapterIds": [
+        "reading-time-and-interaction",
+        "reading-choices-and-agency"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "worker-placement",
+          "type": "see-also"
+        },
+        {
+          "targetId": "action-selection",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "comparison-deck-bag",
+      "kind": "comparison",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "牌库换成袋子，会更随机吗？先看何时放回",
+        "en": "Does replacing a deck with a bag add randomness? Check when items return"
+      },
+      "summary": {
+        "zh-CN": "固定四件素材，先证明两种容器可有相同机会，再比较每轮放回怎样改变两轮结果。",
+        "en": "Hold four materials fixed, establish equivalent draw chances, then compare how returning items each round changes the two-round outcomes."
+      },
+      "aliases": {
+        "zh-CN": [
+          "牌库与袋",
+          "放回"
+        ],
+        "en": [
+          "deck and bag",
+          "replacement"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "牌库与袋",
+          "放回",
+          "条件概率",
+          "抽取池"
+        ],
+        "en": [
+          "deck and bag",
+          "replacement",
+          "conditional probability",
+          "draw pool"
+        ]
+      },
+      "question": "uncertainty",
+      "chapterIds": [
+        "reading-information-and-randomness",
+        "reading-design-an-economy"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "deck-building",
+          "type": "see-also"
+        },
+        {
+          "targetId": "bag-building",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
     }
   ]
 }
