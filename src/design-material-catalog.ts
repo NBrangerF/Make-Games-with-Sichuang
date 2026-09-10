@@ -1,4 +1,4 @@
-import designMaterialDocument from '../content/design-materials.json'
+import designMaterialDocument from '../content/design-materials.json' with { type: 'json' }
 
 export type MechanicMaterial = Readonly<{
   id: string

@@ -1,6 +1,6 @@
 import { useDeferredValue, useMemo, useState } from 'react'
 import { designMaterialPrinciple, mechanicMaterials, mechanicSearchText, themeMaterials, themeSearchText, type MechanicMaterial, type ThemeMaterial } from './design-material-catalog'
-import { seedFirstTabletopMaterial } from './first-tabletop-challenge'
+import { seedFirstTabletopMaterial } from './first-tabletop-draft'
 
 type DesignMaterialsLibraryProps = {
   kind: 'mechanics' | 'themes'
@@ -54,8 +54,7 @@ export function DesignMaterialsLibrary({ kind, onBack, onOpenKind, onStartChalle
   }), [deferredQuery, isMechanics, items, tag])
 
   const choose = (id: string) => {
-    seedFirstTabletopMaterial(isMechanics ? 'mechanic' : 'theme', id)
-    onStartChallenge()
+    if (seedFirstTabletopMaterial(isMechanics ? 'mechanic' : 'theme', id)) onStartChallenge()
   }
 
   return <main className="learning-map design-materials-page" id="main-content" tabIndex={-1}>

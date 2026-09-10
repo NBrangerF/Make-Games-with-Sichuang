@@ -1,46 +1,8 @@
 import { useMemo, useState } from 'react'
 import { brandedDownloadName } from './brand'
+import { firstTabletopMissingCore, readFirstTabletopDraft, writeFirstTabletopDraft, type FirstTabletopDraft, type FirstTabletopState } from './first-tabletop-draft'
 import { mechanicMaterialById, mechanicMaterials, themeMaterialById, themeMaterials } from './design-material-catalog'
-
-const STORAGE_KEY = 'tabletop-workshop-first-tabletop-v1'
-
-export type FirstTabletopState = 'not-started' | 'drafted' | 'tabletop' | 'tested' | 'revised'
-
-type FirstTabletopDraft = {
-  schemaVersion: 1
-  mechanicId: string
-  themeId: string
-  players: string
-  minutes: string
-  materials: string
-  playerGoal: string
-  endCondition: string
-  repeatedAction: string
-  feedback: string
-  testQuestion: string
-  runNote: string
-  revisionNote: string
-  actionState: FirstTabletopState
-  updatedAt: string
-}
-
-const initialDraft: FirstTabletopDraft = {
-  schemaVersion: 1,
-  mechanicId: '',
-  themeId: '',
-  players: '2—3 人',
-  minutes: '5—10 分钟',
-  materials: '18 张空白卡、12 枚标记、1 张 A4 纸；不用正式美术。',
-  playerGoal: '',
-  endCondition: '',
-  repeatedAction: '',
-  feedback: '',
-  testQuestion: '',
-  runNote: '',
-  revisionNote: '',
-  actionState: 'not-started',
-  updatedAt: '',
-}
+export type { FirstTabletopState } from './first-tabletop-draft'
 
 const stateOrder: FirstTabletopState[] = ['not-started', 'drafted', 'tabletop', 'tested', 'revised']
 const stateLabels: Record<FirstTabletopState, string> = {
@@ -51,30 +13,6 @@ const stateLabels: Record<FirstTabletopState, string> = {
   revised: '已修订',
 }
 
-function readDraft(): FirstTabletopDraft {
-  try {
-    const value = JSON.parse(localStorage.getItem(STORAGE_KEY) ?? 'null') as Partial<FirstTabletopDraft> | null
-    if (!value || value.schemaVersion !== 1) return initialDraft
-    return { ...initialDraft, ...value, schemaVersion: 1 }
-  } catch {
-    return initialDraft
-  }
-}
-
-function writeDraft(draft: FirstTabletopDraft) {
-  try { localStorage.setItem(STORAGE_KEY, JSON.stringify(draft)) } catch { /* 本地存储不可用时仍可继续当前会话 */ }
-}
-
-export function seedFirstTabletopMaterial(kind: 'mechanic' | 'theme', id: string) {
-  const current = readDraft()
-  writeDraft({
-    ...current,
-    [kind === 'mechanic' ? 'mechanicId' : 'themeId']: id,
-    actionState: current.actionState === 'not-started' ? 'drafted' : current.actionState,
-    updatedAt: new Date().toISOString(),
-  })
-}
-
 type FirstTabletopChallengeProps = {
   onBack: () => void
   onOpenMaterials: (kind: 'mechanics' | 'themes') => void
@@ -83,7 +21,7 @@ type FirstTabletopChallengeProps = {
 }
 
 export function FirstTabletopChallenge({ onBack, onOpenMaterials, onContinueIteration, onOpenProject }: FirstTabletopChallengeProps) {
-  const [draft, setDraft] = useState<FirstTabletopDraft>(readDraft)
+  const [draft, setDraft] = useState<FirstTabletopDraft>(readFirstTabletopDraft)
   const [status, setStatus] = useState('')
   const mechanic = mechanicMaterialById.get(draft.mechanicId)
   const theme = themeMaterialById.get(draft.themeId)
@@ -97,19 +35,11 @@ export function FirstTabletopChallenge({ onBack, onOpenMaterials, onContinueIter
       updatedAt: new Date().toISOString(),
     }
     setDraft(nextDraft)
-    writeDraft(nextDraft)
+    writeFirstTabletopDraft(nextDraft)
     setStatus('')
   }
 
-  const missingCore = useMemo(() => [
-    !draft.mechanicId && '一张 mechanic 牌',
-    !draft.themeId && '一张 theme 牌',
-    !draft.playerGoal.trim() && '玩家目标',
-    !draft.endCondition.trim() && '结束条件',
-    !draft.repeatedAction.trim() && '玩家反复行动',
-    !draft.feedback.trim() && '行动后的可见反馈',
-    !draft.testQuestion.trim() && '第一次测试问题',
-  ].filter(Boolean) as string[], [draft])
+  const missingCore = useMemo(() => firstTabletopMissingCore(draft), [draft])
 
   const markState = (next: FirstTabletopState) => {
     if (next !== 'not-started' && next !== 'drafted' && missingCore.length > 0) {
@@ -126,7 +56,7 @@ export function FirstTabletopChallenge({ onBack, onOpenMaterials, onContinueIter
     }
     const nextDraft = { ...draft, actionState: next, updatedAt: new Date().toISOString() }
     setDraft(nextDraft)
-    writeDraft(nextDraft)
+    writeFirstTabletopDraft(nextDraft)
     setStatus(`已记录为“${stateLabels[next]}”。这只描述发生过的行动，不评价游戏质量。`)
   }
 
@@ -166,9 +96,10 @@ export function FirstTabletopChallenge({ onBack, onOpenMaterials, onContinueIter
           <div className="first-tabletop-section-heading"><span>01</span><div><p>选择起点</p><h2 id="first-tabletop-materials">一张 mechanic，加一张 theme</h2></div></div>
           <p className="section-copy">mechanic 决定先观察什么动作；theme 决定玩家处在哪种关系。它们是候选，不是配方。</p>
           <div className="first-tabletop-pair">
-            <label><span>Mechanic 牌</span><select value={draft.mechanicId} onChange={event => update('mechanicId', event.target.value)}><option value="">先选择一张</option>{mechanicMaterials.map(item => <option key={item.id} value={item.id}>{item.name}</option>)}</select><button type="button" onClick={() => onOpenMaterials('mechanics')}>先浏览全部 mechanic</button></label>
-            <label><span>Theme 牌</span><select value={draft.themeId} onChange={event => update('themeId', event.target.value)}><option value="">先选择一张</option>{themeMaterials.map(item => <option key={item.id} value={item.id}>{item.name}</option>)}</select><button type="button" onClick={() => onOpenMaterials('themes')}>先浏览全部 theme</button></label>
+            <label><span>Mechanic 牌</span><select value={draft.mechanicId} onChange={event => update('mechanicId', event.target.value)}><option value="">先选择一张</option>{draft.mechanicId && !mechanic && <option value={draft.mechanicId} disabled>之前选择的机制暂不可用，请重选</option>}{mechanicMaterials.map(item => <option key={item.id} value={item.id}>{item.name}</option>)}</select><button type="button" onClick={() => onOpenMaterials('mechanics')}>先浏览全部 mechanic</button></label>
+            <label><span>Theme 牌</span><select value={draft.themeId} onChange={event => update('themeId', event.target.value)}><option value="">先选择一张</option>{draft.themeId && !theme && <option value={draft.themeId} disabled>之前选择的主题暂不可用，请重选</option>}{themeMaterials.map(item => <option key={item.id} value={item.id}>{item.name}</option>)}</select><button type="button" onClick={() => onOpenMaterials('themes')}>先浏览全部 theme</button></label>
           </div>
+          {((draft.mechanicId && !mechanic) || (draft.themeId && !theme)) && <p role="status">已保存的机制或主题暂时找不到。请重新选择；现有简报和行动记录仍保留。</p>}
           {(mechanic || theme) && <div className="first-tabletop-material-summary">
             {mechanic && <article><strong>{mechanic.name}</strong><p>玩家反复做：{mechanic.playerVerb}</p><p>桌面会改变：{mechanic.tableChange}</p></article>}
             {theme && <article><strong>{theme.name}</strong><p>玩家处在：{theme.playerPosition}</p><p>系统压力：{theme.systemPressure}</p></article>}

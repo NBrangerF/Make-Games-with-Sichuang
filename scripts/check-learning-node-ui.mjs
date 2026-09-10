@@ -72,7 +72,7 @@ check('mechanic/theme 材料支持搜索、筛选、展开练习并进入第一�
   assert.ok(materials.includes('<details>'))
   assert.ok(materials.includes('seedFirstTabletopMaterial'))
   assert.ok(firstTabletop.includes('no_best_mechanic_claim: true'))
-  assert.ok(firstTabletop.includes("actionState: 'not-started'"))
+  assert.ok(firstTabletop.includes('useState<FirstTabletopDraft>(readFirstTabletopDraft)'))
 })
 
 check('案例、支线、资料、长文和概念都按需打开', () => {

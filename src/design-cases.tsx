@@ -24,7 +24,6 @@ function RelatedLibrary({ caseId, language, from }: { caseId: string; language: 
 function CaseBody({ entry, language, sectionId }: { entry: DesignCase; language: ReadingLanguage; sectionId?: string }) {
   const [body, setBody] = useState<string | null>(null)
   const [failed, setFailed] = useState(false)
-  const [attempt, setAttempt] = useState(0)
   useEffect(() => {
     let active = true
     setBody(null); setFailed(false)
@@ -32,14 +31,14 @@ function CaseBody({ entry, language, sectionId }: { entry: DesignCase; language:
     if (!load) { setFailed(true); return }
     load().then(value => { if (active) setBody(value.replace(/^# .+\r?\n/, '')) }).catch(() => { if (active) setFailed(true) })
     return () => { active = false }
-  }, [entry.id, language, attempt])
+  }, [entry.id, language])
   useEffect(() => {
     if (!body || !sectionId || !entry.sections.some(section => section.id === sectionId)) return
     const heading = document.getElementById(caseSectionTarget(sectionId))
     heading?.scrollIntoView({ block: 'start', behavior: 'instant' })
     heading?.focus({ preventScroll: true })
   }, [body, sectionId, entry])
-  if (failed) return <section role="alert"><p>{language === 'en' ? 'This case could not be opened.' : '案例暂时未能打开。'}</p><button onClick={() => setAttempt(value => value + 1)}>{language === 'en' ? 'Try again' : '重新打开'}</button></section>
+  if (failed) return <section role="alert"><p>{language === 'en' ? 'This case could not be opened.' : '案例暂时未能打开。'}</p><button onClick={() => window.location.reload()}>{language === 'en' ? 'Try again' : '重新打开'}</button></section>
   if (body === null) return <p role="status">{language === 'en' ? 'Opening the analysis…' : '正在打开分析……'}</p>
   const experiment = entry.id === 'dominion' ? <DeckExperiment language={language}/> : entry.id === 'six-nimmt' ? <SimultaneousExperiment language={language}/> : undefined
   return <article className="original-reading__body case-reading-body"><MarkdownReading source={body} language={language} allowSourceLinks headingIds={Object.fromEntries(entry.sections.map(section => [section.title[language], caseSectionTarget(section.id)]))} afterSection={experiment ? { number: 2, node: experiment } : undefined}/></article>

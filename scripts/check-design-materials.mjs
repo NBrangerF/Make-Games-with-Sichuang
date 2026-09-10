@@ -1,4 +1,5 @@
 import { readFileSync } from 'node:fs'
+import './check-first-tabletop-draft.mjs'
 
 const document = JSON.parse(readFileSync(new URL('../content/design-materials.json', import.meta.url), 'utf8'))
 const errors = []

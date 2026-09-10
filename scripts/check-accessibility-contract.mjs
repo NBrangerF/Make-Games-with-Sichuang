@@ -13,6 +13,7 @@ const packageJson = JSON.parse(read('package.json'))
 const topLevelPageFiles = new Set([
   'complete-translation-page.tsx',
   'original-reading.tsx',
+  'reading-load-boundary.tsx',
   'text-learning.tsx',
   'design-cases.tsx',
   'design-library.tsx',

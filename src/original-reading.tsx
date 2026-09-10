@@ -21,7 +21,6 @@ const copy = {
 export function ArticleBody({ article, language, afterSection, companion, withOutline = false, bodyLoader, allowSourceLinks = false }: { article: Article; language: Language; afterSection?: { number: number; node: ReactNode }; companion?: ReactNode; withOutline?: boolean; bodyLoader?: () => Promise<string>; allowSourceLinks?: boolean }) {
   const [body, setBody] = useState<string | null>(null)
   const [failed, setFailed] = useState(false)
-  const [attempt, setAttempt] = useState(0)
   const [wide, setWide] = useState(() => window.matchMedia('(min-width: 701px)').matches)
   useEffect(() => {
     const media = window.matchMedia('(min-width: 701px)')
@@ -37,8 +36,8 @@ export function ArticleBody({ article, language, afterSection, companion, withOu
     if (!load) { setFailed(true); return }
     load().then(text => { if (active) setBody(text) }).catch(() => { if (active) setFailed(true) })
     return () => { active = false }
-  }, [article.id, language, attempt, bodyLoader])
-  if (failed) return <div role="alert"><h1>{article.title[language]}</h1><p>{copy[language].error}</p><button onClick={() => setAttempt(value => value + 1)}>{copy[language].retry}</button></div>
+  }, [article.id, language, bodyLoader])
+  if (failed) return <div role="alert"><h1>{article.title[language]}</h1><p>{copy[language].error}</p><button onClick={() => window.location.reload()}>{copy[language].retry}</button></div>
   if (body === null) return <p role="status">{copy[language].loading}</p>
   const reading = <article className="original-reading__body"><MarkdownReading source={body} language={language} afterSection={afterSection} allowSourceLinks={allowSourceLinks} /></article>
   if (!withOutline) return reading
