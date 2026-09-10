@@ -4,6 +4,7 @@ import { validateLibrary } from './design-library-contract.mjs'
 import { parseRouteHash, serializeRoute } from '../src/url-state.ts'
 import { readingHref, readingReturn } from '../src/reading-navigation.ts'
 import { readingSourceHref } from '../src/reading-links.ts'
+import { libraryLearningStages, libraryLessonOrder } from '../src/library-learning-path.ts'
 
 const root = new URL('../', import.meta.url)
 const read = path => readFileSync(new URL(path, root), 'utf8')
@@ -14,6 +15,10 @@ for (const item of catalog.entries) for (const lang of ['zh-CN', 'en']) {
 }
 const context = { bodies, chapterIds: new Set(JSON.parse(read('content/reading-path.json')).chapters.map(item => item.id)), caseIds: new Set(readdirSync(new URL('content/design-cases/', root)).filter(id => !id.startsWith('.'))) }
 assert.deepEqual(validateLibrary(catalog, context), [])
+assert.equal(libraryLessonOrder.length, 12)
+assert.equal(new Set(libraryLessonOrder).size, 12)
+assert.deepEqual([...libraryLessonOrder].sort(), catalog.entries.filter(entry => entry.kind === 'lesson').map(entry => entry.id).sort(), 'The optional path includes every published lesson exactly once')
+assert.ok(libraryLearningStages.every(stage => stage.title.en && stage.title['zh-CN'] && stage.purpose.en && stage.purpose['zh-CN']))
 for (const lang of ['zh-CN', 'en']) {
   const path = `/print-and-play/book-cart/${lang}.pdf`
   assert.equal(readingSourceHref(path, '/', true), path)
