@@ -39,5 +39,44 @@
       "locator": "Das Spiel: four dice, two pairs, three runners, failed turns and intermediate camps; author credit Sid Sackson",
       "checkedAt": "2026-09-10"
     }
+  ],
+  "sections": [
+    {
+      "id": "runner-allocation",
+      "kind": "angle",
+      "topics": [
+        "actions",
+        "uncertainty"
+      ],
+      "title": {
+        "zh-CN": "角度一：可以重新配对，但不能重新分配三枚棋子",
+        "en": "Angle one: you can change the pairing, but cannot reassign your three runners"
+      }
+    },
+    {
+      "id": "banking-progress",
+      "kind": "angle",
+      "topics": [
+        "uncertainty",
+        "economy"
+      ],
+      "title": {
+        "zh-CN": "角度二：停手保存的是本回合进度，失败也只退回保存处",
+        "en": "Angle two: stopping banks this turn’s progress; failure returns to the banked positions"
+      }
+    },
+    {
+      "id": "closed-columns",
+      "kind": "angle",
+      "topics": [
+        "space",
+        "interaction",
+        "uncertainty"
+      ],
+      "title": {
+        "zh-CN": "角度三：长短不同的列，让收获同时改变赛场",
+        "en": "Angle three: columns of different lengths make a reward change the race"
+      }
+    }
   ]
 }

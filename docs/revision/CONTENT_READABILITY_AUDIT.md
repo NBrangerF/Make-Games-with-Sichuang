@@ -1,9 +1,9 @@
-<!-- content-fingerprint: c3d66a4e6ea0039dc56b7fa28f8679ee8bc9e574203eaf51b9e6615f72af5e25 -->
+<!-- content-fingerprint: e3b6e4581afe0a1485ea891e305288d88a4f5bf37c846116f4c6fe393053d83b -->
 # 全站资料文本可读性审计
 
 审计日期：2026-09-10
 范围：`content/` 下全部 361 个 JSON 与 Markdown 文件，不抽样。
-覆盖：19,413 个含中文的字段或段落，约 585,760 个汉字。
+覆盖：19,479 个含中文的字段或段落，约 586,959 个汉字。
 
 ## 结论
 
@@ -27,58 +27,58 @@
 | `claims.json` | 644 | 32881 | 22 | 内部元数据：不作为新手首屏文案 |
 | `concept-action-index.json` | 65 | 721 | 0 | 内部元数据：不作为新手首屏文案 |
 | `design-cases/agricola/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-cases/agricola/meta.json` | 2 | 59 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/agricola/meta.json` | 6 | 140 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/agricola/zh-CN.md` | 37 | 2348 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/azul/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-cases/azul/meta.json` | 2 | 50 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/azul/meta.json` | 6 | 125 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/azul/zh-CN.md` | 42 | 2343 | 8 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/cant-stop/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-cases/cant-stop/meta.json` | 2 | 50 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/cant-stop/meta.json` | 5 | 111 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/cant-stop/zh-CN.md` | 38 | 2352 | 7 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/carcassonne/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-cases/carcassonne/meta.json` | 2 | 60 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/carcassonne/meta.json` | 5 | 112 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/carcassonne/zh-CN.md` | 38 | 2380 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/dominion/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-cases/dominion/meta.json` | 2 | 59 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/dominion/meta.json` | 6 | 117 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/dominion/zh-CN.md` | 38 | 2468 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/el-grande/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-cases/el-grande/meta.json` | 2 | 62 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/el-grande/meta.json` | 6 | 145 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/el-grande/zh-CN.md` | 44 | 2582 | 6 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/for-sale/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-cases/for-sale/meta.json` | 2 | 66 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/for-sale/meta.json` | 5 | 128 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/for-sale/zh-CN.md` | 43 | 2239 | 6 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/hanabi/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-cases/hanabi/meta.json` | 2 | 60 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/hanabi/meta.json` | 6 | 131 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/hanabi/zh-CN.md` | 39 | 2489 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/modern-art/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-cases/modern-art/meta.json` | 2 | 49 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/modern-art/meta.json` | 5 | 102 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/modern-art/zh-CN.md` | 43 | 2096 | 4 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/pandemic/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-cases/pandemic/meta.json` | 2 | 55 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/pandemic/meta.json` | 6 | 125 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/pandemic/zh-CN.md` | 35 | 2306 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/quacks/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-cases/quacks/meta.json` | 2 | 62 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/quacks/meta.json` | 5 | 121 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/quacks/zh-CN.md` | 37 | 2549 | 8 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/radlands/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-cases/radlands/meta.json` | 2 | 62 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/radlands/meta.json` | 5 | 120 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/radlands/zh-CN.md` | 37 | 2231 | 3 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/root/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-cases/root/meta.json` | 2 | 57 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/root/meta.json` | 5 | 111 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/root/zh-CN.md` | 47 | 2494 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/six-nimmt/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-cases/six-nimmt/meta.json` | 2 | 51 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/six-nimmt/meta.json` | 6 | 122 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/six-nimmt/zh-CN.md` | 38 | 2047 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/spirit-island/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-cases/spirit-island/meta.json` | 2 | 63 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/spirit-island/meta.json` | 6 | 123 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/spirit-island/zh-CN.md` | 39 | 2651 | 6 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/the-crew/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-cases/the-crew/meta.json` | 2 | 59 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/the-crew/meta.json` | 6 | 119 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/the-crew/zh-CN.md` | 46 | 2304 | 8 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/ticket-to-ride/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-cases/ticket-to-ride/meta.json` | 2 | 68 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/ticket-to-ride/meta.json` | 6 | 143 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/ticket-to-ride/zh-CN.md` | 48 | 2919 | 6 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/wingspan/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-cases/wingspan/meta.json` | 2 | 52 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-cases/wingspan/meta.json` | 7 | 148 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-cases/wingspan/zh-CN.md` | 41 | 2672 | 4 | 支持资料：通过节点或资料库按需进入 |
 | `design-constraints.json` | 37 | 830 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/action-points/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |

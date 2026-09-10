@@ -32,5 +32,43 @@
       "locator": "PDF/printed p.5 Garage and Railgun cards; p.6 Repair Bot; p.7 Bombardment and protection; p.8 Magnus Karv junk icon, damage and restore; pp.9–11 turn order, water, placement, readiness and immediate victory; pp.14–15 base clarifications",
       "checkedAt": "2026-09-11"
     }
+  ],
+  "sections": [
+    {
+      "id": "future-water",
+      "kind": "angle",
+      "topics": [
+        "economy",
+        "actions"
+      ],
+      "title": {
+        "zh-CN": "角度一：保存的不是水片，而是下一回合的一次兑换",
+        "en": "Angle one: Store a future exchange, not an unspent water disc"
+      }
+    },
+    {
+      "id": "front-row-protection",
+      "kind": "angle",
+      "topics": [
+        "space",
+        "interaction"
+      ],
+      "title": {
+        "zh-CN": "角度二：前排保护了谁，也决定谁失去能力",
+        "en": "Angle two: Front positions decide who stays protected and who loses an ability"
+      }
+    },
+    {
+      "id": "repair-window",
+      "kind": "angle",
+      "topics": [
+        "actions",
+        "interaction"
+      ],
+      "title": {
+        "zh-CN": "角度三：提前结算，拿走的是对手的一次修复机会",
+        "en": "Angle three: Resolving earlier removes a chance to repair"
+      }
+    }
   ]
 }

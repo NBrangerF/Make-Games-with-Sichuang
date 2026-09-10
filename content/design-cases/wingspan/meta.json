@@ -45,5 +45,69 @@
       "locator": "Answers to ruleset influences and distilling species into mechanics: Deus, later row activation, smaller deck and distributions",
       "checkedAt": "2026-09-10"
     }
-  ]
+  ],
+  "sections": [
+    {
+      "id": "habitat-engine",
+      "kind": "angle",
+      "topics": [
+        "actions",
+        "economy"
+      ],
+      "title": {
+        "zh-CN": "角度一：一片栖息地，也是以后反复使用的行动",
+        "en": "Angle one: a habitat is also an action you revisit"
+      }
+    },
+    {
+      "id": "available-food",
+      "kind": "angle",
+      "topics": [
+        "economy"
+      ],
+      "title": {
+        "zh-CN": "角度二：同样三份食物，能不能付费要看它们在哪里",
+        "en": "Angle two: three food tokens, but can they pay a cost?"
+      }
+    },
+    {
+      "id": "relative-scoring",
+      "kind": "angle",
+      "topics": [
+        "interaction"
+      ],
+      "title": {
+        "zh-CN": "角度三：自己的数量没变，别人的增长会改变我的得分吗？",
+        "en": "Angle three: can your score fall while your own count stays unchanged?"
+      }
+    },
+    {
+      "id": "theme-expectations",
+      "kind": "context",
+      "topics": [
+        "theme"
+      ],
+      "title": {
+        "zh-CN": "主题帮助分类，也容易引出误解",
+        "en": "Theme supports categories—and can create misunderstandings"
+      }
+    },
+    {
+      "id": "designer-notes",
+      "kind": "designer",
+      "topics": [
+        "process",
+        "theme"
+      ],
+      "title": {
+        "zh-CN": "设计者自述：连锁触发和鸟类资料需要共同调整",
+        "en": "The designer’s account: develop the chain and the bird mix together"
+      }
+    }
+  ],
+  "designerAccount": {
+    "author": "Elizabeth Hargrave",
+    "sectionId": "designer-notes",
+    "sourceUrl": "https://gamingtrend.com/interviews/crazy-eights-elizabeth-hargrave-on-wingspan/"
+  }
 }

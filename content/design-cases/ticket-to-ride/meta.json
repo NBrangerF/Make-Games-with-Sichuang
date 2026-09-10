@@ -39,5 +39,60 @@
       "locator": "Sample PDF pp.5–6, printed pp.6–7: author byline, Alan’s Story (outline/map, self-test, friend testing, later route/rule/ticket changes); Kaufmann’s separately attributed setting/title account. Anniversary advertisement is not rules evidence.",
       "checkedAt": "2026-09-10"
     }
-  ]
+  ],
+  "sections": [
+    {
+      "id": "route-capacity",
+      "kind": "angle",
+      "topics": [
+        "space",
+        "interaction"
+      ],
+      "title": {
+        "zh-CN": "角度一：同一张地图，实际容量会随人数变化",
+        "en": "Angle one: The same map has different capacity at different player counts"
+      }
+    },
+    {
+      "id": "wildcard-access",
+      "kind": "angle",
+      "topics": [
+        "actions",
+        "economy",
+        "uncertainty"
+      ],
+      "title": {
+        "zh-CN": "角度二：万能牌的价格，还包括取得它的方式和回合",
+        "en": "Angle two: A wildcard’s price includes how and when you acquire it"
+      }
+    },
+    {
+      "id": "final-turn",
+      "kind": "angle",
+      "topics": [
+        "actions",
+        "economy"
+      ],
+      "title": {
+        "zh-CN": "角度三：最后一个回合，把七分车票变成十四分的差距",
+        "en": "Angle three: A final turn turns a seven-point ticket into a fourteen-point swing"
+      }
+    },
+    {
+      "id": "designer-notes",
+      "kind": "designer",
+      "topics": [
+        "process"
+      ],
+      "title": {
+        "zh-CN": "从作者的实际开发过程继续追问",
+        "en": "Follow the designer’s actual development process"
+      }
+    }
+  ],
+  "designerAccount": {
+    "author": "Alan R. Moon",
+    "sectionId": "designer-notes",
+    "sourceUrl": "https://d1vzi28wh99zvq.cloudfront.net/pdf_previews/147192-sample.pdf"
+  }
 }

@@ -6,6 +6,7 @@ type MarkdownReadingProps = {
   allowSourceLinks?: boolean
   language?: 'zh-CN' | 'en'
   afterSection?: { number: number; node: ReactNode }
+  headingIds?: Record<string, string>
 }
 
 export type MarkdownOutlineItem = Readonly<{
@@ -78,7 +79,7 @@ function tableCells(line: string) {
   return line.trim().replace(/^\||\|$/g, '').split('|').map(cell => cell.trim())
 }
 
-export function MarkdownReading({ source, allowSourceLinks = false, language = 'zh-CN', afterSection }: MarkdownReadingProps) {
+export function MarkdownReading({ source, allowSourceLinks = false, language = 'zh-CN', afterSection, headingIds }: MarkdownReadingProps) {
   const inline = (text: string, key: string) => renderInline(text, key, allowSourceLinks)
   const lines = stripFrontmatter(source).split(/\r?\n/)
   const blocks: ReactNode[] = []
@@ -100,9 +101,10 @@ export function MarkdownReading({ source, allowSourceLinks = false, language = '
         section += 1
       }
       const content = inline(heading[2], `heading-${index}`)
-      const id = headingId(index)
+      const id = headingIds?.[heading[2]] || headingId(index)
+      const tabIndex = headingIds?.[heading[2]] ? -1 : undefined
       if (level === 1) blocks.push(<h1 id={id} key={`heading-${index}`}>{content}</h1>)
-      else if (level === 2) blocks.push(<h2 id={id} key={`heading-${index}`}>{content}</h2>)
+      else if (level === 2) blocks.push(<h2 id={id} tabIndex={tabIndex} key={`heading-${index}`}>{content}</h2>)
       else if (level === 3) blocks.push(<h3 id={id} key={`heading-${index}`}>{content}</h3>)
       else blocks.push(<h4 id={id} key={`heading-${index}`}>{content}</h4>)
       index += 1

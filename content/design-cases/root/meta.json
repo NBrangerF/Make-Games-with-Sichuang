@@ -10,7 +10,12 @@
     "zh-CN": "用木材通路、政令兑现和同情标记三组局部对照，理解非对称阵营如何改变资源、承诺与冲突的意义。",
     "en": "Trace wood access, Decree obligations and sympathy through three local comparisons of asymmetric resources, commitments and conflict."
   },
-  "chapterIds": ["reading-choices-and-agency", "reading-design-an-economy", "reading-state-and-resolution", "reading-theme-and-emotion"],
+  "chapterIds": [
+    "reading-choices-and-agency",
+    "reading-design-an-economy",
+    "reading-state-and-resolution",
+    "reading-theme-and-emotion"
+  ],
   "sources": [
     {
       "label": "Leder Games — Root",
@@ -39,6 +44,45 @@
       "edition": "January 22, 2018 development diary; describes prepublication revisions",
       "locator": "You Say You Want a Revolution?; The New Alliance",
       "checkedAt": "2026-09-11"
+    }
+  ],
+  "sections": [
+    {
+      "id": "connected-wood",
+      "kind": "angle",
+      "topics": [
+        "space",
+        "economy"
+      ],
+      "title": {
+        "zh-CN": "角度一：木材够了，为什么仍然付不了费用？",
+        "en": "Angle one: Enough wood does not mean you can pay"
+      }
+    },
+    {
+      "id": "decree-obligations",
+      "kind": "angle",
+      "topics": [
+        "actions",
+        "economy"
+      ],
+      "title": {
+        "zh-CN": "角度二：一张万能牌，既买灵活性也增加未来责任",
+        "en": "Angle two: A wild card buys flexibility and creates a future obligation"
+      }
+    },
+    {
+      "id": "remaining-influence",
+      "kind": "angle",
+      "topics": [
+        "interaction",
+        "space",
+        "process"
+      ],
+      "title": {
+        "zh-CN": "角度三：打掉士兵，是否等于清除了影响力？",
+        "en": "Angle three: Removing soldiers need not remove influence"
+      }
     }
   ]
 }

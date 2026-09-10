@@ -38,5 +38,59 @@
       "locator": "Question about origins of 6 nimmt! and HUGO; 6 nimmt! answer about suitcases, rows and removing passing",
       "checkedAt": "2026-09-10"
     }
-  ]
+  ],
+  "sections": [
+    {
+      "id": "reveal-order",
+      "kind": "angle",
+      "topics": [
+        "actions",
+        "interaction"
+      ],
+      "title": {
+        "zh-CN": "角度一：同时作决定，按数字处理结果",
+        "en": "Angle one: choose together, resolve by number"
+      }
+    },
+    {
+      "id": "collection-cost",
+      "kind": "angle",
+      "topics": [
+        "economy",
+        "actions"
+      ],
+      "title": {
+        "zh-CN": "角度二：一行牌少，不代表收下它的代价低",
+        "en": "Angle two: a shorter row can cost more to collect"
+      }
+    },
+    {
+      "id": "unseen-cards",
+      "kind": "angle",
+      "topics": [
+        "information",
+        "uncertainty"
+      ],
+      "title": {
+        "zh-CN": "角度三：看不见的牌，可能在对手手里，也可能根本没入局",
+        "en": "Angle three: an unseen card may be held—or absent from the round"
+      }
+    },
+    {
+      "id": "designer-notes",
+      "kind": "designer",
+      "topics": [
+        "process"
+      ],
+      "title": {
+        "zh-CN": "设计者自述：去掉传递，保留装满的后果",
+        "en": "The designer’s account: remove the passing, keep the consequence"
+      }
+    }
+  ],
+  "designerAccount": {
+    "author": "Wolfgang Kramer",
+    "sectionId": "designer-notes",
+    "sourceUrl": "https://blog.amigo-spiele.de/wolfgang-kramer/"
+  }
 }

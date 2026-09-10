@@ -10,7 +10,13 @@
     "zh-CN": "走完公共取砖、顺序铺墙与提前结束的三组比较，再回看设计者如何修改余砖去向。",
     "en": "Compare shared drafting, sequential wall scoring and ending timing, alongside the designer’s account of changing where leftover tiles go."
   },
-  "chapterIds": ["reading-choices-and-agency", "reading-time-and-interaction", "reading-state-and-resolution", "reading-goals-and-pacing", "reading-rules-and-components"],
+  "chapterIds": [
+    "reading-choices-and-agency",
+    "reading-time-and-interaction",
+    "reading-state-and-resolution",
+    "reading-goals-and-pacing",
+    "reading-rules-and-components"
+  ],
   "sources": [
     {
       "label": "Next Move Games — Azul",
@@ -33,5 +39,59 @@
       "locator": "Answer comparing solo/team development: publisher feedback and change from clockwise passing to the center",
       "checkedAt": "2026-09-10"
     }
-  ]
+  ],
+  "sections": [
+    {
+      "id": "shared-supply",
+      "kind": "angle",
+      "topics": [
+        "actions",
+        "interaction"
+      ],
+      "title": {
+        "zh-CN": "角度一：你留下的砖，会组成别人的下一组选项",
+        "en": "Angle one: What you leave becomes somebody else’s next set of options"
+      }
+    },
+    {
+      "id": "scoring-order",
+      "kind": "angle",
+      "topics": [
+        "actions",
+        "space"
+      ],
+      "title": {
+        "zh-CN": "角度二：补满一条线，可能同时改变后面一块砖的分数",
+        "en": "Angle two: Completing one line can also increase a later tile’s score"
+      }
+    },
+    {
+      "id": "ending-and-bonuses",
+      "kind": "angle",
+      "topics": [
+        "actions",
+        "economy"
+      ],
+      "title": {
+        "zh-CN": "角度三：结束时点，决定已完成的目标何时兑现",
+        "en": "Angle three: The ending determines when completed goals pay out"
+      }
+    },
+    {
+      "id": "designer-notes",
+      "kind": "designer",
+      "topics": [
+        "process"
+      ],
+      "title": {
+        "zh-CN": "设计者记录：余砖的去向曾经改变过",
+        "en": "Designer’s account: The destination of leftover tiles changed"
+      }
+    }
+  ],
+  "designerAccount": {
+    "author": "Michael Kiesling",
+    "sectionId": "designer-notes",
+    "sourceUrl": "https://brettspielbox.de/brettspielbox-interview-michael-kiesling/"
+  }
 }

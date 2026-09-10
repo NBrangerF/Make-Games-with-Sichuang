@@ -39,5 +39,60 @@
       "locator": "Acte 1 : de l’idée au prototype — predetermined recipients, next-day first test, communication rule the following week, later space theme",
       "checkedAt": "2026-09-10"
     }
-  ]
+  ],
+  "sections": [
+    {
+      "id": "receiving-the-trick",
+      "kind": "angle",
+      "topics": [
+        "interaction",
+        "actions"
+      ],
+      "title": {
+        "zh-CN": "角度一：合作目标改变的是大牌的用途",
+        "en": "Angle one: A cooperative objective changes what a high card is for"
+      }
+    },
+    {
+      "id": "limited-signals",
+      "kind": "angle",
+      "topics": [
+        "information",
+        "interaction"
+      ],
+      "title": {
+        "zh-CN": "角度二：公开一张牌，同时规定它能说什么",
+        "en": "Angle two: Revealing a card also restricts what it can say"
+      }
+    },
+    {
+      "id": "task-order",
+      "kind": "angle",
+      "topics": [
+        "actions",
+        "interaction"
+      ],
+      "title": {
+        "zh-CN": "角度三：先完成的目标，不一定出现在第一墩",
+        "en": "Angle three: The first completed task need not happen in the first trick"
+      }
+    },
+    {
+      "id": "designer-notes",
+      "kind": "designer",
+      "topics": [
+        "process",
+        "theme"
+      ],
+      "title": {
+        "zh-CN": "作者亲述与本站分析",
+        "en": "The designer's account and our analysis"
+      }
+    }
+  ],
+  "designerAccount": {
+    "author": "Thomas Sing",
+    "sectionId": "designer-notes",
+    "sourceUrl": "https://iello.fr/thomas-sing-nous-parle-de-the-crew/"
+  }
 }

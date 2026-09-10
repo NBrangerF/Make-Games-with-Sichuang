@@ -38,5 +38,58 @@
       "locator": "Printed/PDF page 3, signed Matt Leacock, 2018; right column: first prototype, discard experiment and subsequent testing",
       "checkedAt": "2026-09-10"
     }
-  ]
+  ],
+  "sections": [
+    {
+      "id": "action-order",
+      "kind": "angle",
+      "topics": [
+        "actions"
+      ],
+      "title": {
+        "zh-CN": "角度一：行动顺序能改变同一动作的效果",
+        "en": "Angle one: order can change what the same action accomplishes"
+      }
+    },
+    {
+      "id": "shared-decisions",
+      "kind": "angle",
+      "topics": [
+        "interaction",
+        "economy"
+      ],
+      "title": {
+        "zh-CN": "角度二：合作有贡献，也有让出的用途与决定权",
+        "en": "Angle two: helping gives up a use and requires a decision"
+      }
+    },
+    {
+      "id": "returning-danger",
+      "kind": "angle",
+      "topics": [
+        "uncertainty",
+        "information"
+      ],
+      "title": {
+        "zh-CN": "角度三：感染牌会记住刚发生过的危险",
+        "en": "Angle three: the Infection deck remembers recent danger"
+      }
+    },
+    {
+      "id": "designer-notes",
+      "kind": "designer",
+      "topics": [
+        "process"
+      ],
+      "title": {
+        "zh-CN": "设计者自述：从一个洗牌动作开始保留压力",
+        "en": "The designer’s account: keeping pressure through a shuffle"
+      }
+    }
+  ],
+  "designerAccount": {
+    "author": "Matt Leacock",
+    "sectionId": "designer-notes",
+    "sourceUrl": "https://desktopgames.com.ua/games/4495/pandemic_10th_anniversary_rulebook_eng.pdf"
+  }
 }

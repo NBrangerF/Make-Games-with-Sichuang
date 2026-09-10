@@ -31,5 +31,43 @@
       "locator": "For Sale product header: Date de sortie and Créé par; Achetez, vendez !: successive bidding, pass and last-bidder payments, simultaneous rank-based selling; Une référence du jeu d’enchères: original 1997 release",
       "checkedAt": "2026-09-10"
     }
+  ],
+  "sections": [
+    {
+      "id": "passing-cost",
+      "kind": "angle",
+      "topics": [
+        "economy",
+        "interaction"
+      ],
+      "title": {
+        "zh-CN": "角度一：退拍既支付成本，也改变下一人的退路",
+        "en": "Angle one: passing pays a cost and changes the next player’s fallback"
+      }
+    },
+    {
+      "id": "relative-rank",
+      "kind": "angle",
+      "topics": [
+        "interaction",
+        "information"
+      ],
+      "title": {
+        "zh-CN": "角度二：房子的数字不标售价，只决定这一批的名次",
+        "en": "Angle two: a house number sets a rank within this batch, not a sale price"
+      }
+    },
+    {
+      "id": "one-use-assets",
+      "kind": "angle",
+      "topics": [
+        "economy",
+        "actions"
+      ],
+      "title": {
+        "zh-CN": "角度三：现金变成一次性手牌后，购买力不能原样回来",
+        "en": "Angle three: cash becomes a supply of cards that can each be used once"
+      }
+    }
   ]
 }

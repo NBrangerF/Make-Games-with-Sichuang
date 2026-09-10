@@ -39,5 +39,60 @@
       "locator": "PDF/printed pp.6–7: named actions and numeric values; pp.10–11: development credits and rulebook authorship; p.11: sheep scoring",
       "checkedAt": "2026-09-10"
     }
-  ]
+  ],
+  "sections": [
+    {
+      "id": "action-competition",
+      "kind": "angle",
+      "topics": [
+        "actions",
+        "interaction",
+        "economy"
+      ],
+      "title": {
+        "zh-CN": "角度一：桌上资源越积越多，行动机会仍只有一次",
+        "en": "Angle one: a growing pile still offers only one opportunity to take it"
+      }
+    },
+    {
+      "id": "growth-timing",
+      "kind": "angle",
+      "topics": [
+        "economy",
+        "actions"
+      ],
+      "title": {
+        "zh-CN": "角度二：新劳动力的收益与开销，不在同一时刻到来",
+        "en": "Angle two: additional labor starts paying off after its first feeding cost"
+      }
+    },
+    {
+      "id": "harvest-order",
+      "kind": "angle",
+      "topics": [
+        "actions",
+        "economy"
+      ],
+      "title": {
+        "zh-CN": "角度三：同样两只羊，结算顺序会决定能否留下第三只",
+        "en": "Angle three: the order of harvest decides whether two sheep can leave a third"
+      }
+    },
+    {
+      "id": "designer-notes",
+      "kind": "designer",
+      "topics": [
+        "process"
+      ],
+      "title": {
+        "zh-CN": "开发记录：为什么不是每一对动物都生一只？",
+        "en": "A development account: why not one birth for every pair?"
+      }
+    }
+  ],
+  "designerAccount": {
+    "author": "Uwe Rosenberg",
+    "sectionId": "designer-notes",
+    "sourceUrl": "https://lookout-spiele.de/upload/en_agricolare.html_Appendix_Agricola-RE_EN.pdf"
+  }
 }

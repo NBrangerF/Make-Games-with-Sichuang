@@ -36,7 +36,7 @@ for (const id of ids) {
   const meta = JSON.parse(read(`content/design-cases/${id}/meta.json`))
   assert.equal(meta.id,id); categories.push(meta.category)
   assert.ok(['game','mechanism','theme'].includes(meta.category), `${id}: known category`)
-  assert.deepEqual(Object.keys(meta).sort(), ['category','chapterIds','game','id','sources','summary','title'], `${id}: only public metadata`)
+  assert.deepEqual(Object.keys(meta).sort(), ['category','chapterIds','game','id','sections','sources','summary','title', ...(meta.designerAccount ? ['designerAccount'] : [])].sort(), `${id}: only public metadata`)
   assert.ok(meta.chapterIds.length > 0)
   assert.ok(meta.chapterIds.every(chapterId => path.chapters.some(item => item.id === chapterId)))
   assert.ok(meta.sources.length >= 2)

@@ -1,5 +1,7 @@
 export type ReadingLanguage = 'zh-CN' | 'en'
 export type ReadingScope = 'all' | 'course' | 'essays'
+export const casePerspectives = ['actions', 'economy', 'information', 'uncertainty', 'space', 'interaction', 'theme', 'process'] as const
+export type CasePerspective = typeof casePerspectives[number]
 export const libraryKinds = ['mechanisms', 'themes', 'lessons', 'comparisons'] as const
 export const libraryQuestions = ['actions', 'cards', 'uncertainty', 'space', 'economy', 'interaction', 'theme', 'process'] as const
 export type LibraryKind = typeof libraryKinds[number]
@@ -9,6 +11,9 @@ export type ReadingLocation = {
   readingScope?: ReadingScope
   readingReturnTo?: string
   caseCategory?: 'game' | 'mechanism' | 'theme'
+  casePerspective?: CasePerspective
+  caseAuthorOnly?: boolean
+  caseSection?: string
   libraryKind?: LibraryKind
   libraryQuestion?: LibraryQuestion
 }
@@ -27,6 +32,8 @@ export function readReadingLocation(search: string, withReturn = true): ReadingL
   const query = (params.get('q') || '').slice(0, 200)
   const scope = params.get('scope')
   const category = params.get('type')
+  const perspective = params.get('angle') as CasePerspective
+  const section = params.get('section') || ''
   const kind = params.get('kind') as LibraryKind
   const question = params.get('group') as LibraryQuestion
   const from = withReturn ? readingReturn(params.get('from')) : undefined
@@ -35,6 +42,9 @@ export function readReadingLocation(search: string, withReturn = true): ReadingL
     ...(scope === 'course' || scope === 'essays' ? { readingScope: scope } : {}),
     ...(from ? { readingReturnTo: from } : {}),
     ...(category === 'game' || category === 'mechanism' || category === 'theme' ? { caseCategory: category } : {}),
+    ...(casePerspectives.includes(perspective) ? { casePerspective: perspective } : {}),
+    ...(params.get('author') === '1' ? { caseAuthorOnly: true } : {}),
+    ...(/^[a-z][a-z0-9-]{0,63}$/.test(section) ? { caseSection: section } : {}),
     ...(libraryKinds.includes(kind) ? { libraryKind: kind } : {}),
     ...(libraryQuestions.includes(question) ? { libraryQuestion: question } : {}),
   }
@@ -45,6 +55,9 @@ export function appendReadingLocation(path: string, location: ReadingLocation): 
   if (location.readingQuery) params.set('q', location.readingQuery.slice(0, 200))
   if (location.readingScope && location.readingScope !== 'all') params.set('scope', location.readingScope)
   if (location.caseCategory) params.set('type', location.caseCategory)
+  if (location.casePerspective && casePerspectives.includes(location.casePerspective)) params.set('angle', location.casePerspective)
+  if (location.caseAuthorOnly) params.set('author', '1')
+  if (location.caseSection && /^[a-z][a-z0-9-]{0,63}$/.test(location.caseSection)) params.set('section', location.caseSection)
   if (location.libraryKind && libraryKinds.includes(location.libraryKind)) params.set('kind', location.libraryKind)
   if (location.libraryQuestion && libraryQuestions.includes(location.libraryQuestion)) params.set('group', location.libraryQuestion)
   const from = readingReturn(location.readingReturnTo || null)

@@ -1781,6 +1781,7 @@ export function App() {
     const root = document.documentElement
     const previousScrollBehavior = root.style.scrollBehavior
     const isReadingList = readingSurface && !route.readingChapter && (!route.resourceId || route.resourceId === 'all')
+    const hasCaseSection = route.resourceEntry === 'cases' && route.resourceId && route.resourceId !== 'all' && route.caseSection
     const targetScroll = isReadingList ? readingScrollPositions.current.get(serializeRoute(route)) || 0 : 0
     const resetScroll = () => {
       root.style.scrollBehavior = 'auto'
@@ -1788,7 +1789,8 @@ export function App() {
     }
     resetScroll()
     const frame = window.requestAnimationFrame(() => {
-      resetScroll()
+      // A loaded case section owns the final position; a later top reset would undo its focus target.
+      if (!hasCaseSection) resetScroll()
       root.style.scrollBehavior = previousScrollBehavior
     })
     return () => {
@@ -1818,7 +1820,7 @@ export function App() {
     {route.view === 'path' && <PathView project={project} onSaveProject={saveProject} onOpenConcept={id => navigateMethod('glossary', id)} onOpenTest={() => setDrawer(true)} onOpenTool={openGuideTool} onOpenResource={id => navigateResourcePreview('all', id)} onOpenResourceEntry={navigateResourceEntry} />}
     {route.view === 'resources' && !route.resourceEntry && <Suspense fallback={<main id="main-content" tabIndex={-1}><p role="status">正在打开阅读目录……</p></main>}><OriginalReading language={interfaceLanguage} onFilterChange={(query, scope) => navigate({ ...route, resourceEntry: 'read', resourceId: 'all', readingLanguage: interfaceLanguage, readingQuery: query, readingScope: scope }, true)} /></Suspense>}
     {route.view === 'resources' && route.resourceEntry === 'library' && <Suspense fallback={<main id="main-content" tabIndex={-1} className="original-reading"><p role="status">{interfaceLanguage === 'en' ? 'Opening the design library…' : '正在打开机制与主题库……'}</p></main>}><DesignLibrary entryId={route.resourceId} language={interfaceLanguage} query={route.readingQuery} kind={route.libraryKind} question={route.libraryQuestion} returnTo={route.readingReturnTo} onFilterChange={(query, kind, question) => navigate({ ...route, readingQuery: query, libraryKind: kind, libraryQuestion: question }, true)} /></Suspense>}
-    {route.view === 'resources' && route.resourceEntry === 'cases' && <Suspense fallback={<main id="main-content" tabIndex={-1}><p role="status">{interfaceLanguage === 'en' ? 'Opening case studies…' : '正在打开案例……'}</p></main>}><DesignCases caseId={route.resourceId} language={interfaceLanguage} query={route.readingQuery} category={route.caseCategory} returnTo={route.readingReturnTo} onFilterChange={(query, category) => navigate({ ...route, readingQuery: query, caseCategory: category }, true)} onOpenTool={openGuideTool} /></Suspense>}
+    {route.view === 'resources' && route.resourceEntry === 'cases' && <Suspense fallback={<main id="main-content" tabIndex={-1}><p role="status">{interfaceLanguage === 'en' ? 'Opening case studies…' : '正在打开案例……'}</p></main>}><DesignCases caseId={route.resourceId} language={interfaceLanguage} query={route.readingQuery || ''} category={route.caseCategory} perspective={route.casePerspective} authorOnly={route.caseAuthorOnly} sectionId={route.caseSection} returnTo={route.readingReturnTo} onFilterChange={({ query, category, perspective, authorOnly }) => navigate({ ...route, readingQuery: query, caseCategory: category, casePerspective: perspective, caseAuthorOnly: authorOnly }, true)} onOpenTool={openGuideTool} /></Suspense>}
     {route.view === 'resources' && route.resourceEntry === 'read' && <Suspense fallback={<main id="main-content" tabIndex={-1} className="original-reading"><p role="status">{route.readingLanguage === 'en' ? 'Opening the reading library…' : '正在打开阅读目录……'}</p></main>}><OriginalReading articleId={route.resourceId} language={interfaceLanguage} query={route.readingQuery} scope={route.readingScope} returnTo={route.readingReturnTo} onFilterChange={(query, scope) => navigate({ ...route, readingQuery: query, readingScope: scope }, true)} /></Suspense>}
     {route.view === 'resources' && route.resourceEntry === 'learn' && !route.resourceId && <ResourceLearningStart onBack={() => navigateView('resources')} onChooseLearningPath={id => navigateResourceSubpage('learn', id)} />}
     {route.view === 'resources' && route.resourceEntry === 'learn' && isLearningContentId(route.resourceId) && <Suspense fallback={<main className="resource-start-page" id="main-content" tabIndex={-1}><p role="status">正在准备完整中文内容……</p></main>}><CompleteLearningContentPage contentId={route.resourceId} onBack={() => navigateResourceSubpage('learn', route.resourceId === 'learn-by-playing-one-moment' ? 'learn-by-playing' : route.resourceId!.startsWith('designer-case-') ? 'designer-thinking' : 'systematic')} onNavigate={contentId => navigateResourceSubpage('learn', contentId)} onOpenTool={openGuideTool} /></Suspense>}

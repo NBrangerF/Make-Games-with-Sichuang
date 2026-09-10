@@ -39,5 +39,43 @@
       "locator": "PDF p.1:Crow skull Set1 and prices; p.2:Mandrake Set1; p.3:Garden spider Set1; p.4:publisher imprint",
       "checkedAt": "2026-09-10"
     }
+  ],
+  "sections": [
+    {
+      "id": "remaining-bag",
+      "kind": "angle",
+      "topics": [
+        "uncertainty",
+        "economy"
+      ],
+      "title": {
+        "zh-CN": "角度一：风险跟着剩余的袋子走，损失则要分项算",
+        "en": "Angle one: Risk follows the remaining bag; losses need separate accounts"
+      }
+    },
+    {
+      "id": "draw-and-choose",
+      "kind": "angle",
+      "topics": [
+        "uncertainty",
+        "actions"
+      ],
+      "title": {
+        "zh-CN": "角度二：蓝筹买到的是一次选择机会，不是免疫",
+        "en": "Angle two: A blue chip buys a choice, not immunity"
+      }
+    },
+    {
+      "id": "retained-progress",
+      "kind": "angle",
+      "topics": [
+        "economy",
+        "actions"
+      ],
+      "title": {
+        "zh-CN": "角度三：移除材料之后，为什么锅里的进展不倒退？",
+        "en": "Angle three: Why does progress remain after an ingredient is removed?"
+      }
+    }
   ]
 }

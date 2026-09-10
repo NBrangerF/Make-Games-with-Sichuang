@@ -38,5 +38,59 @@
       "locator": "Petite Histoire: publisher feedback, outward-facing matching test, cooperative revision",
       "checkedAt": "2026-09-10"
     }
-  ]
+  ],
+  "sections": [
+    {
+      "id": "complementary-information",
+      "kind": "angle",
+      "topics": [
+        "information",
+        "interaction"
+      ],
+      "title": {
+        "zh-CN": "角度一：共同目标需要不同的人补齐信息",
+        "en": "Angle one: a shared goal needs different people to complete the information"
+      }
+    },
+    {
+      "id": "irreversible-loss",
+      "kind": "angle",
+      "topics": [
+        "economy",
+        "information"
+      ],
+      "title": {
+        "zh-CN": "角度二：提示能补回来，最后一张关键牌不能",
+        "en": "Angle two: a clue can return; the last essential card cannot"
+      }
+    },
+    {
+      "id": "component-memory",
+      "kind": "angle",
+      "topics": [
+        "information",
+        "theme"
+      ],
+      "title": {
+        "zh-CN": "角度三：组件保留什么信息，把什么工作留给人？",
+        "en": "Angle three: what does the component preserve, and what must people track?"
+      }
+    },
+    {
+      "id": "designer-notes",
+      "kind": "designer",
+      "topics": [
+        "process"
+      ],
+      "title": {
+        "zh-CN": "设计者自述：保留反向手牌，换掉竞争目标",
+        "en": "The designer’s account: keep outward-facing hands, change the goal"
+      }
+    }
+  ],
+  "designerAccount": {
+    "author": "Antoine Bauza",
+    "sectionId": "designer-notes",
+    "sourceUrl": "https://www.antoinebauza.fr/?p=734"
+  }
 }

@@ -60,5 +60,60 @@
       "locator": "Original card image: cost 2, Fast, Range 1, any land; 1 Damage plus 1 if Coastal; Sun and Water",
       "checkedAt": "2026-09-11"
     }
-  ]
+  ],
+  "sections": [
+    {
+      "id": "preventing-builds",
+      "kind": "angle",
+      "topics": [
+        "actions",
+        "space",
+        "interaction"
+      ],
+      "title": {
+        "zh-CN": "角度一：推走一个探索者，也可能少造一座城镇",
+        "en": "Angle one: Moving one Explorer can prevent a Town from being built"
+      }
+    },
+    {
+      "id": "preserving-counterattacks",
+      "kind": "angle",
+      "topics": [
+        "actions"
+      ],
+      "title": {
+        "zh-CN": "角度二：达汉不是替土地挡伤害的护盾",
+        "en": "Angle two: Dahan are not shields that absorb damage for the land"
+      }
+    },
+    {
+      "id": "fear-and-victory",
+      "kind": "angle",
+      "topics": [
+        "economy",
+        "actions"
+      ],
+      "title": {
+        "zh-CN": "角度三：恐惧不仅给奖励，还会改变终点",
+        "en": "Angle three: Fear changes the destination as well as providing rewards"
+      }
+    },
+    {
+      "id": "designer-notes",
+      "kind": "designer",
+      "topics": [
+        "process",
+        "theme"
+      ],
+      "title": {
+        "zh-CN": "作者亲述与本站分析",
+        "en": "The designer's account and our analysis"
+      }
+    }
+  ],
+  "designerAccount": {
+    "author": "R. Eric Reuss",
+    "sectionId": "designer-notes",
+    "sourceUrl": "https://www.dropbox.com/scl/fi/5wzghwnbsi39msyy6vvox/Spirit-Island-CORE-Rulebook.pdf?dl=0&rlkey=86i7aofqbzhulezjr7z0ssyff&st=iqv6wpml"
+  }
 }

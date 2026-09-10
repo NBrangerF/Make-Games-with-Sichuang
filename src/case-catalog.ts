@@ -1,5 +1,11 @@
-import type { ReadingLanguage } from './reading-navigation'
+import type { CasePerspective, ReadingLanguage } from './reading-navigation'
 export type CaseCategory = 'game' | 'mechanism' | 'theme'
+export type CaseSection = {
+  id: string
+  kind: 'angle' | 'context' | 'designer'
+  topics: CasePerspective[]
+  title: Record<ReadingLanguage, string>
+}
 export type DesignCase = {
   id: string
   category: CaseCategory
@@ -7,6 +13,8 @@ export type DesignCase = {
   title: Record<ReadingLanguage, string>
   summary: Record<ReadingLanguage, string>
   chapterIds: string[]
+  sections: CaseSection[]
+  designerAccount?: { author: string; sectionId: string; sourceUrl: string }
   sources: { label: string; url: string; edition: string; locator: string; checkedAt: string }[]
 }
 const files = import.meta.glob<DesignCase>('../content/design-cases/*/meta.json', { eager: true, import: 'default' })

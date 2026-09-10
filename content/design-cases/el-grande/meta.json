@@ -39,5 +39,61 @@
       "locator": "Trojan Horse anecdote and questions “Wie haben Sie reagiert…” and “Was macht El Grande…”",
       "checkedAt": "2026-09-10"
     }
-  ]
+  ],
+  "sections": [
+    {
+      "id": "priority-and-supply",
+      "kind": "angle",
+      "topics": [
+        "actions",
+        "economy"
+      ],
+      "title": {
+        "zh-CN": "角度一：抢到先选权，也可能让手边补给更少",
+        "en": "Angle one: Earlier access can come with less supply in hand"
+      }
+    },
+    {
+      "id": "legal-destinations",
+      "kind": "angle",
+      "topics": [
+        "actions",
+        "space"
+      ],
+      "title": {
+        "zh-CN": "角度二：同一张牌的两个动作，顺序会改变合法地点",
+        "en": "Angle two: Two actions on one card can change each other’s legal targets"
+      }
+    },
+    {
+      "id": "hidden-destinations",
+      "kind": "angle",
+      "topics": [
+        "information",
+        "interaction",
+        "space"
+      ],
+      "title": {
+        "zh-CN": "角度三：城堡里的人数，与他们将去哪里，是两种不同的不确定",
+        "en": "Angle three: How many are in the castle and where they will go are different uncertainties"
+      }
+    },
+    {
+      "id": "designer-notes",
+      "kind": "designer",
+      "topics": [
+        "process",
+        "theme"
+      ],
+      "title": {
+        "zh-CN": "设计者记录：换主题时，保留什么、重新组织什么？",
+        "en": "Designer’s account: What survives a change of theme?"
+      }
+    }
+  ],
+  "designerAccount": {
+    "author": "Wolfgang Kramer",
+    "sectionId": "designer-notes",
+    "sourceUrl": "https://brettspielbox.de/interview-mit-wolfgang-kramer-teil-2/"
+  }
 }

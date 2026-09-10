@@ -125,6 +125,27 @@ body[data-reading-studio="true"] .original-reading__body .reading-worksheet__sta
 .case-library-filters button { font: 600 16px/1.5 -apple-system, BlinkMacSystemFont, "PingFang SC", sans-serif; border: 0; background: none; border-radius: 0; border-bottom: 2px solid transparent; color: #183b41; padding: 12px 0; cursor: pointer; }
 .case-library-filters button[aria-pressed="true"] { color: #b84628; border-bottom-color: #b84628; }
 .case-library-count { color: #566b67; font-size: 12px; margin: 15px 0; }
+.case-discovery-controls { display: flex; flex-wrap: wrap; align-items: flex-end; gap: 20px 32px; margin: 20px 0 12px; }
+.case-discovery-controls > div { min-width: 0; max-width: 100%; }
+.case-discovery-controls label { font-size: 15px; line-height: 1.6; }
+.case-discovery-controls > div > label { display: block; margin-bottom: 7px; }
+.case-discovery-controls select { box-sizing: border-box; width: 100%; min-height: 44px; max-width: 100%; border: 1px solid #96a092; border-radius: 4px; background: #f7f5ee; color: #183b41; padding: 8px 32px 8px 10px; font: inherit; }
+.case-author-filter { display: flex; align-items: center; gap: 10px; min-height: 44px; cursor: pointer; }
+.case-author-filter input { width: 20px; height: 20px; flex: 0 0 20px; accent-color: #a14126; }
+.case-discovery-note { font-size: 14px; line-height: 1.7; color: #566b67; max-width: 850px; }
+.case-category-options { margin: 18px 0; }
+.case-category-options summary { width: fit-content; padding: 10px 0; cursor: pointer; font-size: 14px; }
+.case-entry-sections { padding-left: 20px; margin: 18px 0; font-size: 15px; line-height: 1.7; }
+.case-entry-sections li { margin: 8px 0; }
+.case-entry-sections a { text-underline-offset: 4px; }
+.case-library-entry .case-designer-account { font-size: 13px; line-height: 1.7; }
+.case-section-nav { max-width: 850px; padding: 20px 24px; margin: 0 0 32px; background: #e7eadb; border-radius: 5px; }
+.case-section-nav h2 { margin: 0 0 12px; font-size: 20px; }
+.case-section-nav ol { padding-left: 24px; margin: 0; }
+.case-section-nav li { margin: 10px 0; line-height: 1.7; }
+.case-section-nav a[aria-current="location"] { color: #8e3520; font-weight: 650; }
+.case-section-nav p { font-size: 14px; line-height: 1.7; }
+.case-reading-body h2[id^="case-section-"] { scroll-margin-top: 120px; }
 .case-library-entries { display: grid; grid-template-columns: repeat(3,minmax(0,1fr)); gap: 36px 26px; }
 .case-library-entry { min-width: 0; padding-bottom: 25px; border-bottom: 1px solid #cdd0c3; }
 .case-library-entry__visual { display: block; }

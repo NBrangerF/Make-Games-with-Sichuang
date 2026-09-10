@@ -38,5 +38,48 @@
       "locator": "Components and game mechanics: predefined roles and adjacent monasteries",
       "checkedAt": "2026-09-10"
     }
-  ]
+  ],
+  "sections": [
+    {
+      "id": "returning-workers",
+      "kind": "angle",
+      "topics": [
+        "economy",
+        "actions"
+      ],
+      "title": {
+        "zh-CN": "角度一：得分时机，也是人手归来的时机",
+        "en": "Angle one: scoring time is also the time people return"
+      }
+    },
+    {
+      "id": "shared-landscape",
+      "kind": "angle",
+      "topics": [
+        "space",
+        "interaction"
+      ],
+      "title": {
+        "zh-CN": "角度二：地图由大家拼，收益不按谁放板来分",
+        "en": "Angle two: everyone builds the map; who receives the points?"
+      }
+    },
+    {
+      "id": "flexible-roles",
+      "kind": "angle",
+      "topics": [
+        "actions",
+        "process"
+      ],
+      "title": {
+        "zh-CN": "角度三：同一个小人，为什么不预先分配职业？",
+        "en": "Angle three: why not assign each meeple a permanent job?"
+      }
+    }
+  ],
+  "designerAccount": {
+    "author": "Klaus-Jürgen Wrede",
+    "sectionId": "flexible-roles",
+    "sourceUrl": "https://boardgamecomponents.wordpress.com/2017/03/19/interview-with-klaus-jurgen-wrede/"
+  }
 }

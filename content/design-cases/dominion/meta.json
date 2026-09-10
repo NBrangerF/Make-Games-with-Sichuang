@@ -38,5 +38,58 @@
       "locator": "Opening revision reasons; Donald X. @donaldx reply to Walt about desired functions and changing set composition",
       "checkedAt": "2026-09-10"
     }
-  ]
+  ],
+  "sections": [
+    {
+      "id": "deck-cycle",
+      "kind": "angle",
+      "topics": [
+        "uncertainty",
+        "economy"
+      ],
+      "title": {
+        "zh-CN": "角度一：买下的牌，先去哪里？",
+        "en": "Angle one: where does a purchased card go first?"
+      }
+    },
+    {
+      "id": "play-capacity",
+      "kind": "angle",
+      "topics": [
+        "actions"
+      ],
+      "title": {
+        "zh-CN": "角度二：抽到以后，是否有能力把它打出去？",
+        "en": "Angle two: can you play what you draw?"
+      }
+    },
+    {
+      "id": "endgame-value",
+      "kind": "angle",
+      "topics": [
+        "economy",
+        "actions"
+      ],
+      "title": {
+        "zh-CN": "角度三：终点会改变牌库追求的价值",
+        "en": "Angle three: the ending changes the deck’s purpose"
+      }
+    },
+    {
+      "id": "designer-notes",
+      "kind": "designer",
+      "topics": [
+        "process"
+      ],
+      "title": {
+        "zh-CN": "设计者自述：调整一套牌提供的机会",
+        "en": "The designer’s account: changing the opportunities a set provides"
+      }
+    }
+  ],
+  "designerAccount": {
+    "author": "Donald X. Vaccarino",
+    "sectionId": "designer-notes",
+    "sourceUrl": "https://boardgamegeek.com/thread/1648227/the-secret-history-of-the-dominion-2nd-editions"
+  }
 }

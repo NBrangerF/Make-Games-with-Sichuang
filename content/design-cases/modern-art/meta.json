@@ -10,7 +10,12 @@
     "zh-CN": "用三组收支与排名比较，拆开成交价、付款去向、结束时机和历史价值的兑现资格。",
     "en": "Separate price, payment destination, ending timing and eligibility for historical value through three original cash-flow and ranking comparisons."
   },
-  "chapterIds": ["reading-choices-and-agency", "reading-design-an-economy", "reading-state-and-resolution", "reading-theme-and-emotion"],
+  "chapterIds": [
+    "reading-choices-and-agency",
+    "reading-design-an-economy",
+    "reading-state-and-resolution",
+    "reading-theme-and-emotion"
+  ],
   "sources": [
     {
       "label": "CMON — Modern Art",
@@ -25,6 +30,45 @@
       "edition": "28-page English file; rule section PDF pp.1–5, four-player base game; no Mystery Player; printing year not established",
       "locator": "PDF p.2 setup and components; p.3 payments/fixed price; p.4 ending, ties, clearing and cumulative value; p.5 board order and winning",
       "checkedAt": "2026-09-10"
+    }
+  ],
+  "sections": [
+    {
+      "id": "payment-destination",
+      "kind": "angle",
+      "topics": [
+        "economy",
+        "interaction"
+      ],
+      "title": {
+        "zh-CN": "角度一：同样付18，钱流向对手还是银行？",
+        "en": "Angle one: Paying 18 to a rival is different from paying 18 to the bank"
+      }
+    },
+    {
+      "id": "closing-the-round",
+      "kind": "angle",
+      "topics": [
+        "actions",
+        "economy",
+        "interaction"
+      ],
+      "title": {
+        "zh-CN": "角度二：放弃一次成交，可能保住已经买下的画",
+        "en": "Angle two: Forgoing a sale can protect paintings already purchased"
+      }
+    },
+    {
+      "id": "current-eligibility",
+      "kind": "angle",
+      "topics": [
+        "economy",
+        "interaction"
+      ],
+      "title": {
+        "zh-CN": "角度三：历史积累保留了，当前资格仍可能消失",
+        "en": "Angle three: History can remain while current eligibility disappears"
+      }
     }
   ]
 }
