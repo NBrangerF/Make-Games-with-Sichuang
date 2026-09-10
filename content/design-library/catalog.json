@@ -1819,6 +1819,463 @@
         }
       ],
       "bggReferences": []
+    },
+    {
+      "id": "shared-resource",
+      "kind": "pattern",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "公共资源：同一堆材料，谁拿走后归谁？",
+        "en": "Shared resources: who owns a material after taking it?"
+      },
+      "summary": {
+        "zh-CN": "用四次取料追踪公共供给如何变成私人得分，只改单次上限比较分配结果。",
+        "en": "Track common supply becoming private points over four actions, changing only the collection limit."
+      },
+      "aliases": {
+        "zh-CN": [
+          "公共资源"
+        ],
+        "en": [
+          "shared resources"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "公共资源",
+          "公共池",
+          "补充",
+          "取用权限"
+        ],
+        "en": [
+          "shared resources",
+          "common pool",
+          "replenishment",
+          "ownership"
+        ]
+      },
+      "question": "economy",
+      "chapterIds": [
+        "reading-design-an-economy",
+        "reading-cooperation-and-conflict"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "income-production",
+          "type": "see-also"
+        },
+        {
+          "targetId": "cooperative-structure",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "resource-conversion",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "资源转换：加工一块板，究竟放弃了什么？",
+        "en": "Resource conversion: what does making a plank give up?"
+      },
+      "summary": {
+        "zh-CN": "用加工、造船与出售三条配方比较材料和行动的共同成本。",
+        "en": "Compare processing, building, and selling while counting both materials and actions."
+      },
+      "aliases": {
+        "zh-CN": [
+          "资源转换"
+        ],
+        "en": [
+          "resource conversion"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "资源转换",
+          "兑换",
+          "加工",
+          "机会成本"
+        ],
+        "en": [
+          "resource conversion",
+          "exchange",
+          "processing",
+          "opportunity cost"
+        ]
+      },
+      "question": "economy",
+      "chapterIds": [
+        "reading-design-an-economy",
+        "reading-core-actions"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "trading",
+          "type": "see-also"
+        },
+        {
+          "targetId": "market-pricing",
+          "type": "see-also"
+        },
+        {
+          "targetId": "income-production",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "income-production",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "收入与生产：同样结算两次，钱来得及时吗？",
+        "en": "Income and production: does the money arrive in time?"
+      },
+      "summary": {
+        "zh-CN": "只移动每轮收入的结算时点，追踪升级与配送为何在期限前可做或不可做。",
+        "en": "Move only income timing and track which upgrades and deliveries remain possible before the deadline."
+      },
+      "aliases": {
+        "zh-CN": [
+          "收入"
+        ],
+        "en": [
+          "income"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "收入",
+          "生产",
+          "结算时点",
+          "升级"
+        ],
+        "en": [
+          "income",
+          "production",
+          "payment timing",
+          "upgrade"
+        ]
+      },
+      "question": "economy",
+      "chapterIds": [
+        "reading-design-an-economy",
+        "reading-state-and-resolution"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "resource-conversion",
+          "type": "see-also"
+        },
+        {
+          "targetId": "shared-resource",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2902,
+          "name": "Income",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2902/income",
+          "relation": "local-broader"
+        }
+      ]
+    },
+    {
+      "id": "market-pricing",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "市场定价：买两件时，两件都按原价算吗？",
+        "en": "Market pricing: do both items cost the starting price?"
+      },
+      "summary": {
+        "zh-CN": "固定两位买家与四件货，只改整笔报价或逐件涨价，比较预算、库存与得分。",
+        "en": "Keep two buyers and four goods fixed, changing batch versus per-item repricing to compare affordability, stock, and scores."
+      },
+      "aliases": {
+        "zh-CN": [
+          "市场定价"
+        ],
+        "en": [
+          "market pricing"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "市场定价",
+          "价格变化",
+          "逐件计价",
+          "批量购买"
+        ],
+        "en": [
+          "market pricing",
+          "dynamic prices",
+          "per-unit repricing",
+          "batch purchase"
+        ]
+      },
+      "question": "economy",
+      "chapterIds": [
+        "reading-design-an-economy",
+        "reading-state-and-resolution"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "resource-conversion",
+          "type": "see-also"
+        },
+        {
+          "targetId": "auction",
+          "type": "see-also"
+        },
+        {
+          "targetId": "trading",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "trading",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "交易：价值都公开，也可能双方受益吗？",
+        "en": "Trading: can both players benefit when values are public?"
+      },
+      "summary": {
+        "zh-CN": "用全部公开的配方展示互利交换，再分开合法交易、双方增益与实际接受。",
+        "en": "Use public recipes to distinguish a legal exchange, gains for both players, and actual acceptance."
+      },
+      "aliases": {
+        "zh-CN": [
+          "交易"
+        ],
+        "en": [
+          "trading"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "交易",
+          "交换提议",
+          "互利",
+          "相对价值"
+        ],
+        "en": [
+          "trading",
+          "trade offer",
+          "mutual benefit",
+          "relative value"
+        ]
+      },
+      "question": "economy",
+      "chapterIds": [
+        "reading-design-an-economy",
+        "reading-cooperation-and-conflict"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "resource-conversion",
+          "type": "see-also"
+        },
+        {
+          "targetId": "market-pricing",
+          "type": "see-also"
+        },
+        {
+          "targetId": "cooperative-structure",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2008,
+          "name": "Trading",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2008/trading",
+          "relation": "same-scope"
+        }
+      ]
+    },
+    {
+      "id": "cooperative-structure",
+      "kind": "structure",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "合作结构：一起获胜，谁有权花这份材料？",
+        "en": "Cooperative structure: who may spend the materials if everyone wins together?"
+      },
+      "summary": {
+        "zh-CN": "用总量够却付不出的合作局面，分清共同胜负、资源权限与行动决定权。",
+        "en": "Use a collectively sufficient but unpayable task to distinguish shared victory, resource access, and decision authority."
+      },
+      "aliases": {
+        "zh-CN": [
+          "合作结构"
+        ],
+        "en": [
+          "cooperative structure"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "合作结构",
+          "共同胜负",
+          "共同付款",
+          "个人能动性"
+        ],
+        "en": [
+          "cooperative structure",
+          "shared victory",
+          "joint payment",
+          "individual agency"
+        ]
+      },
+      "question": "interaction",
+      "chapterIds": [
+        "reading-cooperation-and-conflict",
+        "reading-access-and-participation"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "shared-resource",
+          "type": "see-also"
+        },
+        {
+          "targetId": "communication-limits",
+          "type": "see-also"
+        },
+        {
+          "targetId": "trading",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2023,
+          "name": "Cooperative Game",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2023/cooperative-game",
+          "relation": "same-scope"
+        }
+      ]
+    },
+    {
+      "id": "comparison-stop-allocate",
+      "kind": "comparison",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "现在停，还是多掷一枚？掷完还要决定放哪里",
+        "en": "Stop now or roll one more? You still have to place the dice afterward"
+      },
+      "summary": {
+        "zh-CN": "把冒险收集与已知骰面分配放进同一阶段，只改失败损失，比较可用结果与平均分。",
+        "en": "Combine risky collection with known-result allocation, changing only failure losses and comparing outcomes and means."
+      },
+      "aliases": {
+        "zh-CN": [
+          "继续冒险"
+        ],
+        "en": [
+          "push your luck"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "继续冒险",
+          "骰子分配",
+          "失败损失",
+          "停止收集"
+        ],
+        "en": [
+          "push your luck",
+          "dice allocation",
+          "failure loss",
+          "stop collecting"
+        ]
+      },
+      "question": "uncertainty",
+      "chapterIds": [
+        "reading-information-and-randomness",
+        "reading-combine-mechanisms"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "push-your-luck",
+          "type": "see-also"
+        },
+        {
+          "targetId": "dice-allocation",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "comparison-bid-payment",
+      "kind": "comparison",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "谁赢得拍品，谁需要付款？输家预算也会改变",
+        "en": "Who wins the lot, and who pays? The loser's next move can change too"
+      },
+      "summary": {
+        "zh-CN": "保持报价和拍品不变，只改落标者是否付款，追踪随后能否购买与最终计分。",
+        "en": "Keep bids and the lot fixed, changing only loser payment and following later affordability and final scoring."
+      },
+      "aliases": {
+        "zh-CN": [
+          "报价与付款"
+        ],
+        "en": [
+          "bid and payment"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "报价与付款",
+          "落标成本",
+          "全付拍卖",
+          "预算"
+        ],
+        "en": [
+          "bid and payment",
+          "losing bid cost",
+          "all-pay auction",
+          "budget"
+        ]
+      },
+      "question": "economy",
+      "chapterIds": [
+        "reading-design-an-economy",
+        "reading-state-and-resolution"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "auction",
+          "type": "see-also"
+        },
+        {
+          "targetId": "market-pricing",
+          "type": "see-also"
+        },
+        {
+          "targetId": "comparison-occupy-price",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
     }
   ]
 }
