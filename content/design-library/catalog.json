@@ -174,6 +174,10 @@
         {
           "targetId": "comparison-reveal-order",
           "type": "see-also"
+        },
+        {
+          "targetId": "action-programming",
+          "type": "contrast-with"
         }
       ],
       "bggReferences": [
@@ -344,6 +348,10 @@
         {
           "targetId": "comparison-area-network",
           "type": "see-also"
+        },
+        {
+          "targetId": "zone-control",
+          "type": "contrast-with"
         }
       ],
       "bggReferences": [
@@ -911,6 +919,14 @@
         {
           "targetId": "comparison-occupy-price",
           "type": "see-also"
+        },
+        {
+          "targetId": "action-programming",
+          "type": "see-also"
+        },
+        {
+          "targetId": "time-track",
+          "type": "see-also"
         }
       ],
       "bggReferences": []
@@ -964,6 +980,14 @@
         },
         {
           "targetId": "lesson-build-a-combination",
+          "type": "see-also"
+        },
+        {
+          "targetId": "time-track",
+          "type": "contrast-with"
+        },
+        {
+          "targetId": "movement-points",
           "type": "see-also"
         }
       ],
@@ -1036,6 +1060,14 @@
         },
         {
           "targetId": "drafting",
+          "type": "see-also"
+        },
+        {
+          "targetId": "multi-use-cards",
+          "type": "see-also"
+        },
+        {
+          "targetId": "trick-taking",
           "type": "see-also"
         }
       ],
@@ -1430,6 +1462,10 @@
         {
           "targetId": "comparison-area-network",
           "type": "see-also"
+        },
+        {
+          "targetId": "zone-control",
+          "type": "contrast-with"
         }
       ],
       "bggReferences": []
@@ -1495,6 +1531,10 @@
         {
           "targetId": "comparison-area-network",
           "type": "see-also"
+        },
+        {
+          "targetId": "movement-points",
+          "type": "contrast-with"
         }
       ],
       "bggReferences": [
@@ -1923,6 +1963,10 @@
         {
           "targetId": "cooperative-structure",
           "type": "see-also"
+        },
+        {
+          "targetId": "action-programming",
+          "type": "combines-with"
         }
       ],
       "bggReferences": []
@@ -1983,6 +2027,10 @@
         {
           "targetId": "income-production",
           "type": "see-also"
+        },
+        {
+          "targetId": "multi-use-cards",
+          "type": "combines-with"
         }
       ],
       "bggReferences": []
@@ -4139,6 +4187,402 @@
         }
       ],
       "bggReferences": []
+    },
+    {
+      "id": "action-programming",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "行动编程：排好顺序，不等于每一步都能成功",
+        "en": "Action programming: a planned sequence does not guarantee successful steps"
+      },
+      "summary": {
+        "zh-CN": "两人预先排好三张行动卡，追踪共享扣件的去向，比较顺序与失败后取消余下动作的结果。",
+        "en": "Two players program three cards. Track shared fasteners and compare sequencing with cancellation after a failed action."
+      },
+      "aliases": {
+        "zh-CN": [
+          "行动编程",
+          "程序化行动"
+        ],
+        "en": [
+          "action programming",
+          "programmed actions"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "行动队列",
+          "提前承诺",
+          "批次",
+          "失败处理",
+          "交错执行"
+        ],
+        "en": [
+          "action queue",
+          "commitment",
+          "batch",
+          "failure handling",
+          "interleaved execution"
+        ]
+      },
+      "question": "actions",
+      "chapterIds": [
+        "reading-core-actions",
+        "reading-time-and-interaction"
+      ],
+      "caseIds": [
+        "root"
+      ],
+      "relations": [
+        {
+          "targetId": "action-selection",
+          "type": "see-also"
+        },
+        {
+          "targetId": "simultaneous-choice",
+          "type": "contrast-with"
+        },
+        {
+          "targetId": "shared-resource",
+          "type": "combines-with"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2689,
+          "name": "Action Queue",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2689/action-queue",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "time-track",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "时间轨：这次走多远，决定下次谁行动",
+        "en": "Time track: how far you move decides who acts next"
+      },
+      "summary": {
+        "zh-CN": "用三张工单算完两条时间轨路线，只改同格时谁先行动，观察费用如何改变后续分配。",
+        "en": "Resolve two routes through three job cards, then change only tie priority to see how time costs affect later allocation."
+      },
+      "aliases": {
+        "zh-CN": [
+          "时间轨",
+          "时间轨行动顺序"
+        ],
+        "en": [
+          "time track",
+          "time-track turn order"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "最落后者先动",
+          "时间费用",
+          "连续行动",
+          "平手",
+          "行动顺序"
+        ],
+        "en": [
+          "furthest back",
+          "time costs",
+          "consecutive actions",
+          "ties",
+          "turn order"
+        ]
+      },
+      "question": "actions",
+      "chapterIds": [
+        "reading-time-and-interaction",
+        "reading-resources-and-endings"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "action-points",
+          "type": "contrast-with"
+        },
+        {
+          "targetId": "action-selection",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2663,
+          "name": "Turn Order: Time Track",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2663/turn-order-time-track",
+          "relation": "same-scope"
+        }
+      ]
+    },
+    {
+      "id": "multi-use-cards",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "question": "cards",
+      "title": {
+        "zh-CN": "多用途卡牌：用来筹钱的展台，还能建设吗？",
+        "en": "Multi-Use Cards: Can a Display Used for Funding Still Be Built?"
+      },
+      "summary": {
+        "zh-CN": "走完三张布展牌的两种筹款与建设路线，再只改用途互斥规则，核对设施、钱币和失去的机会。",
+        "en": "Compare two funding and construction routes for three exhibition cards, then change only exclusivity and track structures, coins, and sacrificed options."
+      },
+      "aliases": {
+        "zh-CN": [
+          "多用途卡牌",
+          "一牌多用",
+          "卡牌多用途"
+        ],
+        "en": [
+          "multi-use cards",
+          "multipurpose cards",
+          "cards as money"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "用途互斥",
+          "筹款",
+          "建设",
+          "机会成本",
+          "弃牌"
+        ],
+        "en": [
+          "exclusive uses",
+          "funding",
+          "construction",
+          "opportunity cost",
+          "discard"
+        ]
+      },
+      "chapterIds": [
+        "reading-choices-and-agency",
+        "reading-design-an-economy",
+        "reading-rules-and-components"
+      ],
+      "caseIds": [
+        "radlands"
+      ],
+      "relations": [
+        {
+          "targetId": "hand-management",
+          "type": "see-also"
+        },
+        {
+          "targetId": "resource-conversion",
+          "type": "combines-with"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 3099,
+          "name": "Multi-Use Cards",
+          "url": "https://boardgamegeek.com/boardgamemechanic/3099/multi-use-cards",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "trick-taking",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "question": "cards",
+      "title": {
+        "zh-CN": "吃墩：赢下这一墩，为什么可能让自己扣分？",
+        "en": "Trick-Taking: Why Can Winning a Trick Cost You Points?"
+      },
+      "summary": {
+        "zh-CN": "用完整九张牌比较跟色、王牌、胜墩与红牌扣分，再取消王牌，追踪每墩获牌者和下一位领出者。",
+        "en": "Use a complete nine-card deal to compare following suit, trumps, trick winners, and red-card penalties, then remove trumps and follow the next lead."
+      },
+      "aliases": {
+        "zh-CN": [
+          "吃墩",
+          "墩牌",
+          "跟色限制"
+        ],
+        "en": [
+          "trick-taking",
+          "trick taking",
+          "follow suit"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "领出",
+          "王牌",
+          "扣分",
+          "胜墩",
+          "并列获胜"
+        ],
+        "en": [
+          "lead",
+          "trump",
+          "penalties",
+          "trick winner",
+          "shared victory"
+        ]
+      },
+      "chapterIds": [
+        "reading-time-and-interaction",
+        "reading-state-and-resolution",
+        "reading-information-and-randomness"
+      ],
+      "caseIds": [
+        "the-crew"
+      ],
+      "relations": [
+        {
+          "targetId": "hand-management",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2009,
+          "name": "Trick-taking",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2009/trick-taking",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "movement-points",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "移动点数：少走两段路，为什么还到不了？",
+        "en": "Movement points: why can the shorter route leave you stranded?"
+      },
+      "summary": {
+        "zh-CN": "用4点预算走两条长短不同的取样路线，只改地形费用，核算能否串起两份收益。",
+        "en": "Spend a four-point budget on two sampling routes, then change one terrain cost to see which rewards can be combined."
+      },
+      "aliases": {
+        "zh-CN": [
+          "移动点数",
+          "移动预算",
+          "移动力"
+        ],
+        "en": [
+          "movement points",
+          "movement budget"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "地形费用",
+          "可达范围",
+          "绕路",
+          "一次性取样"
+        ],
+        "en": [
+          "terrain costs",
+          "reachability",
+          "detour",
+          "once-only rewards"
+        ]
+      },
+      "question": "space",
+      "chapterIds": [
+        "reading-space-and-opportunity",
+        "reading-time-and-interaction"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "action-points",
+          "type": "see-also"
+        },
+        {
+          "targetId": "route-building",
+          "type": "contrast-with"
+        },
+        {
+          "targetId": "zone-control",
+          "type": "combines-with"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2947,
+          "name": "Movement Points",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2947/movement-points",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "zone-control",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "控制区：棋子没站在路上，为什么也能拦住你？",
+        "en": "Zones of control: how can a piece block a space it does not occupy?"
+      },
+      "summary": {
+        "zh-CN": "让一名守卫影响周围空格，比较进入即停与进入加价，分清占位、影响和通行预算。",
+        "en": "Let one guard affect nearby empty spaces; compare forced stops with entry surcharges, separating occupation, influence, and budget."
+      },
+      "aliases": {
+        "zh-CN": [
+          "控制区",
+          "ZOC",
+          "邻近影响"
+        ],
+        "en": [
+          "zone of control",
+          "ZOC"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "强制停止",
+          "软控制区",
+          "邻接",
+          "通行代价"
+        ],
+        "en": [
+          "forced stop",
+          "soft ZOC",
+          "adjacency",
+          "entry surcharge"
+        ]
+      },
+      "question": "space",
+      "chapterIds": [
+        "reading-space-and-opportunity",
+        "reading-state-and-resolution"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "area-control",
+          "type": "contrast-with"
+        },
+        {
+          "targetId": "area-majority",
+          "type": "contrast-with"
+        },
+        {
+          "targetId": "movement-points",
+          "type": "combines-with"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2974,
+          "name": "Zone of Control",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2974/zone-of-control",
+          "relation": "related"
+        }
+      ]
     }
   ]
 }

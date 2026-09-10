@@ -1,14 +1,14 @@
-<!-- content-fingerprint: e3b6e4581afe0a1485ea891e305288d88a4f5bf37c846116f4c6fe393053d83b -->
+<!-- content-fingerprint: ce60741e766feef23a23edc3e96d4363f06c3fc50742f76667b27a4c4b58a8e4 -->
 # 全站资料文本可读性审计
 
 审计日期：2026-09-10
-范围：`content/` 下全部 361 个 JSON 与 Markdown 文件，不抽样。
-覆盖：19,479 个含中文的字段或段落，约 586,959 个汉字。
+范围：`content/` 下全部 373 个 JSON 与 Markdown 文件，不抽样。
+覆盖：19,745 个含中文的字段或段落，约 598,327 个汉字。
 
 ## 结论
 
 - 本报告审计文字长度与抽象词信号，不据此判断网站首页或学习路径是否有效。
-- 机器规则标出了 511 个可能需要分段或渐进披露的长句、长段与抽象词密集处。这是编辑优先级，不是内容质量评分。
+- 机器规则标出了 529 个可能需要分段或渐进披露的长句、长段与抽象词密集处。这是编辑优先级，不是内容质量评分。
 - 授权译文和来源正文保留原有使用范围；原创双语文章提供独立阅读入口，课程、案例与工具维持各自路径。
 - 汉字阈值只评估含中文的字段或段落。英文正文参与文件指纹与解析检查，但不能因此声称其可读性已被这些阈值验证。
 
@@ -83,6 +83,8 @@
 | `design-constraints.json` | 37 | 830 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/action-points/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/action-points/zh-CN.md` | 31 | 1823 | 6 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/action-programming/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/action-programming/zh-CN.md` | 35 | 1823 | 4 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/action-selection/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/action-selection/zh-CN.md` | 36 | 1749 | 6 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/animals/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
@@ -101,7 +103,7 @@
 | `design-library/bag-building/zh-CN.md` | 33 | 1736 | 4 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/care-schedule/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/care-schedule/zh-CN.md` | 23 | 1017 | 3 | 支持资料：通过节点或资料库按需进入 |
-| `design-library/catalog.json` | 364 | 4155 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/catalog.json` | 403 | 4586 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/city-building/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/city-building/zh-CN.md` | 26 | 1095 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/city-planning/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
@@ -182,6 +184,10 @@
 | `design-library/medical/zh-CN.md` | 26 | 1057 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/medieval/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/medieval/zh-CN.md` | 26 | 1072 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/movement-points/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/movement-points/zh-CN.md` | 37 | 1776 | 2 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/multi-use-cards/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/multi-use-cards/zh-CN.md` | 35 | 1826 | 3 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/mystery/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/mystery/zh-CN.md` | 28 | 1063 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/push-your-luck/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
@@ -206,14 +212,20 @@
 | `design-library/simultaneous-choice/zh-CN.md` | 30 | 1459 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/tile-placement/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/tile-placement/zh-CN.md` | 26 | 1249 | 1 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/time-track/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/time-track/zh-CN.md` | 40 | 1873 | 3 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/trading/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/trading/zh-CN.md` | 24 | 998 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/transportation/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/transportation/zh-CN.md` | 34 | 1494 | 1 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/trick-taking/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/trick-taking/zh-CN.md` | 41 | 1708 | 3 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/water-governance/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/water-governance/zh-CN.md` | 25 | 932 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/worker-placement/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/worker-placement/zh-CN.md` | 33 | 1649 | 2 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/zone-control/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/zone-control/zh-CN.md` | 39 | 1931 | 3 | 支持资料：通过节点或资料库按需进入 |
 | `design-materials.json` | 285 | 6179 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `frameworks.json` | 81 | 1504 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `glossary-index.json` | 258 | 1155 | 0 | 内部元数据：不作为新手首屏文案 |
