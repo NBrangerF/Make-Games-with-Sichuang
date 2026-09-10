@@ -178,6 +178,10 @@
         {
           "targetId": "action-programming",
           "type": "contrast-with"
+        },
+        {
+          "targetId": "negotiation-commitments",
+          "type": "see-also"
         }
       ],
       "bggReferences": [
@@ -277,7 +281,20 @@
         "for-sale",
         "modern-art"
       ],
-      "relations": [],
+      "relations": [
+        {
+          "targetId": "sealed-bid-auction",
+          "type": "see-also"
+        },
+        {
+          "targetId": "ascending-auction",
+          "type": "see-also"
+        },
+        {
+          "targetId": "second-price-auction",
+          "type": "see-also"
+        }
+      ],
       "bggReferences": [
         {
           "id": 2012,
@@ -2244,6 +2261,14 @@
         {
           "targetId": "cooperative-structure",
           "type": "see-also"
+        },
+        {
+          "targetId": "negotiation-commitments",
+          "type": "see-also"
+        },
+        {
+          "targetId": "comparison-trade-promise",
+          "type": "see-also"
         }
       ],
       "bggReferences": [
@@ -2428,6 +2453,10 @@
         },
         {
           "targetId": "comparison-occupy-price",
+          "type": "see-also"
+        },
+        {
+          "targetId": "second-price-auction",
           "type": "see-also"
         }
       ],
@@ -4810,6 +4839,10 @@
         {
           "targetId": "comparison-income-loan",
           "type": "see-also"
+        },
+        {
+          "targetId": "comparison-trade-promise",
+          "type": "contrast-with"
         }
       ],
       "bggReferences": [
@@ -5007,6 +5040,337 @@
         {
           "targetId": "investment",
           "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "sealed-bid-auction",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "密封竞价：两项报价怎样共用一份预算？",
+        "en": "Sealed bidding: how do two bids share one budget?"
+      },
+      "summary": {
+        "zh-CN": "把同一份预算分给两件同时揭价的拍品，比较两份完整报价，再只改变平手优先顺序。",
+        "en": "Split one budget across two simultaneously revealed lots, compare two complete bid allocations, then change only tie priority."
+      },
+      "aliases": {
+        "zh-CN": [
+          "密封竞价",
+          "密封拍卖",
+          "暗标"
+        ],
+        "en": [
+          "sealed bidding",
+          "sealed-bid auction",
+          "blind bidding"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "秘密报价",
+          "同时揭价",
+          "多件拍品",
+          "总预算",
+          "平手优先",
+          "零报价"
+        ],
+        "en": [
+          "secret bids",
+          "simultaneous reveal",
+          "multiple lots",
+          "combined budget",
+          "tie priority",
+          "zero bid"
+        ]
+      },
+      "question": "economy",
+      "chapterIds": [
+        "reading-design-an-economy",
+        "reading-information-and-randomness"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "auction",
+          "type": "see-also"
+        },
+        {
+          "targetId": "ascending-auction",
+          "type": "contrast-with"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2920,
+          "name": "Auction: Sealed Bid",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2920/auction-sealed-bid",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "ascending-auction",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "递增竞价：轮到你时，还能接哪个价格？",
+        "en": "Ascending bidding: which prices remain when your turn arrives?"
+      },
+      "summary": {
+        "zh-CN": "沿公开加价与永久退出的轮流程序追踪付款，比较逐次加价、跳价，以及只改最低加价幅度的结果。",
+        "en": "Track payment through public raises and permanent withdrawal, comparing gradual bids, a jump bid, and a change only to the minimum increment."
+      },
+      "aliases": {
+        "zh-CN": [
+          "递增竞价",
+          "递增拍卖",
+          "轮流加价"
+        ],
+        "en": [
+          "ascending auction",
+          "ascending bidding",
+          "turn-order bidding"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "公开报价",
+          "最低加价",
+          "跳价",
+          "永久退出",
+          "报价顺序",
+          "最终付款"
+        ],
+        "en": [
+          "public bids",
+          "minimum increment",
+          "jump bid",
+          "permanent withdrawal",
+          "bid order",
+          "final payment"
+        ]
+      },
+      "question": "economy",
+      "chapterIds": [
+        "reading-design-an-economy",
+        "reading-time-and-interaction"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "auction",
+          "type": "see-also"
+        },
+        {
+          "targetId": "sealed-bid-auction",
+          "type": "contrast-with"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2918,
+          "name": "Auction: English",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2918/auction-english",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "second-price-auction",
+      "kind": "mechanism",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "次高价拍卖：赢得报价之后，还付得起使用费吗？",
+        "en": "Second-price auctions: can you still afford to use what you win?"
+      },
+      "summary": {
+        "zh-CN": "三人争设备，逐步结算次高报价、使用费用与备选行动，再检查同价、保留价和估值策略的条件。",
+        "en": "Resolve three bids, device activation, and an alternative action, then examine ties, reserves, and the assumptions behind valuation strategy."
+      },
+      "aliases": {
+        "zh-CN": [
+          "次高价拍卖",
+          "第二价格拍卖"
+        ],
+        "en": [
+          "second-price auction",
+          "second-bid auction",
+          "Vickrey auction"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "保留价",
+          "重复最高价",
+          "使用费",
+          "估值",
+          "预算"
+        ],
+        "en": [
+          "reserve price",
+          "tied highest bids",
+          "activation cost",
+          "valuation",
+          "budget"
+        ]
+      },
+      "question": "economy",
+      "chapterIds": [
+        "reading-design-an-economy",
+        "reading-choices-and-agency",
+        "reading-state-and-resolution"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "auction",
+          "type": "variant-of"
+        },
+        {
+          "targetId": "comparison-bid-payment",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2012,
+          "name": "Auction / Bidding",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2012/auction-bidding",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "negotiation-commitments",
+      "kind": "pattern",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "协商与承诺：三个人答应了，担保究竟保什么？",
+        "en": "Negotiation and commitments: what does a three-party bond actually secure?"
+      },
+      "summary": {
+        "zh-CN": "用三方联建比较即期费用、未来行动与担保范围，只提高担保金额，观察履行、违约和补偿的不同结果。",
+        "en": "Compare immediate fees, later actions, and a bond in a three-party construction deal, changing only the bond amount."
+      },
+      "aliases": {
+        "zh-CN": [
+          "协商与承诺",
+          "谈判承诺",
+          "担保范围"
+        ],
+        "en": [
+          "negotiation and commitments",
+          "action promises",
+          "bond scope"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "三方协议",
+          "履约",
+          "违约",
+          "押金",
+          "担保",
+          "声誉"
+        ],
+        "en": [
+          "three-party agreement",
+          "performance",
+          "breach",
+          "deposit",
+          "security",
+          "reputation"
+        ]
+      },
+      "question": "interaction",
+      "chapterIds": [
+        "reading-cooperation-and-conflict",
+        "reading-time-and-interaction",
+        "reading-state-and-resolution"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "trading",
+          "type": "see-also"
+        },
+        {
+          "targetId": "simultaneous-choice",
+          "type": "combines-with"
+        },
+        {
+          "targetId": "comparison-trade-promise",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2915,
+          "name": "Negotiation",
+          "url": "https://boardgamegeek.com/boardgamemechanic/2915/negotiation",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "comparison-trade-promise",
+      "kind": "comparison",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "现在交换，还是以后交付？把承诺跟到结算时点",
+        "en": "Trade now or deliver later? Follow a promise through settlement"
+      },
+      "summary": {
+        "zh-CN": "同一绳换木的提议，只推迟一方交付，跟踪等待、提前用料、缺货和双方最后得分。",
+        "en": "Keep a rope-for-wood offer fixed and delay one delivery. Follow waiting, earlier use, missing goods, and both final scores."
+      },
+      "aliases": {
+        "zh-CN": [
+          "现货交换与未来承诺",
+          "交付时点"
+        ],
+        "en": [
+          "immediate trade and future promises",
+          "delivery timing"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "履约",
+          "预留材料",
+          "缺货",
+          "交付失败",
+          "协商"
+        ],
+        "en": [
+          "fulfillment",
+          "reserved goods",
+          "shortfall",
+          "non-delivery",
+          "negotiation"
+        ]
+      },
+      "question": "economy",
+      "chapterIds": [
+        "reading-design-an-economy",
+        "reading-time-and-interaction"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "trading",
+          "type": "see-also"
+        },
+        {
+          "targetId": "negotiation-commitments",
+          "type": "see-also"
+        },
+        {
+          "targetId": "loans",
+          "type": "contrast-with"
         }
       ],
       "bggReferences": []
