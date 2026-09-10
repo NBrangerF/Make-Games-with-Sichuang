@@ -1,0 +1,35 @@
+{
+  "id": "for-sale",
+  "category": "mechanism",
+  "game": "For Sale",
+  "title": {
+    "zh-CN": "For Sale：买到最好的房子，为什么还可能少赚？",
+    "en": "For Sale: Why Can Buying the Best House Leave You with Less?"
+  },
+  "summary": {
+    "zh-CN": "用三个可复算局面，分析退拍如何改变后手的所得、同时出售为何取决于相对名次，以及现金变成一次性手牌后的终局取舍。",
+    "en": "Three worked situations examine how passing changes others’ fallback, why simultaneous sales depend on relative rank, and how turning cash into cards affects final wealth."
+  },
+  "chapterIds": [
+    "reading-state-and-resolution",
+    "reading-information-and-randomness",
+    "reading-design-an-economy",
+    "reading-combine-mechanisms"
+  ],
+  "sources": [
+    {
+      "label": "IELLO — For Sale English rules V2",
+      "url": "https://iellogames.com/wp-content/uploads/2020/07/For-Sale_Rulebook_EN_V2.pdf",
+      "edition": "IELLO 2020 English V2 base game; page 11 variant excluded",
+      "locator": "PDF/printed pp. 2–3 Contents and Setup; pp. 4–7 Phase 1, Bid, Pass and End of the Round (p. 5 refund rounded down); pp. 8–9 Phase 2; p. 10 End of the Game; p. 12 designer and copyright credits",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "label": "IELLO — For Sale official product page",
+      "url": "https://iello.fr/jeux/for-sale/",
+      "edition": "Publisher page for IELLO Mini Games edition, released July 10, 2020; accessed 2026-09-10",
+      "locator": "For Sale product header: Date de sortie and Créé par; Achetez, vendez !: successive bidding, pass and last-bidder payments, simultaneous rank-based selling; Une référence du jeu d’enchères: original 1997 release",
+      "checkedAt": "2026-09-10"
+    }
+  ]
+}

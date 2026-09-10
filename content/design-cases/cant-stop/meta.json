@@ -1,0 +1,43 @@
+{
+  "id": "cant-stop",
+  "category": "mechanism",
+  "game": "Can’t Stop",
+  "title": {
+    "zh-CN": "Can’t Stop：同一把骰子，为什么越走越难停？",
+    "en": "Can’t Stop: Why Does the Same Handful of Dice Become Harder to Put Down?"
+  },
+  "summary": {
+    "zh-CN": "用两个可复算局面，比较四骰配对、三枚临时棋子、停手兑现与赢列封路怎样共同改变决定。",
+    "en": "Use two worked situations to compare dice pairing, three temporary runners, banking, and the choices removed when a column is won."
+  },
+  "chapterIds": [
+    "reading-choices-and-agency",
+    "reading-information-and-randomness",
+    "reading-resources-and-endings",
+    "reading-goals-and-pacing",
+    "reading-combine-mechanisms"
+  ],
+  "sources": [
+    {
+      "label": "Ravensburger — Can’t Stop! official 2007 rulebook, publisher-permitted mirror",
+      "url": "https://www.brettspiele-report.de/images/cant_stop/Spielanleitung_Can_t_Stop.pdf",
+      "edition": "Ravensburger 2007, product no. 26 434 6, licensed from franjos; base rules only, excluding variants 1–3",
+      "locator": "PDF pp. 1–4: Spielidee, Spielverlauf, voluntary/forced stopping, Spalte gewonnen!, Spielende; board diagrams pp. 1–2",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "label": "brettspiele-report — publisher permission for rulebook mirror",
+      "url": "https://www.brettspiele-report.de/cant-stop/",
+      "edition": "Mirror provenance page; no rules claims taken from reviewer prose",
+      "locator": "Spielanleitung section: Mit freundlicher Genehmigung des Ravensburger Spieleverlags; link to the four-page PDF",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "label": "franjos — official Can’t Stop overview",
+      "url": "https://www.franjos.de/spiel_cant_stop.htm",
+      "edition": "Publisher/licensor product overview accessed 2026-09-10; corroborates core mechanism, does not replace the selected 2007 edition",
+      "locator": "Das Spiel: four dice, two pairs, three runners, failed turns and intermediate camps; author credit Sid Sackson",
+      "checkedAt": "2026-09-10"
+    }
+  ]
+}

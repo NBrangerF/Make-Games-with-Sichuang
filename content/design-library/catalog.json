@@ -26,7 +26,9 @@
       "chapterIds": [
         "reading-time-and-interaction"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "agricola"
+      ],
       "relations": [
         {
           "targetId": "action-selection",
@@ -164,7 +166,8 @@
         "reading-time-and-interaction"
       ],
       "caseIds": [
-        "six-nimmt"
+        "six-nimmt",
+        "for-sale"
       ],
       "relations": [
         {
@@ -220,7 +223,9 @@
       "chapterIds": [
         "reading-information-and-randomness"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "cant-stop"
+      ],
       "relations": [],
       "bggReferences": [
         {
@@ -257,7 +262,9 @@
       "chapterIds": [
         "reading-choices-and-agency"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "for-sale"
+      ],
       "relations": [],
       "bggReferences": [
         {
@@ -322,7 +329,9 @@
       "chapterIds": [
         "reading-space-and-opportunity"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "carcassonne"
+      ],
       "relations": [
         {
           "targetId": "area-control",
@@ -742,7 +751,9 @@
         "reading-stories-and-models",
         "reading-players-and-context"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "wingspan"
+      ],
       "relations": [
         {
           "targetId": "lesson-theme-to-rule",
@@ -998,7 +1009,10 @@
         "reading-information-and-randomness",
         "reading-resources-and-endings"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "dominion",
+        "for-sale"
+      ],
       "relations": [
         {
           "targetId": "deck-building",
@@ -1377,7 +1391,9 @@
         "reading-space-and-opportunity",
         "reading-state-and-resolution"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "carcassonne"
+      ],
       "relations": [
         {
           "targetId": "area-majority",
@@ -1506,7 +1522,9 @@
         "reading-space-and-opportunity",
         "reading-rules-and-components"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "carcassonne"
+      ],
       "relations": [
         {
           "targetId": "route-building",
@@ -1631,7 +1649,10 @@
         "reading-information-and-randomness",
         "reading-choices-and-agency"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "six-nimmt",
+        "hanabi"
+      ],
       "relations": [
         {
           "targetId": "communication-limits",
@@ -1687,7 +1708,9 @@
         "reading-information-and-randomness",
         "reading-cooperation-and-conflict"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "hanabi"
+      ],
       "relations": [
         {
           "targetId": "hidden-information",
@@ -1859,7 +1882,9 @@
         "reading-design-an-economy",
         "reading-cooperation-and-conflict"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "pandemic"
+      ],
       "relations": [
         {
           "targetId": "income-production",
@@ -1911,7 +1936,9 @@
         "reading-design-an-economy",
         "reading-core-actions"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "wingspan"
+      ],
       "relations": [
         {
           "targetId": "trading",
@@ -1967,7 +1994,10 @@
         "reading-design-an-economy",
         "reading-state-and-resolution"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "wingspan",
+        "agricola"
+      ],
       "relations": [
         {
           "targetId": "resource-conversion",
@@ -2145,7 +2175,10 @@
         "reading-cooperation-and-conflict",
         "reading-access-and-participation"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "pandemic",
+        "hanabi"
+      ],
       "relations": [
         {
           "targetId": "shared-resource",
@@ -2656,7 +2689,9 @@
         "reading-stories-and-models",
         "reading-resources-and-endings"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "wingspan"
+      ],
       "relations": [
         {
           "targetId": "shared-resource",
@@ -2726,7 +2761,9 @@
         "reading-stories-and-models",
         "reading-goals-and-pacing"
       ],
-      "caseIds": [],
+      "caseIds": [
+        "agricola"
+      ],
       "relations": [
         {
           "targetId": "income-production",

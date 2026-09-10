@@ -40,6 +40,7 @@ for (const [name, corrupt] of [
   ['invalid BGG identity', c => { c.entries[0].bggReferences[0].id = 1 }],
   ['private path', c => { c.entries[0].summary.en = '/Users/private/research' }],
   ['unknown chapter', c => { c.entries[0].chapterIds = ['unwritten'] }],
+  ['unknown case', c => { c.entries[0].caseIds = ['unwritten'] }],
 ]) {
   const copy = structuredClone(catalog); corrupt(copy)
   assert.ok(validateLibrary(copy, context).length > 0, `Reject ${name}`)
@@ -57,4 +58,4 @@ assert.equal(readingReturn('#resources/library/all/en?from=https://example.org')
 assert.equal(serializeRoute(parseRouteHash('#resources/library/unknown/en')), '#resources/library/unknown/en')
 assert.equal(parseRouteHash('#resources/library/all').readingLanguage, 'zh-CN')
 assert.equal(readingReturn(readingHref('course', 'reading-time-and-interaction', 'en', { readingReturnTo: detail })), '#course/reading/reading-time-and-interaction/en')
-console.log(`Design library PASS: ${catalog.entries.length} bilingual entries; public allowlist, 8 rejection cases, IDs, sources, and filtered return routes. Editorial quality and rendered behavior require separate review.`)
+console.log(`Design library PASS: ${catalog.entries.length} bilingual entries; public allowlist, 9 rejection cases, IDs, sources, and filtered return routes. Editorial quality and rendered behavior require separate review.`)

@@ -15,7 +15,10 @@ for (const example of examples.chapters) {
     assert.ok(example.values[lang].every(value => typeof value === 'string' && value.length > 20 && value.length <= 4000))
   }
 }
-const ids = ['carcassonne','pandemic','dominion','six-nimmt','hanabi','wingspan']
+const ids = fs.readdirSync(new URL('../content/design-cases/', import.meta.url)).filter(id => !id.startsWith('.')).sort()
+for (const retained of ['carcassonne','pandemic','dominion','six-nimmt','hanabi','wingspan']) {
+  assert.ok(ids.includes(retained), `Retain existing case: ${retained}`)
+}
 assert.deepEqual(support.chapters.map(item => item.chapterId), path.chapters.map(item => item.id))
 const worksheetIds = ['observe','intent','loop','choices','resources','theme','access','test','review']
 for (const item of support.chapters) {
@@ -32,6 +35,9 @@ const categories = []
 for (const id of ids) {
   const meta = JSON.parse(read(`content/design-cases/${id}/meta.json`))
   assert.equal(meta.id,id); categories.push(meta.category)
+  assert.ok(['game','mechanism','theme'].includes(meta.category), `${id}: known category`)
+  assert.deepEqual(Object.keys(meta).sort(), ['category','chapterIds','game','id','sources','summary','title'], `${id}: only public metadata`)
+  assert.ok(meta.chapterIds.length > 0)
   assert.ok(meta.chapterIds.every(chapterId => path.chapters.some(item => item.id === chapterId)))
   assert.ok(meta.sources.length >= 2)
   for (const source of meta.sources) {
@@ -42,13 +48,15 @@ for (const id of ids) {
     const body = read(`content/design-cases/${id}/${lang}.md`)
     assert.equal((body.match(/^# /gm) || []).length,1)
     assert.ok(body.length > (lang === 'en' ? 2500 : 1000))
+    assert.equal((body.match(lang === 'en' ? /^## Angle (?:one|two|three):/gm : /^## 角度[一二三]：/gm) || []).length, 3, `${id}/${lang}: three labeled analysis angles`)
+    assert.ok(meta.title[lang] && meta.summary[lang])
     assert.ok(meta.sources.every(source => body.includes(source.url)))
     const href = readingHref('cases', id, lang, { readingReturnTo: readingHref('course', meta.chapterIds[0],lang) })
     assert.equal(serializeRoute(parseRouteHash(href)),href)
     assert.equal(parseRouteHash(href).resourceEntry,'cases')
   }
 }
-assert.deepEqual(categories.sort(),['game','game','mechanism','mechanism','theme','theme'])
+assert.deepEqual([...new Set(categories)].sort(), ['game','mechanism','theme'])
 const list = readingHref('cases', undefined, 'en', { readingQuery: 'hand & cards', caseCategory: 'mechanism' })
 assert.equal(serializeRoute(parseRouteHash(list)),list)
 assert.equal(readingReturn(list),list)
@@ -67,4 +75,4 @@ const ui = read('src/reading-worksheet.tsx')
 assert.ok(ui.includes('reading-note-v1-') && ui.includes('basedOnExample'))
 assert.ok(ui.includes('chapter.chapterId === sourceId') && ui.includes('[...chapterExample]'))
 assert.ok(!ui.includes('useWorkspace') && !ui.includes('useEffect'), 'Exercises do not create workspace evidence or effect-driven storage writes')
-console.log('Reading support PASS: 28 contextual placements, 9 worksheet types, 6 bilingual cases, 2 constructed comparisons, bilingual filtered returns; no learning-effectiveness claim')
+console.log(`Reading support PASS: 28 contextual placements, 9 worksheet types, ${ids.length} bilingual cases with three labeled angles, 2 constructed comparisons, bilingual filtered returns; semantic quality and learner effectiveness require separate evidence`)

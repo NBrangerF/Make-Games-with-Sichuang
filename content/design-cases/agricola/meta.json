@@ -1,0 +1,43 @@
+{
+  "id": "agricola",
+  "category": "game",
+  "game": "Agricola",
+  "title": {
+    "zh-CN": "Agricola：多一个人，为什么不能只算多一次行动？",
+    "en": "Agricola: Why Is Another Person More Than Another Action?"
+  },
+  "summary": {
+    "zh-CN": "跟踪公共行动位、增长与喂养的时差，以及先喂养后繁殖的结果；对照规则书中关于增长上限的开发记录。",
+    "en": "Trace shared action spaces, the timing of labor and upkeep, and feeding before breeding, with the rulebook’s account of limiting animal growth."
+  },
+  "chapterIds": [
+    "reading-choices-and-agency",
+    "reading-time-and-interaction",
+    "reading-design-an-economy",
+    "reading-combine-mechanisms",
+    "reading-theme-and-emotion"
+  ],
+  "sources": [
+    {
+      "label": "Lookout — Agricola, Revised Edition 2016",
+      "url": "https://www.lookout-spiele.de/en/games/agricolare.html",
+      "edition": "Official revised-edition product page, 2016 edition; accessed 2026-09-10",
+      "locator": "Overview: edition, designer and player count; revised-edition description and FAQ distinguish the 2007 edition",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "label": "Lookout — Agricola Revised Edition English rules",
+      "url": "https://www.lookout-spiele.de/upload/en_agricolare.html_Rules_Agricola-RE_EN.pdf",
+      "edition": "2016 revised base rules; 12 pages; two-player scope, no solo or variant exceptions",
+      "locator": "PDF/printed pp.6–7: occupation, accumulation, rooms and growth; p.9: harvest sequence and feeding; p.10: Fireplace illustration; p.12: ending and solo differences",
+      "checkedAt": "2026-09-10"
+    },
+    {
+      "label": "Lookout — Agricola Revised Edition English appendix",
+      "url": "https://lookout-spiele.de/upload/en_agricolare.html_Appendix_Agricola-RE_EN.pdf",
+      "edition": "2016 revised-edition appendix, 12 pages",
+      "locator": "PDF/printed pp.6–7: named actions and numeric values; pp.10–11: development credits and rulebook authorship; p.11: sheep scoring",
+      "checkedAt": "2026-09-10"
+    }
+  ]
+}
