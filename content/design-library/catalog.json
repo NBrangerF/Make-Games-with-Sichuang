@@ -2609,6 +2609,1451 @@
         }
       ],
       "bggReferences": []
+    },
+    {
+      "id": "environment",
+      "kind": "theme",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "环境与生态：取走多少以后，还能继续恢复？",
+        "en": "Environmental themes: what must remain for recovery to continue?"
+      },
+      "summary": {
+        "zh-CN": "用两轮采集与再生比较眼前收获、共同余量和阈值后果。",
+        "en": "Compare immediate harvest, retained stock, and recovery thresholds across two rounds."
+      },
+      "aliases": {
+        "zh-CN": [
+          "环境",
+          "生态",
+          "再生",
+          "共同资源"
+        ],
+        "en": [
+          "environment",
+          "ecology",
+          "recovery",
+          "shared resources"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "环境",
+          "生态",
+          "再生",
+          "共同资源"
+        ],
+        "en": [
+          "environment",
+          "ecology",
+          "recovery",
+          "shared resources"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-theme-and-emotion",
+        "reading-stories-and-models",
+        "reading-resources-and-endings"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "shared-resource",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-theme-to-rule",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 1084,
+          "name": "Environmental",
+          "url": "https://boardgamegeek.com/boardgamecategory/1084/environmental",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "farming",
+      "kind": "theme",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "农业与农场：成熟了，为什么还没有收获？",
+        "en": "Farming: why does a mature crop still yield nothing?"
+      },
+      "summary": {
+        "zh-CN": "把生长等待与收获行动分开，比较最后一轮继续播种和及时收获。",
+        "en": "Separate growth from harvesting and compare planting again with collecting a mature crop."
+      },
+      "aliases": {
+        "zh-CN": [
+          "农业",
+          "农场",
+          "播种",
+          "收获",
+          "成熟"
+        ],
+        "en": [
+          "farming",
+          "crops",
+          "sowing",
+          "harvest",
+          "maturity"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "农业",
+          "农场",
+          "播种",
+          "收获",
+          "成熟"
+        ],
+        "en": [
+          "farming",
+          "crops",
+          "sowing",
+          "harvest",
+          "maturity"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-theme-and-emotion",
+        "reading-stories-and-models",
+        "reading-goals-and-pacing"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "income-production",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-theme-promises",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 1013,
+          "name": "Farming",
+          "url": "https://boardgamegeek.com/boardgamecategory/1013/farming",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "city-building",
+      "kind": "theme",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "城市建设：建筑数量相同，谁能用上服务？",
+        "en": "City building: the same buildings, but who can use the services?"
+      },
+      "summary": {
+        "zh-CN": "相同住宅、公园与市场，换个位置就改变服务覆盖；同时检查谁拥有规划权。",
+        "en": "Rearrange identical houses and facilities to change coverage while examining who controls planning."
+      },
+      "aliases": {
+        "zh-CN": [
+          "城市建设",
+          "城市",
+          "邻接",
+          "公共服务"
+        ],
+        "en": [
+          "city building",
+          "city",
+          "adjacency",
+          "services"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "城市建设",
+          "城市",
+          "邻接",
+          "公共服务"
+        ],
+        "en": [
+          "city building",
+          "city",
+          "adjacency",
+          "services"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-theme-and-emotion",
+        "reading-stories-and-models",
+        "reading-space-and-opportunity"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "tile-placement",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-theme-to-rule",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 1029,
+          "name": "City Building",
+          "url": "https://boardgamegeek.com/boardgamecategory/1029/city-building",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "industry",
+      "kind": "theme",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "工业与制造：为什么还有零件，却做不出成品？",
+        "en": "Industry and manufacturing: why can't a spare part become a finished product?"
+      },
+      "summary": {
+        "zh-CN": "沿原料—零件—成品追踪库存，比较直接生产和先改装设备的时间与能源代价。",
+        "en": "Trace raw materials, parts, and products to compare immediate production with an equipment modification."
+      },
+      "aliases": {
+        "zh-CN": [
+          "工业",
+          "制造",
+          "生产链",
+          "改装",
+          "能源"
+        ],
+        "en": [
+          "industry",
+          "manufacturing",
+          "production chain",
+          "upgrade",
+          "energy"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "工业",
+          "制造",
+          "生产链",
+          "改装",
+          "能源"
+        ],
+        "en": [
+          "industry",
+          "manufacturing",
+          "production chain",
+          "upgrade",
+          "energy"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-theme-and-emotion",
+        "reading-stories-and-models",
+        "reading-design-an-economy"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "resource-conversion",
+          "type": "see-also"
+        },
+        {
+          "targetId": "income-production",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 1088,
+          "name": "Industry / Manufacturing",
+          "url": "https://boardgamegeek.com/boardgamecategory/1088/industry-manufacturing",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "exploration",
+      "kind": "theme",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "探索与考察：先知道障碍，还是先准备跨过去？",
+        "en": "Exploration: learn about the obstacle, or prepare to cross it?"
+      },
+      "summary": {
+        "zh-CN": "在两个未知站点比较勘查、准备绳具和直接出发，检查成果何时才算交回。",
+        "en": "Compare surveying, equipping, and departing directly while distinguishing return from submission."
+      },
+      "aliases": {
+        "zh-CN": [
+          "探索",
+          "考察",
+          "发现",
+          "准备",
+          "未知地点"
+        ],
+        "en": [
+          "exploration",
+          "survey",
+          "discovery",
+          "preparation",
+          "unknown locations"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "探索",
+          "考察",
+          "发现",
+          "准备",
+          "未知地点"
+        ],
+        "en": [
+          "exploration",
+          "survey",
+          "discovery",
+          "preparation",
+          "unknown locations"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-theme-and-emotion",
+        "reading-stories-and-models",
+        "reading-information-and-randomness"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "hidden-information",
+          "type": "see-also"
+        },
+        {
+          "targetId": "transportation",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 1020,
+          "name": "Exploration",
+          "url": "https://boardgamegeek.com/boardgamecategory/1020/exploration",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "fantasy",
+      "kind": "theme",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "奇幻：能瞬移到塔顶，为什么还是交不了信物？",
+        "en": "Fantasy: why can't you deliver the token after teleporting to the tower?"
+      },
+      "summary": {
+        "zh-CN": "比较步行与瞬移，明确能力改变的位置、消耗的魔力和尚未解除的封印。",
+        "en": "Compare walking and teleportation by tracking location, mana, and the ward that remains closed."
+      },
+      "aliases": {
+        "zh-CN": [
+          "奇幻",
+          "魔法",
+          "瞬移",
+          "能力限制"
+        ],
+        "en": [
+          "fantasy",
+          "magic",
+          "teleport",
+          "ability constraints"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "奇幻",
+          "魔法",
+          "瞬移",
+          "能力限制"
+        ],
+        "en": [
+          "fantasy",
+          "magic",
+          "teleport",
+          "ability constraints"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-theme-and-emotion",
+        "reading-stories-and-models",
+        "reading-core-actions"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "action-points",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-theme-promises",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 1010,
+          "name": "Fantasy",
+          "url": "https://boardgamegeek.com/boardgamecategory/1010/fantasy",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "science-fiction",
+      "kind": "theme",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "科幻：发出指令时看到的，还会是执行时的位置吗？",
+        "en": "Science fiction: will the target still be there when the command executes?"
+      },
+      "summary": {
+        "zh-CN": "用公开目标程序比较即时反应与两轮后的执行，解释指令承诺、延迟和结束。",
+        "en": "Compare reactions to current positions with two-round-delayed execution and the end-of-game deadline."
+      },
+      "aliases": {
+        "zh-CN": [
+          "科幻",
+          "遥控",
+          "延迟",
+          "指令",
+          "探测器"
+        ],
+        "en": [
+          "science fiction",
+          "remote control",
+          "latency",
+          "commands",
+          "probe"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "科幻",
+          "遥控",
+          "延迟",
+          "指令",
+          "探测器"
+        ],
+        "en": [
+          "science fiction",
+          "remote control",
+          "latency",
+          "commands",
+          "probe"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-theme-and-emotion",
+        "reading-stories-and-models",
+        "reading-state-and-resolution"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "action-selection",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-prototype-a-question",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 1016,
+          "name": "Science Fiction",
+          "url": "https://boardgamegeek.com/boardgamecategory/1016/science-fiction",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "medieval",
+      "kind": "theme",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "中世纪题材：手里有货，谁才有权进集市？",
+        "en": "Medieval themes: goods in hand, but who may enter the market?"
+      },
+      "summary": {
+        "zh-CN": "比较保留与转交集市凭证，分清有货、有钱与拥有行动权限。",
+        "en": "Compare retaining and transferring a market pass to distinguish goods, money, and permission."
+      },
+      "aliases": {
+        "zh-CN": [
+          "中世纪",
+          "集市",
+          "身份",
+          "准入",
+          "权限"
+        ],
+        "en": [
+          "medieval",
+          "market",
+          "status",
+          "access",
+          "permission"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "中世纪",
+          "集市",
+          "身份",
+          "准入",
+          "权限"
+        ],
+        "en": [
+          "medieval",
+          "market",
+          "status",
+          "access",
+          "permission"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-theme-and-emotion",
+        "reading-stories-and-models",
+        "reading-choices-and-agency"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "trading",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-theme-promises",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 1035,
+          "name": "Medieval",
+          "url": "https://boardgamegeek.com/boardgamecategory/1035/medieval",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "medical",
+      "kind": "theme",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "医疗与公共健康：排进时段，为什么还没有获得服务？",
+        "en": "Medical and public-health themes: a time slot is not yet a completed service"
+      },
+      "summary": {
+        "zh-CN": "让预约时段与翻译支持对齐，区分已经安排、实际完成与尚未满足的需求。",
+        "en": "Align consultation slots with interpretation support to distinguish scheduling from completion."
+      },
+      "aliases": {
+        "zh-CN": [
+          "医疗",
+          "公共健康",
+          "咨询",
+          "翻译支持",
+          "服务可达性"
+        ],
+        "en": [
+          "medical",
+          "public health",
+          "consultation",
+          "interpretation",
+          "service access"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "医疗",
+          "公共健康",
+          "咨询",
+          "翻译支持",
+          "服务可达性"
+        ],
+        "en": [
+          "medical",
+          "public health",
+          "consultation",
+          "interpretation",
+          "service access"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-theme-and-emotion",
+        "reading-stories-and-models",
+        "reading-access-and-participation"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "lesson-design-for-participation",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-theme-to-rule",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 2145,
+          "name": "Medical",
+          "url": "https://boardgamegeek.com/boardgamecategory/2145/medical",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "mystery",
+      "kind": "theme",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "悬疑与谜案：得到两条回答，就排除了两次吗？",
+        "en": "Mystery: do two answers eliminate possibilities twice?"
+      },
+      "summary": {
+        "zh-CN": "比较重复回答与有效排除，让线索数量和真正缩小的候选范围分别可见。",
+        "en": "Compare redundant answers with discriminating clues by tracking the remaining candidates."
+      },
+      "aliases": {
+        "zh-CN": [
+          "悬疑",
+          "谜案",
+          "推理",
+          "线索",
+          "排除",
+          "钥匙"
+        ],
+        "en": [
+          "mystery",
+          "deduction",
+          "clues",
+          "elimination",
+          "key"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "悬疑",
+          "谜案",
+          "推理",
+          "线索",
+          "排除",
+          "钥匙"
+        ],
+        "en": [
+          "mystery",
+          "deduction",
+          "clues",
+          "elimination",
+          "key"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-theme-and-emotion",
+        "reading-stories-and-models",
+        "reading-information-and-randomness"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "hidden-information",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-compare-two-games",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 1040,
+          "name": "Murder / Mystery",
+          "url": "https://boardgamegeek.com/boardgamecategory/1040/murder-mystery",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "expedition",
+      "kind": "setting",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "不确定环境中的考察：队友的回程信息，什么时候有用？",
+        "en": "An expedition: when does a teammate's return information matter?"
+      },
+      "summary": {
+        "zh-CN": "让两位队员分别掌握记录价值和返程费用，比较前进与及时返回。",
+        "en": "Give teammates separate record-value and return-cost information, then compare advancing with returning."
+      },
+      "aliases": {
+        "zh-CN": [
+          "考察",
+          "队友信息",
+          "回程",
+          "补给"
+        ],
+        "en": [
+          "expedition",
+          "teammate information",
+          "return trip",
+          "supplies"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "考察",
+          "队友信息",
+          "回程",
+          "补给"
+        ],
+        "en": [
+          "expedition",
+          "teammate information",
+          "return trip",
+          "supplies"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-theme-and-emotion",
+        "reading-stories-and-models",
+        "reading-players-and-context"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "exploration",
+          "type": "see-also"
+        },
+        {
+          "targetId": "communication-limits",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "community-kitchen",
+      "kind": "setting",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "社区厨房：做成两碗，为什么还有一种需求没被回应？",
+        "en": "Community kitchen: two bowls cooked, but one need remains unmet"
+      },
+      "summary": {
+        "zh-CN": "沿备料、烹饪、分发追踪劳动，比较重复产量与不同需求的完成。",
+        "en": "Track preparation, cooking, and distribution to distinguish repeated output from meeting different needs."
+      },
+      "aliases": {
+        "zh-CN": [
+          "社区厨房",
+          "备料",
+          "烹饪",
+          "分发",
+          "分工"
+        ],
+        "en": [
+          "community kitchen",
+          "preparation",
+          "cooking",
+          "distribution",
+          "labor"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "社区厨房",
+          "备料",
+          "烹饪",
+          "分发",
+          "分工"
+        ],
+        "en": [
+          "community kitchen",
+          "preparation",
+          "cooking",
+          "distribution",
+          "labor"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-theme-and-emotion",
+        "reading-stories-and-models",
+        "reading-state-and-resolution"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "resource-conversion",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-design-for-participation",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "archive",
+      "kind": "setting",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "档案馆：都保留两张，能回答的为什么不是同一个问题？",
+        "en": "The archive: two records kept, but different questions answered"
+      },
+      "summary": {
+        "zh-CN": "比较两组同分的保存选择，检查留下哪些证据链与可回答问题。",
+        "en": "Compare equal-scoring preservation choices by tracing the evidence chains and queries they support."
+      },
+      "aliases": {
+        "zh-CN": [
+          "档案馆",
+          "保存",
+          "资料关联",
+          "证据链",
+          "查询"
+        ],
+        "en": [
+          "archive",
+          "preservation",
+          "record links",
+          "evidence chain",
+          "queries"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "档案馆",
+          "保存",
+          "资料关联",
+          "证据链",
+          "查询"
+        ],
+        "en": [
+          "archive",
+          "preservation",
+          "record links",
+          "evidence chain",
+          "queries"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-theme-and-emotion",
+        "reading-stories-and-models"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "mystery",
+          "type": "see-also"
+        },
+        {
+          "targetId": "set-collection",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "ecosystem",
+      "kind": "setting",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "共同水域：看起来恢复了，还欠着下一轮的后果吗？",
+        "en": "Shared waters: the condition looks restored, but are consequences still pending?"
+      },
+      "summary": {
+        "zh-CN": "让相同采集与修复次数产生不同终值，追踪最后一轮仍待兑现的环境后果。",
+        "en": "Reorder identical collection and restoration actions while tracking effects pending beyond the final action round."
+      },
+      "aliases": {
+        "zh-CN": [
+          "共同水域",
+          "生态变化",
+          "延迟反馈",
+          "待结算负荷"
+        ],
+        "en": [
+          "shared waters",
+          "ecosystem",
+          "delayed feedback",
+          "pending effects"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "共同水域",
+          "生态变化",
+          "延迟反馈",
+          "待结算负荷"
+        ],
+        "en": [
+          "shared waters",
+          "ecosystem",
+          "delayed feedback",
+          "pending effects"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-theme-and-emotion",
+        "reading-stories-and-models",
+        "reading-state-and-resolution"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "environment",
+          "type": "see-also"
+        },
+        {
+          "targetId": "resource-conversion",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "restoration",
+      "kind": "setting",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "老屋修复：两间最终都修好，中途也能继续使用吗？",
+        "en": "Restoring an occupied building: both rooms repaired, but usable throughout?"
+      },
+      "summary": {
+        "zh-CN": "对比同时开工与逐间修复，逐步检查终局成果之外的持续使用条件。",
+        "en": "Compare overlapping and staggered work by checking continued use as well as final repairs."
+      },
+      "aliases": {
+        "zh-CN": [
+          "老屋",
+          "修复",
+          "施工",
+          "持续可用",
+          "工序"
+        ],
+        "en": [
+          "restoration",
+          "occupied building",
+          "construction",
+          "availability",
+          "work stages"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "老屋",
+          "修复",
+          "施工",
+          "持续可用",
+          "工序"
+        ],
+        "en": [
+          "restoration",
+          "occupied building",
+          "construction",
+          "availability",
+          "work stages"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-theme-and-emotion",
+        "reading-stories-and-models",
+        "reading-goals-and-pacing"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "city-building",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-prototype-a-question",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "festival",
+      "kind": "setting",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "街区节日：节目都演完了，公共收尾由谁承担？",
+        "en": "A neighborhood festival: the shows are over, but who handles the shared wrap-up?"
+      },
+      "summary": {
+        "zh-CN": "比较四次行动中的宣传、演出与收尾，让公共工作及其承担者可见。",
+        "en": "Fit promotion, performances, and wrap-up into four actions while making shared labor and its participants visible."
+      },
+      "aliases": {
+        "zh-CN": [
+          "街区节日",
+          "庆典",
+          "宣传",
+          "公共劳动",
+          "收尾"
+        ],
+        "en": [
+          "festival",
+          "community event",
+          "promotion",
+          "shared labor",
+          "wrap-up"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "街区节日",
+          "庆典",
+          "宣传",
+          "公共劳动",
+          "收尾"
+        ],
+        "en": [
+          "festival",
+          "community event",
+          "promotion",
+          "shared labor",
+          "wrap-up"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-theme-and-emotion",
+        "reading-stories-and-models",
+        "reading-time-and-interaction"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "action-selection",
+          "type": "see-also"
+        },
+        {
+          "targetId": "cooperative-structure",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "rescue-network",
+      "kind": "setting",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "断续通信：正确物资晚一轮出发，还能及时交接吗？",
+        "en": "Intermittent communication: can the right supplies leave one round late?"
+      },
+      "summary": {
+        "zh-CN": "把一条需求消息与两轮物资交接结合，区分先知道、先发送和实际送达。",
+        "en": "Connect a need report with two transfer rounds to distinguish knowing, dispatching, and arrival."
+      },
+      "aliases": {
+        "zh-CN": [
+          "救援网络",
+          "节点",
+          "交接",
+          "通信",
+          "物资"
+        ],
+        "en": [
+          "rescue network",
+          "nodes",
+          "handoff",
+          "communication",
+          "supplies"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "救援网络",
+          "节点",
+          "交接",
+          "通信",
+          "物资"
+        ],
+        "en": [
+          "rescue network",
+          "nodes",
+          "handoff",
+          "communication",
+          "supplies"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-theme-and-emotion",
+        "reading-stories-and-models",
+        "reading-time-and-interaction"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "science-fiction",
+          "type": "see-also"
+        },
+        {
+          "targetId": "communication-limits",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "apprenticeship",
+      "kind": "setting",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "学徒工坊：成品都有了，谁真正做过自己的工序？",
+        "en": "Apprenticeship: the products exist, but who practiced their own task?"
+      },
+      "summary": {
+        "zh-CN": "比较代做与先示范，分别记录技能、作品作者和本人实践机会。",
+        "en": "Compare proxy making with demonstration first, tracking skills, authorship, and personal practice separately."
+      },
+      "aliases": {
+        "zh-CN": [
+          "学徒",
+          "工坊",
+          "示范",
+          "技能",
+          "本人实践"
+        ],
+        "en": [
+          "apprenticeship",
+          "workshop",
+          "demonstration",
+          "skills",
+          "personal practice"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "学徒",
+          "工坊",
+          "示范",
+          "技能",
+          "本人实践"
+        ],
+        "en": [
+          "apprenticeship",
+          "workshop",
+          "demonstration",
+          "skills",
+          "personal practice"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-theme-and-emotion",
+        "reading-stories-and-models",
+        "reading-choices-and-agency"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "industry",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-design-for-participation",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "city-planning",
+      "kind": "setting",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "一小块城市空间：休息点放好了，谁的路径变长了？",
+        "en": "A small urban space: a resting place added, but whose journey becomes longer?"
+      },
+      "summary": {
+        "zh-CN": "用两位使用者的完整路径比较长椅位置，分别保留通行和休息条件。",
+        "en": "Trace two users’ routes around alternative bench positions, keeping passage and rest requirements separate."
+      },
+      "aliases": {
+        "zh-CN": [
+          "城市空间",
+          "规划",
+          "路径",
+          "休息",
+          "多方需求"
+        ],
+        "en": [
+          "urban space",
+          "planning",
+          "paths",
+          "rest",
+          "multiple needs"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "城市空间",
+          "规划",
+          "路径",
+          "休息",
+          "多方需求"
+        ],
+        "en": [
+          "urban space",
+          "planning",
+          "paths",
+          "rest",
+          "multiple needs"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-theme-and-emotion",
+        "reading-stories-and-models",
+        "reading-space-and-opportunity"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "city-building",
+          "type": "see-also"
+        },
+        {
+          "targetId": "route-building",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "water-governance",
+      "kind": "setting",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "共同用水：第一季可行的配额，第二季还能满足需要吗？",
+        "en": "Shared water: can last season's allocation cap meet this season's needs?"
+      },
+      "summary": {
+        "zh-CN": "比较两季固定与修订上限，分清合法取用、下游余量与承诺是否可执行。",
+        "en": "Compare fixed and revised seasonal caps, separating legal withdrawals, downstream availability, and enforceable promises."
+      },
+      "aliases": {
+        "zh-CN": [
+          "共同用水",
+          "上游",
+          "下游",
+          "配额",
+          "治理",
+          "承诺"
+        ],
+        "en": [
+          "water governance",
+          "upstream",
+          "downstream",
+          "allocation",
+          "caps",
+          "promises"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "共同用水",
+          "上游",
+          "下游",
+          "配额",
+          "治理",
+          "承诺"
+        ],
+        "en": [
+          "water governance",
+          "upstream",
+          "downstream",
+          "allocation",
+          "caps",
+          "promises"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-theme-and-emotion",
+        "reading-stories-and-models",
+        "reading-cooperation-and-conflict"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "shared-resource",
+          "type": "see-also"
+        },
+        {
+          "targetId": "environment",
+          "type": "see-also"
+        },
+        {
+          "targetId": "trading",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "care-schedule",
+      "kind": "setting",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "照应安排：时间变少之后，谁能同意接手？",
+        "en": "A care schedule: when time shrinks, who agrees to take over?"
+      },
+      "summary": {
+        "zh-CN": "在可用时间变化后重新检查分配，只有接收者同意才转交任务。",
+        "en": "Recheck an allocation after availability changes and transfer a task only with the recipient’s agreement."
+      },
+      "aliases": {
+        "zh-CN": [
+          "照应安排",
+          "时间",
+          "同意",
+          "接手",
+          "负担分配"
+        ],
+        "en": [
+          "care schedule",
+          "availability",
+          "consent",
+          "handoff",
+          "workload"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "照应安排",
+          "时间",
+          "同意",
+          "接手",
+          "负担分配"
+        ],
+        "en": [
+          "care schedule",
+          "availability",
+          "consent",
+          "handoff",
+          "workload"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-theme-and-emotion",
+        "reading-stories-and-models",
+        "reading-cooperation-and-conflict"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "medical",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-design-for-participation",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "repair-cafe",
+      "kind": "setting",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "社区修理：症状相同，就能复制上一次修法吗？",
+        "en": "Repair café: the same symptom, so can the previous method be copied?"
+      },
+      "summary": {
+        "zh-CN": "比较分别检查与照搬修法，追踪失败提供的信息和不可退还的材料。",
+        "en": "Compare checking each object with repeating a method, tracking information gained and materials spent on failure."
+      },
+      "aliases": {
+        "zh-CN": [
+          "社区修理",
+          "诊断",
+          "症状",
+          "失败反馈",
+          "材料"
+        ],
+        "en": [
+          "repair café",
+          "diagnosis",
+          "symptoms",
+          "failure feedback",
+          "materials"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "社区修理",
+          "诊断",
+          "症状",
+          "失败反馈",
+          "材料"
+        ],
+        "en": [
+          "repair café",
+          "diagnosis",
+          "symptoms",
+          "failure feedback",
+          "materials"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-theme-and-emotion",
+        "reading-stories-and-models",
+        "reading-prototypes-and-evidence"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "lesson-observe-a-turn",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-use-feedback",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
     }
   ]
 }

@@ -1,14 +1,14 @@
-<!-- content-fingerprint: 4e1905b417af7983ed95247882a6358224ebd06d8b265afe5ff6e29307a14b2d -->
+<!-- content-fingerprint: 5e35cee995f62e91d3d9a5ab3f5becb704919acc46ea21e662454d94b78c12cc -->
 # 全站资料文本可读性审计
 
 审计日期：2026-09-10
-范围：`content/` 下全部 281 个 JSON 与 Markdown 文件，不抽样。
-覆盖：18,159 个含中文的字段或段落，约 526,466 个汉字。
+范围：`content/` 下全部 325 个 JSON 与 Markdown 文件，不抽样。
+覆盖：18,793 个含中文的字段或段落，约 550,127 个汉字。
 
 ## 结论
 
 - 本报告审计文字长度与抽象词信号，不据此判断网站首页或学习路径是否有效。
-- 机器规则标出了 425 个可能需要分段或渐进披露的长句、长段与抽象词密集处。这是编辑优先级，不是内容质量评分。
+- 机器规则标出了 440 个可能需要分段或渐进披露的长句、长段与抽象词密集处。这是编辑优先级，不是内容质量评分。
 - 授权译文和来源正文保留原有使用范围；原创双语文章提供独立阅读入口，课程、案例与工具维持各自路径。
 - 汉字阈值只评估含中文的字段或段落。英文正文参与文件指纹与解析检查，但不能因此声称其可读性已被这些阈值验证。
 
@@ -51,6 +51,10 @@
 | `design-library/action-selection/zh-CN.md` | 36 | 1749 | 6 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/animals/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/animals/zh-CN.md` | 35 | 1596 | 1 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/apprenticeship/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/apprenticeship/zh-CN.md` | 23 | 1031 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/archive/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/archive/zh-CN.md` | 23 | 1031 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/area-control/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/area-control/zh-CN.md` | 29 | 1377 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/area-majority/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
@@ -59,9 +63,17 @@
 | `design-library/auction/zh-CN.md` | 33 | 1559 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/bag-building/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/bag-building/zh-CN.md` | 33 | 1736 | 4 | 支持资料：通过节点或资料库按需进入 |
-| `design-library/catalog.json` | 266 | 2905 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/care-schedule/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/care-schedule/zh-CN.md` | 23 | 1017 | 3 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/catalog.json` | 364 | 4155 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/city-building/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/city-building/zh-CN.md` | 26 | 1095 | 1 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/city-planning/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/city-planning/zh-CN.md` | 23 | 983 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/communication-limits/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/communication-limits/zh-CN.md` | 26 | 1264 | 2 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/community-kitchen/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/community-kitchen/zh-CN.md` | 22 | 968 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/comparison-area-network/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/comparison-area-network/zh-CN.md` | 29 | 1234 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/comparison-bid-payment/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
@@ -82,12 +94,28 @@
 | `design-library/dice-allocation/zh-CN.md` | 28 | 1095 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/drafting/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/drafting/zh-CN.md` | 31 | 1496 | 2 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/ecosystem/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/ecosystem/zh-CN.md` | 23 | 1007 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/environment/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/environment/zh-CN.md` | 26 | 1019 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/expedition/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/expedition/zh-CN.md` | 22 | 1007 | 2 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/exploration/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/exploration/zh-CN.md` | 25 | 1115 | 1 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/fantasy/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/fantasy/zh-CN.md` | 27 | 1049 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/farming/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/farming/zh-CN.md` | 26 | 1068 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/festival/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/festival/zh-CN.md` | 22 | 968 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/hand-management/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/hand-management/zh-CN.md` | 31 | 1514 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/hidden-information/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/hidden-information/zh-CN.md` | 28 | 1357 | 4 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/income-production/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/income-production/zh-CN.md` | 23 | 943 | 2 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/industry/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/industry/zh-CN.md` | 26 | 959 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/lesson-build-a-combination/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/lesson-build-a-combination/zh-CN.md` | 29 | 1386 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/lesson-change-one-risk/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
@@ -114,12 +142,26 @@
 | `design-library/lesson-use-feedback/zh-CN.md` | 27 | 1314 | 3 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/market-pricing/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/market-pricing/zh-CN.md` | 24 | 927 | 3 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/medical/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/medical/zh-CN.md` | 26 | 1057 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/medieval/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/medieval/zh-CN.md` | 26 | 1072 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/mystery/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/mystery/zh-CN.md` | 28 | 1063 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/push-your-luck/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/push-your-luck/zh-CN.md` | 35 | 1542 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/repair-cafe/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/repair-cafe/zh-CN.md` | 23 | 946 | 1 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/rescue-network/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/rescue-network/zh-CN.md` | 23 | 1015 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/resource-conversion/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/resource-conversion/zh-CN.md` | 24 | 899 | 1 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/restoration/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/restoration/zh-CN.md` | 23 | 963 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/route-building/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/route-building/zh-CN.md` | 26 | 1180 | 2 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/science-fiction/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/science-fiction/zh-CN.md` | 25 | 1046 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/set-collection/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/set-collection/zh-CN.md` | 32 | 1522 | 3 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/shared-resource/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
@@ -132,6 +174,8 @@
 | `design-library/trading/zh-CN.md` | 24 | 998 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/transportation/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/transportation/zh-CN.md` | 34 | 1494 | 1 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/water-governance/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/water-governance/zh-CN.md` | 25 | 932 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/worker-placement/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/worker-placement/zh-CN.md` | 33 | 1649 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-materials.json` | 285 | 6179 | 0 | 支持资料：通过节点或资料库按需进入 |
