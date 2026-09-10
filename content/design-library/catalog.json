@@ -305,6 +305,476 @@
           "relation": "same-scope"
         }
       ]
+    },
+    {
+      "id": "lesson-see-a-mechanism",
+      "kind": "lesson",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "看见机制：先说清这一步改变了什么",
+        "en": "See a mechanism: explain what this step changes"
+      },
+      "summary": {
+        "zh-CN": "走完两次包裹领取，只改卡是否被拿走，区分题材、组件、选择和规则关系。",
+        "en": "Resolve two parcel picks and change whether cards leave the supply to distinguish theme, components, decisions, and rules."
+      },
+      "aliases": {
+        "zh-CN": [
+          "机制",
+          "轮抽"
+        ],
+        "en": [
+          "mechanism",
+          "drafting"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "机制",
+          "轮抽",
+          "取选",
+          "山谷邮站"
+        ],
+        "en": [
+          "mechanism",
+          "drafting",
+          "selection",
+          "Valley Post"
+        ]
+      },
+      "question": "actions",
+      "chapterIds": [
+        "reading-rules-and-play",
+        "reading-state-and-resolution"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "lesson-choose-a-mechanism",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "lesson-choose-a-mechanism",
+      "kind": "lesson",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "选机制：先比较它们怎样解决同一个问题",
+        "en": "Choose a mechanism: compare how it solves the same problem"
+      },
+      "summary": {
+        "zh-CN": "用相同包裹和时间片比较免费取选与秘密报价，核算分配、付款与剩余资源的价值。",
+        "en": "Compare free selection and secret bids with the same parcels and tokens, accounting for allocation, payment, and leftovers."
+      },
+      "aliases": {
+        "zh-CN": [
+          "选机制",
+          "拍卖"
+        ],
+        "en": [
+          "choose mechanisms",
+          "auction"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "选机制",
+          "拍卖",
+          "报价",
+          "时间片",
+          "山谷邮站"
+        ],
+        "en": [
+          "choose mechanisms",
+          "auction",
+          "bidding",
+          "time tokens",
+          "Valley Post"
+        ]
+      },
+      "question": "economy",
+      "chapterIds": [
+        "reading-choices-and-agency",
+        "reading-design-an-economy"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "lesson-see-a-mechanism",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-build-a-combination",
+          "type": "see-also"
+        },
+        {
+          "targetId": "auction",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "lesson-build-a-combination",
+      "kind": "lesson",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "接起机制：拿到东西以后，规则接着做什么",
+        "en": "Connect mechanisms: what happens after you acquire something?"
+      },
+      "summary": {
+        "zh-CN": "追踪红蓝卡的取得与交付，再只改交付时点，看清材料、条件、次数与结束怎样连接。",
+        "en": "Track acquiring and submitting red-blue sets, then move the submission check to examine conditions, limits, and the end of an action."
+      },
+      "aliases": {
+        "zh-CN": [
+          "机制组合",
+          "轮抽"
+        ],
+        "en": [
+          "mechanism combinations",
+          "drafting"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "机制组合",
+          "轮抽",
+          "组合计分",
+          "结算时点",
+          "山谷邮站"
+        ],
+        "en": [
+          "mechanism combinations",
+          "drafting",
+          "set scoring",
+          "resolution timing",
+          "Valley Post"
+        ]
+      },
+      "question": "process",
+      "chapterIds": [
+        "reading-state-and-resolution",
+        "reading-combine-mechanisms"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "lesson-choose-a-mechanism",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-theme-to-rule",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "lesson-theme-to-rule",
+      "kind": "lesson",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "从题材到规则：把“先准备，才能启用”写出来",
+        "en": "From Theme to Rule: Making “Prepare Before Use” Work"
+      },
+      "summary": {
+        "zh-CN": "用两盏灯比较逐盏与整批检查，把题材关系写成动作条件、范围和时间代价。",
+        "en": "Compare checking lanterns individually or as a batch to turn a thematic relationship into action conditions, scope, and time costs."
+      },
+      "aliases": {
+        "zh-CN": [
+          "主题转规则",
+          "题材关系",
+          "动作前提"
+        ],
+        "en": [
+          "theme to rules",
+          "prerequisites",
+          "action scope"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "主题转规则",
+          "题材关系",
+          "动作前提"
+        ],
+        "en": [
+          "theme to rules",
+          "prerequisites",
+          "action scope"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-core-actions",
+        "reading-state-and-resolution",
+        "reading-theme-and-emotion"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "lesson-build-a-combination",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-theme-promises",
+          "type": "see-also"
+        },
+        {
+          "targetId": "animals",
+          "type": "see-also"
+        },
+        {
+          "targetId": "transportation",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "lesson-theme-promises",
+      "kind": "lesson",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "主题的承诺：回到营地，就一定算完成了吗？",
+        "en": "A Theme's Promise: Does Reaching Camp Mean You Are Done?"
+      },
+      "summary": {
+        "zh-CN": "比较回营后等待与登记的结果，分清题材预期、实际效果和规则改动。",
+        "en": "Compare waiting or recording after returning to camp, separating thematic expectations, actual effects, and rule changes."
+      },
+      "aliases": {
+        "zh-CN": [
+          "主题预期",
+          "状态呈现",
+          "名称与效果"
+        ],
+        "en": [
+          "theme expectations",
+          "state presentation",
+          "names and effects"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "主题预期",
+          "状态呈现",
+          "名称与效果"
+        ],
+        "en": [
+          "theme expectations",
+          "state presentation",
+          "names and effects"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-theme-and-emotion",
+        "reading-rules-and-components",
+        "reading-stories-and-models"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "lesson-theme-to-rule",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-compare-two-games",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": []
+    },
+    {
+      "id": "lesson-compare-two-games",
+      "kind": "lesson",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "比较两款游戏：出牌前，玩家究竟知道什么？",
+        "en": "Compare two games: what does the player know before playing?"
+      },
+      "summary": {
+        "zh-CN": "固定一次出牌，比较6 nimmt!的23/35分支与Hanabi的两种提示：区分未知行动、未知牌面和成功后的推断。",
+        "en": "Hold a play fixed across 6 nimmt! and Hanabi to compare unknown actions, unknown card faces, and what success cannot establish."
+      },
+      "aliases": {
+        "zh-CN": [
+          "跨游戏比较",
+          "比较两款游戏",
+          "决定前的信息"
+        ],
+        "en": [
+          "compare two games",
+          "decision-time information",
+          "cross-game comparison"
+        ]
+      },
+      "question": "uncertainty",
+      "chapterIds": [
+        "reading-information-and-randomness",
+        "reading-state-and-resolution",
+        "reading-design-judgment"
+      ],
+      "caseIds": [
+        "six-nimmt",
+        "hanabi"
+      ],
+      "relations": [
+        {
+          "type": "see-also",
+          "targetId": "simultaneous-choice"
+        }
+      ],
+      "bggReferences": [],
+      "searchTerms": {
+        "zh-CN": [
+          "6 nimmt",
+          "谁是牛头王",
+          "Hanabi",
+          "花火",
+          "提示",
+          "同时选择",
+          "信息",
+          "比较"
+        ],
+        "en": [
+          "6 nimmt",
+          "Hanabi",
+          "clues",
+          "simultaneous choice",
+          "information",
+          "comparison"
+        ]
+      }
+    },
+    {
+      "id": "animals",
+      "kind": "theme",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "动物主题：谁在行动，谁只是被我们看见？",
+        "en": "Animal Themes: Who Acts, and Who Is Being Observed?"
+      },
+      "summary": {
+        "zh-CN": "用两轮狐狸与水獭记录比较重复拍摄和完整覆盖，区分玩家角色、动物对象与生态模拟。",
+        "en": "Compare repeated photographs with complete fox-and-otter coverage to distinguish player roles, animal subjects, and ecological simulation."
+      },
+      "aliases": {
+        "zh-CN": [
+          "动物",
+          "动物观察",
+          "玩家视角"
+        ],
+        "en": [
+          "animals",
+          "animal observation",
+          "player perspective"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "动物",
+          "动物观察",
+          "玩家视角"
+        ],
+        "en": [
+          "animals",
+          "animal observation",
+          "player perspective"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-theme-and-emotion",
+        "reading-stories-and-models",
+        "reading-players-and-context"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "lesson-theme-to-rule",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-theme-promises",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 1089,
+          "name": "Animals",
+          "url": "https://boardgamegeek.com/boardgamecategory/1089/animals",
+          "relation": "related"
+        }
+      ]
+    },
+    {
+      "id": "transportation",
+      "kind": "theme",
+      "contentVersion": "1.0.0",
+      "title": {
+        "zh-CN": "交通与运输：路程更短，为什么准时分反而更少？",
+        "en": "Transportation: Why Can the Shorter Trip Earn Fewer On-Time Points?"
+      },
+      "summary": {
+        "zh-CN": "比较一辆货车的两种配送次序，算清装卸、行程、截止时点和准时奖励。",
+        "en": "Compare two delivery orders for one truck, accounting for handling, travel, deadlines, and punctuality rewards."
+      },
+      "aliases": {
+        "zh-CN": [
+          "运输",
+          "交通",
+          "配送调度"
+        ],
+        "en": [
+          "transportation",
+          "delivery",
+          "dispatching"
+        ]
+      },
+      "searchTerms": {
+        "zh-CN": [
+          "运输",
+          "交通",
+          "配送调度"
+        ],
+        "en": [
+          "transportation",
+          "delivery",
+          "dispatching"
+        ]
+      },
+      "question": "theme",
+      "chapterIds": [
+        "reading-space-and-opportunity",
+        "reading-resources-and-endings",
+        "reading-goals-and-pacing"
+      ],
+      "caseIds": [],
+      "relations": [
+        {
+          "targetId": "lesson-theme-to-rule",
+          "type": "see-also"
+        },
+        {
+          "targetId": "lesson-theme-promises",
+          "type": "see-also"
+        }
+      ],
+      "bggReferences": [
+        {
+          "id": 1011,
+          "name": "Transportation",
+          "url": "https://boardgamegeek.com/boardgamecategory/1011/transportation",
+          "relation": "related"
+        }
+      ]
     }
   ]
 }
