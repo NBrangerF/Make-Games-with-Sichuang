@@ -32,4 +32,4 @@ If play continues after help, record where it happened. The rest of the session 
 
 If players set up, act, and determine the ending independently, the materials supported those tasks on that occasion. This does not establish that every beginner will understand them or that the game invites repeated play. Someone may understand quickly but find the planning repetitive; someone else may enjoy planning while needing larger text. Those questions need separate attention.
 
-When players begin discussing who should stay behind instead of only asking where planks come from, we have an opportunity to examine how they use the rules. Yet the next collaborator still needs to know which version they receive, what changed, and what has actually been checked. The final chapter organizes this draft so another person can take it forward accurately.
+When questions move from where to take planks to who should stay and collect, you can start examining how the pair uses the rules. Keep the materials and questions from this attempt so the next handoff can continue from the same draft.

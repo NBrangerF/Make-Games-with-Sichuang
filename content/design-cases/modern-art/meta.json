@@ -3,12 +3,12 @@
   "category": "mechanism",
   "game": "Modern Art",
   "title": {
-    "zh-CN": "Modern Art：一幅画的成交价，为什么不是它的价值？",
+    "zh-CN": "现代艺术：一幅画的成交价，为什么不是它的价值？",
     "en": "Modern Art: Why Is a Painting’s Price Not Its Value?"
   },
   "summary": {
-    "zh-CN": "用三组收支与排名比较，拆开成交价、付款去向、结束时机和历史价值的兑现资格。",
-    "en": "Separate price, payment destination, ending timing and eligibility for historical value through three original cash-flow and ranking comparisons."
+    "zh-CN": "成交价、付款去向和轮末排名，怎样一起决定一幅画最后值多少钱？",
+    "en": "How do the price, payment destination, and final ranking determine what a painting is worth?"
   },
   "chapterIds": [
     "reading-choices-and-agency",
@@ -70,5 +70,10 @@
         "en": "Angle three: History can remain while current eligibility disappears"
       }
     }
-  ]
+  ],
+  "gameTitle": {
+    "zh-CN": "现代艺术",
+    "en": "Modern Art"
+  },
+  "gameAliases": []
 }

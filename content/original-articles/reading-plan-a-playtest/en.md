@@ -28,4 +28,4 @@ If she asks for help, explain. Record when the explanation happened and what it 
 
 Participants may want to stop. Materials may be missing, or a rule may leave no way to continue. Any of these can end the attempt. A session that never reaches round 4 can still reveal a preparation problem. Forcing it to finish can make the designer’s improvised additions look like abilities the original draft already had.
 
-A well-arranged playtest may leave us with just one clear question. That is useful progress. Next we will slow down one imagined question about planks and separate what happened at the table from our explanations of why it happened.
+After the test, find one question you can take back to the draft. Even “the player did not know where to take planks from” gives you somewhere to check, revise, and try again.

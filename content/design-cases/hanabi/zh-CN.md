@@ -1,6 +1,6 @@
-# Hanabi：大家看得见烟花，为什么我看不见自己的牌？
+# 花火：大家看得见烟花，为什么我看不见自己的牌？
 
-队友看得见你手里有哪张牌，却不能随口替你报出完整答案；真正需要决定出哪张的人，反而看不见自己的手牌。《Hanabi》把“我知道，但需要你来做”放在合作的中心。
+队友看得见你手里有哪张牌，却不能随口替你报出完整答案；真正需要决定出哪张的人，反而看不见自己的手牌。《花火》（Hanabi）把“我知道，但需要你来做”放在合作的中心。
 
 这里要研究的主题问题是：**烟花表演的共同目标，怎样通过看牌方式和交流限制，成为玩家实际面对的处境？**本文以 Cocktail Games 的2019年法文基本规则为准，不加入专家变体。
 
@@ -57,7 +57,7 @@
 
 ## 设计者自述：保留反向手牌，换掉竞争目标
 
-Bauza 在《Hanabi & Ikebana》的自述中写道，早期两个游戏过于相似；一次反向手牌的配对实验测试不理想，但大家喜欢这种持牌方式。后来在妻子的建议下，他把这部分放进合作设计，转向共同完成彩色序列。[Bauza 原文「Petite Histoire」](https://www.antoinebauza.fr/?p=734)
+Bauza 在介绍《花火》的文章《Hanabi & Ikebana》中写道，早期两个游戏过于相似；一次反向手牌的配对实验测试不理想，但大家喜欢这种持牌方式。后来在妻子的建议下，他把这部分放进合作设计，转向共同完成彩色序列。[Bauza 原文「Petite Histoire」](https://www.antoinebauza.fr/?p=734)
 
 这个过程支持把“值得保留的局部”与“尚未奏效的整体”分开检查。本站不会把反向手牌直接等同于合作：同样的信息遮挡可以服务不同目标，还需要检验谁愿意透露、谁承担错误、得分归谁。作者回忆的是早期开发；本文实际局面仍按2019基本规则计算。
 
@@ -69,6 +69,6 @@ Bauza 在《Hanabi & Ikebana》的自述中写道，早期两个游戏过于相�
 
 ## 规则与设计者来源
 
-- [Cocktail Games：Hanabi 2019年法文基本规则](https://www.cocktailgames.com/wp-content/uploads/2016/03/Hanabi_regles_0519_BD.pdf)：第1—6页为核心规则，第8页说明交流方式可自行约定；本版第3页也列出零张颜色或数字提示。
-- [Cocktail Games：Hanabi 官方游戏介绍](https://www.cocktailgames.com/jeu/hanabi/)：烟花合作设定与反向手牌；不采用宣传语推断实际学习成效。
-- [Antoine Bauza：Hanabi & Ikebana](https://www.antoinebauza.fr/?p=734)：「Petite Histoire」中的配对实验、反向手牌和改为合作；属于作者回顾，不是2019规则修订说明。
+- [花火｜Cocktail Games：Hanabi 2019年法文基本规则](https://www.cocktailgames.com/wp-content/uploads/2016/03/Hanabi_regles_0519_BD.pdf)：第1—6页为核心规则，第8页说明交流方式可自行约定；本版第3页也列出零张颜色或数字提示。
+- [花火｜Cocktail Games：Hanabi 官方游戏介绍](https://www.cocktailgames.com/jeu/hanabi/)：烟花合作设定与反向手牌；不采用宣传语推断实际学习成效。
+- [花火｜Antoine Bauza：Hanabi & Ikebana](https://www.antoinebauza.fr/?p=734)：「Petite Histoire」中的配对实验、反向手牌和改为合作；属于作者回顾，不是2019规则修订说明。

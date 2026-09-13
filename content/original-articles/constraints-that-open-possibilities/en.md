@@ -1,8 +1,8 @@
 # Making Less and Allowing Fewer Moves Are Different Choices
 
-When developing crossing actions in the main course, we chose plank collection first and left ideas such as operating a bridge for later. That limited how much we intended to build. Allowing animals to collect only on the starting bank limits what players can do during a game. Both limits can help a design, but they work differently.
+For a theatre game, you imagine ticket sales, performer training, a programme, and stage decorations. Making only the programme at first saves work. That differs from a rule allowing a player to schedule only two acts: one limits what you build, the other what a player can do.
 
-A separate theater example makes the distinction clearer. A designer imagines selling tickets, training performers, arranging acts, and decorating a stage. Focusing first on arranging acts means the first draft does not also need ticket prices, performer development, and decorations. It creates room to examine relationships between acts. It has not yet created a rule players must obey when arranging them.
+The theatre draft starts with arranging acts, leaving ticket prices, performer development, and decorations for later. That gives us time to examine how a few programme cards affect one another, then decide which limits to put on the players.
 
 ## A smaller scope still needs a relationship to examine
 

@@ -1,6 +1,6 @@
 # Did We Pay Already? Let the Table Remember Something
 
-The main path separated making a decision from updating the position. Here is an independent parcel-delivery fragment: after choosing the ferry, a player spends one energy token, moves a parcel to the far bank, and adds two points. We are looking only at this action, without specifying a whole game’s victory conditions.
+After choosing a ferry delivery, you still have three things to do: pay one energy, move the parcel across, and add two points. A friend interrupts. Looking back, you wonder whether you already paid. This article follows that one action and asks how the table can help you keep your place.
 
 In a computer game, those updates can follow a single click. At a table, someone has to move the token, move the parcel, and record the points. The player gains another job: making sure all three happen, and happen only once.
 
@@ -40,4 +40,4 @@ A designer can follow the written steps for one delivery. Where does the fee com
 
 Yet knowing the intended rules makes it easy to supply details absent from the page. Other people still need to read and handle it. If a friend readily chooses the ferry but stops after paying to locate the score track, resolution may need attention. If carrying out the action is easy but the reason to choose the ferry is unclear, the choice itself needs another look.
 
-Giving information a dependable place can reduce the work of remembering. Whether the freed attention becomes more interesting discussion remains a question about actual play. Adding one reminder cannot settle it.
+Leave a trace on the table and ask someone to complete the ferry action. If they can find the next step after an interruption, the reminder has done a specific job. Then check whether it takes too much space or is easy to forget to update before deciding to keep it.

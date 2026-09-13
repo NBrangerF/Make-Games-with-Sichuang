@@ -27,6 +27,7 @@ export type AppRoute = ReadingLocation & {
   resourceEntry?: string
   resourceId?: string
   readingLanguage?: 'zh-CN' | 'en'
+  uiLanguage?: 'zh-CN' | 'en'
   readingChapter?: string
   courseMode?: 'practice'
   methodSection?: MethodSection
@@ -95,6 +96,12 @@ function routeWithContext(route: AppRoute, context: WorkContext) {
 }
 
 export function parseRouteHash(hash: string): AppRoute {
+  const route = parseRouteBase(hash)
+  const language = new URLSearchParams(hash.split('?')[1] || '').get('lang')
+  return language === 'en' || language === 'zh-CN' ? { ...route, uiLanguage: language } : route
+}
+
+function parseRouteBase(hash: string): AppRoute {
   const withoutHash = hash.replace(/^#\/?/, '')
   const queryIndex = withoutHash.indexOf('?')
   const rawPath = queryIndex >= 0 ? withoutHash.slice(0, queryIndex) : withoutHash
@@ -152,6 +159,11 @@ function appendContext(path: string, context: WorkContext | undefined, pathField
 }
 
 export function serializeRoute(route: AppRoute): string {
+  const path = serializeRouteBase(route)
+  return route.uiLanguage ? `${path}${path.includes('?') ? '&' : '?'}lang=${route.uiLanguage}` : path
+}
+
+function serializeRouteBase(route: AppRoute): string {
   if (route.view === 'course') {
     if (route.readingChapter || route.readingLanguage) return appendReadingLocation(`#course/reading/${encodeURIComponent(route.readingChapter || 'all')}/${route.readingLanguage === 'en' ? 'en' : 'zh-CN'}`, route)
     const context = route.workContext

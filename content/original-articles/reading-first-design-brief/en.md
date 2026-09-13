@@ -26,4 +26,4 @@ Suppose we have two ideas: give each animal three hats to wear, or let an animal
 
 The brief can change too. If we later discover that we would rather make a relaxed character-dressing game, we can acknowledge the new direction and reconsider the rules. Trouble comes when the direction changes but we keep judging ideas against an old goal. Asking for tense planning while removing every reason to plan can make successive changes cancel each other out.
 
-This brief cannot guarantee that anyone will enjoy the game, and it cannot replace complete rules. It does an earlier job: turning “make something fun” into an intention we can discuss. Next we can imagine several ways to serve that intention, then choose one to turn into an action people can actually carry out.
+“Make a fun game” now has a direction two people can discuss. Use the brief to choose an approach and write an action you can put on the table. After testing, return with specific findings and revise these few sentences.

@@ -2,6 +2,464 @@
   "schemaVersion": 1,
   "chapters": [
     {
+      "chapterId": "race-rules-and-play",
+      "afterSection": 2,
+      "worksheetId": "loop",
+      "toolId": "core-loop",
+      "title": {
+        "zh-CN": "记下这一次移动",
+        "en": "Write down one move"
+      },
+      "reason": {
+        "zh-CN": "从 6 掷出 2，把棋子、骰子和换人的过程按顺序写下来。",
+        "en": "From 6, use a roll of 2 and record the move, the ladder, and the turn passing."
+      },
+      "caseIds": [
+        "carcassonne"
+      ]
+    },
+    {
+      "chapterId": "race-observe-a-game",
+      "afterSection": 2,
+      "worksheetId": "observe",
+      "toolId": "decision-trace",
+      "title": {
+        "zh-CN": "回看那次停顿",
+        "en": "Look again at the pause"
+      },
+      "reason": {
+        "zh-CN": "用文中的假设片段练习记录，再给停手写两种可能的原因。",
+        "en": "Use the imagined passage to practise recording a pause and two possible explanations."
+      },
+      "caseIds": [
+        "six-nimmt"
+      ]
+    },
+    {
+      "chapterId": "race-players-and-context",
+      "afterSection": 2,
+      "worksheetId": "intent",
+      "toolId": "experience-intent",
+      "title": {
+        "zh-CN": "写一份试玩邀请",
+        "en": "Plan an invitation"
+      },
+      "reason": {
+        "zh-CN": "写下请谁来、能待多久，以及这次想让他试的一个动作。",
+        "en": "Name who you will invite, how long they have, and one action you want them to try."
+      },
+      "caseIds": []
+    },
+    {
+      "chapterId": "race-first-design-brief",
+      "afterSection": 2,
+      "worksheetId": "intent",
+      "toolId": "experience-intent",
+      "title": {
+        "zh-CN": "给第一稿定个方向",
+        "en": "Give the draft a direction"
+      },
+      "reason": {
+        "zh-CN": "写下请谁玩、希望出现什么选择，以及试玩时准备看哪一刻。",
+        "en": "Name the players, the choice you want to offer, and the moment you will watch."
+      },
+      "caseIds": []
+    },
+    {
+      "chapterId": "race-ideas-under-constraints",
+      "afterSection": 2,
+      "worksheetId": "choices",
+      "toolId": "constraint-deck",
+      "title": {
+        "zh-CN": "把两个点子并排放",
+        "en": "Put two ideas side by side"
+      },
+      "reason": {
+        "zh-CN": "挑两种改法，分别写出得到什么、放弃什么，再决定先试哪一种。",
+        "en": "Choose two proposals, describe what each gains and gives up, then pick one to try."
+      },
+      "caseIds": []
+    },
+    {
+      "chapterId": "race-core-actions",
+      "afterSection": 2,
+      "worksheetId": "loop",
+      "toolId": "core-loop",
+      "title": {
+        "zh-CN": "从选骰写到换人",
+        "en": "From choosing to passing the turn"
+      },
+      "reason": {
+        "zh-CN": "记录动作前看见什么、怎样结算，以及下一位接手的局面。",
+        "en": "Record what is visible before the choice, how it resolves, and what the next player receives."
+      },
+      "caseIds": [
+        "carcassonne"
+      ]
+    },
+    {
+      "chapterId": "race-state-and-resolution",
+      "afterSection": 2,
+      "worksheetId": "loop",
+      "toolId": "core-loop",
+      "title": {
+        "zh-CN": "棋子不动以后",
+        "en": "After a move that stays still"
+      },
+      "reason": {
+        "zh-CN": "从 23 选 2，写出回合结束时的位置和轮到谁。",
+        "en": "Choose 2 from space 23 and record the final position and whose turn follows."
+      },
+      "caseIds": [
+        "dominion"
+      ]
+    },
+    {
+      "chapterId": "race-choices-and-agency",
+      "afterSection": 2,
+      "worksheetId": "choices",
+      "toolId": "decision-trace",
+      "title": {
+        "zh-CN": "两颗骰子有什么差别",
+        "en": "What differs between these dice?"
+      },
+      "reason": {
+        "zh-CN": "把同一局面的两个选项走完，比较最后留下的位置。",
+        "en": "Resolve both choices from the same position and compare where they end."
+      },
+      "caseIds": [
+        "six-nimmt"
+      ]
+    },
+    {
+      "chapterId": "race-information-and-randomness",
+      "afterSection": 2,
+      "worksheetId": "choices",
+      "toolId": "decision-trace",
+      "title": {
+        "zh-CN": "把看见和选择排好顺序",
+        "en": "Order the reveal and the choice"
+      },
+      "reason": {
+        "zh-CN": "写出玩家何时知道点数，以及那时还有哪些动作可以改。",
+        "en": "Write when the player sees the result and which decisions are still open."
+      },
+      "caseIds": [
+        "hanabi",
+        "six-nimmt"
+      ]
+    },
+    {
+      "chapterId": "race-resources-and-endings",
+      "afterSection": 2,
+      "worksheetId": "resources",
+      "toolId": "balance-pass",
+      "title": {
+        "zh-CN": "跟着两枚标记走",
+        "en": "Follow the two tokens"
+      },
+      "reason": {
+        "zh-CN": "写清标记何时能花、花后怎样结算，以及用完后还能做什么。",
+        "en": "Describe when a token can be spent, what follows, and what remains possible with none left."
+      },
+      "caseIds": [
+        "wingspan"
+      ]
+    },
+    {
+      "chapterId": "race-space-and-opportunity",
+      "afterSection": 2,
+      "worksheetId": "choices",
+      "toolId": "decision-trace",
+      "title": {
+        "zh-CN": "画出两个去处",
+        "en": "Draw the two destinations"
+      },
+      "reason": {
+        "zh-CN": "从 6 比较 2 和 6，分别标出落点、转移和最终位置。",
+        "en": "From 6, compare 2 and 6, marking the landing, transfer, and final position."
+      },
+      "caseIds": [
+        "carcassonne"
+      ]
+    },
+    {
+      "chapterId": "race-time-and-interaction",
+      "afterSection": 2,
+      "worksheetId": "loop",
+      "toolId": "shared-decision",
+      "title": {
+        "zh-CN": "看一次等待",
+        "en": "Follow a wait"
+      },
+      "reason": {
+        "zh-CN": "记下等待从哪一步开始、谁在做什么，以及怎样轮回来。",
+        "en": "Record where the wait starts, what each person does, and how the turn returns."
+      },
+      "caseIds": [
+        "six-nimmt"
+      ]
+    },
+    {
+      "chapterId": "race-design-an-economy",
+      "afterSection": 2,
+      "worksheetId": "resources",
+      "toolId": "balance-pass",
+      "title": {
+        "zh-CN": "给标记记一次账",
+        "en": "Keep a token record"
+      },
+      "reason": {
+        "zh-CN": "摆出同样的重掷结果，比较有补给和没补给时各剩几枚。",
+        "en": "Use the same reroll result and compare the tokens left with and without replenishment."
+      },
+      "caseIds": [
+        "wingspan",
+        "dominion"
+      ]
+    },
+    {
+      "chapterId": "race-goals-and-pacing",
+      "afterSection": 2,
+      "worksheetId": "resources",
+      "toolId": "balance-pass",
+      "title": {
+        "zh-CN": "换一张终点规则",
+        "en": "Try another finish rule"
+      },
+      "reason": {
+        "zh-CN": "在 23 摆同样的点数，分别按两种终点规则走一次。",
+        "en": "At 23, use the same result once with each finish rule."
+      },
+      "caseIds": [
+        "dominion"
+      ]
+    },
+    {
+      "chapterId": "race-combine-mechanisms",
+      "afterSection": 2,
+      "worksheetId": "loop",
+      "toolId": "core-loop",
+      "title": {
+        "zh-CN": "把组合走完整",
+        "en": "Walk through the combination"
+      },
+      "reason": {
+        "zh-CN": "写出选骰、付费和重掷的次序，圈出还没决定的那一步。",
+        "en": "Order selection, payment, and rerolling, then circle the step still unresolved."
+      },
+      "caseIds": [
+        "dominion",
+        "wingspan"
+      ]
+    },
+    {
+      "chapterId": "race-cooperation-and-conflict",
+      "afterSection": 2,
+      "worksheetId": "choices",
+      "toolId": "shared-decision",
+      "title": {
+        "zh-CN": "到达以后，还能做什么",
+        "en": "What can a finished player do?"
+      },
+      "reason": {
+        "zh-CN": "摆出第 9 轮的合作局面，区分共同结果与玩家能做的动作。",
+        "en": "Set up the cooperative position after round 9 and distinguish the shared result from available actions."
+      },
+      "caseIds": [
+        "pandemic",
+        "hanabi"
+      ]
+    },
+    {
+      "chapterId": "race-balance-and-player-count",
+      "afterSection": 2,
+      "worksheetId": "resources",
+      "toolId": "balance-pass",
+      "title": {
+        "zh-CN": "跟完三人的一轮",
+        "en": "Follow a three-player round"
+      },
+      "reason": {
+        "zh-CN": "先写下两人版与三人草稿分别要等几位对手，再计划怎样比较。",
+        "en": "Note how many opponents act between turns in each draft, then plan a comparison."
+      },
+      "caseIds": [
+        "six-nimmt"
+      ]
+    },
+    {
+      "chapterId": "race-theme-and-emotion",
+      "afterSection": 2,
+      "worksheetId": "theme",
+      "toolId": "experience-intent",
+      "title": {
+        "zh-CN": "给一次移动换个说法",
+        "en": "Describe one move another way"
+      },
+      "reason": {
+        "zh-CN": "保留落点，换图像与措辞，写下想让玩家理解的那件事。",
+        "en": "Keep the destinations, change the picture and wording, and name what you want the player to understand."
+      },
+      "caseIds": [
+        "wingspan"
+      ]
+    },
+    {
+      "chapterId": "race-stories-and-models",
+      "afterSection": 2,
+      "worksheetId": "theme",
+      "toolId": "issue-to-system",
+      "title": {
+        "zh-CN": "谁行动，谁受益",
+        "en": "Who acts, and who benefits?"
+      },
+      "reason": {
+        "zh-CN": "挑一个赛况，分别写下移动、决定者和可能受益的人。",
+        "en": "Choose a racing situation and identify the movement, the decision-maker, and who might benefit."
+      },
+      "caseIds": [
+        "pandemic"
+      ]
+    },
+    {
+      "chapterId": "race-rules-and-components",
+      "afterSection": 2,
+      "worksheetId": "loop",
+      "toolId": "teaching-path",
+      "title": {
+        "zh-CN": "让说明和摆放对上",
+        "en": "Match the instruction to the pieces"
+      },
+      "reason": {
+        "zh-CN": "给选中的骰子找个位置，再写下怎样检查这个提示是否清楚。",
+        "en": "Give the selected die a place on the table, then plan how to check the cue."
+      },
+      "caseIds": [
+        "carcassonne"
+      ]
+    },
+    {
+      "chapterId": "race-access-and-participation",
+      "afterSection": 2,
+      "worksheetId": "access",
+      "toolId": "accessibility-observation",
+      "title": {
+        "zh-CN": "这一步需要什么帮助",
+        "en": "What help does this step need?"
+      },
+      "reason": {
+        "zh-CN": "找出具体困难，写一种支持方式，再检查决定是否仍由本人作出。",
+        "en": "Name the difficulty, propose a way to help, and check who still makes the decision."
+      },
+      "caseIds": []
+    },
+    {
+      "chapterId": "race-prototype-for-a-question",
+      "afterSection": 2,
+      "worksheetId": "test",
+      "toolId": "prototype-scope",
+      "title": {
+        "zh-CN": "为一个动作做原型",
+        "en": "Prototype one action"
+      },
+      "reason": {
+        "zh-CN": "写下要检查的动作，以及让人完成它所需的最少材料。",
+        "en": "Name the action to check and the smallest set of materials it needs."
+      },
+      "caseIds": []
+    },
+    {
+      "chapterId": "race-plan-a-playtest",
+      "afterSection": 2,
+      "worksheetId": "test",
+      "toolId": "playtest-selector",
+      "title": {
+        "zh-CN": "安排第一次试用",
+        "en": "Arrange the first try"
+      },
+      "reason": {
+        "zh-CN": "写清从哪里开始、怎样介绍、何时帮忙，以及准备记什么。",
+        "en": "Specify the starting position, invitation, help, and what you intend to record."
+      },
+      "caseIds": []
+    },
+    {
+      "chapterId": "race-prototypes-and-evidence",
+      "afterSection": 2,
+      "worksheetId": "observe",
+      "toolId": "playtest-session",
+      "title": {
+        "zh-CN": "把提示也记下来",
+        "en": "Include the hint in the record"
+      },
+      "reason": {
+        "zh-CN": "用文中的练习记录，分开原动作、口头帮助和自己的解释。",
+        "en": "Use the practice record to separate the original action, spoken help, and your interpretation."
+      },
+      "caseIds": []
+    },
+    {
+      "chapterId": "race-diagnose-feedback",
+      "afterSection": 2,
+      "worksheetId": "review",
+      "toolId": "decision-trace",
+      "title": {
+        "zh-CN": "从一句反馈找到局面",
+        "en": "Find the position behind a comment"
+      },
+      "reason": {
+        "zh-CN": "写下一个具体等待，再比较两种可能原因和相应改法。",
+        "en": "Name a particular wait, then compare two possible causes and changes."
+      },
+      "caseIds": []
+    },
+    {
+      "chapterId": "race-design-judgment",
+      "afterSection": 2,
+      "worksheetId": "review",
+      "toolId": "feedback",
+      "title": {
+        "zh-CN": "给取舍留一句理由",
+        "en": "Leave a reason for the choice"
+      },
+      "reason": {
+        "zh-CN": "写下为什么先做选择版，以及哪种反馈会让你重新考虑。",
+        "en": "Write why you would try the choice version first and what feedback would make you reconsider."
+      },
+      "caseIds": []
+    },
+    {
+      "chapterId": "race-independent-rules-test",
+      "afterSection": 2,
+      "worksheetId": "test",
+      "toolId": "playtest-selector",
+      "title": {
+        "zh-CN": "从摆棋开始试读",
+        "en": "Try reading from setup"
+      },
+      "reason": {
+        "zh-CN": "计划观察第一次摆棋和行动，给提问与口头提示留空白。",
+        "en": "Plan to watch setup and the first turn, leaving space for questions and spoken hints."
+      },
+      "caseIds": []
+    },
+    {
+      "chapterId": "race-share-a-playable-version",
+      "afterSection": 2,
+      "worksheetId": "review",
+      "toolId": "version-governance",
+      "title": {
+        "zh-CN": "检查要交出的材料",
+        "en": "Check the handoff"
+      },
+      "reason": {
+        "zh-CN": "列出材料、版本和一个想请对方留意的问题。",
+        "en": "List the materials, version, and one question you would like the recipient to watch for."
+      },
+      "caseIds": []
+    },
+    {
       "chapterId": "reading-rules-and-play",
       "afterSection": 3,
       "worksheetId": "loop",

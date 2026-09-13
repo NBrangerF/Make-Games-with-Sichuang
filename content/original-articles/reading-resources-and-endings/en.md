@@ -46,4 +46,4 @@ Return to the four-round basic version. Suppose Hedgehog begins its fourth-round
 
 An object's value depends on what needs to happen. When material is missing, collecting can keep a route possible. When turns are missing, the same action can delay arrival. To judge it, we need to consider animal positions, available planks, and remaining turns together.
 
-The next chapter puts those two costs side by side on the map. Suppose a new route takes only two steps but costs two planks per step. Would we spend more material to take one fewer step? The relationship between planks and time will become two visible routes.
+List the planks still needed beside the remaining forward moves. To trade material for time, sketch a separate candidate route: two steps across, two planks per step. You now have a concrete proposal to compare against both shortages.

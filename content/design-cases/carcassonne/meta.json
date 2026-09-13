@@ -7,8 +7,8 @@
     "en": "Carcassonne: why does finishing a city change your next turn?"
   },
   "summary": {
-    "zh-CN": "从人手回收、共同计分和灵活派遣三个角度，比较局部结果，并对照 Wrede 对职业限制与规则复杂度的取舍。",
-    "en": "Compare returning meeples, shared scoring, and flexible assignments, alongside Wrede’s stated tradeoffs about roles and complexity."
+    "zh-CN": "补完城市拿回小人，还是去占一处新地？地图之外，还要算下一回合有没有人可派。",
+    "en": "Finish a city and recover a meeple, or claim somewhere new? Count who will be available next turn."
   },
   "chapterIds": [
     "reading-choices-and-agency",
@@ -81,5 +81,10 @@
     "author": "Klaus-Jürgen Wrede",
     "sectionId": "flexible-roles",
     "sourceUrl": "https://boardgamecomponents.wordpress.com/2017/03/19/interview-with-klaus-jurgen-wrede/"
-  }
+  },
+  "gameTitle": {
+    "zh-CN": "卡卡颂",
+    "en": "Carcassonne"
+  },
+  "gameAliases": []
 }

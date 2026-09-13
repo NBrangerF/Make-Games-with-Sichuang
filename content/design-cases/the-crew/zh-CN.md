@@ -1,8 +1,8 @@
-# The Crew：为什么赢下一墩，反而会让全队失败？
+# 星际探险队：为什么赢下一墩，反而会让全队失败？
 
-在《The Crew: The Quest for Planet Nine》中，大牌既能拿走目标，也能把目标从需要它的队友面前抢走。设计合作游戏时，不能只把个人分数相加；还要检查胜利由谁取得、别人能知道什么，以及成功发生的次序。
+队友需要拿到那张目标牌，你却用大牌赢走了整墩。牌赢到了，任务失败了。《星际探险队》让人关心的不只是这一墩能不能拿，还包括该由谁拿、什么时候拿，以及队友有多少信息能配合。
 
-本文采用 Thames & Kosmos 英文基础规则，产品691868、文件内码691868-02-060320，不使用《Mission Deep Sea》。三个独立例子都是本站构造的合法发牌与行动路线，不是规则书例题或真人试玩。均为四人，顺时针甲→乙→丙→丁；不开求救信号，无额外沟通限制。每例从发牌后开始，甲持火箭4，先选任务并首攻。小任务牌不计入40张出牌；蓝、绿、黄、粉各有1—9，另有火箭1—4。[规则第2、8—10页](https://www.thamesandkosmos.com/manuals/full/691868_Crew_Manual.pdf)
+本文采用 Thames & Kosmos 英文基础规则，产品691868、文件内码691868-02-060320，不使用《星际探险队：深海任务》（Mission Deep Sea）。三个独立例子都是本站构造的合法发牌与行动路线，不是规则书例题或真人试玩。均为四人，顺时针甲→乙→丙→丁；不开求救信号，无额外沟通限制。每例从发牌后开始，甲持火箭4，先选任务并首攻。小任务牌不计入40张出牌；蓝、绿、黄、粉各有1—9，另有火箭1—4。[规则第2、8—10页](https://www.thamesandkosmos.com/manuals/full/691868_Crew_Manual.pdf)
 
 下表向读者展示全手牌以便复算；游戏中的队员只能看自己手牌、公开任务及合法公开的信息，不能照着全知表讨论。已经收走的牌墩也不是随时可翻的公共档案：规则只允许查看最近一墩。表内“蓝8、9”表示蓝8和蓝9，各表每行恰好十张。
 
@@ -92,4 +92,4 @@ Thomas Sing 在 IELLO 于2021年3月1日转载的访谈中回忆：他先想到�
 
 - [Thames & Kosmos 英文基础规则](https://www.thamesandkosmos.com/manuals/full/691868_Crew_Manual.pdf)：22页，PDF页序与印刷页码一致；第22页标产品691868、内码691868-02-060320。全文核读，组件与沟通图见第2、6—7页，取墩及任务见第3—10页，顺序标记见第14—16页。
 - [英文基础日志，1jour-1jeu托管镜像](https://cdn.1j1ju.com/medias/dd/5a/3a-the-crew-the-quest-for-planet-nine-log-book.pdf)：12个PDF页面，多为双页跨页；任务2、3位于PDF第3页、印刷第4页。镜像未明确印次，不能据此称它与上述规则同批印刷；所用任务图标已视读。
-- [IELLO：Thomas Sing nous parle de The Crew !](https://iello.fr/thomas-sing-nous-parle-de-the-crew/)：2021年3月1日，转载2020年夏季Philimag访谈；只把“Acte 1”的开发回忆归于作者。所有牌局与设计推论由本站另行构造。
+- [星际探险队｜IELLO：Thomas Sing nous parle de The Crew !](https://iello.fr/thomas-sing-nous-parle-de-the-crew/)：2021年3月1日，转载2020年夏季Philimag访谈；只把“Acte 1”的开发回忆归于作者。所有牌局与设计推论由本站另行构造。

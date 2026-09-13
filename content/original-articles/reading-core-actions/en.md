@@ -32,4 +32,4 @@ An action’s role may also depend on the longer journey. Collecting moves no an
 
 When Lin chooses to move, he decides what to do. Putting the plank in the spent area carries out the required consequence. He cannot also choose to leave that plank available. Both involve his hands, but they serve different purposes.
 
-In a tabletop game, players also maintain positions, resources, and the round. Missing an update can give the next player an incorrect situation. The next chapter follows a whole action carefully: what to check first, when to pay and move, when to change players, and exactly when to decide that the game has ended.
+After the action, look at the table. Was the plank spent? Did the animal move? Whose turn is it now? Clear updates give the next person a position they can use.

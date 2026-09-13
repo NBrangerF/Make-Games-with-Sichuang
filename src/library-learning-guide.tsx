@@ -8,8 +8,8 @@ export function LibraryLearningGuide({ language }: { language: ReadingLanguage }
   const t = (zh: string, en: string) => language === 'en' ? en : zh
   const list = readingHref('library', undefined, language, { libraryKind: 'lessons' })
   const link = (id: string) => readingHref('library', id, language, { readingReturnTo: list })
-  return <section className="library-learning-guide" aria-labelledby="library-learning-title">
-    <h2 id="library-learning-title">{t('第一次来，从哪里开始？', 'Where should I start?')}</h2>
+  return <details className="library-learning-guide">
+    <summary id="library-learning-title">{t('第一次来，从哪里开始？', 'Where should I start?')}<span>{t('两条起点 · 12 课阅读路径', 'Two starting points · 12 lessons')}</span></summary>
     <p>{t('想理解机制，从两张包裹卡开始；想马上动手，可以直接使用“小车送书”。每篇示范都能独立阅读。', 'To understand mechanisms, start with two parcel cards. To try a game now, go straight to Book Cart. Each worked example can be read on its own.')}</p>
     <nav className="library-learning-starts" aria-label={t('选择教学起点', 'Choose a lesson starting point')}>
       <a href={link('lesson-see-a-mechanism')}>{t('从一次选择看懂机制', 'Understand a mechanism through one choice')} →</a>
@@ -23,7 +23,7 @@ export function LibraryLearningGuide({ language }: { language: ReadingLanguage }
         <ol start={index * 3 + 1}>{stage.ids.map(id => <li key={id}><a href={link(id)}>{lesson(id).title[language]}</a></li>)}</ol>
       </li>)}</ol>
     </details>
-  </section>
+  </details>
 }
 
 export function LibraryLessonNavigation({ id, language, returnTo }: { id: string; language: ReadingLanguage; returnTo: string }) {

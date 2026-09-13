@@ -3,12 +3,12 @@
   "category": "mechanism",
   "game": "Can’t Stop",
   "title": {
-    "zh-CN": "Can’t Stop：同一把骰子，为什么越走越难停？",
+    "zh-CN": "欲罢不能：同一把骰子，为什么越走越难停？",
     "en": "Can’t Stop: Why Does the Same Handful of Dice Become Harder to Put Down?"
   },
   "summary": {
-    "zh-CN": "用两个可复算局面，比较四骰配对、三枚临时棋子、停手兑现与赢列封路怎样共同改变决定。",
-    "en": "Use two worked situations to compare dice pairing, three temporary runners, banking, and the choices removed when a column is won."
+    "zh-CN": "这轮已经走了这么远，还要再掷吗？从骰子配对一路看到停手与爆掉。",
+    "en": "You have come this far—roll again? Follow dice pairing through stopping or busting."
   },
   "chapterIds": [
     "reading-choices-and-agency",
@@ -78,5 +78,12 @@
         "en": "Angle three: columns of different lengths make a reward change the race"
       }
     }
+  ],
+  "gameTitle": {
+    "zh-CN": "欲罢不能",
+    "en": "Can’t Stop"
+  },
+  "gameAliases": [
+    "不能停"
   ]
 }

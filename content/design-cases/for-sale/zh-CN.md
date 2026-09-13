@@ -1,8 +1,8 @@
-# For Sale：买到最好的房子，为什么还可能少赚？
+# 地产达人：买到最好的房子，为什么还可能少赚？
 
 你加价抢到最大的数字，下一阶段也拿到最大的支票，最后却可能输给提前退拍的人。这里需要分清三件事：拿到什么房子、出售时排第几，以及这一来一回留下多少钱。
 
-《For Sale》由 Stefan Dorra 设计。本文选用 IELLO 2020 年英文 V2 基本规则；发行商产品页列出的该版发售日为2020年7月10日，不把它当作游戏最初问世的年份。[IELLO 官方产品页](https://iello.fr/jeux/for-sale/)
+《地产达人》（For Sale）由 Stefan Dorra 设计。本文选用 IELLO 2020 年英文 V2 基本规则；发行商产品页列出的该版发售日为2020年7月10日，不把它当作游戏最初问世的年份。[IELLO 官方产品页](https://iello.fr/jeux/for-sale/)
 
 下面三个局面由本站自行构造，不是试玩记录或作者自述。金额统一以千元为单位：现金5代表5,000元，房子上的5只是排序数字。我们关注的是：**先付现金取得手牌，再把手牌按相对名次换成收入，会怎样改变决定？**
 
@@ -95,5 +95,5 @@
 
 ## 规则与发行商来源
 
-- [IELLO：For Sale 英文规则 V2](https://iellogames.com/wp-content/uploads/2020/07/For-Sale_Rulebook_EN_V2.pdf)：2020版，PDF页码与印刷页码一致；第2—3页为组件与设置，第4—7页为买房，第8—9页为出售，第10页为终局。第11页变体不纳入本文，也不混用其他发行版或扩展。
-- [IELLO：For Sale 官方产品页](https://iello.fr/jeux/for-sale/)：作者、该版日期及“Achetez, vendez !”两阶段介绍；这里只用来核对出版信息与流程，不把宣传文字当成玩家体验证据。
+- [地产达人｜IELLO：For Sale 英文规则 V2](https://iellogames.com/wp-content/uploads/2020/07/For-Sale_Rulebook_EN_V2.pdf)：2020版，PDF页码与印刷页码一致；第2—3页为组件与设置，第4—7页为买房，第8—9页为出售，第10页为终局。第11页变体不纳入本文，也不混用其他发行版或扩展。
+- [地产达人｜IELLO：For Sale 官方产品页](https://iello.fr/jeux/for-sale/)：作者、该版日期及“Achetez, vendez !”两阶段介绍；这里只用来核对出版信息与流程，不把宣传文字当成玩家体验证据。

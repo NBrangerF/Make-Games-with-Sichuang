@@ -3,12 +3,12 @@
   "category": "mechanism",
   "game": "Spirit Island",
   "title": {
-    "zh-CN": "Spirit Island：没有消灭敌人，为什么局面已经变好了？",
+    "zh-CN": "灵迹岛：没有消灭敌人，为什么局面已经变好了？",
     "en": "Spirit Island: Why Can the Position Improve Without Destroying an Enemy?"
   },
   "summary": {
-    "zh-CN": "沿着建造、防御与恐惧结算三个独立局面，区分阻止生产、保留反击，以及改变胜利条件；附真实卡牌费用与逐步核算。",
-    "en": "Resolve three independent situations to distinguish preventing construction, preserving a counterattack, and changing victory conditions, with actual card costs and explicit calculations."
+    "zh-CN": "推走一个敌人，可能少一座建筑；保住达汉，才有后面的反击。沿一次行动往后看。",
+    "en": "Moving an enemy can prevent a building; keeping Dahan alive can preserve a counterattack. Follow the consequences."
   },
   "chapterIds": [
     "reading-time-and-interaction",
@@ -115,5 +115,13 @@
     "author": "R. Eric Reuss",
     "sectionId": "designer-notes",
     "sourceUrl": "https://www.dropbox.com/scl/fi/5wzghwnbsi39msyy6vvox/Spirit-Island-CORE-Rulebook.pdf?dl=0&rlkey=86i7aofqbzhulezjr7z0ssyff&st=iqv6wpml"
-  }
+  },
+  "gameTitle": {
+    "zh-CN": "灵迹岛",
+    "en": "Spirit Island"
+  },
+  "gameAliases": [
+    "精灵岛",
+    "神灵岛"
+  ]
 }

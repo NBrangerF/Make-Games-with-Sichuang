@@ -1,6 +1,6 @@
 # The Crew: Why Can Winning a Trick Make the Whole Team Lose?
 
-In *The Crew: The Quest for Planet Nine*, a high card can secure a target or take it away from the teammate who needs it. Designing cooperation involves more than adding individual scores together. Who receives a success, what others can know, and when success happens all matter.
+A teammate needs the target card, but your high card takes the trick. You won the cards and lost the mission. The Crew: The Quest for Planet Nine asks who should take a trick, when it should happen, and how much the team can know to arrange it.
 
 This article uses the Thames & Kosmos English base rules, product 691868, document code 691868-02-060320, excluding *Mission Deep Sea*. The three independent deals and action sequences below are our original constructions, not rulebook exercises or observed playtests. All use four players, clockwise A→B→C→D, without a distress signal or additional communication restrictions. Each begins after dealing. A holds rocket 4, chooses a task first, and leads the opening trick. Small task cards are separate from the 40 playing cards: blue, green, yellow, and pink each run from 1 to 9, plus rockets 1–4. [Rules, pp.2, 8–10](https://www.thamesandkosmos.com/manuals/full/691868_Crew_Manual.pdf)
 

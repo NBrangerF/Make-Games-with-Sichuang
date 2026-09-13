@@ -4,7 +4,7 @@ import { parseRouteHash, serializeRoute, routableToolIds } from '../src/url-stat
 import { readingHref, readingReturn } from '../src/reading-navigation.ts'
 import { sixNimmtComparison, singleTargetDrawChance, bullheads } from '../src/case-experiments.ts'
 const read = path => fs.readFileSync(new URL(`../${path}`, import.meta.url), 'utf8')
-const path = JSON.parse(read('content/reading-path.json'))
+const path = { chapters: ['content/reading-path.json', 'content/reading-path-river.json'].flatMap(file => JSON.parse(read(file)).chapters) }
 const support = JSON.parse(read('content/reading-support.json'))
 const examples = JSON.parse(read('content/reading-examples.json'))
 assert.equal(examples.schemaVersion, 1)
@@ -36,7 +36,7 @@ for (const id of ids) {
   const meta = JSON.parse(read(`content/design-cases/${id}/meta.json`))
   assert.equal(meta.id,id); categories.push(meta.category)
   assert.ok(['game','mechanism','theme'].includes(meta.category), `${id}: known category`)
-  assert.deepEqual(Object.keys(meta).sort(), ['category','chapterIds','game','id','sections','sources','summary','title', ...(meta.designerAccount ? ['designerAccount'] : [])].sort(), `${id}: only public metadata`)
+  assert.deepEqual(Object.keys(meta).sort(), ['category','chapterIds','game','gameTitle','gameAliases','id','sections','sources','summary','title', ...(meta.designerAccount ? ['designerAccount'] : [])].sort(), `${id}: only public metadata`)
   assert.ok(meta.chapterIds.length > 0)
   assert.ok(meta.chapterIds.every(chapterId => path.chapters.some(item => item.id === chapterId)))
   assert.ok(meta.sources.length >= 2)
@@ -75,4 +75,4 @@ const ui = read('src/reading-worksheet.tsx')
 assert.ok(ui.includes('reading-note-v1-') && ui.includes('basedOnExample'))
 assert.ok(ui.includes('chapter.chapterId === sourceId') && ui.includes('[...chapterExample]'))
 assert.ok(!ui.includes('useWorkspace') && !ui.includes('useEffect'), 'Exercises do not create workspace evidence or effect-driven storage writes')
-console.log(`Reading support PASS: 28 contextual placements, 9 worksheet types, ${ids.length} bilingual cases with three labeled angles, 2 constructed comparisons, bilingual filtered returns; semantic quality and learner effectiveness require separate evidence`)
+console.log(`Reading support PASS: 56 contextual placements, 9 worksheet types, ${ids.length} bilingual cases with three labeled angles, 2 constructed comparisons, bilingual filtered returns; semantic quality and learner effectiveness require separate evidence`)

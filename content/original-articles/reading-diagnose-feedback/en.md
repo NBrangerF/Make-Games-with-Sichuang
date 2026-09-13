@@ -46,4 +46,4 @@ Some comments need clarification before we can prioritize them. “Too complicat
 
 This review could leave a provisional conclusion like this: “In v0.2, two plans ran into different limits: the opportunity to replenish planks and the number of turns left. These records do not show that every opening must fail. Another player asked where collected planks came from and continued after an explanation. First check whether the instructions distinguish spare, available, and spent planks for a new reader, then observe how players plan their departure.”
 
-That paragraph does not announce that the game has been fixed. It explains what supports the next priority and which questions remain. The next chapter will compare possible responses: changing a sentence, arranging pieces differently, or changing a rule. Each has consequences to consider before choosing what to make in the next draft.
+Keep the revision note beside the original record. Someone else can follow why this change comes first, and the next feedback will have a decision to be compared against.

@@ -1,6 +1,6 @@
-# Wingspan：栖息地怎样把鸟牌组织成一条引擎？
+# 展翅翱翔：栖息地怎样把鸟牌组织成一条引擎？
 
-一张鸟牌可以有名字、画像和介绍，也可以在以后每次取食时继续帮你取得资源。《Wingspan》把这两种作用放到同一张牌上：你在收集鸟，也在改变自己下一回合能做成多少事。
+一张鸟牌可以有名字、画像和介绍，也可以在以后每次取食时继续帮你取得资源。《展翅翱翔》（Wingspan）把这两种作用放到同一张牌上：你在收集鸟，也在改变自己下一回合能做成多少事。
 
 这里研究的主题问题是：**生态题材怎样进入行动的组织方式，而不只是给资源换个名字？**本文限定原版玩家板和基本规则，不把扩展的新板面、花蜜或蜂鸟步骤混入案例。出版社把玩家描述为吸引鸟类到保护区的爱好者，并将栖息地与可不断扩展的能力组合相连。[Stonemaier Games 官方介绍](https://stonemaiergames.com/games/wingspan/)
 
@@ -71,7 +71,7 @@ Hargrave 在2019年访谈中说，按栖息地触发整行能力是在开发较�
 
 ## 规则与设计者来源
 
-- [Stonemaier Games：Wingspan 游戏介绍](https://stonemaiergames.com/games/wingspan/)：保护区与栖息地能力组合的官方定位。
-- [Wingspan 官方英文基本规则，Tabletopia 托管副本](https://c.tabletopia.com/games/wingspan/rules/ws-rulebook-r10-lr/en)：原版板见第4页；两张鸟卡见第3、7页；动作与费用见第6—10页，回合目标板两面的计分见第11页；Red-Breasted Nuthatch 卡图见第1页。
+- [展翅翱翔｜Stonemaier Games：Wingspan 游戏介绍](https://stonemaiergames.com/games/wingspan/)：保护区与栖息地能力组合的官方定位。
+- [展翅翱翔｜Wingspan 官方英文基本规则，Tabletopia 托管副本](https://c.tabletopia.com/games/wingspan/rules/ws-rulebook-r10-lr/en)：原版板见第4页；两张鸟卡见第3、7页；动作与费用见第6—10页，回合目标板两面的计分见第11页；Red-Breasted Nuthatch 卡图见第1页。
 - [Stonemaier Games：规则与常见问题](https://stonemaiergames.com/games/wingspan/rules/)：官方规则入口；查阅其他版本时应核对玩家板及扩展范围。
 - [GamingTrend：Elizabeth Hargrave 访谈，2019年3月11日](https://gamingtrend.com/interviews/crazy-eights-elizabeth-hargrave-on-wingspan/)：关于规则影响来源、扩充鸟牌以及分布约束的本人回答。

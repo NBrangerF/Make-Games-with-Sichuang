@@ -3,12 +3,12 @@
   "category": "mechanism",
   "game": "The Crew: The Quest for Planet Nine",
   "title": {
-    "zh-CN": "The Crew：为什么赢下一墩，反而会让全队失败？",
+    "zh-CN": "星际探险队：为什么赢下一墩，反而会让全队失败？",
     "en": "The Crew: Why Can Winning a Trick Make the Whole Team Lose?"
   },
   "summary": {
-    "zh-CN": "用三组完整四人发牌，检验目标接收者、沟通信号与任务先后如何改变合作；逐墩复算成功路线与失败分支。",
-    "en": "Replay three complete four-player deals to examine task recipients, communication signals, and completion order, with successful routes and explicit failure branches."
+    "zh-CN": "大牌拿走了目标，任务却可能失败。用三次发牌看谁该赢这一墩、什么话能说。",
+    "en": "A high card takes the target, yet the mission can fail. Use three deals to examine who must win and what can be said."
   },
   "chapterIds": [
     "reading-cooperation-and-conflict",
@@ -94,5 +94,10 @@
     "author": "Thomas Sing",
     "sectionId": "designer-notes",
     "sourceUrl": "https://iello.fr/thomas-sing-nous-parle-de-the-crew/"
-  }
+  },
+  "gameTitle": {
+    "zh-CN": "星际探险队",
+    "en": "The Crew: The Quest for Planet Nine"
+  },
+  "gameAliases": []
 }

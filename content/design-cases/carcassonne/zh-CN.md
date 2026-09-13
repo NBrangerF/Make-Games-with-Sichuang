@@ -67,6 +67,6 @@
 
 ## 规则与设计者来源
 
-- [Z-Man Games：Carcassonne 英文基础规则，v3文件](https://cdn.svc.asmodee.net/production-zman/uploads/2024/09/carcassonne_v3_rulesheet_en-1.pdf)：第2—6页，随从数量、回合顺序、城市、共同占领与终局计分；本文不采用补充规则。
-- [Z-Man Games：Carcassonne 官方游戏页](https://www.zmangames.com/game/carcassonne/)：基础游戏介绍、组件与规则下载。
+- [卡卡颂｜Z-Man Games：Carcassonne 英文基础规则，v3文件](https://cdn.svc.asmodee.net/production-zman/uploads/2024/09/carcassonne_v3_rulesheet_en-1.pdf)：第2—6页，随从数量、回合顺序、城市、共同占领与终局计分；本文不采用补充规则。
+- [卡卡颂｜Z-Man Games：Carcassonne 官方游戏页](https://www.zmangames.com/game/carcassonne/)：基础游戏介绍、组件与规则下载。
 - [Board game components：2017 年 Klaus-Jürgen Wrede 访谈](https://boardgamecomponents.wordpress.com/2017/03/19/interview-with-klaus-jurgen-wrede/)：Components and game mechanics 中关于预设职业与相邻修道院的本人回答。本文只据此归纳取舍，不把采访者的概括当作逐字自述。

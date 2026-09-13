@@ -1,5 +1,6 @@
 export type ReadingLanguage = 'zh-CN' | 'en'
 export type ReadingScope = 'all' | 'course' | 'essays'
+export type ReadingTrack = 'race' | 'river'
 export const casePerspectives = ['actions', 'economy', 'information', 'uncertainty', 'space', 'interaction', 'theme', 'process'] as const
 export type CasePerspective = typeof casePerspectives[number]
 export const libraryKinds = ['mechanisms', 'themes', 'lessons', 'comparisons'] as const
@@ -7,6 +8,7 @@ export const libraryQuestions = ['actions', 'cards', 'uncertainty', 'space', 'ec
 export type LibraryKind = typeof libraryKinds[number]
 export type LibraryQuestion = typeof libraryQuestions[number]
 export type ReadingLocation = {
+  readingTrack?: ReadingTrack
   readingQuery?: string
   readingScope?: ReadingScope
   readingReturnTo?: string
@@ -38,6 +40,7 @@ export function readReadingLocation(search: string, withReturn = true): ReadingL
   const question = params.get('group') as LibraryQuestion
   const from = withReturn ? readingReturn(params.get('from')) : undefined
   return {
+    ...(params.get('track') === 'river' ? { readingTrack: 'river' as const } : {}),
     ...(query ? { readingQuery: query } : {}),
     ...(scope === 'course' || scope === 'essays' ? { readingScope: scope } : {}),
     ...(from ? { readingReturnTo: from } : {}),
@@ -52,6 +55,7 @@ export function readReadingLocation(search: string, withReturn = true): ReadingL
 
 export function appendReadingLocation(path: string, location: ReadingLocation): string {
   const params = new URLSearchParams()
+  if (location.readingTrack === 'river') params.set('track', 'river')
   if (location.readingQuery) params.set('q', location.readingQuery.slice(0, 200))
   if (location.readingScope && location.readingScope !== 'all') params.set('scope', location.readingScope)
   if (location.caseCategory) params.set('type', location.caseCategory)

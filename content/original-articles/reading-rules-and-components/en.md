@@ -40,4 +40,4 @@ The round must also remain visible. Unmoved animals could mean neither player ha
 
 A first reading needs the goal, setup, turn order, and a complete action in an understandable sequence. Later, someone may only want to find whether an animal on the far bank can collect. Short action reminders and clear headings support that search. Essential conditions should also appear in the complete instructions, rather than only on a small card that could go missing.
 
-Following the instructions through the first round can reveal connections the designer omitted. Having somebody unfamiliar begin independently can reveal further problems; a later chapter examines that process. For now, make the explanation, names, and table point to the same rules. Next we consider how different people can see and carry out those rules while keeping their own decisions.
+Follow the instructions through the first round. Find each named object on the table and check what each action leaves behind. Matching sentences to pieces gives the next reader fewer gaps to guess across.

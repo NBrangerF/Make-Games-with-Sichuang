@@ -1,6 +1,6 @@
 # El Grande: Why Do Order and Destination Change the Value of the Same People?
 
-A map full of colored knights can look like a straightforward counting problem. In *El Grande*, where those knights come from, when they may enter, and when their destination becomes fixed all shape that count. Three independent situations let us examine the relationships behind the numbers.
+You have the most knights in a region and appear to lead. Then the King moves, changing where deployment is allowed, or the castle opens and more knights arrive. El Grande’s map needs recounting, and the contest for a chance to change those numbers begins before deployment.
 
 This article uses the four-player base game in Hans im Glück’s 2023 English rules, on the four-to-five-player side of the board. It excludes the mini expansions, alternative cards, two-player dummy and short game. The [publisher’s page](https://www.hans-im-glueck.de/en/game/el-grande-2/) identifies Wolfgang Kramer and Richard Ulrich as the designers. Our situations and comparisons are original analysis, not their test records or a strategy guide to an entire game.
 

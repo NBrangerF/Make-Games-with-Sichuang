@@ -38,4 +38,4 @@ Return to the successful route in the base game. In round three, Rabbit reaches 
 
 Lin is not waiting because the rules are confusing or Hedgehog blocks the way. Rabbit has completed its journey, and the team needs one more step from its partner. Lin might look forward to that arrival. Or the ending may feel settled already, leaving Lin ready for another game. Seeing no piece move is not enough to tell us what the interval means to that player.
 
-When designing turns, consider when players can act and what remains worth understanding or following when they cannot. Order helps us see who spends planks first and who adds them afterward. The next chapter follows this pile further: where do its planks come from, what steps do they pass through, and why do they leave the available supply?
+Follow the shared supply through one round: who spends first, who replenishes it, and who knows about those changes when deciding? Clear timing lets you see what swapping the starting player changes.

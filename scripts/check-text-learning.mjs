@@ -2,16 +2,20 @@ import assert from 'node:assert/strict'
 import fs from 'node:fs'
 import { parseRouteHash, serializeRoute } from '../src/url-state.ts'
 const read = p => fs.readFileSync(new URL(`../${p}`, import.meta.url), 'utf8')
-const path = JSON.parse(read('content/reading-path.json'))
+const paths = ['content/reading-path.json', 'content/reading-path-river.json'].map(file => JSON.parse(read(file)))
+const allChapters = paths.flatMap(path => path.chapters)
 const articles = JSON.parse(read('content/original-articles/catalog.json')).articles
 // Version 3 course contract. These counts describe the reviewed curriculum, not learning effectiveness.
-assert.equal(path.contentVersion, '3.0.0')
+assert.equal(paths[0].contentVersion, '4.0.0')
+assert.equal(paths[1].contentVersion, '3.0.0')
+assert.equal(new Set(allChapters.map(c => c.id)).size, 56)
+for (const path of paths) {
 assert.equal(path.parts.length, 7)
 assert.equal(path.chapters.length, 28)
 assert.equal(new Set(path.chapters.map(c => c.id)).size, 28)
 assert.deepEqual(path.chapters.map(c => c.number), Array.from({ length: 28 }, (_, i) => i + 1))
 const originalMain = ['reading-rules-and-play', 'reading-choices-and-agency', 'reading-information-and-randomness', 'reading-resources-and-endings', 'reading-space-and-opportunity', 'reading-time-and-interaction', 'reading-theme-and-emotion', 'reading-stories-and-models', 'reading-rules-and-components', 'reading-access-and-participation', 'reading-prototypes-and-evidence', 'reading-design-judgment']
-assert.deepEqual(path.chapters.filter(c => originalMain.includes(c.id)).map(c => c.id), originalMain, 'Preserve original main IDs and relative sequence')
+if (path === paths[1]) assert.deepEqual(path.chapters.filter(c => originalMain.includes(c.id)).map(c => c.id), originalMain, 'Preserve original main IDs and relative sequence')
 for (const part of path.parts) {
   assert.ok(path.chapters.some(c => c.part === part.id))
   for (const lang of ['zh-CN', 'en']) assert.ok(part.title[lang] && part.introduction[lang].trim())
@@ -36,9 +40,10 @@ for (const [index, chapter] of path.chapters.entries()) {
     assert.ok((text.match(/^## /gm) || []).length >= 3)
   }
 }
-const optional = articles.filter(a => !path.chapters.some(c => c.id === a.id)).map(a => a.id)
+}
+const optional = articles.filter(a => !allChapters.some(c => c.id === a.id)).map(a => a.id)
 assert.equal(optional.length, 13)
-assert.deepEqual([...new Set(path.chapters.flatMap(c => c.related))].sort(), optional.sort(), 'Every optional essay has a place')
+assert.deepEqual([...new Set(allChapters.flatMap(c => c.related))].sort(), optional.sort(), 'Every optional essay has a place')
 assert.equal(serializeRoute(parseRouteHash('#course/practice')), '#course/practice')
 const legacy = '#course/units/unit-01/activities/compare-three-microgames?course=tabletop-foundations&enrollment=demo'
 assert.equal(serializeRoute(parseRouteHash(legacy)), legacy)
@@ -53,4 +58,4 @@ const app = read('src/App.tsx')
 assert.ok(app.includes("route.view === 'learn' && !route.learningNode"))
 assert.ok(app.includes("route.resourceId === 'systematic'"))
 assert.ok(app.includes('<TextLearning chapterId={route.readingChapter}'))
-console.log('Text learning: 28 bilingual chapters, 13 optional essays, prerequisite order, source-independent reader and practice compatibility PASS; no comprehension claim')
+console.log('Text learning: 28 race + 28 preserved river bilingual chapters, 13 optional essays, prerequisite order, source-independent reader and practice compatibility PASS; no comprehension claim')

@@ -1,8 +1,8 @@
-# Azul：拿到的砖，为什么不等于这轮得到的分？
+# 花砖物语：拿到的砖，为什么不等于这轮得到的分？
 
-同样拿一块砖，它可能补完一条模式线，接通墙上的两段图案，也可能落到地板上。本文用三个独立局面，分别观察公共供给、分阶段结算与终局时机怎样改变一次选择。
+最后一块砖拿到手，它可能补满一条模式线，也可能挤落到地板上。你从工厂取走它时，剩下的砖又进了中央，成了别人的下一组选项。《花砖物语》的一次取砖，要沿着这些去处继续看。
 
-范围固定为 Michael Kiesling 的原版《Azul》，采用[出版社所链接](https://www.nextmove-games.com/en/azul/azul-game/)、版权页标注 ©2018 Plan B Games 的六页英文基础规则，双方都用彩墙面。Summer Pavilion、Stained Glass、Mini、扩展及灰墙变体均不在本文范围。局面与设计分析为本站原创，不是作者试玩记录。
+范围固定为 Michael Kiesling 的原版《花砖物语》（Azul），采用[出版社所链接](https://www.nextmove-games.com/en/azul/azul-game/)、版权页标注 ©2018 Plan B Games 的六页英文基础规则，双方都用彩墙面。《花砖物语》系列的其他独立版本（Summer Pavilion、Stained Glass、Mini）、扩展及灰墙变体均不在本文范围。局面与设计分析为本站原创，不是作者试玩记录。
 
 以下始终是林、乔两人，轮流行动。“第几线”指左边容量为1至5的模式线；“行、列”指右边墙格，从上往下、从左往右数。蓝、黄、红、黑、白分别简写为 B、Y、R、K、W；白指白底花纹砖。彩墙五行的固定颜色依次是 BYRKW、WBYRK、KWBYR、RKWBY、YRKWB。[组件与板面见规则第2页](https://cdn.svc.asmodee.net/production-nextmove/uploads/sites/4/2024/06/EN-Azul-Rules-Next-Move-web.pdf)。
 
@@ -84,6 +84,6 @@
 
 ## 版本与来源
 
-- [Next Move Games：Azul](https://www.nextmove-games.com/en/azul/azul-game/)：原版产品、组件列表及英文规则入口。
-- [Azul 英文基础规则，©2018](https://cdn.svc.asmodee.net/production-nextmove/uploads/sites/4/2024/06/EN-Azul-Rules-Next-Move-web.pdf)：第2页组件与彩墙；第3—4页取砖和模式线；第4—5页铺墙、地板与补充来源；第6页终局及未采用的灰墙变体。页码为PDF页序，与印刷页码一致；上传路径中的2024不是本案例另换的版本。
-- [Brettspielbox：Michael Kiesling 访谈，2018-07-31](https://brettspielbox.de/brettspielbox-interview-michael-kiesling/)：“独立开发与团队开发有何不同”问答中谈 Azul 的段落。仅采用实际修改回顾。
+- [花砖物语｜Next Move Games：Azul](https://www.nextmove-games.com/en/azul/azul-game/)：原版产品、组件列表及英文规则入口。
+- [花砖物语｜Azul 英文基础规则，©2018](https://cdn.svc.asmodee.net/production-nextmove/uploads/sites/4/2024/06/EN-Azul-Rules-Next-Move-web.pdf)：第2页组件与彩墙；第3—4页取砖和模式线；第4—5页铺墙、地板与补充来源；第6页终局及未采用的灰墙变体。页码为PDF页序，与印刷页码一致；上传路径中的2024不是本案例另换的版本。
+- [Brettspielbox：Michael Kiesling 访谈，2018-07-31](https://brettspielbox.de/brettspielbox-interview-michael-kiesling/)：“独立开发与团队开发有何不同”问答中谈《花砖物语》的段落。仅采用实际修改回顾。

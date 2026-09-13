@@ -1,6 +1,6 @@
 # Are Four Options More Worth Thinking About Than Two?
 
-At the river, Yu compared moving with collecting and needed to work out whether enough planks would remain. A small menu can still contain a difference worth understanding. We will now use two independent examples—four cards and seven stones—to compare how many options there are with what choosing them changes.
+Four cards have different colours, but each gives two points and you can take only one. If you want the most points, what is there to choose? Two more colours would do little. With four cards and seven stones, we can examine how the number of options relates to their consequences.
 
 ## Four Colors, One Result
 

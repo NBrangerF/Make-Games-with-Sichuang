@@ -1,8 +1,8 @@
-# Ticket to Ride：牌凑齐了，为什么路还不一定修得成？
+# 铁路环游：牌凑齐了，为什么路还不一定修得成？
 
 地图上的一格很便宜，却可能决定你要不要多花几轮绕路。一张七分车票也不只关系到“能否再加七分”：截止前接上最后一段，还会同时消除原来的负七分。
 
-《Ticket to Ride》由 Alan R. Moon 设计。本文限定美国地图基础游戏，采用官方 **2015 年英文重印规则**：30张目的地车票，开局抽三张、至少留两张。官网现已同时提供新旧规则；2025 V2 的组件和初始发票方式有调整。这里不混用新版、Europe、USA 1910 或周年版规则。[2015规则第2页](https://ncdn0.daysofwonder.com/tickettoride/en/img/tt_rules_2015_en.pdf)；[官网新旧规则入口](https://www.daysofwonder.com/game/ticket-to-ride/)
+《铁路环游》（Ticket to Ride）由 Alan R. Moon 设计。本文限定美国地图基础游戏，采用官方 **2015 年英文重印规则**：30张目的地车票，开局抽三张、至少留两张。官网现已同时提供新旧规则；2025 V2 的组件和初始发票方式有调整。这里不混用新版、《铁路环游》的欧洲版（Europe）、美国1910扩展（USA 1910）或周年版规则。[2015规则第2页](https://ncdn0.daysofwonder.com/tickettoride/en/img/tt_rules_2015_en.pdf)；[官网新旧规则入口](https://www.daysofwonder.com/game/ticket-to-ride/)
 
 下面三组都是本站构造的独立二人局面，不是实际试玩或作者指定的解法。地图公开，手牌和车票按规则处理；为复算而列出的对手牌、暗牌顺序，不表示玩家可以预知。我们关注三种不同约束：**空间还有没有位置、资源什么时候取得，以及取得之后还剩几次行动。**
 
@@ -93,5 +93,5 @@ Moon 在与 Mark Kaufmann 合写的回顾中说，他先写规则概要和地图
 ## 来源与适用范围
 
 - [Days of Wonder：2015英文规则](https://ncdn0.daysofwonder.com/tickettoride/en/img/tt_rules_2015_en.pdf)：全四页已核查；第2页组件中的车票图为 Chicago—New Orleans 7，第2—3页地图用于核对城市、颜色、长度；第3页为抽牌、占路与人数限制，第4页为线路分、车票和终局。本文只用基础美国地图。
-- [Days of Wonder：Ticket to Ride 官方页](https://www.daysofwonder.com/game/ticket-to-ride/)：作者身份与新旧规则入口；当前组件表不替代2015版组件表。
-- [Alan R. Moon、Mark Kaufmann：《The History of Ticket To Ride》](https://d1vzi28wh99zvq.cloudfront.net/pdf_previews/147192-sample.pdf)：Game Trade Magazine，2014年4月，印刷第6—7页；公开样刊PDF第5—6页。只采用署名参与者对原作开发和呈现的回忆，不采用同页周年版广告作为游戏规则。
+- [铁路环游｜Days of Wonder：Ticket to Ride 官方页](https://www.daysofwonder.com/game/ticket-to-ride/)：作者身份与新旧规则入口；当前组件表不替代2015版组件表。
+- [铁路环游｜Alan R. Moon、Mark Kaufmann：《The History of Ticket To Ride》](https://d1vzi28wh99zvq.cloudfront.net/pdf_previews/147192-sample.pdf)：Game Trade Magazine，2014年4月，印刷第6—7页；公开样刊PDF第5—6页。只采用署名参与者对原作开发和呈现的回忆，不采用同页周年版广告作为游戏规则。

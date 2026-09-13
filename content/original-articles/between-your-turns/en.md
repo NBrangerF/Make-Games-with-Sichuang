@@ -1,6 +1,6 @@
 # Are You Still Playing When You Do Not Move a Piece?
 
-The chapter on turns showed how somebody else’s action can change your next move. Now narrow the question. When someone leaves their pieces alone, are they waiting with nothing to do, or watching for something they care about?
+It is your friend’s turn. Your hands are still, but you may be watching every move. If they build a stretch of track, your train can continue; if they move their own train, you must wait. This small train example gives us a way to look inside that wait.
 
 ## A friend’s track can open my next move
 

@@ -1,6 +1,6 @@
 # What Have You Already Guessed before Reading the Rules?
 
-The main path considered how a story gives an action meaning. Sometimes the story arrives before any action: a box suggests who should win and what to do before the instructions are opened. Consider this independent post-office example.
+Before opening a box, you may already expect a race or a cooperative adventure. A character on the cover and a verb in the title can set expectations before the first rule. A fictional post-office game lets us follow that expectation into setup.
 
 Imagine a fictional story in which the courier Lan crosses a mountain alone in a storm to deliver a letter to a lighthouse. A later board game still shows Lan running alone on its box and advertises “the fastest courier.” Yet its players jointly run a post office, with no individual delivery ranking. Someone looking only at the box may expect a race.
 
@@ -40,4 +40,4 @@ Knowing the story can also give somebody more opportunities to speak. Suppose a 
 
 An invitation to add a little character background can let an enthusiast share before returning the current decision to its player. Sharing background and running somebody else’s turn can remain separate.
 
-Returning to the main crossing example, animal names and stories of helping a companion also create expectations. A designer can follow the first few actions to see how those expectations are answered: where does what a player expects to do connect with what the rules actually allow?
+Try showing your cover or invitation without explaining the game. Listen to what someone expects to do and who they think will win, then open the rules and follow the first actions. A mismatch gives you a place to revise the title, picture, or explanation.

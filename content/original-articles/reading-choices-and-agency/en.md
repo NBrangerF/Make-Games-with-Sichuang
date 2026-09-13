@@ -40,4 +40,4 @@ To help Yu understand this choice, a designer can put “collect only on the sta
 
 This crossing example is small. The first discovery—that moving faster now can leave no way through later—can take some thought. Once both players understand how to prepare, they may decide quickly when they play again. We do not need to make the numbers harder to read just to preserve difficulty.
 
-An example that explains one relationship does not necessarily keep producing new questions. To develop a game people want to revisit, a designer would need to consider what situations could differ next time. The next chapter follows the crossing decision through one explicit change: what if the number of planks needed for this move becomes known only when the weather is revealed?
+This position shows what collecting is for. To develop a game people want to revisit, consider what could differ next time: available information, materials, or when a cost becomes known. With each change, check whether the original choice remains worth thinking about.

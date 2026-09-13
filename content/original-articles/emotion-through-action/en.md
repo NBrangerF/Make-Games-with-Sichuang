@@ -1,6 +1,6 @@
 # After You Offer Something, What Can Your Friend Choose?
 
-Hedgehog staying to collect showed us a step where helping can happen. Another question follows: when you offer an opportunity to a friend, does that friend have room to respond? This time we use an independent lamp-repair example, without the river’s shared-plank rules.
+You hold one spare part, and both your lamp and your friend’s are still dark. Offering it is a way to help. Whether your friend can say “Keep it—fix yours” changes the offer. A lamp-repair position lets us work through offering, accepting, and declining.
 
 ## Which lamp can the final part repair?
 
@@ -38,4 +38,4 @@ To make the offer clear, you can place the part where both people can see it and
 
 If your friend accepts and repairs the lamp without thanking you, we do not know whether they are concentrating on the rules, treating it as ordinary cooperation, or thinking something else. A spoken thank-you would not prove that the arrangement felt comfortable either.
 
-The concern here is how to describe a complete handover. You retain the choice to use the part yourself. Your friend can decide whether to accept, and refusal leaves a clear use for the part. We can count the working lamps from the rules. What the offer means between two people needs room for their own understanding and response.
+Offer the last part again and follow both responses, accepting and declining. With a clear result for each, your friend can decide how to respond to the help. Leave room to hear what the moment meant to them.

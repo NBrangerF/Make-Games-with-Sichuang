@@ -47,4 +47,4 @@ We do not need to score the two ideas separately and add the scores. Occupancy, 
 
 The economy chapter kept raw and finished material separate. Here we must also distinguish a marker in hand from one at the station, and remember whose turn it is. Following those states through a round reveals what the combination actually changes. If many extra markers are needed for a detail that rarely affects a decision, that part can also be folded back into a simpler action.
 
-This preparation scene ends here. The next chapter returns to the basic animal crossing. The rules already promise a shared victory, but who gets to decide an action—and who merely follows another person’s instructions—needs attention of its own.
+Leave the sawbench example on this page and return to the base crossing game. The combination showed how one rule can reduce another’s cost. Mark the step it removed; that detail will help when adding or cutting rules later.

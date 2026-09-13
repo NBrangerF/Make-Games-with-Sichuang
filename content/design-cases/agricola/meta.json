@@ -3,12 +3,12 @@
   "category": "game",
   "game": "Agricola",
   "title": {
-    "zh-CN": "Agricola：多一个人，为什么不能只算多一次行动？",
+    "zh-CN": "农场主：多一个人，为什么不能只算多一次行动？",
     "en": "Agricola: Why Is Another Person More Than Another Action?"
   },
   "summary": {
-    "zh-CN": "跟踪公共行动位、增长与喂养的时差，以及先喂养后繁殖的结果；对照规则书中关于增长上限的开发记录。",
-    "en": "Trace shared action spaces, the timing of labor and upkeep, and feeding before breeding, with the rulebook’s account of limiting animal growth."
+    "zh-CN": "多一个人能多做事，也要多喂一张嘴。看看行动位、扩建与收获怎样牵动彼此。",
+    "en": "An extra worker brings another action and another mouth to feed. Follow spaces, growth, and harvests."
   },
   "chapterIds": [
     "reading-choices-and-agency",
@@ -94,5 +94,12 @@
     "author": "Uwe Rosenberg",
     "sectionId": "designer-notes",
     "sourceUrl": "https://lookout-spiele.de/upload/en_agricolare.html_Appendix_Agricola-RE_EN.pdf"
-  }
+  },
+  "gameTitle": {
+    "zh-CN": "农场主",
+    "en": "Agricola"
+  },
+  "gameAliases": [
+    "农家乐"
+  ]
 }

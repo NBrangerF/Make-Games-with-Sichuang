@@ -13,7 +13,7 @@ const bodies = new Map()
 for (const item of catalog.entries) for (const lang of ['zh-CN', 'en']) {
   try { bodies.set(`${item.id}/${lang}`, read(`content/design-library/${item.id}/${lang}.md`)) } catch { /* The contract reports missing bodies. */ }
 }
-const context = { bodies, chapterIds: new Set(JSON.parse(read('content/reading-path.json')).chapters.map(item => item.id)), caseIds: new Set(readdirSync(new URL('content/design-cases/', root)).filter(id => !id.startsWith('.'))) }
+const context = { bodies, chapterIds: new Set(['content/reading-path.json', 'content/reading-path-river.json'].flatMap(file => JSON.parse(read(file)).chapters.map(item => item.id))), caseIds: new Set(readdirSync(new URL('content/design-cases/', root)).filter(id => !id.startsWith('.'))) }
 assert.deepEqual(validateLibrary(catalog, context), [])
 assert.equal(libraryLessonOrder.length, 12)
 assert.equal(new Set(libraryLessonOrder).size, 12)

@@ -2,6 +2,426 @@
   "schemaVersion": 1,
   "chapters": [
     {
+      "chapterId": "race-rules-and-play",
+      "values": {
+        "zh-CN": [
+          "构造局面：B 版轮到小林，他的棋子在 6；小雨的棋子在 12，骰子尚未掷出。",
+          "小林掷出 2，先从 6 移到 8，再沿梯子到 17；回合结束，把骰子交给小雨。",
+          "小林下次从 17 开始；此刻轮到小雨在 12 掷骰。B 版没有拒绝梯子或保留骰子的选择。"
+        ],
+        "en": [
+          "Constructed position: it is Lin’s turn in B, with Lin at 6 and Yu at 12. The die has not yet been rolled.",
+          "Lin rolls 2, moves from 6 to 8, then follows the ladder to 17. The turn ends and the die passes to Yu.",
+          "Lin will start the next turn at 17; Yu now rolls from 12. B provides no option to refuse the ladder or save a result."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-observe-a-game",
+      "values": {
+        "zh-CN": [
+          "构造片段：小林从 20 掷出 2，移动到 22，再滑回 12；随后没有立即递骰，仍看着 22。",
+          "小林现在在 12，他的回合已结束，下一次由小雨行动；停手本身没有让棋子再移动。",
+          "可能在失望，也可能不确定结算是否完成；要在适当时机请他描述刚才想什么，不能凭停顿认定原因。"
+        ],
+        "en": [
+          "Constructed passage: Lin rolls 2 from 20, moves to 22, then slides to 12. Lin keeps looking at 22 instead of immediately passing the die.",
+          "Lin is now at 12 and the turn has ended; Yu acts next. The pause itself does not move either pawn.",
+          "Lin may be disappointed or uncertain whether resolution is complete. Ask for an account at an appropriate time rather than treating the pause as proof."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-players-and-context",
+      "values": {
+        "zh-CN": [
+          "假设两位自愿参加的人坐在活动室小桌旁，其中一人十分钟后离开；先确认棋盘可读、材料放得下。",
+          "先看 B 版一回合；若愿意继续，再试 C 在 6 掷出 2 与 6 的片段，让本人指出采用哪枚。",
+          "记录是否需要辨认数字或代移帮助，再请本人解释选骰；时间到了就停止，不能预先承诺一局十分钟内完成。"
+        ],
+        "en": [
+          "Imagine two willing participants at a small activity-room table, with one leaving in ten minutes. Check board legibility and space for the materials.",
+          "Watch one B turn first. If they wish to continue, try C at 6 with results of 2 and 6, letting the player indicate which die to use.",
+          "Record help needed with numbers or moving, then invite the player to explain the selection. Stop at the agreed time; do not promise a ten-minute game."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-first-design-brief",
+      "values": {
+        "zh-CN": [
+          "暂定两位愿意试纸上竞速的人，使用一张 24 格纸棋盘、两枚棋子和两枚六面骰；实际时长未知。",
+          "保留掷骰的期待，并让玩家在部分回合比较两个可见结果，例如在 6 选 2 到 17 或选 6 到 12。",
+          "观察能否按说明选一枚并结算，再听玩家说明比较了什么；这只检查理解和机会，不预先证明 C 比 B 更好玩。"
+        ],
+        "en": [
+          "The provisional audience is two willing participants using one 24-space paper board, two pawns, and two six-sided dice. Actual duration is unknown.",
+          "Retain anticipation around rolling while enabling comparison on some turns, such as choosing 2 to reach 17 or 6 to reach 12 from space 6.",
+          "Observe selection and resolution from instructions, then ask what was compared. This checks understanding and opportunity, not a prior claim that C is more enjoyable than B."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-ideas-under-constraints",
+      "values": {
+        "zh-CN": [
+          "设计目标是保留骰子的期待，同时增加一个容易说明的决定；下面比较 C 与 R 两个独立方案。",
+          "C：先掷两枚再选一枚，两个结果可见；增加一枚骰子和比较时间，不需要标记，也不能重掷。",
+          "R：从 B 起，每人两枚标记，见单骰后可花一枚重掷一次并接受新结果；付出库存与已知结果，机会不保证更好。"
+        ],
+        "en": [
+          "The design intention is to retain anticipation while adding an explainable decision. The following compares C and R as separate proposals.",
+          "C rolls two dice before selecting one, with both outcomes visible. It adds a die and comparison time, but no tokens or permission to reroll.",
+          "R starts from B with two tokens each. After seeing one die, spend one to reroll once and accept the replacement, giving up stock and a known result without guaranteed improvement."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-core-actions",
+      "values": {
+        "zh-CN": [
+          "构造局面：C 版小林在 6，轮到他行动，已经掷出 2 和 6；两枚结果尚未采用。",
+          "小林选择 2，把 6 暂放一旁表示不用；棋子到 8，再爬到 17，随后结束回合，轮到小雨。",
+          "小林下一回合仍须重新掷两枚，不能保存那个 6；他从 17 比较新的落点，当前前进不保证整局胜利。"
+        ],
+        "en": [
+          "Constructed position: it is Lin’s turn in C, at 6, with 2 and 6 already rolled. Neither result has been selected.",
+          "Lin selects 2 and sets the 6 aside to communicate that it is unused. The pawn reaches 8, climbs to 17, and the turn passes to Yu.",
+          "Lin rolls both dice again next turn and cannot save the 6. New landings are compared from 17; this progress does not guarantee winning the game."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-state-and-resolution",
+      "values": {
+        "zh-CN": [
+          "构造局面：C 版小林在 23、小雨在 12，轮到小林；本次两枚骰子是 2 和 6。",
+          "小林采用 2 会超过 24，所以留在回合起点 23，不触发格子；两枚骰子都不再执行，本回合结束。",
+          "轮到小雨从 12 开始行动；小林不能因为没有移动就再掷一次，下一次属于他的回合才重掷两枚。"
+        ],
+        "en": [
+          "Constructed position: Lin is at 23 and Yu at 12 in C. It is Lin’s turn, and the dice show 2 and 6.",
+          "Selecting 2 would pass 24, so Lin stays at the turn-start position of 23 without triggering a space. Neither die is applied again and the turn ends.",
+          "Yu now acts from 12. An unchanged position does not entitle Lin to another roll; Lin rolls both dice on the next own turn."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-choices-and-agency",
+      "values": {
+        "zh-CN": [
+          "构造局面：C 版棋子在 6，结果为 2 与 6；玩家想向终点前进，需要比较最终落点而非只比数字大小。",
+          "选 2：先到 8，再沿梯子到 17；不用 6，也就放弃直接停在 12 的结果，未来胜率尚未计算。",
+          "选 6：停在 12，虽然骰子数字更大，却放弃本次到 17 的梯子；这比较即时局面，不假装已经求出全局最优策略。"
+        ],
+        "en": [
+          "Constructed position: C at 6 with results of 2 and 6. The player wants to progress towards the finish and must compare resolved landings, not just number size.",
+          "Choose 2: reach 8 and climb to 17, foregoing the direct stop at 12. The later winning probability has not been calculated.",
+          "Choose 6: stop at 12 despite the larger number, foregoing this ladder to 17. This compares immediate states without claiming a solved whole-game strategy."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-information-and-randomness",
+      "values": {
+        "zh-CN": [
+          "分析目标：棋子在 6，左骰为 6、右骰为 2；比较两种信息时点，不把它们混成同一局的规则菜单。",
+          "先承诺左骰、再揭示且不得改选：只能用 6 到 12；即使看见右边的 2，也没有转去梯子的许可。",
+          "C 先揭示再选：看见两枚后可选右边的 2，经 8 到 17；这一次能回应信息，不代表整局必然更有趣。"
+        ],
+        "en": [
+          "Analytical goal: the pawn is at 6, the left die is 6, and the right die is 2. Compare information timings as separate fragments, not a menu within one game.",
+          "Commit to the left die before revelation, with no switching: the 6 reaches 12. Seeing the right-hand 2 afterwards grants no permission to take its ladder.",
+          "C reveals before selection: choose the right-hand 2 to reach 8 and then 17. Information can guide this decision without proving the entire game more enjoyable."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-resources-and-endings",
+      "values": {
+        "zh-CN": [
+          "独立 R 版在准备时给每位玩家两枚重掷标记，之后没有新供给；它从 B 起步，不使用 C 的两枚选一枚。",
+          "本人回合掷出单骰后、移动前，可花一枚重掷一次，必须接受新结果；每回合最多一次，花过的移出本局。",
+          "标记用尽后仍照 B 掷骰移动，只是不能重掷；留有标记也不保证到达，超出终点仍按本版规则原地结束回合。"
+        ],
+        "en": [
+          "Separate R gives each player two reroll tokens at setup, with no later supply. It starts from B and does not use C’s two-dice selection.",
+          "On the owner’s turn, after one die appears but before moving, spend one token to reroll once and accept the replacement. At most one per turn; spent tokens leave the game.",
+          "After exhaustion, ordinary B movement continues without rerolls. Spare tokens do not guarantee arrival, and an overshoot still leaves the pawn in place and ends the turn."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-space-and-opportunity",
+      "values": {
+        "zh-CN": [
+          "在C版第6格、骰面2和6的构造局面中，比较两次结算后的地点，而不先断言整局最优策略。",
+          "选择2：先到第8格，执行梯子转移到17；这次使用较小骰面，却到达更靠后的编号。",
+          "选择6：经过8但不停下，最终到12；没有登梯，也没有因经过他人棋子而发生捕获。"
+        ],
+        "en": [
+          "In a constructed C position on space 6 with results of 2 and 6, compare the resolved destinations without claiming a globally optimal strategy.",
+          "Choose 2: land on space 8, then take its ladder to 17. The smaller die reaches the farther numbered destination on this turn.",
+          "Choose 6: pass through 8 and finish on 12. Passing does not activate its ladder, and passing another pawn does not cause a capture."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-time-and-interaction",
+      "values": {
+        "zh-CN": [
+          "C版构造局面：我在20、对手在18；我的两颗骰子为2和4，对手尚未行动。",
+          "我选4，准确到24，立即获胜；若选2则会落22并退到12，这两种结算不同。",
+          "准确到达后游戏已经结束，对手没有补掷回合；若要同轮比较，必须另写并列和同时行动规则。"
+        ],
+        "en": [
+          "Constructed C position: I am on 20, my opponent on 18, and my dice show 2 and 4. My opponent has not acted.",
+          "I select 4, reach exactly 24, and win immediately. Selecting 2 would land on 22 and transfer to 12 instead.",
+          "The exact arrival ends play without an equalizing turn. Comparing an entire round would require separate rules for simultaneous action and tied arrivals."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-design-an-economy",
+      "values": {
+        "zh-CN": [
+          "E独立继承R：每人开局两枚标记，实际移动后最终落在普通第6格可补一枚，持有上限两枚。",
+          "构造局面在4、剩一枚、初掷1：移动前花一枚重掷，若新结果为2，先到6，再从零补回一枚。",
+          "R中相同动作会剩零枚，E会剩一枚；达到持有上限不再增加，但不限制整局累计领过多少枚。"
+        ],
+        "en": [
+          "E separately inherits R: two initial tokens per player, plus one after actually moving to finish on ordinary space 6, with a holding limit of two.",
+          "Construct a pawn on 4 with one token and an initial 1. Spend before moving; a rerolled 2 reaches 6 and replenishes the supply from zero to one.",
+          "The matching R turn leaves zero tokens; E leaves one. The holding cap prevents extra accumulation, not repeated receipts across the entire game."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-goals-and-pacing",
+      "values": {
+        "zh-CN": [
+          "局部比较从B版第23格开始，每次轮到自己得到一次单骰行动机会，没有额外重掷或补发回合。",
+          "准确到达时只有1可完成；掷2到6均超过24并原地结束，即使未移动，这次机会也已经使用。",
+          "人工序列6、5、2、4、3、1在第六次完成；达到或超过实验第一次就完成，不能据此推算整局平均时长。"
+        ],
+        "en": [
+          "The local comparison begins on space 23 in B, with one single-die action each turn and no extra rerolls or replacement turns.",
+          "Exact arrival requires 1. Results 2 through 6 overshoot and end the turn in place, using the opportunity even without movement.",
+          "The artificial sequence 6, 5, 2, 4, 3, 1 finishes on attempt six. Reaching-or-passing finishes on attempt one; neither trace establishes whole-game average duration."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-combine-mechanisms",
+      "values": {
+        "zh-CN": [
+          "C版第6格看见2与6，已经知道选2会经8到17、选6会到12；当前正式候选没有重掷标记。",
+          "按C直接选一颗并移动一次；组合提案必须另答先选后重掷，还是保留另一颗再重掷，不能混着执行。",
+          "保留好结果再重掷可能降低损失，先承诺一颗再重掷则可能失去原结果；目前没有完成或验证这种组合。"
+        ],
+        "en": [
+          "On space 6 in C with 2 and 6, choosing 2 reaches 17 through 8, while choosing 6 reaches 12. The current candidate has no reroll tokens.",
+          "C simply selects one die and moves once. A combination must separately specify committing before rerolling or retaining another die while rerolling.",
+          "A retained result may provide a fallback; committing first may sacrifice it. The combined proposal has neither been completed nor validated."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-cooperation-and-conflict",
+      "values": {
+        "zh-CN": [
+          "构造结尾为第9轮后我已到24、同伴在23；S的目标是双方在第10轮结束前完成，不是个人名次。",
+          "比较方案A：竞争B中我先到24就立即获胜，另一个棋子不必完成；没有后续合作任务。",
+          "比较方案B：S中我跳过后续行动，同伴仍须掷1才能共同成功；目标共享了，但我没有改变骰子的帮助动作。"
+        ],
+        "en": [
+          "Construct an ending after round 9 with me on 24 and my partner on 23. S requires both to finish by the end of round 10, without personal ranking.",
+          "Compare A: in competitive B, my first arrival on 24 immediately wins, and the other pawn need not finish. There is no subsequent cooperative task.",
+          "Compare B: in S, I skip later turns while my partner still needs 1 for shared success. The goal is shared, but I have no action that changes the die."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-balance-and-player-count",
+      "values": {
+        "zh-CN": [
+          "独立R实验两人各两枚重掷标记，总共四枚；三人R试验若仍各两枚，总量变六枚，个人配额不变。",
+          "每位玩家只能在自己的回合、看见单骰后且移动前花一枚重掷一次，必须接受新结果，不能借用别人的。",
+          "一个人的两枚用完后仍可正常掷骰移动；桌面总量增加并未给他更多重掷机会，也不能证明三人版更公平。"
+        ],
+        "en": [
+          "Separate R starts two players with two reroll tokens each, four in total. A three-player R trial keeps two each, increasing the total to six without changing personal allocation.",
+          "Only the active player may spend one token after seeing the single die and before moving, rerolling once and accepting the replacement without borrowing.",
+          "After using both tokens, a player still moves normally. More tokens on the table grant no extra personal rerolls and do not establish greater fairness with three players."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-theme-and-emotion",
+      "values": {
+        "zh-CN": [
+          "一条从14指向4的蛇，让我预期棋子会退回较早的位置；是否觉得有趣或挫折，目前没有观察结果。",
+          "B版最终落14必须转移到4，单骰没有提供是否冒险的选择；起终点编号与箭头支持这个动作。",
+          "若旁边写因你贪心所以受罚，就归因给玩家并未作出的决定；可改成意外表述后，再观察理解与感受。"
+        ],
+        "en": [
+          "A snake from 14 to 4 suggests returning to an earlier position. Whether this feels amusing or frustrating has not been observed.",
+          "In B, landing on 14 requires transfer to 4. The single die offers no risk decision; endpoint numbers and an arrow can support the required movement.",
+          "A caption blaming greed assigns a decision never offered. Try describing an accident instead, then observe understanding and response separately."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-stories-and-models",
+      "values": {
+        "zh-CN": [
+          "看到《骆驼大赛》的竞速场景，我可能先以为每个人控制自己的骆驼；这是待核对的期待，不是规则事实。",
+          "第二版五匹竞赛骆驼无人专属，玩家通过对赛况作判断并获取金钱争胜；同一骆驼的前进可能关联多人的利益。",
+          "若只写蓝骆驼先到所以蓝玩家赢，就误把棋子与玩家一一对应；这个人工竞赛也不能证明现实中的竞速规律。"
+        ],
+        "en": [
+          "Seeing Camel Up’s race might suggest each person controls a personal camel. This is an expectation to check, not a rule fact.",
+          "Its second edition assigns the five racing camels to nobody; players seek money through judgments about the race. One camel’s progress can relate to several interests.",
+          "Saying blue arrived first so the blue player won would invent personal ownership. This artificial race also supplies no proof about real-world racing behavior."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-rules-and-components",
+      "values": {
+        "zh-CN": [
+          "C版构造局面：棋子在6，两颗骰子为2和6；第8格箭头指向17，同格允许两枚棋子共处。",
+          "选2放进选择框，另一颗放旁边；从6数两步到8，再按梯子到17，这回合只移动结算一次。",
+          "下次从17开始计数，不能再用未选的6补走；把两颗相加或经过8即登梯都不符合当前C规则。"
+        ],
+        "en": [
+          "Constructed C position: the pawn is on 6, the dice show 2 and 6, and the arrow from 8 points to 17. Spaces allow both pawns together.",
+          "Place the selected 2 in its box and set the other die aside. Count two from 6 to 8, then transfer to 17; the turn resolves one selected move.",
+          "Next turn starts from 17, without using the unselected 6 afterward. Adding both dice or activating a ladder merely by passing it violates C."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-access-and-participation",
+      "values": {
+        "zh-CN": [
+          "在 C 版的预设局面中，从第 6 格辨认 2 与 6 两个落点，表达自己选哪一颗。",
+          "假设玩家已选 2，只是难以够到棋子；不能据此说她不理解梯子或不会判断。",
+          "拟由同伴按玩家指认移动，记录选择是否仍由本人作出；需要实际观察，不能预填效果。"
+        ],
+        "en": [
+          "In a fixed C situation, identify the outcomes of 2 and 6 from space 6 and express which result to use.",
+          "Suppose the player chooses 2 but cannot reach the pawn. This alone does not show a difficulty understanding ladders or decisions.",
+          "Try having a companion move the pawn as directed. Observe whether the choice remains with the player; the outcome has not been tested."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-prototype-for-a-question",
+      "values": {
+        "zh-CN": [
+          "拟检查 C 版参与者能否只选一颗骰子，并区分经过第 8 格与停在第 8 格。",
+          "摆出完整 24 格棋盘，棋子在 6，两骰为 2 和 6，只提供 C 版操作提示；不提前说哪个更远。",
+          "记录选择、实际落点、查阅和求助；局面人为固定，不能据此推算整局趣味或出现频率。"
+        ],
+        "en": [
+          "Check whether a participant uses only one die in C and distinguishes passing space 8 from landing on it.",
+          "Provide the complete 24-space board, a pawn on 6, dice showing 2 and 6, and the C reminder without explaining the better destination.",
+          "Record the selection, destination, consultation, and help. The fixed situation cannot establish full-game enjoyment or frequency."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-plan-a-playtest",
+      "values": {
+        "zh-CN": [
+          "拟检查第一次接手 C 版材料的人，能否在预设 6 格局面只选一骰并正确结算落点。",
+          "提供同版棋盘和操作说明，明确骰值是预设的；说明可提问、暂停或停止，不先演示选 2。",
+          "记录动作、查阅、提问与每次帮助的时点；实际结果留空，区分提示前后。"
+        ],
+        "en": [
+          "Ask whether someone new to C can select one die and resolve its landing from the preset space-6 situation.",
+          "Provide consistent materials, explain that dice values are preset, and allow questions or stopping without demonstrating the 2.",
+          "Record actions, consultation, questions, and timing of every hint. Leave results blank and distinguish before from after assistance."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-prototypes-and-evidence",
+      "values": {
+        "zh-CN": [
+          "假设记录中，参与者从 6 选 6 到 12，随后询问经过 8 是否爬梯；主持才解释落点触发。",
+          "在解释之后的第二次尝试，参与者选 2，经 8 到 17；这是得到帮助后的表现。",
+          "困惑可能来自文字、图形或旧经验；不能用第二次正确操作证明最初材料已独立讲清。"
+        ],
+        "en": [
+          "In the hypothetical record, the participant chooses 6 from space 6, reaches 12, and then asks about passing 8 before receiving help.",
+          "After the explanation, a second attempt chooses 2 and moves through 8 to 17. This is performance after assistance.",
+          "Possible causes include wording, graphics, or prior experience. The second correct action does not prove the first materials were self-explanatory."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-diagnose-feedback",
+      "values": {
+        "zh-CN": [
+          "假设有人说终点等待很久；先确认使用 B 版、位置 23、点数序列与是否有人先结束。",
+          "可能是精确到达造成停滞，也可能是查阅说明或等对手决定；原话本身不能选定原因。",
+          "拟从 B 只改变超出终点处理，分别记录局面和等待；不同时加骰或改蛇的位置，结果待观察。"
+        ],
+        "en": [
+          "Suppose someone reports waiting at the finish. Confirm B, position 23, dice results, and whether another player ended the game.",
+          "The cause might be exact finishing, consulting instructions, or waiting for a decision. The comment alone cannot distinguish these.",
+          "Change only B’s overshoot rule and record the situations and waiting. Do not also add dice or relocate snakes; outcomes remain unobserved."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-design-judgment",
+      "values": {
+        "zh-CN": [
+          "C 版在第 6 格提供两个不同落点，暂时用于检查玩家是否理解小而具体的选骰决定。",
+          "规则推演支持落点差异，却不能证明玩家更投入；额外比较可能增加等待，也可能没有值得比较的选择。",
+          "先交付不含标记与补给的 C v0.1，安排独立读规则；记录理解与等待，再决定是否保留。"
+        ],
+        "en": [
+          "C offers two different destinations from space 6 and is a candidate for examining a small, concrete die-selection decision.",
+          "Rules reasoning establishes destination differences, not greater engagement. Comparison can add waiting and some rolls offer little meaningful difference.",
+          "Hand over C v0.1 without tokens or replenishment, test independent instructions, and record understanding and waiting before deciding to keep it."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-independent-rules-test",
+      "values": {
+        "zh-CN": [
+          "拟检查接手者只凭 C v0.1 规则与棋盘，能否正确摆两枚棋子、掷两骰择一，并按落点结算。",
+          "准备24格与四条有向连接、两棋子、两骰及完整说明；不附加 R/E/S 材料，不先口头演示。",
+          "记录准备与第一回合、特殊格和终点处理，注明每次帮助；尚无独立接手结果。"
+        ],
+        "en": [
+          "Check whether recipients can use C v0.1 alone to set up two pawns, roll two dice, choose one, and resolve landing effects.",
+          "Provide the 24-space board with four directed transfers, two pawns, two dice, and full instructions, without R/E/S materials or a demonstration.",
+          "Record setup, the first turn, transfers, and finishing, marking each intervention. No independent handoff result has yet been obtained."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-share-a-playable-version",
+      "values": {
+        "zh-CN": [
+          "C v0.1 的 24 格、四条连接与两骰择一规则已能按例推演；这里不宣称已完成真人试玩。",
+          "若接手者困惑，可能是说明不清，也可能混入旧版重掷提示；先核对实际材料版本。",
+          "一起交付同版棋盘与完整说明，下一次拟只澄清落点触发的表达；记录独立使用结果后再判断。"
+        ],
+        "en": [
+          "C v0.1 has a 24-space board, four transfers, and a two-dice choice that can be checked by examples. No human playtest is claimed.",
+          "Confusion could arise from unclear wording or an older reroll reminder mixed into the package. First check the materials actually used.",
+          "Hand over matching board and full instructions; propose clarifying only the landing wording next, then observe independent use before judging it."
+        ]
+      }
+    },
+    {
       "chapterId": "reading-rules-and-play",
       "values": {
         "zh-CN": [

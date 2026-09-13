@@ -1,6 +1,6 @@
-# Can’t Stop：同一把骰子，为什么越走越难停？
+# 欲罢不能：同一把骰子，为什么越走越难停？
 
-掷出骰子以后，你还能选择怎样配对；棋子走了一段以后，你还能选择现在停手。但这两个决定并不独立：先前选了哪些列，决定下一掷有哪些数字可用；本回合已经走了多远，决定失败时要放弃多少进度。《Can’t Stop》把这两种选择放在同一段行动里。
+掷出骰子以后，你还能选择怎样配对；棋子走了一段以后，你还能选择现在停手。但这两个决定并不独立：先前选了哪些列，决定下一掷有哪些数字可用；本回合已经走了多远，决定失败时要放弃多少进度。《欲罢不能》（Can’t Stop）把这两种选择放在同一段行动里。
 
 本文采用 **Ravensburger 2007年版、编号26 434 6的基本规则**，不加入规则书末尾的三种变体。该版支持2—4人，目标是先赢得三列。下文两个两人局面均为本站自行构造，用于追踪决定的后果，不是试玩记录，也不是完整游戏教学。规则书由 Ravensburger 编写，链接为标明获发行商许可的镜像。[规则书第1、4页](https://www.brettspiele-report.de/images/cant_stop/Spielanleitung_Can_t_Stop.pdf)
 
@@ -72,6 +72,6 @@
 
 ## 规则与发行商来源
 
-- [Ravensburger：Can’t Stop!，2007年，编号26 434 6](https://www.brettspiele-report.de/images/cant_stop/Spielanleitung_Can_t_Stop.pdf)：第1—4页基本规则；第4页变体不采用。PDF为发行商编写的规则书，托管于 brettspiele-report。
+- [欲罢不能｜Ravensburger：Can’t Stop!，2007年，编号26 434 6](https://www.brettspiele-report.de/images/cant_stop/Spielanleitung_Can_t_Stop.pdf)：第1—4页基本规则；第4页变体不采用。PDF为发行商编写的规则书，托管于 brettspiele-report。
 - [brettspiele-report：规则书镜像出处](https://www.brettspiele-report.de/cant-stop/)：“Spielanleitung”部分注明获得 Ravensburger 许可；仅用于说明文件出处。
-- [franjos：Can’t Stop 官方介绍](https://www.franjos.de/spiel_cant_stop.htm)：“Das Spiel”部分交叉核对四骰配对、三枚临时棋子及保存进度；该页当前商品图片不用于替代2007年版规则。
+- [欲罢不能｜franjos：Can’t Stop 官方介绍](https://www.franjos.de/spiel_cant_stop.htm)：“Das Spiel”部分交叉核对四骰配对、三枚临时棋子及保存进度；该页当前商品图片不用于替代2007年版规则。

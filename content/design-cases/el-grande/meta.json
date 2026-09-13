@@ -3,12 +3,12 @@
   "category": "game",
   "game": "El Grande",
   "title": {
-    "zh-CN": "El Grande：人数没变，为什么先后和去向会改变影响力？",
+    "zh-CN": "大领主：人数没变，为什么先后和去向会改变影响力？",
     "en": "El Grande: Why Do Order and Destination Change the Value of the Same People?"
   },
   "summary": {
-    "zh-CN": "比较先选权与补给、国王移动前后的部署，以及城堡迁入如何改变多人计分；结合Kramer关于更换主题的开发回顾。",
-    "en": "Compare access and supply, the order of deployment and King movement, and castle destinations that change multiplayer scoring, alongside Kramer’s account of finding a new theme."
+    "zh-CN": "骑士多还不够：能否进场、国王在哪里、城堡何时打开，都会改变地区里的较量。",
+    "en": "Numbers are only part of it. Deployment, the King’s location, and the castle reshape regional contests."
   },
   "chapterIds": [
     "reading-choices-and-agency",
@@ -95,5 +95,13 @@
     "author": "Wolfgang Kramer",
     "sectionId": "designer-notes",
     "sourceUrl": "https://brettspielbox.de/interview-mit-wolfgang-kramer-teil-2/"
-  }
+  },
+  "gameTitle": {
+    "zh-CN": "大领主",
+    "en": "El Grande"
+  },
+  "gameAliases": [
+    "城主",
+    "大王"
+  ]
 }

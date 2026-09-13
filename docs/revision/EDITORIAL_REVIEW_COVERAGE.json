@@ -1,0 +1,2568 @@
+{
+  "date": "2026-09-11",
+  "scope": "366 language bodies; distinguish editorial revision from automated scanning",
+  "files": [
+    {
+      "file": "content/design-cases/agricola/en.md",
+      "review": "摘要与入口复查；开头修订",
+      "changed": true,
+      "sha256": "eae94ab022f8d6809fc8b183e481ca6788b57ff893fc31a4cbe11f40b2b8cc9e",
+      "advisoryCount": 12
+    },
+    {
+      "file": "content/design-cases/agricola/zh-CN.md",
+      "review": "摘要与入口复查；开头修订",
+      "changed": true,
+      "sha256": "75b2a04a1fbe47cf65169d6df457ebc5ea1b73c6ca9c53d6ed5420937a0a001f",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-cases/azul/en.md",
+      "review": "摘要与入口复查；开头修订",
+      "changed": true,
+      "sha256": "2b8294cb8957a7e215bc32d161b61288b44f54aa11efb5a2d98e4bbf87cbe5d0",
+      "advisoryCount": 10
+    },
+    {
+      "file": "content/design-cases/azul/zh-CN.md",
+      "review": "摘要与入口复查；开头修订",
+      "changed": true,
+      "sha256": "66d56a31701a055c71b91662531f9a69042e7bf3e4a7e00bbc9bd0b881f51ad2",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-cases/cant-stop/en.md",
+      "review": "摘要与入口复查；正文保留",
+      "changed": false,
+      "sha256": "791bc6ae68db17756ed458fc10a3828d881b50de73e2b86c141ab3c7923da627",
+      "advisoryCount": 9
+    },
+    {
+      "file": "content/design-cases/cant-stop/zh-CN.md",
+      "review": "摘要与入口复查；正文保留",
+      "changed": false,
+      "sha256": "a92014e7938ca4d60fc5cfcfba3c938f9ec9e86201e2da845f73553482fbae75",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-cases/carcassonne/en.md",
+      "review": "摘要与入口复查；正文保留",
+      "changed": false,
+      "sha256": "e794e5aa55b3ccbbf0378b2ca4828cef487a60d4c674477735f7c094ba6b7f4d",
+      "advisoryCount": 8
+    },
+    {
+      "file": "content/design-cases/carcassonne/zh-CN.md",
+      "review": "摘要与入口复查；正文保留",
+      "changed": false,
+      "sha256": "adb457e1782db6622a8cb6ae16efb053bf4e2c7e99b74aa407526e7ac6e474ba",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-cases/dominion/en.md",
+      "review": "摘要与入口复查；正文保留",
+      "changed": false,
+      "sha256": "966169bd27771fbad2294f3f3ed5b5cc00e14e4e930f034279b6810b6f7a20b5",
+      "advisoryCount": 8
+    },
+    {
+      "file": "content/design-cases/dominion/zh-CN.md",
+      "review": "摘要与入口复查；正文保留",
+      "changed": false,
+      "sha256": "fa0e1193a7a144038b66fa1413dfceb3b397048b3d7a3c18e23e3b6e0281fc30",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-cases/el-grande/en.md",
+      "review": "摘要与入口复查；开头修订",
+      "changed": true,
+      "sha256": "79f85977d133d249e424d43fbad342c252f8fa64cf95fee4d851e757b9d10e15",
+      "advisoryCount": 6
+    },
+    {
+      "file": "content/design-cases/el-grande/zh-CN.md",
+      "review": "摘要与入口复查；开头修订",
+      "changed": true,
+      "sha256": "aa6940d91a4bc563a295b12db0f8fc5c3b88e3cdaf2837148b1a4f6d4bf613fc",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-cases/for-sale/en.md",
+      "review": "摘要与入口复查；正文保留",
+      "changed": false,
+      "sha256": "2403f393c8065fe1f14e0f42f4af83968c48ca3b5b076800ced25117a6387dc6",
+      "advisoryCount": 2
+    },
+    {
+      "file": "content/design-cases/for-sale/zh-CN.md",
+      "review": "摘要与入口复查；正文保留",
+      "changed": false,
+      "sha256": "65fe24e01fb60e84bc130450cc62f3b072ae9807a59b3f215531526a815d3650",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-cases/hanabi/en.md",
+      "review": "摘要与入口复查；正文保留",
+      "changed": false,
+      "sha256": "28f4d8a8ca8213bcd62a5622648390e358dee23f87446c310c6a3fef1541ea8b",
+      "advisoryCount": 7
+    },
+    {
+      "file": "content/design-cases/hanabi/zh-CN.md",
+      "review": "摘要与入口复查；正文保留",
+      "changed": false,
+      "sha256": "26d521926a14a346165c689e66c0b79d1d64eea386b104a89d7f80798d9044f0",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-cases/modern-art/en.md",
+      "review": "摘要与入口复查；开头修订",
+      "changed": true,
+      "sha256": "fe72a9a438a301170daee282c234ca1eef922e2f066ed2177ca22de96bb2a88c",
+      "advisoryCount": 9
+    },
+    {
+      "file": "content/design-cases/modern-art/zh-CN.md",
+      "review": "摘要与入口复查；开头修订",
+      "changed": true,
+      "sha256": "898f6520423a127ca13e1656338bf854b1e8b4fef2fa0d2805ef34445c19c382",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-cases/pandemic/en.md",
+      "review": "摘要与入口复查；正文保留",
+      "changed": false,
+      "sha256": "851b7fe295c97ab3574061b8e7db8138c2ea47b01f59a427d4397ac279fefd3d",
+      "advisoryCount": 10
+    },
+    {
+      "file": "content/design-cases/pandemic/zh-CN.md",
+      "review": "摘要与入口复查；正文保留",
+      "changed": false,
+      "sha256": "a9c7b64bdeef55bc64a43a09f38132d8291f5bfe889265bdc773996e765206e8",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-cases/quacks/en.md",
+      "review": "摘要与入口复查；开头修订",
+      "changed": true,
+      "sha256": "4741990760dfe1449b5e97fd30eeda132525ce204d09ed986065da3224098208",
+      "advisoryCount": 4
+    },
+    {
+      "file": "content/design-cases/quacks/zh-CN.md",
+      "review": "摘要与入口复查；开头修订",
+      "changed": true,
+      "sha256": "6826bf98b9a2d5f41737f34a5a771ef0a5a3c0d7a4f95340a5fa94cba5d7c72e",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-cases/radlands/en.md",
+      "review": "摘要与入口复查；开头修订",
+      "changed": true,
+      "sha256": "a50c905038a97e5e69f5e62aa68ecd518f19e0afb56bd56f3433a64b25c862d1",
+      "advisoryCount": 8
+    },
+    {
+      "file": "content/design-cases/radlands/zh-CN.md",
+      "review": "摘要与入口复查；开头修订",
+      "changed": true,
+      "sha256": "da357d6b3f1c1c9038d223dc3dfff7fdf6098e7fc3211e018623efe7bd701b5e",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-cases/root/en.md",
+      "review": "摘要与入口复查；正文保留",
+      "changed": false,
+      "sha256": "6c26db793d8243eebb075d761e3905c65e0f4ff4d6db41eab0a3944b5a84717b",
+      "advisoryCount": 5
+    },
+    {
+      "file": "content/design-cases/root/zh-CN.md",
+      "review": "摘要与入口复查；正文保留",
+      "changed": false,
+      "sha256": "e22a534d8546dfffa96f1fbd770898f1d13206456a331bba4c66ebb58cf2b286",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-cases/six-nimmt/en.md",
+      "review": "摘要与入口复查；正文保留",
+      "changed": false,
+      "sha256": "b2b683cffbebb205d70fc24d24937da5002fbf90e58e7ea1f335ea181f8e57b9",
+      "advisoryCount": 7
+    },
+    {
+      "file": "content/design-cases/six-nimmt/zh-CN.md",
+      "review": "摘要与入口复查；正文保留",
+      "changed": false,
+      "sha256": "c783dfcb12e8aa7aacd14b4ef55b0f69af06b2f811dcb89877716f02d0247586",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-cases/spirit-island/en.md",
+      "review": "摘要与入口复查；开头修订",
+      "changed": true,
+      "sha256": "68fd07fb17552905b63171ccfba308dcd7ce19b1d796b6c063b654d281fcff2e",
+      "advisoryCount": 14
+    },
+    {
+      "file": "content/design-cases/spirit-island/zh-CN.md",
+      "review": "摘要与入口复查；开头修订",
+      "changed": true,
+      "sha256": "23fac170bc616cfc1de7a6402c46ec2377c16d6ffe478bba59cbb18483fc5781",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-cases/the-crew/en.md",
+      "review": "摘要与入口复查；开头修订",
+      "changed": true,
+      "sha256": "c454d05a412b91c1a264314e3c91cdbc8a4ea8f62b47be02b1187297acfcc4dc",
+      "advisoryCount": 7
+    },
+    {
+      "file": "content/design-cases/the-crew/zh-CN.md",
+      "review": "摘要与入口复查；开头修订",
+      "changed": true,
+      "sha256": "98647a8b3a956814339738484bb56b9de149d69643eb98cca4c8c8fd1430681c",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-cases/ticket-to-ride/en.md",
+      "review": "摘要与入口复查；正文保留",
+      "changed": false,
+      "sha256": "dc1525cc53205a3ecd0a8230105a2838adda77c7c1cf5a83d2d46641abfe9af6",
+      "advisoryCount": 10
+    },
+    {
+      "file": "content/design-cases/ticket-to-ride/zh-CN.md",
+      "review": "摘要与入口复查；正文保留",
+      "changed": false,
+      "sha256": "54170eb9a6f4dced1ce37b0232cccf2403a9af5254399826a3e1f244b32d21ac",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-cases/wingspan/en.md",
+      "review": "摘要与入口复查；正文保留",
+      "changed": false,
+      "sha256": "2d619b890fa4b569ecb82b6fd7e7eeb62cd04e928a46c6fbf722f78823fa3d95",
+      "advisoryCount": 6
+    },
+    {
+      "file": "content/design-cases/wingspan/zh-CN.md",
+      "review": "摘要与入口复查；正文保留",
+      "changed": false,
+      "sha256": "fd35b1127592ef7dae071c5b26536361d5a0db51eb55894c59a0c17778951980",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/action-points/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "6c204f59029d381665a1b7fc99a26c30747c34dc9d152fd529666477f4d3173e",
+      "advisoryCount": 8
+    },
+    {
+      "file": "content/design-library/action-points/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "1a99fe87faeafb389af9891eb8262dbb1b0146fbf948c2197e385f754647e5f5",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/action-programming/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "e9d88b2d1e8e43b34cdd37747ba22046c3f28024544aa20d4b190aefda5b6b61",
+      "advisoryCount": 7
+    },
+    {
+      "file": "content/design-library/action-programming/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "0ca1542425408c959a1e7764fa1ddc8734270e67b63ea287b362bb495c599322",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/action-selection/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "b276e1348b5967a4c3ec9389e6d51c61e1f7c0bd09ef750c86c50298bd320469",
+      "advisoryCount": 11
+    },
+    {
+      "file": "content/design-library/action-selection/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "0fe6d23366bc602e02c3e400b38a16aac4f19a5001c95ad8a88c5789b40b6116",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/animals/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "9794b2e2805a9c69e883025970a6ba06ffad656c45306de36d65aa0a80d5ac46",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/design-library/animals/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "4ccbbf6e5174c92d82945cdd495a0bae01eb1a59f62852e00ce1eb12dc308c39",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/apprenticeship/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "fccf2489afd894d6012a54c5ddcf6e16ee5ea7498204b8b3783bdedfb3505b8c",
+      "advisoryCount": 2
+    },
+    {
+      "file": "content/design-library/apprenticeship/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "099fa1799510fd7e0837ba6eec88a0190051ce7c3aa63a98aa5087b9407a39e4",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/archive/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "4c1046beca6b261b697bb38bd773f133eff5f57c8f1fef6a2776ad0053c1d9d7",
+      "advisoryCount": 5
+    },
+    {
+      "file": "content/design-library/archive/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "b58ae214a9f291dd2fd4d38589021a71867f05abb0e73c4916c25d3113691910",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/area-control/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "85da5caa2525973de0e4748c47717295bb3d1ab39392910bbf8af2d9279c10f5",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/design-library/area-control/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "090967ac680d99a515bbd4c81c43b07fc145e1a352fac9e6826948ea9fd19f3e",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/area-majority/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "601714feeda16afdb57ea834a3fcee21bb8bd92fc8d03dcd4eaf91af9c0b3013",
+      "advisoryCount": 4
+    },
+    {
+      "file": "content/design-library/area-majority/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "132276b68e8e68596d589ec841cc719b007fc0433a2704da0e3208ce141cee81",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/ascending-auction/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "dcc82eeff41f6e68d6ca01e4df58df117f9b1a5aed1c2047bee92c76a067f722",
+      "advisoryCount": 19
+    },
+    {
+      "file": "content/design-library/ascending-auction/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "2d67b8dcab94c69ae28f727d8d174bd45ff3fea0aaa776a1915a08d13d5aedf5",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/asymmetric-powers/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "f059d8db9fa215270075c78a2cb69d9447be6b46e1ab3ab637eed8cbfe234eea",
+      "advisoryCount": 5
+    },
+    {
+      "file": "content/design-library/asymmetric-powers/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "f97adb3ff570534f94d9ec64018f2d28f89d205afb2fe7f69a1e78dacb68c419",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/auction/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "e5e07f7f4cd03483f453fffd5a5761ecdf7d9f356df6735838c0b27374d840b1",
+      "advisoryCount": 11
+    },
+    {
+      "file": "content/design-library/auction/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "c31fb83463f999e936d5b74cd785214c5f921f5e9cc03dd689c357bbca707cdb",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/bag-building/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "0848a8296b55d59ec20d643ad7e66606394bb0810e0530ba79ae0d35ddee6471",
+      "advisoryCount": 8
+    },
+    {
+      "file": "content/design-library/bag-building/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "4eeef84b1f0744d88264f4915cfebc1fb996874643c6d4af94659b1258d1d47a",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/care-schedule/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "c282e1276cc41f55eb8f56141fb51edf1472bfd103cd7422eb8a808bcee865a3",
+      "advisoryCount": 4
+    },
+    {
+      "file": "content/design-library/care-schedule/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "6d8f81a0547135208333c792eea9794e1f16959b01e922bc7e0ac9b077b6836e",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/catch-up-system/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "1b189944fd60c579fce627ddbfaa911577d035b852ff36ad9f885bdc0158a5bb",
+      "advisoryCount": 10
+    },
+    {
+      "file": "content/design-library/catch-up-system/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "b14732008d3f418cee0b02e807d7cb5814ad845cf35c07fdcd628ae832752983",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/city-building/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "ef4bcd25e71fbd895b2be8857c9d0b0d41bd53b0bf77d464af1af9db72713143",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/city-building/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "80007d14309c8e06d0e7fa695905ef7abfd2edbf4f258ed1d9281e2a1bfebc91",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/city-planning/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "7ff8ad3fb975b135ae477f849f07cf665601792af484d74faca8e7b67f0b00b5",
+      "advisoryCount": 6
+    },
+    {
+      "file": "content/design-library/city-planning/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "5eff1ecfb563e7d946c4536a1e10ce40d6062f1e0f2a8ab0f594d61854f019f6",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/combo-building/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "14b7a4e6c1ad84cbc840fa68b09d1146afc9616bab2dafdc2b633371b0120944",
+      "advisoryCount": 6
+    },
+    {
+      "file": "content/design-library/combo-building/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "4fb9c7afdecdc4a0a9f8817c3b792aaba8ff6ced3ca338b41f8a4a681228226e",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/communication-limits/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "4a6d4a4a233f9dde3f08ed254b9eb4dee8a2b19bd5e12598f4f050128190b2d3",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/design-library/communication-limits/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "3573dc581c3754abf6d54034ba59755610cd827b215043cde9e783eaa667d4f0",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/community-kitchen/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "870bb00796aa3d179193a454013d906256e52c02d320f19a4fed2b7acf654bc5",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/design-library/community-kitchen/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "813b36164de3e8b31fc88c61603a9dc49e025db884fc95fac27d5487b9e6e8af",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/comparison-area-network/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "3d728a0687d6f277ac0c0496cd81e1f272672792322fc939688567a98caa9d17",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/design-library/comparison-area-network/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "77d1ea62016e44ff581989768792c077d64df48648f43c4a8d13b5d40b98546c",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/comparison-bid-payment/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "b13be3e2a937aba2f626224d91c32acbaec3c78fbd97069c0591a8d1923a3f3f",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/design-library/comparison-bid-payment/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "4c61e7bd60392654e1ff07171f516131cb768938d1903e39c85b0b159245caa6",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/comparison-collection-combo/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "121c4ee79d88cdd21880836b0b15583aa8e2be9b70a9af6f228e10a40fc797b1",
+      "advisoryCount": 5
+    },
+    {
+      "file": "content/design-library/comparison-collection-combo/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "5909a4ef4209f62c4156d5264c3389725d9b47af5e2bb716927bad91a5a5d869",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/comparison-control-majority/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "5c2fb34735d2c12b1a978993c004e226f5eb535bebfbf6099a7909c7e153c230",
+      "advisoryCount": 6
+    },
+    {
+      "file": "content/design-library/comparison-control-majority/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "e3d433e4b36bd00c580fa6b2a69ab7316f4fbca31659c16f700f774fcbb5a351",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/comparison-deck-bag/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "aaa8e8501a90e40a9cfe113f6dad997c4dd65779e59f555e7bfdd35a5012b662",
+      "advisoryCount": 6
+    },
+    {
+      "file": "content/design-library/comparison-deck-bag/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "3ad180b778aae49e5215bcbeef7086e5924336559df7c0e0058ccec2457253ef",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/comparison-hidden-deduction/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "1fdfb04749e5e06a67d9d398474f7c2dfdac81ea031c9db1abf98d2f4b20760b",
+      "advisoryCount": 6
+    },
+    {
+      "file": "content/design-library/comparison-hidden-deduction/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "65fe483e230474a1cf7c70732cc525c1aa1287a7afb798fff84abaa0713ae6b1",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/comparison-income-loan/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "eec8042e96d0ca1930d3aa0dd908cafd0d6d22af66e04e9da868c050bacb7001",
+      "advisoryCount": 13
+    },
+    {
+      "file": "content/design-library/comparison-income-loan/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "11bb50cd645fe2b56e03bb527080c1a74340e05b9578dc595ee687ef6aa9bbb5",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/comparison-occupy-price/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "6ab502f453c91f7d36c42bb0139473f6af3e420f53ba71cc835e87703877ed0a",
+      "advisoryCount": 6
+    },
+    {
+      "file": "content/design-library/comparison-occupy-price/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "e55ce5b46d3fdf0ec830b88ad4a89d10740e2bf14fd0a4b3803c4941ddf9f2d9",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/comparison-reveal-order/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "407eb5f68d3269583d85d3870534f76a3f067661d93f17e18b374e16b2d6ba96",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/design-library/comparison-reveal-order/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "605e4438e48994151a578ec3c0c80f9afeafeb4851a10864e86b23eb0e365d21",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/comparison-shared-team/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "de98df9ed4b03b21608fecbee3c7eda8fe0ad7157da05d4eb8b36d1224c7a42c",
+      "advisoryCount": 6
+    },
+    {
+      "file": "content/design-library/comparison-shared-team/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "3de442ec8ae48e339aab94fc4a9a7075c8022d6412f9387377e8c2c659b56ac7",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/comparison-stop-allocate/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "31fa07c18c9dd67ccd5bfec94da24ea71354b97ef5a131aa414d354fd44f692c",
+      "advisoryCount": 4
+    },
+    {
+      "file": "content/design-library/comparison-stop-allocate/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "f044694aee43edfc691931319e9f7c1d9fd5ed1752754d1fa9c4b3cd60ec49c5",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/comparison-trade-promise/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "97352c889587f58efadce11d3f1af017497153ac14c15651e127cf3b428ceb24",
+      "advisoryCount": 6
+    },
+    {
+      "file": "content/design-library/comparison-trade-promise/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "bd8628c369185d87a6236ba913a9f0923a2cc7b8e48ede87fa809f4751c3df24",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/cooperative-structure/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "da7c864bbfcbd55740fe35e397c74870a96794841bbf19ed2230da62b70d0dbf",
+      "advisoryCount": 9
+    },
+    {
+      "file": "content/design-library/cooperative-structure/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "3a1b7c8b2d1f9b9443cf77f2bddd048ece43306ef622fd61d833971b7f1ca257",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/deck-building/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "6bf50c0ffa595f3423ff4c689721ac2710cf52bbc88716daea21d0c432a22034",
+      "advisoryCount": 7
+    },
+    {
+      "file": "content/design-library/deck-building/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "801b9d03266df772b63125a47d3b86bdd8269c62822fc97143d23c24403dea76",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/deduction/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "1b1e9bd85fd5b0b73fe117720e46a53b60d3772ba71fe6563031e5861a6874b8",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/design-library/deduction/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "16ab67564afd660200d76d7ba9c2cd6de0badf9a2a2fcebbb5ccf8996e75027f",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/dice-allocation/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "625061d71e851820c649feecc9a630664649ae073947146f3e48b59d9c3550f0",
+      "advisoryCount": 12
+    },
+    {
+      "file": "content/design-library/dice-allocation/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "175ea5d0b9a3c27fbc604cec153ac2da010be3d154c7dda1b6b4fa7d976aeb56",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/drafting/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "52a158a1eaa35684a580c2f62cd9ffbb26a7eebba3ebe760ae2ba806b8c6dc54",
+      "advisoryCount": 5
+    },
+    {
+      "file": "content/design-library/drafting/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "b78b34fe3faeb38b8a7ea137ceed9eb613d0f168ebfe6d25fec2b9058980e9fb",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/ecosystem/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "bd83e632196caf7a342cf56901fd51bbeebacf29d15566dbb4eb34fafaaa761a",
+      "advisoryCount": 8
+    },
+    {
+      "file": "content/design-library/ecosystem/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "06bb521f4f04a832a894840398f5414679d431b62d4385033d81c8eef477f193",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/environment/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "027901db27656d372178ca0c1436a56792b3d1151c27ec80451e610897c96500",
+      "advisoryCount": 5
+    },
+    {
+      "file": "content/design-library/environment/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "fc46da65cc99291ac353a22698f8c83193243195140eddb146c0449a8af4b38e",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/expedition/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "0d5f652ec40cde22f9825dd7fc2572f4e9562fa2a81762ebaa6765535de2f1ae",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/design-library/expedition/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "d3b8cba92e1b7e73decea2f0fb44ce433469cd9cd9c8fb299b79ee37047e6d03",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/exploration/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "cd6226853f17c6c795d19e56c7fc692d7b24273a8bf762a6b42cce47cee10099",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/exploration/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "ed0b42d28997b782453f1e851cb61ac17f5add1c6282df88c01d99fa7e08230e",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/fantasy/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "d2beb38356d4db29524d6363f673ff4d633439df19744f05c20d194439dc2666",
+      "advisoryCount": 5
+    },
+    {
+      "file": "content/design-library/fantasy/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "3f5ca32221ba6de10e36e25d1d7fa7f01dbe9776a156b6d969d980e752ef3f21",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/farming/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "093b3441a6e23b89cd8e3ac1819027a09cbf2b5a94f79af1b99bb7b6ca39c372",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/design-library/farming/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "897ae6928698d72ecab0c60cd02ab6e55570353fc4d86411c7c2de7f3de62045",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/festival/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "b50ac19e4d5242126ba37d72552134adadf16d2fee53970e0739c249809a55e1",
+      "advisoryCount": 2
+    },
+    {
+      "file": "content/design-library/festival/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "900e26db00d1b8809cd17e32753e335508ae58421358ed54ba5b979150dd987b",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/hand-management/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "2a965f9f8fbc882b456bfa5151d2b9f83e011597647817b0c6b8dfbf3453118f",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/design-library/hand-management/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "8a800de8703b21b7875e485a00352edcb03af6b450d117007bd578254cf6d2ca",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/hidden-information/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "b2f51398cfbe331cd9114fa980ea92a7d9fc9b029b6a00ae24ebd79ea846e37f",
+      "advisoryCount": 2
+    },
+    {
+      "file": "content/design-library/hidden-information/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "fcf904d7e7a714aa6f9e78eb3ebf7b1ecd570ce357fbff0e2ed12d557b4182c3",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/income-production/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "f3076620becdfd217b6c2a995766cfe1bac28db043bc0f58521d3f8aa0451d98",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/design-library/income-production/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "36cd9beed8d234b421a51555f21fb9fdd10cedd73cdf40216e09bd5d9dc730e4",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/industry/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "4619c1ed4da084774a1d7f0dfc344c8982701ac24faf8e42741a442200b8fff3",
+      "advisoryCount": 4
+    },
+    {
+      "file": "content/design-library/industry/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "63a0eb5cffa75d20572690860b60ce275258064aa0dd23145af35db588969148",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/investment/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "a4d2ddac1e841a168887d00f4ea69ad5a3a2eabff9a9454486fcbd5ea3fa83be",
+      "advisoryCount": 17
+    },
+    {
+      "file": "content/design-library/investment/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "7ad3b54222db399d047aa83d837bd53b486a06d5e2e583119e235e6deb91c374",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/lesson-build-a-combination/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "c080b4d0679c09537780edcc9c9e6e2bdfd46623cec0cdb3accf4593f217fde9",
+      "advisoryCount": 6
+    },
+    {
+      "file": "content/design-library/lesson-build-a-combination/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "86b80881cea59fa05f6a979188cb4493901d03cf2d6c52e73a3258c051f497a4",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/lesson-change-one-risk/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "20a4ba02b2fac11b42140caa5f355565c321bdbba13f3349e706a02de4c6689a",
+      "advisoryCount": 6
+    },
+    {
+      "file": "content/design-library/lesson-change-one-risk/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "0030229b9a564de430625ef03b603e15702b56a646ecd04847b210ac17073de2",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/lesson-choose-a-mechanism/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "91092e2c16b2cf685227acac43b088796ca2d77399c855fceedd36032e84d769",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/design-library/lesson-choose-a-mechanism/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "57a43f98dd8a80858014de61ed909f33ecf816db5ed744c06947bdb01ec11cff",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/lesson-compare-two-games/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "22b2fa6210ca9e7a32260bda313ab39580d485c20d1ca2121592b76aec51796a",
+      "advisoryCount": 6
+    },
+    {
+      "file": "content/design-library/lesson-compare-two-games/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "4df17d6007cd3e506aa4013ad0a68aaf57faf7c8b7e355fbb2f0939570502fa6",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/lesson-design-for-participation/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "0fec8ed729032aef4ac4e47cd0391a26b4d01dd93074bed336aee4fc5b88c36e",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/design-library/lesson-design-for-participation/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "aefa5e9d4956f74c4dad995d4ba3826132f48dfb4a6ff4ff18e98651f13e8a64",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/lesson-observe-a-turn/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "3d2ed6cded8a5f81908b0bf3569497c20d3a2a1bee9f2b9b55db4aba4a57a245",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/design-library/lesson-observe-a-turn/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "9d6d9fe4d227c3cd81a9ed2759c424ca2f29b279fbac9e9ed3f73aad2829a193",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/lesson-prototype-a-question/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "166f28cdade835f1f28f5bb3aeb294eedebca2dbf2b81ed316acb14407ec94bb",
+      "advisoryCount": 6
+    },
+    {
+      "file": "content/design-library/lesson-prototype-a-question/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "9f83110ee5139dabffca970b02ea7f52b715aaf1378f0759ec82821dc1595fcc",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/lesson-see-a-mechanism/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "0682a28171f429530245d7ff80b2f2875fa4dea6c6f4277774b20d851247ea58",
+      "advisoryCount": 8
+    },
+    {
+      "file": "content/design-library/lesson-see-a-mechanism/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "c87631e602b41b29a2b8afb0fc206fb3ca56c4cb9c6d0d244dce56bb416ebd03",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/lesson-test-rules/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "7ad834982755bf2ea512ee6a20003a57a0eee6038a9fb67509a659a9379b0b6f",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/design-library/lesson-test-rules/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "14d72d81f7e3f2ed5db0e7fc2388f5c4bf15d9f99a37ccda551d100d5aa376f5",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/lesson-theme-promises/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "e015529fab162e924248e375f0e1b3eecce315301b003e2fcb82745e781aaafb",
+      "advisoryCount": 5
+    },
+    {
+      "file": "content/design-library/lesson-theme-promises/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "5e46871af271533b6f2691b4bbf02a554eeaf762a1b02f769b8136a160605036",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/lesson-theme-to-rule/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "31ff670d28ff9141163948f7df608c8d1f2b4f20011cd87e2cb7e464ad62e539",
+      "advisoryCount": 6
+    },
+    {
+      "file": "content/design-library/lesson-theme-to-rule/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "3ffd1f76c14eef709adde4ba3455c0ae205987a21388d16cdf9a8786aa3c2d06",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/lesson-use-feedback/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "bb4e3fda04594bf767adaf943e180b1c7b1496b40182fdf43ee5a5701f159cff",
+      "advisoryCount": 7
+    },
+    {
+      "file": "content/design-library/lesson-use-feedback/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "b93f1301e541c3f97e9b52b044444289c1a8eda7600f032ba022957cd1059ee2",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/loans/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "5ec8da93ef0767440b1272bf5b14b827e4b3ee0eec015f78283f905d73a74fa4",
+      "advisoryCount": 6
+    },
+    {
+      "file": "content/design-library/loans/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "7de835c33b39d70aa7c935438c91176e1839a7fcd7c1ae284e5c31a66b771dc1",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/market-pricing/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "714b69c892357eeb9b1963284c4a6725a460a8ae60916a555d5250202c089196",
+      "advisoryCount": 5
+    },
+    {
+      "file": "content/design-library/market-pricing/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "6532c5732b369841c2e104f58370dd8111d2f119001b7560d614629738c72547",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/medical/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "526160c50d29495e0c23c8417af55c757258c5177ae477f54c14a458741c5e06",
+      "advisoryCount": 6
+    },
+    {
+      "file": "content/design-library/medical/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "c5f21de2ab6afc76238060f75123c7c948b03d77f1f82b3fa56a0b9e753deefb",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/medieval/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "6223eac2c2377e876d361833f9161fbcd9a102824358d221ddc40b59a4a4fde5",
+      "advisoryCount": 4
+    },
+    {
+      "file": "content/design-library/medieval/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "3613957252149d8c7a6f71d09372f7750975b85aa9c6eb1ddb34c74155db3648",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/movement-points/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "562bc611a2f18517bddd1babbc1fba2184b98455401be67b6b2572124f86dd09",
+      "advisoryCount": 7
+    },
+    {
+      "file": "content/design-library/movement-points/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "be7d41281565ffafdbeb1698616b9fb5841a5085f81032f48f94c3398a91fcb6",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/multi-use-cards/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "7b9e505a5cc47768237ffaf0f92a3ff240d69af66f13aeb40dfe3603d7976b3a",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/design-library/multi-use-cards/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "837f64bb5207697bd301498866c8efcc31c5da452603e07489ee96ce1d9095d3",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/mystery/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "8f8b3ff34e58fc89e2e6968c77d0ebc836533da1e6e815ba452ef5d55c23430d",
+      "advisoryCount": 7
+    },
+    {
+      "file": "content/design-library/mystery/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "caddb9f816f840dfe31d769e9159f614de0a3c102932de396810e7908c6d0181",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/negotiation-commitments/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "2fdda285af3bbb2f79d903badc1f6917a5c8579c24681c0ab6d79b1a78cf380b",
+      "advisoryCount": 7
+    },
+    {
+      "file": "content/design-library/negotiation-commitments/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "f8e5b0d3d0f5fc0231a56dadb898b307e8e9e39baa242302a132e59e41e07543",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/player-elimination/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "1efcbef20cfba769c295d6b173d62afe77d9448bf286fbc192738e7520989fd2",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/design-library/player-elimination/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "09118b595474c19d991fe44fc9f8f16b319d09f9cd7b8ff1aef68a7c6b969afd",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/public-private-scoring/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "5e56751489496db3e47aeb603b687333196a1656dceb52f336e25ca72dfafe1a",
+      "advisoryCount": 4
+    },
+    {
+      "file": "content/design-library/public-private-scoring/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "77dfa94290f0afcc9834c4945d489a4049904e5dc2c62bd587f29013783f0d0e",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/push-your-luck/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "e38bb62e73f4277d4567a45867a0df2f55c9f12dfc9065f1dfd3ee3631a2d558",
+      "advisoryCount": 6
+    },
+    {
+      "file": "content/design-library/push-your-luck/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "5d9ff3859e8c8cda751ab4c0a3ff2a9d7ac544039e586e7fd0f633b5e5876a84",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/race-end-trigger/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": false,
+      "sha256": "e2299a98ba8fe631ca85a539313310dc9396a06a5ed8941b2b295fcc8bee09b7",
+      "advisoryCount": 6
+    },
+    {
+      "file": "content/design-library/race-end-trigger/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": false,
+      "sha256": "5d91b3eccd5923c1a45dd01ccc6b13c9c650a36b458396ec2c7366a8fef5eb5c",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/repair-cafe/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "45283540e4056958c32148d10512f02beaf90cc6bd82d6a2cc76899391ce183e",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/design-library/repair-cafe/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "2d824b14e62c363cf38a0ee1a339d23de1a8e2e34b1c80fe5c11b3434d406006",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/reroll-locking/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "58ec3ad0448edf133afe35b4d69bc6eff05d512db2d362fe3ff5223283ea7850",
+      "advisoryCount": 4
+    },
+    {
+      "file": "content/design-library/reroll-locking/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "ca87f4df9e3e22f15852f45846dab7920ffee01253e7c59b728a7d5ba98903f7",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/rescue-network/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "b73b9813462d66625121afc6e7ee528630355a993bea4fd700e4c817ec725352",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/design-library/rescue-network/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "b2ea3d7b5683eaf0a01c2bff49db0ca3ee0234214e39682ebcaea93dfaa9011c",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/resource-conversion/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "c72fbb6df067c1e2a29109c3f05007c140d661e4316ae0a1741b3c96174f825e",
+      "advisoryCount": 9
+    },
+    {
+      "file": "content/design-library/resource-conversion/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "eb55bf03f2c84197b2e968951a36c003dbd00ef3a123143d230623d4df233add",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/restoration/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "ebcf02bdffa3169793f70572029ebc167ac7faa7028172c7ba6cbe5e79f0d1f3",
+      "advisoryCount": 7
+    },
+    {
+      "file": "content/design-library/restoration/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "03d99d33735a472c90a6091f733ade86b6520f74983f747d3024fadad407392c",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/route-building/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "c7a1c1ceb25a49f59848a2fe2bfc5c714c70dec57a2a358e9bdcfbc8b2d6b810",
+      "advisoryCount": 2
+    },
+    {
+      "file": "content/design-library/route-building/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "21f64b81a16ed949882adf77820675aeaa05901b459b4f75655954c3eb735b42",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/scenario-campaign/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "bdaf0e988742c2c8f87ee531e3ea0fdf50942840c1e3a0e63370e1d9ffb1b0bc",
+      "advisoryCount": 16
+    },
+    {
+      "file": "content/design-library/scenario-campaign/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "2bfca4d6dd3f1f99dc10442a46d45ef93b9db5379efaee8b9d8305306a9d841f",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/science-fiction/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "988aa68d4a03a9dc0bddba8181202f38a278ebbd6d1ef0540253338f32a5c2ec",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/design-library/science-fiction/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "b175621f1baf5495bab3370829e3311c4c0bdd134c2ab919d9727af2c618c4e6",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/sealed-bid-auction/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "b952463ab3ae22b83029401caa7234a652ba741d349292abc47445342686b0d0",
+      "advisoryCount": 8
+    },
+    {
+      "file": "content/design-library/sealed-bid-auction/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "589c8f659508e1fa9debe23f4c8d53bf357337de6bf73af3215961d6dc93ed43",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/second-price-auction/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "c232eca6a621f133911fb1c4d59618c04b9590a9a574d11a66625862e1836266",
+      "advisoryCount": 7
+    },
+    {
+      "file": "content/design-library/second-price-auction/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "1fc353eee5f861007694a0c1bbe004ab0853b18b1b8fab0264acec46aa6f9b85",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/set-collection/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "a339e1f2ede362db6c2f6e28e8324f881c2cf682ac72873645e759c9dc92a685",
+      "advisoryCount": 4
+    },
+    {
+      "file": "content/design-library/set-collection/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "a9a7f6e791dc5ad138d21044f8043e890abd851bd48a0809ed6f0f27250fdeff",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/shared-resource/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "ab4a422523c5745c671c8c543825cdcde16bbc40808c5381c30084a097822408",
+      "advisoryCount": 5
+    },
+    {
+      "file": "content/design-library/shared-resource/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "788e0162c2c5ba5ef92b61599c8777dc83e2ca33717aed7955739a3ad7791292",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/simultaneous-choice/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "72065a70fad68469318dbba6e0eaef1451f92525d1f33ebddda75c579d3ab008",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/design-library/simultaneous-choice/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "773a42e0f3b6203f8991f6c3dacdb6e11eadc682be45917a8de731bd15bc6864",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/solo-opponent/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "61fb027dddd706692ad233895334b40ba1c20cd65208e7a1f851922143c62569",
+      "advisoryCount": 5
+    },
+    {
+      "file": "content/design-library/solo-opponent/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "10e2bd8eeecb028a4eadf232dd7d1083182562a896afe4e61e1c53048ab50bc8",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/team-structure/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "92f51584aca6fdf211bc9ba603575480328a49daffc27addc5cea4f01d003b44",
+      "advisoryCount": 4
+    },
+    {
+      "file": "content/design-library/team-structure/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "f70f62fb15bb919f72f12dad6c38b9487a706865fecf5e6df6142519077e54b5",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/tile-placement/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "5cc33caac32b52dc1488510bae0ad1086dac4c82e8d141bbb39a77a2b36aac3c",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/design-library/tile-placement/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "69719ffa3b3ce5a74eaf222653ff5419b8d7acccb9af14234905aba2cb1f6285",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/time-track/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "af9d7c6591707b853e34e353246f8a076ba0a1c8a52c299be7bc82921f0fc10b",
+      "advisoryCount": 4
+    },
+    {
+      "file": "content/design-library/time-track/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "dbed7ba7b2b38674f8aff6ed4a74897b29e201d0f564235d541a68fb5311e0e4",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/trading/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "547c4b73696e5b5b742667225f71fd664ce9f5e9ceca01099332fbfb3d0225c5",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/design-library/trading/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "90ede3a7cf254bb158c548d83f2feefabb03a051f4ad64ad096eadcd1caa3f74",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/traitor-structure/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "3c56c0ec48ea8c6c67a8b4883ca4ab029911bf4255297c6b4960b9a11bba4aa3",
+      "advisoryCount": 6
+    },
+    {
+      "file": "content/design-library/traitor-structure/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "7a12f739f307571e01a339fc08ed44e6696ed40a0f743b39992b6fd33e7ee443",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/transportation/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "b5e43d70bc7ebb72147403b2b8fbac031fd58a1d73070c315f60c6b3bf69d054",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/design-library/transportation/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "a64edf4eb045fd98f445aecd9e6be3ef6e0cfb12933f26c57019fdadc42b4d05",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/trick-taking/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "98ba774fbedb72a3597e899cad115438bcc26f954f4097da90724d31fb8485ed",
+      "advisoryCount": 5
+    },
+    {
+      "file": "content/design-library/trick-taking/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "099d2b5e95b55a15f884ee649b105183bc2c59e30121ef073dea436293455601",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/water-governance/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "cc0fcd3839d896294b30e7bb0533aef4ad5b1669567ab61a0ffa054f7693c6d3",
+      "advisoryCount": 5
+    },
+    {
+      "file": "content/design-library/water-governance/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "75437b4fcdb0ba1655e82bc88495c25db447c4fe3fbd0d60a1414d974e7d095e",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/worker-placement/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "6b970f2da7c44232daecdd246e7861d42d0203cdd500059c7e964c03e1297538",
+      "advisoryCount": 4
+    },
+    {
+      "file": "content/design-library/worker-placement/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "7bdc42c5bacae850cf55162425037b1ef424c6935b65c9b2920cbf21724cace0",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/design-library/zone-control/en.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "7a670d42bf874a2ab7de048aa9155d9d7f02fcb978de7c2bddf81301f158cbe1",
+      "advisoryCount": 9
+    },
+    {
+      "file": "content/design-library/zone-control/zh-CN.md",
+      "review": "全量工具筛查；正文保留；未声称全文精编",
+      "changed": false,
+      "sha256": "73b9e3aaa25d0bc63dbb1f6c7c4cf73b258ae3d5d497d7daf5604d66212ce487",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/before-the-first-rule/en.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "16d1c444a17d0db821e90c03cc7124a3e58868f3a6da2a33cc10520695945a14",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/before-the-first-rule/zh-CN.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "187b6a70f38956b02b0811c784ea1bd9b634684ae2eb5cf15febc4e33fe81997",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/between-your-turns/en.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "b9cc6e538750944563e4449278c7dadea0c106f36c382e01bfd42b31bacd4f79",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/original-articles/between-your-turns/zh-CN.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "94942352e5fd979c9503ab9f8b273ebfc656b9a13cdbb86333bd6d3957caf916",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/beyond-game-labels/en.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "208468564e60001a11207cc78f4dab5613a4617c0db423b7b3ab4b3b4301be5e",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/original-articles/beyond-game-labels/zh-CN.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "9ce90ac58870f4e412be832c6ddf2f74f4bfb33ae5ac5dd3dbe21f33fd8f5226",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/constraints-that-open-possibilities/en.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "79c1af6bd90f773c4913df6498b27785b9766bd329938e806694cc67aba54d88",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/original-articles/constraints-that-open-possibilities/zh-CN.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "6a293e317a33df6052fa35808a96a62caac1556d4a57f1439b0296e72fd8a5fa",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/emotion-through-action/en.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "3ff68f1f26d1b48d8dfd1f4252c38088963ee1f3c443c32d005f24471e2845cc",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/original-articles/emotion-through-action/zh-CN.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "7183e9597df1692ea9c560cc33c61044d6ff69e26655de1d821ab79cef1c3385",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/play-beyond-the-rules/en.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "55e19b5fd90f3ce2d0e17d2c436833c60cea315df0365b7388087d65eb56982d",
+      "advisoryCount": 2
+    },
+    {
+      "file": "content/original-articles/play-beyond-the-rules/zh-CN.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "aa23baf131d568362043a0c880d40cf8b2b3700e38903b2956bc1753e6163c4f",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-access-and-participation/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "74f900ad73d3a9f13bd1a5e22979f6e64ab9d7fac0ba02b2f7d8b15e3a2bd82c",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/original-articles/race-access-and-participation/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "7de9193eb1e6205cd197d886f145b556c246ece90bed47b164f9743571fc5506",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-balance-and-player-count/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "284ff73fd273f0fab674708e148492e51458ed74b05477b610194a3eee790f95",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/original-articles/race-balance-and-player-count/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "0c27c318d8ca22116cf7eff02f502a755de00b555bda7344db70af38e04b6582",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-choices-and-agency/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "7b955b37ac0a81e78eebc5c60d63df22b1df7dee7f4fdbf3512f270412b2ce6c",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/original-articles/race-choices-and-agency/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "431630ac8bef3242efe1ecc9442790b8596f2a71c0bdc4693b80be171d8e4408",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-combine-mechanisms/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "3ba245340c3b13d0eebb802a4cbadaf139f608f4981caa6ff5a40c46909899ba",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/original-articles/race-combine-mechanisms/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "e9b6f758eff0b6ee9c1409ac9f3c6f1eb7b78305c5b18a175ee9047346d73505",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-cooperation-and-conflict/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "a65dd3ad4696e7e1129e045d8e9b360998e7b707329fafe2aaa810ba568ae44d",
+      "advisoryCount": 2
+    },
+    {
+      "file": "content/original-articles/race-cooperation-and-conflict/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "c19c2da575384597c18fd0fb77c0b6602d2cc194b015b779086eb330cac29e0d",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-core-actions/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "a566b198209a2e46c36a8885c5264e76fc659acdd8bf4a289549054f48c4849c",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/original-articles/race-core-actions/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "3e61c0722b40d9f536270e644bcdbcd62b5180047d28f7133a9d37a1110cfd4a",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-design-an-economy/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "5c8b342cb6a34355e91a10a1ba3cc217655ab5942c1a39bb708186e60b2d51e7",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/original-articles/race-design-an-economy/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "311d17bc1f6e1020324b75112e83f1b056f1ca25ca110381d90cf55b2954b65c",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-design-judgment/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "bd8ae0d685aeba1acaffd88583c51b3330d81dc2fe5a7170758ded1585042b38",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/original-articles/race-design-judgment/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "2a52f39148e358f68dddc4dab4fabdf385fb94f01b53b639b3dabddec832c8ad",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-diagnose-feedback/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "5ea505b8f01131e407fef125958946fb06d78a7d1a6c6f358a4296b1bf0cfd0c",
+      "advisoryCount": 2
+    },
+    {
+      "file": "content/original-articles/race-diagnose-feedback/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "eb14f9925fee3f908352b99200623dc0bcbbae930131be649294ed2d4bbd1b83",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-first-design-brief/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "99f5e8ac8536ad3bb7f7b703a7a0ec3e57756999b27b6e1711bfe757eb3285f4",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/original-articles/race-first-design-brief/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "5c7d5bc6c097a09223be5b345686d68e2fa708a2e8f7ce9d7eb7658f16eea742",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-goals-and-pacing/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "3b5137b9ed2f3932346350a35fd9d1e006a6d19636a06ce03232971aacf91094",
+      "advisoryCount": 2
+    },
+    {
+      "file": "content/original-articles/race-goals-and-pacing/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "e9687f4b0301a004571dad562a87d11837829ba4528f3d901b3747ff65a7aa7d",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-ideas-under-constraints/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "1691386908b8ee5414694cf5951ae344f024b694b193cd4b89d2d68ca9437521",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/original-articles/race-ideas-under-constraints/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "e986c176435e153f59846424f55c24985f8dd9dc95ac2826b2686c268232ed51",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-independent-rules-test/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "8352d180cad44964a2022590b89bb8f6da7911cf670c747d5c2e41064006cb94",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/original-articles/race-independent-rules-test/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "99494c672683da4c6f746482832ff19e84f1b57561c6ccc80c73634bd0fd24b9",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-information-and-randomness/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "8b38ef9b1cb65e7ab5d881e4a4690d3e57ee81284bb94ada5f445793366bf50d",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/original-articles/race-information-and-randomness/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "c3e2888ce8897ad8facb045862c2a0f51a8f6188b5e18b42e60c905967fa9269",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-observe-a-game/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "646d68564192726ae8064fa6a3db00c1c2773a8847b35709d661009e6f9fbb37",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/original-articles/race-observe-a-game/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "1a6c143280e2a7db0461fe4bad9c33aa1467e417f632353235ac2b0aca2f4ecd",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-plan-a-playtest/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "87a08de8795126141307a4f5b49ca5029690e218eb0734eb7161fd9bd268765f",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/original-articles/race-plan-a-playtest/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "4e064b2006c6b9d8b6066cf5962468ef7d8c4270694004b95b7795a8f85e5b5c",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-players-and-context/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "58c6012d7773e7f09c02e703541304172325f1a998ac34152f0784adfcc066d9",
+      "advisoryCount": 5
+    },
+    {
+      "file": "content/original-articles/race-players-and-context/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "b30de1e73eda129cf9fb13970c408f59d1248d93372e98e418428f8771ef07ea",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-prototype-for-a-question/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "5c55d1f9971fa5bbdf94b7e931cb8ca2be25aecaac043b296be95230d461fda9",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/original-articles/race-prototype-for-a-question/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "bfdf8c70022c82836eb2b415555bfed1331e3586c270092aa75e30588ee85d32",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-prototypes-and-evidence/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "77e6bf2e591074ec7aa8ccbad749577a2d32d10e56b524517d9c516be562ba6d",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-prototypes-and-evidence/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "3f749b602cf5e553e4b4f54ca79d54f393a1db840a1e379fff25516962e9093d",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-resources-and-endings/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "ea02d5ad8c1edd368d85873c3a92eec39a242e45929a5fdca3e252fc52708d9f",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/original-articles/race-resources-and-endings/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "c6e89247f51d58a9616059444e7b14e09c5c15c9b4ca5fc0e91ca2c532a97943",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-rules-and-components/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "1fd2e77ad919ef7714c60f6250bf4d16cb65279321ae2cc158a10ba027c4267c",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-rules-and-components/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "699e645d92cf0472c98f7a7601102f8b1df929964f913ec2fdee717d4a3e4e34",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-rules-and-play/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "55e0bd0e596fe770bbd96c344220db2a5ffed41db6993b760f247300048d3815",
+      "advisoryCount": 2
+    },
+    {
+      "file": "content/original-articles/race-rules-and-play/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "65d8a3b776221d8c7faf6e1e7631bfe3dc2c5920c66a9ab8f5c851944433f975",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-share-a-playable-version/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "939f0e749fcb271554a601ef12c563ffbcc026830e36de375c6f889ef121d12f",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-share-a-playable-version/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "71f9133e149647268151e140962c111ba5515c0656635e41c443a9cd6f616b7c",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-space-and-opportunity/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "3e9ee7de188d218ac7ac54c4cdb0b5f7eec73616575e1522a60d183cb3504be3",
+      "advisoryCount": 2
+    },
+    {
+      "file": "content/original-articles/race-space-and-opportunity/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "893ba086dac426a01ba3c0a0b5dfed082e877b620d6feab56019521aeec0c22c",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-state-and-resolution/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "a7e04823231fc812f3a538af476e99b5d46830db4f58856e33aab9406f11614a",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/original-articles/race-state-and-resolution/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "73f9f085fabaee70c97b9b9450b4dd2c9f356704ef1971657bd9c7418a4fadf9",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-stories-and-models/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "6f574962c5d31ca28434a99d6124e074b1ddfbd7f93c017f3e3b5600a6095207",
+      "advisoryCount": 2
+    },
+    {
+      "file": "content/original-articles/race-stories-and-models/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "af621e611e0b2f9d5a92c6086f98d83c1251d70c1f75d7fe3bdfd14d740bcc19",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-theme-and-emotion/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "fa2eea021ec76195d7935d521c0b100d6fa8b2b6450fb4bccd1a8f9bbbeea8ae",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-theme-and-emotion/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "074a3d0f1e71e76d1c5a7150470e4c311c1ed7a89c628a7de121447dc58cc3dd",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/race-time-and-interaction/en.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "e996cc62a2edc61965523bc917f8d04b6ce6999fbfe36cfc0aa3ae0e7cf4c0bb",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/original-articles/race-time-and-interaction/zh-CN.md",
+      "review": "正文逐章修订（含段落推进、小节、开头结尾）；双语核对",
+      "changed": true,
+      "sha256": "8bf0bbe2a8d0190f9f932ba5dea0d4dab24d7ed2471d23fac5114a8f0be845a8",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-access-and-participation/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "d74aeb3ca4254e108a0fbb3f2d6047b4039a84679638f2453a657127dcd7cc75",
+      "advisoryCount": 6
+    },
+    {
+      "file": "content/original-articles/reading-access-and-participation/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "a98b586e899c61e8343b6eaeac85131602873460bc55fda2b8b685c7f78fd3c3",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-balance-and-player-count/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "c4adf4dbd85b33159cc5f229ec91f342f99e69f2487f1e89607bdf5cc7046b31",
+      "advisoryCount": 4
+    },
+    {
+      "file": "content/original-articles/reading-balance-and-player-count/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "89c70b90bebafcf05b56d76448dcd46ea27b121b6692bac29e8529e76180ced3",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-choices-and-agency/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "92f6019b78a9db20f4c3d2850c013e7a734b7ba035a6beec745f15fffc8b00eb",
+      "advisoryCount": 5
+    },
+    {
+      "file": "content/original-articles/reading-choices-and-agency/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "07142cb2593274d993e96616a41f04dd1d75697378159c2a8add65e4976e0f30",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-combine-mechanisms/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "42ca6d516c28b8371a122f8ffa9d5238dba155e24a3a83e0b660546f12c882c8",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/original-articles/reading-combine-mechanisms/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "a22e8ffbe0de1cfd1ed81d8fb8d6eff8bad98973db16b87da1ddc28a47fc4567",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-cooperation-and-conflict/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "d84b7b30fc7fada82077f398772d421348225bc9ea8b14af667b9fd7e5ec4e72",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/original-articles/reading-cooperation-and-conflict/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "a9cea481a4d1c2aad4deef1058e61848fc3d8d1263ea10313d8d3035eff82c73",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-core-actions/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "38a65c3a1bd7b79f323ee5a3720536753ef11b9fa79a3d86924ad3c7a4b99daf",
+      "advisoryCount": 4
+    },
+    {
+      "file": "content/original-articles/reading-core-actions/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "0708ebd73fb551f697484ccffb3d1d203e784fa3ac8e94f480a1390886d4cc09",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-design-an-economy/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "37074918f16fd764ca3348c07ed3ff40a94242826740ec1dae5bc8229ea7d746",
+      "advisoryCount": 4
+    },
+    {
+      "file": "content/original-articles/reading-design-an-economy/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "591067c77e484b8071078b43bbd3d7dccdffd2e0155cb1fd73551f5a711ede6a",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-design-judgment/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "1660e9246178c9c90f6fad3db6b05f0dfef6c283eb11635e6486eab8c48febca",
+      "advisoryCount": 2
+    },
+    {
+      "file": "content/original-articles/reading-design-judgment/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "7071d4183d53751a7a8dc62108f4d7f9f17d2416ec86bbe05a2e862f88f9a9df",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-diagnose-feedback/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "367fc18bb94aa38e81d48cdadefaad14ed77593f8c4a67c621879e645dd1f8bb",
+      "advisoryCount": 5
+    },
+    {
+      "file": "content/original-articles/reading-diagnose-feedback/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "691a6c1b6fa4886911b34c34f388075e9fd05ace8d3622f59a6f95cfc0d1cb4b",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-first-design-brief/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "f96879c986e173c32a331b714f2e651ef4c90a1252ccdf7ba6f7570f4b8aad9d",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-first-design-brief/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "4995a85417effaa310250eedcd47d0d7df6d60615a3bc238787690ed9ac4d802",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-goals-and-pacing/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "f935a55817e7fe01f260f0ae041d197822faad3157d35c1dd6935b9f63de4c6c",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/original-articles/reading-goals-and-pacing/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "26d8f5cefebf6ed2544d14c815053be74be6780e4f0fc402298fd2fe656ea811",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-ideas-under-constraints/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "fa6e4d94034a6a554a742e2e1e09c684a872ab00725156d11748e9b27c8f8c02",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/original-articles/reading-ideas-under-constraints/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "7c5c2c2027fbf7130d366109bb5f58abfc5a3ff5b9858a684ff9e839b4d2c7c8",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-independent-rules-test/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "0895fd10dd0ad635a8a6c6bf8b08c7c115f3c3360d7e98d9ed11b98e28d3fa44",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/original-articles/reading-independent-rules-test/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "8ff29a26aa67d9e78c28f76be51688fc1cd8f78bfa3e1a9d679dfaaa5699ed7e",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-information-and-randomness/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "ee70df1ad94bf600012cb63b80e1c1f7faa63769858a05c7cbde57b56a75e2da",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/original-articles/reading-information-and-randomness/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "3eac80f6c95c293d6a6796f77455e98bf4cc405d8fc8388940bb4400a891928c",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-observe-a-game/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "5cc919b2035b4751f74b56f5c2361fee5ea8582bc1f93c78e02189816d5a8362",
+      "advisoryCount": 2
+    },
+    {
+      "file": "content/original-articles/reading-observe-a-game/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "6f48b0337b395a21710f4b678789e595a76c39bf49ddd54693aff83e158aa201",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-plan-a-playtest/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "abbbd88174cd75982d4fbe192637085ee9bcc54a1c33f47515b7b3e3cb66f5e2",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-plan-a-playtest/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "41b085921432bf35d25f8d623e55427c3d9c3b871d8835559a1a69d01238f847",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-players-and-context/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "a7b663a0d295b2d38e024bdd6c7bcc5378911fc8f982a2714816f4ba6f6790e4",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/original-articles/reading-players-and-context/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "93266bcccdbecdb2d77b4cb6f780f3cb1a909c6400b6cffc63949cf0df7e36cc",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-prototype-for-a-question/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "8b37d880358b88bfef822f486c03f5e7f5f506b9b5f8e2271e78ff27c6646f8f",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/original-articles/reading-prototype-for-a-question/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "4b92ac19b5ac57b27f753d8480a20790d87e48ad5acea135aa89f82c3b13c804",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-prototypes-and-evidence/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "e6a6c44f7158c555dca3e594fe4f598b54d3ecd7f01bff8756612d4a00511931",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/original-articles/reading-prototypes-and-evidence/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "536c7b7b2a8b5d9961d3c88148ba1187bd5470312d3587bbda2778fd3b6da43f",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-resources-and-endings/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "493f54e6b1ffa2f4bf320a2786a89b6d199b66efd5cbae7e79b9d715985f65a0",
+      "advisoryCount": 4
+    },
+    {
+      "file": "content/original-articles/reading-resources-and-endings/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "99639c5c18113faa787c3f21841aacbf55454dda350a51b7fa91e5141ad6fde0",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-rules-and-components/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "d5a450856f615ea1817f7ae622b7d3d01f456be37fa6652e3321edf38ed045de",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-rules-and-components/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "64c9bab07d2e32fe2b353b5eefa096b895b94288347fc20b0697132d30529afd",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-rules-and-play/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "9bb98ecdc0dec7139f220bf72a16632dab0f92de72a8acfbabc951de7f8fa15b",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/original-articles/reading-rules-and-play/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "bbaf765ec2948caf077efa822823c5db5443a2c292a464027da3d800e120cdcc",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-share-a-playable-version/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "8365570c639a7dc3d7a43bd4382cf16d61443f13fc5501ba2e1eed78cb287197",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/original-articles/reading-share-a-playable-version/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "63038ba120a7b62b6f26e3b5b258adc4c0204d33b3391fd61fba3d278c33265c",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-space-and-opportunity/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "f1921fc828625aeb19cdf45ba5163001ddb8531f182ca4f404440eaa26eb2312",
+      "advisoryCount": 2
+    },
+    {
+      "file": "content/original-articles/reading-space-and-opportunity/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "2905fa1db1db93e971b4b76a70c843bfb30988beb5e29a2e872e60f3b0906ec2",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-state-and-resolution/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "c3181d1cc48b5dea89c53c11909f823468632eeac35edf00d068f53ee93a1458",
+      "advisoryCount": 4
+    },
+    {
+      "file": "content/original-articles/reading-state-and-resolution/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "c47899523ffa150e9acb9186198ec6d7ad96ecef888aa7cdc78184e3872d2477",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-stories-and-models/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "3bffbb50fa2913f1129a7ac4aac3b2daec10e8a264f78898958246280ca9e514",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-stories-and-models/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "ef95439d63c5432bb8f89c6f0e64a8491f45653c6b977490955975fece18eedd",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-theme-and-emotion/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "596a1989dbb7b88cb48b464216c99d8ca417022081759cb65f9a1cfc73b4db14",
+      "advisoryCount": 2
+    },
+    {
+      "file": "content/original-articles/reading-theme-and-emotion/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "f2accae539d60bd96ffd97d04050cf42a9d668fb66f0f4a38851c23cb93bb5d9",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/reading-time-and-interaction/en.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "47b9387dc7d3057852929082e1da729b1278201b9a8565b76b7cbc3b97286aef",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/original-articles/reading-time-and-interaction/zh-CN.md",
+      "review": "结尾与章节衔接修订；规则正文保留",
+      "changed": true,
+      "sha256": "d438daac112a702e99135dc100e9ec4a723102dfcd2f5dad26978df30bc6239c",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/rewards-and-reasons/en.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "638f6113ed0bb3d984d5d9d2f1e8f0aa65a08c8be38c3a257cac51b776e39b55",
+      "advisoryCount": 3
+    },
+    {
+      "file": "content/original-articles/rewards-and-reasons/zh-CN.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "72ba8cff6165a79043f7a4e95c017830d7694fe4de6e457cc95e6a28d4138fc0",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/when-feedback-disagrees/en.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "e9fa40189c169efe72ebcd69a3aa8fdae2068d7f97639421e76283d8d77f6d74",
+      "advisoryCount": 1
+    },
+    {
+      "file": "content/original-articles/when-feedback-disagrees/zh-CN.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "289b1f8df1beff53759ec0b984a620ffaa5c3b4140eaf6813c1d6c6f9bf96b2c",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/when-options-matter/en.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "03b0e0bd379ce53dd99a3f89bde549a77cd3aa9e0f48302382e2edd9323b160f",
+      "advisoryCount": 6
+    },
+    {
+      "file": "content/original-articles/when-options-matter/zh-CN.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "b9937de503977bf410990b6ec743d8076a7f85d6b876373a9435a784b0c97758",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/when-players-cannot-meet/en.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "b042e0e15de9195b4663708aa12388e18669fc8b2eb478a9050f31d43c2e6600",
+      "advisoryCount": 2
+    },
+    {
+      "file": "content/original-articles/when-players-cannot-meet/zh-CN.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "3c36fbda6cd73346e5077626494ba9d5478cbb3a8cb7d8bced68e1428d1a3a64",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/when-players-run-the-system/en.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "07880861a2901e88230517bccd80b9301083ff6267f79b2c52e61a015508fb0b",
+      "advisoryCount": 5
+    },
+    {
+      "file": "content/original-articles/when-players-run-the-system/zh-CN.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "132918203c5a2efe0d43b82345cf43eb60fa0ae2caae6fa292ff31566ae8a25d",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/when-randomness-helps/en.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "892f7f5df0c7f3d46608e0378997694cfc1769d5eaea4ff5f2858b304203734d",
+      "advisoryCount": 8
+    },
+    {
+      "file": "content/original-articles/when-randomness-helps/zh-CN.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "6f7a014f990b4ed33a65cdcc495489fc9875cc501bcc6300c208be0c91298325",
+      "advisoryCount": 0
+    },
+    {
+      "file": "content/original-articles/where-resources-go/en.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "821b17fa6ba6f7608d34396d3431f304c10190bd623cc34bdae7779b8886ed65",
+      "advisoryCount": 5
+    },
+    {
+      "file": "content/original-articles/where-resources-go/zh-CN.md",
+      "review": "独立开头修订；部分结尾修订；机制正文保留",
+      "changed": true,
+      "sha256": "fbe2bcb2f7b8749ef92a63c85eea246f96274eb9cc1e1fc1e92671bcff8766eb",
+      "advisoryCount": 0
+    }
+  ]
+}

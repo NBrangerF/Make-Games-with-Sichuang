@@ -8,8 +8,8 @@ const data = buildReadingIndexes()
 const indexes = Object.fromEntries(Object.entries(data).map(([s, d]) => [s, prepareSearchIndex(d, s)]))
 const read = file => JSON.parse(fs.readFileSync(new URL('../'+file, import.meta.url), 'utf8'))
 const cases = read('content/design-case-ids.json').map(id => read(`content/design-cases/${id}/meta.json`))
-assert.deepEqual(Object.fromEntries(Object.entries(data).map(([s,d])=>[s,d.documents.length])), { library:96, articles:41, cases:18 })
-assert.equal(Object.values(data).reduce((n,d)=>n+d.documents.length*2,0),310)
+assert.deepEqual(Object.fromEntries(Object.entries(data).map(([s,d])=>[s,d.documents.length])), { library:96, articles:69, cases:18 })
+assert.equal(Object.values(data).reduce((n,d)=>n+d.documents.length*2,0),366)
 for (const [surface,id,query] of [['library','worker-placement','later retrieval'],['library','cooperative-structure','必须一次全额支付'],['library','public-private-scoring','unexamined'],['articles','reading-rules-and-play','spare planks'],['articles','reading-rules-and-play','十六块'],['articles','reading-rules-and-play','十六块 stepping stone']]) {
   const document = indexes[surface].get(id)
   assert.ok(matchesSearch('',query,document), `${surface}/${id}: ${query}`)
@@ -45,4 +45,4 @@ for (const mutate of [d=>d.version=2,d=>d.surface='cases',d=>d.documents.push(d.
 // Literal punctuation is data; no regex syntax or HTML execution is needed to match.
 const fixture=prepareSearchIndex({version:1,surface:'articles',documents:[{id:'literal',passages:[{language:'en',text:'A [x] <script> & (a+b)? literal.'},{language:'zh-CN',text:'原样字符。'}]}]},'articles').get('literal')
 assert.ok(matchesSearch('', '[x] (a+b)?',fixture));assert.equal(matchesSearch('', '.*',fixture),false)
-console.log('Full-text search PASS:310 language bodies; original body-only and bilingual queries; perspective isolation, introduction fallback, real section IDs, exact excerpts, literal punctuation, malformed index rejection.')
+console.log('Full-text search PASS:366 language bodies; original body-only and bilingual queries; perspective isolation, introduction fallback, real section IDs, exact excerpts, literal punctuation, malformed index rejection.')

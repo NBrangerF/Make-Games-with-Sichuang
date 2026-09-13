@@ -28,4 +28,4 @@ So we start with collecting: an animal on the bank obtains planks that either an
 
 The base game chooses these answers: collect only on the starting bank, obtain two new planks, use the whole turn to collect, and never reuse spent planks. These conditions make preparation helpful while giving it a cost in time. Unlimited free collection would create a different planning problem.
 
-The other ideas can remain candidates for later comparison. They do not have to become extra rules in the next chapter. For now, we carry forward one relationship: how can we write collecting and moving so precisely that another person can perform them and the paper animals can begin their crossing?
+Keep the other ideas on their own sheets. This draft continues with collecting and moving: who can do each, what it needs, and what it leaves behind. With those actions written, the paper animals can begin crossing.

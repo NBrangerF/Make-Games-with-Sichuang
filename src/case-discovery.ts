@@ -24,7 +24,7 @@ export function searchCases(entries: DesignCase[], { query, category, perspectiv
     if ((category && entry.category !== category) || (authorOnly && !entry.designerAccount)) return []
     const candidates = entry.sections.filter(section => !perspective || section.topics.includes(perspective))
     if (!candidates.length) return []
-    const base = normalize([entry.id, entry.game, entry.designerAccount?.author || ''].join(' '))
+    const base = normalize([entry.id, entry.game, ...Object.values(entry.gameTitle), ...entry.gameAliases, entry.designerAccount?.author || ''].join(' '))
     const sections = candidates.filter(section => {
       const text = `${base} ${normalize([section.title.en, section.title['zh-CN'], ...section.topics.flatMap(topic => Object.values(casePerspectiveLabels[topic]))].join(' '))}`
       return matchesSearch(text, query, index?.get(entry.id), [section.id])

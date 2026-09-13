@@ -3,12 +3,12 @@
   "category": "game",
   "game": "Ticket to Ride",
   "title": {
-    "zh-CN": "Ticket to Ride：牌凑齐了，为什么路还不一定修得成？",
+    "zh-CN": "铁路环游：牌凑齐了，为什么路还不一定修得成？",
     "en": "Ticket to Ride: Why Can a Complete Hand Still Leave You Without a Route?"
   },
   "summary": {
-    "zh-CN": "用真实地图上的三组局面，拆开双线容量、万能牌的取得方式，以及最后一回合中线路分与车票负分的关系；对照作者的开发回忆。",
-    "en": "Three worked positions on the original map separate double-route capacity, locomotive acquisition, and final-turn route and ticket scoring, alongside the designer’s development account."
+    "zh-CN": "一小段铁路可能省下几轮绕路；一张车票完成时，也会同时消掉负分。",
+    "en": "A short route can save turns of detouring. Completing a ticket also removes its penalty."
   },
   "chapterIds": [
     "reading-choices-and-agency",
@@ -94,5 +94,14 @@
     "author": "Alan R. Moon",
     "sectionId": "designer-notes",
     "sourceUrl": "https://d1vzi28wh99zvq.cloudfront.net/pdf_previews/147192-sample.pdf"
-  }
+  },
+  "gameTitle": {
+    "zh-CN": "铁路环游",
+    "en": "Ticket to Ride"
+  },
+  "gameAliases": [
+    "车票之旅",
+    "铁路之旅",
+    "铁道任务"
+  ]
 }

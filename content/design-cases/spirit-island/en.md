@@ -1,6 +1,6 @@
 # Spirit Island: Why Can the Position Improve Without Destroying an Enemy?
 
-Pushing Invaders next door, keeping Dahan alive through an attack, or removing the last Town may look like small changes to a few pieces. In *Spirit Island*, those changes also affect the enemy's production opportunities, the source of a counterattack, and even the game's victory condition. A designer needs to follow the resolution beyond counting enemies removed.
+Push an Invader next door and a land may avoid a future Build. Help Dahan survive an attack and they can strike back. In Spirit Island, a small move or a defence can keep affecting later steps. Counting only the pieces removed now misses that reach.
 
 This article uses the English base rulebook linked from the [publisher's product page](https://shop.greaterthangames.com/products/spirit-island): 32 pages, with a 2016–2018 copyright on p.28 and no explicit printing identified. It excludes expansions, Adversaries, Scenarios, the thematic map, and Blight Cards. We also apply the [official FAQ's starting-Blight correction](https://querki.net/raw/darker/spirit-island-faq/Setup): the pool starts with 5 times the player count, plus 1, giving six Blight solo or eleven with two players. This is one extra overall, not one extra per player. Initial Blight on the Island comes separately from the box.
 

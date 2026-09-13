@@ -42,4 +42,4 @@ These comparisons identify different effects. Reinforcement costs extra material
 
 Adding a plank to the three-player version makes one plan possible again; it does not establish that three people will prefer playing that way. Equal ability numbers also do not ensure that everyone feels equally involved. Later chapters on observation and revision will pursue those questions. Here we first identify what is being compared and the clear consequences of its rules.
 
-Return now to the basic two-player version. The same collect action changes plank quantity and may also be understood as preparing, helping, or delaying. The next chapter connects actions with what a game depicts, examining how its story helps people understand what they just did.
+Return to the two-player base game and make the fairness question specific: who has actions left, who can add planks, and who must wait? Map those opportunities, then hear how both people describe this attempt at cooperating.

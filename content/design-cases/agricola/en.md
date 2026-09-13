@@ -1,6 +1,6 @@
 # Agricola: Why Is Another Person More Than Another Action?
 
-A farm can contain rooms, fields, and animals. The design problem is how these things produce decisions. Why might taking more wood now postpone construction? Why can gaining a worker make the next harvest more demanding?
+You want more wood for another room, but an opponent might claim the building space first. Once the room is ready, another family member also means another mouth to feed at harvest. Agricola puts these plans into the same limited set of actions, making their order matter.
 
 This article uses the two-player base rules of Agricola’s 2016 revised edition, separately from the 2007 edition, solo rules, and the variant without hand cards. [Lookout’s revised-edition page](https://www.lookout-spiele.de/en/games/agricolare.html) identifies the edition and designer Uwe Rosenberg. Our three situations are independently constructed local examples, not playtest reports or the book’s examples. Hand cards remain unplayed, with no special effects changing these resolutions. You can compare the situations without knowing the whole game first.
 

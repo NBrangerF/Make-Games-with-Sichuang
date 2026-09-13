@@ -3,6 +3,342 @@
   "publicationStatus": "local-candidate",
   "articles": [
     {
+      "id": "race-rules-and-play",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "差一点到终点，为什么又滑了回去？",
+        "en": "Almost at the finish—then back down a snake"
+      },
+      "summary": {
+        "zh-CN": "从一次滑落开始，画好二十四格棋盘，走完一回合，看看规则与桌边的反应。",
+        "en": "Draw a small board, follow a turn, and look at what a setback means to the people playing."
+      }
+    },
+    {
+      "id": "race-observe-a-game",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "他们在等骰子，还是在等游戏结束？",
+        "en": "Waiting for the die—or waiting for the game to end?"
+      },
+      "summary": {
+        "zh-CN": "棋子退回去了，玩家停了手。先留下动作和原话，再问他刚才在想什么。",
+        "en": "A pawn slides back and a player pauses. Keep the actions and words before asking what the pause meant."
+      }
+    },
+    {
+      "id": "race-players-and-context",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "熟悉《蛇梯棋》，不等于熟悉这张桌子",
+        "en": "Knowing Snakes and Ladders does not tell us who is at the table"
+      },
+      "summary": {
+        "zh-CN": "朋友十分钟后要走，这次该请她试什么？从时间、桌面和操作方式安排一次邀请。",
+        "en": "Your friend leaves in ten minutes. Plan what to try, where to sit, and how to handle the pieces."
+      }
+    },
+    {
+      "id": "race-first-design-brief",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "给这场小赛跑写一句方向",
+        "en": "Give the little race a direction"
+      },
+      "summary": {
+        "zh-CN": "多一颗骰子，还是加几张卡？先说清想让玩家多做什么，再决定做哪份草稿。",
+        "en": "Another die or a few cards? Say what you want players to do differently, then choose a draft to make."
+      }
+    },
+    {
+      "id": "race-ideas-under-constraints",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "只多一个小决定，可以怎样设计？",
+        "en": "How many ways can we add one small decision?"
+      },
+      "summary": {
+        "zh-CN": "把选骰、重掷和放宽终点分开试，看它们各自改变了哪一个决定。",
+        "en": "Try choosing, rerolling, and a looser finish separately to see what each changes."
+      }
+    },
+    {
+      "id": "race-core-actions",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "“选一枚骰子”，怎样才算一个完整动作？",
+        "en": "What makes “choose a die” a complete action?"
+      },
+      "summary": {
+        "zh-CN": "从“我选 2”写到棋子移完、轮到别人，让一句规则成为别人能照做的动作。",
+        "en": "Follow “I choose 2” through movement and passing the turn, until the instruction is complete."
+      }
+    },
+    {
+      "id": "race-state-and-resolution",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "棋子没有移动，游戏也可能已经变了",
+        "en": "The pawn can stay still while the game changes"
+      },
+      "summary": {
+        "zh-CN": "棋子留在 23，回合却已经过去。用几个边界局面检查结算顺序。",
+        "en": "A pawn stays at 23, but the turn has passed. Use boundary positions to check the sequence."
+      }
+    },
+    {
+      "id": "race-choices-and-agency",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "两个点数，是否就有一个值得想的选择？",
+        "en": "Do two numbers always create a worthwhile decision?"
+      },
+      "summary": {
+        "zh-CN": "有时两个点数没差别，有时玩家没看出差别。两种问题需要不同的改法。",
+        "en": "Sometimes the results match; sometimes a player misses their difference. Each calls for a different revision."
+      }
+    },
+    {
+      "id": "race-information-and-randomness",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "先看见骰子，才多了什么机会？",
+        "en": "What becomes possible when you see the dice first?"
+      },
+      "summary": {
+        "zh-CN": "先选再揭晓，与看完再选有何不同？再算一算，在 23 等到 1 的机会。",
+        "en": "Compare choosing before and after a reveal, then calculate the chance of getting a 1 at space 23."
+      }
+    },
+    {
+      "id": "race-resources-and-endings",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "还有重掷标记，就能更快结束吗？",
+        "en": "Do spare reroll tokens guarantee a quicker finish?"
+      },
+      "summary": {
+        "zh-CN": "花一枚标记，再试一次运气。跟着有限的重掷机会，看眼前结果与未来打算怎样相遇。",
+        "en": "Spend a token to try again. Follow a limited supply of rerolls through present choices and future plans."
+      }
+    },
+    {
+      "id": "race-space-and-opportunity",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "离终点更近，就一定走得更好吗？",
+        "en": "Does being closer to the finish always mean a better move?"
+      },
+      "summary": {
+        "zh-CN": "点数指向一个落点，梯子又把你送到别处。画出路线，看看位置怎样产生机会。",
+        "en": "A die gives a landing; a ladder sends you farther. Draw the route to see how position creates opportunities."
+      }
+    },
+    {
+      "id": "race-time-and-interaction",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "轮到别人时，我还在这局游戏里吗？",
+        "en": "Am I still involved when it is someone else's turn?"
+      },
+      "summary": {
+        "zh-CN": "轮到别人时，你在等什么？比较轮流与同时行动，找出时间花在了哪里。",
+        "en": "What are you waiting for during another person’s turn? Compare alternating and simultaneous play."
+      }
+    },
+    {
+      "id": "race-design-an-economy",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "一枚重掷标记，从哪里来，又花到哪里去？",
+        "en": "Where does a reroll token come from, and where does it go?"
+      },
+      "summary": {
+        "zh-CN": "用完就没了，还是到补给格能再领？沿一枚标记的去向看一个小经济系统。",
+        "en": "Gone when spent, or available again at a supply space? Follow one token through a small economy."
+      }
+    },
+    {
+      "id": "race-goals-and-pacing",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "最后一格，为什么可能比前面更漫长？",
+        "en": "Why can the final space feel longer than the rest?"
+      },
+      "summary": {
+        "zh-CN": "只差一格，却迟迟等不到 1。换一句终点规则，看看结尾的等待与悬念怎样变化。",
+        "en": "One space left, still no 1. Change the finish rule and see what happens to the wait and the suspense."
+      }
+    },
+    {
+      "id": "race-combine-mechanisms",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "两个好点子，放在一起会更好吗？",
+        "en": "Do two useful ideas become better together?"
+      },
+      "summary": {
+        "zh-CN": "选骰和重掷放在一起，先做哪一步？走一回合，找出组合后新增的问题。",
+        "en": "Combine selection and rerolling. Which comes first? Follow a turn to find the new questions."
+      }
+    },
+    {
+      "id": "race-cooperation-and-conflict",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "大家一起赢，就已经是在合作了吗？",
+        "en": "Does winning together already mean cooperating?"
+      },
+      "summary": {
+        "zh-CN": "两人一起赢，已经到达的那个人却只能等。共同目标还需要怎样的帮助动作？",
+        "en": "Both must finish, but the first to arrive can only wait. What helping action might the shared goal need?"
+      }
+    },
+    {
+      "id": "race-balance-and-player-count",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "规则一样，机会就一样吗？",
+        "en": "Do identical rules provide identical opportunities?"
+      },
+      "summary": {
+        "zh-CN": "相同的骰子，未必带来相同的机会。先看行动顺序，再试多坐一位玩家。",
+        "en": "Identical dice do not settle opportunities. Examine turn order, then try seating a third player."
+      }
+    },
+    {
+      "id": "race-theme-and-emotion",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "同样退十格，为什么可能讲出不同的故事？",
+        "en": "Why might the same setback tell a different story?"
+      },
+      "summary": {
+        "zh-CN": "同样从 14 回到 4，画成蛇或山坡，会让人怎样描述这一步？",
+        "en": "The same move sends you from 14 to 4. How might a snake or a hillside change its description?"
+      }
+    },
+    {
+      "id": "race-stories-and-models",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "谁在跑，谁在赢，谁在讲这个故事？",
+        "en": "Who is racing, who is winning, and who tells the story?"
+      },
+      "summary": {
+        "zh-CN": "领先、跌落、追回来，一串移动能讲成故事；赛道上的领先者也未必就是赢家。",
+        "en": "A sequence of climbs and setbacks can become a story. The leading racer need not be the winning player."
+      }
+    },
+    {
+      "id": "race-rules-and-components",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "两颗骰子放在桌上，规则怎样让人只走一次？",
+        "en": "With two dice on the table, how do the rules produce one move?"
+      },
+      "summary": {
+        "zh-CN": "两颗骰子只选一颗，说明却可能让人相加。把关键提示放到操作发生的地方。",
+        "en": "Two dice invite one choice, but can suggest addition. Put the reminder beside the action."
+      }
+    },
+    {
+      "id": "race-access-and-participation",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "看懂了选择，就一定能参与吗？",
+        "en": "Can you make the choice you understand?"
+      },
+      "summary": {
+        "zh-CN": "想选 2，却够不到棋子。怎样帮人完成操作，同时把决定留给他？",
+        "en": "A player wants the 2 but cannot reach the pawn. How can help preserve that decision?"
+      }
+    },
+    {
+      "id": "race-prototype-for-a-question",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "一张小棋盘，先回答哪一个问题？",
+        "en": "What should one small board answer first?"
+      },
+      "summary": {
+        "zh-CN": "先做一张能检查选骰的棋盘，保留必要细节，再决定哪里值得画得更细。",
+        "en": "Make a board that can test the die choice, keeping the necessary details before adding polish."
+      }
+    },
+    {
+      "id": "race-plan-a-playtest",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "怎样安排一次不会问散的试玩？",
+        "en": "Plan a playtest around one question"
+      },
+      "summary": {
+        "zh-CN": "材料、一句任务和一张记录纸，让第一次试玩有个明确的开始。",
+        "en": "Materials, one task, and a recording sheet give the first playtest a clear start."
+      }
+    },
+    {
+      "id": "race-prototypes-and-evidence",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "一次顺利移动，能证明什么？",
+        "en": "What does one successful move tell us?"
+      },
+      "summary": {
+        "zh-CN": "玩家第二次会走了，中间却听过你的解释。回看记录，决定下一稿该补哪句话。",
+        "en": "The second move works after your explanation. Revisit the record to decide what the next sheet needs."
+      }
+    },
+    {
+      "id": "race-diagnose-feedback",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "“最后太拖了”，该改哪条规则？",
+        "en": "“The ending drags.” Which rule should change?"
+      },
+      "summary": {
+        "zh-CN": "“太拖了”可能指三种等待。先找到那一段，再挑一条规则来改。",
+        "en": "“Too slow” can describe different waits. Find the passage before choosing a rule to change."
+      }
+    },
+    {
+      "id": "race-design-judgment",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "为什么这一版只留下两颗骰子？",
+        "en": "Why keep only the two dice?"
+      },
+      "summary": {
+        "zh-CN": "几份草稿都值得研究，交付时却要选定一份。回到简报，留下这一稿需要的规则。",
+        "en": "Several drafts are worth studying, but the handoff needs one. Return to the brief and choose its rules."
+      }
+    },
+    {
+      "id": "race-independent-rules-test",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "把规则交出去，你不在旁边也能开始吗？",
+        "en": "Can someone start without you beside them?"
+      },
+      "summary": {
+        "zh-CN": "完整的棋盘与规则交到朋友手里，看看没有你的讲解，他们能否开始。",
+        "en": "Give a friend the complete board and rules, and see whether they can start without your explanation."
+      }
+    },
+    {
+      "id": "race-share-a-playable-version",
+      "contentVersion": "4.0.0",
+      "title": {
+        "zh-CN": "把这一版装好，交给下一位玩家",
+        "en": "Pack this version for the next player"
+      },
+      "summary": {
+        "zh-CN": "把同一版棋盘、规则与邀请装在一起，让下一位玩家能接着玩，也能帮你继续改。",
+        "en": "Pack matching rules, a board, and an invitation so the next player can begin and help with the next draft."
+      }
+    },
+    {
       "id": "reading-rules-and-play",
       "contentVersion": "3.0.0",
       "title": {

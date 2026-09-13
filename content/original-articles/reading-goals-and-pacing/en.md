@@ -38,4 +38,4 @@ Return once more to the basic game. At the start, the players arrange who stays 
 
 Rabbit waiting across the river for Hedgehog’s last step can show the completion of their shared success. Requiring two extra rounds after both arrive, without a new goal or action, would leave them merely counting rounds. Checking for the ending immediately after the second arrival connects the completing action to the close of the game.
 
-We can now see how sources, action costs, and stopping points change a plan together. The next chapter puts two rules into the same scene and follows how they help each other—and how they might remove a cost that originally mattered.
+Place the ending rule beside a plan and check a collection action again. The same two planks support different plans with three rounds left or only one. The goal and deadline are already shaping this move.

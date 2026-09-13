@@ -3,12 +3,12 @@
   "category": "mechanism",
   "game": "For Sale",
   "title": {
-    "zh-CN": "For Sale：买到最好的房子，为什么还可能少赚？",
+    "zh-CN": "地产达人：买到最好的房子，为什么还可能少赚？",
     "en": "For Sale: Why Can Buying the Best House Leave You with Less?"
   },
   "summary": {
-    "zh-CN": "用三个可复算局面，分析退拍如何改变后手的所得、同时出售为何取决于相对名次，以及现金变成一次性手牌后的终局取舍。",
-    "en": "Three worked situations examine how passing changes others’ fallback, why simultaneous sales depend on relative rank, and how turning cash into cards affects final wealth."
+    "zh-CN": "最大房产卖到最大支票，未必留下最多的钱。把购买与出售接起来算一次。",
+    "en": "The biggest house and cheque may not leave you richest. Follow a purchase through to its sale."
   },
   "chapterIds": [
     "reading-state-and-resolution",
@@ -69,5 +69,13 @@
         "en": "Angle three: cash becomes a supply of cards that can each be used once"
       }
     }
+  ],
+  "gameTitle": {
+    "zh-CN": "地产达人",
+    "en": "For Sale"
+  },
+  "gameAliases": [
+    "房地产拍卖",
+    "地产拍卖"
   ]
 }

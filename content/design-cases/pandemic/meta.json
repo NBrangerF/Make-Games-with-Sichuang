@@ -7,8 +7,8 @@
     "en": "Pandemic: clear the cubes first, or bring the cards together?"
   },
   "summary": {
-    "zh-CN": "从行动顺序、合作代价与决定权、感染牌的重复压力三个角度，配合完整算例和 Leacock 的原型回顾。",
-    "en": "Examine action order, contribution and decision rights, and recurring infection pressure, with worked comparisons and Leacock’s prototype account."
+    "zh-CN": "先接一张牌，再治疗；换个行动顺序，同样的回合可能做成不同的事。",
+    "en": "Take a card, then treat. Changing the order can change what the same turns accomplish."
   },
   "chapterIds": [
     "reading-core-actions",
@@ -91,5 +91,10 @@
     "author": "Matt Leacock",
     "sectionId": "designer-notes",
     "sourceUrl": "https://desktopgames.com.ua/games/4495/pandemic_10th_anniversary_rulebook_eng.pdf"
-  }
+  },
+  "gameTitle": {
+    "zh-CN": "瘟疫危机",
+    "en": "Pandemic"
+  },
+  "gameAliases": []
 }

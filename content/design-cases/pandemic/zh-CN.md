@@ -60,6 +60,6 @@ Matt Leacock 在 2018 年周年版规则第3页回忆：最早的原型使用简
 
 ## 规则与设计者来源
 
-- [Z-Man Games：Pandemic 英文基础规则](https://cdn.svc.asmodee.net/production-zman/uploads/2024/09/Pandemic_Rulebook.pdf)：第3—4页为行动、讨论与交牌，第5页可核对芝加哥和亚特兰大的连接，第6—8页为疫情、终局及角色能力；版权页为2013年。
-- [Z-Man Games：Pandemic 官方游戏页](https://www.zmangames.com/game/pandemic/)：基础游戏、共同胜负与角色的介绍。
+- [瘟疫危机｜Z-Man Games：Pandemic 英文基础规则](https://cdn.svc.asmodee.net/production-zman/uploads/2024/09/Pandemic_Rulebook.pdf)：第3—4页为行动、讨论与交牌，第5页可核对芝加哥和亚特兰大的连接，第6—8页为疫情、终局及角色能力；版权页为2013年。
+- [瘟疫危机｜Z-Man Games：Pandemic 官方游戏页](https://www.zmangames.com/game/pandemic/)：基础游戏、共同胜负与角色的介绍。
 - [Matt Leacock：A Word from the Designer，2018](https://desktopgames.com.ua/games/4495/pandemic_10th_anniversary_rulebook_eng.pdf)：出版方十周年版规则第3页，设计者署名回顾；原出版方文件当前无法直接下载，此链接为同一出版方文档的零售商镜像。只使用该页设计史，不混用周年版行动规则。

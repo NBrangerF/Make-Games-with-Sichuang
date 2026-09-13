@@ -34,4 +34,4 @@ Imagine Lin saying after a win, “Good thing you collected first.” Yu might f
 
 Making “praise your partner” a required action first creates a speaking requirement. It might encourage somebody to speak, or make somebody eager to finish reciting the line. Rules can arrange encounters, mutual needs, and opportunities for expression. They cannot choose people’s feelings for them.
 
-When designing a theme, follow a concrete relationship: what did the player do, what comparison did the goal and display suggest, and what else demanded attention? Treat feeling helped as something to learn about, rather than a promise already fulfilled. The next chapter examines which relationships the river picture includes and which it leaves outside.
+Look again at Hedgehog staying on the bank. The supply grew; the position stayed still. How do the picture, name, and shared goal lead someone to describe that step? Hear the player’s account before revising what you call the action.

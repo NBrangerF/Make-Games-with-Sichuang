@@ -1,6 +1,6 @@
 # One Friend Says “Too Slow,” Another Says “Too Rushed”
 
-When two friends offer opposing suggestions, whom should a designer listen to? Separating what happened, what each person said, and the changes they proposed may keep us from having to choose a side too quickly. We will use an independent repair-shop fragment to see how.
+“Too slow. Add a timer.” “I haven’t worked it out yet—why rush me?” Imagine hearing both after a playtest. Picking a side gives you little help with the next draft. Find the moment each friend is describing and see whether they are objecting to the same thing.
 
 Imagine players taking turns to repair cars. A player chooses a repair card, returns its required parts to the supply, then turns the car to its repaired side. We are considering only that procedure. One friend says, “The waiting takes forever. Add a timer.” Another objects, “I haven’t worked it out yet, and now you want to rush me?” This dialogue is invented, not a record of a real test.
 

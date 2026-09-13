@@ -26,4 +26,4 @@ The base game has no secret information. Different marks on the backs of planks 
 
 Likewise, to examine whether pieces are easy to pick up, use pieces close to the intended size and thickness. Replacing movement with spoken numbers would bypass the physical action. A future digital version that updates resources instantly might also have a different pace from moving each paper piece by hand. Checking rules on paper is useful without proving that digital interaction will feel the same.
 
-To decide how much detail this round needs, start with a specific sentence: “I want to see whether this person, with these materials and this situation, can do or understand this thing.” Preserve the parts that could affect the answer. Next we need to arrange who joins, how the session begins, and when to help or stop, so a playtest can address that question.
+Leave a sentence beside the prototype: “I want to see whether this person can do this task with these materials.” Make the parts that affect the answer, then stop building for now. Let an actual attempt show what needs attention next.

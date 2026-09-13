@@ -30,4 +30,4 @@ Both animals have arrived, so the players win immediately. Round 4 has also just
 
 This order belongs in the rules. It prevents the same situation producing opposite results because different people remember different sentences first. Once the order is clear, we can walk the draft from round 1 to the finish and check that each moment has a next step.
 
-We now have a draft that can run and reach a definite ending. Next comes another question: when players have two permitted actions, are both worth considering, or is there never a reason to choose one of them?
+Keep the action sequence beside the board and walk through another turn. Once both people reach the same result, they can turn their attention to choosing between moving and collecting.

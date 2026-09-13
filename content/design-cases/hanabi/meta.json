@@ -3,12 +3,12 @@
   "category": "theme",
   "game": "Hanabi",
   "title": {
-    "zh-CN": "Hanabi：大家看得见烟花，为什么我看不见自己的牌？",
+    "zh-CN": "花火：大家看得见烟花，为什么我看不见自己的牌？",
     "en": "Hanabi: Why Can Everyone See the Fireworks but Not Their Own Cards?"
   },
   "summary": {
-    "zh-CN": "从信息互补、关键牌的不可逆损失和组件记忆三个角度分析，并回到 Bauza 将反向手牌改为合作的开发记录。",
-    "en": "Examine complementary information, irreversible card loss, and component-based memory, with Bauza’s account of moving outward-facing hands into cooperation."
+    "zh-CN": "你看得见队友的牌，却要让他自己出。看提示、弃牌和桌面记忆怎样支持合作。",
+    "en": "You see a teammate’s cards, but they must play them. Follow clues, discards, and the table’s memory."
   },
   "chapterIds": [
     "reading-information-and-randomness",
@@ -92,5 +92,10 @@
     "author": "Antoine Bauza",
     "sectionId": "designer-notes",
     "sourceUrl": "https://www.antoinebauza.fr/?p=734"
-  }
+  },
+  "gameTitle": {
+    "zh-CN": "花火",
+    "en": "Hanabi"
+  },
+  "gameAliases": []
 }

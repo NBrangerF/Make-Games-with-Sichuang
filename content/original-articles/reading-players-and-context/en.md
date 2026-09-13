@@ -34,4 +34,4 @@ We can now describe a more useful starting point than “suitable for twelve-yea
 
 These conditions can change as we learn. If the friends can never arrive together, a different design might preserve the position and turns between visits. If people mainly want to watch a demonstration, the meeting could become an introduction they can leave when they wish. A changed situation can justify a changed direction without blaming people for failing to appear as expected.
 
-This provisional setting gives the next chapter a starting point: what do we want people to do, how much should we build first, and what still needs checking?
+Keep the place, time, and participants beside the draft. When preparing a new rule, check back: will it fit this table and this meeting, and give the people invited something they want to do?

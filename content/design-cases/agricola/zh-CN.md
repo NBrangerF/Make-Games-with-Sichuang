@@ -1,8 +1,8 @@
-# Agricola：多一个人，为什么不能只算多一次行动？
+# 农场主：多一个人，为什么不能只算多一次行动？
 
-一座农场可以有房间、田地和动物。设计上的问题却不只是把这些东西放上桌：玩家为什么需要在它们之间犹豫？为什么现在多拿一些木材，可能让扩建推迟？为什么增加劳动力，同时会使下一次收获更紧张？
+你想多拿一点木材，好给农场添一间房；可对手可能先占走扩建的位置。房间准备好以后，多一个家庭成员又意味着收获时多一张嘴要喂。《农场主》把这些打算挤在同一组行动机会里，让“先做哪件”一直值得考虑。
 
-本文固定使用《Agricola》2016修订版的双人基本规则。它与2007旧版、单人规则、无手牌变体分别看待；[Lookout 的修订版介绍](https://www.lookout-spiele.de/en/games/agricolare.html)可核对版本及作者 Uwe Rosenberg。下面三组都是本站构造的独立局部局面，不是实际试玩，也不沿用书中算例。手牌没有打出、没有特殊效果改变这些结算；不需要先熟悉整局才能比较。
+本文固定使用《农场主》（Agricola）2016修订版的双人基本规则。它与2007旧版、单人规则、无手牌变体分别看待；[Lookout 的修订版介绍](https://www.lookout-spiele.de/en/games/agricolare.html)可核对版本及作者 Uwe Rosenberg。下面三组都是本站构造的独立局部局面，不是实际试玩，也不沿用书中算例。手牌没有打出、没有特殊效果改变这些结算；不需要先熟悉整局才能比较。
 
 ## 角度一：桌上资源越积越多，行动机会仍只有一次
 
@@ -66,6 +66,6 @@
 
 ## 版本与来源
 
-- [Lookout：Agricola 2016修订版](https://www.lookout-spiele.de/en/games/agricolare.html)：版本、作者与修订说明；本篇不混用旧版及单人例外。
+- [农场主｜Lookout：Agricola 2016修订版](https://www.lookout-spiele.de/en/games/agricolare.html)：版本、作者与修订说明；本篇不混用旧版及单人例外。
 - [英文基本规则](https://www.lookout-spiele.de/upload/en_agricolare.html_Rules_Agricola-RE_EN.pdf)：第6—10页为本篇行动、增长、收获与壁炉依据；第12页为结束与版本内例外。
 - [英文附录](https://lookout-spiele.de/upload/en_agricolare.html_Appendix_Agricola-RE_EN.pdf)：第6—7页行动名称与数值，第10—11页开发致谢，第11页羊的计分门槛。页码均为PDF页序，也与纸面页码一致。

@@ -11,6 +11,8 @@ export type DesignCase = {
   id: string
   category: CaseCategory
   game: string
+  gameTitle: Record<ReadingLanguage, string>
+  gameAliases: string[]
   title: Record<ReadingLanguage, string>
   summary: Record<ReadingLanguage, string>
   chapterIds: string[]

@@ -1,6 +1,6 @@
 # Modern Art: Why Is a Painting’s Price Not Its Value?
 
-Lin has just sold a painting for 18. The number looks precise, but it does not tell us who gained how much. Where did the money go? Who acquired the painting? Where will its artist rank when the round ends? *Modern Art* helps us separate those questions before reconnecting them.
+Suppose Lin sells a painting for 18. A high price sounds promising, but who receives the payment, and what will the buyer get back at the end of the round? A change in the artist’s ranking can change the painting’s value. Modern Art connects these transactions over time.
 
 We use CMON’s currently linked English base rules, with four players and no Mystery Player variant. Reiner Knizia is the designer; see the [publisher’s page](https://www.cmon.com/products/modern-art/). Amounts use this edition’s game units: 1 represents a thousand dollars. The three independent comparisons below are our constructions. Cash is disclosed for calculation, although players hide it during play. These are neither complete games, optimal strategies, nor accounts of the designer’s development process.
 

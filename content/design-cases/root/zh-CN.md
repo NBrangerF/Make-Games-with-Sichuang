@@ -1,8 +1,8 @@
-# Root：同一张地图，为什么是三种不同的压力？
+# 茂林源记：同一张地图，为什么是三种不同的压力？
 
-猫族仓库里有木材，却不能拿来建造；鹰巢有兵力，却可能因为无法兑现一张牌而陷入动荡；森林联盟失去士兵后，仍可能留住影响力。理解《Root》的非对称设计，需要同时看资源在哪里、行动何时必须发生，以及一次冲突还会留下什么。
+猫族仓库里有木材，却不能拿来建造；鹰巢有兵力，却可能因为无法兑现一张牌而陷入动荡；森林联盟失去士兵后，仍可能留住影响力。理解《茂林源记》（Root）的非对称设计，需要同时看资源在哪里、行动何时必须发生，以及一次冲突还会留下什么。
 
-本文采用《The Law of Root》2025年10月13日版中的基础阵营规则，设计者为 Cole Wehrle，见[出版社产品页](https://ledergames.com/products/root-a-game-of-woodland-might-and-right)。以下三个独立片段处于四人基础游戏环境，浪人在片段中不参与；不使用扩展、支配胜利或额外卡牌效果。字母只是空地的临时名称。我们给出本段所需的连接与状态，不重建此前完整对局，也不把它当作新地图或最优策略。
+本文采用《茂林源记》的规则书《The Law of Root》2025年10月13日版中的基础阵营规则，设计者为 Cole Wehrle，见[出版社产品页](https://ledergames.com/products/root-a-game-of-woodland-might-and-right)。以下三个独立片段处于四人基础游戏环境，浪人在片段中不参与；不使用扩展、支配胜利或额外卡牌效果。字母只是空地的临时名称。我们给出本段所需的连接与状态，不重建此前完整对局，也不把它当作新地图或最优策略。
 
 ## 角度一：木材够了，为什么仍然付不了费用？
 
@@ -91,7 +91,7 @@ B不是猫族控制：士兵加建筑为2对2，鹰巢的平手优势生效。A�
 
 ## 版本与来源
 
-- [Leder Games：Root 产品页](https://ledergames.com/products/root-a-game-of-woodland-might-and-right)：游戏设计署名及官方规则入口。
-- [The Law of Root，2025年10月13日](https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Base_Law_Oct_2025.pdf?v=1774903756)：第2—7页所需通则及前三个基础阵营条款；页序与印刷页码一致。该文件还收录扩展，本文未使用。
+- [茂林源记｜Leder Games：Root 产品页](https://ledergames.com/products/root-a-game-of-woodland-might-and-right)：游戏设计署名及官方规则入口。
+- [茂林源记｜The Law of Root，2025年10月13日](https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Base_Law_Oct_2025.pdf?v=1774903756)：第2—7页所需通则及前三个基础阵营条款；页序与印刷页码一致。该文件还收录扩展，本文未使用。
 - [Learning to Play，官方2020年10月文件](https://cdn.shopify.com/s/files/1/0106/0162/7706/files/Root_Base_Learn_to_Play_web_Oct_15_2020.pdf?v=1603389572)：第11—12页锯木厂及鸟巢轨道图。数值与Law的结算条款合用，规则冲突以本文固定的Law版本为准。
 - [Leder Games：Hard Cuts，2018年1月22日](https://ledergames.com/blogs/news/root-hard-cuts-the-continued-development-of-root)：You Say You Want a Revolution? 及 The New Alliance 两节，作为开发过程记录。三个局部算例、假设改法及其分析均由本站编写。

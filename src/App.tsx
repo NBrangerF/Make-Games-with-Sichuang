@@ -1,4 +1,6 @@
 import { ReadingLoadBoundary } from './reading-load-boundary'
+import { ActiveNavigationMark, LanguageSwitch, navigationIcons } from './studio-controls'
+import { readLanguagePreference, saveLanguagePreference, switchRouteLanguage } from './interface-language'
 import './original-reading.css'
 import { FormEvent, lazy, Suspense, type ReactNode, useEffect, useLayoutEffect, useMemo, useRef, useState } from 'react'
 import { designConstraints, glossaryIndex, guides, resourceIndex, stages, stuckPoints, type ConceptActionIndex, type DesignToolId, type Framework, type GlossaryTerm, type Guide, type GuideToolId, type ResourceAudiencePath, type ResourceCatalog, type ResourceDiscoveryCatalog, type ResourceEntryCatalog, type ResourceEntryPoint, type ResourceEntryReference, type ResourceLearningPath, type ResourceLearningStep, type ResourceStageGroup, type Stage } from './data'
@@ -388,17 +390,17 @@ function ArrowIcon({ direction = 'right' }: { direction?: 'right' | 'down' }) {
 function Header({ route, onNavigate }: { route: AppRoute; onNavigate: (route: AppRoute) => void }) {
   const english = route.readingLanguage === 'en'
   const language = route.readingLanguage || 'zh-CN'
-  const twoTaskLinks: { id: string; label: string; target: AppRoute; isActive: boolean }[] = [
+  const twoTaskLinks: { id: keyof typeof navigationIcons; label: string; target: AppRoute; isActive: boolean }[] = [
     { id: 'course', label: english ? 'Learn design' : '系统学习', target: { view: 'course', tool: route.tool, readingLanguage: language }, isActive: route.view === 'course' || route.view === 'learn' || (route.resourceEntry === 'learn' && route.resourceId === 'systematic') },
     { id: 'cases', label: english ? 'Case studies' : '案例研究', target: { view: 'resources', tool: route.tool, resourceEntry: 'cases', resourceId: 'all', readingLanguage: language }, isActive: route.view === 'resources' && route.resourceEntry === 'cases' },
     { id: 'library', label: english ? 'Mechanisms & themes' : '机制与主题', target: { view: 'resources', tool: route.tool, resourceEntry: 'library', resourceId: 'all', readingLanguage: language }, isActive: route.view === 'resources' && route.resourceEntry !== 'cases' && !(route.resourceEntry === 'learn' && route.resourceId === 'systematic') },
-    { id: 'workbench', label: english ? 'Workbench (Chinese)' : '设计工作台', target: { view: 'workbench', tool: route.tool }, isActive: route.view === 'workbench' || route.view === 'projects' },
+    { id: 'workbench', label: english ? 'Workbench' : '设计工作台', target: { view: 'workbench', tool: route.tool, uiLanguage: language }, isActive: route.view === 'workbench' || route.view === 'projects' },
   ]
   const home: AppRoute = { view: 'course', tool: route.tool, readingLanguage: language }
-  return <header className="header" lang={english ? 'en' : 'zh-CN'}>
-    <a className="brand" href={serializeRoute(home)} aria-label={english ? 'Luozhuo learning home' : `${PRODUCT_BRAND}学习首页`} onClick={event => { event.preventDefault(); onNavigate(home) }}><span className="brand-mark" aria-hidden="true"><i /></span><span>{PRODUCT_BRAND}</span></a>
-    <nav aria-label={english ? 'Main navigation' : '主导航'}>{twoTaskLinks.map(link => <a key={link.id} href={serializeRoute(link.target)} aria-current={link.isActive ? 'page' : undefined} className={link.isActive ? 'nav-link is-active' : 'nav-link'} onClick={event => { event.preventDefault(); onNavigate(link.target) }}>{link.label}</a>)}</nav>
-    <span className="internal-scope"><i aria-hidden="true" />{english ? 'Internal learning preview' : '仅限内部学习'}</span>
+  return <header className="header studio-header" lang={english ? 'en' : 'zh-CN'}>
+    <a className="brand studio-brand" href={serializeRoute(home)} aria-label={english ? 'Luozhuo learning home' : `${PRODUCT_BRAND}学习首页`} onClick={event => { event.preventDefault(); onNavigate(home) }}><strong>{PRODUCT_BRAND}<span className="studio-brand__dot" aria-hidden="true">.</span></strong><span className="studio-brand__caption">{english ? 'TABLETOP DESIGN' : '桌游设计学习馆'}</span></a>
+    <nav aria-label={english ? 'Main navigation' : '主导航'}>{twoTaskLinks.map(link => { const Icon = navigationIcons[link.id]; return <a key={link.id} href={serializeRoute(link.target)} aria-current={link.isActive ? 'page' : undefined} className={link.isActive ? 'nav-link is-active' : 'nav-link'} onClick={event => { event.preventDefault(); onNavigate(link.target) }}><Icon size={19} weight={link.isActive ? 'duotone' : 'regular'} aria-hidden="true"/><span>{link.label}</span>{link.isActive && <ActiveNavigationMark/>}</a> })}</nav>
+    <div className="studio-header__actions"><LanguageSwitch language={language} onChange={next => { saveLanguagePreference(next); onNavigate(switchRouteLanguage(route, next)) }}/><span className="internal-scope">{english ? 'Internal preview' : '内部学习'}</span></div>
   </header>
 }
 
@@ -1705,10 +1707,10 @@ function SiteFooter({ route, onView }: { route: AppRoute; onView: (view: Primary
 export function App() {
   const workspaceRuntime = useWorkspaceRuntime()
   const [route, setRoute] = useState<AppRoute>(() => parseRouteHash(window.location.hash))
-  const [lastReadingLanguage, setLastReadingLanguage] = useState<'zh-CN' | 'en'>(route.readingLanguage || 'zh-CN')
-  const interfaceLanguage = route.readingLanguage || (route.workContext?.returnTo ? parseRouteHash(route.workContext.returnTo).readingLanguage : undefined) || lastReadingLanguage
+  const [lastReadingLanguage, setLastReadingLanguage] = useState<'zh-CN' | 'en'>(() => route.readingLanguage || route.uiLanguage || readLanguagePreference())
+  const interfaceLanguage = route.readingLanguage || route.uiLanguage || (route.workContext?.returnTo ? parseRouteHash(route.workContext.returnTo).readingLanguage : undefined) || lastReadingLanguage
   const readingSurface = (route.view === 'course' && !route.courseMode && !route.workContext?.courseId && !route.workContext?.unitId) || (route.view === 'learn' && !route.learningNode) || (route.view === 'resources' && (!route.resourceEntry || route.resourceEntry === 'read' || route.resourceEntry === 'cases' || route.resourceEntry === 'library' || (route.resourceEntry === 'learn' && route.resourceId === 'systematic')))
-  useEffect(() => { if (route.readingLanguage) setLastReadingLanguage(route.readingLanguage) }, [route.readingLanguage])
+  useEffect(() => { setLastReadingLanguage(interfaceLanguage); saveLanguagePreference(interfaceLanguage) }, [interfaceLanguage])
   useEffect(() => { document.documentElement.lang = readingSurface || route.view === 'privacy' ? interfaceLanguage : 'zh-CN'; document.body.dataset.readingStudio = readingSurface ? 'true' : 'false' }, [readingSurface, route.view, interfaceLanguage])
   const [drawer, setDrawer] = useState(false)
   const [project, setProject] = useState<ProjectWorkspace>(readProjectWorkspace)
@@ -1798,7 +1800,7 @@ export function App() {
       window.cancelAnimationFrame(frame)
       root.style.scrollBehavior = previousScrollBehavior
     }
-  }, [route.readingChapter, route.courseMode, route.learningNode, route.methodSection, route.resourceEntry, route.resourceId, route.readingLanguage, route.view, route.tool])
+  }, [route.readingChapter, route.courseMode, route.learningNode, route.methodSection, route.resourceEntry, route.resourceId, route.readingLanguage, route.readingTrack, route.view, route.tool])
   useEffect(() => { const handler = (e: KeyboardEvent) => { if (e.key === 'Escape') setDrawer(false) }; window.addEventListener('keydown', handler); return () => window.removeEventListener('keydown', handler) }, [])
   const openGuideTool = (toolId: GuideToolId) => {
     setToolReturnRoute(route)
@@ -1813,8 +1815,9 @@ export function App() {
   return <>
     <a className="skip-link" href={serializeRoute(route)} onClick={event => { event.preventDefault(); document.getElementById('main-content')?.focus() }}>{interfaceLanguage === 'en' ? 'Skip to main content' : '跳到主要内容'}</a>
     <Header route={{ ...route, readingLanguage: interfaceLanguage }} onNavigate={navigate} />
+    {!readingSurface && route.view !== 'privacy' && interfaceLanguage === 'en' && <aside className="studio-language-note" lang="en">This practice area currently uses Chinese. Your reading language remains English.</aside>}
     {route.view === 'resources' && contextReturnRoute(route) && <aside className="context-return-bar" aria-label="当前工作上下文"><span>资料库没有替换你的工作对象。</span><button type="button" onClick={() => { const returnHash = contextReturnRoute(route); if (returnHash) navigate(parseRouteHash(returnHash)) }}>返回当前任务</button></aside>}
-    {((route.view === 'course' && !route.courseMode && !route.workContext?.courseId && !route.workContext?.unitId) || (route.view === 'learn' && !route.learningNode) || (route.view === 'resources' && route.resourceEntry === 'learn' && route.resourceId === 'systematic')) && <ReadingLoadBoundary key={`${route.readingChapter || route.resourceId || "all"}/${interfaceLanguage}`} language={interfaceLanguage}><Suspense fallback={<main id="main-content" tabIndex={-1} className="text-learning"><p role="status">{route.readingLanguage === 'en' ? 'Opening the reading path…' : '正在打开系统阅读……'}</p></main>}><TextLearning chapterId={route.readingChapter} language={interfaceLanguage} returnTo={route.readingReturnTo} onOpenTool={openGuideTool} /></Suspense></ReadingLoadBoundary>}
+    {((route.view === 'course' && !route.courseMode && !route.workContext?.courseId && !route.workContext?.unitId) || (route.view === 'learn' && !route.learningNode) || (route.view === 'resources' && route.resourceEntry === 'learn' && route.resourceId === 'systematic')) && <ReadingLoadBoundary key={`${route.readingChapter || route.resourceId || "all"}/${interfaceLanguage}`} language={interfaceLanguage}><Suspense fallback={<main id="main-content" tabIndex={-1} className="text-learning"><p role="status">{route.readingLanguage === 'en' ? 'Opening the reading path…' : '正在打开系统阅读……'}</p></main>}><TextLearning chapterId={route.readingChapter} language={interfaceLanguage} returnTo={route.readingReturnTo} readingTrack={route.readingTrack} onOpenTool={openGuideTool} /></Suspense></ReadingLoadBoundary>}
     {route.view === 'course' && (route.courseMode === 'practice' || route.workContext?.courseId || route.workContext?.unitId) && <Suspense fallback={<main className="course-page" id="main-content" tabIndex={-1}><p role="status">正在准备系统课程……</p></main>}><CourseV3 route={route} onNavigate={navigate} onOpenProblems={() => navigate({ view: 'resources', tool: route.tool, resourceEntry: 'problems', workContext: { ...route.workContext, returnTo: serializeRoute(route) } })} onOpenWorkbench={returnTo => navigate({ view: 'workbench', tool: route.tool, workContext: { returnTo } })} /></Suspense>}
     {(route.view === 'workbench' || route.view === 'projects') && <Suspense fallback={<main className="workbench-page" id="main-content" tabIndex={-1}><p role="status">正在准备设计工作台……</p></main>}><WorkbenchV3 route={route} onNavigate={navigate} onOpenKnowledge={() => navigate({ view: 'resources', tool: route.tool, resourceEntry: 'problems', workContext: { ...route.workContext, returnTo: serializeRoute(route) } })} /></Suspense>}
     {route.view === 'learn' && route.learningNode && <Suspense fallback={<main className="learning-map" id="main-content" tabIndex={-1}><p role="status">正在准备学习入口……</p></main>}><LearningNodesRoute nodeId={route.learningNode} onOpenMap={() => navigateLearningNode()} onOpenNode={navigateLearningNode} onOpenTool={openGuideTool} onOpenContent={contentId => navigateResourceSubpage('learn', contentId)} onOpenBranch={guideId => navigateMethod('guides', guideId)} onOpenResourceEntry={navigateResourceEntry} onOpenConcept={conceptId => navigateMethod('glossary', conceptId)} onOpenProblems={() => navigateResourceEntry('problems')} onOpenProject={() => navigateView('path')} onOpenCourse={() => navigate({ view: 'course', tool: route.tool })} onOpenWorkbench={() => navigate({ view: 'workbench', tool: route.tool })} /></Suspense>}

@@ -28,4 +28,4 @@ Other proposals change direction. Weather adds uncertainty to respond to. A shor
 
 We do not always need the smallest possible change. If several rules together produce an unwanted pattern, an entire part may need redesigning. State which relationships change together and why. Small changes can be easier to interpret, but that should not become a reason to leave a problem unresolved.
 
-For this revision, the reason is clear: align wording and placement so that later choices actually occur under the base rules. Compare extra planks, rounds, and mechanisms separately. Next, give a consistent set of complete materials to someone new and see whether it supports play from setup to ending without the designer supplying answers in advance.
+This draft first aligns the wording and placement of planks. Keep extra planks, rounds, and mechanisms with their separate proposals. Assemble one consistent set and ask someone new to start from setup, noting what still needs your explanation.

@@ -3,12 +3,12 @@
   "category": "game",
   "game": "Azul",
   "title": {
-    "zh-CN": "Azul：拿到的砖，为什么不等于这轮得到的分？",
+    "zh-CN": "花砖物语：拿到的砖，为什么不等于这轮得到的分？",
     "en": "Azul: Why Do Tiles Taken Not Equal Points Earned This Round?"
   },
   "summary": {
-    "zh-CN": "走完公共取砖、顺序铺墙与提前结束的三组比较，再回看设计者如何修改余砖去向。",
-    "en": "Compare shared drafting, sequential wall scoring and ending timing, alongside the designer’s account of changing where leftover tiles go."
+    "zh-CN": "拿来的砖何时得分，剩下的砖留给谁？走完取砖、铺墙和结束的一轮变化。",
+    "en": "When do tiles score, and who gets the leftovers? Follow drafting, wall tiling, and the finish."
   },
   "chapterIds": [
     "reading-choices-and-agency",
@@ -93,5 +93,10 @@
     "author": "Michael Kiesling",
     "sectionId": "designer-notes",
     "sourceUrl": "https://brettspielbox.de/brettspielbox-interview-michael-kiesling/"
-  }
+  },
+  "gameTitle": {
+    "zh-CN": "花砖物语",
+    "en": "Azul"
+  },
+  "gameAliases": []
 }

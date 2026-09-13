@@ -41,4 +41,4 @@ The players still affect one another because they spend from the same pile. Rabb
 
 If a later version allows only one animal on a stone, it needs further answers. Is the other animal forbidden to enter, or may it pay more planks to enter? Who must leave to make room? These answers change possible routes; a “1” drawn on the map would not explain them. The current rules explicitly allow sharing, so the calculations above contain no extra cost for occupying a place.
 
-We leave the island route in this chapter. The next chapter returns to the original two stepping stones and follows a related question: when both players want the shared planks, how does acting first change the way they plan?
+Save the island route separately and return to the original two stepping stones. Mark movement costs and action counts on both maps. A later route change can then be compared in terms of what it saves and what it costs.

@@ -1,8 +1,8 @@
-# 6 nimmt!：选牌时的空位，为什么轮到你就没了？
+# 谁是牛头王：选牌时的空位，为什么轮到你就没了？
 
 你看见一行已有四张牌，自己的牌接上去正好是第五张，似乎很安全。可是大家同时亮牌后，别人的小牌先接进这一行，你的牌变成第六张，反而要把前五张收走。你没有改变决定，决定面对的局面却已经变了。
 
-《6 nimmt!》适合用来研究一个具体问题：**如果大家同时选择，却依次结算，怎样让别人的决定影响我的结果？**本文讨论普通基本规则，不加入周年特殊牌。
+《谁是牛头王》（6 nimmt!）适合用来研究一个具体问题：**如果大家同时选择，却依次结算，怎样让别人的决定影响我的结果？**本文讨论普通基本规则，不加入周年特殊牌。
 
 ## 角度一：同时作决定，按数字处理结果
 
@@ -74,6 +74,6 @@ Kramer 在 AMIGO 的25周年访谈中回忆，早期构想让玩家传递装有�
 
 ## 规则与设计者来源
 
-- [AMIGO：6 nimmt! 英文基本规则，Version 2.10](https://blog.amigo-spiele.de/content/ap/rule/04910-GB-AmigoRule.pdf)：第1—2页，选牌、放牌、收牌与牛头罚分。
-- [AMIGO：6 nimmt! 产品与玩法介绍](https://www.amigo-spiele.de/6-nimmt_4910_1124)：基本玩法步骤；不将产品宣传语作为玩家体验证据。
-- [AMIGO：Wolfgang Kramer 25周年访谈](https://blog.amigo-spiele.de/wolfgang-kramer/)：关于 6 nimmt! 构思来源的回答，行李箱、删去传递和第六张收取；不混入周年特殊牌。
+- [谁是牛头王｜AMIGO：6 nimmt! 英文基本规则，Version 2.10](https://blog.amigo-spiele.de/content/ap/rule/04910-GB-AmigoRule.pdf)：第1—2页，选牌、放牌、收牌与牛头罚分。
+- [谁是牛头王｜AMIGO：6 nimmt! 产品与玩法介绍](https://www.amigo-spiele.de/6-nimmt_4910_1124)：基本玩法步骤；不将产品宣传语作为玩家体验证据。
+- [AMIGO：Wolfgang Kramer 25周年访谈](https://blog.amigo-spiele.de/wolfgang-kramer/)：关于《谁是牛头王》构思来源的回答，行李箱、删去传递和第六张收取；不混入周年特殊牌。

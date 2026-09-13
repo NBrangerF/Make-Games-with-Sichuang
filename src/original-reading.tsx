@@ -2,7 +2,8 @@ import { useReadingSearch, SearchLoading, SearchExcerpts } from './reading-searc
 import { matchesSearch, searchSnippets } from './reading-search'
 import { useEffect, useState, type ReactNode } from 'react'
 import catalog from '../content/original-articles/catalog.json'
-import readingPath from '../content/reading-path.json'
+import { allReadingChapters, readingTrackFor } from './reading-paths'
+const readingPath = { chapters: allReadingChapters }
 import { MarkdownReading, extractMarkdownOutline } from './markdown-reading'
 import { readingHref, readingReturnLanguage, type ReadingLocation, type ReadingScope } from './reading-navigation'
 import './original-reading.css'
@@ -14,16 +15,16 @@ const texts = import.meta.glob<string>('../content/original-articles/*/*.md', { 
 const hrefFor = (id: string | undefined, language: Language, location: ReadingLocation = {}) => readingHref('articles', id, language, location)
 const cLabel = (language: Language) => language === 'en' ? 'Back to articles' : '返回文章目录'
 const copy = {
-  'zh-CN': { title: '从一个好问题，读懂桌游设计', intro: '关于选择、规则、玩家和共同体验的原创文章。打开就能读，每篇都有中文和英文。', collection: '双语阅读', back: '返回文章目录', loading: '正在打开文章……', error: '这篇文章暂时没有打开。', retry: '重新打开', missing: '没有找到这篇文章', empty: '文章正在整理中。', search: '搜索标题或正文', noMatch: '没有匹配的文章。试试“选择”“规则”或“试玩”。', clear: '清除搜索', all: '全部文章', language: '阅读语言', edition: '同一篇内容 · 两种语言', return: '系统学习目录' },
-  en: { title: 'Understand tabletop design, one good question at a time', intro: 'Original articles about choices, rules, players, and shared experiences. Read freely in Chinese or English.', collection: 'Bilingual reading', back: 'Back to articles', loading: 'Opening the article…', error: 'The article could not be opened.', retry: 'Try again', missing: 'Article not found', empty: 'Articles are being prepared.', search: 'Search titles or article text', noMatch: 'No matching articles. Try “choices”, “rules”, or “playtest”.', clear: 'Clear search', all: 'All articles', language: 'Reading language', edition: 'One article · Two languages', return: 'Course contents' },
+  'zh-CN': { title: '桌游设计，边读边试', intro: '从选一颗骰子到安排一次试玩，跟着例子看设计怎样发生。每篇都有中文和英文。', collection: '双语阅读', back: '返回文章目录', loading: '正在打开文章……', error: '这篇文章暂时没有打开。', retry: '重新打开', missing: '没有找到这篇文章', empty: '文章正在整理中。', search: '搜索标题或正文', noMatch: '没有匹配的文章。试试“选择”“规则”或“试玩”。', clear: '清除搜索', all: '全部文章', language: '阅读语言', edition: '同一篇内容 · 两种语言', return: '系统学习目录' },
+  en: { title: 'Read about tabletop design', intro: 'From choosing a die to arranging a playtest, follow examples of design at work. Every article is available in Chinese and English.', collection: 'Bilingual reading', back: 'Back to articles', loading: 'Opening the article…', error: 'The article could not be opened.', retry: 'Try again', missing: 'Article not found', empty: 'Articles are being prepared.', search: 'Search titles or article text', noMatch: 'No matching articles. Try “choices”, “rules”, or “playtest”.', clear: 'Clear search', all: 'All articles', language: 'Reading language', edition: 'One article · Two languages', return: 'Course contents' },
 }
 
 export function ArticleBody({ article, language, afterSection, companion, withOutline = false, bodyLoader, allowSourceLinks = false }: { article: Article; language: Language; afterSection?: { number: number; node: ReactNode }; companion?: ReactNode; withOutline?: boolean; bodyLoader?: () => Promise<string>; allowSourceLinks?: boolean }) {
   const [body, setBody] = useState<string | null>(null)
   const [failed, setFailed] = useState(false)
-  const [wide, setWide] = useState(() => window.matchMedia('(min-width: 701px)').matches)
+  const [wide, setWide] = useState(() => window.matchMedia('(min-width: 901px)').matches)
   useEffect(() => {
-    const media = window.matchMedia('(min-width: 701px)')
+    const media = window.matchMedia('(min-width: 901px)')
     const sync = () => setWide(media.matches)
     media.addEventListener('change', sync)
     return () => media.removeEventListener('change', sync)
@@ -74,11 +75,11 @@ export function OriginalReading({ articleId, language = 'zh-CN', query = '', sco
     {isCollection ? <>
       <header className="original-reading__intro"><p>{c.edition}</p><h1>{c.title}</h1><p>{c.intro}</p></header>
       <div className="original-reading__search"><label htmlFor="original-article-search">{c.search}</label><input id="original-article-search" type="search" value={query} maxLength={200} placeholder={language === 'en' ? 'Choices, rules, playtesting…' : '选择、规则、试玩……'} onChange={event => onFilterChange(event.target.value, scope)} />{query && <button onClick={() => onFilterChange('', scope)}>{c.clear}</button>}</div>
-      <div className="original-reading__filters" role="group" aria-label={language === 'en' ? 'Article group' : '文章范围'}>{(['all', 'course', 'essays'] as const).map(value => <button key={value} type="button" aria-pressed={scope === value} onClick={() => onFilterChange(query, value)}>{language === 'en' ? { all: 'All articles', course: 'Course chapters', essays: 'Optional essays' }[value] : { all: '全部', course: '主线章节', essays: '选读' }[value]}</button>)}</div>
+      <div className="original-reading__filters" role="group" aria-label={language === 'en' ? 'Article group' : '文章范围'}>{(['all', 'course', 'essays'] as const).map(value => <button key={value} type="button" aria-pressed={scope === value} onClick={() => onFilterChange(query, value)}>{language === 'en' ? { all: 'All articles', course: 'Course chapters', essays: 'Optional essays' }[value] : { all: '全部', course: '课程章节', essays: '选读' }[value]}</button>)}</div>
       <p className="reading-search-hint">{language === 'en' ? 'Search both languages together; separate several terms with spaces.' : '同时搜索中英文正文；多个词可以用空格分开。'}</p>
       {search.waiting ? <SearchLoading failed={search.failed} retry={search.retry} language={language}/> : <>
       <p role="status" className="original-reading__count">{language === 'en' ? `${filtered.length} ${filtered.length === 1 ? 'article' : 'articles'}` : `${filtered.length} 篇文章`}</p>
-      {!articles.length ? <p>{c.empty}</p> : !filtered.length ? <section className="original-reading__empty"><h2>{language === 'en' ? 'No articles found' : '暂时没有找到文章'}</h2><p>{c.noMatch}</p><button onClick={() => onFilterChange('', 'all')}>{language === 'en' ? 'Show all articles' : '显示全部文章'}</button></section> : <ol className="original-reading__list">{filtered.map((item, index) => <li key={item.id}><span className="original-reading__number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span><div><p className="original-reading__kind">{mainIds.has(item.id) ? (language === 'en' ? `Course · Chapter ${readingPath.chapters.find(ch => ch.id === item.id)?.number}` : `主线 · 第 ${readingPath.chapters.find(ch => ch.id === item.id)?.number} 章`) : (language === 'en' ? 'Optional essay' : '选读')}</p><h2><a href={readingHref(mainIds.has(item.id) ? 'course' : 'articles', item.id, language, { readingReturnTo: collectionHref })}>{item.title[language]}</a></h2><p>{item.summary[language]}</p><SearchExcerpts snippets={searchSnippets(search.index?.get(item.id), query, language)} query={query} language={language}/></div></li>)}</ol>}
+      {!articles.length ? <p>{c.empty}</p> : !filtered.length ? <section className="original-reading__empty"><h2>{language === 'en' ? 'No articles found' : '暂时没有找到文章'}</h2><p>{c.noMatch}</p><button onClick={() => onFilterChange('', 'all')}>{language === 'en' ? 'Show all articles' : '显示全部文章'}</button></section> : <ol className="original-reading__list">{filtered.map((item, index) => <li key={item.id}><span className="original-reading__number" aria-hidden="true">{String(index + 1).padStart(2, '0')}</span><div><p className="original-reading__kind">{mainIds.has(item.id) ? (language === 'en' ? `${readingTrackFor(item.id) === 'river' ? 'River alternative' : 'Race path'} · Chapter ${readingPath.chapters.find(ch => ch.id === item.id)?.number}` : `${readingTrackFor(item.id) === 'river' ? '过河替代路径' : '竞速主线'} · 第 ${readingPath.chapters.find(ch => ch.id === item.id)?.number} 章`) : (language === 'en' ? 'Optional essay' : '选读')}</p><h2><a href={readingHref(mainIds.has(item.id) ? 'course' : 'articles', item.id, language, { readingReturnTo: collectionHref })}>{item.title[language]}</a></h2><p>{item.summary[language]}</p><SearchExcerpts snippets={searchSnippets(search.index?.get(item.id), query, language)} query={query} language={language}/></div></li>)}</ol>}
       </>}
     </> : article ? <><ArticleBody key={`${article.id}/${language}`} article={article} language={language} /><nav className="original-reading__end" aria-label={language === 'en' ? 'Continue reading' : '继续阅读'}><a href={backHref}>← {backLabel}</a><a href={readingHref('course', pathChapter?.id, language)}>{language === 'en' ? 'Continue along the course →' : '回到主线继续阅读 →'}</a></nav></> : <section><h1>{c.missing}</h1><a href={hrefFor(undefined, language)}>{c.back}</a></section>}
   </main>

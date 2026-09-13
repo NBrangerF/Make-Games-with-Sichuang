@@ -28,4 +28,4 @@ Observing does not require writing down every word. To understand how players de
 
 After this round, a useful question is: “Can players recognize that staying on the starting bank can help their shared goal?” Jumping straight to “collecting should also move the animal forward” skips ahead to a change. That change would remove the cost of staying behind and alter how the crossing works.
 
-Separating actions, your own feelings, and guesses about causes gives us a clearer question to carry forward. Next we need to consider the people at the table: who will play, where, and when? Those conditions help define the game we are trying to make.
+Write the actions, your own feelings, and your guesses separately, then read them back. The gaps become easier to find, along with who to watch and what to ask next time.

@@ -40,4 +40,4 @@ Being able to reach a piece does not guarantee feeling comfortable either. Wheth
 
 Thicker pieces, a closer shared supply, and spoken choices can support the existing actions. Giving Hedgehog an extra move changes its opportunities and creates a rule variation that needs fresh calculation and explanation. Both kinds of change are open to discussion; they address different problems.
 
-Ask which step a change makes easier and which decisions it preserves. The next chapter uses such a concrete question to choose a prototype’s level of detail. Checking whether positions are visible and checking whether people want to discuss a plan do not require exactly the same details.
+Try the support in the original task. Which step became easier, and who still makes the decision? If helping someone handle planks also hands their choice to a companion, adjust the help.

@@ -34,4 +34,4 @@ Prominent labels for the three areas, or an instruction saying “Take two from 
 
 For now, a precise conclusion is: “In this imagined scene, Yu asked whether spent planks could be collected. After the source was explained, she collected correctly. Next we need to investigate which part of the materials leaves that source unclear.” This gives us a better next step than “The player doesn’t understand,” while keeping guesses separate from events.
 
-A real collection of playtest notes will often contain more than one event. Someone may report too few planks, someone may want an extra round, and someone may have misunderstood one instruction. The next chapter brings several hypothetical records together to examine whether similar complaints have the same cause.
+Keep actions and original remarks when sorting the other records too. Too few planks, a wish for another round, and a misread collection rule may need different revisions. Put their positions alongside one another before grouping the feedback.

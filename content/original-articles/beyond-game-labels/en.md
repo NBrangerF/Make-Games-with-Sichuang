@@ -1,6 +1,6 @@
 # Can We Affect Each Other Without Attacking?
 
-In the river crossing, both animals can stand on the same stone. Their actions affect one another through the shared planks. Knowing that gives us a useful question when someone says, “Everyone develops their own operation in this game”: will those separate operations need the same place or item?
+Two people run separate warehouses, and neither has an attack card. But one berth remains at the harbour. If you use it, the other person cannot. “Building your own operation” sounds independent; one shared space is enough to bring the plans into conflict.
 
 ## The last available berth
 

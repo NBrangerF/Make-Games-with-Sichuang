@@ -3,12 +3,12 @@
   "category": "mechanism",
   "game": "6 nimmt!",
   "title": {
-    "zh-CN": "6 nimmt!：选牌时的空位，为什么轮到你就没了？",
+    "zh-CN": "谁是牛头王：选牌时的空位，为什么轮到你就没了？",
     "en": "6 nimmt!: Why Did Your Safe Space Disappear?"
   },
   "summary": {
-    "zh-CN": "从结算顺序、收牌代价与未入局牌三个角度逐步比较，并对照 Kramer 删去传箱步骤的设计回顾。",
-    "en": "Compare resolution order, collection costs, and cards absent from a round, alongside Kramer’s account of removing suitcase passing."
+    "zh-CN": "以为自己接第五张，亮牌后却成了第六张。看看先结算的牌怎样改变你的去处。",
+    "en": "You expected to play the fifth card, but become the sixth. Follow how earlier cards change your landing."
   },
   "chapterIds": [
     "reading-state-and-resolution",
@@ -92,5 +92,12 @@
     "author": "Wolfgang Kramer",
     "sectionId": "designer-notes",
     "sourceUrl": "https://blog.amigo-spiele.de/wolfgang-kramer/"
-  }
+  },
+  "gameTitle": {
+    "zh-CN": "谁是牛头王",
+    "en": "6 nimmt!"
+  },
+  "gameAliases": [
+    "牛头王"
+  ]
 }

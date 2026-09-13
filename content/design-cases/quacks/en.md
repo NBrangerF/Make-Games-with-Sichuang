@@ -1,6 +1,6 @@
 # Quacks: Why Can a Safe Chip Make the Next Draw More Dangerous?
 
-Before reaching into the bag, a player faces more than an unchanging level of luck. What has already come out, what remains, which reward they can afford to lose, and how ingredients follow one another all change the next decision. Separating those relationships reveals more of *The Quacks of Quedlinburg* than the repeated question, “Shall I draw again?”
+Several white chips are already in your pot, and you reach towards the bag again. Which chips remain? Could the next one cause an explosion, and what would you lose? In The Quacks of Quedlinburg, each “draw again” follows what has already happened. The risk changes as you play.
 
 This article uses Schmidt product 88220, its English base rules in the official file named 2024, the pot side without test tubes, and ingredient Set 1. The [publisher’s product page](https://www.schmidtspiele.de/detail/product/the-quacks-of-quedlinburg.html) identifies Wolfgang Warsch and the rules source. The situations below are our own local thought experiments, not designer interviews, observed playtests, or proofs of optimal play. Fortune Teller effects have been resolved and do not alter the stated bag contents, positions, threshold, or settlement. Expansions, other ingredient sets, and final-round conversion rules are outside the examples.
 

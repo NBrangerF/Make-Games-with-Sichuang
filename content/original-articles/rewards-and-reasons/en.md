@@ -1,6 +1,6 @@
 # Why Does Adding a Score Change the Game?
 
-In our river game, staying on the starting bank to collect planks can help the other animal move. That action earns no points of its own, but it can help both players win together. Now consider a separate little example. If an activity begins without winners and later gets a scoring rule, why might people start doing different things?
+Two people arrange paper gardens. One likes alternating woods and ponds; the other groups them into separate areas. Neither arrangement ranks higher. Then someone adds points for matching neighbours. How does that change the reason for placing the next tile?
 
 Imagine Lin and Yu each having six paper tiles: three showing woodland and three showing ponds. Each player arranges their own tiles in two rows of three, with no overlaps, to make a garden they like. Filling the rectangle finishes the activity. There is no ranking.
 

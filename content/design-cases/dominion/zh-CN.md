@@ -1,6 +1,6 @@
-# Dominion：多买一张免费牌，为什么还会有代价？
+# 皇舆争霸：多买一张免费牌，为什么还会有代价？
 
-商店里有一张价格为零、以后还能给你钱的牌。要不要拿？如果只看价格，它似乎没有坏处。但在《Dominion》里，新牌会进入自己的牌库，之后与旧牌一起被抽到。你增加了一个可用的东西，也改变了其他东西出现的机会。
+商店里有一张价格为零、以后还能给你钱的牌。要不要拿？如果只看价格，它似乎没有坏处。但在《皇舆争霸》（Dominion）里，新牌会进入自己的牌库，之后与旧牌一起被抽到。你增加了一个可用的东西，也改变了其他东西出现的机会。
 
 这里研究基础游戏第二版中的牌库构筑：**买到一张牌，怎样改变未来几回合？**关键不只是牌越来越多，而是玩家不断修改自己以后会抽到的内容。我们分别检查抽取机会、抽到后的出牌能力，以及结束时什么还算有价值。
 
@@ -67,6 +67,6 @@ Donald X. Vaccarino 在 2016 年第二版回顾中列出了更换部分牌、改
 
 ## 规则与设计者来源
 
-- [Rio Grande Games：Dominion 英文第二版规则](https://www.riograndegames.com/wp-content/uploads/2016/09/Dominion2E.pdf)：第3—6页，起始牌库、牌的数值、回合、购买、清理及终局。
-- [Rio Grande Games：Dominion 官方游戏页](https://www.riograndegames.com/games/dominion/)：第二版身份与牌库构筑的游戏介绍；本文不加入扩展牌的例外规则。
-- [Donald X. Vaccarino：The Secret History of the Dominion 2nd Editions](https://boardgamegeek.com/thread/1648227/the-secret-history-of-the-dominion-2nd-editions)：2016年10月3日，作者原帖开头的改版理由，以及同日回复 Walt 时对牌组构成的说明。不把其他用户的评论、胜率主张或未读到的单牌改动段落当作作者证据。
+- [皇舆争霸｜Rio Grande Games：Dominion 英文第二版规则](https://www.riograndegames.com/wp-content/uploads/2016/09/Dominion2E.pdf)：第3—6页，起始牌库、牌的数值、回合、购买、清理及终局。
+- [皇舆争霸｜Rio Grande Games：Dominion 官方游戏页](https://www.riograndegames.com/games/dominion/)：第二版身份与牌库构筑的游戏介绍；本文不加入扩展牌的例外规则。
+- [皇舆争霸｜Donald X. Vaccarino：The Secret History of the Dominion 2nd Editions](https://boardgamegeek.com/thread/1648227/the-secret-history-of-the-dominion-2nd-editions)：2016年10月3日，作者原帖开头的改版理由，以及同日回复 Walt 时对牌组构成的说明。不把其他用户的评论、胜率主张或未读到的单牌改动段落当作作者证据。

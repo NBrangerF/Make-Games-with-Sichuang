@@ -44,4 +44,4 @@ As the game proceeds, what is possible next changes too. Rules connect these cha
 
 We have followed one way to succeed. Why did Yu stay behind in the first round? Wouldn't moving both animals forward have been faster? Keep that question. First, we will learn how to observe: which actions did we actually see, and what explanations have we added to them? Later we will return to this choice and examine how it changes the road ahead.
 
-This little game was invented as a starting point for explaining design. Working through it shows that its rules allow the sequence we followed. Whether friends enjoy it or want to play again remains something to investigate. In the chapters ahead, we will use it to explore ideas of our own and learn how to check a new draft.
+This little draft was written to explain design. You can now follow its rules and get both animals across. Ask friends to try it, and watch where they discuss a move, where they pause, and whether they want another game.

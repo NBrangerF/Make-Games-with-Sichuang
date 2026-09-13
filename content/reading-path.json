@@ -1,88 +1,88 @@
 {
   "schemaVersion": 1,
-  "contentVersion": "3.0.0",
+  "contentVersion": "4.0.0",
   "parts": [
     {
       "id": "starting",
       "title": {
-        "zh-CN": "从一局游戏，找到设计的起点",
-        "en": "Find a starting point in one game"
+        "zh-CN": "从熟悉的一局开始",
+        "en": "Begin with a familiar game"
       },
       "introduction": {
-        "zh-CN": "从一份完整规则看见动作与局面，再观察谁会来玩、他们在什么场合玩。带着这些条件，为自己的第一份草稿写下暂定方向。",
-        "en": "Start with a complete game and observe its actions and situations. Consider who might play and where, then use those conditions to choose a provisional direction for your own draft."
+        "zh-CN": "先玩一段小赛跑，观察桌边的人，再写下自己想改的一件事。",
+        "en": "Try a small race, watch the people playing, and choose one thing you want to change."
       }
     },
     {
       "id": "actions",
       "title": {
-        "zh-CN": "让想法变成能做的动作",
-        "en": "Turn an idea into actions"
+        "zh-CN": "把点子写成动作",
+        "en": "Turn ideas into actions"
       },
       "introduction": {
-        "zh-CN": "把一个宽泛的点子展开成几种办法，选出能执行的动作。用纸片跟过一次结算，再看这些动作为什么值得选择。",
-        "en": "Explore several ways to realize an idea, then turn one into actions. Follow their resolution with paper pieces and examine why the choices might matter."
+        "zh-CN": "多一颗骰子会改变什么？从选定点数，一直走到回合结束。",
+        "en": "What changes with another die? Follow the choice through to the end of the turn."
       }
     },
     {
       "id": "decisions",
       "title": {
-        "zh-CN": "看清规则怎样改变决定",
-        "en": "See how rules change decisions"
+        "zh-CN": "在前进里找出选择",
+        "en": "Look inside the race"
       },
       "introduction": {
-        "zh-CN": "回到熟悉的河岸，分别改变消息、木板、路线和行动时间。每次走完一个具体比较，看清局面和可做的事怎样一起变化。",
-        "en": "Return to the river and vary information, planks, paths, and timing. Work through each comparison to see how a situation changes what players can do."
+        "zh-CN": "点数什么时候揭晓，重掷机会要不要花，轮到别人时又在等什么。",
+        "en": "When results appear, whether to spend a reroll, and what happens while someone else takes a turn."
       }
     },
     {
       "id": "systems",
       "title": {
-        "zh-CN": "让各部分一起工作",
-        "en": "Make the parts work together"
+        "zh-CN": "看看规则怎样互相影响",
+        "en": "See how rules affect each other"
       },
       "introduction": {
-        "zh-CN": "已经看过单条规则，现在让它们一起工作：资源从哪里来，目标怎样推动结束，两条机制怎样配合，以及一起赢时谁在作决定。",
-        "en": "Connect the rules: where resources come from, how goals lead toward an ending, how mechanisms work together, and who makes decisions when players share a win."
+        "zh-CN": "加入补给、改变终点、试着合作，把每个改法放回棋盘走一遍。",
+        "en": "Try replenishment, another finish, and a shared goal. Put each proposal on the board and follow it."
       }
     },
     {
       "id": "meaning",
       "title": {
-        "zh-CN": "看见不同玩家的游戏",
-        "en": "See the game from different players’ perspectives"
+        "zh-CN": "让人看懂，也愿意玩",
+        "en": "Make a game people can follow"
       },
       "introduction": {
-        "zh-CN": "从比较一个办法的优势，走到玩家怎样理解自己的行动。再检查故事表达了什么，以及怎样把这些关系写成别人能用的说明。",
-        "en": "Compare advantages under clear conditions, then examine how players interpret their actions. Consider what the story expresses and how to communicate these relationships in usable instructions."
+        "zh-CN": "从人数、主题和组件，检查玩家怎样理解并使用同一套规则。",
+        "en": "Use player count, theme, and components to examine how people understand and use the rules."
       }
     },
     {
       "id": "testing",
       "title": {
-        "zh-CN": "把问题摆到桌上",
-        "en": "Put a question on the table"
+        "zh-CN": "把草稿拿给人试",
+        "en": "Put the draft in someone’s hands"
       },
       "introduction": {
-        "zh-CN": "先看具体参与者怎样读、拿和决定，再按本轮问题选择原型的精度。安排一次试玩，并跟着一个假想过程，分清发生的事与可能原因。",
-        "en": "Consider how particular people read, handle pieces, and decide. Choose the accuracy a prototype needs for the question, plan a playtest, and follow a hypothetical session to separate events from explanations."
+        "zh-CN": "找一个具体问题，准备材料，看看别人实际怎样做。",
+        "en": "Choose a specific question, prepare the materials, and watch someone use them."
       }
     },
     {
       "id": "revising",
       "title": {
-        "zh-CN": "改好一版，交给下一位玩家",
-        "en": "Revise a version and hand it over"
+        "zh-CN": "改好一稿，再交出去",
+        "en": "Revise a draft and hand it over"
       },
       "introduction": {
-        "zh-CN": "把几份反馈放回各自局面，决定下一稿先改哪里。给出完整材料，检验它能否独立使用，再整理一个别人可以接续的版本。",
-        "en": "Return several comments to their situations and choose a revision. Provide a complete set of materials, check independent use, and prepare a version others can continue developing."
+        "zh-CN": "从反馈里找到改法，整理完整规则，给下一位玩家留一个清楚的开始。",
+        "en": "Find a revision in the feedback, assemble complete rules, and give the next player a clear place to start."
       }
     }
   ],
   "chapters": [
     {
-      "id": "reading-rules-and-play",
+      "id": "race-rules-and-play",
       "number": 1,
       "part": "starting",
       "prerequisites": [],
@@ -95,11 +95,11 @@
       }
     },
     {
-      "id": "reading-observe-a-game",
+      "id": "race-observe-a-game",
       "number": 2,
       "part": "starting",
       "prerequisites": [
-        "reading-rules-and-play"
+        "race-rules-and-play"
       ],
       "related": [],
       "relatedPurpose": {
@@ -108,12 +108,12 @@
       }
     },
     {
-      "id": "reading-players-and-context",
+      "id": "race-players-and-context",
       "number": 3,
       "part": "starting",
       "prerequisites": [
-        "reading-rules-and-play",
-        "reading-observe-a-game"
+        "race-rules-and-play",
+        "race-observe-a-game"
       ],
       "related": [
         "before-the-first-rule"
@@ -124,11 +124,11 @@
       }
     },
     {
-      "id": "reading-first-design-brief",
+      "id": "race-first-design-brief",
       "number": 4,
       "part": "starting",
       "prerequisites": [
-        "reading-players-and-context"
+        "race-players-and-context"
       ],
       "related": [],
       "relatedPurpose": {
@@ -137,11 +137,11 @@
       }
     },
     {
-      "id": "reading-ideas-under-constraints",
+      "id": "race-ideas-under-constraints",
       "number": 5,
       "part": "actions",
       "prerequisites": [
-        "reading-first-design-brief"
+        "race-first-design-brief"
       ],
       "related": [
         "constraints-that-open-possibilities"
@@ -152,12 +152,12 @@
       }
     },
     {
-      "id": "reading-core-actions",
+      "id": "race-core-actions",
       "number": 6,
       "part": "actions",
       "prerequisites": [
-        "reading-rules-and-play",
-        "reading-ideas-under-constraints"
+        "race-rules-and-play",
+        "race-ideas-under-constraints"
       ],
       "related": [],
       "relatedPurpose": {
@@ -166,11 +166,11 @@
       }
     },
     {
-      "id": "reading-state-and-resolution",
+      "id": "race-state-and-resolution",
       "number": 7,
       "part": "actions",
       "prerequisites": [
-        "reading-core-actions"
+        "race-core-actions"
       ],
       "related": [],
       "relatedPurpose": {
@@ -179,13 +179,13 @@
       }
     },
     {
-      "id": "reading-choices-and-agency",
+      "id": "race-choices-and-agency",
       "number": 8,
       "part": "actions",
       "prerequisites": [
-        "reading-rules-and-play",
-        "reading-core-actions",
-        "reading-state-and-resolution"
+        "race-rules-and-play",
+        "race-core-actions",
+        "race-state-and-resolution"
       ],
       "related": [
         "when-options-matter"
@@ -196,12 +196,12 @@
       }
     },
     {
-      "id": "reading-information-and-randomness",
+      "id": "race-information-and-randomness",
       "number": 9,
       "part": "decisions",
       "prerequisites": [
-        "reading-choices-and-agency",
-        "reading-state-and-resolution"
+        "race-choices-and-agency",
+        "race-state-and-resolution"
       ],
       "related": [
         "when-randomness-helps"
@@ -212,12 +212,12 @@
       }
     },
     {
-      "id": "reading-resources-and-endings",
+      "id": "race-resources-and-endings",
       "number": 10,
       "part": "decisions",
       "prerequisites": [
-        "reading-state-and-resolution",
-        "reading-choices-and-agency"
+        "race-state-and-resolution",
+        "race-choices-and-agency"
       ],
       "related": [],
       "relatedPurpose": {
@@ -226,11 +226,11 @@
       }
     },
     {
-      "id": "reading-space-and-opportunity",
+      "id": "race-space-and-opportunity",
       "number": 11,
       "part": "decisions",
       "prerequisites": [
-        "reading-resources-and-endings"
+        "race-resources-and-endings"
       ],
       "related": [
         "beyond-game-labels"
@@ -241,12 +241,12 @@
       }
     },
     {
-      "id": "reading-time-and-interaction",
+      "id": "race-time-and-interaction",
       "number": 12,
       "part": "decisions",
       "prerequisites": [
-        "reading-information-and-randomness",
-        "reading-space-and-opportunity"
+        "race-information-and-randomness",
+        "race-space-and-opportunity"
       ],
       "related": [
         "between-your-turns",
@@ -258,14 +258,14 @@
       }
     },
     {
-      "id": "reading-design-an-economy",
+      "id": "race-design-an-economy",
       "number": 13,
       "part": "systems",
       "prerequisites": [
-        "reading-state-and-resolution",
-        "reading-resources-and-endings",
-        "reading-space-and-opportunity",
-        "reading-time-and-interaction"
+        "race-state-and-resolution",
+        "race-resources-and-endings",
+        "race-space-and-opportunity",
+        "race-time-and-interaction"
       ],
       "related": [
         "where-resources-go"
@@ -276,13 +276,13 @@
       }
     },
     {
-      "id": "reading-goals-and-pacing",
+      "id": "race-goals-and-pacing",
       "number": 14,
       "part": "systems",
       "prerequisites": [
-        "reading-choices-and-agency",
-        "reading-resources-and-endings",
-        "reading-design-an-economy"
+        "race-choices-and-agency",
+        "race-resources-and-endings",
+        "race-design-an-economy"
       ],
       "related": [],
       "relatedPurpose": {
@@ -291,14 +291,14 @@
       }
     },
     {
-      "id": "reading-combine-mechanisms",
+      "id": "race-combine-mechanisms",
       "number": 15,
       "part": "systems",
       "prerequisites": [
-        "reading-state-and-resolution",
-        "reading-time-and-interaction",
-        "reading-design-an-economy",
-        "reading-goals-and-pacing"
+        "race-state-and-resolution",
+        "race-time-and-interaction",
+        "race-design-an-economy",
+        "race-goals-and-pacing"
       ],
       "related": [],
       "relatedPurpose": {
@@ -307,13 +307,13 @@
       }
     },
     {
-      "id": "reading-cooperation-and-conflict",
+      "id": "race-cooperation-and-conflict",
       "number": 16,
       "part": "systems",
       "prerequisites": [
-        "reading-players-and-context",
-        "reading-time-and-interaction",
-        "reading-combine-mechanisms"
+        "race-players-and-context",
+        "race-time-and-interaction",
+        "race-combine-mechanisms"
       ],
       "related": [],
       "relatedPurpose": {
@@ -322,14 +322,14 @@
       }
     },
     {
-      "id": "reading-balance-and-player-count",
+      "id": "race-balance-and-player-count",
       "number": 17,
       "part": "meaning",
       "prerequisites": [
-        "reading-resources-and-endings",
-        "reading-design-an-economy",
-        "reading-goals-and-pacing",
-        "reading-cooperation-and-conflict"
+        "race-resources-and-endings",
+        "race-design-an-economy",
+        "race-goals-and-pacing",
+        "race-cooperation-and-conflict"
       ],
       "related": [],
       "relatedPurpose": {
@@ -338,15 +338,15 @@
       }
     },
     {
-      "id": "reading-theme-and-emotion",
+      "id": "race-theme-and-emotion",
       "number": 18,
       "part": "meaning",
       "prerequisites": [
-        "reading-first-design-brief",
-        "reading-cooperation-and-conflict",
-        "reading-players-and-context",
-        "reading-core-actions",
-        "reading-choices-and-agency"
+        "race-first-design-brief",
+        "race-cooperation-and-conflict",
+        "race-players-and-context",
+        "race-core-actions",
+        "race-choices-and-agency"
       ],
       "related": [
         "emotion-through-action",
@@ -358,13 +358,13 @@
       }
     },
     {
-      "id": "reading-stories-and-models",
+      "id": "race-stories-and-models",
       "number": 19,
       "part": "meaning",
       "prerequisites": [
-        "reading-theme-and-emotion",
-        "reading-players-and-context",
-        "reading-first-design-brief"
+        "race-theme-and-emotion",
+        "race-players-and-context",
+        "race-first-design-brief"
       ],
       "related": [],
       "relatedPurpose": {
@@ -373,13 +373,13 @@
       }
     },
     {
-      "id": "reading-rules-and-components",
+      "id": "race-rules-and-components",
       "number": 20,
       "part": "meaning",
       "prerequisites": [
-        "reading-state-and-resolution",
-        "reading-time-and-interaction",
-        "reading-theme-and-emotion"
+        "race-state-and-resolution",
+        "race-time-and-interaction",
+        "race-theme-and-emotion"
       ],
       "related": [
         "when-players-run-the-system"
@@ -390,13 +390,13 @@
       }
     },
     {
-      "id": "reading-access-and-participation",
+      "id": "race-access-and-participation",
       "number": 21,
       "part": "testing",
       "prerequisites": [
-        "reading-players-and-context",
-        "reading-rules-and-components",
-        "reading-cooperation-and-conflict"
+        "race-players-and-context",
+        "race-rules-and-components",
+        "race-cooperation-and-conflict"
       ],
       "related": [],
       "relatedPurpose": {
@@ -405,14 +405,14 @@
       }
     },
     {
-      "id": "reading-prototype-for-a-question",
+      "id": "race-prototype-for-a-question",
       "number": 22,
       "part": "testing",
       "prerequisites": [
-        "reading-core-actions",
-        "reading-information-and-randomness",
-        "reading-rules-and-components",
-        "reading-access-and-participation"
+        "race-core-actions",
+        "race-information-and-randomness",
+        "race-rules-and-components",
+        "race-access-and-participation"
       ],
       "related": [],
       "relatedPurpose": {
@@ -421,12 +421,12 @@
       }
     },
     {
-      "id": "reading-plan-a-playtest",
+      "id": "race-plan-a-playtest",
       "number": 23,
       "part": "testing",
       "prerequisites": [
-        "reading-players-and-context",
-        "reading-prototype-for-a-question"
+        "race-players-and-context",
+        "race-prototype-for-a-question"
       ],
       "related": [],
       "relatedPurpose": {
@@ -435,12 +435,12 @@
       }
     },
     {
-      "id": "reading-prototypes-and-evidence",
+      "id": "race-prototypes-and-evidence",
       "number": 24,
       "part": "testing",
       "prerequisites": [
-        "reading-state-and-resolution",
-        "reading-plan-a-playtest"
+        "race-state-and-resolution",
+        "race-plan-a-playtest"
       ],
       "related": [],
       "relatedPurpose": {
@@ -449,12 +449,12 @@
       }
     },
     {
-      "id": "reading-diagnose-feedback",
+      "id": "race-diagnose-feedback",
       "number": 25,
       "part": "revising",
       "prerequisites": [
-        "reading-plan-a-playtest",
-        "reading-prototypes-and-evidence"
+        "race-plan-a-playtest",
+        "race-prototypes-and-evidence"
       ],
       "related": [
         "when-feedback-disagrees"
@@ -465,13 +465,13 @@
       }
     },
     {
-      "id": "reading-design-judgment",
+      "id": "race-design-judgment",
       "number": 26,
       "part": "revising",
       "prerequisites": [
-        "reading-first-design-brief",
-        "reading-combine-mechanisms",
-        "reading-diagnose-feedback"
+        "race-first-design-brief",
+        "race-combine-mechanisms",
+        "race-diagnose-feedback"
       ],
       "related": [],
       "relatedPurpose": {
@@ -480,13 +480,13 @@
       }
     },
     {
-      "id": "reading-independent-rules-test",
+      "id": "race-independent-rules-test",
       "number": 27,
       "part": "revising",
       "prerequisites": [
-        "reading-rules-and-components",
-        "reading-plan-a-playtest",
-        "reading-design-judgment"
+        "race-rules-and-components",
+        "race-plan-a-playtest",
+        "race-design-judgment"
       ],
       "related": [],
       "relatedPurpose": {
@@ -495,12 +495,12 @@
       }
     },
     {
-      "id": "reading-share-a-playable-version",
+      "id": "race-share-a-playable-version",
       "number": 28,
       "part": "revising",
       "prerequisites": [
-        "reading-design-judgment",
-        "reading-independent-rules-test"
+        "race-design-judgment",
+        "race-independent-rules-test"
       ],
       "related": [],
       "relatedPurpose": {

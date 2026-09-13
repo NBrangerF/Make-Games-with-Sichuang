@@ -1,6 +1,6 @@
-# El Grande：人数没变，为什么先后和去向会改变影响力？
+# 大领主：人数没变，为什么先后和去向会改变影响力？
 
-地图上放着不同颜色的骑士，似乎只要数谁最多就能理解局势。但在《El Grande》里，骑士从哪里来、何时能入场、何时才能决定去向，会一起改变这个比较。本文用三组独立局面，观察人数之外的设计关系。
+一个地区里，你的骑士最多，看起来领先。可国王一移动，能部署的地方变了；城堡打开时，还会有一批骑士突然进场。《大领主》的地图需要不断重数，而改变数字的机会，早在落子之前就开始争夺。
 
 范围固定为 Hans im Glück 2023 英文规则的四人基础游戏，使用四至五人那面地图；不加入小扩展、老手替换牌、两人替身或短局。作者为 Wolfgang Kramer 与 Richard Ulrich，版本可由[出版社页面](https://www.hans-im-glueck.de/en/game/el-grande-2/)和规则核对。以下局面、比较与判断为本站构造，不是作者的测试记录，也不是整局攻略。
 
@@ -84,6 +84,6 @@
 
 ## 版本与来源
 
-- [Hans im Glück：El Grande](https://www.hans-im-glueck.de/en/game/el-grande-2/)：作者、产品及官方规则入口。
+- [大领主｜Hans im Glück：El Grande](https://www.hans-im-glueck.de/en/game/el-grande-2/)：作者、产品及官方规则入口。
 - [2023英文规则](https://www.hans-im-glueck.de/wp-content/uploads/2023/07/ElGrande_2023_rule_EN_20-07-23-komprimiert.pdf)：第2—3页初始供应与地图，第4—6页先后、补给、部署、国王与城堡，第7—8页总计分与并列，第9—10页区分未采用的变体，第12页相关牌的说明。页码为PDF页序，与印刷页码一致。
-- [Brettspielbox：Interview mit Wolfgang Kramer Teil 2，2015-04-02](https://brettspielbox.de/interview-mit-wolfgang-kramer-teil-2/)：“El Grande und das trojanische Pferd”轶事及紧随其后的第一人称问答。采用开发回顾，不采用当年排名或市场判断作为现状。
+- [Brettspielbox：Interview mit Wolfgang Kramer Teil 2，2015-04-02](https://brettspielbox.de/interview-mit-wolfgang-kramer-teil-2/)：关于《大领主》的“El Grande und das trojanische Pferd”轶事及紧随其后的第一人称问答。采用开发回顾，不采用当年排名或市场判断作为现状。

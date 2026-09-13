@@ -1,6 +1,6 @@
 # Can a Turn Wait Until Your Friend Comes Back Tomorrow?
 
-In the river game, the players take turns and usually sit together while waiting. Could play continue if one person is free at lunchtime and the other arrives after school? Put aside the animal game and consider a small example designed to remain in place.
+You are free at lunchtime; your friend arrives after school. What must a game leave on the table so the next person can continue? A two-person postcard display lets us examine the reminders needed for past actions, current choices, and stopping.
 
 ## A row of spaces preserves two people’s choices
 

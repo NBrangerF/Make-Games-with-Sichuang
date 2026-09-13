@@ -1,6 +1,6 @@
 # Same Average, So Why Prefer One Route?
 
-The weather chapter showed how reveal timing changes Hedgehog's available response. This optional reading keeps the timing fixed: choose first, learn the weather afterward. An independent lantern-delivery example asks another question. If two options have the same average result, are they equivalent?
+One delivery route reliably brings three lanterns. Another brings five in one kind of weather and one in the other. With equally likely weather, both average three. Would you still treat them alike if the goal were to deliver at least two?
 
 ## One Reliable Route and One Risky Route
 

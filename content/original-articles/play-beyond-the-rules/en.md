@@ -1,6 +1,6 @@
 # Things the Rulebook Never Wrote Still Happen
 
-The river example showed how rules tell players what to do and when to stop. Even a complete set of rules, however, would not write every word Lin and Yu might say. One might give Rabbit a line of dialogue. The other might prefer to work quietly toward getting both animals across.
+A rulebook can say how many cubes to take and when the game ends. It cannot write everything people will say about those cubes. Someone calls them cargo; someone gives one a nickname. The same actions gain meanings particular to that table.
 
 This optional reading moves to another table. An independent example will help us see what players can add while following the same rules.
 
@@ -40,4 +40,4 @@ Once rules are written, players still develop their own descriptions, habits, an
 
 A designer can provide a clear starting point: how objects are used, which results count, and what requires a shared decision. Then they can notice how players make the session their own. Inventing a name, discovering an approach to taking cubes, and making a small performance out of packing up can all be creative uses of what is already there.
 
-Back at the river, Rabbit may receive a new nickname while a forward step still costs one plank. If the nickname is supposed to grant an extra step, that needs a separately explained rule. Leaving space for expression and leaving rules unclear are different choices.
+The cubes can acquire new names while the taking rule stays the same. If a nickname is meant to grant an extra cube, write that as a new rule and agree it together. Players can have room to improvise while knowing which parts everyone must follow.

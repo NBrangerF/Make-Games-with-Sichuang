@@ -1,6 +1,6 @@
 # How Can Spending Water Leave Me With More?
 
-At the river, adding planks used an action, and the rounds remaining determined whether they could be used in time. This optional reading moves to an independent example. What if spending something you have buys a tool that keeps producing more later?
+You have just saved three drops of water, then spend them all on a collector. It looks like a setback. But from the next round, that collector brings two more drops each round. To judge the purchase, follow the water through the remaining rounds.
 
 Imagine managing a water collector on paper. Water and collectors are game objects here, not a calculation of real weather. We will follow four rounds, then identify the rule that lets production grow.
 

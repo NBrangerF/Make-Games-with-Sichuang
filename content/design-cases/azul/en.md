@@ -1,6 +1,6 @@
 # Azul: Why Do Tiles Taken Not Equal Points Earned This Round?
 
-A single tile might complete a pattern line, connect two sections of a wall, or fall to the floor. Three independent situations examine how shared supplies, staged resolution and the timing of the ending change a choice.
+The last tile you take might complete a pattern line or spill onto the floor. Taking it from a factory also sends the leftovers to the centre, ready for someone else. Follow those destinations to see what one draft in Azul can change.
 
 This article uses Michael Kiesling’s original *Azul*, with both players using the colored wall. Our fixed reference is the six-page English base rulebook, bearing ©2018 Plan B Games, linked by the [publisher](https://www.nextmove-games.com/en/azul/azul-game/). Summer Pavilion, Stained Glass, Mini, expansions and the gray-wall variant are outside this article. The situations and design analysis are ours, not the designer’s playtest records.
 

@@ -1,3 +1,4 @@
+import { caseGameName } from './case-game-name'
 import { useReadingSearch, SearchLoading, SearchExcerpts } from './reading-search-ui'
 import { searchSnippets } from './reading-search'
 import { useEffect, useState } from 'react'
@@ -7,7 +8,7 @@ import { CaseDiagram, DeckExperiment, SimultaneousExperiment } from './case-diag
 import { MarkdownReading } from './markdown-reading'
 import { casePerspectives, readingHref, readingReturnLanguage, type CasePerspective, type ReadingLanguage } from './reading-navigation'
 import articleCatalog from '../content/original-articles/catalog.json'
-import path from '../content/reading-path.json'
+import { allReadingChapters, chapterForTrack, trackFromReturn } from './reading-paths'
 import type { GuideToolId } from './data'
 import { toolTitles } from './tool-catalog'
 import { libraryEntries } from './design-library-catalog'
@@ -46,7 +47,7 @@ function CaseBody({ entry, language, sectionId }: { entry: DesignCase; language:
 
 export function CaseTeasers({ language, from, ids }: { language: ReadingLanguage; from?: string; ids?: string[] }) {
   const entries = ids ? ids.map(id => designCases.find(item => item.id === id)).filter((item): item is DesignCase => Boolean(item)) : designCases
-  return <div className="case-teasers">{entries.map(entry => <a key={entry.id} className={`case-teaser case-teaser--${entry.category}`} href={readingHref('cases', entry.id, language, { readingReturnTo: from })}><CaseDiagram id={entry.id} language={language} compact/><div><p>{entry.game} <span>{caseCategories[entry.category][language]}</span></p><h3>{entry.title[language]}</h3><span className="case-teaser__read">{language === 'en' ? 'Read the analysis' : '阅读分析'} <span aria-hidden="true">↗</span></span></div></a>)}</div>
+  return <div className="case-teasers">{entries.map(entry => <a key={entry.id} className={`case-teaser case-teaser--${entry.category}`} href={readingHref('cases', entry.id, language, { readingReturnTo: from })}><CaseDiagram id={entry.id} language={language} compact/><div><p>{caseGameName(entry, language)} <span>{caseCategories[entry.category][language]}</span></p><h3>{entry.title[language]}</h3><span className="case-teaser__read">{language === 'en' ? 'Read the analysis' : '阅读分析'} <span aria-hidden="true">↗</span></span></div></a>)}</div>
 }
 
 export function DesignCases({ caseId, language = 'zh-CN', query = '', category, perspective, authorOnly, sectionId, returnTo, onFilterChange, onOpenTool }: CaseFilters & { caseId?: string; language?: ReadingLanguage; sectionId?: string; returnTo?: string; onFilterChange: (filters: CaseFilters) => void; onOpenTool: (id: GuideToolId) => void }) {
@@ -75,8 +76,9 @@ export function DesignCases({ caseId, language = 'zh-CN', query = '', category, 
       <div className="original-reading__languages" aria-label={t('阅读语言', 'Reading language')}>{(['zh-CN', 'en'] as const).map(lang => <a key={lang} href={readingHref('cases', caseId, lang, { ...filters, caseSection: sectionId, readingReturnTo: readingReturnLanguage(returnTo, lang) })} lang={lang} hrefLang={lang} aria-current={lang === language ? 'page' : undefined}>{lang === 'en' ? 'English' : '中文'}</a>)}</div>
     </nav>
     {collection ? <>
-      <header className="case-library-intro"><h1>{t('拆开一局游戏，看见设计选择', 'Look inside a game. See its design choices.')}</h1><p>{t('从一个具体问题进入案例，比较规则怎样改变玩家的选择。每篇都有多个分析角度，可以直接读到相关段落。', 'Start with a design question and compare how rules shape players’ choices. Each case offers several perspectives, with links to the relevant sections.')}</p></header>
-      <div className="case-library-search"><label htmlFor="case-search">{t('搜索游戏、设计问题或正文', 'Search games, design questions, or article text')}</label><input id="case-search" type="search" value={query} maxLength={200} placeholder={t('Root 木材、信息、theme…', 'Root wood, information, 主题…')} onChange={event => update({ query: event.target.value })}/>{query && <button type="button" onClick={() => update({ query: '' })}>{t('清除搜索', 'Clear search')}</button>}</div>
+      <header className="case-library-intro"><h1>{t('从熟悉的游戏里学设计', 'Learn from games you know')}</h1><p>{t('免费的牌要不要拿？大牌为什么会害队友输？挑一个局面，顺着规则看看下一步会发生什么。', 'Should you take a free card? How can a high card lose a team’s mission? Pick a situation and follow what the rules do next.')}</p></header>
+      <div className="case-library-search"><label htmlFor="case-search">{t('搜索游戏、设计问题或正文', 'Search games, design questions, or article text')}</label><input id="case-search" type="search" value={query} maxLength={200} placeholder={t('茂林源记 木材、信息、主题…', 'Root wood, information, theme…')} onChange={event => update({ query: event.target.value })}/>{query && <button type="button" onClick={() => update({ query: '' })}>{t('清除搜索', 'Clear search')}</button>}</div>
+      <details className="case-discovery-refine" open={Boolean(perspective || authorOnly || category)}><summary>{t('按设计问题和来源细筛', 'Refine by design question and source')}</summary>
       <div className="case-discovery-controls">
         <div><label htmlFor="case-perspective">{t('你想研究什么？', 'What do you want to explore?')}</label><select id="case-perspective" value={perspective || ''} onChange={event => update({ perspective: event.target.value as CasePerspective || undefined })}><option value="">{t('全部设计问题', 'All design questions')}</option>{casePerspectives.map(value => <option key={value} value={value}>{casePerspectiveLabels[value][language]}</option>)}</select></div>
         <label className="case-author-filter"><input type="checkbox" checked={Boolean(authorOnly)} onChange={event => update({ authorOnly: event.target.checked })}/>{t('含设计者开发回顾', 'Includes a designer’s development account')}</label>
@@ -84,6 +86,7 @@ export function DesignCases({ caseId, language = 'zh-CN', query = '', category, 
       <p className="case-discovery-note">{t('开发回顾来自具名作者的访谈或记录。其他推演与对照属于本站分析。', 'Development accounts come from named designers’ interviews or records. The other comparisons and inferences are our analysis.')}</p>
       <details className="case-category-options" open={Boolean(category)}><summary>{t('按篇章侧重筛选', 'Filter by article focus')}</summary><div className="case-library-filters" role="group" aria-label={t('篇章侧重', 'Article focus')}>{(['all', 'game', 'mechanism', 'theme'] as const).map(value => <button key={value} type="button" aria-pressed={(category || 'all') === value} onClick={() => update({ category: value === 'all' ? undefined : value })}>{caseCategories[value][language]}</button>)}</div></details>
       <p className="reading-search-hint">{t('同时搜索中英文正文；选择设计问题后，只搜索该角度的分析。', 'Search both languages. A design-question filter limits body matches to that perspective.')}</p>
+      </details>
       {search.waiting ? <SearchLoading failed={search.failed} retry={search.retry} language={language}/> : <>
       <p className="case-library-count" role="status">{t(`${filtered.length} 篇案例`, `${filtered.length} case ${filtered.length === 1 ? 'study' : 'studies'}`)}</p>
       {filtered.length ? <div className="case-library-entries">{filtered.map(({ entry: item, sections }, index) => {
@@ -91,7 +94,7 @@ export function DesignCases({ caseId, language = 'zh-CN', query = '', category, 
         const readSection = (id: string) => readingHref('cases', item.id, language, { caseSection: id, readingReturnTo: listHref })
         return <section key={item.id} className={`case-library-entry${index === 0 && !query && !category && !perspective && !authorOnly ? ' case-library-entry--featured' : ''}`}>
           <a className="case-library-entry__visual" href={href} aria-label={item.title[language]}><CaseDiagram id={item.id} language={language} compact/></a>
-          <div><p className="case-library-entry__game">{item.game} <span>{caseCategories[item.category][language]}</span></p><h2><a href={href}>{item.title[language]}</a></h2><p>{item.summary[language]}</p>
+          <div><p className="case-library-entry__game">{caseGameName(item, language)} <span>{caseCategories[item.category][language]}</span></p><h2><a href={href}>{item.title[language]}</a></h2><p>{item.summary[language]}</p>
             <SearchExcerpts snippets={searchSnippets(search.index?.get(item.id), query, language, perspective ? item.sections.filter(s => s.topics.includes(perspective)).map(s => s.id) : undefined)} query={query} language={language} sectionHref={readSection}/>
             <ul className="case-entry-sections" aria-label={t('从具体问题开始读', 'Read from a specific question')}>{sections.map(section => <li key={section.id}><a href={readSection(section.id)}>{caseSectionLabel(section.title[language])}</a></li>)}</ul>
             {item.designerAccount && <p className="case-designer-account"><a href={readSection(item.designerAccount.sectionId)}>{t('开发回顾：', 'Development account: ')}{item.designerAccount.author}</a></p>}
@@ -101,11 +104,11 @@ export function DesignCases({ caseId, language = 'zh-CN', query = '', category, 
       })}</div> : <section className="case-library-empty"><h2>{t('还没有匹配的案例', 'No matching cases')}</h2><p>{t('试试游戏英文名，或者清除部分筛选。', 'Try the game’s English name or clear some filters.')}</p><button onClick={() => onFilterChange({ query: '' })}>{t('查看全部案例', 'Show all cases')}</button></section>}
       </>}
     </> : entry ? <>
-      <header className="case-detail-intro"><p>{entry.game} <span>{caseCategories[entry.category][language]}</span></p><h1>{entry.title[language]}</h1><p>{entry.summary[language]}</p></header>
+      <header className="case-detail-intro"><p>{caseGameName(entry, language)} <span>{caseCategories[entry.category][language]}</span></p><h1>{entry.title[language]}</h1><p>{entry.summary[language]}</p></header>
       {sectionId && !entry.sections.some(section => section.id === sectionId) && <p role="status">{t('没有找到链接指定的段落，可以从下面的目录继续阅读。', 'The linked section was not found. Continue from the contents below.')}</p>}
       <nav className="case-section-nav" aria-label={t('本篇分析目录', 'Analysis contents')}><h2>{t('从哪里开始读', 'Where to start reading')}</h2><ol>{entry.sections.map(section => <li key={section.id}><a href={sectionHref(section.id)} aria-current={section.id === sectionId ? 'location' : undefined}>{caseSectionLabel(section.title[language])}</a></li>)}</ol>{entry.designerAccount && <p>{t('本篇开发回顾：', 'Development account in this case: ')}<a href={sectionHref(entry.designerAccount.sectionId)}>{entry.designerAccount.author}</a></p>}</nav>
       <div className="case-detail-layout"><div><CaseDiagram id={entry.id} language={language}/><CaseBody key={`${entry.id}/${language}`} entry={entry} language={language} sectionId={sectionId}/></div>
-        <aside className="case-detail-companion"><h2>{t('把分析带回自己的设计', 'Bring the analysis to your design')}</h2><p>{t('选一处规则关系，在自己的草稿里比较它带来的机会与代价。', 'Choose one rule relationship and compare its opportunities and costs in your own draft.')}</p><button className="reading-tool-link" onClick={() => onOpenTool(caseTools[entry.id])}>{language === 'en' ? 'Open related workbench (Chinese)' : `打开${toolTitles[caseTools[entry.id]]}`} <span aria-hidden="true">↗</span></button><h2>{t('回到主线', 'In the reading path')}</h2><ol>{entry.chapterIds.map(id => { const article = articleCatalog.articles.find(item => item.id === id); const chapter = path.chapters.find(item => item.id === id); return article && chapter ? <li key={id}><span>{t(`第 ${chapter.number} 章`, `Chapter ${chapter.number}`)}</span><a href={readingHref('course', id, language, { readingReturnTo: ownHref })}>{article.title[language]}</a></li> : null })}</ol><RelatedLibrary caseId={entry.id} language={language} from={ownHref}/></aside>
+        <aside className="case-detail-companion"><h2>{t('把分析带回自己的设计', 'Bring the analysis to your design')}</h2><p>{t('选一处规则关系，在自己的草稿里比较它带来的机会与代价。', 'Choose one rule relationship and compare its opportunities and costs in your own draft.')}</p><button className="reading-tool-link" onClick={() => onOpenTool(caseTools[entry.id])}>{language === 'en' ? 'Open related workbench (Chinese)' : `打开${toolTitles[caseTools[entry.id]]}`} <span aria-hidden="true">↗</span></button><h2>{t('回到主线', 'In the reading path')}</h2><ol>{entry.chapterIds.map(originalId => { const id = chapterForTrack(originalId, trackFromReturn(returnTo)); const article = articleCatalog.articles.find(item => item.id === id); const chapter = allReadingChapters.find(item => item.id === id); return article && chapter ? <li key={id}><span>{t(`第 ${chapter.number} 章`, `Chapter ${chapter.number}`)}</span><a href={readingHref('course', id, language, { readingReturnTo: ownHref })}>{article.title[language]}</a></li> : null })}</ol><RelatedLibrary caseId={entry.id} language={language} from={ownHref}/></aside>
       </div>
       <section className="case-source-scope"><h2>{t('本篇使用的版本与出处', 'Editions and sources used')}</h2><ul>{entry.sources.map(source => <li key={source.url}><a href={source.url} rel="noreferrer">{source.label}</a><p>{source.edition}{source.locator ? ` · ${source.locator}` : ''}</p></li>)}</ul></section>
       <nav className="original-reading__end" aria-label={t('继续探索', 'Continue exploring')}><a href={backHref}>{backLabel}</a><a href={listHref}>{t('全部案例 →', 'All cases →')}</a></nav>

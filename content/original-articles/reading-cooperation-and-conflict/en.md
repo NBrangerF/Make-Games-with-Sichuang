@@ -40,4 +40,4 @@ Suppose both people want to collect. Lin wants to help first; Yu wants to keep a
 
 They may also want different things from this meeting. One wants to discover the solution; the other wants to finish quickly. Even perfectly correct calculations may be unwelcome if they give away every answer. That calls for returning to the intended setting: is this a demonstration, an attempt where hints are welcome, or a game where each thinks before discussing?
 
-Designers can arrange contributions, authority, and opportunities to communicate. How people actually relate still depends on this particular session. Carry that distinction into the next chapter on balance: calculating opportunities does not yet tell us how the players feel about them.
+Ask each person to describe a decision they made, then compare the account with the resources and actions. These small passages show who proposed, decided, and carried out a move, and how work was divided behind the shared win.

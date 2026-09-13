@@ -34,4 +34,4 @@ The player questions and playtest records in this course are invented examples. 
 
 A collaborator can help examine a first reading or suggest a new direction. Taking over a design may involve more than polishing sentences. If the shared crossing lacks worthwhile plans to compare, the rules can change too. Each time, we should know what is changing and whether earlier conclusions still apply.
 
-The design has now grown from an intention into something with rules, materials, an identifiable version, and stated unknowns. What makes it possible to continue is that the next person can begin accurately, raise a specific question, and connect the next revision to this one.
+Put the board, rules, and revision note together for the next player. You have a draft you can keep working on. A pause or question during their setup may give the next revision its direction.

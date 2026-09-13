@@ -38,4 +38,4 @@ Suppose somebody describes a finished game as, “Rabbit led the way and reached
 
 “Rabbit discovered the route for everyone” would add a discovery absent from the rules. In the basic game, the entire route is visible from the start. Moving Rabbit reveals no new information. Stories can emphasize different things while keeping claims about an action’s consequences connected to what happened.
 
-Designers therefore need to attend to both selection and connection: what should players consider, which actions express it, which omissions help make it clear, and whether pictures or narration promise something the rules cannot deliver. The next chapter puts the settled relationships into an explanation that a reader can follow without guessing.
+Write what you want players to consider beside the map, then find an action for each item. Reconsider promises that have no action to support them. Details whose omission makes the game clearer can stay outside it.

@@ -1,6 +1,6 @@
 # Radlands: Why Does One Water Matter More a Turn Earlier?
 
-In *Radlands*, two players spend water to play people, schedule events, and use abilities, aiming to destroy the opponent's three camps. People can stand in front of camps, while some threats approach along a public event queue. Understanding the game involves more than counting resources: when can they be spent, who receives damage, and how many responses remain available?
+In Radlands, water pays for people, events, and abilities. As you target the opponent’s three camps, check who stands in front and how soon an event will arrive. Spending the same water now or later can change whether the opponent gets a chance to repair.
 
 This article uses the base-game portion of the official English V2.1 rules and only the original 34 camps, excluding *Cult of Chrome*. The current [Roxley product page](https://roxley.com/products/radlands-complete) presents Complete packaging that includes the expansion. Its download entry is dated November 13, 2024, but the actual file identifies V2.1 on page 3 and ©2026 on its back cover. These are different dates for different things.
 

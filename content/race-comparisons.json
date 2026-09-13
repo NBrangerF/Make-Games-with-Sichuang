@@ -1,0 +1,249 @@
+{
+  "schemaVersion": 1,
+  "chapterIds": [
+    "race-rules-and-play",
+    "race-observe-a-game",
+    "race-players-and-context",
+    "race-first-design-brief",
+    "race-ideas-under-constraints",
+    "race-core-actions",
+    "race-state-and-resolution",
+    "race-choices-and-agency",
+    "race-information-and-randomness",
+    "race-resources-and-endings",
+    "race-space-and-opportunity",
+    "race-time-and-interaction",
+    "race-design-an-economy",
+    "race-goals-and-pacing",
+    "race-combine-mechanisms",
+    "race-cooperation-and-conflict",
+    "race-balance-and-player-count",
+    "race-theme-and-emotion",
+    "race-stories-and-models",
+    "race-rules-and-components",
+    "race-access-and-participation",
+    "race-prototype-for-a-question",
+    "race-plan-a-playtest",
+    "race-prototypes-and-evidence",
+    "race-diagnose-feedback",
+    "race-design-judgment",
+    "race-independent-rules-test",
+    "race-share-a-playable-version"
+  ],
+  "entries": [
+    {
+      "id": "snakes-and-ladders",
+      "name": {
+        "zh-CN": "蛇梯棋",
+        "en": "Snakes and Ladders"
+      },
+      "lens": {
+        "zh-CN": "没有策略选择，也会期待结果",
+        "en": "Anticipation without strategic choice"
+      },
+      "edition": {
+        "zh-CN": "规则家族 · 比较三种终点处理",
+        "en": "A family of rules · Three finish conditions"
+      },
+      "comparison": {
+        "zh-CN": "同样是随机前进，超过终点可以不动、折返，也可以直接到达。先把具体版本说清，才能判断尾段为何拖延，或为什么突然结束。",
+        "en": "A random advance can leave an overshooting pawn still, send it backward, or let it finish. Identify the edition before explaining the ending."
+      },
+      "boundary": {
+        "zh-CN": "Hasbro 32930 用转盘且超出不动；Orchard 629 用骰子、不要求精确点数；Traditional Garden Games 012 用骰子、超出折返。课程的 24 格棋盘是另行编写的教学版本。",
+        "en": "Hasbro 32930 uses a spinner, an exact finish, and no movement on an overshoot; Orchard 629 uses a die without requiring an exact finish; Traditional Garden Games 012 uses a die and bounces back on overshoots. Our 24-space board is an authored teaching variant."
+      },
+      "chapters": [
+        1,
+        7,
+        9,
+        10,
+        14
+      ],
+      "chapterId": "race-rules-and-play",
+      "caseId": "",
+      "sources": [
+        {
+          "label": {
+            "zh-CN": "Hasbro《滑梯与梯子》芝麻街版规则",
+            "en": "Hasbro Chutes and Ladders: Sesame Street rules"
+          },
+          "url": "https://www.hasbro.com/common/documents/dad2614c1c4311ddbd0b0800200c9a66/4C5FB0165056900B10CBFE14B7B4D5F6.pdf"
+        },
+        {
+          "label": {
+            "zh-CN": "Orchard《丛林蛇梯棋》规则",
+            "en": "Orchard Jungle Snakes and Ladders rules"
+          },
+          "url": "https://www.orchardtoys.com/orchardtoys/fs/pdf/629_jungle_snakes_and_ladders_instructions_web.pdf"
+        },
+        {
+          "label": {
+            "zh-CN": "Traditional Garden Games 蛇梯棋规则",
+            "en": "Traditional Garden Games rules"
+          },
+          "url": "https://mail.traditionalgardengames.com/downloads/master-rules/Item%20012%20Snakes%20%26%20Ladders/Item%20012%20%28UK%29.pdf"
+        }
+      ]
+    },
+    {
+      "id": "monza",
+      "name": {
+        "zh-CN": "蒙扎赛车",
+        "en": "Monza"
+      },
+      "lens": {
+        "zh-CN": "掷完以后，才开始安排",
+        "en": "Arrange the outcome after the roll"
+      },
+      "edition": {
+        "zh-CN": "中文名暂译 · 经典棋盘版 4416",
+        "en": "Classic board edition 4416"
+      },
+      "comparison": {
+        "zh-CN": "六枚色骰给出这一回合可用的颜色，玩家再安排使用顺序和路线。点数大小不再是唯一问题：可用的骰子怎样接成合法前进？",
+        "en": "Six color dice provide the available colors; players arrange their order and route. The question becomes how the rolled resources connect into legal movement."
+      },
+      "boundary": {
+        "zh-CN": "规则要求尽可能前进，不能任意提前停步。换道与占格有专门限制；有人到达后完成整轮。这里不采用新版拼接赛道的组件或规则。",
+        "en": "The rules require advancing as far as possible, with specific lane and occupancy restrictions. Complete the round after a car arrives. This is not the newer modular-track edition."
+      },
+      "chapters": [
+        6,
+        11,
+        12,
+        15,
+        17
+      ],
+      "chapterId": "race-core-actions",
+      "caseId": "",
+      "sources": [
+        {
+          "label": {
+            "zh-CN": "HABA 经典版官方规则（英文印刷页 7–9）",
+            "en": "HABA classic rules (English printed pp. 7–9)"
+          },
+          "url": "https://cdn.hff.de/image/upload/v1669037914/Assets/HABA%20Play/PDF-2/4416-monza-spielanleitung-7s.pdf"
+        }
+      ]
+    },
+    {
+      "id": "cant-stop",
+      "name": {
+        "zh-CN": "欲罢不能",
+        "en": "Can’t Stop"
+      },
+      "lens": {
+        "zh-CN": "推进多少，何时保住",
+        "en": "Advance or secure progress"
+      },
+      "edition": {
+        "zh-CN": "Eagle-Gryphon 2021 规则",
+        "en": "Eagle-Gryphon 2021 rules"
+      },
+      "comparison": {
+        "zh-CN": "骰子可以组合成不同的和，玩家还要决定继续掷还是结束回合。先前推进是否已经保住，会改变下一次冒险的代价。",
+        "en": "Dice can be paired into different sums, and players decide whether to roll again or end the turn. Whether progress is secure changes the cost of the next risk."
+      },
+      "boundary": {
+        "zh-CN": "不要把临时推进说成已经永久占有，也不要把四骰配对的和当作等概率结果。规则与列长的完整关系见已有案例。",
+        "en": "Temporary progress is not permanent ownership, and sums from four-dice pairings are not equally likely. The full case examines the rules and column lengths together."
+      },
+      "chapters": [
+        15,
+        8,
+        10,
+        13
+      ],
+      "chapterId": "race-combine-mechanisms",
+      "caseId": "cant-stop",
+      "sources": [
+        {
+          "label": {
+            "zh-CN": "出版商规则下载入口",
+            "en": "Publisher’s rulebook downloads"
+          },
+          "url": "https://www.eagle-gryphon.com/products/cant-stop-1"
+        }
+      ]
+    },
+    {
+      "id": "camel-up",
+      "name": {
+        "zh-CN": "骆驼大赛",
+        "en": "Camel Up"
+      },
+      "lens": {
+        "zh-CN": "在比赛的，不一定是你的棋子",
+        "en": "The racers need not belong to you"
+      },
+      "edition": {
+        "zh-CN": "第二版 · Lookout 2024 重印规则",
+        "en": "Second edition · Lookout 2024 rules"
+      },
+      "comparison": {
+        "zh-CN": "玩家没有自己的参赛骆驼，而是通过下注等行动争取更多金钱。关注赛道位置，可能是为了重新判断谁会领先，而不是让自己那一只前进。",
+        "en": "Players do not own racing camels; they use bets and other actions to earn money. Track positions matter as evidence about likely leaders, rather than simply as personal progress."
+      },
+      "boundary": {
+        "zh-CN": "第二版加入反向行进的骆驼，通常完整赛段从六枚骰子中揭示五枚；越过终点会立即进入终局，末赛段可能提前结束。不能直接套用第一版的骰子数量。",
+        "en": "The second edition includes backward-moving camels. A normal complete leg reveals five of six dice; crossing the finish ends the game immediately, so the final leg may end sooner. Do not import the first edition’s dice count."
+      },
+      "chapters": [
+        19,
+        12,
+        26
+      ],
+      "chapterId": "race-stories-and-models",
+      "caseId": "",
+      "sources": [
+        {
+          "label": {
+            "zh-CN": "Lookout 第二版官方规则",
+            "en": "Lookout second-edition rulebook"
+          },
+          "url": "https://www.lookout-spiele.de/upload/en_camelup.html_CamelUp_PZE30070_Rules_EN_WEB_240305.pdf"
+        }
+      ]
+    },
+    {
+      "id": "snails-race",
+      "name": {
+        "zh-CN": "蜗牛赛跑",
+        "en": "Snail’s Race"
+      },
+      "lens": {
+        "zh-CN": "共享赛道，关注不同结果",
+        "en": "Shared racers, different predictions"
+      },
+      "edition": {
+        "zh-CN": "中文名暂译 · Ravensburger 20629",
+        "en": "Ravensburger 20629"
+      },
+      "comparison": {
+        "zh-CN": "六只蜗牛都参加，两枚色骰推动对应蜗牛。玩家预测谁最先、谁最后到达，提醒我们分开看“谁在移动”和“玩家为什么关心”。",
+        "en": "All six snails race, moved by two color dice. Players predict the first and last finishers, separating the pieces that move from the reasons people care."
+      },
+      "boundary": {
+        "zh-CN": "这里指 20629《蜗牛赛跑》，不是另一产品号的版本。预测时点在各语言文本中详略不同；法文明确所有蜗牛至少动过一次后再猜。",
+        "en": "This is Snail’s Race 20629. Language editions vary in how explicitly they state prediction timing; the French text specifies after every snail has moved at least once."
+      },
+      "chapters": [
+        21,
+        3,
+        16
+      ],
+      "chapterId": "race-access-and-participation",
+      "caseId": "",
+      "sources": [
+        {
+          "label": {
+            "zh-CN": "Ravensburger 官方规则（英文页 1–4）",
+            "en": "Ravensburger official rules (English pp. 1–4)"
+          },
+          "url": "https://www.ravensburger.org/spielanleitungen/ecm/Spielanleitungen/20629%20Anl%202052710.pdf?ossl=pds_text_Spielanleitung"
+        }
+      ]
+    }
+  ]
+}

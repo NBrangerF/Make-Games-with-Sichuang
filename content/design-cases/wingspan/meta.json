@@ -3,12 +3,12 @@
   "category": "theme",
   "game": "Wingspan",
   "title": {
-    "zh-CN": "Wingspan：栖息地怎样把鸟牌组织成一条引擎？",
+    "zh-CN": "展翅翱翔：栖息地怎样把鸟牌组织成一条引擎？",
     "en": "Wingspan: How Does a Habitat Organize Birds into an Engine?"
   },
   "summary": {
-    "zh-CN": "比较栖息地连锁、可用与储藏食物、目标板两面的得分关系，并对照 Hargrave 的能力与牌库开发取舍。",
-    "en": "Compare habitat chains, spendable versus cached food, and the two goal-board scoring relationships, with Hargrave’s development tradeoffs."
+    "zh-CN": "打下一张鸟牌，之后的取食也变了。看栖息地怎样串起动作、食物与得分。",
+    "en": "Playing a bird changes later turns. Follow how a habitat connects actions, food, and scoring."
   },
   "chapterIds": [
     "reading-space-and-opportunity",
@@ -109,5 +109,10 @@
     "author": "Elizabeth Hargrave",
     "sectionId": "designer-notes",
     "sourceUrl": "https://gamingtrend.com/interviews/crazy-eights-elizabeth-hargrave-on-wingspan/"
-  }
+  },
+  "gameTitle": {
+    "zh-CN": "展翅翱翔",
+    "en": "Wingspan"
+  },
+  "gameAliases": []
 }

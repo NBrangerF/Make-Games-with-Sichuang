@@ -3,12 +3,12 @@
   "category": "mechanism",
   "game": "Radlands",
   "title": {
-    "zh-CN": "Radlands：同样一点水，为什么早一回合就不同？",
+    "zh-CN": "废墟之地：同样一点水，为什么早一回合就不同？",
     "en": "Radlands: Why Does One Water Matter More a Turn Earlier?"
   },
   "summary": {
-    "zh-CN": "用水塔支付、前后排受伤与事件加速的三组局部对照，观察资源何时可用、谁失去能力，以及对手还有没有修复机会。",
-    "en": "Compare Water Silo payments, front and back damage, and event acceleration to examine resource timing, lost abilities, and opportunities to repair."
+    "zh-CN": "水何时能花、谁挡在前面、事件还有几回合到来，都会改变一次进攻。",
+    "en": "When water is available, who stands in front, and when an event arrives all affect an attack."
   },
   "chapterIds": [
     "reading-design-an-economy",
@@ -70,5 +70,10 @@
         "en": "Angle three: Resolving earlier removes a chance to repair"
       }
     }
-  ]
+  ],
+  "gameTitle": {
+    "zh-CN": "废墟之地",
+    "en": "Radlands"
+  },
+  "gameAliases": []
 }

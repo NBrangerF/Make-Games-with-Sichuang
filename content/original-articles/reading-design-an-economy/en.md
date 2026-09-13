@@ -42,4 +42,4 @@ Now compare a different supply rule separately: for every complete group of thre
 
 Both arrangements increase the supply, but fixed additions and additions based on stored quantity work differently. The latter may give keeping planks an extra benefit. Yet if planks must eventually help the animals cross, keeping them unused may delay departure. To judge the value of this relationship, connect its benefit to the goal and deadline instead of simply approving faster growth.
 
-Put away the logs and supply variations and return to the basic game. Planks support movement, collecting takes a turn, and four rounds determine whether there is still time. Following acquisition, processing, and use helps locate the step worth changing. The next chapter changes the condition we have kept fixed: what should a game ask people to achieve, and when should it stop?
+Set aside the log and supply variants and return to the base game. Draw the route from acquiring a plank to using it, marking the actions spent along the way. If resources later seem plentiful or scarce, follow that route to look for a cause.

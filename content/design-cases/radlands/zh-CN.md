@@ -1,6 +1,6 @@
-# Radlands：同样一点水，为什么早一回合就不同？
+# 废墟之地：同样一点水，为什么早一回合就不同？
 
-《Radlands》让两人用水打出人物、安排事件、发动能力，以摧毁对方三座营地为目标。人物可以挡在营地前；有些威胁却沿着公开的事件队列逼近。理解它的关键，不只是数资源，还要看资源何时能花、伤害落到谁身上，以及对手还能回应几次。
+《废墟之地》里，水既用来打出人物，也用来安排事件和发动能力。你盯着对手的三座营地，得先看谁挡在前面，再看事件还要多久到来。同样一份水，现在花还是稍后花，可能让对手少一次修复机会。
 
 本文采用官方英文规则 V2.1 的基本游戏部分，仅用原有34张营地，不加入 Cult of Chrome。当前 [Roxley 产品页](https://roxley.com/products/radlands-complete)展示的是包含扩展的 Complete 包装；页面下载入口标着2024.11.13，实际文件第3页写 V2.1、封底标©2026，不能混为同一个日期。
 
@@ -67,5 +67,5 @@ A只剩完好的 Garage，B只剩完好的 Supply Depot。现在是A行动阶段
 
 ## 版本与来源
 
-- [Roxley：Radlands Complete](https://roxley.com/products/radlands-complete)：核对作者 Daniel Piechnick、当前包装含扩展，以及官方规则下载入口。包装内容不等于本文采用的内容范围。
+- [废墟之地｜Roxley：Radlands Complete](https://roxley.com/products/radlands-complete)：核对作者 Daniel Piechnick、当前包装含扩展，以及官方规则下载入口。包装内容不等于本文采用的内容范围。
 - [Roxley：英文规则 V2.1](https://cdn.shopify.com/s/files/1/0246/2190/8043/files/Radlands_Rulebook_Booklet_2.1.pdf?v=1784906929)：共16个PDF页面，第3–15页的PDF页序与印刷页码一致；第3–11页完整基本规则正文，第12–15页含基本与扩展澄清，本文只采用基本部分。关键牌面、费用和图标已结合页面图像核对。上面的局面、比较与设计推断均为本站原创，不作为设计师开发经历。

@@ -15,7 +15,7 @@ export const worksheets = {
   intent: [
     field('谁会在什么场合玩', 'Who will play, and in what setting', '两个第一次接触这份草稿的人，在一张小桌上玩。', 'Two people new to this draft, playing at a small table.'),
     field('希望他们遇到的具体选择', 'A choice you want them to face', '自己先走一步，还是留在起点收集两块公共木板。', 'Move one step, or remain at the starting bank to collect two shared planks.'),
-    field('怎样知道这个方向是否成立', 'What would help you judge that intention', '记录一次玩家比较两种做法的时刻，再问他们当时在顾虑什么。', 'Note a moment when a player compares the two options, then ask what they were considering.'),
+    field('试玩时看哪一刻', 'What to watch during play', '记录一次玩家比较两种做法的时刻，再问他们当时在顾虑什么。', 'Note a moment when a player compares the two options, then ask what they were considering.'),
   ],
   loop: [
     field('动作前：玩家能看到什么', 'Before the action: what is visible', '小兔还在起点岸，公共区有四块木板。', 'Rabbit is at the starting bank; four shared planks are available.'),
@@ -38,17 +38,17 @@ export const worksheets = {
     field('哪里可能讲了另一种故事', 'Where the rules might tell another story', '如果只奖励第一个过河的人，玩家可能把木板留给自己。要选择想表达的关系。', 'If only the first character across is rewarded, players may keep planks for themselves. Decide which relationship the game should express.'),
   ],
   access: [
-    field('一个具体参与任务', 'One concrete participation task', '辨认哪些纸片是可用木板，哪些已经用过。', 'Distinguish available planks from used ones.'),
+    field('想完成的一个动作', 'One action to carry out', '辨认哪些纸片是可用木板，哪些已经用过。', 'Distinguish available planks from used ones.'),
     field('可能遇到的障碍', 'A possible barrier', '如果只用浅绿与深绿区分状态，有人可能看不清。此处是待验证的担忧。', 'If light and dark green alone distinguish states, someone may not see the difference. This is a concern to check.'),
     field('要比较的改法与观察', 'A change to compare and what to observe', '加上不同形状与文字标记，让参与者指出可用木板，记录是否需要额外解释。', 'Add distinct shapes and labels. Ask participants to identify available planks and note any additional explanation needed.'),
   ],
   test: [
     field('这一轮只回答的问题', 'The question for this test', '玩家能否在不听设计者补充的情况下完成一次收集？', 'Can a player complete one collection action without the designer adding instructions?'),
     field('给他们的最小材料与任务', 'Minimum materials and task', '操作说明、起点棋子、公共区和备用区；请完成一次合法收集。', 'Instructions, a character at the starting bank, and shared and reserve supplies. Ask for one legal collection action.'),
-    field('记录什么，不预写什么', 'What to record, without inventing a result', '记录停顿、查找说明的位置和求助原话；试玩前不填结果。', 'Record pauses, where they look in the instructions, and their exact requests for help. Leave results blank before the test.'),
+    field('这次准备记什么', 'What to record this time', '记录停顿、查找说明的位置和求助原话；试玩前不填结果。', 'Record pauses, where they look in the instructions, and their exact requests for help. Leave results blank before the test.'),
   ],
   review: [
-    field('已有的观察或暂缺的证据', 'The observation, or evidence still missing', '尚未试玩。目前只有“收集要从哪里拿木板可能不清楚”这个担忧。', 'No playtest yet. There is only a concern that the source of collected planks may be unclear.'),
+    field('目前看到了什么', 'What you have seen so far', '尚未试玩。目前只有“收集要从哪里拿木板可能不清楚”这个担忧。', 'No playtest yet. There is only a concern that the source of collected planks may be unclear.'),
     field('至少两种可能的解释', 'At least two possible explanations', '可能是说明没写清；也可能是备用区与公共区的标记不明显。', 'The instruction may be unclear, or the reserve and shared areas may be hard to distinguish.'),
     field('下一次只改变什么', 'One change for the next comparison', '先强化备用区标记，保留其他规则；再观察是否仍需口头提示。', 'First strengthen the reserve-area label and keep other rules the same. Observe whether verbal help is still needed.'),
   ],
@@ -81,7 +81,7 @@ export function ReadingWorksheet({ sourceId, worksheetId, title, reason, languag
     catch { setStatus(t('浏览器无法保存，请下载一份记录。', 'This browser could not save the note. Download a copy instead.')) }
   }
   const download = () => {
-    const text = [`# ${title}`, reason, t('阅读练习，不是试玩结果。', 'A reading exercise, not a playtest result.'), draft.basedOnExample ? t('包含或改写自过河示例。', 'Contains or adapts the river-crossing example.') : '', ...fields.flatMap((item, i) => [`## ${item.label[language]}`, draft.values[i] || t('尚未填写', 'Not filled in')]), `Source: ${sourceId}`].filter(Boolean).join('\n\n') + '\n'
+    const text = [`# ${title}`, reason, t('阅读练习，不是试玩结果。', 'A reading exercise, not a playtest result.'), draft.basedOnExample ? t('包含或改写自本章教学示例。', 'Contains or adapts this chapter’s teaching example.') : '', ...fields.flatMap((item, i) => [`## ${item.label[language]}`, draft.values[i] || t('尚未填写', 'Not filled in')]), `Source: ${sourceId}`].filter(Boolean).join('\n\n') + '\n'
     const url = URL.createObjectURL(new Blob([text], { type: 'text/markdown;charset=utf-8' }))
     const anchor = document.createElement('a'); anchor.href = url; anchor.download = `${sourceId}-${language}-note.md`; anchor.click()
     setTimeout(() => URL.revokeObjectURL(url), 1000)
@@ -94,12 +94,14 @@ export function ReadingWorksheet({ sourceId, worksheetId, title, reason, languag
     setStatus(t('本章练习已清空。', 'This exercise has been cleared.'))
   }
   return <section className="reading-worksheet" id={`worksheet-${sourceId}`} aria-labelledby={`worksheet-title-${sourceId}`}>
-    <div className="reading-worksheet__heading"><span aria-hidden="true">↳</span><div><h2 id={`worksheet-title-${sourceId}`}>{title}</h2><p>{reason}</p></div></div>
-    <p className="reading-worksheet__optional">{t('可选练习 · 可以跳过，继续阅读', 'Optional exercise · You can keep reading without filling it in')}</p>
+    <details className="reading-worksheet__disclosure">
+    <summary id={`worksheet-title-${sourceId}`}><span className="reading-worksheet__label">{t('小练习', 'Exercise')}</span><strong>{title}</strong><span className="reading-worksheet__toggle">{t('展开 / 收起', 'Open / close')}</span></summary>
+    <p>{reason}</p>
     <div className="reading-worksheet__fields">{fields.map((item, i) => <label key={i} htmlFor={`${sourceId}-field-${i}`}><span>{item.label[language]}</span><textarea id={`${sourceId}-field-${i}`} rows={2} maxLength={4000} value={draft.values[i]} placeholder={t('用自己的游戏填写，或载入下方示例', 'Use your own game, or load the example below')} onChange={event => changed({ ...draft, values: draft.values.map((value, j) => i === j ? event.target.value : value) })} /></label>)}</div>
-    {draft.basedOnExample && <p className="reading-worksheet__example-note">{t('当前包含或改写自过河示例；这是分析草稿，不是已观察到的结果。', 'This draft contains or adapts the river example. It is an analysis draft, not an observed result.')}</p>}
-    <div className="reading-worksheet__actions"><button type="button" onClick={() => changed({ ...draft, values: chapterExample ? [...chapterExample] : fields.map(item => item.example[language]), basedOnExample: true })}>{t('载入过河示例', 'Load river example')}</button><button type="button" className="reading-worksheet__save" onClick={save}>{t('保存在本机', 'Save on this device')}</button><button type="button" onClick={download}>{t('下载我的记录', 'Download my note')}</button></div>
-    <div className="reading-worksheet__foot"><p>{t('点击保存才会写入本机。只阅读不会生成记录；你填写的文字不随语言切换自动翻译。', 'Only Save writes to this device. Reading creates no record. Your own text is not translated when you switch languages.')}</p><button type="button" onClick={clear}>{clearArmed ? t('确认清空本章练习', 'Confirm: clear this exercise') : t('清空', 'Clear')}</button>{clearArmed && <button type="button" onClick={() => setClearArmed(false)}>{t('取消', 'Cancel')}</button>}</div>
+    {draft.basedOnExample && <p className="reading-worksheet__example-note">{t('已载入教学示例，可在此改写。示例中的情境为讲解编写。', 'Teaching example loaded; edit it here. Its situation was written for the lesson.')}</p>}
+    <div className="reading-worksheet__actions"><button type="button" onClick={() => changed({ ...draft, values: chapterExample ? [...chapterExample] : fields.map(item => item.example[language]), basedOnExample: true })}>{t('载入本章示例', 'Load chapter example')}</button><button type="button" className="reading-worksheet__save" onClick={save}>{t('保存到此浏览器', 'Save in this browser')}</button><button type="button" onClick={download}>{t('下载我的记录', 'Download my note')}</button></div>
+    <div className="reading-worksheet__foot"><p>{t('点击保存，留在当前浏览器。切换语言会保留你填写的原文。', 'Select Save to keep this in the current browser. Switching languages keeps your own text as written.')}</p><button type="button" onClick={clear}>{clearArmed ? t('确认清空本章练习', 'Confirm: clear this exercise') : t('清空', 'Clear')}</button>{clearArmed && <button type="button" onClick={() => setClearArmed(false)}>{t('取消', 'Cancel')}</button>}</div>
     <p className="reading-worksheet__status" role="status">{status}</p>
+    </details>
   </section>
 }

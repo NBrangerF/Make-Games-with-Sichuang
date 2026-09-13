@@ -92,6 +92,12 @@ body[data-reading-studio="true"] .original-reading__body blockquote { padding: 8
 body[data-reading-studio="true"] .text-learning__related { max-width: 780px; margin: 48px auto 0; background: #e8e9dc; border-color: #839477; }
 body[data-reading-studio="true"] .text-learning__neighbors { max-width: 780px; margin: 34px auto 0; }
 .reading-worksheet { background: #e3e7d9; border: 1px solid #c8d0bb; border-radius: 8px; padding: 25px; margin: 36px 0; scroll-margin-top: 110px; }
+.reading-worksheet__disclosure > summary { cursor: pointer; min-height: 44px; line-height: 1.65; }
+.reading-worksheet__disclosure > summary strong { font-weight: 550; }
+.reading-worksheet__label { display: inline-block; margin-right: 12px; font-size: 12px; color: #506244; }
+.reading-worksheet__toggle { display: block; margin-left: 18px; font-size: 12px; color: #506244; }
+.reading-worksheet__disclosure[open] > summary { margin-bottom: 18px; }
+.reading-worksheet__disclosure > summary:focus-visible { outline: 2px solid #183b41; outline-offset: 6px; border-radius: 2px; }
 .reading-worksheet__heading { display: flex; gap: 13px; align-items: start; }
 .reading-worksheet__heading > span { font: 40px/1 Georgia,serif; color: #7a8e73; }
 body[data-reading-studio="true"] .original-reading__body .reading-worksheet h2 { margin: 0 0 8px; font-size: 26px; }
