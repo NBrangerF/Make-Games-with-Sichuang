@@ -7,6 +7,7 @@ type MarkdownReadingProps = {
   language?: 'zh-CN' | 'en'
   afterSection?: { number: number; node: ReactNode }
   headingIds?: Record<string, string>
+  sectionInserts?: Record<string, ReactNode>
 }
 
 export type MarkdownOutlineItem = Readonly<{
@@ -79,12 +80,16 @@ function tableCells(line: string) {
   return line.trim().replace(/^\||\|$/g, '').split('|').map(cell => cell.trim())
 }
 
-export function MarkdownReading({ source, allowSourceLinks = false, language = 'zh-CN', afterSection, headingIds }: MarkdownReadingProps) {
+export function MarkdownReading({ source, allowSourceLinks = false, language = 'zh-CN', afterSection, headingIds, sectionInserts }: MarkdownReadingProps) {
   const inline = (text: string, key: string) => renderInline(text, key, allowSourceLinks)
   const lines = stripFrontmatter(source).split(/\r?\n/)
   const blocks: ReactNode[] = []
   let index = 0
   let section = 0
+  let currentSection = ''
+  const insertFigure = () => {
+    if (sectionInserts?.[currentSection]) blocks.push(<Fragment key={`figure-${currentSection}`}>{sectionInserts[currentSection]}</Fragment>)
+  }
 
   while (index < lines.length) {
     const line = lines[index]
@@ -97,6 +102,8 @@ export function MarkdownReading({ source, allowSourceLinks = false, language = '
     if (heading) {
       const level = heading[1].length
       if (level === 2) {
+        insertFigure()
+        currentSection = heading[2]
         if (afterSection?.number === section) blocks.push(<Fragment key="contextual-support">{afterSection.node}</Fragment>)
         section += 1
       }
@@ -170,6 +177,7 @@ export function MarkdownReading({ source, allowSourceLinks = false, language = '
     blocks.push(<p key={`paragraph-${index}`}>{inline(paragraph.join(' '), `paragraph-${index}`)}</p>)
   }
 
+  insertFigure()
   if (afterSection?.number === section) blocks.push(<Fragment key="contextual-support">{afterSection.node}</Fragment>)
   return <>{blocks.map((block, blockIndex) => <Fragment key={`block-${blockIndex}`}>{block}</Fragment>)}</>
 }

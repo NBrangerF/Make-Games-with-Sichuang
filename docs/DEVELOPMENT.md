@@ -29,3 +29,7 @@ Vercel uses `vercel.json` and `pnpm build`. Only `/play/rule-lab/` allows same-o
 - [Previous detailed maintenance notes](handovers/2026-09-14-previous-maintainer-readme.md)
 
 README structure references reviewed on 2026-09-14: [The Evolution of Trust](https://github.com/ncase/trust), [Excalidraw](https://github.com/excalidraw/excalidraw), and [Lichess](https://github.com/lichess-org/lila). We used the direct play link, product image, clear purpose, and language navigation patterns. No project copy or images were reused.
+
+## Article illustrations
+
+Use the homepage’s paper-board diagrams as the reference for explanatory visuals. Add a concrete diagram where movement, timing, resources, or a rule comparison benefits from one. Keep both languages equivalent and place each figure beside its relevant explanation. See [the illustration guide](product/article-illustration-guide.md) for coverage, editorial rules, and maintenance.

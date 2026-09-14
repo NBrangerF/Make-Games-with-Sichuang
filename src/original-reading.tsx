@@ -8,6 +8,8 @@ const readingPath = { chapters: allReadingChapters }
 import { MarkdownReading, extractMarkdownOutline } from './markdown-reading'
 import { readingHref, readingReturnLanguage, type ReadingLocation, type ReadingScope } from './reading-navigation'
 import './original-reading.css'
+import { articleFigures } from './article-figure-catalog'
+import { ArticleFigure } from './article-figures'
 
 export type Language = 'zh-CN' | 'en'
 export type Article = { id: string; contentVersion: string; title: Record<Language, string>; summary: Record<Language, string> }
@@ -41,7 +43,9 @@ export function ArticleBody({ article, language, afterSection, companion, withOu
   }, [article.id, language, bodyLoader])
   if (failed) return <div role="alert"><h1>{article.title[language]}</h1><p>{copy[language].error}</p><button onClick={() => window.location.reload()}>{copy[language].retry}</button></div>
   if (body === null) return <p role="status">{copy[language].loading}</p>
-  const reading = <article className="original-reading__body"><MarkdownReading source={body} language={language} afterSection={afterSection} allowSourceLinks={allowSourceLinks} /></article>
+  const figure = articleFigures[article.id]
+  const sectionInserts = figure ? { [figure.after[language]]: <ArticleFigure key={`${article.id}/${language}`} kind={figure.kind} language={language}/> } : undefined
+  const reading = <article className="original-reading__body"><MarkdownReading source={body} language={language} afterSection={afterSection} sectionInserts={sectionInserts} allowSourceLinks={allowSourceLinks} /></article>
   if (!withOutline) return reading
   const outline = extractMarkdownOutline(body).filter(item => item.level === 2)
   return <div className="reading-chapter-layout"><aside className="reading-chapter-outline"><details open={wide}><summary>{language === 'en' ? 'In this chapter' : '这一章'}</summary><nav aria-label={language === 'en' ? 'Chapter sections' : '本章小节'}>{outline.map((item, i) => <button key={item.id} onClick={() => { const target = document.getElementById(item.id); target?.scrollIntoView({ behavior: 'auto', block: 'start' }); target?.setAttribute('tabindex', '-1'); target?.focus({ preventScroll: true }) }}><span>{String(i + 1).padStart(2, '0')}</span>{item.label}</button>)}</nav></details></aside>{reading}{companion && <aside className="reading-chapter-companion"><details open={wide}><summary>{language === 'en' ? 'Exercises, tools & real games' : '本章练习、工具与真实案例'}</summary>{companion}</details></aside>}</div>

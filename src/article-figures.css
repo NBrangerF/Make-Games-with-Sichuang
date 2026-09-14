@@ -1,0 +1,40 @@
+/* Match the homepage's paper board while keeping labels and controls readable in an article. */
+.article-figure { margin: 2rem 0; padding: clamp(16px, 3vw, 28px); border: 1px solid #c6cabb; border-radius: 10px; background: #efeddf; color: #26493f; }
+.article-figure *, .article-figure *::before { box-sizing: border-box; }
+.article-figure figcaption > span { display: block; font: 600 12px/1.6 system-ui, sans-serif; color: #6e513c; }
+.article-figure figcaption > strong { display: block; margin-top: 8px; font: 700 clamp(21px, 2vw, 27px)/1.4 "Songti SC", Georgia, serif; }
+.original-reading__body .article-figure p { font-size: 15px; line-height: 1.75; margin: 14px 0; }
+.article-figure > svg { display: block; width: 100%; max-width: 510px; height: auto; margin: 16px auto; }
+.article-figure__options { display: flex; flex-wrap: wrap; justify-content: center; gap: 8px; margin: 16px 0; }
+.article-figure__options button { min-height: 44px; padding: 9px 13px; border: 1px solid #77917e; border-radius: 5px; background: #fcfaf3; color: #264c3b; font: 600 14px/1.4 system-ui, sans-serif; cursor: pointer; overflow-wrap: anywhere; }
+.article-figure__options button[aria-pressed="true"] { background: #244e3c; color: #fff; }
+.article-figure__options button:focus-visible { outline: 3px solid #a43e24; outline-offset: 3px; }
+.article-figure__options button:disabled { opacity: .45; cursor: default; }
+.original-reading__body .article-figure__trace { list-style: none; padding: 0; margin: 18px 0; display: grid; gap: 8px; }
+.article-figure__trace > li { display: flex; align-items: center; gap: 12px; padding: 10px 12px; margin: 0; border: 1px solid #c6cabb; border-radius: 5px; background: #f9f6ee; font-size: 14px; line-height: 1.6; }
+.article-figure__trace > li > span { flex: 0 0 auto; font: 700 15px/1 Georgia, serif; color: #a43e24; }
+.article-figure__trace > li[aria-current="step"] { border: 2px solid #264c3b; background: #dfe6d7; }
+.article-figure__answer { border-left: 3px solid #a43e24; padding: 4px 0 4px 14px; }
+.article-figure__answer > strong { display: block; font: 700 30px/1.5 Georgia, serif; }
+.original-reading__body .article-figure__note { border-top: 1px solid #c6cabb; padding-top: 12px; color: #556558; font-size: 12px; margin-bottom: 0; }
+.article-figure__inventory { text-align: center; padding: 12px 6px; background: #faf8f0; border: 1px solid #c6cabb; border-radius: 6px; font-size: 13px; }
+.article-figure__inventory > div { display: flex; gap: 5px; justify-content: center; margin: 10px 0; }
+.article-figure__inventory i { font-style: normal; font-size: 25px; color: #6f796c; }
+.article-figure__inventory .is-full { color: #a43e24; }
+.article-figure__stock-flow { display: grid; grid-template-columns: 1fr auto 1fr auto 1fr; align-items: center; gap: 6px; margin: 20px 0; }
+.article-figure__probability > span { display: block; text-align: center; font: 13px/1.7 system-ui, sans-serif; margin-bottom: 10px; }
+.article-figure__probability > div { display: grid; grid-template-columns: repeat(6, minmax(0, 1fr)); gap: 5px; max-width: 410px; margin: auto; }
+.article-figure__probability > div > span { display: flex; flex-direction: column; text-align: center; border: 1px solid #c6cabb; border-radius: 4px; padding: 6px 2px; font: 14px/1.5 system-ui, sans-serif; background: #faf8f0; }
+.article-figure__probability > div > .is-hit { color: #fff; background: #244e3c; border-color: #244e3c; }
+.article-figure__dice-slots, .article-figure__partners { display: grid; grid-template-columns: repeat(2, minmax(0, 1fr)); gap: 12px; margin: 20px 0; }
+.article-figure__dice-slots > div, .article-figure__partners > div { padding: 15px; border: 1px dashed #77917e; border-radius: 5px; text-align: center; background: #faf8f0; font-size: 14px; }
+.article-figure__dice-slots strong, .article-figure__partners strong { display: block; font: 700 32px/1.5 Georgia, serif; }
+@media (max-width: 420px) {
+  .article-figure__stock-flow { grid-template-columns: 1fr; }
+  .article-figure__stock-flow > span { text-align: center; transform: rotate(90deg); }
+  .article-figure__partners { grid-template-columns: 1fr; }
+}
+@media print {
+  .article-figure { box-shadow: none; break-inside: avoid; }
+  .article-figure__options { display: none; }
+}
