@@ -18,7 +18,7 @@
     "local-materials:index": "node scripts/index-local-materials.mjs --output docs/local-materials/manifest.json",
     "local-publication:check": "node scripts/check-local-publication-readiness.mjs",
     "resources:health": "node scripts/check-resource-links.mjs",
-    "build": "pnpm search:index && pnpm qa:visual-tokens && pnpm content:check && vite build --config vite.config.ts",
+    "build": "pnpm search:index && pnpm qa:visual-tokens && pnpm content:check && pnpm game:build && vite build --config vite.config.ts",
     "preview": "vite preview",
     "check": "node --max-old-space-size=2048 node_modules/typescript/bin/tsc -b --pretty false",
     "qa": "node scripts/qa-site.cjs",
@@ -85,7 +85,9 @@
     "qa:reading-search": "node --experimental-strip-types scripts/generate-reading-search.mjs --check && node --experimental-strip-types scripts/check-reading-search.mjs",
     "qa:interface-language": "node --experimental-strip-types scripts/check-interface-language.mjs",
     "qa:race-course": "node --experimental-strip-types scripts/check-race-course.mjs && node --experimental-strip-types scripts/generate-race-handout.mjs --check",
-    "copy:style": "node scripts/audit-editorial-flow.mjs"
+    "copy:style": "node scripts/audit-editorial-flow.mjs",
+    "game:build": "node scripts/build-rule-lab.mjs",
+    "game:test": "npm --prefix games/rule-lab test -- --maxWorkers=1"
   },
   "dependencies": {
     "@phosphor-icons/react": "^2.1.10",

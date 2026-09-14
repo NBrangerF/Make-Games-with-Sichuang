@@ -1,0 +1,52 @@
+/* A foreground presence in the arena; only the artwork edges fade, never the face. */
+.character-art{position:relative;isolation:isolate;display:grid;place-items:center;min-width:0;overflow:visible;--portrait-edge:linear-gradient(90deg,transparent,#000 10%,#000 90%,transparent);--portrait-floor:linear-gradient(180deg,transparent,#000 3%,#000 73%,transparent 100%);--portrait-contour:radial-gradient(ellipse 68% 78% at 51% 39%,#000 58%,#000000f2 66%,#0000009e 78%,#00000038 90%,transparent 100%)}
+/* The mask must follow the actual 2:3 bitmap, not a wider contain letterbox. */
+.character-art img{position:absolute;inset:0 auto auto 50%;z-index:1;width:auto;height:100%;max-width:none;aspect-ratio:2/3;translate:-50% 0;object-fit:fill;filter:none;-webkit-mask-image:var(--portrait-edge),var(--portrait-floor),var(--portrait-contour);mask-image:var(--portrait-edge),var(--portrait-floor),var(--portrait-contour);-webkit-mask-composite:source-in,source-in;mask-composite:intersect,intersect}
+.character-art--cutout{--portrait-edge:linear-gradient(90deg,transparent,#000 3%,#000 97%,transparent);--portrait-floor:linear-gradient(180deg,#000 0%,#000 80%,transparent 100%);--portrait-contour:linear-gradient(#000,#000)}
+.character-halo{position:absolute;inset:8% -28% -4%;z-index:0;border-radius:50%;background:radial-gradient(ellipse at 49% 58%,color-mix(in srgb,var(--character-accent) var(--character-glow,23%),transparent),transparent 67%);pointer-events:none}
+.character-ground{position:absolute;inset:auto -15% -3%;height:20%;z-index:0;background:radial-gradient(ellipse at 50% 50%,color-mix(in srgb,var(--character-accent) 15%,transparent),transparent 67%);transform:scaleY(.48);pointer-events:none}
+.character-stand{position:absolute;left:clamp(-18px,.8vw,18px);top:clamp(128px,20vh,198px);width:clamp(250px,28vw,410px);z-index:2;pointer-events:none;color:var(--ink)}
+.character-stand>.character-art{height:clamp(340px,54vh,580px)}
+.character-caption{padding:0 8% 0 25%;position:relative;margin-top:-18px}
+.character-tag{font-size:9px;letter-spacing:.24em;color:var(--muted)}
+.character-caption h2{font-family:var(--font-display);font-size:36px;font-weight:700;letter-spacing:.22em;margin:7px 0 8px}
+.character-caption p{font-size:11px;display:flex;align-items:center;flex-wrap:wrap;gap:6px;color:var(--ink)}
+.character-caption p>.ability-icon{color:var(--character-accent)}
+.character-caption p>span{font-size:9px;color:var(--muted);margin-left:2px}
+.character-stand.is-spent .character-halo{opacity:.38}
+.character-stand.is-armed .character-halo{--character-glow:40%}
+.character-stand.is-triggered .character-halo{animation:character-surge .65s ease-out}
+.character-stand.is-triggered .character-art img{animation:character-presence .65s ease-out}
+@keyframes character-surge{0%{opacity:1;scale:1.13}100%{opacity:1;scale:1}}
+@keyframes character-presence{0%{transform:translateY(-4px)}100%{transform:translateY(0)}}
+.ability-card-art{height:215px;background:none;border:0;--portrait-floor:linear-gradient(180deg,transparent,#000 3%,#000 68%,transparent 100%)}
+.ability-card-art img{height:280px;--portrait-floor:linear-gradient(180deg,transparent,#000 3%,#000 50%,transparent 78%)}
+.ability-card-art .character-ground{display:none}
+.character-introduction{display:grid;grid-template-columns:1.1fr 1fr;align-items:center;gap:18px;min-height:440px}
+.character-introduction>.character-art{height:460px;width:100%;max-width:340px;justify-self:center}
+.character-introduction .character-tag{color:var(--accent);font-size:11px}
+.character-introduction h3{font-size:clamp(42px,5vw,68px);font-family:var(--font-display);letter-spacing:.17em;margin:14px 0 20px}
+.character-introduction blockquote{margin:0 0 23px;padding-left:0;border:0;font-family:var(--font-display);font-size:17px;line-height:1.8}
+.character-introduction p{font-size:13px;line-height:1.9;color:var(--muted)}
+.character-introduction .button{margin-top:17px}
+.passive-caption{display:none}
+@media(min-width:701px) and (max-width:1000px){.character-stand{left:-22px;width:250px}.character-caption{padding-left:25%}.character-caption h2{font-size:28px}}
+@media(max-width:700px){
+  .character-stand{top:0;left:-8px;width:142px;transform:none!important}
+  .character-stand>.character-art{height:196px}
+  .character-caption{padding:0 4px;margin-top:-18px;text-align:center}
+  .character-caption h2{font-size:20px;margin:4px 0;letter-spacing:.12em}
+  .character-caption p,.character-stand .character-tag{display:none}
+  .character-stand.is-passive .passive-caption{display:block;font-size:9px;line-height:1.4;color:var(--muted);letter-spacing:.08em}
+  .character-introduction{grid-template-columns:1fr;gap:0;min-height:0;text-align:center}
+  .character-introduction>.character-art{height:280px;width:224px;margin:0 auto -7px}
+  .character-introduction h3{font-size:38px;margin:8px 0 13px}
+  .character-introduction blockquote{font-size:15px;margin-bottom:10px}
+  .character-introduction p{font-size:12px;max-width:270px;margin:0 auto}
+  .character-introduction .button{margin-top:17px}
+  .ability-card-art{grid-column:1;grid-row:2/6;height:100%;min-height:155px;overflow:hidden}
+  .ability-card-art img{height:100%;width:100%;object-fit:cover;object-position:50% 8%;--portrait-floor:linear-gradient(180deg,transparent,#000 3%,#000 73%,transparent 100%)}
+}
+@media(max-width:359px){.character-stand{left:-8px;width:128px}.character-stand>.character-art{height:180px}.character-caption h2{font-size:18px}}
+@media(prefers-reduced-motion:reduce){.character-stand.is-triggered :is(.character-halo,.character-art img){animation:none}}
+.reduce-motion .character-stand.is-triggered :is(.character-halo,.character-art img){animation:none}

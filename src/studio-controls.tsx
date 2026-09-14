@@ -6,11 +6,12 @@ import { BookOpenIcon } from '@phosphor-icons/react/dist/csr/BookOpen'
 import { CardsIcon } from '@phosphor-icons/react/dist/csr/Cards'
 import { StackIcon } from '@phosphor-icons/react/dist/csr/Stack'
 import { PencilRulerIcon } from '@phosphor-icons/react/dist/csr/PencilRuler'
+import { GameControllerIcon } from '@phosphor-icons/react/dist/csr/GameController'
 import { animate } from 'motion/mini'
 import { useEffect, useRef } from 'react'
 import type { ReadingLanguage } from './reading-navigation'
 
-export const navigationIcons = { course: BookOpenIcon, cases: CardsIcon, library: StackIcon, workbench: PencilRulerIcon }
+export const navigationIcons = { play: GameControllerIcon, course: BookOpenIcon, cases: CardsIcon, library: StackIcon, workbench: PencilRulerIcon }
 
 export function ActiveNavigationMark() {
   const mark = useRef<HTMLSpanElement>(null)

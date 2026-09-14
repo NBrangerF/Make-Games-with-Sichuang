@@ -43,4 +43,4 @@ A waits in round one, then sends red in round two. Can B simultaneously forward 
 
 The route, supplies, and request are fictional, without real disaster-response, priority, or reliability parameters. Observe whether readers list beginning-of-round inventories correctly rather than using incoming goods early.
 
-These original rules develop Luozhuo's rescue-network setting. The related science-fiction article examines delayed individual commands; this episode puts delay into multiplayer handoffs and need information.
+These original rules develop our rescue-network setting. The related science-fiction article examines delayed individual commands; this episode puts delay into multiplayer handoffs and need information.

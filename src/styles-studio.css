@@ -175,7 +175,7 @@ body .site-footer { max-width: 1390px; margin: 0 auto; background: transparent; 
 }
 @media (max-width: 900px) {
   body .header.studio-header { height: 130px; padding: 12px 22px 0; grid-template-columns: 1fr auto; grid-template-rows: 54px 52px; gap: 12px; }
-  body .header.studio-header nav { grid-row: 2; grid-column: 1 / -1; display: grid; grid-template-columns: repeat(4,minmax(0,1fr)); gap: 4px; }
+  body .header.studio-header nav { grid-row: 2; grid-column: 1 / -1; display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 4px; }
   body .header.studio-header .nav-link { min-width: 0; padding: 0 6px; white-space: normal; font-size: 13px; }
   .studio-header__actions { grid-column: 2; grid-row: 1; }
   body .header.studio-header .internal-scope { display: none; }
@@ -304,3 +304,58 @@ body[data-reading-studio="true"] .text-learning__hero--race h1 { font-size: clam
 .race-handout a { display: inline-block; padding: 8px 0; margin-right: 24px; }
 
 @media (max-width: 700px) { .text-learning__hero--race .text-learning__hero-copy { padding-top: 0; } }
+
+/* Bilingual brand and the fifth, playable learning entry. */
+body .studio-brand .studio-brand__caption { letter-spacing: .02em; font-size: 10px; }
+body .studio-brand strong.studio-brand__english { font-family: Georgia, serif; font-size: 25px; line-height: 1; letter-spacing: -.04em; }
+.studio-brand__english > span, .studio-brand__english > small { display: block; }
+.studio-brand__english > small { font-size: 16px; letter-spacing: 0; margin-top: 4px; }
+body .header.studio-header .nav-link { padding-inline: 10px; gap: 6px; }
+.play-feature { display: flex; align-items: center; gap: 32px; padding: 26px 32px; margin: 20px 0 32px; color: var(--studio-ink); background: #eee6d5; border: 1px solid #d4c6a9; border-radius: 12px; text-decoration: none; }
+.play-feature > img { flex-shrink: 0; width: 140px; height: 140px; object-fit: cover; border-radius: 24px; }
+.play-feature h2 { margin: 8px 0; font: 700 clamp(22px, 2.4vw, 32px)/1.3 var(--studio-display); }
+.play-feature p { margin: 8px 0 12px; max-width: 750px; line-height: 1.7; }
+.play-feature strong, .play-feature__eyebrow { color: #974027; }
+.play-feature__eyebrow { font-size: 13px; font-weight: 600; }
+.play-feature:hover { background: #e8dfcb; border-color: #a86142; }
+.play-learn { max-width: 1240px; margin: auto; padding: 48px 32px 64px; color: var(--studio-ink); }
+.play-learn__intro { display: flex; align-items: center; justify-content: space-between; gap: 48px; margin-bottom: 40px; }
+.play-learn h1 { font: 700 clamp(36px, 4.8vw, 64px)/1.15 var(--studio-display); letter-spacing: -.025em; white-space: pre-line; margin: 20px 0; }
+.play-learn__intro p { max-width: 720px; line-height: 1.8; }
+.play-learn__icon { border-radius: 48px; width: min(28vw,280px); height: auto; }
+.play-learn__start { display: inline-flex; gap: 40px; padding: 16px 26px; min-height: 52px; color: #fff; background: #974027; border: 0; border-radius: 5px; font: 600 17px/1.4 var(--studio-ui); cursor: pointer; margin: 12px 0; }
+.play-learn .play-learn__note { color: var(--studio-muted); font-size: 13px; line-height: 1.6; }
+.play-learn__game { margin: 0 0 48px; border: 1px solid #c8c9b7; background: #f8f6ed; border-radius: 10px; overflow: hidden; }
+.play-learn__game-bar { display: flex; justify-content: space-between; gap: 16px; padding: 14px 20px; font-size: 13px; flex-wrap: wrap; }
+.play-learn__game iframe { display: block; width: 100%; height: 800px; height: min(850px, 90svh); min-height: 600px; border: 0; background: #f8f6ed; }
+.play-learn__watch { display: grid; grid-template-columns: 1fr minmax(200px, 290px); gap: 64px; align-items: center; background: #e9edde; border-radius: 12px; padding: 40px 56px; }
+.play-learn__watch h2 { white-space: pre-line; font: 700 clamp(30px, 4vw, 48px)/1.25 var(--studio-display); margin: 16px 0; }
+.play-learn__watch p { max-width: 540px; line-height: 1.8; }
+.play-learn__watch video { width: 100%; aspect-ratio: 9/16; object-fit: contain; background: #171b18; border-radius: 8px; }
+.play-learn__questions { padding-top: 44px; }
+.play-learn__questions > div { display: grid; grid-template-columns: repeat(3, minmax(0, 1fr)); gap: 32px; margin: 28px 0; }
+.play-learn__questions article { border-top: 2px solid #aa714b; padding-top: 12px; }
+.play-learn__questions p { line-height: 1.8; }
+@media (max-width: 1200px) and (min-width: 901px) {
+  body .header.studio-header { grid-template-columns: 180px minmax(0,1fr) auto; gap: 8px; }
+  body .header.studio-header .nav-link { font-size: 12px; padding-inline: 6px; gap: 4px; }
+}
+@media (max-width: 700px) {
+  body .header.studio-header nav { display: grid; grid-template-columns: repeat(5,minmax(0,1fr)); gap: 0; }
+  body .header.studio-header .nav-link { padding: 6px 2px; font-size: 10px; line-height: 1.2; flex-direction: column; gap: 4px; text-align: center; }
+  body .header.studio-header .nav-link > span { white-space: normal; }
+  body .studio-brand strong { font-size: 27px; }
+  .play-feature { align-items: flex-start; gap: 16px; padding: 20px 16px; }
+  .play-feature > img { width: 76px; height: 76px; border-radius: 16px; }
+  .play-feature p { font-size: 14px; }
+  .play-learn { padding: 26px 16px 40px; }
+  .play-learn__intro { gap: 16px; align-items: flex-start; }
+  .play-learn__icon { width: 72px; border-radius: 15px; margin-top: 36px; }
+  .play-learn__watch { grid-template-columns: minmax(0,1fr); gap: 20px; padding: 28px 24px; }
+  .play-learn__watch video { max-width: 280px; justify-self: center; }
+  .play-learn__questions > div { grid-template-columns: minmax(0,1fr); gap: 16px; }
+  .play-learn__game iframe { min-height: 640px; }
+}
+
+.play-learn__game { scroll-margin-top: 104px; }
+@media (max-width: 900px) { .play-learn__game { scroll-margin-top: 142px; } }

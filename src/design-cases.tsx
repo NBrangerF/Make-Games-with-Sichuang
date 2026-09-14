@@ -1,3 +1,4 @@
+import { brandName } from './brand'
 import { caseGameName } from './case-game-name'
 import { useReadingSearch, SearchLoading, SearchExcerpts } from './reading-search-ui'
 import { searchSnippets } from './reading-search'
@@ -67,7 +68,7 @@ export function DesignCases({ caseId, language = 'zh-CN', query = '', category, 
   const filtered = searchCases(designCases, controls, search.index)
   const sectionHref = (id: string) => readingHref('cases', caseId, language, { ...filters, caseSection: id, readingReturnTo: returnTo })
   useEffect(() => {
-    document.title = `${collection ? t('案例研究', 'Case studies') : entry?.title[language] || t('案例未找到', 'Case not found')} · 落桌`
+    document.title = `${collection ? t('案例研究', 'Case studies') : entry?.title[language] || t('案例未找到', 'Case not found')} · ${brandName(language)}`
     document.getElementById('main-content')?.focus({ preventScroll: true })
   }, [caseId, collection, entry, language])
   return <main id="main-content" tabIndex={-1} lang={language} className={`design-cases${collection ? '' : ' design-cases--detail'}`}>

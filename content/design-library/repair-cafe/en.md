@@ -45,4 +45,4 @@ Replace the first sequence's final wait with an inspection of B. Does that succe
 
 Binary faults, certain effects, and uniform materials deliberately narrow the diagnostic problem. They do not imply all real objects are repairable or should be repaired. Observe whether readers separately update inference, remaining materials, and remaining actions rather than only noting the correct method.
 
-These original faults and methods develop Luozhuo's repair-café setting. Related observation and feedback lessons distinguish events, explanations, and the next question worth checking.
+These original faults and methods develop our repair-café setting. Related observation and feedback lessons distinguish events, explanations, and the next question worth checking.

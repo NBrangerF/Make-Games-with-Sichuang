@@ -45,4 +45,4 @@ Both rooms are under construction. A will finish on the next action. Can the cur
 
 The two-room layout and one-step starts and finishes deliberately omit actual building safety, duration, materials, and restoration techniques. The model distinguishes final achievements from conditions maintained along the way; it does not evaluate real construction plans.
 
-This original rules comparison develops Luozhuo's occupied-building restoration setting. The related city-building article helps contrast who can use services at the end with whether a service remains available throughout.
+This original rules comparison develops our occupied-building restoration setting. The related city-building article helps contrast who can use services at the end with whether a service remains available throughout.

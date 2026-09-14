@@ -1,3 +1,4 @@
+import { brandName } from './brand'
 import { chapterForTrack, trackFromReturn } from './reading-paths'
 import { caseGameName } from './case-game-name'
 import { LibraryKindIcon } from './library-kind-icon'
@@ -28,7 +29,7 @@ export function DesignLibrary({ entryId, language = 'zh-CN', query = '', kind, q
   const availableKinds = libraryKinds.filter(value => value === kind || libraryEntries.some(item => libraryGroup(item.kind) === value))
   const availableQuestions = libraryQuestions.filter(value => value === question || libraryEntries.some(item => item.question === value))
   useEffect(() => {
-    document.title = `${collection ? t('机制与主题', 'Mechanisms & themes') : entry?.title[language] || t('条目未找到', 'Entry not found')} · 落桌`
+    document.title = `${collection ? t('机制与主题', 'Mechanisms & themes') : entry?.title[language] || t('条目未找到', 'Entry not found')} · ${brandName(language)}`
     document.getElementById('main-content')?.focus({ preventScroll: true })
   }, [collection, entry, language])
   const related = entry?.relations.flatMap(relation => { const target = libraryEntries.find(item => item.id === relation.targetId); return target ? [target] : [] }) || []

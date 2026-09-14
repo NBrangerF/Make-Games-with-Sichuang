@@ -47,4 +47,4 @@ With the bench at the center, can A walk diagonally to (1,0), then diagonally to
 
 The grid, blocked bench square, and limits serve this example rather than summarizing real people's capabilities. Observe whether readers can trace each claimed path and identify both helped and hindered uses.
 
-This original map develops Luozhuo's shared urban-space setting. Related route-building and city-building articles distinguish changing connections, placing buildings, and altering movement opportunities on existing space.
+This original map develops our shared urban-space setting. Related route-building and city-building articles distinguish changing connections, placing buildings, and altering movement opportunities on existing space.

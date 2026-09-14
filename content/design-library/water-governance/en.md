@@ -48,4 +48,4 @@ In season two U already took 2, leaving 2. M needs 2 and D needs 1. Can a clever
 
 Quantities, needs, order, and caps are fictional, not actual water rights, fairness standards, or historical relationships. Observe whether readers distinguish permission, keeping promises, and eventual sufficiency without treating the episode as a governance policy.
 
-This original comparison develops Luozhuo's shared-water setting. Related shared-resource, trading, and environmental articles examine other relationships.
+This original comparison develops our shared-water setting. Related shared-resource, trading, and environmental articles examine other relationships.

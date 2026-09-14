@@ -44,4 +44,4 @@ Change only the action limit to five, giving A the extra action. Can the first s
 
 Promotion markers are not measured audiences, and building and wrapping up are not real event instructions. The model puts visibility, opportunity, and public labor into one record. Observe whether readers can identify who completes each task and when, then consider which participation perspectives to add.
 
-The shows, rules, and calculations are original developments of Luozhuo's festival setting. Related action-selection and cooperative-structure articles help examine whether a public goal enters each player's actual options.
+The shows, rules, and calculations are original developments of our festival setting. Related action-selection and cooperative-structure articles help examine whether a public goal enters each player's actual options.

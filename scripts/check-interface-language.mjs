@@ -3,6 +3,7 @@ import { parseRouteHash, serializeRoute } from '../src/url-state.ts'
 import { switchRouteLanguage } from '../src/interface-language.ts'
 
 const cases = [
+  ['#play/zh-CN', '#play/en'],
   ['#resources/library/all/zh-CN?q=worker&kind=mechanisms&group=actions', '#resources/library/all/en?q=worker&kind=mechanisms&group=actions'],
   ['#resources/cases/root/zh-CN?angle=economy&section=decisions&author=1', '#resources/cases/root/en?angle=economy&author=1&section=decisions'],
   ['#course/reading/reading-choices-and-agency/zh-CN?from=%23resources%2Fread%2Fall%2Fzh-CN%3Fq%3Dchoices', '#course/reading/reading-choices-and-agency/en?from=%23resources%2Fread%2Fall%2Fen%3Fq%3Dchoices'],
@@ -23,4 +24,4 @@ for (const [from, expected] of cases) {
   assert.equal(chinese.readingLanguage || chinese.uiLanguage, 'zh-CN')
 }
 assert.equal(parseRouteHash('#workbench?lang=invalid').uiLanguage, undefined)
-console.log('Interface language: 9 location/refresh/context cases, reverse switching, invalid preference PASS')
+console.log('Interface language: 10 location/refresh/context cases, reverse switching, invalid preference PASS')

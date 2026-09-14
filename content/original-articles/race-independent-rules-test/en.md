@@ -2,7 +2,7 @@
 
 You have seen this board so often that you know where space 8 leads at a glance. A friend receives only the drawing and instructions. Put those materials together on their own and see whether they can get a game started without your explanation.
 
-Here are self-contained instructions for The 24-Space Race v0.1, choice version C. It is Luozhuo’s authored teaching game using movement relationships familiar from Snakes and Ladders, not the rules of a particular published edition.
+Here are self-contained instructions for The 24-Space Race v0.1, choice version C. It is an original teaching game from Make Games with Sichuang using movement relationships familiar from Snakes and Ladders, not the rules of a particular published edition.
 
 ## Prepare a complete set of materials
 

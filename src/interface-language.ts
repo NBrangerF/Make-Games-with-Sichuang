@@ -16,7 +16,7 @@ export function switchRouteLanguage(route: AppRoute, language: ReadingLanguage):
   const readingHome = (route.view === 'learn' && !route.learningNode) || (route.resourceEntry === 'learn' && route.resourceId === 'systematic')
   const readingCourse = route.view === 'course' && !route.courseMode && !route.workContext?.courseId && !route.workContext?.unitId
   const readingResources = route.view === 'resources' && (!route.resourceEntry || ['read', 'cases', 'library'].includes(route.resourceEntry))
-  if (readingHome || readingCourse || readingResources || route.view === 'privacy') {
+  if (readingHome || readingCourse || readingResources || route.view === 'play' || route.view === 'privacy') {
     return {
       ...route,
       ...(readingHome ? { view: 'course', resourceEntry: undefined, resourceId: undefined } : {}),

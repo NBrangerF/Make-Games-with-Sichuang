@@ -43,7 +43,7 @@ function LegacyLearningHome({ onNavigate, onOpenProblems }: LearningHomeProps) {
   return <main className="learning-map learning-home" id="main-content" tabIndex={-1}>
     <section className="learning-home__hero" aria-labelledby="learning-home-title">
       <div>
-        <p className="learning-eyebrow">落桌 · 游戏设计学习与工作系统</p>
+        <p className="learning-eyebrow">一桌点子 · 游戏设计学习与工作系统</p>
         <h1 id="learning-home-title">你现在，<br />从哪里开始？</h1>
         <p>桌游设计不是一条从灵感直达出版的直线。先选你眼前的状态，我们只给这一刻需要的下一步。</p>
       </div>
@@ -105,7 +105,7 @@ function TwoTaskLearningHome({ onOpenCourse, onOpenWorkbench, onOpenProblems }: 
   const projectCount = workspace.collections.projects.filter(item => !item.archivedAt).length
   return <main className="learning-map two-task-home" id="main-content" tabIndex={-1}>
     <section className="two-task-home__hero" aria-labelledby="two-task-home-title">
-      <p className="learning-eyebrow">落桌 · 游戏设计学习与工作系统</p>
+      <p className="learning-eyebrow">一桌点子 · 游戏设计学习与工作系统</p>
       <h1 id="two-task-home-title">你现在只需要<br />选择一件事。</h1>
       <p>一条路线帮你系统学习；另一条路线帮你把真实构想做成原型，或继续推进已有项目。</p>
     </section>

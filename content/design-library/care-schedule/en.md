@@ -43,4 +43,4 @@ B refuses R3. May the system execute the second row anyway because B appears to 
 
 Tasks and quantities are fictional, without assessing real households, health, or support networks. Observe whether readers mistake a proposal for acceptance and whether changed availability triggers a fresh check of the earlier plan.
 
-These original allocations develop Luozhuo's existing care-schedule setting. Related participation and consultation-service articles offer other comparisons of opportunities, support, and completion conditions.
+These original allocations develop our existing care-schedule setting. Related participation and consultation-service articles offer other comparisons of opportunities, support, and completion conditions.

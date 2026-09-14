@@ -1,0 +1,31 @@
+.rollback-list { display: grid; gap: 8px; padding-top: 2px; }
+.rollback-option { width: 100%; min-height: 56px; display: flex; align-items: center; justify-content: space-between; gap: 18px; text-align: left; padding: 13px 16px; border: 1px solid var(--line); border-radius: 12px; color: var(--ink); background: var(--paper); font: inherit; cursor: pointer; }
+.rollback-option > span { display: inline-flex; align-items: center; gap: 11px; }
+.rollback-option svg { flex-shrink: 0; color: var(--accent); }
+.rollback-option:hover { border-color: var(--accent); }
+.rollback-option:focus-visible { outline: 2px solid var(--accent); outline-offset: 3px; }
+.rollback-footnote { margin: 20px 0 0; color: var(--muted); font-size: 13px; line-height: 1.7; }
+.rollback-empty { padding: 25px 0 10px; }
+.rollback-empty > svg { color: var(--accent); }
+.rollback-empty h3 { margin: 16px 0 9px; }
+.rollback-empty p { margin: 0; color: var(--muted); line-height: 1.8; }
+.rollback-back { margin: 0 0 18px; display: inline-flex; align-items: center; gap: 6px; }
+.rollback-confirmation h3 { margin: 0 0 12px; font-size: 23px; overflow-wrap: anywhere; }
+.rollback-confirmation h3:focus { outline: none; }
+.rollback-removals { display: flex; flex-wrap: wrap; gap: 8px; padding: 0; margin: 16px 0; list-style: none; }
+.rollback-removals li { padding: 7px 11px; border: 1px solid var(--line); border-radius: 8px; font-size: 14px; }
+.rollback-dependencies { color: var(--accent); font-size: 13px; line-height: 1.7; }
+.rollback-restart { border-left: 2px solid var(--accent); padding-left: 16px; margin: 24px 0; }
+.rollback-restart strong { display: block; line-height: 1.6; }
+.rollback-restart p { margin: 8px 0; color: var(--muted); font-size: 13px; line-height: 1.8; }
+.game-header:has(.rollback-entry) .nav-actions { min-width: 0; flex-shrink: 1; flex-wrap: wrap; justify-content: flex-end; }
+.game-header .nav-actions .rollback-entry { min-height: 44px; padding: 10px 14px; gap: 7px; border: 1px solid var(--line); border-radius: 4px; background: var(--surface); color: var(--ink); font-size: 13px; text-decoration: none; }
+.game-header .nav-actions .rollback-entry svg { display: block; color: var(--accent); }
+.game-header .nav-actions .rollback-entry:hover:not(:disabled) { border-color: var(--accent); color: var(--accent); }
+@media (max-width: 640px) {
+  .game-header:has(.rollback-entry) { flex-wrap: wrap; gap: 6px; }
+  .game-header:has(.rollback-entry) .work-identity:empty { display: none; }
+  .game-header:has(.rollback-entry) .nav-actions { margin-left: auto; }
+  .rollback-option { padding: 13px 12px; }
+  .rollback-confirmation h3 { font-size: 21px; }
+}

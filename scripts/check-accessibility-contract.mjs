@@ -15,6 +15,7 @@ const topLevelPageFiles = new Set([
   'original-reading.tsx',
   'reading-load-boundary.tsx',
   'text-learning.tsx',
+  'play-learn.tsx',
   'design-cases.tsx',
   'design-library.tsx',
   'resource-start-v2.tsx',
@@ -52,7 +53,7 @@ guard('dynamic feedback includes live status and explicit alerts', allSource.inc
 guard('SVGs are decorative or explicitly named informative diagrams', [...allSource.matchAll(/<svg\b[^>]*>/g)].every(match => match[0].includes('aria-hidden="true"') || (match[0].includes('role="img"') && match[0].includes('aria-labelledby='))) && sources['case-diagrams.tsx'].includes('<title id='))
 guard('no positive tabindex changes source order', !/tabIndex=\{?[1-9]/.test(allSource))
 guard('no static div/span is promoted to an unnamed click control', !/<(?:div|span)\b[^>]*\bonClick=/.test(allSource) && !/role="button"/.test(allSource))
-guard('mobile reading navigation supports four destinations while local work rails remain scrollable', sources['styles-reading-studio.css'].includes('grid-template-columns: repeat(4,minmax(0,1fr))') && styles.includes('.method-tabs { display: flex; overflow-x: auto;') && !styles.includes('.tool-tabs'))
+guard('mobile reading navigation supports five destinations while local work rails remain scrollable', sources['styles-studio.css'].includes('grid-template-columns: repeat(5,minmax(0,1fr))') && styles.includes('.method-tabs { display: flex; overflow-x: auto;') && !styles.includes('.tool-tabs'))
 guard('hard-gate document cites primary WCAG criteria', ['WCAG22/Understanding/bypass-blocks', 'WCAG22/Understanding/keyboard', 'WCAG22/Understanding/focus-order', 'WCAG22/Understanding/name-role-value'].every(token => contract.includes(token)))
 guard('hard-gate separates automation, keyboard, and screen-reader evidence', ['机器门', '键盘门', '屏幕阅读器门', '不能证明'].every(token => contract.includes(token)))
 guard('accessibility checker is part of content validation', packageJson.scripts?.['qa:a11y-contract'] === 'node scripts/check-accessibility-contract.mjs' && packageJson.scripts?.['content:check']?.includes('qa:a11y-contract'))

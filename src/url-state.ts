@@ -1,11 +1,11 @@
 import type { DesignToolId } from './data'
 import { isLearningContentId, learningContentTitles } from './learning-content-route.ts'
 import { toolTitles } from './tool-catalog.ts'
-import { PRODUCT_BRAND, PRODUCT_FULL_NAME } from './brand.ts'
+import { PRODUCT_BRAND, PRODUCT_FULL_NAME, brandName } from './brand.ts'
 import type { IterationStep } from './domain/schema-v3.ts'
 import { appendReadingLocation, readReadingLocation, type ReadingLocation } from './reading-navigation.ts'
 
-export type PrimaryView = 'learn' | 'course' | 'workbench' | 'projects' | 'path' | 'resources' | 'tools' | 'method' | 'privacy'
+export type PrimaryView = 'play' | 'learn' | 'course' | 'workbench' | 'projects' | 'path' | 'resources' | 'tools' | 'method' | 'privacy'
 export type MethodSection = 'frameworks' | 'guides' | 'glossary' | 'resource-reading'
 export type WorkContext = Readonly<{
   courseId?: string
@@ -44,7 +44,7 @@ export const routableToolIds = [
   'balance-pass', 'teaching-path', 'playtest-selector', 'accessibility-observation', 'version-governance', 'feedback', 'evidence-synthesis',
 ] as const satisfies readonly DesignToolId[]
 
-const viewIds = new Set<PrimaryView>(['learn', 'course', 'workbench', 'projects', 'path', 'resources', 'tools', 'method', 'privacy'])
+const viewIds = new Set<PrimaryView>(['play', 'learn', 'course', 'workbench', 'projects', 'path', 'resources', 'tools', 'method', 'privacy'])
 const toolIds = new Set<DesignToolId>(routableToolIds)
 const methodSections = new Set<MethodSection>(['frameworks', 'guides', 'glossary', 'resource-reading'])
 const iterationSteps = new Set<IterationStep>(['uncertainty', 'question', 'signals', 'scope', 'session', 'review', 'change', 'version'])
@@ -133,6 +133,7 @@ function parseRouteBase(hash: string): AppRoute {
   const context = readContext(search)
   if (view === 'learn') return routeWithContext({ view: 'learn', tool: DEFAULT_ROUTE.tool, ...(isLearningPageId(first) ? { learningNode: first } : {}) }, context)
   if (view === 'resources') return routeWithContext({ view: 'resources', tool: DEFAULT_ROUTE.tool, ...(first ? { resourceEntry: first } : {}), ...(second ? { resourceId: second } : {}), ...(['read', 'cases', 'library'].includes(first) ? { readingLanguage: third === 'en' ? 'en' : 'zh-CN', ...readReadingLocation(search) } : {}) }, context)
+  if (view === 'play') return { view: 'play', tool: DEFAULT_ROUTE.tool, readingLanguage: first === 'en' ? 'en' : 'zh-CN' }
   if (view === 'privacy') return { view: 'privacy', tool: DEFAULT_ROUTE.tool, readingLanguage: first === 'en' ? 'en' : 'zh-CN' }
   if (view === 'method') {
     if (!methodSections.has(first as MethodSection)) return routeWithContext({ view: 'method', tool: DEFAULT_ROUTE.tool }, context)
@@ -194,6 +195,7 @@ function serializeRouteBase(route: AppRoute): string {
   if (route.view === 'learn') path = route.learningNode ? `#learn/${encodeURIComponent(route.learningNode)}` : '#learn'
   else if (route.view === 'tools') path = `#tools/${route.tool}`
   else if (route.view === 'resources' && (route.resourceEntry === 'read' || route.resourceEntry === 'cases' || route.resourceEntry === 'library')) path = appendReadingLocation(`#resources/${route.resourceEntry}/${encodeURIComponent(route.resourceId || 'all')}/${route.readingLanguage === 'en' ? 'en' : 'zh-CN'}`, route)
+  else if (route.view === 'play') path = `#play/${route.readingLanguage || 'zh-CN'}`
   else if (route.view === 'privacy' && route.readingLanguage === 'en') path = '#privacy/en'
   else if (route.view === 'resources' && route.resourceEntry) path = `#resources/${encodeURIComponent(route.resourceEntry)}${route.resourceId ? `/${encodeURIComponent(route.resourceId)}` : ''}`
   else if (route.view === 'method' && route.methodSection) path = `#method/${route.methodSection}${route.methodItem ? `/${encodeURIComponent(route.methodItem)}` : ''}`
@@ -202,6 +204,7 @@ function serializeRouteBase(route: AppRoute): string {
 }
 
 export function routeTitle(route: AppRoute): string {
+  if (route.view === 'play') return `${route.readingLanguage === 'en' ? 'Play & learn' : '玩着学'} · ${brandName(route.readingLanguage || 'zh-CN')}`
   if (route.view === 'privacy' && route.readingLanguage === 'en') return withBrand('Data and privacy')
   if (route.view === 'course') return withBrand(route.workContext?.unitId ? `课程单元 ${route.workContext.unitId}` : route.courseMode === 'practice' || route.workContext?.courseId ? '设计实践' : '系统阅读')
   if (route.view === 'workbench') return withBrand(route.workbenchAction === 'new' ? '开始新构想' : '设计工作台')
@@ -227,7 +230,7 @@ export function routeTitle(route: AppRoute): string {
     return withBrand(methodTitles[route.methodSection])
   }
   const titles: Record<Exclude<PrimaryView, 'tools' | 'course' | 'workbench' | 'projects'>, string> = {
-    learn: '从哪里开始', path: '设计路径', resources: '资源库', method: '方法与概念', privacy: '数据与隐私',
+    play: '玩着学', learn: '从哪里开始', path: '设计路径', resources: '资源库', method: '方法与概念', privacy: '数据与隐私',
   }
   return withBrand(titles[route.view])
 }

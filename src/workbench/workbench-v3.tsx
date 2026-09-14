@@ -57,7 +57,7 @@ function WorkspaceDataPanel() {
     const url = URL.createObjectURL(new Blob([raw], { type: 'application/json' }))
     const link = document.createElement('a')
     link.href = url
-    link.download = `落桌-工作区-${new Date().toISOString().slice(0, 10)}.json`
+    link.download = `一桌点子-工作区-${new Date().toISOString().slice(0, 10)}.json`
     link.click()
     URL.revokeObjectURL(url)
   }
@@ -207,7 +207,7 @@ function ProjectWorkbench({ route, onNavigate }: { route: AppRoute; onNavigate: 
     const url = URL.createObjectURL(new Blob([raw], { type: 'application/json' }))
     const link = document.createElement('a')
     link.href = url
-    link.download = `落桌-${project.title.replace(/[^\p{L}\p{N}-]+/gu, '-')}-脱敏项目包.json`
+    link.download = `一桌点子-${project.title.replace(/[^\p{L}\p{N}-]+/gu, '-')}-脱敏项目包.json`
     link.click()
     URL.revokeObjectURL(url)
   }

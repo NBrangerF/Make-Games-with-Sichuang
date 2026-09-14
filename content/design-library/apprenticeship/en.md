@@ -45,4 +45,4 @@ After demonstrating cutting to B, can A still cut?
 
 Instant binary skills, uniform material costs, and error-free making are deliberate simplifications, not claims about real learning after one demonstration. Observe whether readers separately record knowing, possessing, and personally making, and whether they reserve an opportunity for practice.
 
-These original sequences develop Luozhuo's apprenticeship setting. The related industry article tracks equipment and products; this one tracks people's capabilities and practice records.
+These original sequences develop our apprenticeship setting. The related industry article tracks equipment and products; this one tracks people's capabilities and practice records.

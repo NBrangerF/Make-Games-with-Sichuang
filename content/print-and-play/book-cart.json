@@ -124,7 +124,7 @@
       ],
       "checkTitle": "自查与答案",
       "check": "基本版第6次刚好卸完第二本，成功还是失败？成功：先检查是否送完，再对未成功的局面检查期限。移动到阅读角算送达吗？不算，还需要卸书动作。",
-      "footer": "落桌原创教学材料 · 可配合网站六个方法单元阅读",
+      "footer": "一桌点子原创教学材料 · 可配合网站六个方法单元阅读",
       "link": "luozhuo-tabletop-design.vercel.app"
     },
     "en": {
@@ -239,7 +239,7 @@
       ],
       "checkTitle": "Check, with answers",
       "check": "The second book is unloaded on action six in the base game. Win or lose? Win: check completed delivery before applying the deadline to an incomplete position. Does arriving at the corner deliver a book? No; unloading still requires an action.",
-      "footer": "Original Luozhuo teaching material · Companion to the six method lessons",
+      "footer": "Original teaching material from Make Games with Sichuang · Companion to the six method lessons",
       "link": "luozhuo-tabletop-design.vercel.app"
     }
   }

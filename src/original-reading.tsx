@@ -1,3 +1,4 @@
+import { brandName } from './brand'
 import { useReadingSearch, SearchLoading, SearchExcerpts } from './reading-search-ui'
 import { matchesSearch, searchSnippets } from './reading-search'
 import { useEffect, useState, type ReactNode } from 'react'
@@ -61,7 +62,7 @@ export function OriginalReading({ articleId, language = 'zh-CN', query = '', sco
   const mainIds = new Set(readingPath.chapters.map(chapter => chapter.id))
   const filtered = articles.filter(item => (scope === 'all' || (scope === 'course' ? mainIds.has(item.id) : !mainIds.has(item.id))) && matchesSearch([item.title['zh-CN'], item.title.en, item.summary['zh-CN'], item.summary.en].join(' '), query, search.index?.get(item.id)))
   useEffect(() => {
-    document.title = `${isCollection ? c.collection : article?.title[language] || c.missing} · 落桌`
+    document.title = `${isCollection ? c.collection : article?.title[language] || c.missing} · ${brandName(language)}`
     document.getElementById('main-content')?.focus({ preventScroll: true })
   }, [article, language, isCollection, c])
   return <main id="main-content" tabIndex={-1} lang={language} className="original-reading">

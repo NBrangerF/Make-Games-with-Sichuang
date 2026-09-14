@@ -42,4 +42,4 @@ Red and blue have both been cooked by round two, but both players wait in round 
 
 Actual community services also involve participants' wishes, ingredient conditions, and less visible work. This model selects division of labor, stages, and matching needs; it supplies no recipe, allergy judgment, or measured service outcome. Observe whether readers track preparation, finished goods, and completed needs separately before expanding the situation.
 
-This develops Luozhuo's existing community-kitchen setting through original rules and examples. The related resource-conversion article helps track material changes; designing for participation examines support required to use an opportunity.
+This develops our existing community-kitchen setting through original rules and examples. The related resource-conversion article helps track material changes; designing for participation examines support required to use an opportunity.

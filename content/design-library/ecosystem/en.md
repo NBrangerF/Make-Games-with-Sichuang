@@ -1,6 +1,6 @@
 # Shared waters: the condition looks restored, but are consequences still pending?
 
-Some actions yield benefits now and effects next round. A favorable snapshot can omit changes already committed to the system. This develops Luozhuo's shared-water setting by comparing different orders of the same two collection and two restoration actions.
+Some actions yield benefits now and effects next round. A favorable snapshot can omit changes already committed to the system. This develops our shared-water setting by comparing different orders of the same two collection and two restoration actions.
 
 ## Two action rounds, then one final settlement
 

@@ -1,8 +1,10 @@
+import { brandName } from './brand'
 import { caseGameName } from './case-game-name'
 import { libraryEntries } from './design-library-catalog'
 import { useEffect } from 'react'
 import { chapterForTrack, pathFor, readingTrackFor } from './reading-paths'
 import type { ReadingTrack } from './reading-navigation'
+import { PlayLearnFeature } from './play-learn-feature'
 import { RacePrototype } from './race-prototype'
 import { RaceComparisons } from './race-comparisons'
 import catalog from '../content/original-articles/catalog.json'
@@ -43,7 +45,7 @@ export function TextLearning({ chapterId, language = 'zh-CN', returnTo, readingT
   const contextualLibrary = libraryEntries.filter(item => item.chapterIds.includes(chapterForTrack(chapterId || '', 'river')))
   const fromCases = returnTo?.startsWith('#resources/cases/')
   useEffect(() => {
-    document.title = `${chapterId ? article?.title[language] || c.missing : c.label} · 落桌`
+    document.title = `${chapterId ? article?.title[language] || c.missing : c.label} · ${brandName(language)}`
     document.getElementById('main-content')?.focus({ preventScroll: true })
   }, [chapterId, article, language, c])
   const chapterList = (compact = false) => path.parts.map((section, partIndex) => <section className="text-learning__part" key={section.id} aria-labelledby={`heading-${section.id}`}>
@@ -63,7 +65,7 @@ export function TextLearning({ chapterId, language = 'zh-CN', returnTo, readingT
       <a href={readingHref('course', otherChapter, language, { ...(!otherChapter && !river ? { readingTrack: 'river' } : {}), readingReturnTo: returnTo })}>{language === 'en' ? (river ? 'Switch to the race path →' : `Try the river alternative${chapterId ? '' : ' · 28 chapters'} →`) : (river ? '切换到竞速主线 →' : `换看过河案例${chapterId ? '' : ' · 完整 28 章'} →`)}</a>
     </nav>
     {!chapterId ? <>
-      <header className={`text-learning__hero${river ? '' : ' text-learning__hero--race'}`}>{river && <picture className="text-learning__hero-image"><source srcSet={`${riverHeroBase}640.webp 640w, ${riverHeroBase}960.webp 960w, ${riverHeroBase}1600.webp 1600w`} sizes="(max-width: 700px) 900px, 1400px"/><img src={`${riverHeroBase}1600.webp`} width="1600" height="900" alt="" fetchPriority="high" /></picture>}<div className="text-learning__hero-copy"><h1>{language === 'zh-CN' ? river ? <><span>从一局游戏，</span><span>开始设计</span></> : <><span>从蛇梯棋，</span><span>开始设计</span></> : river ? c.title : 'Start designing with Snakes and Ladders'}</h1><p className="text-learning__lede">{c.intro}</p><div className="text-learning__entry"><a className="text-learning__begin" href={chapterHref(path.chapters[0].id, language)}>{c.start} <span aria-hidden="true">→</span></a><a href={readingHref('cases', undefined, language)}>{language === 'en' ? 'Explore real games' : '看真实游戏案例'}</a></div></div>{!river && <RacePrototype language={language} hero />}</header><ol className="text-learning__steps"><li><span>1</span>{language === 'en' ? 'Read an example' : '读一个例子'}</li><li><span>2</span>{language === 'en' ? 'See how other games work' : '看看其他游戏怎么做'}</li><li><span>3</span>{language === 'en' ? 'Revise your own draft' : '改自己的草稿'}</li></ol><header className="text-learning__contents-intro"><h2>{language === 'en' ? 'Follow one small game through the design process' : '沿着一个小游戏，走过设计过程'}</h2><p>{c.guidance}</p></header>
+      <header className={`text-learning__hero${river ? '' : ' text-learning__hero--race'}`}>{river && <picture className="text-learning__hero-image"><source srcSet={`${riverHeroBase}640.webp 640w, ${riverHeroBase}960.webp 960w, ${riverHeroBase}1600.webp 1600w`} sizes="(max-width: 700px) 900px, 1400px"/><img src={`${riverHeroBase}1600.webp`} width="1600" height="900" alt="" fetchPriority="high" /></picture>}<div className="text-learning__hero-copy"><h1>{language === 'zh-CN' ? river ? <><span>从一局游戏，</span><span>开始设计</span></> : <><span>从蛇梯棋，</span><span>开始设计</span></> : river ? c.title : 'Start designing with Snakes and Ladders'}</h1><p className="text-learning__lede">{c.intro}</p><div className="text-learning__entry"><a className="text-learning__begin" href={chapterHref(path.chapters[0].id, language)}>{c.start} <span aria-hidden="true">→</span></a><a href={readingHref('cases', undefined, language)}>{language === 'en' ? 'Explore real games' : '看真实游戏案例'}</a></div></div>{!river && <RacePrototype language={language} hero />}</header>{!river && <PlayLearnFeature language={language}/>}<ol className="text-learning__steps"><li><span>1</span>{language === 'en' ? 'Read an example' : '读一个例子'}</li><li><span>2</span>{language === 'en' ? 'See how other games work' : '看看其他游戏怎么做'}</li><li><span>3</span>{language === 'en' ? 'Revise your own draft' : '改自己的草稿'}</li></ol><header className="text-learning__contents-intro"><h2>{language === 'en' ? 'Follow one small game through the design process' : '沿着一个小游戏，走过设计过程'}</h2><p>{c.guidance}</p></header>
       {!river && <RaceComparisons language={language} />}
       <div className="text-learning__contents">{chapterList()}</div>
       <section className="text-learning__case-shelf"><header><h2>{language === 'en' ? 'See the ideas at work in real games' : '把刚读到的想法，放进真实游戏里看'}</h2><a href={readingHref('cases', undefined, language)}>{language === 'en' ? 'All case studies →' : '全部案例 →'}</a></header><CaseTeasers language={language}/></section><aside className="text-learning__practice"><h2>{c.practice}</h2><p>{c.practiceIntro}</p><a href="#course/practice">{c.practiceLink}</a></aside>

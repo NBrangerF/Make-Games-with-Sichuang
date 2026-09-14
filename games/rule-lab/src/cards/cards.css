@@ -1,0 +1,103 @@
+.playing-card{position:relative;flex:0 0 151px;min-width:0;width:151px;height:228px;border:2px solid #c5a36d;border-radius:12px;background:#f2e6ca;color:#352c28;display:flex;flex-direction:column;align-items:center;padding:8px 9px 6px;box-shadow:0 7px 12px #0005,inset 0 0 0 3px #fffae475;cursor:pointer;transition:transform .18s,box-shadow .18s,border-color .18s;scroll-snap-align:center;font-family:inherit;text-align:center;isolation:isolate}.playing-card:disabled{opacity:1;cursor:default}.playing-card:focus-visible{outline:3px solid #fff2b5;outline-offset:4px}.playing-card:not(:disabled):hover{transform:translateY(-7px);box-shadow:0 13px 18px #0007}.playing-card.card-selected{transform:translateY(-10px);border-color:#ffd98b;box-shadow:0 0 0 2px #ffe4a2,0 0 22px #efc67566,0 15px 18px #0008}.card-corner{position:absolute;left:5px;top:5px;z-index:2;border-radius:50%;background:#484337;color:#fff4d5;border:2px solid #e3c89b;width:32px;height:32px;display:grid;place-items:center;font-size:10px;font-weight:700}.card-school{align-self:flex-end;font-size:9px;letter-spacing:.1em;opacity:.7;padding:3px 1px 0}.card-art{width:100%;height:84px;display:grid;place-items:center;position:relative;overflow:hidden;margin:4px 0 3px;border-radius:35% 35% 8px 8px;background:repeating-linear-gradient(115deg,#fffa 0 7px,transparent 7px 20px),#caa785;border-bottom:2px solid #a78251}.card-scissors .card-art{background-color:#bc7563}.card-paper .card-art{background-color:#97b5a2}.card-art svg{position:relative;z-index:1;width:76px;height:76px;filter:drop-shadow(0 3px 0 #fff6)}.card-special .card-art:after{content:'✦';position:absolute;right:5px;bottom:1px;color:#7c2d23;font-size:24px}.card-title{font-size:16px;line-height:1.4;border-bottom:1px solid #9b795440;width:100%;padding-bottom:4px}.card-description{font-size:11px;line-height:1.6;margin-top:7px;flex:1}.card-footer{font-size:9px;opacity:.7;border-top:1px solid #9b795440;width:100%;padding-top:5px}
+.physical-exchange{display:grid;grid-template-columns:1fr 1fr;gap:22px;text-align:left;max-width:740px;margin:20px auto}.physical-exchange h3{font-size:14px}.exchange-gestures{display:flex;gap:6px;flex-wrap:wrap}.exchange-gestures button{display:flex;flex-direction:column;align-items:center;gap:5px;min-width:64px;min-height:64px;background:#ece5d4;border:1px solid #ac9980;border-radius:6px;font-size:11px;color:#453b2d;padding:7px;cursor:pointer}.exchange-gestures button[aria-pressed=true]{border:2px solid #a6503d;background:#fff2d2}.exchange-gestures button:disabled{opacity:.4}.exchange-payment{display:flex;gap:8px;padding:12px 3px;overflow:auto}.exchange-payment .playing-card{flex:0 0 126px;width:126px;height:218px}.physical-exchange small{font-size:11px}
+@media(max-width:600px){.physical-exchange{grid-template-columns:1fr;gap:15px}.physical-exchange>div+div{border-top:1px solid #99856d55;padding-top:12px}.exchange-payment{justify-content:center}.physical-exchange .button{width:100%}}
+
+/* A single playfield: HUD above, tactics in the middle, a held fan at the edge. */
+.app-shell .card-game-stage{height:100vh;height:100dvh;min-height:0;overflow:visible}
+.app-shell .card-game-stage>.stage-content{height:100%;min-height:0;display:flex;flex-direction:column}
+.app-shell .card-game-stage .game-header{flex:none;min-height:52px;padding:6px 24px;gap:12px}
+.app-shell .card-game-stage .game-header h1{font-size:23px}
+.app-shell .card-game-stage .arena{flex:1;width:100%;max-width:1120px;min-height:0;margin:0 auto;padding:4px 28px 10px;gap:6px}
+.app-shell .card-game-stage .play-center{flex:1;width:100%;min-height:0;padding:0;display:flex}
+.app-shell .card-game-stage .inventory-strip{display:none}
+.app-shell .card-game-stage .duel-hud{flex:none;max-width:920px;gap:32px;margin:0 auto}
+.app-shell .card-game-stage .fighter-resources{margin-top:4px;gap:9px;flex-wrap:wrap}
+.app-shell .card-game-stage .match-summary{flex:none;display:flex;flex-direction:row;align-items:center;justify-content:center;flex-wrap:wrap;gap:5px 16px;min-height:28px;padding:0;margin:0;font-size:11px}
+.app-shell .card-game-stage .match-summary>p,.app-shell .card-game-stage .hand-count{margin:0;font-size:11px}
+.app-shell .card-game-stage .single-experiment-goal{flex:none;margin:0;font-size:11px}
+.app-shell .card-game-stage .public-rule-status{margin:0;padding:0;font-size:10px}
+.app-shell .card-game-stage .character-ribbon{width:100%;max-width:430px;margin:0;flex:none}
+.app-shell .card-game-stage .character-ribbon-button{min-height:42px;padding:2px 8px;border:0;background:transparent;gap:8px}
+.app-shell .card-game-stage .character-avatar{height:38px;flex-basis:38px}
+.app-shell .card-game-stage .character-ribbon-copy strong{font-size:15px}
+.app-shell .card-game-stage .character-ribbon-copy small{display:none}
+.card-table{position:relative;isolation:isolate;display:flex;flex-direction:column;flex:1;width:100%;min-height:0;min-width:0;margin:0;padding:0;border:0;background:none;color:var(--ink);text-align:left}
+.card-battlefield{flex:1;min-height:100px;display:grid;align-items:center;justify-items:center;grid-template-columns:minmax(0,1fr);gap:20px}
+.card-battlefield.has-position{grid-template-columns:minmax(200px,.8fr) minmax(0,1.2fr)}
+.card-duel-area{width:100%;min-width:0;text-align:center;position:relative}
+.card-table-top{display:flex;flex-direction:column;align-items:center;gap:10px;color:var(--muted);font-size:12px}
+.card-table-top strong{font-family:var(--font-display);font-size:24px;color:var(--ink);font-weight:500;letter-spacing:.15em}
+.enemy-card-backs{display:flex;justify-content:center;padding-left:12px;margin-bottom:12px}
+.enemy-card-backs i{display:block;width:35px;height:49px;border:2px solid #c8ad7d;border-radius:5px;margin-left:-14px;background:repeating-linear-gradient(45deg,#8c443b 0 3px,#642e31 3px 7px);transform:rotate(-5deg);box-shadow:0 3px 6px #0002}
+.enemy-card-backs i:nth-child(even){transform:rotate(5deg)}
+.deck-toolbar{flex:none;display:flex;align-items:center;justify-content:space-between;gap:8px;min-height:50px;border-bottom:1px solid var(--line);padding:4px 0;font-size:12px}
+.deck-toolbar>div:first-child{min-width:0}.deck-toolbar small{display:block;font-size:10px;color:var(--muted);margin-top:3px}.hand-total{margin-left:6px;font-weight:400;color:var(--muted)}
+.pile-buttons{display:flex;gap:4px}.pile-buttons button{white-space:nowrap;min-height:40px;border:0;border-radius:4px;background:transparent;color:var(--muted);padding:6px 10px;font-size:11px}.pile-buttons button:hover{background:var(--accent-soft)}.pile-buttons b{color:var(--ink);margin-left:4px}
+.player-hand{position:relative;width:100%;max-width:920px;align-self:center;flex:none;min-width:0;overflow:visible;padding:0;touch-action:pan-y}
+.player-hand>.playing-card{position:absolute;left:0;top:0;margin-left:0;max-width:none;min-width:0;padding:6px 7px 5px 16px;transform-origin:center;transform:translate(calc(var(--fan-x) - 50%),var(--fan-y)) rotate(var(--fan-angle));z-index:var(--fan-order);box-shadow:-3px 2px 7px #32261440,0 5px 10px #32261425;transition:transform .18s ease,box-shadow .18s ease;border-radius:9px}
+.player-hand>.playing-card:hover,.player-hand>.playing-card:focus-visible,.player-hand>.playing-card.card-selected{z-index:var(--fan-order);transform:translate(calc(var(--fan-x) - 50%),calc(var(--fan-y) - 13px)) rotate(var(--fan-angle));border-color:#b66b43;box-shadow:0 0 0 2px #c57d4e,0 10px 20px #32261440}
+.player-hand .card-art{flex:1;min-height:0;height:auto;margin-top:15px}.player-hand .card-art svg{width:70%;height:80%;max-height:85px}.player-hand .card-school{font-size:8px}.player-hand .card-title{font-size:13px}.player-hand .card-description{display:none}.player-hand .card-footer{font-size:8px;line-height:1.4;margin-top:5px}.player-hand .card-corner{display:none}
+.card-spine{display:none}.player-hand .card-spine{display:block;position:absolute;left:2px;top:8px;writing-mode:vertical-rl;font-size:10px;letter-spacing:2px;color:#654633;font-weight:600}
+.card-command{flex:none;display:flex;align-items:center;justify-content:space-between;gap:12px;min-height:54px;padding:3px 0;position:relative;z-index:45}
+.hand-instruction{color:var(--muted);font-size:11px}.card-command-buttons{display:flex;align-items:center;gap:6px}.card-command .button{min-height:44px;font-size:12px;padding:10px 20px}.card-command .card-submit{min-width:142px}
+.app-shell .card-game-stage .result-actions-space{min-height:0;width:auto;order:0}.app-shell .card-game-stage .result-actions{margin:0;padding:0;gap:8px}
+.app-shell .card-game-stage .reveal-panel{min-height:0;max-width:none;margin:0;padding:0;gap:7px;flex:none}
+.app-shell .card-game-stage .duel-reveal{width:230px;column-gap:40px;margin:0 auto}
+.app-shell .card-game-stage .duel-hand-owner{font-size:10px;margin-bottom:5px}
+.app-shell .card-game-stage .duel-hand-visual{width:75px;height:75px}
+.app-shell .card-game-stage .duel-hand-caption{min-height:20px;margin-top:5px;gap:2px}
+.app-shell .card-game-stage .duel-hand-caption strong{font-size:11px}
+.app-shell .card-game-stage .result-copy{min-height:0;gap:2px}
+.app-shell .card-game-stage .result-copy h2{font-size:24px}
+.card-report-trigger{font-size:11px;padding:5px 8px;min-height:32px}
+.hand-inspector{position:absolute;z-index:50;bottom:63px;left:50%;transform:translateX(-50%);width:244px;padding:8px 16px 12px;border:1px solid #ab9068;border-radius:15px;background:#faf3e4;box-shadow:0 16px 64px #26211650,0 0 0 5px #f8f3e780;color:#352c28}
+.hand-inspector .inspect-close{position:absolute;right:-12px;top:-12px;background:#faf3e4;border:1px solid #ac9574;border-radius:50%;width:38px;height:38px;min-height:38px;padding:4px;z-index:2}
+.inspect-navigation{display:flex;justify-content:space-between;align-items:center;height:38px;font-size:11px;color:#7c6c55}.inspect-navigation button{border:0;background:transparent;min-width:44px;min-height:38px;font-size:26px}
+.hand-inspector .card-large{width:100%;height:284px;cursor:default;box-shadow:none;transform:none;padding:9px}
+.hand-inspector .card-art{height:108px;flex:none}.hand-inspector .card-art svg{height:95px;width:95px}.hand-inspector .card-description{font-size:13px;line-height:1.7}.hand-inspector .card-title{font-size:20px}
+.inspect-notes{font-size:11px;line-height:1.6;margin-top:8px;text-align:center}.inspect-notes small{display:block;font-size:11px}.inspect-notes .text-button{font-size:11px;min-height:36px}
+.card-codex{display:grid;grid-template-columns:repeat(auto-fill,minmax(145px,1fr));gap:16px;padding:12px 0}.card-codex .playing-card{width:100%;box-shadow:0 3px 8px #33291825}.forge-recipes{display:flex;gap:12px;overflow:auto;padding:14px 4px}.forge-recipes .playing-card{flex-shrink:0}
+.empty-hand{position:absolute;inset:40% 0;text-align:center;color:var(--muted);font-size:13px}
+/* Compact map retains every tactical action. The full rule explanation opens on demand. */
+.app-shell .card-game-stage .position-compact{margin:0;padding:10px 12px;max-width:530px;background:transparent;border:0;box-shadow:none;color:var(--ink);border-radius:0}
+.position-compact .tactical-title{margin-bottom:6px}.position-compact .tactical-title>span{font-size:12px}.position-compact .tactical-title>small,.position-compact>.position-heading,.position-compact>.position-hint,.position-compact .position-range>.position-hint,.position-compact .position-pressure>.position-hint,.position-compact .distance-track{display:none}
+.position-compact .tactical-title .text-button{font-size:10px;min-height:32px;padding:3px 6px}
+.position-compact .duelist-track{min-height:44px;padding:4px 6px;margin-bottom:8px;gap:9px;background:transparent;border-bottom:1px dashed var(--line);border-radius:0}
+.position-compact .fighter-token b{width:26px;height:26px;border-width:1px;font-size:10px}.position-compact .fighter-token small{font-size:9px}.position-compact .duelist-space{height:36px}.position-compact .duelist-space strong{font-size:11px}.position-compact .duelist-space span{font-size:9px}.position-compact .battle-wall{padding:4px 1px;font-size:8px}
+.app-shell .position-compact .experiment-sites .site{min-height:78px;padding:7px 4px;gap:2px;background:var(--surface);color:var(--ink)}
+.position-compact .site-map-icon{padding:0;position:absolute;left:8px;top:8px}.position-compact .site-map-icon>svg:first-child{width:15px;height:15px}.position-compact .site-flag{width:9px;height:9px;right:-7px;top:0}.position-compact .site strong{font-size:13px}.position-compact .site>span:not(.site-map-icon),.position-compact .site small,.position-compact .site-intent{font-size:9px}.position-compact .site-intent{min-height:12px}
+.position-compact .position-range{margin-top:8px}.position-compact .position-range .position-heading{font-size:11px;margin:0 0 3px}.position-compact .position-range .position-heading small{font-size:9px}.position-compact .position-moves{margin:0;gap:5px}.position-compact .position-moves button{min-height:40px;font-size:12px}.position-compact .position-moves small{font-size:9px}
+.position-compact .position-pressure{display:flex;gap:16px;margin-top:6px}.position-compact .position-pressure>div{flex:1;gap:5px;font-size:9px;margin:0}.position-compact .pressure-track i{height:5px}
+@media(max-width:600px){
+  .app-shell .card-game-stage .game-header{padding:4px 12px;min-height:48px}.app-shell .card-game-stage .game-header h1{font-size:19px}.app-shell .card-game-stage .arena{padding:2px 12px 6px;gap:4px}.app-shell .card-game-stage .nav-actions .text-button{min-height:36px;padding:6px 8px;font-size:10px}
+  .app-shell .card-game-stage .match-summary{gap:3px 8px;min-height:24px}.app-shell .card-game-stage .match-summary>p,.app-shell .card-game-stage .hand-count{font-size:10px}.app-shell .card-game-stage .player-identity{min-height:20px}.app-shell .card-game-stage .fighter-resources{margin-top:2px}.app-shell .card-game-stage .character-ribbon-copy strong{font-size:13px}
+  .card-battlefield,.card-battlefield.has-position{grid-template-columns:minmax(0,1fr);gap:0;align-content:center;min-height:0}.card-battlefield.has-position .card-table-top{flex-direction:row;justify-content:center;gap:10px;min-height:46px}.card-battlefield.has-position .card-table-top strong{font-size:15px}.card-battlefield.has-position .card-table-top>span{display:none}.card-battlefield.has-position .enemy-card-backs{margin:0}.card-battlefield.has-position .enemy-card-backs i{height:28px;width:20px;margin-left:-10px}
+  .app-shell .card-game-stage .position-compact{padding:0 1px 5px}.position-compact .tactical-title{margin:0}.position-compact .duelist-track{margin-bottom:4px}.position-compact .site-map-icon{left:6px;top:7px}.position-compact .site-map-icon>svg:first-child{width:12px;height:12px}.app-shell .position-compact .experiment-sites .site{min-height:69px}.position-compact .experiment-sites{gap:7px}
+  .app-shell .card-game-stage .reveal-panel{flex-direction:row;gap:8px;justify-content:center}.app-shell .card-game-stage .duel-reveal{width:120px;gap:16px;margin:0}.app-shell .card-game-stage .duel-hand-owner{margin:0;font-size:9px}.app-shell .card-game-stage .duel-hand-visual{width:40px;height:40px}.app-shell .card-game-stage .duel-hand-caption{margin:2px 0 0;min-height:14px}.app-shell .card-game-stage .duel-hand-caption strong{font-size:9px}.app-shell .card-game-stage .result-copy{width:auto;max-width:170px}.app-shell .card-game-stage .result-copy h2{font-size:20px}.card-report-trigger{font-size:10px;min-height:28px;padding:3px 7px}
+  .deck-toolbar{min-height:45px;font-size:11px}.deck-toolbar small{font-size:9px;max-width:150px}.pile-buttons{gap:0}.pile-buttons button{font-size:10px;padding:4px 6px;min-height:40px}.hand-total{margin-left:3px}.pile-buttons b{margin-left:2px}
+  .player-hand>.playing-card{padding:4px 5px 4px 12px;border-width:1px;border-radius:6px}.player-hand .card-spine{font-size:9px;left:1px;top:7px;letter-spacing:1px}.player-hand .card-school{display:none}.player-hand .card-art{margin-top:8px}.player-hand .card-title{font-size:10px;padding-bottom:1px}.player-hand .card-footer{font-size:7px;margin-top:2px;padding-top:2px}
+  .card-command{min-height:50px;gap:6px}.hand-instruction{font-size:10px;max-width:108px}.card-command .button{padding:10px 12px;font-size:11px;min-height:42px}.card-command .card-submit{min-width:110px}.card-command-buttons{gap:4px}
+  .hand-inspector{width:222px;bottom:58px;padding:5px 12px 9px}.hand-inspector .card-large{height:246px}.hand-inspector .card-art{height:82px}.hand-inspector .card-art svg{height:76px;width:76px}.hand-inspector .card-description{font-size:12px}.hand-inspector .card-title{font-size:18px}.inspect-notes{margin-top:5px}.inspect-notes small{font-size:10px}.inspect-navigation{height:32px}.inspect-navigation button{min-height:32px}
+  .card-codex{grid-template-columns:repeat(2,minmax(0,1fr));gap:10px}.card-codex .playing-card{height:230px}.app-shell .card-game-stage .sound-control{right:3px;bottom:65px;padding:6px;min-height:30px}
+}
+@media(max-height:650px){.app-shell .card-game-stage .card-table-top{gap:5px}.app-shell .card-game-stage .enemy-card-backs{margin-bottom:0}.app-shell .card-game-stage .position-compact .duelist-track{display:none}.app-shell .card-game-stage .position-compact .tactical-title{margin-bottom:0}.app-shell .card-game-stage .position-compact .position-range{margin-top:5px}.app-shell .card-game-stage .position-compact .position-heading{margin-bottom:2px}.app-shell .card-game-stage .hand-inspector .card-large{height:222px}.app-shell .card-game-stage .hand-inspector .card-art{height:63px}.app-shell .card-game-stage .hand-inspector .card-art svg{width:60px;height:60px}}
+@media(prefers-reduced-motion:reduce){.playing-card,.player-hand>.playing-card{transition:none}}
+.reduce-motion .playing-card{transition:none}
+.app-shell .card-game-stage .player-panel{padding:2px 0}
+.position-compact .duelist-track{display:none}
+@media(max-width:600px) and (max-height:650px){
+  .card-battlefield.has-position .card-table-top{display:none}
+  .app-shell .card-game-stage .reveal-panel{gap:6px;padding-bottom:3px}
+  .app-shell .card-game-stage .duel-hand-owner{display:none}
+  .app-shell .card-game-stage .duel-hand-visual{width:25px;height:25px}
+  .app-shell .card-game-stage .duel-reveal{width:86px;gap:10px}
+  .app-shell .card-game-stage .result-copy{flex-direction:row;gap:4px;max-width:210px}
+  .app-shell .card-game-stage .result-copy h2{font-size:16px;letter-spacing:0}
+  .app-shell .card-game-stage .result-copy .ability-result-note{max-width:90px;font-size:8px!important}
+  .app-shell .card-game-stage .character-ribbon-button{min-height:30px}.app-shell .card-game-stage .character-avatar{height:28px;flex-basis:28px}
+}
+.app-shell .card-game-stage .preparation-panel{margin:0;padding:0;max-width:420px}
+.app-shell .card-game-stage .preparation-panel h2{font-size:22px;margin:8px 0}
+.app-shell .card-game-stage .preparation-panel>p{font-size:11px;line-height:1.6;margin:5px 0}
+.app-shell .card-game-stage .preparation-panel>.button{margin-top:8px;min-height:42px;font-size:12px}
+@media(max-width:600px){.app-shell .card-game-stage .preparation-panel h2{font-size:16px;margin:3px 0}.app-shell .card-game-stage .preparation-panel>.eyebrow{display:none}.app-shell .card-game-stage .preparation-panel>p{font-size:10px}.app-shell .card-game-stage .preparation-panel>.button{margin:2px 0 4px}}

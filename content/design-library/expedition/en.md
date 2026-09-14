@@ -41,4 +41,4 @@ Change only II's return cost to 2. What happens if the team advances?
 
 **Success becomes possible.** From 3 supplies at I, advancing leaves 2, exactly enough to return. The team reaches C with 0 supplies and submits value 3. Return cost causes the difference; farther is not automatically more dangerous.
 
-Supplies, the one-way direct return, and automatic records are constructed for this model, not real travel or safety conditions. This develops Luozhuo's existing expedition setting with original rules and analysis. The related general exploration article instead compares information with equipment, offering a different design question.
+Supplies, the one-way direct return, and automatic records are constructed for this model, not real travel or safety conditions. This develops our existing expedition setting with original rules and analysis. The related general exploration article instead compares information with equipment, offering a different design question.

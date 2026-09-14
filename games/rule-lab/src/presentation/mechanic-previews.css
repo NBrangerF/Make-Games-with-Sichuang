@@ -1,0 +1,57 @@
+.mechanic-preview { position:relative; min-width:0; width:90%; max-width:275px; display:flex; flex-direction:column; align-items:center; gap:15px; color:var(--ink); justify-self:center; }
+.mechanic-preview-art { display:flex; align-items:center; justify-content:center; gap:12px; min-height:70px; width:100%; }
+.mechanic-preview-caption { min-width:0; max-width:100%; font-size:10px; letter-spacing:.09em; line-height:1.5; text-align:center; color:var(--muted); }
+.mechanic-symbol { display:flex; flex-direction:column; align-items:center; gap:5px; flex-shrink:0; }
+.mechanic-symbol small { font-size:10px; line-height:1.3; white-space:nowrap; color:var(--accent); }
+.mechanic-number { font-size:36px; line-height:1; font-weight:400; color:var(--accent); font-variant-numeric:tabular-nums; }
+.mechanic-operator { font-size:23px; font-weight:400; color:var(--muted); }
+.mechanic-pips { display:flex; gap:5px; }
+.mechanic-pips i { display:block; width:12px; height:19px; border:1px solid var(--accent); background:transparent; }
+.mechanic-pips .is-filled { background:color-mix(in srgb,var(--accent) 60%,transparent); }
+.mechanic-end { width:35px; height:44px; border-right:2px solid var(--accent); display:grid; place-items:center; color:var(--accent); font-size:23px; }
+.mechanic-finish { font-size:11px; padding:6px; border-bottom:1px solid var(--accent); color:var(--accent); }
+.mechanic-divider { height:39px; width:1px; background:var(--line); margin:0 5px; }
+.mechanic-gestures { display:flex; align-items:center; gap:11px; }
+.mechanic-gestures > span { position:relative; display:flex; flex-direction:column; align-items:center; gap:3px; }
+.mechanic-gestures small { font-size:15px; color:var(--accent); }
+.mechanic-gestures--remove .mechanic-focus { opacity:.35; }
+.mechanic-gestures--remove .mechanic-focus::after { content:''; position:absolute; width:1px; height:55px; transform:rotate(43deg); background:var(--ink); top:-6px; }
+.mechanic-gestures--trump .mechanic-focus { color:var(--accent); border-bottom:2px solid var(--accent); }
+.mechanic-crown { position:absolute; top:-24px; font-size:23px; line-height:1; }
+.mechanic-gestures--trump { margin-top:14px; }
+.mechanic-markers { display:flex; gap:6px; }
+.mechanic-markers b { width:29px; height:34px; display:grid; place-items:center; font-size:19px; font-weight:400; border:1px solid var(--line); }
+.mechanic-markers .is-accent { border-color:var(--accent); color:var(--accent); }
+.mechanic-chain { display:flex; align-items:center; color:var(--accent); }
+.mechanic-chain > span:not(.mechanic-symbol) { display:block; width:35px; height:1px; background:var(--accent); }
+.mechanic-score { font-size:34px; padding:4px 12px; color:var(--muted); }
+.mechanic-score.is-preferred { color:var(--accent); border-bottom:2px solid var(--accent); }
+.mechanic-protected { padding:12px; border:1px solid var(--accent); border-radius:45% 45% 50% 50%; color:var(--accent); }
+.mechanic-stack { display:flex; align-items:center; flex-direction:column; gap:7px; }
+.mechanic-stack > small { font-size:10px; color:var(--accent); }
+.mechanic-refund { display:flex; flex-direction:column; align-items:center; color:var(--accent); }
+.mechanic-refund b { font-size:20px; font-weight:400; }
+.mechanic-old-cost { font-size:24px; text-decoration:line-through; color:var(--muted); }
+.mechanic-defeat { font-size:13px; color:var(--muted); border-bottom:1px dashed var(--muted); padding-bottom:4px; }
+.creation-preview:has(.mechanic-preview) { container:mechanic-card / inline-size; min-width:0; width:100%; max-width:100%; box-sizing:border-box; }
+/* The mobile offer uses an 85–104px illustration column. Keep the rule diagram
+   on a bounded canvas and scale only its art; captions retain a readable size. */
+@container mechanic-card (max-width:160px) {
+  .mechanic-preview { width:90%; gap:10px; }
+  .mechanic-preview-art { width:210px; min-height:80px; height:80px; flex:none; transform:scale(.56); margin-block:-17px; }
+  .mechanic-preview-caption { font-size:9px; letter-spacing:0; line-height:1.5; overflow-wrap:anywhere; }
+}
+@container mechanic-card (max-width:120px) {
+  .mechanic-preview-art { transform:scale(.44); margin-block:-22px; }
+}
+@container mechanic-card (max-width:95px) {
+  .mechanic-preview-art { transform:scale(.35); margin-block:-26px; }
+}
+@media(max-width:700px) { .mechanic-preview { gap:10px; }.mechanic-preview-art { gap:9px; }.mechanic-preview-caption { font-size:10px; letter-spacing:.03em; } }
+@media(max-width:700px) {
+  .choice-card .creation-preview { min-width:0; width:100%; max-width:100%; box-sizing:border-box; grid-template-columns:minmax(0,1fr); }
+  .choice-card .creation-preview > :is(.preview-diagram,.preview-resource,.preview-gestures) { min-width:0; width:180px; justify-self:center; justify-content:center; transform:scale(.5); }
+}
+@media(max-width:359px) {
+  .choice-card .creation-preview > :is(.preview-diagram,.preview-resource,.preview-gestures) { transform:scale(.4); }
+}

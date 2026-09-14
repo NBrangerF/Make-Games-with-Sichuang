@@ -112,14 +112,15 @@ const check = (pass, label) => checks.push([Boolean(pass), label])
 
 check((starts.match(/id: 'learn'|id: 'analyze'|id: 'problems'/g) ?? []).length === 3, '首页严格限制为三个主入口')
 check(
-  (headerLinksBlock.match(/id:/g) ?? []).length === 4 &&
+  (headerLinksBlock.match(/id:/g) ?? []).length === 5 &&
+  headerLinksBlock.includes("id: 'play'") && headerLinksBlock.includes("view: 'play'") &&
   headerLinksBlock.includes("id: 'course'") && headerLinksBlock.includes("'系统学习'") &&
   headerLinksBlock.includes("id: 'workbench'") && headerLinksBlock.includes("'设计工作台'") &&
   headerLinksBlock.includes("id: 'library'") && headerLinksBlock.includes("resourceEntry: 'library'") &&
   headerLinksBlock.includes("id: 'cases'") && headerLinksBlock.includes("resourceEntry: 'cases'") &&
   !headerLinksBlock.includes("id: 'path'") &&
   !headerLinksBlock.includes("id: 'tools'"),
-  '顶栏以系统学习、案例研究、机制主题库与设计工作台组织任务',
+  '顶栏提供系统学习、玩着学、案例研究、机制主题库与设计工作台',
 )
 check(
   learningNodes.nodes?.filter(node => node.track === 'observe').length === 5 &&

@@ -12,3 +12,7 @@ design/qa/
 docs/qa/screenshots/
 .env*
 !.env.example
+
+# Rebuilt from the pinned game source
+public/play/rule-lab/
+games/rule-lab/node_modules

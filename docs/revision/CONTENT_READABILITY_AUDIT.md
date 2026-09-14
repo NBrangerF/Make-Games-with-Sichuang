@@ -1,9 +1,9 @@
-<!-- content-fingerprint: 192a2a24ec0b526d409935ac2d6dd6757d38572bfdbf82d46e914682c39478d9 -->
+<!-- content-fingerprint: fcd6082431ced8fe944487361e5ec360ceb051d1a7dcb1f7cf6286085153a312 -->
 # 全站资料文本可读性审计
 
-审计日期：2026-09-11  
+审计日期：2026-09-14  
 范围：`content/` 下全部 483 个 JSON 与 Markdown 文件，不抽样。  
-覆盖：26,728 个含中文的字段或段落，约 938,113 个汉字。
+覆盖：26,740 个含中文的字段或段落，约 938,215 个汉字。
 
 ## 结论
 
@@ -91,9 +91,9 @@
 | `design-library/animals/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/animals/zh-CN.md` | 35 | 1596 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/apprenticeship/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-library/apprenticeship/zh-CN.md` | 23 | 1031 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/apprenticeship/zh-CN.md` | 23 | 1033 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/archive/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-library/archive/zh-CN.md` | 23 | 1031 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/archive/zh-CN.md` | 23 | 1033 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/area-control/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/area-control/zh-CN.md` | 29 | 1377 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/area-majority/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
@@ -107,20 +107,20 @@
 | `design-library/bag-building/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/bag-building/zh-CN.md` | 33 | 1736 | 4 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/care-schedule/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-library/care-schedule/zh-CN.md` | 23 | 1017 | 3 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/care-schedule/zh-CN.md` | 23 | 1019 | 3 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/catalog.json` | 561 | 6380 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/catch-up-system/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/catch-up-system/zh-CN.md` | 36 | 1830 | 4 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/city-building/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/city-building/zh-CN.md` | 26 | 1095 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/city-planning/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-library/city-planning/zh-CN.md` | 23 | 983 | 2 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/city-planning/zh-CN.md` | 23 | 985 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/combo-building/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/combo-building/zh-CN.md` | 35 | 1787 | 4 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/communication-limits/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/communication-limits/zh-CN.md` | 26 | 1264 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/community-kitchen/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-library/community-kitchen/zh-CN.md` | 22 | 968 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/community-kitchen/zh-CN.md` | 22 | 970 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/comparison-area-network/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/comparison-area-network/zh-CN.md` | 29 | 1234 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/comparison-bid-payment/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
@@ -156,11 +156,11 @@
 | `design-library/drafting/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/drafting/zh-CN.md` | 31 | 1496 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/ecosystem/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-library/ecosystem/zh-CN.md` | 23 | 1007 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/ecosystem/zh-CN.md` | 23 | 1009 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/environment/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/environment/zh-CN.md` | 26 | 1019 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/expedition/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-library/expedition/zh-CN.md` | 22 | 1007 | 2 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/expedition/zh-CN.md` | 22 | 1009 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/exploration/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/exploration/zh-CN.md` | 25 | 1115 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/fantasy/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
@@ -168,7 +168,7 @@
 | `design-library/farming/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/farming/zh-CN.md` | 26 | 1068 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/festival/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-library/festival/zh-CN.md` | 22 | 968 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/festival/zh-CN.md` | 22 | 970 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/hand-management/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/hand-management/zh-CN.md` | 31 | 1514 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/hidden-information/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
@@ -228,15 +228,15 @@
 | `design-library/race-end-trigger/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/race-end-trigger/zh-CN.md` | 29 | 1658 | 7 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/repair-cafe/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-library/repair-cafe/zh-CN.md` | 23 | 946 | 1 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/repair-cafe/zh-CN.md` | 23 | 948 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/reroll-locking/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/reroll-locking/zh-CN.md` | 32 | 1654 | 5 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/rescue-network/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-library/rescue-network/zh-CN.md` | 23 | 1015 | 1 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/rescue-network/zh-CN.md` | 23 | 1017 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/resource-conversion/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/resource-conversion/zh-CN.md` | 24 | 899 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/restoration/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-library/restoration/zh-CN.md` | 23 | 963 | 1 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/restoration/zh-CN.md` | 23 | 965 | 1 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/route-building/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/route-building/zh-CN.md` | 26 | 1180 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/scenario-campaign/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
@@ -270,7 +270,7 @@
 | `design-library/trick-taking/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/trick-taking/zh-CN.md` | 41 | 1708 | 3 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/water-governance/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `design-library/water-governance/zh-CN.md` | 25 | 932 | 2 | 支持资料：通过节点或资料库按需进入 |
+| `design-library/water-governance/zh-CN.md` | 25 | 934 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/worker-placement/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/worker-placement/zh-CN.md` | 33 | 1649 | 2 | 支持资料：通过节点或资料库按需进入 |
 | `design-library/zone-control/en.md` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
@@ -281,30 +281,30 @@
 | `glossary.json` | 2150 | 34801 | 9 | 支持资料：通过节点或资料库按需进入 |
 | `guides.json` | 240 | 6601 | 2 | 入口与支线：前台按需出现 |
 | `guides/monsoon-market-variables-case-synthesis-zh-CN-internal.md` | 57 | 1625 | 0 | 案例正文：保留为按需案例 |
-| `guides/monsoon-market-variables-case-synthesis-zh-CN-internal.metadata.json` | 3 | 61 | 0 | 案例正文：保留为按需案例 |
+| `guides/monsoon-market-variables-case-synthesis-zh-CN-internal.metadata.json` | 4 | 65 | 0 | 案例正文：保留为按需案例 |
 | `guides/new-bedford-manufacturing-constraint-case-synthesis-zh-CN-internal.md` | 124 | 4616 | 4 | 案例正文：保留为按需案例 |
-| `guides/new-bedford-manufacturing-constraint-case-synthesis-zh-CN-internal.metadata.json` | 12 | 151 | 0 | 案例正文：保留为按需案例 |
+| `guides/new-bedford-manufacturing-constraint-case-synthesis-zh-CN-internal.metadata.json` | 13 | 155 | 0 | 案例正文：保留为按需案例 |
 | `guides/paul-grogan-rulebook-layout-case-synthesis-zh-CN-internal.md` | 110 | 4110 | 2 | 案例正文：保留为按需案例 |
-| `guides/paul-grogan-rulebook-layout-case-synthesis-zh-CN-internal.metadata.json` | 11 | 138 | 0 | 案例正文：保留为按需案例 |
+| `guides/paul-grogan-rulebook-layout-case-synthesis-zh-CN-internal.metadata.json` | 12 | 142 | 0 | 案例正文：保留为按需案例 |
 | `guides/quid-for-your-quo-case-synthesis-zh-CN-internal.md` | 116 | 4189 | 2 | 案例正文：保留为按需案例 |
-| `guides/quid-for-your-quo-case-synthesis-zh-CN-internal.metadata.json` | 11 | 136 | 0 | 案例正文：保留为按需案例 |
+| `guides/quid-for-your-quo-case-synthesis-zh-CN-internal.metadata.json` | 12 | 140 | 0 | 案例正文：保留为按需案例 |
 | `learning-nodes.json` | 200 | 4326 | 0 | 主线权威文案：已按短句规则修订 |
 | `learning-units/learn-by-playing-one-moment-zh-CN.md` | 272 | 6675 | 5 | 完整课程：保留为深入阅读 |
-| `learning-units/learn-by-playing-one-moment-zh-CN.metadata.json` | 5 | 162 | 0 | 完整课程：保留为深入阅读 |
+| `learning-units/learn-by-playing-one-moment-zh-CN.metadata.json` | 6 | 166 | 0 | 完整课程：保留为深入阅读 |
 | `learning-units/systematic-unit-00-question-first-zh-CN.md` | 94 | 2103 | 0 | 完整课程：保留为深入阅读 |
-| `learning-units/systematic-unit-00-question-first-zh-CN.metadata.json` | 4 | 73 | 0 | 完整课程：保留为深入阅读 |
+| `learning-units/systematic-unit-00-question-first-zh-CN.metadata.json` | 5 | 77 | 0 | 完整课程：保留为深入阅读 |
 | `learning-units/systematic-unit-01-experience-intent-zh-CN.md` | 95 | 2229 | 1 | 完整课程：保留为深入阅读 |
-| `learning-units/systematic-unit-01-experience-intent-zh-CN.metadata.json` | 4 | 72 | 0 | 完整课程：保留为深入阅读 |
+| `learning-units/systematic-unit-01-experience-intent-zh-CN.metadata.json` | 5 | 76 | 0 | 完整课程：保留为深入阅读 |
 | `learning-units/systematic-unit-02-decisions-core-loop-zh-CN.md` | 110 | 2481 | 1 | 完整课程：保留为深入阅读 |
-| `learning-units/systematic-unit-02-decisions-core-loop-zh-CN.metadata.json` | 4 | 75 | 0 | 完整课程：保留为深入阅读 |
+| `learning-units/systematic-unit-02-decisions-core-loop-zh-CN.metadata.json` | 5 | 79 | 0 | 完整课程：保留为深入阅读 |
 | `learning-units/systematic-unit-03-mechanisms-information-interaction-zh-CN.md` | 219 | 7467 | 7 | 完整课程：保留为深入阅读 |
-| `learning-units/systematic-unit-03-mechanisms-information-interaction-zh-CN.metadata.json` | 4 | 86 | 0 | 完整课程：保留为深入阅读 |
+| `learning-units/systematic-unit-03-mechanisms-information-interaction-zh-CN.metadata.json` | 5 | 90 | 0 | 完整课程：保留为深入阅读 |
 | `learning-units/systematic-unit-04-minimum-prototype-zh-CN.md` | 283 | 7613 | 5 | 完整课程：保留为深入阅读 |
-| `learning-units/systematic-unit-04-minimum-prototype-zh-CN.metadata.json` | 4 | 87 | 0 | 完整课程：保留为深入阅读 |
+| `learning-units/systematic-unit-04-minimum-prototype-zh-CN.metadata.json` | 5 | 91 | 0 | 完整课程：保留为深入阅读 |
 | `learning-units/systematic-unit-05-single-question-test-zh-CN.md` | 388 | 12211 | 13 | 完整课程：保留为深入阅读 |
-| `learning-units/systematic-unit-05-single-question-test-zh-CN.metadata.json` | 4 | 111 | 0 | 完整课程：保留为深入阅读 |
+| `learning-units/systematic-unit-05-single-question-test-zh-CN.metadata.json` | 5 | 115 | 0 | 完整课程：保留为深入阅读 |
 | `learning-units/systematic-unit-06-evidence-to-next-version-zh-CN.md` | 410 | 12604 | 14 | 完整课程：保留为深入阅读 |
-| `learning-units/systematic-unit-06-evidence-to-next-version-zh-CN.metadata.json` | 4 | 125 | 1 | 完整课程：保留为深入阅读 |
+| `learning-units/systematic-unit-06-evidence-to-next-version-zh-CN.metadata.json` | 5 | 129 | 1 | 完整课程：保留为深入阅读 |
 | `original-articles/before-the-first-rule/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/before-the-first-rule/zh-CN.md` | 22 | 1366 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/between-your-turns/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
@@ -343,7 +343,7 @@
 | `original-articles/race-ideas-under-constraints/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-ideas-under-constraints/zh-CN.md` | 18 | 968 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-independent-rules-test/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
-| `original-articles/race-independent-rules-test/zh-CN.md` | 18 | 930 | 3 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/race-independent-rules-test/zh-CN.md` | 18 | 932 | 3 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-information-and-randomness/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-information-and-randomness/zh-CN.md` | 19 | 928 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-observe-a-game/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
@@ -444,14 +444,14 @@
 | `original-articles/when-randomness-helps/zh-CN.md` | 21 | 1218 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/where-resources-go/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/where-resources-go/zh-CN.md` | 22 | 1321 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
-| `print-and-play/book-cart.json` | 45 | 862 | 0 | 支持资料：通过节点或资料库按需进入 |
+| `print-and-play/book-cart.json` | 45 | 864 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `race-comparisons.json` | 30 | 663 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `reading-examples.json` | 168 | 6175 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `reading-path-river.json` | 25 | 644 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `reading-path.json` | 25 | 457 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `reading-search/articles.json` | 1333 | 80616 | 50 | 支持资料：通过节点或资料库按需进入 |
+| `reading-search/articles.json` | 1333 | 80618 | 50 | 支持资料：通过节点或资料库按需进入 |
 | `reading-search/cases.json` | 788 | 43705 | 65 | 支持资料：通过节点或资料库按需进入 |
-| `reading-search/library.json` | 3106 | 136685 | 197 | 支持资料：通过节点或资料库按需进入 |
+| `reading-search/library.json` | 3106 | 136709 | 197 | 支持资料：通过节点或资料库按需进入 |
 | `reading-support.json` | 112 | 2578 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `resource-assessments.json` | 1148 | 33197 | 0 | 内部元数据：不作为新手首屏文案 |
 | `resource-audience-paths.json` | 19 | 340 | 0 | 入口与支线：前台按需出现 |

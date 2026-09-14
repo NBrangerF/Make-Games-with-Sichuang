@@ -43,4 +43,4 @@ Can keeping B and C answer Q1?
 
 This is not an archival policy. Authorization, privacy, disputed evidence, and preservation obligations are absent. “Cannot answer” means the rules do not support a response, not that the historical event never happened. Observe whether readers can identify each answer's supporting records and missing connections before expanding the collection.
 
-This original record set, queries, and analysis develop Luozhuo's archive setting. The related mystery article shows another knowledge change: evidence is retained while questions reduce possible answers.
+This original record set, queries, and analysis develop our archive setting. The related mystery article shows another knowledge change: evidence is retained while questions reduce possible answers.
