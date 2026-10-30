@@ -30,7 +30,7 @@ A short version note gives later discussion a clear object. “This part is stil
 
 The base rules have been examined through step-by-step rule analysis. There are successful plans, and some plans can be shown to fail. For example, if both animals move in round 1, the two remaining planks cannot pay for the four remaining moves. This kind of check supports claims about quantities and possibilities under the rules.
 
-The player questions and playtest records in this course are invented examples. We have no results from real players using this materials version. It cannot yet be described as understood by beginners, enjoyed by both players, or ready for publication. A game that works in a paper calculation still needs different evidence about whether unfamiliar people can use it and want to play again.
+The player questions and playtest records in this course are invented examples. We have no results from real players using this materials version. It cannot yet be described as understood by beginners, enjoyed by both players, or ready for publication. A game that works on paper is one thing; whether people new to it can use it and want to play again has to be seen separately.
 
 A collaborator can help examine a first reading or suggest a new direction. Taking over a design may involve more than polishing sentences. If the shared crossing lacks worthwhile plans to compare, the rules can change too. Each time, we should know what is changing and whether earlier conclusions still apply.
 

@@ -1,0 +1,98 @@
+{
+  "schemaVersion": 1,
+  "note": "What a reader should have for their own game at the end of each part. Keyed by part id, which both paths share; shown after the last chapter of the part.",
+  "parts": {
+    "starting": {
+      "zh-CN": [
+        "一个你想改的游戏，和它一个回合的三句话描述",
+        "一段观察记录：有人停下、笑出来或皱眉的那一刻",
+        "你的第一位试玩者是谁，能待多久",
+        "一句方向：你想让玩家多做的那一件事"
+      ],
+      "en": [
+        "A game you want to change, and three sentences describing one of its turns",
+        "One observation: a moment when someone paused, laughed, or frowned",
+        "Who your first player is, and how long they can stay",
+        "One sentence of direction: the one thing you want players to do more"
+      ]
+    },
+    "actions": {
+      "zh-CN": [
+        "三个小改法，其中留下了一个",
+        "写成动作的一条规则：从轮到谁一直写到换人",
+        "一份只回答一个问题的小草稿",
+        "第一次试玩的三栏记录"
+      ],
+      "en": [
+        "Three small changes, with one kept",
+        "One rule written as an action, from whose turn it is to handing over",
+        "A small draft that answers one question",
+        "A three-column record of your first playtest"
+      ]
+    },
+    "decisions": {
+      "zh-CN": [
+        "一个写清了结算顺序的边界局面",
+        "一次真正有差别、玩家也看得出差别的选择",
+        "一样有限的东西：写清它从哪来、用掉后去哪里",
+        "一个让等待的人也有事可想的改动"
+      ],
+      "en": [
+        "One tricky moment with its order of resolution written down",
+        "One choice whose options really differ, in a way players can see",
+        "One limited thing, with where it comes from and where it goes",
+        "One change that gives waiting players something to think about"
+      ]
+    },
+    "systems": {
+      "zh-CN": [
+        "一张东西怎样流动的小图",
+        "开头、中间、结尾，各一句玩家在意什么",
+        "两个点子合起来后冒出的问题，以及你的处理",
+        "一个互相帮忙或互相妨碍的动作；换过一次人数或先后顺序"
+      ],
+      "en": [
+        "A small sketch of what flows through your game",
+        "One line each for what players care about at the beginning, middle, and end",
+        "The question that appeared when two ideas were combined, and what you did about it",
+        "One action for helping or hindering, and one try with a different player count or order"
+      ]
+    },
+    "meaning": {
+      "zh-CN": [
+        "关键动作的叫法或画法，问过朋友哪一种更好记",
+        "一段玩家自己讲出的故事",
+        "放在操作发生处的提示",
+        "一处为看不清、够不到或读得慢的人改过的材料"
+      ],
+      "en": [
+        "A name or picture for the key action, checked with a friend",
+        "A short story of a game, told by a player",
+        "Reminders placed where the actions happen",
+        "One piece of material changed for someone who cannot see well, reach far, or read quickly"
+      ]
+    },
+    "testing": {
+      "zh-CN": [
+        "第二次试玩的记录，他做的事和你的解释分开写",
+        "一句反馈，以及你为它只改的那一条规则"
+      ],
+      "en": [
+        "A record of a second playtest, with what they did kept apart from what you explained",
+        "One piece of feedback, and the single rule you changed for it"
+      ]
+    },
+    "revising": {
+      "zh-CN": [
+        "定下来的一版，其余写进“以后再试”",
+        "一位没听你讲解的人照规则开局的记录",
+        "装在一起的规则、材料和邀请，写着版本号"
+      ],
+      "en": [
+        "One settled version, with the rest on a “try later” list",
+        "A record of someone starting from your written rules without your explanation",
+        "Rules, materials, and an invitation packed together and marked with a version"
+      ]
+    }
+  }
+}

@@ -68,3 +68,11 @@
 .chapter-own-game h2 { font-size: 1.15rem; margin: 0 0 8px; }
 .chapter-own-game p { margin: 0; max-width: 40em; }
 @media (max-width: 560px) { .chapter-brief p { grid-template-columns: minmax(0, 1fr); gap: 2px; } }
+
+/* end of a part: what the reader should now have for their own game */
+.part-checklist { margin-top: 18px; padding: 22px 24px; border: 1.5px dashed #b84628; border-radius: 6px; line-height: 1.8; }
+.part-checklist h2 { font-size: 1.1rem; margin: 0 0 10px; }
+.part-checklist ul { list-style: none; margin: 0; padding: 0; display: grid; gap: 6px; }
+.part-checklist li { position: relative; padding-left: 1.7em; }
+.part-checklist li::before { content: ""; position: absolute; left: 0; top: .45em; width: .95em; height: .95em; border: 1.5px solid #536760; border-radius: 3px; }
+.part-checklist p { margin: 12px 0 0; font-size: .92rem; color: #536760; }

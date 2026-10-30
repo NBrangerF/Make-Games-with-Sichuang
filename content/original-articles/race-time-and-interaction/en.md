@@ -30,6 +30,6 @@ In a paper test, cover each selected die, then reveal together when both players
 
 Sequential turns focus attention on one movement and make mistakes easier to trace. Simultaneous movement may require checking two routes together. People who need help counting may find that assistance harder to obtain during simultaneous play.
 
-Set up the same position for both procedures and compare them. Record where waiting occurs, whether explanations need repeating, and whether both players recognize the ending. This checks a local procedure, not average whole-game duration.
+Set up the same position for both procedures and compare them. Record where waiting occurs, whether explanations need repeating, and whether both players recognize the ending. This checks one procedure; it cannot tell you how long a whole game takes.
 
 Save the simultaneous draft separately; C still uses alternating turns. Give the draft a specific purpose, such as “reduce the wait for the other player to roll.” When you return to compare it, you can check whether it removes that wait and where the time goes instead.

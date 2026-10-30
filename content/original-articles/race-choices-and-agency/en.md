@@ -32,6 +32,6 @@ Evaluation therefore needs more than a count of added choices. Ask what those ch
 
 Offer two constructed positions: at 6 with 2 and 6, and at 23 with the same results. Let the participant finish each task before asking, “What did you compare?” Note whether they mention numbers, the ladder, the finish, or a belief that the dice should be added.
 
-These positions do not estimate the proportion of worthwhile decisions in a game. They were deliberately selected to distinguish mechanisms, not randomly sampled. Understanding how often a difference appears during ordinary play requires a separate record of naturally occurring turns.
+These positions do not estimate the proportion of worthwhile decisions in a game. They were picked on purpose to show the difference, not drawn at random. Understanding how often a difference appears during ordinary play requires a separate record of naturally occurring turns.
 
 After the task, sort your notes into choices with matching results and choices with different results. Then look at the player’s account. Was there little to compare, a difference they missed, or a comparison they understood but did not want to spend time on? Each answer suggests a different revision.

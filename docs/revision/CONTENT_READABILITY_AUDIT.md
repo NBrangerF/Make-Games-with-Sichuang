@@ -1,9 +1,9 @@
-<!-- content-fingerprint: e45865cf36f4ca17b13071327f809f5487bc716e50e3dcb6ab50185072648e14 -->
+<!-- content-fingerprint: ede23073199a454f8b8f4d7609b06e3e721c9350c6812430284b3772cd19e198 -->
 # 全站资料文本可读性审计
 
 审计日期：2026-10-30  
-范围：`content/` 下全部 484 个 JSON 与 Markdown 文件，不抽样。  
-覆盖：26,768 个含中文的字段或段落，约 939,653 个汉字。
+范围：`content/` 下全部 485 个 JSON 与 Markdown 文件，不抽样。  
+覆盖：26,793 个含中文的字段或段落，约 940,059 个汉字。
 
 ## 结论
 
@@ -324,7 +324,7 @@
 | `original-articles/race-balance-and-player-count/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-balance-and-player-count/zh-CN.md` | 18 | 1056 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-choices-and-agency/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
-| `original-articles/race-choices-and-agency/zh-CN.md` | 19 | 998 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/race-choices-and-agency/zh-CN.md` | 19 | 994 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-combine-mechanisms/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-combine-mechanisms/zh-CN.md` | 18 | 1014 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-cooperation-and-conflict/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
@@ -364,17 +364,17 @@
 | `original-articles/race-rules-and-play/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-rules-and-play/zh-CN.md` | 19 | 1167 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-share-a-playable-version/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
-| `original-articles/race-share-a-playable-version/zh-CN.md` | 15 | 824 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/race-share-a-playable-version/zh-CN.md` | 15 | 827 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-space-and-opportunity/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-space-and-opportunity/zh-CN.md` | 18 | 1063 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-state-and-resolution/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-state-and-resolution/zh-CN.md` | 19 | 994 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-stories-and-models/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
-| `original-articles/race-stories-and-models/zh-CN.md` | 18 | 1041 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/race-stories-and-models/zh-CN.md` | 18 | 1042 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-theme-and-emotion/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-theme-and-emotion/zh-CN.md` | 18 | 975 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-time-and-interaction/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
-| `original-articles/race-time-and-interaction/zh-CN.md` | 18 | 1058 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/race-time-and-interaction/zh-CN.md` | 18 | 1056 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/reading-access-and-participation/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/reading-access-and-participation/zh-CN.md` | 22 | 1324 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/reading-balance-and-player-count/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
@@ -420,17 +420,17 @@
 | `original-articles/reading-rules-and-play/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/reading-rules-and-play/zh-CN.md` | 24 | 1507 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/reading-share-a-playable-version/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
-| `original-articles/reading-share-a-playable-version/zh-CN.md` | 19 | 1316 | 3 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-share-a-playable-version/zh-CN.md` | 19 | 1318 | 3 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/reading-space-and-opportunity/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/reading-space-and-opportunity/zh-CN.md` | 22 | 1262 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/reading-state-and-resolution/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/reading-state-and-resolution/zh-CN.md` | 17 | 1116 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/reading-stories-and-models/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
-| `original-articles/reading-stories-and-models/zh-CN.md` | 21 | 1297 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-stories-and-models/zh-CN.md` | 21 | 1299 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/reading-theme-and-emotion/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/reading-theme-and-emotion/zh-CN.md` | 19 | 1219 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/reading-time-and-interaction/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
-| `original-articles/reading-time-and-interaction/zh-CN.md` | 21 | 1354 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/reading-time-and-interaction/zh-CN.md` | 21 | 1352 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/rewards-and-reasons/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/rewards-and-reasons/zh-CN.md` | 22 | 1269 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/when-feedback-disagrees/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
@@ -445,6 +445,7 @@
 | `original-articles/when-randomness-helps/zh-CN.md` | 21 | 1218 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/where-resources-go/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/where-resources-go/zh-CN.md` | 22 | 1321 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `part-checklists.json` | 25 | 406 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `print-and-play/book-cart.json` | 45 | 864 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `race-comparisons.json` | 30 | 663 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `reading-examples.json` | 168 | 6175 | 0 | 支持资料：通过节点或资料库按需进入 |

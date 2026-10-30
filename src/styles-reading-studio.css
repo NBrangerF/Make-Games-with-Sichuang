@@ -91,6 +91,7 @@ body[data-reading-studio="true"] .original-reading__body th { background: #e3e7d
 body[data-reading-studio="true"] .original-reading__body blockquote { padding: 8px 0 8px 24px; margin-inline: 0; border-left: 3px solid #b84628; color: #425951; }
 body[data-reading-studio="true"] .text-learning__related { max-width: 780px; margin: 48px auto 0; background: #e8e9dc; border-color: #839477; }
 body[data-reading-studio="true"] .chapter-own-game { max-width: 780px; margin: 44px auto 0; }
+body[data-reading-studio="true"] .part-checklist { max-width: 780px; margin: 18px auto 0; }
 body[data-reading-studio="true"] .text-learning__neighbors { max-width: 780px; margin: 34px auto 0; }
 .reading-worksheet { background: #e3e7d9; border: 1px solid #c8d0bb; border-radius: 8px; padding: 25px; margin: 36px 0; scroll-margin-top: 110px; }
 .reading-worksheet__disclosure > summary { cursor: pointer; min-height: 44px; line-height: 1.65; }

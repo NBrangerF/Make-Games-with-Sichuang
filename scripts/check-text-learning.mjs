@@ -66,5 +66,14 @@ for (const path of paths) for (const chapter of path.chapters) {
   for (const lang of ['zh-CN', 'en']) assert.ok(entry[lang]?.trim().length > 20, `${chapter.id}/${lang}: own-game prompt text`)
 }
 assert.equal(Object.keys(ownGame).length, 28, 'One own-game prompt per chapter slug')
+// Each part closes with a bilingual checklist of what the reader should now have.
+const checklists = JSON.parse(read('content/part-checklists.json')).parts
+for (const path of paths) for (const part of path.parts) {
+  const entry = checklists[part.id]
+  assert.ok(entry, `${part.id}: part checklist`)
+  assert.equal(entry['zh-CN'].length, entry.en.length, `${part.id}: checklist items match across languages`)
+  assert.ok(entry.en.length >= 2 && [...entry['zh-CN'], ...entry.en].every(item => item.trim()), `${part.id}: checklist items`)
+}
+assert.ok(ui.includes('part-checklist'), 'Part checklist is rendered')
 assert.ok(ui.includes('introInsert={chapterBrief}') && ui.includes('chapter-own-game'), 'Chapter brief and own-game step are rendered')
 console.log('Text learning: 28 race + 28 preserved river bilingual chapters, 13 optional essays, prerequisite order, source-independent reader and practice compatibility PASS; no comprehension claim')

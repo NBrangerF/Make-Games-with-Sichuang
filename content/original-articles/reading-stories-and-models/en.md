@@ -22,7 +22,7 @@ Selecting B once informs B and both neighbors, A and C, completing the task with
 
 But why does a neighbor definitely hear? Why does nobody tell a friend afterward? This model makes distance a condition for transmission and makes an announcement certain to work. It leaves out trust, language, and other connections. Those choices make the middle household particularly effective. The rules express a way of considering a problem, rather than a picture of reality without any choices behind it.
 
-Using this to discuss real communication would require finding out whether those relationships hold in reality. The fictional result establishes what happens under its stated conditions. It cannot establish that a real middle household must have the most influence.
+Using this to discuss real communication would require finding out whether those relationships hold in reality. The fictional result shows what happens under these rules. It cannot tell you that a real household in the middle must have the most influence.
 
 ## A story can leave room that an action cannot
 

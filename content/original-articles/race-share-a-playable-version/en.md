@@ -14,7 +14,7 @@ Mark both rules and board C v0.1. Exclude reroll tokens, replenishment reminders
 
 Try this: “I’ve made a two-player paper race and haven’t playtested it yet. Could you try setting up from this sheet? Circle any step that is unclear and note whether you asked someone for help. Afterwards, I’d like to hear what you thought of choosing a die.”
 
-For a local test, state that it begins at space 6 with preset dice, and do not claim to investigate full-game pacing. For complete play, you can record turns and elapsed time, defining when timing starts and stops. You can also ask whether someone wants another game instead of inferring lasting interest from laughter.
+For a local test, state that it begins at space 6 with preset dice, and do not present it as a test of full-game pacing. For complete play, you can record turns and elapsed time, defining when timing starts and stops. If you want to know whether someone would play again, just ask; laughter alone will not tell you.
 
 ## Put the change beside the version number
 
