@@ -1,14 +1,14 @@
-<!-- content-fingerprint: 05734e7e9c93603d01261eb1263be241cd03fa02d8e13604a6a29ec8f6449101 -->
+<!-- content-fingerprint: e45865cf36f4ca17b13071327f809f5487bc716e50e3dcb6ab50185072648e14 -->
 # 全站资料文本可读性审计
 
 审计日期：2026-10-30  
-范围：`content/` 下全部 483 个 JSON 与 Markdown 文件，不抽样。  
-覆盖：26,740 个含中文的字段或段落，约 938,408 个汉字。
+范围：`content/` 下全部 484 个 JSON 与 Markdown 文件，不抽样。  
+覆盖：26,768 个含中文的字段或段落，约 939,653 个汉字。
 
 ## 结论
 
 - 本报告审计文字长度与抽象词信号，不据此判断网站首页或学习路径是否有效。
-- 机器规则标出了 949 个可能需要分段或渐进披露的长句、长段与抽象词密集处。这是编辑优先级，不是内容质量评分。
+- 机器规则标出了 951 个可能需要分段或渐进披露的长句、长段与抽象词密集处。这是编辑优先级，不是内容质量评分。
 - 授权译文和来源正文保留原有使用范围；原创双语文章提供独立阅读入口，课程、案例与工具维持各自路径。
 - 汉字阈值只评估含中文的字段或段落。英文正文参与文件指纹与解析检查，但不能因此声称其可读性已被这些阈值验证。
 
@@ -24,6 +24,7 @@
 
 | 文件 | 中文字段/段落 | 汉字数 | 高摩擦候选 | 前台处理 |
 | --- | ---: | ---: | ---: | --- |
+| `chapter-own-game.json` | 28 | 1227 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `claims.json` | 644 | 32881 | 22 | 内部元数据：不作为新手首屏文案 |
 | `concept-action-index.json` | 65 | 721 | 0 | 内部元数据：不作为新手首屏文案 |
 | `design-case-ids.json` | 0 | 0 | 0 | 支持资料：通过节点或资料库按需进入 |
@@ -329,7 +330,7 @@
 | `original-articles/race-cooperation-and-conflict/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-cooperation-and-conflict/zh-CN.md` | 18 | 1028 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-core-actions/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
-| `original-articles/race-core-actions/zh-CN.md` | 18 | 976 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/race-core-actions/zh-CN.md` | 18 | 978 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-design-an-economy/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-design-an-economy/zh-CN.md` | 18 | 1105 | 2 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-design-judgment/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
@@ -349,9 +350,9 @@
 | `original-articles/race-observe-a-game/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-observe-a-game/zh-CN.md` | 19 | 991 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-plan-a-playtest/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
-| `original-articles/race-plan-a-playtest/zh-CN.md` | 15 | 816 | 1 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/race-plan-a-playtest/zh-CN.md` | 15 | 825 | 2 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-players-and-context/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
-| `original-articles/race-players-and-context/zh-CN.md` | 19 | 1088 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
+| `original-articles/race-players-and-context/zh-CN.md` | 19 | 1086 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-prototype-for-a-question/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-prototype-for-a-question/zh-CN.md` | 15 | 789 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
 | `original-articles/race-prototypes-and-evidence/en.md` | 0 | 0 | 0 | 原创双语阅读：直接打开，不以项目或练习提交为前提 |
@@ -449,7 +450,7 @@
 | `reading-examples.json` | 168 | 6175 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `reading-path-river.json` | 25 | 579 | 0 | 支持资料：通过节点或资料库按需进入 |
 | `reading-path.json` | 25 | 579 | 0 | 支持资料：通过节点或资料库按需进入 |
-| `reading-search/articles.json` | 1333 | 80686 | 49 | 支持资料：通过节点或资料库按需进入 |
+| `reading-search/articles.json` | 1333 | 80695 | 50 | 支持资料：通过节点或资料库按需进入 |
 | `reading-search/cases.json` | 788 | 43705 | 65 | 支持资料：通过节点或资料库按需进入 |
 | `reading-search/library.json` | 3106 | 136709 | 197 | 支持资料：通过节点或资料库按需进入 |
 | `reading-support.json` | 112 | 2578 | 0 | 支持资料：通过节点或资料库按需进入 |

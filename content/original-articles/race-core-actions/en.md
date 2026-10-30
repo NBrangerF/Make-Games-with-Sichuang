@@ -30,6 +30,6 @@ Think of the dice as materials with different jobs. One numbered die can give a 
 
 ## Hand one instruction to someone else
 
-Give another person a fixed task: “The pawn is at 6 and the dice show 2 and 6. Complete a turn in C.” Watch for adding the dice, following a ladder merely passed, using both results, or uncertainty about changing players. This checks the clarity of the process, not whole-game strategic skill.
+Give another person a fixed task: “The pawn is at 6 and the dice show 2 and 6. Complete a turn in C.” Watch for adding the dice, following a ladder merely passed, using both results, or uncertainty about changing players. It shows whether the process is clear, not whether the whole game is fun.
 
 Circle the step that needed a reminder. If the player can choose a die but does not know when to pass the turn after climbing the ladder, add “end your turn” there. A specific revision gives you a specific place to watch at the next reading.

@@ -24,6 +24,6 @@ Record version C, starting position 6, results 2 and 6, whether any explanation 
 
 ## Remember that people learn during comparisons
 
-Suppose you compare two ladder drawings. Keep rules and position fixed and change the drawing. If one person sees A and then B, the second attempt may be easier because they already know the answer. With several willing participants, you can alternate which drawing comes first. With very few, at least retain the order in the record instead of claiming the learning effect has disappeared.
+Suppose you compare two ladder drawings. Keep rules and position fixed and change the drawing. If one person sees A and then B, the second attempt may be easier because they already know the answer. If several friends are willing, let half see A first and half see B first. With only one or two people, note who saw which drawing first, and do not credit the second drawing for a smoother attempt that came from practice.
 
 Check what is on the table: one version of the materials, one task, and a recording sheet with space to write. During the test, you can watch how the person completes this turn and where it differs from your expectations, without trying to remember ten research goals.

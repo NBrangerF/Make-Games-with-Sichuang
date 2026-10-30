@@ -58,4 +58,13 @@ const app = read('src/App.tsx')
 assert.ok(app.includes("route.view === 'learn' && !route.learningNode"))
 assert.ok(app.includes("route.resourceId === 'systematic'"))
 assert.ok(app.includes('<TextLearning chapterId={route.readingChapter}'))
+// Every chapter, on both paths, ends by moving its idea to the reader's own game.
+const ownGame = JSON.parse(read('content/chapter-own-game.json')).chapters
+for (const path of paths) for (const chapter of path.chapters) {
+  const entry = ownGame[chapter.id.replace(/^(race|reading)-/, '')]
+  assert.ok(entry, `${chapter.id}: own-game prompt`)
+  for (const lang of ['zh-CN', 'en']) assert.ok(entry[lang]?.trim().length > 20, `${chapter.id}/${lang}: own-game prompt text`)
+}
+assert.equal(Object.keys(ownGame).length, 28, 'One own-game prompt per chapter slug')
+assert.ok(ui.includes('introInsert={chapterBrief}') && ui.includes('chapter-own-game'), 'Chapter brief and own-game step are rendered')
 console.log('Text learning: 28 race + 28 preserved river bilingual chapters, 13 optional essays, prerequisite order, source-independent reader and practice compatibility PASS; no comprehension claim')

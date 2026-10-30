@@ -1,0 +1,118 @@
+{
+  "schemaVersion": 1,
+  "note": "One prompt per chapter that moves the chapter's idea from the teaching example to the reader's own game. Keyed by chapter slug without the race-/reading- prefix, so both paths share it.",
+  "chapters": {
+    "rules-and-play": {
+      "zh-CN": "想一个你自己想改的游戏，任何玩过的桌游或小时候的游戏都行。用三句话写下它的一个回合：轮到谁，做什么，做完桌上变成什么样。",
+      "en": "Pick a game you would like to change: any tabletop game, or one from childhood. In three sentences, write one turn: whose turn it is, what they do, and how the table looks afterwards."
+    },
+    "observe-a-game": {
+      "zh-CN": "找人玩一局你选的游戏，只跟一轮。记下一个有人停下来、笑出来或皱眉的时刻：当时局面是什么，他说了什么。",
+      "en": "Watch someone play the game you chose and follow one round. Note one moment when someone paused, laughed, or frowned: what the position was, and what they said."
+    },
+    "players-and-context": {
+      "zh-CN": "写下你的第一位试玩者是谁：玩过什么，能待多久，在哪张桌子上玩。再写一处你要为他调整的地方。",
+      "en": "Write down who your first player will be: what they have played, how long they can stay, and where you will sit. Then name one thing you will adjust for them."
+    },
+    "first-design-brief": {
+      "zh-CN": "给你的游戏写一句方向：“我想让玩家多做一件事：……”。再写下这一稿先不做的两件事。",
+      "en": "Write one sentence of direction for your game: “I want players to do one more thing: …”. Then list two things this draft will leave out."
+    },
+    "ideas-under-constraints": {
+      "zh-CN": "列出三个能实现这句方向的小改法，每个只改一条规则。在同一个局面里比一比，留下一个，其余记在旁边。",
+      "en": "List three small changes that could deliver your sentence of direction, each changing one rule. Compare them in the same position, keep one, and set the others aside."
+    },
+    "core-actions": {
+      "zh-CN": "把留下的改法写成别人照着就能做的动作：从轮到他开始，写到交给下一个人为止。念一遍，找出你在心里悄悄补上的步骤。",
+      "en": "Write the change you kept as an action someone could follow, from the start of their turn to handing over to the next player. Read it aloud and find the steps you were quietly filling in."
+    },
+    "prototype-for-a-question": {
+      "zh-CN": "为你的改法挑一个最想知道的问题，只做回答它需要的材料：纸片、手写的卡、一个摆好的局面都可以。",
+      "en": "Choose the one question you most want answered about your change, and make only the materials that question needs: paper slips, handwritten cards, or one set-up position."
+    },
+    "plan-a-playtest": {
+      "zh-CN": "约一位朋友试一回合。准备一句任务和一张三栏记录纸（做了什么、局面变成什么、说了什么）；开始前告诉对方，可以随时提问，也可以随时停。",
+      "en": "Ask a friend to try one turn. Prepare a one-sentence task and a three-column record: what they did, how the position changed, what they said. Tell them beforehand that they can ask anything and stop at any time."
+    },
+    "state-and-resolution": {
+      "zh-CN": "在你的游戏里找一个“动作做完了，桌上该变成什么却说不清”的时刻，比如两件事同时触发、走到边界、东西用完了。把结算的先后顺序写下来。",
+      "en": "Find a moment in your game where an action finishes but the next position is unclear: two effects at once, reaching an edge, running out of something. Write down the order in which things resolve."
+    },
+    "choices-and-agency": {
+      "zh-CN": "找出你游戏里的一次选择，问两件事：两个选项真的会带来不同结果吗？玩家看得出这个差别吗？这次只改其中一件。",
+      "en": "Find one choice in your game and ask two things. Do the options really lead to different results? Can players see the difference? Change only one of these this time."
+    },
+    "information-and-randomness": {
+      "zh-CN": "在你的游戏里，玩家是在随机结果揭晓之前做决定，还是之后？把顺序反过来走一回合，看看要想的事情变了什么。",
+      "en": "In your game, do players decide before or after the random result is revealed? Play one turn with the order reversed and notice what there is to think about now."
+    },
+    "resources-and-endings": {
+      "zh-CN": "给你的游戏加一样有限的东西，比如一枚标记或一次机会，写清它从哪里来、用掉后去哪里。走几回合，看玩家什么时候舍得用它。",
+      "en": "Add one limited thing to your game, such as a token or a one-off chance, and write where it comes from and where it goes once used. Play a few turns and watch when players are willing to spend it."
+    },
+    "space-and-opportunity": {
+      "zh-CN": "在你的棋盘或桌面上画出一条路线，标出哪些位置给人机会，哪些让人卡住。挪动其中一个位置，再走一遍。",
+      "en": "Draw a route across your board or table and mark which positions open up chances and which leave people stuck. Move one of them and play it again."
+    },
+    "time-and-interaction": {
+      "zh-CN": "看看别人行动时，其他玩家在做什么。如果大多时间都在等，试一个让他们也有事可想的小改动。",
+      "en": "Watch what the other players do while someone takes a turn. If they mostly wait, try one small change that gives them something to think about."
+    },
+    "design-an-economy": {
+      "zh-CN": "把你游戏里流动的东西画成一张小图：从哪里来，到哪里去，会不会越积越多或越来越少。标出一处可能失衡的地方。",
+      "en": "Sketch what flows through your game: where it comes from, where it goes, and whether it piles up or runs dry. Mark one place where it might tip out of balance."
+    },
+    "goals-and-pacing": {
+      "zh-CN": "把一局分成开头、中间和结尾，各写一句玩家此时最在意什么。如果结尾拖，就只改胜利条件这一条试试。",
+      "en": "Split a game into its beginning, middle, and end, and write what players care about most in each. If the end drags, try changing only the win condition."
+    },
+    "combine-mechanisms": {
+      "zh-CN": "如果有两个都想留下的点子，先各自走一回合，再放在一起走一回合。写下只有合起来才冒出的那个问题。",
+      "en": "If you have two ideas you want to keep, play a turn with each on its own, then a turn with both. Write down the question that appears only when they are combined."
+    },
+    "cooperation-and-conflict": {
+      "zh-CN": "想清楚你的玩家是一起对抗游戏、互相竞争，还是两者都有。写一个能让他们真正互相帮忙（或互相妨碍）的动作。",
+      "en": "Decide whether your players work together against the game, compete with each other, or both. Write one action that lets them really help, or hinder, each other."
+    },
+    "balance-and-player-count": {
+      "zh-CN": "换一种人数或先后顺序玩一回合：先手是不是总占便宜？多一个人会怎样？写下一处你打算改的地方。",
+      "en": "Play a turn with a different number of players or a different turn order. Does going first always help? What changes with one more player? Write down one thing you plan to change."
+    },
+    "theme-and-emotion": {
+      "zh-CN": "给游戏里最重要的那个动作换两种叫法或画法，问问朋友：哪一种让人更想做它，也更容易记住它？",
+      "en": "Give the most important action in your game two different names or pictures, and ask a friend which one makes them want to do it, and which one they remember."
+    },
+    "stories-and-models": {
+      "zh-CN": "玩完一局，请玩家用两三句话讲讲刚才发生了什么。他们讲的故事，和你想讲的是同一个吗？",
+      "en": "After a game, ask players to tell what happened in two or three sentences. Is their story the one you meant to tell?"
+    },
+    "rules-and-components": {
+      "zh-CN": "找出最容易做错的一步，把提示放到它发生的地方：卡面上、格子旁、标记背面，而不只写在规则书里。",
+      "en": "Find the step people get wrong most often and put a reminder where it happens: on a card, beside a space, or on the back of a token, not only in the rulebook."
+    },
+    "access-and-participation": {
+      "zh-CN": "检查一遍：看不清、够不到或读得慢的人，能不能自己做决定？为其中一种情况改一处材料。",
+      "en": "Check whether someone who cannot see well, reach far, or read quickly can still make their own decisions. Change one piece of material for one of these situations."
+    },
+    "prototypes-and-evidence": {
+      "zh-CN": "翻出上次试玩的记录，把“他做了什么”和“你怎样解释”分成两栏。圈出一处你以为他看懂了、其实靠了你提示的地方。",
+      "en": "Go back to your last playtest notes and separate “what they did” from “what you explained”. Circle one place where you assumed they understood, but they relied on your hint."
+    },
+    "diagnose-feedback": {
+      "zh-CN": "挑一句最常听到的反馈，比如“太拖了”或“没意思”，回到它出现的那一段局面，找出一条能改的规则，只改它。",
+      "en": "Pick the feedback you hear most, such as “it drags” or “it’s boring”. Go back to the moment it came from, find one rule you can change, and change only that."
+    },
+    "design-judgment": {
+      "zh-CN": "回到第 4 章写的那句方向，对照手上的几份草稿，留下最能做到它的一份，其余写进“以后再试”。",
+      "en": "Return to your sentence of direction from chapter 4. Compare your drafts against it, keep the one that delivers it best, and move the rest to a “try later” list."
+    },
+    "independent-rules-test": {
+      "zh-CN": "把规则和材料交给一位没听你讲过的人。你只在旁边看，不说话，记下他第一次停下来的地方。",
+      "en": "Hand the rules and materials to someone who has not heard you explain them. Watch without speaking, and note where they first stop."
+    },
+    "share-a-playable-version": {
+      "zh-CN": "把这一版的规则、材料和一段邀请装在一起，写上版本号，交给下一位玩家。再附一句：玩完以后，你最想听到他们说什么。",
+      "en": "Pack this version’s rules, materials, and a short invitation together, mark the version, and hand it to the next player. Add one line about what you most want to hear after they play."
+    }
+  }
+}

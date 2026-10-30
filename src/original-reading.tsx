@@ -22,7 +22,7 @@ const copy = {
   en: { title: 'Read about tabletop design', intro: 'From choosing a die to arranging a playtest, follow examples of design at work. Every article is available in Chinese and English.', collection: 'Bilingual reading', back: 'Back to articles', loading: 'Opening the article…', error: 'The article could not be opened.', retry: 'Try again', missing: 'Article not found', empty: 'Articles are being prepared.', search: 'Search titles or article text', noMatch: 'No matching articles. Try “choices”, “rules”, or “playtest”.', clear: 'Clear search', all: 'All articles', language: 'Reading language', edition: 'One article · Two languages', return: 'Course contents' },
 }
 
-export function ArticleBody({ article, language, afterSection, companion, withOutline = false, bodyLoader, allowSourceLinks = false }: { article: Article; language: Language; afterSection?: { number: number; node: ReactNode }; companion?: ReactNode; withOutline?: boolean; bodyLoader?: () => Promise<string>; allowSourceLinks?: boolean }) {
+export function ArticleBody({ article, language, afterSection, companion, introInsert, withOutline = false, bodyLoader, allowSourceLinks = false }: { article: Article; language: Language; afterSection?: { number: number; node: ReactNode }; companion?: ReactNode; /** shown after the opening paragraphs, before the first section */ introInsert?: ReactNode; withOutline?: boolean; bodyLoader?: () => Promise<string>; allowSourceLinks?: boolean }) {
   const [body, setBody] = useState<string | null>(null)
   const [failed, setFailed] = useState(false)
   const [wide, setWide] = useState(() => window.matchMedia('(min-width: 901px)').matches)
@@ -44,7 +44,8 @@ export function ArticleBody({ article, language, afterSection, companion, withOu
   if (failed) return <div role="alert"><h1>{article.title[language]}</h1><p>{copy[language].error}</p><button onClick={() => window.location.reload()}>{copy[language].retry}</button></div>
   if (body === null) return <p role="status">{copy[language].loading}</p>
   const figure = articleFigures[article.id]
-  const sectionInserts = figure ? { [figure.after[language]]: <ArticleFigure key={`${article.id}/${language}`} kind={figure.kind} language={language}/> } : undefined
+  // the opening paragraphs are section '' to MarkdownReading, so an intro insert lands just before the first heading
+  const sectionInserts = figure || introInsert ? { ...(introInsert ? { '': introInsert } : {}), ...(figure ? { [figure.after[language]]: <ArticleFigure key={`${article.id}/${language}`} kind={figure.kind} language={language}/> } : {}) } : undefined
   const reading = <article className="original-reading__body"><MarkdownReading source={body} language={language} afterSection={afterSection} sectionInserts={sectionInserts} allowSourceLinks={allowSourceLinks} /></article>
   if (!withOutline) return reading
   const outline = extractMarkdownOutline(body).filter(item => item.level === 2)
