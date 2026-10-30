@@ -55,10 +55,10 @@
       },
       "chapters": [
         1,
-        7,
         9,
-        10,
-        14
+        11,
+        12,
+        16
       ],
       "chapterId": "race-rules-and-play",
       "caseId": "",
@@ -110,10 +110,10 @@
       },
       "chapters": [
         6,
-        11,
-        12,
-        15,
-        17
+        13,
+        14,
+        17,
+        19
       ],
       "chapterId": "race-core-actions",
       "caseId": "",
@@ -150,10 +150,10 @@
         "en": "Temporary progress is not permanent ownership, and sums from four-dice pairings are not equally likely. The full case examines the rules and column lengths together."
       },
       "chapters": [
-        15,
-        8,
+        17,
         10,
-        13
+        12,
+        15
       ],
       "chapterId": "race-combine-mechanisms",
       "caseId": "cant-stop",
@@ -190,8 +190,8 @@
         "en": "The second edition includes backward-moving camels. A normal complete leg reveals five of six dice; crossing the finish ends the game immediately, so the final leg may end sooner. Do not import the first edition’s dice count."
       },
       "chapters": [
-        19,
-        12,
+        21,
+        14,
         26
       ],
       "chapterId": "race-stories-and-models",
@@ -229,9 +229,9 @@
         "en": "This is Snail’s Race 20629. Language editions vary in how explicitly they state prediction timing; the French text specifies after every snail has moved at least once."
       },
       "chapters": [
-        21,
+        23,
         3,
-        16
+        18
       ],
       "chapterId": "race-access-and-participation",
       "caseId": "",

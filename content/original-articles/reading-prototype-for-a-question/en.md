@@ -1,6 +1,6 @@
 # How Accurate Does This Prototype Need to Be?
 
-We could already play the crossing game with paper pieces when we first wrote its actions. After examining more rules and ways of presenting them, we have more questions. Can both animals arrive in time? Might available and spent planks get confused? Can someone across the table read the action reminder? Drafts can help investigate all these questions, but their parts do not need equal attention.
+The previous chapter wrote the actions, so we can already play the crossing game with paper pieces. Before a friend even sits down, we have several questions. Can both animals arrive in time? Might available and spent planks get confused? Can someone across the table read the action reminder? Drafts can help investigate all these questions, but their parts do not need equal attention.
 
 A draft that lets people operate and examine a design is a prototype. Its fidelity is how closely it represents the intended play in the parts we care about. Fidelity is not a single ranking from rough to beautiful. An undecorated sheet can represent action order accurately; an attractive picture might be unable to run a game at all.
 
@@ -22,7 +22,7 @@ A partial check can still expose a definite omission. If collecting never specif
 
 ## When do material differences change the result?
 
-The base game has no secret information. Different marks on the backs of planks usually do not change our knowledge of the shared total. The earlier weather example is different. If a drawn card should remain secret but thin paper reveals “Rain” through its back, an unknown result has been disclosed early. An opaque back is then necessary for that situation to work, rather than an ornamental detail. Weather remains a separate comparison and is not added to the base game.
+The base game has no secret information. Different marks on the backs of planks usually do not change our knowledge of the shared total. A weather card, if we add one later, would be different. If a drawn card should remain secret but thin paper reveals “Rain” through its back, an unknown result has been disclosed early. An opaque back is then necessary for that situation to work, rather than an ornamental detail. Weather is only a possible variant; this base version does not include it.
 
 Likewise, to examine whether pieces are easy to pick up, use pieces close to the intended size and thickness. Replacing movement with spoken numbers would bypass the physical action. A future digital version that updates resources instantly might also have a different pace from moving each paper piece by hand. Checking rules on paper is useful without proving that digital interaction will feel the same.
 

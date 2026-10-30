@@ -59,7 +59,10 @@ body[data-reading-studio="true"] .text-learning__hero { min-height: 520px; paddi
 body[data-reading-studio="true"] .text-learning__hero h1 { letter-spacing: -.035em; }
 body[data-reading-studio="true"] .text-learning__begin { border-radius: 100px; padding: 16px 26px; box-shadow: 0 4px 0 #79372219; transition: transform 160ms, background 160ms; }
 body[data-reading-studio="true"] .text-learning__begin:hover { transform: translateY(-2px); }
-.text-learning__steps { padding-block: 27px; border-top: 1px solid var(--studio-line); background: var(--studio-paper); }
+.text-learning__first-round { padding-block: 26px 4px; border-top: 1px solid var(--studio-line); background: var(--studio-paper); }
+.text-learning__first-round > h2 { margin: 0; font-family: var(--studio-ui); font-size: 21px; line-height: 1.3; }
+.text-learning__first-round > p { margin: 6px 0 0; max-width: 46em; font-family: var(--studio-ui); font-size: 15px; line-height: 1.6; opacity: .78; }
+.text-learning__steps { padding-block: 20px 27px; background: var(--studio-paper); }
 .text-learning__steps li { font-family: var(--studio-ui); font-size: 17px; }
 .text-learning__steps li > span { font-size: 34px; }
 body[data-reading-studio="true"] .text-learning__part { gap: 70px; padding-block: 42px; }
@@ -359,3 +362,6 @@ body .header.studio-header .nav-link { padding-inline: 10px; gap: 6px; }
 
 .play-learn__game { scroll-margin-top: 104px; }
 @media (max-width: 900px) { .play-learn__game { scroll-margin-top: 142px; } }
+
+/* the first-round steps carry full sentences, so each shares the row and wraps */
+.text-learning__first-round .text-learning__steps li { flex: 1 1 0; min-width: 0; }

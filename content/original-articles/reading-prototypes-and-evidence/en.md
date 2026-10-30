@@ -1,6 +1,6 @@
 # What Do We Know When a Friend Stops to Ask?
 
-The previous chapter set a specific question: can someone new to the crossing game distinguish spare, available, and spent planks? We will use an invented playtest scene to examine how a record can support a judgment. Here, v0.2 names a draft awaiting examination. The actions and dialogue are examples, not results of a test that has taken place.
+Chapter 8 set a specific question: can someone new to the crossing game distinguish spare, available, and spent planks? We will use an invented playtest scene to examine how a record can support a judgment. Here, v0.2 names a draft awaiting examination. The actions and dialogue are examples, not results of a test that has taken place.
 
 This draft uses the base rules: four available planks and sixteen spare pieces at setup; one plank spent per move, never reused; and an animal on the starting bank may use a turn to collect two new planks. The draft includes complete rules, but we still need to examine how clearly its three areas communicate their different roles.
 

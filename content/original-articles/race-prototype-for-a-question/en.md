@@ -18,7 +18,7 @@ This small task is useful for checking instructions. To learn how often a game o
 
 ## What can be removed, and what must remain?
 
-This test needs no reroll tokens, replenishment space, or cooperative deadline. Those belong to R, E, and S and introduce other questions. Understanding a landing requires seeing space 6, the intervening spaces, ladder base 8, and ladder top 17. Label the material as one situation on a complete board, rather than implying that this fragment is the entire game.
+This test needs no reroll tokens and no other new rule. Each addition brings another question to answer. Understanding a landing requires seeing space 6, the intervening spaces, ladder base 8, and ladder top 17. Label the material as one situation on a complete board, rather than implying that this fragment is the entire game.
 
 Cutting out only cards marked 6, 8, and 17 might accidentally teach the advance from 6 to 8 as a single jump. After removing a component, inspect whether its relationship disappeared too. A simple prototype should clarify a question, not depend on the facilitator silently filling missing rules.
 

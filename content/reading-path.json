@@ -9,30 +9,30 @@
         "en": "Begin with a familiar game"
       },
       "introduction": {
-        "zh-CN": "先玩一段小赛跑，观察桌边的人，再写下自己想改的一件事。",
-        "en": "Try a small race, watch the people playing, and choose one thing you want to change."
+        "zh-CN": "玩一局小赛跑，看看桌边的人，想清楚这次请谁来玩，再写一句你想让这个游戏变成什么样。",
+        "en": "Play a small race, watch the people at the table, decide who you will invite, and write one sentence about what you want the game to become."
       }
     },
     {
       "id": "actions",
       "title": {
-        "zh-CN": "把点子写成动作",
-        "en": "Turn ideas into actions"
+        "zh-CN": "改一条规则，请人试一次",
+        "en": "Change one rule, then ask someone to try it"
       },
       "introduction": {
-        "zh-CN": "多一颗骰子会改变什么？从选定点数，一直走到回合结束。",
-        "en": "What changes with another die? Follow the choice through to the end of the turn."
+        "zh-CN": "把一个小点子写成别人照着就能做的动作，做一张只回答一个问题的小棋盘，再请一位朋友试一回合。读完这一部分，你就做完了第一次试玩。",
+        "en": "Turn one small idea into an action someone else can follow, make a small board that answers one question, and ask a friend to try one turn. By the end of this part, you have run your first playtest."
       }
     },
     {
       "id": "decisions",
       "title": {
-        "zh-CN": "在前进里找出选择",
-        "en": "Look inside the race"
+        "zh-CN": "让每一次选择都值得想",
+        "en": "Make each choice worth thinking about"
       },
       "introduction": {
-        "zh-CN": "点数什么时候揭晓，重掷机会要不要花，轮到别人时又在等什么。",
-        "en": "When results appear, whether to spend a reroll, and what happens while someone else takes a turn."
+        "zh-CN": "先把一个回合怎样结算看清，再看点数何时揭晓、重掷要不要花、位置和等待怎样改变决定。",
+        "en": "First make sure a turn resolves the same way every time. Then look at when results are revealed, whether to spend a reroll, and how position and waiting change a decision."
       }
     },
     {
@@ -42,41 +42,41 @@
         "en": "See how rules affect each other"
       },
       "introduction": {
-        "zh-CN": "加入补给、改变终点、试着合作，把每个改法放回棋盘走一遍。",
-        "en": "Try replenishment, another finish, and a shared goal. Put each proposal on the board and follow it."
+        "zh-CN": "加入补给、改变终点、把两个点子放在一起、试着合作，再多坐一位玩家；每个改法都放回棋盘走一遍。",
+        "en": "Add a supply, change the ending, combine two ideas, try cooperation, and seat another player. Take every change back to the board and play it through."
       }
     },
     {
       "id": "meaning",
       "title": {
         "zh-CN": "让人看懂，也愿意玩",
-        "en": "Make a game people can follow"
+        "en": "Make it clear, and make people want to play"
       },
       "introduction": {
-        "zh-CN": "从人数、主题和组件，检查玩家怎样理解并使用同一套规则。",
-        "en": "Use player count, theme, and components to examine how people understand and use the rules."
+        "zh-CN": "主题、故事、组件和说明，决定玩家怎样理解同一套规则；也要让每个人都能动手参与。",
+        "en": "Theme, story, components, and written rules shape how players understand the same rules. Everyone at the table also needs a way to take part."
       }
     },
     {
       "id": "testing",
       "title": {
-        "zh-CN": "把草稿拿给人试",
-        "en": "Put the draft in someone’s hands"
+        "zh-CN": "再请人试，读懂记录",
+        "en": "Test again and read what happened"
       },
       "introduction": {
-        "zh-CN": "找一个具体问题，准备材料，看看别人实际怎样做。",
-        "en": "Choose a specific question, prepare the materials, and watch someone use them."
+        "zh-CN": "草稿更完整了，再请人试一次。把记录里的动作和原话分开看，从一句“太拖了”找到该改的那条规则。",
+        "en": "With a fuller draft, ask someone to try it again. Separate actions from words in your notes, and trace “it dragged at the end” back to one rule you can change."
       }
     },
     {
       "id": "revising",
       "title": {
-        "zh-CN": "改好一稿，再交出去",
-        "en": "Revise a draft and hand it over"
+        "zh-CN": "定稿，再交出去",
+        "en": "Settle on a version and hand it over"
       },
       "introduction": {
-        "zh-CN": "从反馈里找到改法，整理完整规则，给下一位玩家留一个清楚的开始。",
-        "en": "Find a revision in the feedback, assemble complete rules, and give the next player a clear place to start."
+        "zh-CN": "选定这一版要留下的规则，请没听过讲解的人照说明开始，最后把棋盘、规则和邀请装在一起交出去。",
+        "en": "Choose the rules this version keeps, ask someone who has not heard you explain it to start from the written rules, and pack the board, rules, and invitation together."
       }
     }
   ],
@@ -166,9 +166,37 @@
       }
     },
     {
-      "id": "race-state-and-resolution",
+      "id": "race-prototype-for-a-question",
       "number": 7,
       "part": "actions",
+      "prerequisites": [
+        "race-players-and-context",
+        "race-core-actions"
+      ],
+      "related": [],
+      "relatedPurpose": {
+        "zh-CN": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "race-plan-a-playtest",
+      "number": 8,
+      "part": "actions",
+      "prerequisites": [
+        "race-players-and-context",
+        "race-prototype-for-a-question"
+      ],
+      "related": [],
+      "relatedPurpose": {
+        "zh-CN": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "race-state-and-resolution",
+      "number": 9,
+      "part": "decisions",
       "prerequisites": [
         "race-core-actions"
       ],
@@ -180,8 +208,8 @@
     },
     {
       "id": "race-choices-and-agency",
-      "number": 8,
-      "part": "actions",
+      "number": 10,
+      "part": "decisions",
       "prerequisites": [
         "race-rules-and-play",
         "race-core-actions",
@@ -197,7 +225,7 @@
     },
     {
       "id": "race-information-and-randomness",
-      "number": 9,
+      "number": 11,
       "part": "decisions",
       "prerequisites": [
         "race-choices-and-agency",
@@ -213,7 +241,7 @@
     },
     {
       "id": "race-resources-and-endings",
-      "number": 10,
+      "number": 12,
       "part": "decisions",
       "prerequisites": [
         "race-state-and-resolution",
@@ -227,7 +255,7 @@
     },
     {
       "id": "race-space-and-opportunity",
-      "number": 11,
+      "number": 13,
       "part": "decisions",
       "prerequisites": [
         "race-resources-and-endings"
@@ -242,7 +270,7 @@
     },
     {
       "id": "race-time-and-interaction",
-      "number": 12,
+      "number": 14,
       "part": "decisions",
       "prerequisites": [
         "race-information-and-randomness",
@@ -259,7 +287,7 @@
     },
     {
       "id": "race-design-an-economy",
-      "number": 13,
+      "number": 15,
       "part": "systems",
       "prerequisites": [
         "race-state-and-resolution",
@@ -277,7 +305,7 @@
     },
     {
       "id": "race-goals-and-pacing",
-      "number": 14,
+      "number": 16,
       "part": "systems",
       "prerequisites": [
         "race-choices-and-agency",
@@ -292,7 +320,7 @@
     },
     {
       "id": "race-combine-mechanisms",
-      "number": 15,
+      "number": 17,
       "part": "systems",
       "prerequisites": [
         "race-state-and-resolution",
@@ -308,7 +336,7 @@
     },
     {
       "id": "race-cooperation-and-conflict",
-      "number": 16,
+      "number": 18,
       "part": "systems",
       "prerequisites": [
         "race-players-and-context",
@@ -323,8 +351,8 @@
     },
     {
       "id": "race-balance-and-player-count",
-      "number": 17,
-      "part": "meaning",
+      "number": 19,
+      "part": "systems",
       "prerequisites": [
         "race-resources-and-endings",
         "race-design-an-economy",
@@ -339,7 +367,7 @@
     },
     {
       "id": "race-theme-and-emotion",
-      "number": 18,
+      "number": 20,
       "part": "meaning",
       "prerequisites": [
         "race-first-design-brief",
@@ -359,7 +387,7 @@
     },
     {
       "id": "race-stories-and-models",
-      "number": 19,
+      "number": 21,
       "part": "meaning",
       "prerequisites": [
         "race-theme-and-emotion",
@@ -374,7 +402,7 @@
     },
     {
       "id": "race-rules-and-components",
-      "number": 20,
+      "number": 22,
       "part": "meaning",
       "prerequisites": [
         "race-state-and-resolution",
@@ -391,42 +419,12 @@
     },
     {
       "id": "race-access-and-participation",
-      "number": 21,
-      "part": "testing",
+      "number": 23,
+      "part": "meaning",
       "prerequisites": [
         "race-players-and-context",
         "race-rules-and-components",
         "race-cooperation-and-conflict"
-      ],
-      "related": [],
-      "relatedPurpose": {
-        "zh-CN": "",
-        "en": ""
-      }
-    },
-    {
-      "id": "race-prototype-for-a-question",
-      "number": 22,
-      "part": "testing",
-      "prerequisites": [
-        "race-core-actions",
-        "race-information-and-randomness",
-        "race-rules-and-components",
-        "race-access-and-participation"
-      ],
-      "related": [],
-      "relatedPurpose": {
-        "zh-CN": "",
-        "en": ""
-      }
-    },
-    {
-      "id": "race-plan-a-playtest",
-      "number": 23,
-      "part": "testing",
-      "prerequisites": [
-        "race-players-and-context",
-        "race-prototype-for-a-question"
       ],
       "related": [],
       "relatedPurpose": {
@@ -451,7 +449,7 @@
     {
       "id": "race-diagnose-feedback",
       "number": 25,
-      "part": "revising",
+      "part": "testing",
       "prerequisites": [
         "race-plan-a-playtest",
         "race-prototypes-and-evidence"

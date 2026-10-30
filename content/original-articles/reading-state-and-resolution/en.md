@@ -2,7 +2,7 @@
 
 Lin has moved Rabbit to the first stepping stone but forgotten to spend a plank. The table still shows four available planks when there should be three. However carefully Yu now plans, she will be planning from the wrong starting point.
 
-A playable action needs two things to work together: players know what they may choose, and everyone knows how to produce the correct situation afterward. We are using the complete paper draft from the previous chapter: two animals, four spaces, four available planks, sixteen spare pieces, and an empty spent area. Lin goes before Yu in each round, for up to four rounds. We are adding no rules here, only examining how to carry them out.
+A playable action needs two things to work together: players know what they may choose, and everyone knows how to produce the correct situation afterward. We are using the complete paper draft from chapter 6: two animals, four spaces, four available planks, sixteen spare pieces, and an empty spent area. Lin goes before Yu in each round, for up to four rounds. We are adding no rules here, only examining how to carry them out.
 
 ## Check permission, then complete the changes
 

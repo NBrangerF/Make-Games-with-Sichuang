@@ -68,7 +68,7 @@ function readDraft(sourceId: string, worksheetId: WorksheetId): Draft {
   return { schemaVersion: 1, sourceId, worksheetId, values: worksheets[worksheetId].map(() => ''), basedOnExample: false }
 }
 
-export function ReadingWorksheet({ sourceId, worksheetId, title, reason, language }: { sourceId: string; worksheetId: WorksheetId; title: string; reason: string; language: ReadingLanguage }) {
+export function ReadingWorksheet({ sourceId, worksheetId, title, reason, language, defaultOpen = false }: { sourceId: string; worksheetId: WorksheetId; title: string; reason: string; language: ReadingLanguage; /** first-round chapters show the exercise open, so a newcomer meets the hands-on step */ defaultOpen?: boolean }) {
   const t = (zh: string, en: string) => language === 'en' ? en : zh
   const fields = worksheets[worksheetId]
   const chapterExample = readingExamples.chapters.find(chapter => chapter.chapterId === sourceId)?.values[language]
@@ -94,7 +94,7 @@ export function ReadingWorksheet({ sourceId, worksheetId, title, reason, languag
     setStatus(t('本章练习已清空。', 'This exercise has been cleared.'))
   }
   return <section className="reading-worksheet" id={`worksheet-${sourceId}`} aria-labelledby={`worksheet-title-${sourceId}`}>
-    <details className="reading-worksheet__disclosure">
+    <details className="reading-worksheet__disclosure" open={defaultOpen || undefined}>
     <summary id={`worksheet-title-${sourceId}`}><span className="reading-worksheet__label">{t('小练习', 'Exercise')}</span><strong>{title}</strong><span className="reading-worksheet__toggle">{t('展开 / 收起', 'Open / close')}</span></summary>
     <p>{reason}</p>
     <div className="reading-worksheet__fields">{fields.map((item, i) => <label key={i} htmlFor={`${sourceId}-field-${i}`}><span>{item.label[language]}</span><textarea id={`${sourceId}-field-${i}`} rows={2} maxLength={4000} value={draft.values[i]} placeholder={t('用自己的游戏填写，或载入下方示例', 'Use your own game, or load the example below')} onChange={event => changed({ ...draft, values: draft.values.map((value, j) => i === j ? event.target.value : value) })} /></label>)}</div>

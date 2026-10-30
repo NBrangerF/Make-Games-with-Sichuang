@@ -2,11 +2,11 @@
 
 You are a few spaces from the finish. Then a roll lands your pawn on a snake and sends it sliding back. If you have played Snakes and Ladders, you probably remember the feeling. You might be eager to catch up or ready to pack away. The same snake can get a table talking and make one person lose interest.
 
-That snake is our starting point. We will draw a small board, change its rules, compare other racing games, and put together a draft a friend can try. The turns and conversations in this course are teaching examples we have written, rather than accounts of actual playtests. The prototype still needs people to play it.
+That snake is our starting point. We will draw a small board and change one rule, and by chapter 8 a friend will try a turn. After that, we improve the game round by round until a friend can start playing from your written rules alone. Before you begin, find a sheet of paper, a pencil, one six-sided die, and two pawns; coins work as pawns. The turns and conversations in this course are teaching examples we have written, rather than accounts of actual playtests. The prototype still needs people to play it.
 
 ## Agree on the version first
 
-Snakes and Ladders is a family of games with differing details. Hasbro’s Sesame Street Chutes and Ladders, product 32930, uses a spinner and makes a pawn stay put when its result would overshoot. Orchard Toys’ Jungle Snakes and Ladders, reference 629, uses a die and does not require an exact result to finish. Recognising the name does not settle the ending rule.
+The Snakes and Ladders you know may not match a friend’s. In some versions a pawn that would overshoot the finish stays put; in others it needs no exact roll. Hasbro’s Sesame Street Chutes and Ladders, product 32930, uses a spinner and keeps an overshooting pawn in place. Orchard Toys’ Jungle Snakes and Ladders, reference 629, uses a die and does not require an exact result. The same name can hide different endings, so we will settle on our own version.
 
 Our original teaching prototype is called The 24-Space Race. Its base version is B. Two players each have one pawn, starting at 0 outside numbered spaces 1–24. Randomly choose the first player before starting, then alternate turns. On a turn, roll one ordinary six-sided die and advance that many numbered spaces. Probability discussions explicitly assume a fair die.
 
