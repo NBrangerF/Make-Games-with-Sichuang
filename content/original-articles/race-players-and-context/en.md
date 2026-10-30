@@ -1,6 +1,6 @@
 # Knowing Snakes and Ladders does not tell us who is at the table
 
-A numbered board and a die may remind someone of childhood. Someone else may see an arithmetic exercise. One person enjoys waiting for a surprise; another has only a few minutes. A player might read the numbers easily but struggle to reach the far side of the board. Familiarity can reduce some demands. It cannot replace learning about the people present.
+A numbered board and a die may remind someone of childhood. Someone else may see an arithmetic exercise. One person enjoys waiting for a surprise; another has only a few minutes. A player might read the numbers easily but struggle to reach the far side of the board. A familiar game means less to explain, but it cannot replace getting to know the person in front of you.
 
 Imagine Lin setting out the board in an activity room and asking Yu to try it. “Sure,” Yu says, “but I have to leave in ten minutes.” No pawn has moved, yet there is already a practical design question: what should those ten minutes contain?
 
@@ -14,7 +14,7 @@ Invite Yu to watch one turn, then decide whether to continue. Allow time for exp
 
 ## Connect the intention to a concrete opportunity
 
-B currently offers rolling, resolving movement, and watching together. If Yu likes predicting the next landing, observe whether she wants to continue. If she wants a small decision of her own, that gives us a reason to investigate a choice variant. The designer’s preference for strategy does not determine what counts as worthwhile participation for her.
+B currently offers rolling, resolving movement, and watching together. If Yu likes predicting the next landing, observe whether she wants to continue. If she wants a small decision of her own, that gives us a reason to investigate a choice variant. Liking decisions yourself does not tell you what counts as real participation for her.
 
 Try offering a small change: “You still wait for the roll, but this time you roll two dice and pick which one to use.” We will call this the choice version, C. It gives Yu something she can try, then discuss: is this the sort of decision she wanted?
 
@@ -24,9 +24,9 @@ Age is one clue when arranging an invitation. Comfort with numbers, ease of read
 
 An upward arrow at a ladder entrance may help distinguish it from the exit. Speaking more loudly cannot repair an unreadable arrow. If counting requires substantial effort, a player can indicate the numbered destination while a partner confirms movement. Watch whether confirmation turns into choosing on the person’s behalf.
 
-Adding a second die has costs as well. It can provide comparison, clutter the table, or suggest that the numbers should be added. “More agency” therefore needs practical questions: compare what, express the decision how, and with how much explanation?
+Adding a second die has costs as well. It can provide comparison, clutter the table, or suggest that the numbers should be added. So try “more decisions for the player” together with three practical questions: compare what, show the decision how, and explain it how much?
 
-If two friends simply want a relaxed shared surprise, B may suit this meeting better. It remains a useful comparison, without being declared obsolete in advance.
+If two friends simply want a relaxed shared surprise, B may suit this meeting better. We keep it to compare against the new version, rather than deciding in advance that it is out of date.
 
 ## Make the invitation specific enough to use
 

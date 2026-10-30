@@ -58,3 +58,13 @@
   .text-learning__neighbors .text-learning__next { grid-column: auto; }
   .text-learning__related { padding: 18px; }
 }
+
+/* a short "this chapter" card after the opening scene, and the step back to the reader's own game */
+.chapter-brief { margin: 22px 0 28px; padding: 16px 18px; display: grid; gap: 8px; background: #f3f1e8; border: 1px solid #d7dbcf; border-radius: 6px; font-size: .95rem; line-height: 1.7; }
+.chapter-brief p { margin: 0; display: grid; grid-template-columns: 4.2em minmax(0, 1fr); gap: 12px; align-items: baseline; }
+.chapter-brief b { font-size: .8rem; letter-spacing: .08em; color: #536760; white-space: nowrap; }
+.chapter-brief button { margin-left: 10px; padding: 0; border: 0; background: none; color: #b84628; font: inherit; font-weight: 600; text-decoration: underline; text-underline-offset: 3px; cursor: pointer; }
+.chapter-own-game { margin-top: 44px; padding: 22px 24px; background: #fbf3e4; border-left: 3px solid #b84628; line-height: 1.8; }
+.chapter-own-game h2 { font-size: 1.15rem; margin: 0 0 8px; }
+.chapter-own-game p { margin: 0; max-width: 40em; }
+@media (max-width: 560px) { .chapter-brief p { grid-template-columns: minmax(0, 1fr); gap: 2px; } }
