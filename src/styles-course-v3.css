@@ -17,7 +17,7 @@
 .course-kicker { margin: 0; color: var(--course-red); font-size: .75rem; font-weight: 750; letter-spacing: .14em; text-transform: uppercase; }
 .course-current { display: grid; grid-template-columns: auto 1fr auto; gap: 1.5rem 2.5rem; align-items: center; margin: 3rem 0; padding: 2rem; color: #f7f2e8; background: #29261f; }
 .course-current > .course-kicker { grid-column: 1 / -1; color: #df876f; }
-.course-current > span { font-family: ui-monospace, monospace; font-size: 3rem; color: #df876f; }
+.course-current > span { font-family: var(--mono); font-size: 3rem; color: #df876f; }
 .course-current h2 { margin: 0 0 .5rem; font-family: var(--font-display, Georgia, serif); font-size: clamp(2rem, 4vw, 3.5rem); font-weight: 500; }
 .course-current p, .course-current small { display: block; margin: 0; color: #d8d0c3; }
 .course-current button { white-space: nowrap; }
@@ -25,7 +25,7 @@
 .course-syllabus summary { padding: 1.25rem 0; cursor: pointer; font-weight: 750; }
 .course-syllabus ol { padding: 0; list-style: none; }
 .course-syllabus li { display: grid; grid-template-columns: 3rem 1fr auto; gap: 1rem; align-items: center; padding: 1rem 0; border-top: 1px solid #d4ccbf; }
-.course-syllabus li > span { color: var(--course-red); font-family: ui-monospace, monospace; }
+.course-syllabus li > span { color: var(--course-red); font-family: var(--mono); }
 .course-syllabus strong { font-size: 1.1rem; }
 .course-syllabus p { margin: .25rem 0 0; color: #6a6257; }
 .course-syllabus small { color: #746b60; }

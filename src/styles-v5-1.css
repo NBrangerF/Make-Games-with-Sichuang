@@ -1257,7 +1257,7 @@ textarea:hover {
 }
 
 .framework-tab:not(.is-active) > span {
-  color: #a9bac7;
+  color: var(--rule-strong);
   font-style: normal;
 }
 
@@ -1266,7 +1266,7 @@ textarea:hover {
 }
 
 .framework-tab:not(.is-active) small {
-  color: #a9bac7;
+  color: var(--rule-strong);
 }
 
 .framework-sheet,

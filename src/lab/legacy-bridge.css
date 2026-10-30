@@ -1,0 +1,168 @@
+/*
+ * Legacy bridge: the older layers (styles.css, styles-v4/v5/v5-1, learning nodes, course v3)
+ * still style the course units, learning maps, resource pages, tools, method and privacy views.
+ * They are written against their own variables, so pointing those variables at the lab tokens
+ * moves every one of those pages onto the lab palette and type at once.
+ *
+ * Loaded after tokens.css. Never define a lab token here: each line maps an old name to a lab one.
+ * (visual-tokens.css aliases --ink and --paper to --ot-*; tokens.css redefines both as literals,
+ * so the mappings below cannot loop.)
+ */
+
+:root {
+  /* the Open Table (--ot-*) set, used by styles-v4, v5 and the learning nodes */
+  --ot-canvas: var(--paper);
+  --ot-surface: var(--sheet);
+  --ot-surface-raised: var(--sheet);
+  --ot-surface-inverse: var(--ink);
+  --ot-ink: var(--ink);
+  --ot-ink-inverse: #fff;
+  --ot-muted: var(--ink-2);
+  --ot-muted-inverse: var(--chalk);
+  --ot-rule: var(--rule);
+  --ot-rule-strong: var(--rule-strong);
+
+  /* primary actions were blue; in the lab they are ink */
+  --ot-action: var(--ink);
+  --ot-action-hover: var(--ink-2);
+  --ot-action-soft: color-mix(in srgb, var(--ink) 6%, var(--sheet));
+  --ot-editorial: var(--tomato-deep);
+  --ot-editorial-hover: #8f2d17;
+  --ot-editorial-soft: color-mix(in srgb, var(--tomato) 11%, var(--sheet));
+  --ot-discovery: var(--yolk);
+  --ot-discovery-hover: var(--yolk);
+  --ot-discovery-ink: var(--ink);
+  --ot-discovery-soft: color-mix(in srgb, var(--yolk) 18%, var(--sheet));
+  --ot-focus: var(--ink);
+  --ot-focus-inverse: var(--yolk);
+  --ot-focus-halo: var(--paper);
+  --ot-error: var(--tomato-deep);
+  --ot-error-soft: color-mix(in srgb, var(--tomato) 11%, var(--sheet));
+  --ot-success: var(--mat);
+  --ot-success-hover: var(--mat-deep);
+  --ot-success-soft: color-mix(in srgb, var(--mint) 30%, var(--sheet));
+
+  /* named colours: the lab's objects */
+  --ot-blue: var(--cobalt);
+  --ot-ochre: var(--yolk);
+  --ot-yellow: var(--yolk);
+  --ot-terracotta: var(--tomato-deep);
+  --ot-red: var(--tomato-deep);
+  --ot-moss: var(--mat);
+  --ot-green: var(--mat);
+  --ot-navy: var(--ink);
+  --ot-paper: var(--sheet);
+
+  /* type: Chinese serif for UI and headings, Anybody for numerals */
+  --ot-font-ui: var(--zh);
+  --ot-font-display: var(--zh);
+  --ot-font-editorial: var(--zh);
+  --ot-font-numeral: var(--display);
+  --font-display: var(--zh);
+
+  /* shape and depth */
+  --ot-radius-control: var(--r-m);
+  --ot-radius-panel: var(--r-l);
+  --ot-shadow-board-small: var(--shadow-card);
+  --ot-shadow-board: 0 1px 0 var(--rule), 0 22px 36px -22px rgb(0 0 0 / 40%);
+  --ot-header-height: var(--header-h);
+
+  /* the V5.1 refinement layer */
+  --v51-canvas: var(--paper);
+  --v51-surface: var(--sheet);
+  --v51-surface-muted: var(--tile);
+  --v51-surface-blue: color-mix(in srgb, var(--ink) 4%, var(--sheet));
+  --v51-surface-green: color-mix(in srgb, var(--mint) 24%, var(--sheet));
+  --v51-surface-yellow: color-mix(in srgb, var(--yolk) 15%, var(--sheet));
+  --v51-header: var(--ink);
+  --v51-ink: var(--ink);
+  --v51-muted: var(--ink-2);
+  --v51-rule: var(--rule);
+  --v51-rule-strong: var(--rule-strong);
+  --v51-action: var(--ink);
+  --v51-action-hover: var(--ink-2);
+  --v51-red: var(--tomato-deep);
+  --v51-yellow: var(--yolk);
+  --v51-green: var(--mat);
+  --v51-depth-small: var(--shadow-card);
+  --v51-depth-medium: 0 1px 0 var(--rule), 0 22px 36px -22px rgb(0 0 0 / 40%);
+  --v51-control-radius: var(--r-m);
+
+  /* learning nodes */
+  --learning-navy: var(--ink);
+  --learning-blue: var(--ink);
+  --learning-yellow: var(--yolk);
+  --learning-red: var(--tomato-deep);
+  --learning-green: var(--mat);
+  --learning-paper: var(--sheet);
+  --learning-rule: var(--rule);
+
+  color-scheme: only light;
+}
+
+/* dark panels on the learning pages sit on the felt, like every dark surface in the lab */
+body :is(.learning-map__hero, .learning-home__hero, .first-tabletop-page__hero, .design-materials-page__hero:not(.is-theme), .learning-workshop__hero, .learning-node-thought, .first-tabletop-brief, .course-current) {
+  background: var(--mat);
+  color: #fff;
+}
+
+body .course-current > :is(span, .course-kicker) {
+  color: var(--yolk);
+}
+
+body .course-current > span {
+  font-family: var(--display);
+  font-weight: 800;
+}
+
+body .course-current :is(p, small) {
+  color: var(--chalk);
+}
+
+/* the course runner keeps its variables on the page itself */
+.course-page {
+  --course-ink: var(--ink);
+  --course-paper: var(--paper);
+  --course-red: var(--tomato-deep);
+}
+
+/* the old base sheet hard-codes a system sans and a dotted page; give the legacy pages the lab ground */
+body :is(.content-page, .resource-detail-page, .resource-start-page, .learning-map, .learning-node-page, .course-page, .complete-reading-page) {
+  color: var(--ink);
+  font-family: var(--zh);
+}
+
+body :is(.content-page, .resource-detail-page, .resource-start-page, .learning-map, .learning-node-page, .course-page, .complete-reading-page) :is(h1, h2, h3) {
+  font-family: var(--zh);
+  letter-spacing: 0.01em;
+  text-wrap: balance;
+}
+
+/* the old display headings were set for Latin (line-height .93, tight negative tracking); Chinese needs air */
+body :is(.content-page, .resource-detail-page, .resource-start-page, .learning-map, .learning-node-page, .course-page) h1 {
+  font-weight: 900;
+  line-height: 1.16;
+}
+
+body :is(.content-page, .resource-detail-page, .resource-start-page, .learning-map, .learning-node-page, .course-page) h2 {
+  line-height: 1.35;
+}
+
+body .course-page :is(.course-hero, .course-subhead) h1 {
+  font-size: clamp(40px, 5.4vw, 76px);
+}
+
+body :is(.content-page, .resource-detail-page, .resource-start-page, .learning-map, .learning-node-page, .course-page, .complete-reading-page) :is(input, textarea, select, button) {
+  font-family: var(--zh);
+}
+
+/* English passages on these pages read in Newsreader, with Anybody headings, as in the rest of the lab */
+body :is(.content-page, .resource-detail-page, .resource-start-page, .learning-map, .learning-node-page, .course-page, .complete-reading-page) :lang(en) {
+  font-family: var(--text);
+}
+
+body :is(.content-page, .resource-detail-page, .resource-start-page, .learning-map, .learning-node-page, .course-page, .complete-reading-page) :is(h1, h2, h3):lang(en) {
+  font-family: var(--display);
+  font-variation-settings: "wdth" 84, "wght" 780;
+  letter-spacing: -0.01em;
+}

@@ -1,0 +1,363 @@
+/* The shell every view shares: header, main navigation, language menu, footer. */
+
+body .header.studio-header {
+  position: sticky;
+  top: 0;
+  z-index: 30;
+  display: flex;
+  align-items: center;
+  gap: var(--s6);
+  height: auto;
+  min-height: var(--header-h);
+  margin: 0;
+  padding: 0 max(var(--s5), env(safe-area-inset-right, 0px)) 0 max(var(--s5), env(safe-area-inset-left, 0px));
+  background: color-mix(in srgb, var(--paper) 92%, transparent);
+  backdrop-filter: blur(12px);
+  -webkit-backdrop-filter: blur(12px);
+  border-bottom: 1px solid var(--rule);
+  box-shadow: none;
+  color: var(--ink);
+}
+
+/* wordmark: the name in Chinese, the English name as a small caption, or the reverse */
+body .header.studio-header .studio-brand {
+  flex: none;
+  display: grid;
+  gap: 2px;
+  padding: 0;
+  color: var(--ink);
+  text-decoration: none;
+  border: 0;
+}
+
+body .header.studio-header .studio-brand strong {
+  font: 900 23px/1 var(--zh);
+  letter-spacing: 0.06em;
+  color: var(--ink);
+}
+
+body .header.studio-header .studio-brand .studio-brand__english {
+  display: flex;
+  align-items: baseline;
+  gap: 6px;
+  font: 800 21px/1 var(--display);
+  font-variation-settings: "wdth" 76, "wght" 800;
+  letter-spacing: -0.01em;
+}
+
+body .header.studio-header .studio-brand .studio-brand__english small {
+  font: 500 11px/1 var(--mono);
+  letter-spacing: 0.02em;
+  color: var(--ink-3);
+}
+
+body .header.studio-header .studio-brand__caption {
+  font: 500 10.5px/1.2 var(--mono);
+  letter-spacing: 0.04em;
+  color: var(--ink-3);
+}
+
+/* main navigation */
+body .header.studio-header nav {
+  display: flex;
+  align-items: stretch;
+  justify-content: flex-start;
+  gap: var(--s1);
+  height: var(--header-h);
+  margin: 0;
+  padding: 0;
+}
+
+body .header.studio-header .nav-link {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  gap: 7px;
+  height: 100%;
+  padding: 0 var(--s3);
+  border: 0;
+  background: none;
+  color: var(--ink-2);
+  font: 650 15px/1 var(--display);
+  font-variation-settings: "wdth" 88, "wght" 650;
+  text-decoration: none;
+  white-space: nowrap;
+  transition: color 0.2s;
+}
+
+body .header.studio-header[lang="zh-CN"] .nav-link {
+  font: 700 15px/1 var(--zh);
+  letter-spacing: 0.04em;
+}
+
+body .header.studio-header .nav-link svg {
+  width: 18px;
+  height: 18px;
+  flex: none;
+  color: var(--ink-3);
+  transition: color 0.2s;
+}
+
+body .header.studio-header .nav-link:hover,
+body .header.studio-header .nav-link.is-active {
+  color: var(--ink);
+}
+
+body .header.studio-header .nav-link:hover svg,
+body .header.studio-header .nav-link.is-active svg {
+  color: var(--accent);
+}
+
+/* the page you are on: a short tomato bar on the bottom edge, like a game piece on the track */
+body .header.studio-header .studio-nav-mark {
+  position: absolute;
+  left: var(--s3);
+  right: var(--s3);
+  bottom: -1px;
+  height: 3px;
+  border-radius: 3px 3px 0 0;
+  background: var(--accent);
+}
+
+body .header.studio-header .studio-header__actions {
+  display: flex;
+  align-items: center;
+  gap: var(--s4);
+  margin-left: auto;
+}
+
+body .header.studio-header .internal-scope {
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  padding: 0;
+  border: 0;
+  background: none;
+  font: 500 10.5px/1.2 var(--mono);
+  letter-spacing: 0.04em;
+  color: var(--ink-3);
+}
+
+/* language switch: a small pill; the open menu is a printed card */
+body .language-switch {
+  flex: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 6px;
+  white-space: nowrap;
+  height: 34px;
+  padding: 0 var(--s3);
+  border: 1px solid var(--rule-strong);
+  border-radius: 999px;
+  background: var(--sheet);
+  color: var(--ink-2);
+  font: 500 12.5px/1 var(--mono);
+  cursor: pointer;
+  transition: border-color 0.2s, color 0.2s;
+}
+
+body .language-switch:hover,
+body .language-switch[data-state="open"] {
+  border-color: var(--ink);
+  color: var(--ink);
+}
+
+body .language-switch svg {
+  width: 15px;
+  height: 15px;
+}
+
+body .language-switch .is-current {
+  color: var(--ink);
+  font-weight: 600;
+  text-decoration: underline;
+  text-decoration-color: var(--accent);
+  text-decoration-thickness: 2px;
+  text-underline-offset: 4px;
+}
+
+body .language-switch__divider {
+  color: var(--rule-strong);
+}
+
+body .language-menu {
+  z-index: 50;
+  min-width: 190px;
+  padding: var(--s2);
+  border: 1px solid var(--rule);
+  border-radius: var(--r-m);
+  background: var(--sheet);
+  box-shadow: var(--shadow-card);
+}
+
+body .language-menu__label {
+  padding: var(--s2) var(--s3) var(--s1);
+  font: 600 11px/1.3 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+  color: var(--ink-3);
+}
+
+body .language-menu__item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: var(--s3);
+  padding: 10px var(--s3);
+  border-radius: var(--r-s);
+  font: 500 15px/1.2 var(--text);
+  color: var(--ink);
+  cursor: pointer;
+  outline: none;
+}
+
+body .language-menu__item[data-highlighted] {
+  background: color-mix(in srgb, var(--ink) 7%, transparent);
+}
+
+body .language-menu__item[data-state="checked"] {
+  font-weight: 700;
+}
+
+body .language-menu__check {
+  color: var(--accent);
+}
+
+/* footer */
+body .site-footer {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-between;
+  align-items: baseline;
+  gap: var(--s3) var(--s6);
+  max-width: var(--page);
+  margin: var(--s9) auto 0;
+  padding: var(--s5) var(--gutter) var(--s7);
+  border-top: 1.5px solid var(--ink);
+  background: none;
+  color: var(--ink-2);
+  font: 400 15px/1.6 var(--text);
+}
+
+body .site-footer p {
+  margin: 0;
+  max-width: 36em;
+}
+
+body .site-footer > div {
+  display: flex;
+  flex-wrap: wrap;
+  align-items: baseline;
+  gap: var(--s2) var(--s5);
+  font: 400 12px/1.5 var(--mono);
+  color: var(--ink-3);
+}
+
+body .site-footer a {
+  color: var(--ink);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ---------- the English labels are longer: make room before the header runs out ---------- */
+@media (max-width: 1400px) {
+  body .header.studio-header .internal-scope {
+    display: none;
+  }
+}
+
+@media (max-width: 1240px) {
+  body .header.studio-header {
+    gap: var(--s4);
+  }
+
+  body .header.studio-header .nav-link {
+    padding: 0 var(--s2);
+  }
+
+  body .header.studio-header:not([lang="zh-CN"]) .nav-link svg {
+    display: none;
+  }
+}
+
+/* ---------- narrow screens: the nav becomes a second, scrollable row ---------- */
+@media (max-width: 1040px) {
+  body .header.studio-header {
+    flex-wrap: wrap;
+    row-gap: 0;
+    padding-top: var(--s3);
+  }
+
+  body .header.studio-header nav {
+    order: 3;
+    flex: 1 0 100%;
+    height: 48px;
+    margin: 0 calc(var(--s5) * -1);
+    padding: 0 var(--s4);
+    overflow-x: auto;
+    scrollbar-width: none;
+    border-top: 1px solid var(--rule);
+  }
+
+  body .header.studio-header nav::-webkit-scrollbar {
+    display: none;
+  }
+
+  body .header.studio-header .nav-link {
+    padding: 0 var(--s2);
+    font-size: 14px;
+  }
+
+  body .header.studio-header .internal-scope {
+    display: none;
+  }
+}
+
+/* phones: all five destinations stay visible as a tab bar, icon over label */
+@media (max-width: 520px) {
+  body .header.studio-header {
+    padding-inline: max(var(--s4), env(safe-area-inset-left, 0px));
+  }
+
+  body .header.studio-header nav {
+    display: grid;
+    grid-template-columns: repeat(5,minmax(0,1fr));
+    height: 58px;
+    margin-inline: calc(var(--s4) * -1);
+    padding: 0 var(--s1);
+    overflow: visible;
+  }
+
+  body .header.studio-header .nav-link {
+    flex-direction: column;
+    justify-content: center;
+    gap: 3px;
+    min-width: 0;
+    padding: 0 2px;
+    font-size: 11px;
+    letter-spacing: 0;
+    text-align: center;
+    white-space: normal;
+  }
+
+  body .header.studio-header[lang="zh-CN"] .nav-link {
+    font-size: 11.5px;
+    letter-spacing: 0;
+  }
+
+  body .header.studio-header .nav-link span {
+    overflow: hidden;
+    text-overflow: ellipsis;
+    white-space: nowrap;
+    max-width: 100%;
+  }
+
+  body .header.studio-header .studio-nav-mark {
+    left: 20%;
+    right: 20%;
+  }
+
+  body .header.studio-header .studio-brand__caption {
+    display: none;
+  }
+}
