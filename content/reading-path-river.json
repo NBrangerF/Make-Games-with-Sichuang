@@ -5,78 +5,78 @@
     {
       "id": "starting",
       "title": {
-        "zh-CN": "从一局游戏，找到设计的起点",
-        "en": "Find a starting point in one game"
+        "zh-CN": "从熟悉的一局开始",
+        "en": "Begin with a familiar game"
       },
       "introduction": {
-        "zh-CN": "从一份完整规则看见动作与局面，再观察谁会来玩、他们在什么场合玩。带着这些条件，为自己的第一份草稿写下暂定方向。",
-        "en": "Start with a complete game and observe its actions and situations. Consider who might play and where, then use those conditions to choose a provisional direction for your own draft."
+        "zh-CN": "玩一局小赛跑，看看桌边的人，想清楚这次请谁来玩，再写一句你想让这个游戏变成什么样。",
+        "en": "Play a small race, watch the people at the table, decide who you will invite, and write one sentence about what you want the game to become."
       }
     },
     {
       "id": "actions",
       "title": {
-        "zh-CN": "让想法变成能做的动作",
-        "en": "Turn an idea into actions"
+        "zh-CN": "改一条规则，请人试一次",
+        "en": "Change one rule, then ask someone to try it"
       },
       "introduction": {
-        "zh-CN": "把一个宽泛的点子展开成几种办法，选出能执行的动作。用纸片跟过一次结算，再看这些动作为什么值得选择。",
-        "en": "Explore several ways to realize an idea, then turn one into actions. Follow their resolution with paper pieces and examine why the choices might matter."
+        "zh-CN": "把一个小点子写成别人照着就能做的动作，做一张只回答一个问题的小棋盘，再请一位朋友试一回合。读完这一部分，你就做完了第一次试玩。",
+        "en": "Turn one small idea into an action someone else can follow, make a small board that answers one question, and ask a friend to try one turn. By the end of this part, you have run your first playtest."
       }
     },
     {
       "id": "decisions",
       "title": {
-        "zh-CN": "看清规则怎样改变决定",
-        "en": "See how rules change decisions"
+        "zh-CN": "让每一次选择都值得想",
+        "en": "Make each choice worth thinking about"
       },
       "introduction": {
-        "zh-CN": "回到熟悉的河岸，分别改变消息、木板、路线和行动时间。每次走完一个具体比较，看清局面和可做的事怎样一起变化。",
-        "en": "Return to the river and vary information, planks, paths, and timing. Work through each comparison to see how a situation changes what players can do."
+        "zh-CN": "先把一个回合怎样结算看清，再看点数何时揭晓、重掷要不要花、位置和等待怎样改变决定。",
+        "en": "First make sure a turn resolves the same way every time. Then look at when results are revealed, whether to spend a reroll, and how position and waiting change a decision."
       }
     },
     {
       "id": "systems",
       "title": {
-        "zh-CN": "让各部分一起工作",
-        "en": "Make the parts work together"
+        "zh-CN": "看看规则怎样互相影响",
+        "en": "See how rules affect each other"
       },
       "introduction": {
-        "zh-CN": "已经看过单条规则，现在让它们一起工作：资源从哪里来，目标怎样推动结束，两条机制怎样配合，以及一起赢时谁在作决定。",
-        "en": "Connect the rules: where resources come from, how goals lead toward an ending, how mechanisms work together, and who makes decisions when players share a win."
+        "zh-CN": "加入补给、改变终点、把两个点子放在一起、试着合作，再多坐一位玩家；每个改法都放回棋盘走一遍。",
+        "en": "Add a supply, change the ending, combine two ideas, try cooperation, and seat another player. Take every change back to the board and play it through."
       }
     },
     {
       "id": "meaning",
       "title": {
-        "zh-CN": "看见不同玩家的游戏",
-        "en": "See the game from different players’ perspectives"
+        "zh-CN": "让人看懂，也愿意玩",
+        "en": "Make it clear, and make people want to play"
       },
       "introduction": {
-        "zh-CN": "从比较一个办法的优势，走到玩家怎样理解自己的行动。再检查故事表达了什么，以及怎样把这些关系写成别人能用的说明。",
-        "en": "Compare advantages under clear conditions, then examine how players interpret their actions. Consider what the story expresses and how to communicate these relationships in usable instructions."
+        "zh-CN": "主题、故事、组件和说明，决定玩家怎样理解同一套规则；也要让每个人都能动手参与。",
+        "en": "Theme, story, components, and written rules shape how players understand the same rules. Everyone at the table also needs a way to take part."
       }
     },
     {
       "id": "testing",
       "title": {
-        "zh-CN": "把问题摆到桌上",
-        "en": "Put a question on the table"
+        "zh-CN": "再请人试，读懂记录",
+        "en": "Test again and read what happened"
       },
       "introduction": {
-        "zh-CN": "先看具体参与者怎样读、拿和决定，再按本轮问题选择原型的精度。安排一次试玩，并跟着一个假想过程，分清发生的事与可能原因。",
-        "en": "Consider how particular people read, handle pieces, and decide. Choose the accuracy a prototype needs for the question, plan a playtest, and follow a hypothetical session to separate events from explanations."
+        "zh-CN": "草稿更完整了，再请人试一次。把记录里的动作和原话分开看，从一句“太拖了”找到该改的那条规则。",
+        "en": "With a fuller draft, ask someone to try it again. Separate actions from words in your notes, and trace “it dragged at the end” back to one rule you can change."
       }
     },
     {
       "id": "revising",
       "title": {
-        "zh-CN": "改好一版，交给下一位玩家",
-        "en": "Revise a version and hand it over"
+        "zh-CN": "定稿，再交出去",
+        "en": "Settle on a version and hand it over"
       },
       "introduction": {
-        "zh-CN": "把几份反馈放回各自局面，决定下一稿先改哪里。给出完整材料，检验它能否独立使用，再整理一个别人可以接续的版本。",
-        "en": "Return several comments to their situations and choose a revision. Provide a complete set of materials, check independent use, and prepare a version others can continue developing."
+        "zh-CN": "选定这一版要留下的规则，请没听过讲解的人照说明开始，最后把棋盘、规则和邀请装在一起交出去。",
+        "en": "Choose the rules this version keeps, ask someone who has not heard you explain it to start from the written rules, and pack the board, rules, and invitation together."
       }
     }
   ],
@@ -166,9 +166,37 @@
       }
     },
     {
-      "id": "reading-state-and-resolution",
+      "id": "reading-prototype-for-a-question",
       "number": 7,
       "part": "actions",
+      "prerequisites": [
+        "reading-players-and-context",
+        "reading-core-actions"
+      ],
+      "related": [],
+      "relatedPurpose": {
+        "zh-CN": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "reading-plan-a-playtest",
+      "number": 8,
+      "part": "actions",
+      "prerequisites": [
+        "reading-players-and-context",
+        "reading-prototype-for-a-question"
+      ],
+      "related": [],
+      "relatedPurpose": {
+        "zh-CN": "",
+        "en": ""
+      }
+    },
+    {
+      "id": "reading-state-and-resolution",
+      "number": 9,
+      "part": "decisions",
       "prerequisites": [
         "reading-core-actions"
       ],
@@ -180,8 +208,8 @@
     },
     {
       "id": "reading-choices-and-agency",
-      "number": 8,
-      "part": "actions",
+      "number": 10,
+      "part": "decisions",
       "prerequisites": [
         "reading-rules-and-play",
         "reading-core-actions",
@@ -197,7 +225,7 @@
     },
     {
       "id": "reading-information-and-randomness",
-      "number": 9,
+      "number": 11,
       "part": "decisions",
       "prerequisites": [
         "reading-choices-and-agency",
@@ -213,7 +241,7 @@
     },
     {
       "id": "reading-resources-and-endings",
-      "number": 10,
+      "number": 12,
       "part": "decisions",
       "prerequisites": [
         "reading-state-and-resolution",
@@ -227,7 +255,7 @@
     },
     {
       "id": "reading-space-and-opportunity",
-      "number": 11,
+      "number": 13,
       "part": "decisions",
       "prerequisites": [
         "reading-resources-and-endings"
@@ -242,7 +270,7 @@
     },
     {
       "id": "reading-time-and-interaction",
-      "number": 12,
+      "number": 14,
       "part": "decisions",
       "prerequisites": [
         "reading-information-and-randomness",
@@ -259,7 +287,7 @@
     },
     {
       "id": "reading-design-an-economy",
-      "number": 13,
+      "number": 15,
       "part": "systems",
       "prerequisites": [
         "reading-state-and-resolution",
@@ -277,7 +305,7 @@
     },
     {
       "id": "reading-goals-and-pacing",
-      "number": 14,
+      "number": 16,
       "part": "systems",
       "prerequisites": [
         "reading-choices-and-agency",
@@ -292,7 +320,7 @@
     },
     {
       "id": "reading-combine-mechanisms",
-      "number": 15,
+      "number": 17,
       "part": "systems",
       "prerequisites": [
         "reading-state-and-resolution",
@@ -308,7 +336,7 @@
     },
     {
       "id": "reading-cooperation-and-conflict",
-      "number": 16,
+      "number": 18,
       "part": "systems",
       "prerequisites": [
         "reading-players-and-context",
@@ -323,8 +351,8 @@
     },
     {
       "id": "reading-balance-and-player-count",
-      "number": 17,
-      "part": "meaning",
+      "number": 19,
+      "part": "systems",
       "prerequisites": [
         "reading-resources-and-endings",
         "reading-design-an-economy",
@@ -339,7 +367,7 @@
     },
     {
       "id": "reading-theme-and-emotion",
-      "number": 18,
+      "number": 20,
       "part": "meaning",
       "prerequisites": [
         "reading-first-design-brief",
@@ -359,7 +387,7 @@
     },
     {
       "id": "reading-stories-and-models",
-      "number": 19,
+      "number": 21,
       "part": "meaning",
       "prerequisites": [
         "reading-theme-and-emotion",
@@ -374,7 +402,7 @@
     },
     {
       "id": "reading-rules-and-components",
-      "number": 20,
+      "number": 22,
       "part": "meaning",
       "prerequisites": [
         "reading-state-and-resolution",
@@ -391,42 +419,12 @@
     },
     {
       "id": "reading-access-and-participation",
-      "number": 21,
-      "part": "testing",
+      "number": 23,
+      "part": "meaning",
       "prerequisites": [
         "reading-players-and-context",
         "reading-rules-and-components",
         "reading-cooperation-and-conflict"
-      ],
-      "related": [],
-      "relatedPurpose": {
-        "zh-CN": "",
-        "en": ""
-      }
-    },
-    {
-      "id": "reading-prototype-for-a-question",
-      "number": 22,
-      "part": "testing",
-      "prerequisites": [
-        "reading-core-actions",
-        "reading-information-and-randomness",
-        "reading-rules-and-components",
-        "reading-access-and-participation"
-      ],
-      "related": [],
-      "relatedPurpose": {
-        "zh-CN": "",
-        "en": ""
-      }
-    },
-    {
-      "id": "reading-plan-a-playtest",
-      "number": 23,
-      "part": "testing",
-      "prerequisites": [
-        "reading-players-and-context",
-        "reading-prototype-for-a-question"
       ],
       "related": [],
       "relatedPurpose": {
@@ -451,7 +449,7 @@
     {
       "id": "reading-diagnose-feedback",
       "number": 25,
-      "part": "revising",
+      "part": "testing",
       "prerequisites": [
         "reading-plan-a-playtest",
         "reading-prototypes-and-evidence"

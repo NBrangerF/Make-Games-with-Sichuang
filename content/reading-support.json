@@ -98,6 +98,36 @@
       ]
     },
     {
+      "chapterId": "race-prototype-for-a-question",
+      "afterSection": 2,
+      "worksheetId": "test",
+      "toolId": "prototype-scope",
+      "title": {
+        "zh-CN": "为一个动作做原型",
+        "en": "Prototype one action"
+      },
+      "reason": {
+        "zh-CN": "写下要检查的动作，以及让人完成它所需的最少材料。",
+        "en": "Name the action to check and the smallest set of materials it needs."
+      },
+      "caseIds": []
+    },
+    {
+      "chapterId": "race-plan-a-playtest",
+      "afterSection": 2,
+      "worksheetId": "test",
+      "toolId": "playtest-selector",
+      "title": {
+        "zh-CN": "安排第一次试用",
+        "en": "Arrange the first try"
+      },
+      "reason": {
+        "zh-CN": "写清从哪里开始、怎样介绍、何时帮忙，以及准备记什么。",
+        "en": "Specify the starting position, invitation, help, and what you intend to record."
+      },
+      "caseIds": []
+    },
+    {
       "chapterId": "race-state-and-resolution",
       "afterSection": 2,
       "worksheetId": "loop",
@@ -355,36 +385,6 @@
       "caseIds": []
     },
     {
-      "chapterId": "race-prototype-for-a-question",
-      "afterSection": 2,
-      "worksheetId": "test",
-      "toolId": "prototype-scope",
-      "title": {
-        "zh-CN": "为一个动作做原型",
-        "en": "Prototype one action"
-      },
-      "reason": {
-        "zh-CN": "写下要检查的动作，以及让人完成它所需的最少材料。",
-        "en": "Name the action to check and the smallest set of materials it needs."
-      },
-      "caseIds": []
-    },
-    {
-      "chapterId": "race-plan-a-playtest",
-      "afterSection": 2,
-      "worksheetId": "test",
-      "toolId": "playtest-selector",
-      "title": {
-        "zh-CN": "安排第一次试用",
-        "en": "Arrange the first try"
-      },
-      "reason": {
-        "zh-CN": "写清从哪里开始、怎样介绍、何时帮忙，以及准备记什么。",
-        "en": "Specify the starting position, invitation, help, and what you intend to record."
-      },
-      "caseIds": []
-    },
-    {
       "chapterId": "race-prototypes-and-evidence",
       "afterSection": 2,
       "worksheetId": "observe",
@@ -554,6 +554,36 @@
       "caseIds": [
         "carcassonne"
       ]
+    },
+    {
+      "chapterId": "reading-prototype-for-a-question",
+      "afterSection": 2,
+      "worksheetId": "test",
+      "toolId": "prototype-scope",
+      "title": {
+        "zh-CN": "这一张草稿，能回答多大的问题？",
+        "en": "How much can this draft answer?"
+      },
+      "reason": {
+        "zh-CN": "把一次操作能检查的问题，与需要从开局看到结束的问题分开，再选材料和任务。这样能避免用一个短片段替整局作结论。",
+        "en": "Separate questions answerable by one action from those needing a journey from setup to ending, then choose materials and a task. A short fragment will not stand in for evidence about the whole game."
+      },
+      "caseIds": []
+    },
+    {
+      "chapterId": "reading-plan-a-playtest",
+      "afterSection": 2,
+      "worksheetId": "test",
+      "toolId": "playtest-selector",
+      "title": {
+        "zh-CN": "这次试玩，先看他们怎样开始",
+        "en": "Plan how this playtest will begin"
+      },
+      "reason": {
+        "zh-CN": "先选“材料能否讲清”或“懂规则后怎样商量”中的一个问题，再写材料和主持方式。这样能看出何时讲解会帮助这次检查，何时会遮住要观察的事。",
+        "en": "Choose either whether the materials explain themselves or how informed players discuss a plan, then specify materials and hosting. This shows when an explanation helps the question and when it hides what you need to observe."
+      },
+      "caseIds": []
     },
     {
       "chapterId": "reading-state-and-resolution",
@@ -809,36 +839,6 @@
       "reason": {
         "zh-CN": "选择一个具体操作困难，写出可能的支持和仍由玩家作出的决定。这样能分辨让动作做得到，与把行动权交给别人。",
         "en": "Choose a specific handling difficulty and describe possible support alongside the decision the player keeps. This distinguishes making an action possible from transferring the choice to someone else."
-      },
-      "caseIds": []
-    },
-    {
-      "chapterId": "reading-prototype-for-a-question",
-      "afterSection": 2,
-      "worksheetId": "test",
-      "toolId": "prototype-scope",
-      "title": {
-        "zh-CN": "这一张草稿，能回答多大的问题？",
-        "en": "How much can this draft answer?"
-      },
-      "reason": {
-        "zh-CN": "把一次操作能检查的问题，与需要从开局看到结束的问题分开，再选材料和任务。这样能避免用一个短片段替整局作结论。",
-        "en": "Separate questions answerable by one action from those needing a journey from setup to ending, then choose materials and a task. A short fragment will not stand in for evidence about the whole game."
-      },
-      "caseIds": []
-    },
-    {
-      "chapterId": "reading-plan-a-playtest",
-      "afterSection": 2,
-      "worksheetId": "test",
-      "toolId": "playtest-selector",
-      "title": {
-        "zh-CN": "这次试玩，先看他们怎样开始",
-        "en": "Plan how this playtest will begin"
-      },
-      "reason": {
-        "zh-CN": "先选“材料能否讲清”或“懂规则后怎样商量”中的一个问题，再写材料和主持方式。这样能看出何时讲解会帮助这次检查，何时会遮住要观察的事。",
-        "en": "Choose either whether the materials explain themselves or how informed players discuss a plan, then specify materials and hosting. This shows when an explanation helps the question and when it hides what you need to observe."
       },
       "caseIds": []
     },

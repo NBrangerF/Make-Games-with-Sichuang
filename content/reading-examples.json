@@ -92,6 +92,36 @@
       }
     },
     {
+      "chapterId": "race-prototype-for-a-question",
+      "values": {
+        "zh-CN": [
+          "拟检查 C 版参与者能否只选一颗骰子，并区分经过第 8 格与停在第 8 格。",
+          "摆出完整 24 格棋盘，棋子在 6，两骰为 2 和 6，只提供 C 版操作提示；不提前说哪个更远。",
+          "记录选择、实际落点、查阅和求助；局面人为固定，不能据此推算整局趣味或出现频率。"
+        ],
+        "en": [
+          "Check whether a participant uses only one die in C and distinguishes passing space 8 from landing on it.",
+          "Provide the complete 24-space board, a pawn on 6, dice showing 2 and 6, and the C reminder without explaining the better destination.",
+          "Record the selection, destination, consultation, and help. The fixed situation cannot establish full-game enjoyment or frequency."
+        ]
+      }
+    },
+    {
+      "chapterId": "race-plan-a-playtest",
+      "values": {
+        "zh-CN": [
+          "拟检查第一次接手 C 版材料的人，能否在预设 6 格局面只选一骰并正确结算落点。",
+          "提供同版棋盘和操作说明，明确骰值是预设的；说明可提问、暂停或停止，不先演示选 2。",
+          "记录动作、查阅、提问与每次帮助的时点；实际结果留空，区分提示前后。"
+        ],
+        "en": [
+          "Ask whether someone new to C can select one die and resolve its landing from the preset space-6 situation.",
+          "Provide consistent materials, explain that dice values are preset, and allow questions or stopping without demonstrating the 2.",
+          "Record actions, consultation, questions, and timing of every hint. Leave results blank and distinguish before from after assistance."
+        ]
+      }
+    },
+    {
       "chapterId": "race-state-and-resolution",
       "values": {
         "zh-CN": [
@@ -317,36 +347,6 @@
       }
     },
     {
-      "chapterId": "race-prototype-for-a-question",
-      "values": {
-        "zh-CN": [
-          "拟检查 C 版参与者能否只选一颗骰子，并区分经过第 8 格与停在第 8 格。",
-          "摆出完整 24 格棋盘，棋子在 6，两骰为 2 和 6，只提供 C 版操作提示；不提前说哪个更远。",
-          "记录选择、实际落点、查阅和求助；局面人为固定，不能据此推算整局趣味或出现频率。"
-        ],
-        "en": [
-          "Check whether a participant uses only one die in C and distinguishes passing space 8 from landing on it.",
-          "Provide the complete 24-space board, a pawn on 6, dice showing 2 and 6, and the C reminder without explaining the better destination.",
-          "Record the selection, destination, consultation, and help. The fixed situation cannot establish full-game enjoyment or frequency."
-        ]
-      }
-    },
-    {
-      "chapterId": "race-plan-a-playtest",
-      "values": {
-        "zh-CN": [
-          "拟检查第一次接手 C 版材料的人，能否在预设 6 格局面只选一骰并正确结算落点。",
-          "提供同版棋盘和操作说明，明确骰值是预设的；说明可提问、暂停或停止，不先演示选 2。",
-          "记录动作、查阅、提问与每次帮助的时点；实际结果留空，区分提示前后。"
-        ],
-        "en": [
-          "Ask whether someone new to C can select one die and resolve its landing from the preset space-6 situation.",
-          "Provide consistent materials, explain that dice values are preset, and allow questions or stopping without demonstrating the 2.",
-          "Record actions, consultation, questions, and timing of every hint. Leave results blank and distinguish before from after assistance."
-        ]
-      }
-    },
-    {
       "chapterId": "race-prototypes-and-evidence",
       "values": {
         "zh-CN": [
@@ -508,6 +508,36 @@
           "In round 1, Rabbit has moved to the first stone: three planks are available and one is used. Hedgehog is still at the start, with reserve pieces available to collect.",
           "Yu chooses collect and transfers two new planks from the reserve to the available area. Five are now available; Hedgehog stays put and her turn ends.",
           "Lin can use the shared planks to move next. Yu has added materials for both players, while using a turn she could have spent moving."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-prototype-for-a-question",
+      "values": {
+        "zh-CN": [
+          "这一局部草稿是否写清一次前进、一次收集的木板去向？暂不据此判断整局难度或是否愿意再玩。",
+          "两只动物摆在起点，中央放4块，备好备用与已用区及操作说明；只跟过一次前进和一次收集。",
+          "检查木板从哪取、花到哪，有无漏写新木板；使用者是否需要提示，待观察，不预写整局体验结论。"
+        ],
+        "en": [
+          "Does this local draft specify where planks go during one move and one collection? Do not use it to judge whole-game difficulty or willingness to replay.",
+          "Place both animals at the start with four central planks, reserve and used areas, and action instructions. Follow only one move and one collection.",
+          "Check the source and destination of planks, including whether new planks are specified. Whether users need help remains unobserved; do not prewrite conclusions about the whole experience."
+        ]
+      }
+    },
+    {
+      "chapterId": "reading-plan-a-playtest",
+      "values": {
+        "zh-CN": [
+          "本次拟检查：第一次看到基本版材料的人，能否靠材料分清三处木板区并开始行动？不同时拿它检验懂规则后的商量。",
+          "给同版规则、地图、两动物、20张木板及轮次和回合提示，让参与者自行准备阅读；先说明可以求助或停止，不先讲木板答案。",
+          "记录实际摆放、查阅位置、求助原话和主持何时补充；能否独立开始尚待观察，得到帮助后的操作另作标记。"
+        ],
+        "en": [
+          "The proposed question is whether someone new to the base materials can distinguish the three plank areas and begin. Do not also use this to assess discussion after learning the rules.",
+          "Provide matching rules, map, two animals, twenty plank pieces, and round and turn markers for participants to set up and read. Explain that help and stopping are available, without first giving the plank answer.",
+          "Record setup, places consulted, exact requests for help, and when the host intervenes. Independent starting has not yet been observed; mark actions completed after help separately."
         ]
       }
     },
@@ -733,36 +763,6 @@
           "Following the chapter’s hypothetical scene, Yu has chosen collect for Hedgehog at the start. She needs to transfer two pieces from the reserve to the available area.",
           "Suppose she has difficulty picking up thin pieces. A handling difficulty does not establish difficulty identifying planks, understanding the situation, or choosing collect.",
           "Compare help from Lin moving pieces as Yu directs, without changing the rules. Record whether Yu still makes the decision rather than being assigned an action; the outcome remains unobserved."
-        ]
-      }
-    },
-    {
-      "chapterId": "reading-prototype-for-a-question",
-      "values": {
-        "zh-CN": [
-          "这一局部草稿是否写清一次前进、一次收集的木板去向？暂不据此判断整局难度或是否愿意再玩。",
-          "两只动物摆在起点，中央放4块，备好备用与已用区及操作说明；只跟过一次前进和一次收集。",
-          "检查木板从哪取、花到哪，有无漏写新木板；使用者是否需要提示，待观察，不预写整局体验结论。"
-        ],
-        "en": [
-          "Does this local draft specify where planks go during one move and one collection? Do not use it to judge whole-game difficulty or willingness to replay.",
-          "Place both animals at the start with four central planks, reserve and used areas, and action instructions. Follow only one move and one collection.",
-          "Check the source and destination of planks, including whether new planks are specified. Whether users need help remains unobserved; do not prewrite conclusions about the whole experience."
-        ]
-      }
-    },
-    {
-      "chapterId": "reading-plan-a-playtest",
-      "values": {
-        "zh-CN": [
-          "本次拟检查：第一次看到基本版材料的人，能否靠材料分清三处木板区并开始行动？不同时拿它检验懂规则后的商量。",
-          "给同版规则、地图、两动物、20张木板及轮次和回合提示，让参与者自行准备阅读；先说明可以求助或停止，不先讲木板答案。",
-          "记录实际摆放、查阅位置、求助原话和主持何时补充；能否独立开始尚待观察，得到帮助后的操作另作标记。"
-        ],
-        "en": [
-          "The proposed question is whether someone new to the base materials can distinguish the three plank areas and begin. Do not also use this to assess discussion after learning the rules.",
-          "Provide matching rules, map, two animals, twenty plank pieces, and round and turn markers for participants to set up and read. Explain that help and stopping are available, without first giving the plank answer.",
-          "Record setup, places consulted, exact requests for help, and when the host intervenes. Independent starting has not yet been observed; mark actions completed after help separately."
         ]
       }
     },
