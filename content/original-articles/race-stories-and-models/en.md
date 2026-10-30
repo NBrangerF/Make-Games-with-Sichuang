@@ -28,7 +28,7 @@ Our paper race keeps one pawn per person so a beginning designer can follow acti
 
 ## Rules consequences are not evidence about the world
 
-Our Snakes and Ladders variant can show how exact landing affects progress. It cannot establish that real-world success mostly depends on luck. Camel Up's stacking produces linked movement without explaining actual animal behavior. Each artificial world implements the relationships its rules select.
+Our Snakes and Ladders variant can show how exact landing affects progress. It cannot tell you whether success in real life mostly depends on luck. Camel Up's stacking produces linked movement without explaining actual animal behavior. Each artificial world implements the relationships its rules select.
 
 A model intended to address reality needs further investigation: what was omitted, which parameters merely make play manageable, and which relationships have outside evidence? Interpretations should remain within what the model supports.
 

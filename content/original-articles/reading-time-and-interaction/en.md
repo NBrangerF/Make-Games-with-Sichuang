@@ -28,7 +28,7 @@ Set that variation aside and consider a separate one. The players may discuss, t
 
 Look at one round with Rabbit on the second stone, Hedgehog on the first, and only one shared plank. Both players choose to move. Under the procedure just described, Rabbit spends the plank and reaches the far bank. Hedgehog then has no plank and stays where it is. This does not predict that cooperating players will choose this combination. It explains what the rules must do if they do.
 
-Allowing another discussion after a clash would add a decision. Giving Yu priority instead would move Hedgehog and leave Rabbit in place. The selected actions are the same, but the order in which they happen changes the result. We are comparing this round only, not claiming that these procedures rescue the whole position.
+Allowing another discussion after a clash would add a decision. Giving Yu priority instead would move Hedgehog and leave Rabbit in place. The selected actions are the same, but the order in which they happen changes the result. We are comparing this round only; this does not mean either procedure rescues the whole game.
 
 Writing “Everyone chooses together” therefore leaves something unfinished. Players need to know when they choose, when choices become visible, and how actions happen—especially when there is not enough of a shared item for every plan.
 
