@@ -1,0 +1,879 @@
+/*
+ * The design workbench in the lab system: paper page, ruled sheets for forms,
+ * the green mat for the main choice, and progress shown as tiles on a track.
+ * Builds on styles-workbench-v3.css (layout and states); this file only restyles.
+ */
+
+body .workbench-page {
+  --wb-ink: var(--ink);
+  --wb-paper: var(--paper);
+  --wb-accent: var(--accent-ink);
+  box-sizing: border-box;
+  max-width: var(--page);
+  min-height: calc(100vh - var(--header-h));
+  margin: 0 auto;
+  padding: var(--s7) var(--gutter) var(--s8);
+  padding-right: max(16px, env(safe-area-inset-right, 0px));
+  background: none;
+  color: var(--ink);
+  font-family: var(--zh);
+}
+
+@media (min-width: 761px) {
+  body .workbench-page {
+    padding-inline: var(--s6);
+  }
+}
+
+/* ---------- headings ---------- */
+body .workbench-hero,
+body .workbench-subhead,
+body .project-context-head {
+  display: grid;
+  grid-template-columns: minmax(0, 1.5fr) minmax(16rem, 0.8fr);
+  gap: var(--s4) var(--s8);
+  align-items: end;
+  padding-bottom: var(--s6);
+  border-bottom: 1.5px solid var(--ink);
+}
+
+body .workbench-subhead {
+  display: block;
+  max-width: none;
+}
+
+body .workbench-subhead h1 {
+  max-width: 18em;
+}
+
+body .workbench-kicker {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s2);
+  margin: 0;
+  color: var(--accent-ink);
+  font: 600 12px/1.3 var(--mono);
+  letter-spacing: 0.08em;
+  text-transform: uppercase;
+}
+
+/* a small pawn in front of every kicker */
+body .workbench-kicker::before {
+  content: "";
+  width: 9px;
+  height: 9px;
+  flex: none;
+  border-radius: 50%;
+  background: var(--accent);
+}
+
+body .workbench-hero > .workbench-kicker {
+  grid-column: 1 / -1;
+}
+
+body .workbench-hero h1,
+body .workbench-subhead h1,
+body .project-context-head h1 {
+  grid-column: 1;
+  margin: var(--s3) 0 0;
+  font: 900 clamp(34px, 5vw, 64px)/1.2 var(--zh);
+  letter-spacing: 0.01em;
+  text-wrap: balance;
+}
+
+body .workbench-subhead h1 {
+  font-size: clamp(30px, 4.2vw, 52px);
+}
+
+body .project-context-head h1 {
+  font-size: clamp(30px, 4.2vw, 52px);
+  overflow-wrap: anywhere;
+}
+
+body .workbench-hero p,
+body .workbench-subhead p,
+body .project-context-head p {
+  max-width: 34em;
+  margin: var(--s4) 0 0;
+  color: var(--ink-2);
+  font: 400 16px/1.85 var(--zh);
+}
+
+body .workbench-hero > p:last-child {
+  grid-column: 2;
+  margin: 0;
+  padding-left: var(--s4);
+  border-left: 3px solid var(--accent);
+}
+
+body .project-context-head > div {
+  min-width: 0;
+}
+
+body .project-context-head code {
+  align-self: end;
+  padding: var(--s3) var(--s4);
+  border: 1px solid var(--rule);
+  border-radius: var(--r-m);
+  background: var(--tile);
+  color: var(--ink-2);
+  font: 400 12px/1.6 var(--mono);
+  overflow-wrap: anywhere;
+}
+
+/* ---------- buttons: the lab's pills ---------- */
+body .workbench-page :is(.primary-button, .idea-form > button, .iteration-card > button, .actual-action button, .quick-project button, .project-list button, .workbench-choice-grid button, .workbench-choice-grid a, .workspace-data-grid button, .context-support button, .migration-preview button, .workbench-actions button) {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  gap: var(--s2);
+  min-height: 44px;
+  margin: 0;
+  padding: 0 var(--s5);
+  border: 1.5px solid var(--ink);
+  border-radius: 999px;
+  background: var(--ink);
+  color: var(--paper);
+  font: 700 15px/1 var(--zh);
+  letter-spacing: 0.02em;
+  text-decoration: none;
+  white-space: nowrap;
+  box-shadow: none;
+  transform: none;
+  transition: background-color 0.2s, color 0.2s, border-color 0.2s;
+}
+
+body .workbench-page :is(.primary-button, .idea-form > button, .iteration-card > button, .actual-action button, .quick-project button, .project-list button, .workbench-choice-grid button, .workbench-choice-grid a, .migration-preview button, .workbench-actions button):not(:disabled):hover {
+  background: transparent;
+  color: var(--ink);
+}
+
+/* quieter actions: outline pills */
+body .workbench-page :is(.project-share-button, .workspace-data-grid button, .context-support button) {
+  display: inline-flex;
+  align-items: center;
+  min-height: 40px;
+  padding: 0 var(--s4);
+  border: 1.5px solid var(--ink);
+  border-radius: 999px;
+  background: transparent;
+  color: var(--ink);
+  font: 700 14px/1 var(--zh);
+}
+
+body .workbench-page :is(.project-share-button, .workspace-data-grid button, .context-support button):not(:disabled):hover {
+  background: var(--ink);
+  color: var(--paper);
+}
+
+body .project-share-button {
+  margin-top: var(--s4);
+}
+
+body .workbench-page button:disabled {
+  cursor: not-allowed;
+  opacity: 0.38;
+}
+
+/* ---------- the two ways in ---------- */
+body .workbench-choice-grid {
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: var(--s5);
+  margin: var(--s7) 0 var(--s6);
+  border: 0;
+  background: none;
+}
+
+body .workbench-choice-grid article {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  min-height: 330px;
+  padding: var(--s6);
+  border: 1px solid var(--rule);
+  border-radius: var(--r-l);
+  background: var(--sheet);
+  box-shadow: var(--shadow-card);
+  transition: transform 0.35s var(--ease), box-shadow 0.35s var(--ease);
+}
+
+body .workbench-choice-grid article:hover {
+  transform: translateY(-3px);
+  box-shadow: 0 1px 0 var(--rule), 0 22px 32px -20px rgb(0 0 0 / 40%);
+}
+
+body .workbench-choice-grid article > span {
+  color: var(--rule-strong);
+  font: 800 64px/0.9 var(--display);
+  font-variation-settings: "wdth" 70, "wght" 800;
+  letter-spacing: -0.02em;
+}
+
+body .workbench-choice-grid h2 {
+  margin: auto 0 var(--s3);
+  color: var(--ink);
+  font: 900 clamp(28px, 3vw, 40px)/1.25 var(--zh);
+  letter-spacing: 0.01em;
+}
+
+body .workbench-choice-grid p {
+  min-height: 3.6em;
+  max-width: 30em;
+  margin: 0 0 var(--s5);
+  color: var(--ink-2);
+  font: 400 15.5px/1.8 var(--zh);
+}
+
+/* the first way in sits on the mat, like the board */
+body .workbench-choice-grid article:first-child {
+  border-color: var(--mat-edge);
+  background: var(--mat);
+  color: #fff;
+}
+
+body .workbench-choice-grid article:first-child > span {
+  color: rgb(255 255 255 / 28%);
+}
+
+body .workbench-choice-grid article:first-child h2 {
+  color: #fff;
+}
+
+body .workbench-choice-grid article:first-child p {
+  color: var(--chalk);
+}
+
+body .workbench-choice-grid article:first-child :is(button, a) {
+  border-color: var(--tomato);
+  background: var(--tomato);
+  color: #fff;
+}
+
+body .workbench-choice-grid article:first-child :is(button, a):not(:disabled):hover {
+  border-color: #fff;
+  background: #fff;
+  color: var(--ink);
+}
+
+body .workbench-choice-grid :is(button, a)::after {
+  content: "→";
+  font-family: var(--mono);
+  font-weight: 500;
+  transition: transform 0.25s var(--ease);
+}
+
+body .workbench-choice-grid :is(button, a):hover::after {
+  transform: translateX(3px);
+}
+
+body .workbench-knowledge-link {
+  display: inline-flex;
+  align-items: center;
+  gap: var(--s2);
+  margin: 0 0 var(--s7);
+  padding: var(--s2) 0;
+  border: 0;
+  border-bottom: 1.5px solid var(--ink);
+  border-radius: 0;
+  background: none;
+  color: var(--ink);
+  font: 700 15px/1.4 var(--zh);
+  cursor: pointer;
+}
+
+body .workbench-knowledge-link::after {
+  content: "→";
+  font-family: var(--mono);
+}
+
+body .workbench-knowledge-link:hover {
+  color: var(--accent-ink);
+  border-color: var(--accent);
+}
+
+/* ---------- notices ---------- */
+body .workbench-message {
+  align-items: center;
+  margin-bottom: var(--s5);
+  padding: var(--s3) var(--s4);
+  border: 1px solid color-mix(in srgb, var(--ok) 40%, transparent);
+  border-left: 4px solid var(--ok);
+  border-radius: var(--r-m);
+  background: color-mix(in srgb, var(--mint) 30%, var(--sheet));
+  color: var(--ink);
+  font: 500 15px/1.6 var(--zh);
+}
+
+body .workbench-message.is-error {
+  border-color: color-mix(in srgb, var(--tomato-deep) 40%, transparent);
+  border-left-color: var(--tomato-deep);
+  background: color-mix(in srgb, var(--tomato) 12%, var(--sheet));
+}
+
+body .workbench-message button {
+  flex: none;
+  padding: var(--s1) 0;
+  border: 0;
+  background: none;
+  color: var(--ink-2);
+  font: 500 12.5px/1.5 var(--mono);
+  text-decoration: underline;
+  text-underline-offset: 3px;
+}
+
+/* ---------- sheets: forms and briefs ---------- */
+body :is(.migration-preview, .quick-project, .idea-form, .prototype-brief, .iteration-card) {
+  margin: var(--s6) 0;
+  padding: var(--s6);
+  border: 1px solid var(--rule);
+  border-radius: var(--r-l);
+  background: var(--sheet);
+  box-shadow: var(--shadow-card);
+}
+
+body :is(.migration-preview, .quick-project, .prototype-brief, .iteration-card) h2 {
+  margin: 0 0 var(--s3);
+  color: var(--ink);
+  font: 800 clamp(22px, 2.4vw, 30px)/1.35 var(--zh);
+  letter-spacing: 0.01em;
+  text-wrap: balance;
+}
+
+body :is(.migration-preview, .quick-project, .idea-form, .prototype-brief, .iteration-card) > p {
+  max-width: 38em;
+  color: var(--ink-2);
+  font: 400 15.5px/1.8 var(--zh);
+}
+
+body .migration-preview {
+  border-top: 4px solid var(--accent);
+}
+
+body .migration-preview summary {
+  padding: var(--s2) 0;
+  font: 700 14.5px/1.4 var(--zh);
+  cursor: pointer;
+}
+
+body .migration-preview li {
+  padding: var(--s2) 0;
+  border-bottom: 1px dashed var(--rule-strong);
+  font-size: 14px;
+}
+
+body .migration-preview code {
+  font: 400 12.5px/1.5 var(--mono);
+}
+
+/* fields */
+body .workbench-page label {
+  display: grid;
+  gap: 6px;
+  margin: var(--s4) 0;
+}
+
+body .workbench-page label > span,
+body .workbench-page label > b {
+  color: var(--ink-2);
+  font: 700 13.5px/1.4 var(--zh);
+  letter-spacing: 0.04em;
+}
+
+body .workbench-page :is(input:not([type="radio"]):not([type="checkbox"]), textarea, select) {
+  box-sizing: border-box;
+  width: 100%;
+  padding: 11px 14px;
+  border: 1.5px solid var(--rule-strong);
+  border-radius: var(--r-m);
+  background: #fff;
+  color: var(--ink);
+  font: 400 16px/1.6 var(--zh);
+  transition: border-color 0.2s, box-shadow 0.2s;
+}
+
+body .workbench-page :is(input:not([type="radio"]):not([type="checkbox"]), textarea, select):hover {
+  border-color: var(--ink-3);
+}
+
+body .workbench-page :is(input:not([type="radio"]):not([type="checkbox"]), textarea, select):focus {
+  border-color: var(--ink);
+  outline: none;
+  box-shadow: 0 0 0 3px color-mix(in srgb, var(--accent) 28%, transparent);
+}
+
+body .workbench-page :is(input, textarea)::placeholder {
+  color: var(--ink-3);
+  opacity: 0.8;
+}
+
+body .workbench-page textarea {
+  min-height: 7.5rem;
+  resize: vertical;
+}
+
+body .workbench-page :is(input[type="radio"], input[type="checkbox"]) {
+  width: 18px;
+  height: 18px;
+  margin: 0;
+  accent-color: var(--accent);
+}
+
+body .form-pair {
+  gap: 0 var(--s5);
+}
+
+/* ---------- three directions: pick one card ---------- */
+body .direction-grid {
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: var(--s4);
+  margin: var(--s6) 0;
+  border: 0;
+  background: none;
+}
+
+body .direction-grid label {
+  position: relative;
+  display: flex;
+  flex-direction: column;
+  gap: var(--s2);
+  min-height: 18rem;
+  margin: 0;
+  padding: var(--s5);
+  border: 1.5px solid var(--rule);
+  border-radius: var(--r-l);
+  background: var(--sheet);
+  box-shadow: var(--shadow-card);
+  cursor: pointer;
+  transition: border-color 0.2s, transform 0.3s var(--ease), background-color 0.2s;
+}
+
+body .direction-grid label:hover {
+  border-color: var(--ink-3);
+  transform: translateY(-2px);
+}
+
+body .direction-grid label.is-selected,
+body .direction-grid label:has(input:checked) {
+  border-color: var(--accent);
+  outline: 2px solid var(--accent);
+  outline-offset: -3px;
+  background: color-mix(in srgb, var(--accent) 6%, var(--sheet));
+}
+
+body .direction-grid label:focus-within {
+  outline: 2px solid var(--ink);
+  outline-offset: 2px;
+}
+
+body .direction-grid strong {
+  margin: auto 0 var(--s1);
+  color: var(--ink);
+  font: 900 26px/1.3 var(--zh);
+}
+
+body .direction-grid label > :is(span, p) {
+  color: var(--ink-2);
+  font: 400 15px/1.75 var(--zh);
+  letter-spacing: 0;
+}
+
+body .direction-grid small {
+  margin-top: auto;
+  padding-top: var(--s3);
+  border-top: 1px dashed var(--rule-strong);
+  color: var(--ink-3);
+  font: 400 13.5px/1.6 var(--zh);
+}
+
+/* ---------- projects ---------- */
+body .project-list {
+  gap: var(--s3);
+  margin: var(--s6) 0;
+  border: 0;
+  background: none;
+}
+
+body .project-list article {
+  padding: var(--s5) var(--s6);
+  border: 1px solid var(--rule);
+  border-radius: var(--r-l);
+  background: var(--sheet);
+  transition: border-color 0.2s;
+}
+
+body .project-list article:hover {
+  border-color: var(--ink);
+}
+
+body .project-list article > div {
+  min-width: 0;
+}
+
+body .project-list h2 {
+  margin: var(--s1) 0;
+  font: 800 26px/1.3 var(--zh);
+}
+
+body .project-list p {
+  color: var(--ink-2);
+  font: 400 15px/1.7 var(--zh);
+}
+
+body .project-list small {
+  color: var(--ink-3);
+  font: 400 11.5px/1.4 var(--mono);
+  overflow-wrap: anywhere;
+}
+
+/* ---------- where the version stands: six tiles on a track ---------- */
+body .fact-strip {
+  position: relative;
+  grid-template-columns: repeat(6, minmax(0, 1fr));
+  gap: var(--s2);
+  margin: var(--s5) 0 var(--s6);
+  padding: var(--s3);
+  border-radius: var(--r-l);
+  background: var(--mat);
+}
+
+body .fact-strip span {
+  display: flex;
+  align-items: flex-start;
+  gap: var(--s2);
+  min-height: 64px;
+  padding: var(--s3);
+  border: 1.5px dashed rgb(255 255 255 / 34%);
+  border-radius: var(--r-m);
+  background: transparent;
+  color: var(--chalk);
+  font: 600 13px/1.45 var(--zh);
+}
+
+body .fact-strip span::before {
+  content: "";
+  width: 11px;
+  height: 11px;
+  flex: none;
+  margin-top: 3px;
+  border: 1.5px solid currentColor;
+  border-radius: 50%;
+}
+
+body .fact-strip span.is-done {
+  border: 1.5px solid var(--tile);
+  background: var(--tile);
+  color: var(--tile-ink);
+  box-shadow: var(--shadow-object);
+}
+
+body .fact-strip span.is-done::before {
+  border-color: var(--tomato-deep);
+  background: var(--tomato);
+}
+
+/* ---------- supporting reading and the data panel ---------- */
+body :is(.context-support, .workspace-data-panel) {
+  margin: 0 0 var(--s6);
+  border-top: 1px solid var(--rule-strong);
+  border-bottom: 1px solid var(--rule-strong);
+}
+
+body .workspace-data-panel {
+  margin-top: 0;
+}
+
+body :is(.context-support, .workspace-data-panel) > summary {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: var(--s4);
+  padding: var(--s4) 0;
+  color: var(--ink);
+  font: 700 16px/1.4 var(--zh);
+  list-style: none;
+  cursor: pointer;
+}
+
+body :is(.context-support, .workspace-data-panel) > summary::-webkit-details-marker {
+  display: none;
+}
+
+body :is(.context-support, .workspace-data-panel) > summary::after {
+  content: "+";
+  flex: none;
+  display: grid;
+  place-items: center;
+  width: 28px;
+  height: 28px;
+  border: 1.5px solid var(--ink);
+  border-radius: 50%;
+  font: 500 16px/1 var(--mono);
+  transition: transform 0.3s var(--ease);
+}
+
+body :is(.context-support, .workspace-data-panel)[open] > summary::after {
+  transform: rotate(45deg);
+}
+
+body :is(.context-support, .workspace-data-panel) > summary:hover {
+  color: var(--accent-ink);
+}
+
+body .context-support > div,
+body .workspace-data-grid {
+  gap: var(--s4);
+  padding-bottom: var(--s5);
+  background: none;
+}
+
+body .context-support article,
+body .workspace-data-grid > section {
+  padding: var(--s5);
+  border: 1px solid var(--rule);
+  border-radius: var(--r-l);
+  background: var(--sheet);
+}
+
+body .context-support h2,
+body .workspace-data-grid h2 {
+  margin: var(--s2) 0 var(--s3);
+  font: 800 21px/1.4 var(--zh);
+}
+
+body .context-support dt {
+  margin-top: var(--s3);
+  color: var(--accent-ink);
+  font: 700 12px/1.4 var(--zh);
+  letter-spacing: 0.06em;
+}
+
+body .context-support dd {
+  margin: 2px 0 0;
+  color: var(--ink-2);
+  font: 400 14px/1.65 var(--zh);
+}
+
+body .context-support button,
+body .workspace-data-grid button {
+  margin-top: var(--s4);
+}
+
+body .workspace-data-grid dl {
+  gap: var(--s2);
+  background: none;
+}
+
+body .workspace-data-grid dl div {
+  padding: var(--s3);
+  border-radius: var(--r-m);
+  background: var(--tile-alt);
+}
+
+body .workspace-data-grid dt {
+  color: var(--ink-3);
+  font: 600 12px/1.4 var(--zh);
+}
+
+body .workspace-data-grid dd {
+  margin-top: var(--s1);
+  font: 800 28px/1 var(--display);
+  font-variation-settings: "wdth" 80, "wght" 800;
+}
+
+body .workspace-data-grid > section > small,
+body .workspace-data-grid p {
+  color: var(--ink-2);
+  font: 400 14px/1.7 var(--zh);
+}
+
+body .backup-preview {
+  padding: var(--s4);
+  border-radius: var(--r-m);
+  background: var(--tile);
+}
+
+body .backup-conflict {
+  color: var(--tomato-deep);
+}
+
+/* ---------- the iteration: six cards on a dashed track ---------- */
+body .iteration-stack {
+  position: relative;
+  display: grid;
+  gap: var(--s4);
+  min-width: 0;
+  margin: 0;
+  padding: 0;
+  border: 0;
+}
+
+body .iteration-stack::before {
+  content: "";
+  position: absolute;
+  top: var(--s7);
+  bottom: var(--s7);
+  left: calc(var(--s6) + 21px);
+  border-left: 2px dashed var(--rule-strong);
+}
+
+body .iteration-stack > .iteration-card {
+  margin: 0;
+}
+
+body .iteration-card {
+  position: relative;
+  padding-left: calc(var(--s6) + 44px + var(--s5));
+  transition: border-color 0.2s;
+}
+
+body .iteration-card > span {
+  position: absolute;
+  top: var(--s6);
+  left: var(--s6);
+  display: grid;
+  place-items: center;
+  width: 44px;
+  height: 44px;
+  border-radius: 50%;
+  background: var(--ink);
+  color: var(--paper);
+  font: 600 14px/1 var(--mono);
+  transition: background-color 0.2s;
+}
+
+/* the card you are typing in lights up */
+body .iteration-card:focus-within {
+  border-color: var(--ink);
+}
+
+body .iteration-card:focus-within > span {
+  background: var(--accent);
+  color: #fff;
+}
+
+body .iteration-stack.is-readonly {
+  opacity: 0.72;
+}
+
+body .actual-action {
+  margin-top: var(--s5);
+  padding: var(--s4) var(--s5);
+  border-left: 4px solid var(--accent);
+  border-radius: var(--r-m);
+  background: var(--tile);
+}
+
+body .completed-cycle-note {
+  margin: var(--s5) 0;
+  padding: var(--s4) var(--s5);
+  border-left: 4px solid var(--ok);
+  border-radius: var(--r-m);
+  background: color-mix(in srgb, var(--mint) 30%, var(--sheet));
+  color: var(--ink);
+  font: 400 15px/1.7 var(--zh);
+}
+
+body .recovery-list {
+  margin: var(--s6) 0;
+  padding: var(--s5) var(--s6) var(--s5) var(--s7);
+  border-left: 4px solid var(--tomato-deep);
+  border-radius: var(--r-m);
+  background: color-mix(in srgb, var(--tomato) 10%, var(--sheet));
+  font: 400 15px/1.8 var(--zh);
+}
+
+body .workbench-actions {
+  flex-wrap: wrap;
+  gap: var(--s3);
+}
+
+/* ---------- narrow screens ---------- */
+@media (max-width: 1000px) {
+  body .fact-strip {
+    grid-template-columns: repeat(3, minmax(0, 1fr));
+  }
+}
+
+@media (max-width: 760px) {
+  body .workbench-page {
+    padding-top: var(--s6);
+  }
+
+  body .workbench-hero,
+  body .project-context-head {
+    display: block;
+  }
+
+  body .workbench-hero > p:last-child {
+    margin-top: var(--s4);
+  }
+
+  body .workbench-choice-grid,
+  body .direction-grid,
+  body .form-pair,
+  body .workspace-data-grid,
+  body .context-support > div {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  body .workbench-choice-grid article {
+    min-height: 260px;
+    padding: var(--s5);
+  }
+
+  body .workbench-choice-grid article > span {
+    font-size: 48px;
+  }
+
+  body .direction-grid label {
+    min-height: 0;
+  }
+
+  body .fact-strip {
+    grid-template-columns: repeat(2, minmax(0, 1fr));
+  }
+
+  body :is(.migration-preview, .quick-project, .idea-form, .prototype-brief, .iteration-card) {
+    padding: var(--s5);
+  }
+
+  body .iteration-card {
+    padding-top: calc(var(--s5) + 44px + var(--s3));
+    padding-left: var(--s5);
+  }
+
+  body .iteration-card > span {
+    top: var(--s5);
+    left: var(--s5);
+  }
+
+  body .iteration-stack::before {
+    left: calc(var(--s5) + 21px);
+  }
+
+  body .project-list article {
+    padding: var(--s4) var(--s5);
+  }
+
+  body .project-context-head code {
+    display: none;
+  }
+
+  body .workbench-page :is(.primary-button, .idea-form > button, .iteration-card > button, .actual-action button, .quick-project button, .project-list button) {
+    white-space: normal;
+    text-align: center;
+    padding-block: var(--s2);
+  }
+}
+
+@media (prefers-reduced-motion: reduce) {
+  body .workbench-choice-grid article,
+  body .direction-grid label {
+    transition: none;
+  }
+
+  body .workbench-choice-grid article:hover,
+  body .direction-grid label:hover {
+    transform: none;
+  }
+}

@@ -1,7 +1,7 @@
 import { brandName } from './brand'
 import { useReadingSearch, SearchLoading, SearchExcerpts } from './reading-search-ui'
 import { matchesSearch, searchSnippets } from './reading-search'
-import { useEffect, useState, type ReactNode } from 'react'
+import { Fragment, useEffect, useState, type ReactNode } from 'react'
 import catalog from '../content/original-articles/catalog.json'
 import { allReadingChapters, readingTrackFor } from './reading-paths'
 const readingPath = { chapters: allReadingChapters }
@@ -22,7 +22,7 @@ const copy = {
   en: { title: 'Read about tabletop design', intro: 'From choosing a die to arranging a playtest, follow examples of design at work. Every article is available in Chinese and English.', collection: 'Bilingual reading', back: 'Back to articles', loading: 'Opening the article…', error: 'The article could not be opened.', retry: 'Try again', missing: 'Article not found', empty: 'Articles are being prepared.', search: 'Search titles or article text', noMatch: 'No matching articles. Try “choices”, “rules”, or “playtest”.', clear: 'Clear search', all: 'All articles', language: 'Reading language', edition: 'One article · Two languages', return: 'Course contents' },
 }
 
-export function ArticleBody({ article, language, afterSection, companion, introInsert, withOutline = false, bodyLoader, allowSourceLinks = false }: { article: Article; language: Language; afterSection?: { number: number; node: ReactNode }; companion?: ReactNode; /** shown after the opening paragraphs, before the first section */ introInsert?: ReactNode; withOutline?: boolean; bodyLoader?: () => Promise<string>; allowSourceLinks?: boolean }) {
+export function ArticleBody({ article, language, afterSection, companion, introInsert, extraInserts, withOutline = false, bodyLoader, allowSourceLinks = false }: { article: Article; language: Language; afterSection?: { number: number; node: ReactNode }; companion?: ReactNode; /** shown after the opening paragraphs, before the first section */ introInsert?: ReactNode; /** more pieces placed at the end of named sections, alongside any figure */ extraInserts?: Record<string, ReactNode>; withOutline?: boolean; bodyLoader?: () => Promise<string>; allowSourceLinks?: boolean }) {
   const [body, setBody] = useState<string | null>(null)
   const [failed, setFailed] = useState(false)
   const [wide, setWide] = useState(() => window.matchMedia('(min-width: 901px)').matches)
@@ -45,7 +45,12 @@ export function ArticleBody({ article, language, afterSection, companion, introI
   if (body === null) return <p role="status">{copy[language].loading}</p>
   const figure = articleFigures[article.id]
   // the opening paragraphs are section '' to MarkdownReading, so an intro insert lands just before the first heading
-  const sectionInserts = figure || introInsert ? { ...(introInsert ? { '': introInsert } : {}), ...(figure ? { [figure.after[language]]: <ArticleFigure key={`${article.id}/${language}`} kind={figure.kind} language={language}/> } : {}) } : undefined
+  const inserts: Record<string, ReactNode[]> = {}
+  const add = (key: string, node: ReactNode) => { (inserts[key] ??= []).push(node) }
+  if (introInsert) add('', introInsert)
+  if (figure) add(figure.after[language], <ArticleFigure key={`${article.id}/${language}`} kind={figure.kind} language={language}/>)
+  for (const [key, node] of Object.entries(extraInserts ?? {})) add(key, node)
+  const sectionInserts = Object.keys(inserts).length ? Object.fromEntries(Object.entries(inserts).map(([key, nodes]) => [key, <>{nodes.map((node, i) => <Fragment key={i}>{node}</Fragment>)}</>])) : undefined
   const reading = <article className="original-reading__body"><MarkdownReading source={body} language={language} afterSection={afterSection} sectionInserts={sectionInserts} allowSourceLinks={allowSourceLinks} /></article>
   if (!withOutline) return reading
   const outline = extractMarkdownOutline(body).filter(item => item.level === 2)

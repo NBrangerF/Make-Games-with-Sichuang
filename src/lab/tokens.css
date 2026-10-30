@@ -1,0 +1,135 @@
+/*
+ * 一桌点子 · the lab design system.
+ * Same family as sichuangfan.com: paper and ink, Anybody / Newsreader / Plex Mono / Noto Serif SC,
+ * the five thread colours, and a green felt mat for anything you can play.
+ * One set of tokens; every surface below takes its values from here.
+ */
+
+:root {
+  /* paper and ink */
+  --paper: #f2f3ee;
+  --sheet: #fafaf6;
+  --ink: #16171b;
+  --ink-2: #4a4b53;
+  --ink-3: #6f7078;
+  --rule: #d5d6cc;
+  --rule-strong: #b9bbae;
+
+  /* the table: felt, chalk and the printed things on it */
+  --mat: #2a5946;
+  --mat-edge: #1f4434;
+  --mat-deep: #183a2c;
+  --chalk: rgb(255 255 255 / 74%);
+  --tile: #f6f3ea;
+  --tile-alt: #ebe7d8;
+  --tile-ink: #141414;
+
+  /* object colours, as on the lab desk */
+  --tomato: #e4512f;
+  --tomato-deep: #b23b1f;
+  --yolk: #f2bf2f;
+  --pink: #f0a2b5;
+  --mint: #a6d8bd;
+  --kraft: #c69e72;
+  --cobalt: #2c4fd6;
+
+  /* the five research threads, shared with the main site */
+  --q-games: #d4512f;
+  --q-systems: #2a55cf;
+  --q-teachers: #8248c0;
+  --q-agency: #11805f;
+  --q-evidence: #a8740a;
+
+  /* roles */
+  --accent: var(--tomato);
+  --accent-ink: var(--tomato-deep);
+  --focus: var(--ink);
+  --ok: var(--q-agency);
+  --warn: var(--q-evidence);
+
+  /* type */
+  --display: "Anybody Variable", "Arial Narrow", "Helvetica Neue", Arial, sans-serif;
+  --text: "Newsreader Variable", "Noto Serif SC Variable", "Iowan Old Style", Georgia, serif;
+  --zh: "Noto Serif SC Variable", "Noto Serif SC", "Songti SC", "STSong", serif;
+  --mono: "IBM Plex Mono", ui-monospace, Menlo, monospace;
+
+  /* type scale (px at desktop) */
+  --fs-xs: 12.5px;
+  --fs-s: 14.5px;
+  --fs-m: 17.5px;
+  --fs-l: 20px;
+  --fs-xl: clamp(23px, 2.2vw, 28px);
+  --fs-2xl: clamp(30px, 3.6vw, 46px);
+  --fs-3xl: clamp(46px, 7.4vw, 104px);
+
+  /* spacing scale */
+  --s1: 4px;
+  --s2: 8px;
+  --s3: 12px;
+  --s4: 16px;
+  --s5: 24px;
+  --s6: 32px;
+  --s7: 48px;
+  --s8: 72px;
+  --s9: 112px;
+
+  /* shape and depth */
+  --r-s: 4px;
+  --r-m: 8px;
+  --r-l: 12px;
+  --shadow-card: 0 1px 0 var(--rule), 0 14px 26px -18px rgb(0 0 0 / 35%);
+  --shadow-object: 0 1px 0 rgb(0 0 0 / 20%), 0 10px 14px -6px rgb(0 0 0 / 35%);
+  --ease: cubic-bezier(0.22, 1, 0.36, 1);
+
+  /* layout */
+  --page: 1240px;
+  --measure: 38em;
+  --gutter: max(16px, env(safe-area-inset-left, 0px));
+  --header-h: 64px;
+}
+
+/* ---------- global base ---------- */
+html {
+  background: var(--paper);
+}
+
+body {
+  background: var(--paper);
+  color: var(--ink);
+  font-family: var(--text);
+  font-optical-sizing: auto;
+  -webkit-font-smoothing: antialiased;
+  text-rendering: optimizeLegibility;
+}
+
+::selection {
+  background: color-mix(in srgb, var(--yolk) 55%, transparent);
+  color: var(--ink);
+}
+
+:focus-visible {
+  outline: 2px solid var(--focus);
+  outline-offset: 3px;
+}
+
+/* base link: ink with a tomato underline; zero specificity, so any styled link wins */
+:where(a) {
+  color: var(--ink);
+  text-decoration-color: color-mix(in srgb, var(--accent) 75%, transparent);
+  text-decoration-thickness: 1.5px;
+  text-underline-offset: 3px;
+}
+
+:where(a:hover) {
+  color: var(--accent-ink);
+}
+
+@media (prefers-reduced-motion: reduce) {
+  *,
+  *::before,
+  *::after {
+    scroll-behavior: auto !important;
+    transition-duration: 0.01ms !important;
+    animation-duration: 0.01ms !important;
+  }
+}
